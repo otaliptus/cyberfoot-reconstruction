@@ -30,3 +30,32 @@ export function selectAuctionLot(save,runtime,{rng,previousClub=-1}={}){
  }
  return state;
 }
+import {parseOriginalInteger} from './contract-view.mjs';
+/** Whole005a4648 bid submission. The x87 single/extended comparisons reduce to
+ * exact integer comparisons; the label updates are returned as an ordered
+ * visibility list for the Form23 host. */
+export function auctionBid(save,runtime,{text=''}={}){
+ const state=runtime??{},career=view(save.career),clubs=save.sections.find(s=>s.name==='clubs'),players=save.sections.find(s=>s.name==='players');
+ const raw=String(text??'').split('\0')[0],vis=[['0x388',0],['0x390',0]],value=raw===''?0:parseOriginalInteger(raw);
+ if(raw!==''&&value===null){state.auctionVisibility=vis;return {outcome:'invalid'};}
+ let bid=Math.imul(value??0,1000)|0;
+ const club=id=>id>=0&&id<clubs.count?view(record(save,'clubs',id)):null,cash=id=>{const p=club(id);return p?p.getBigInt64(0x48,true):0n;};
+ const current=state.auctionCurrentClub??0,amount=BigInt(bid)*10000n;
+ if(!(amount<=cash(current)||cash(current)<=0n)){vis.push(['0x388',1]);state.auctionVisibility=vis;return {outcome:'unaffordable'};}
+ if(cash(current)<0n){bid=0;vis.push(['0x390',1]);}
+ vis.push(['0x394','caption',0]);
+ if(bid>(state.auctionHighestBid??0)){state.auctionHighestBid=bid;state.auctionHighestBidder=current;}
+ const count=career.getInt32(0x13c,true),base=BigInt(state.auctionBasePrice??0)*10000n;
+ let dc=state.auctionIndex??0,clubId=current;
+ for(;;){
+  const last=career.getInt32(0x13c+count*4,true);
+  if(last===clubId){state.auctionIndex=dc;state.auctionCurrentClub=clubId;state.auctionVisibility=vis;return {outcome:'resolved',club:clubId};}
+  dc++;clubId=career.getInt32(0x13c+dc*4,true);
+  const p=club(clubId),strength=p?p.getInt32(0x64,true):0;
+  if(strength>originalSeniorSquadLimit-2)continue;
+  const pid=state.auctionPlayer??-1,playerClub=pid>=0&&pid<players.count?view(record(save,'players',pid)).getInt32(0x20,true):0;
+  if(playerClub===clubId)continue;
+  if(cash(clubId)<base)continue;
+  state.auctionIndex=dc;state.auctionCurrentClub=clubId;state.auctionVisibility=vis;return {outcome:'next',club:clubId};
+ }
+}
