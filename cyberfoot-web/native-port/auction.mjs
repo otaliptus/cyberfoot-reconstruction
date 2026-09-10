@@ -129,3 +129,11 @@ export function auctionStart(save,runtime,{rng}={}){
  records.push(['ui',0x4030d4],['ui',0x4030a4],['ui',0x4030d4],['ui',0x4030a4],['ui',0x4030d4],['ui',0x4030a4],['ui',0x4030d4],['ui',0x4030a4],['ui',0x405194],['language',0x133],['money',Number(BigInt.asUintN(32,money))],['ui',0x405330],['caption',0x38c]);
  state.auctionRecords=records;return {started:true,records};
 }
+/** Whole005a42e0 auction turn: clear the selected player, best bid and edit,
+ * hide the crest and select the next lot. */
+export function auctionNextLot(save,runtime,{rng,previousClub=-1}={}){
+ const state=runtime??{},records=[['clearEdit',0x398],['hide',0x378,0]];
+ state.auctionPlayer=-1;state.auctionHighestBid=0;state.auctionHighestBidder=0;
+ records.push(['select',null]);selectAuctionLot(save,state,{rng,previousClub});
+ state.auctionRecords=records;return {records,resetPlayer:-1,player:state.auctionPlayer,seller:state.auctionSellerClub};
+}

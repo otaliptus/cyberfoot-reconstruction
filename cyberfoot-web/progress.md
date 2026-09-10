@@ -1,5 +1,10 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-10 — Auction timer turn
+- Previous goal turn classified verified progress (auction start). Added auctionNextLot(whole005a42e0): clears the selected player66ad44, best bid/bidder6d24d0/d4, Edit1 and the crest image, then selects the next lot through the verified selectAuctionLot. The turn emits the original clearEdit/hide/select records.
+- auction_turn_oracle.py runs200 whole original005a42e0 runs with466238/43aa68/5a3014 stubbed; reset state, records and the selection call match. Fixed the harness66ad44 direct-pointer setup a second time.
+- Registered auction-turn-parity.mjs. Total original comparison cases255507(255307+200). Full run-all exit0. The auction engine is now complete; remaining is the TForm23 host rendering plus5a4550 window management. Next overall: TForm23 host, next-screen forms, career entry, deployment. Native game incomplete/unpublished; goal active.
+
 ### 2026-09-10 — Auction start scan
 - Previous goal turn classified verified progress (auction settlement). Added auctionStart(whole005a3ac8): scans the career human-list clubs for the first with cash >= starting price*10000, strength < senior limit and not the player's club; when none qualifies it calls auctionResolve immediately, otherwise it emits the original UI string sequence and the formatted cash (cash/10000 rounded through the x87 helper, low32 only as the original passes it).
 - auction_start_oracle.py runs400 whole original005a3ac8 runs with UI stubs only and5a3d1c recorded:266 immediate resolutions,134 starts. The eligibility gates, chosen club/index, records and RNG match. Two native bugs caught: the display money uses cash/10000 (x87 fdiv + fistp), and6468f4 consumes only eax.
