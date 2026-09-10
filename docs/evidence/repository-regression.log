@@ -387,6 +387,7 @@ Original career fixture: club-world champions, 18-country table, six-flag field,
 600 whole original auction-lot selection comparisons passed (UI stubs only).
 600 whole original auction bid comparisons passed (UI stubs only).
 600 whole original auction resolution comparisons passed (UI/finalization stubs only).
+400 whole original auction start comparisons passed (UI stubs only).
 Original career fixture: auction settlement moved player 1 from club 0 to 11, charged the fee, archived history and round-tripped; reject and guards passed.
 800 whole original season-end manager move comparisons passed (stack slot controlled).
 Original career fixture: 10 season-end manager moves, slot flags cleared, deterministic replay, save round-trip and guards passed.

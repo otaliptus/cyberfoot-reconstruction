@@ -60,6 +60,7 @@ export function auctionBid(save,runtime,{text=''}={}){
  }
 }
 import {countryGroups} from './score-tables.mjs';
+import {precision64,nearestEven} from './x87.mjs';
 /** Whole005a3d1c auction resolution and tick. The finalization005a4354 and the
  * label/timer updates are emitted as records for the Form23 host; the club
  * search, price bands and RNG order are native. */
@@ -111,4 +112,20 @@ export function auctionFinalize(save,runtime,{accept=true,buyer=-1,price=0,playe
  if(!rng||typeof rng.below!=='function')throw Error('Original random generator required for auction settlement.');
  completePaidTransfer(save,player,buyer,price,{rng,runtime:state,date});
  records.push(['transfer',player,buyer,price]);state.auctionRecords=records;return {records};
+}
+/** Whole005a3ac8 auction start: find the first human-list club that can afford
+ * the starting price and has roster room, otherwise resolve immediately. */
+export function auctionStart(save,runtime,{rng}={}){
+ const state=runtime??{},career=view(save.career),clubs=save.sections.find(s=>s.name==='clubs'),players=save.sections.find(s=>s.name==='players'),records=[];
+ state.auctionFlag=0;
+ const pid=state.auctionPlayer??-1,playerClub=pid>=0&&pid<players.count?view(record(save,'players',pid)).getInt32(0x20,true):-1,base=BigInt(state.auctionBasePrice??0)*10000n,count=career.getInt32(0x13c,true);
+ for(let i=0;i<count;i++){
+  const id=career.getInt32(0x140+i*4,true);if(id<0||id>=clubs.count)continue;
+  const row=view(record(save,'clubs',id));
+  if(base<=row.getBigInt64(0x48,true)&&row.getInt32(0x64,true)<originalSeniorSquadLimit&&playerClub!==id){state.auctionFlag=1;state.auctionCurrentClub=id;state.auctionIndex=i+1;break;}
+ }
+ if(state.auctionFlag===0){records.push(['resolve',null]);state.auctionRecords=records;return {started:false,records,resolution:auctionResolve(save,state,{rng})};}
+ const cash=view(record(save,'clubs',state.auctionCurrentClub)).getBigInt64(0x48,true),[q,r]=precision64(cash,10000n),money=BigInt.asIntN(64,nearestEven(q,r));
+ records.push(['ui',0x4030d4],['ui',0x4030a4],['ui',0x4030d4],['ui',0x4030a4],['ui',0x4030d4],['ui',0x4030a4],['ui',0x4030d4],['ui',0x4030a4],['ui',0x405194],['language',0x133],['money',Number(BigInt.asUintN(32,money))],['ui',0x405330],['caption',0x38c]);
+ state.auctionRecords=records;return {started:true,records};
 }

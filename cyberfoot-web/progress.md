@@ -1,5 +1,10 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-10 — Auction start scan
+- Previous goal turn classified verified progress (auction settlement). Added auctionStart(whole005a3ac8): scans the career human-list clubs for the first with cash >= starting price*10000, strength < senior limit and not the player's club; when none qualifies it calls auctionResolve immediately, otherwise it emits the original UI string sequence and the formatted cash (cash/10000 rounded through the x87 helper, low32 only as the original passes it).
+- auction_start_oracle.py runs400 whole original005a3ac8 runs with UI stubs only and5a3d1c recorded:266 immediate resolutions,134 starts. The eligibility gates, chosen club/index, records and RNG match. Two native bugs caught: the display money uses cash/10000 (x87 fdiv + fistp), and6468f4 consumes only eax.
+- Registered auction-start-parity.mjs. Total original comparison cases255307(254907+400). Full run-all exit0. Remaining for the auction: timer turn5a42e0/5a4550 and the TForm23 host. Next overall: next-screen forms, career entry, deployment. Native game incomplete/unpublished; goal active.
+
 ### 2026-09-10 — Auction settlement composition
 - Previous goal turn classified verified progress (auction resolution). Added auctionFinalize(whole005a4354): resets the previous-club global, returns the page/caption/crest records and routes the state change through the already oracle-verified completePaidTransfer650ec4 with the original argument order (player, buyer, price); accept0 keeps the not-sold page with no mutation.
 - Added auction-finalize-integration.mjs on the real career: moves player1 from club0 to the human club, charges the fee, archives records_0066b070, is deterministic under the same seed, round-trips the save, and rejects a missing generator before mutation. Registered in run-all; total comparisons unchanged at254907 (composition only).
