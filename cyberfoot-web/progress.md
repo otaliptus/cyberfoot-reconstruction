@@ -1,5 +1,11 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-10 — Human-next state predicates
+- Previous goal turn classified verified progress (continental controller oracle). Added hasUnderLimitHumanClub(whole005f996c) and nationalManagerAssignmentIndex(whole005f98f4) to results-routing.mjs. The first scans the human club list and compares club64 to the original senior limit pointer66b610. The second scans national manager slots, calls native eligibility0064d890, writes index+1 to66b710, then applies the one-shot career708 gate: the index is written even when the gate makes the result false.
+- human_next_state_oracle.py runs800 original comparisons with no adapters:400 under-limit predicates with signed slot ids/extreme limits and400 national index cases spanning empty/eligible squads, flag pre-set and unset, and date boundaries. All return values, index and flag bytes match.
+- Registered human-next-state-parity.mjs. Total original comparison cases251707(250907+800). Full run-all exit0.
+- Next dependencies: automaticNext auto/66b484/regional-selection state, seasonEnd5f96dc with006552ec (uninitialized stack bound documented), humanNext/automaticNext form hosts, leagueNext binding to5fa020, national setup UI, career entry and deployment. Native game incomplete/unpublished; goal active.
+
 ### 2026-09-10 — Whole continental controller oracle
 - Previous goal turn classified verified progress (national-next routing). Closed the pending whole-controller verification debt: continental_post_round_oracle.py runs200 whole original005f3890 comparisons with all children native (00646a38 performance,006490a8 finish records,0065a250 knockout lookup) and storage adapters only.98 competition4 and92 competition6 cases;92 final-round cases seed and finish;59 date-matched fixtures apply performance results. Career/clubs/fixtures/history bytes and RNG match.
 - The native controller required no changes; an initial oracle mismatch was traced to the harness setting the calendar pointer at66b574 through the wrong indirection (direct pointer, not pointer slot). Native and original were already identical.
