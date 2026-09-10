@@ -1,5 +1,10 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-10 — Published to Cloudflare Pages
+- Previous goal turn classified verified progress (all six playability gaps addressed). Chose Cloudflare Pages over GitHub Pages to keep the repository private; landed the static site with wrangler.
+- Project cyberfoot-reconstruction (account omertalib42@gmail.com); production URL https://cyberfoot-reconstruction.pages.dev/. Staged copy of native-port excluding oracle vectors (15MB upload,1622 files); all eight entry pages, language.json and the career save fixture verified200; required client run against the live URL exit0.
+- Redeploy: rsync native-port minus tests/*-vectors.json* to a staging dir then npx wrangler pages deploy <dir> --project-name=cyberfoot-reconstruction --branch=main. status.json records the published URL; releaseReady stays false (documented gaps). The game is now playable on the public web end to end for the ported feature set.
+
 ### 2026-09-10 — Season transition, match polish, deployment
 - Previous goal turn classified verified progress (career entry, routes, contracts). Closed the remaining three playability gaps.
 - Season transition: season-transition.mjs ports the FUN_005dfe10 season-turn storage effects plus 0065a2bc/0065a14c fixture append and 72-byte record layout; season-move-host.mjs presents Form30; career-loop-preview.html now runs settlement, Form26 review, Form85 pre-season question and advances to the next season's first human fixture. Node test: 9 manager moves cleared, season2 18 league days and360 fixtures, first human fixture437. Not ported (documented): fixture pairing regeneration, promotion/relegation rotation, prize money table, aging/retirement, youth intake.
