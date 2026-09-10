@@ -1,5 +1,12 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-10 — Season transition, match polish, deployment
+- Previous goal turn classified verified progress (career entry, routes, contracts). Closed the remaining three playability gaps.
+- Season transition: season-transition.mjs ports the FUN_005dfe10 season-turn storage effects plus 0065a2bc/0065a14c fixture append and 72-byte record layout; season-move-host.mjs presents Form30; career-loop-preview.html now runs settlement, Form26 review, Form85 pre-season question and advances to the next season's first human fixture. Node test: 9 manager moves cleared, season2 18 league days and360 fixtures, first human fixture437. Not ported (documented): fixture pairing regeneration, promotion/relegation rotation, prize money table, aging/retirement, youth intake.
+- Match presentation: match-auto-interactions.mjs deterministically resolves injury/penalty/red-card/halftime modals so watched matches finish unattended; session option autoInteractions; renderer label/grid fidelity improved from DFM values. Node test byte-identical replay with186 offline ticks. Original sound assets exist in cyberfoot-analysis/payload/sons but no web audio assets are in the repo, so playback is recorded not played.
+- Deployment: index.html landing page and .github/workflows/pages.yml deploying native-port; local client and all links verified200. Repo is private, so GitHub Pages enablement needs the repo public or a paid plan (pending user decision).
+- Registered season-transition and match-presentation node tests; full run-all exit0; oxlint clean; required client on career-loop-preview.html exit0. Total original comparison cases255507. All six playability gaps closed to the extent the ported engine allows; remaining documented gaps recorded above. Native game incomplete/unpublished; goal active.
+
 ### 2026-09-10 — Career entry, route screens, contract/loan/training windows
 - Previous goal turn classified verified progress (auction window). Closed four of the six playability gaps in one batch.
 - Career entry: career-menu.mjs builds a real career from the original save template (human club/manager slots, career list, fixture validation), persists it through gzip+base64 localStorage, and career-menu-preview.html creates/loads careers that hand off to the loop. node test covers openCareer acceptance and first fixture.

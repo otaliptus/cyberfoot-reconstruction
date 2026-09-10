@@ -26,18 +26,29 @@ export class PenaltyWindow extends MatchWindow{
    return;
   }
   if(node.class_name==='TNextGrid'){
-   const c=this.ctx,columns=node.children.filter(n=>n.properties.Visible!==false);c.save();c.beginPath();c.rect(x,y,p.Width,p.Height);c.clip();
-   c.fillStyle='#fff';c.fillRect(x,y,p.Width,p.Height);c.font='12px Arial';c.textBaseline='middle';c.textAlign='left';
+   const c=this.ctx,columns=node.children.filter(n=>n.properties.Visible!==false),headerSize=p.HeaderSize??16,rowSize=p.RowSize??22;
+   const alignmentOf=value=>value==='taCenter'?'center':value==='taRightJustify'?'right':'left';
+   const colour=value=>typeof value==='number'?`rgb(${value&255},${(value>>>8)&255},${(value>>>16)&255})`:({clBlack:'#000',clWhite:'#fff',clWindowText:'#000',clGreen:'#008000',clYellow:'#ff0',clRed:'#f00',clGray:'#808080'}[value]??'#000');
+   const ink=(value,left,width,align,centerY)=>{c.textAlign=alignmentOf(align);c.fillText(value,left+(align==='taCenter'?width/2:align==='taRightJustify'?width-2:2),centerY);c.textAlign='left';};
+   c.save();c.beginPath();c.rect(x,y,p.Width,p.Height);c.clip();
+   c.fillStyle='#fff';c.fillRect(x,y,p.Width,p.Height);c.textBaseline='middle';
    let xx=x;
-   for(const col of columns){const w=col.properties.Width;c.fillStyle='#d4d0c8';c.fillRect(xx,y,w,p.HeaderSize);c.fillStyle='#000';c.fillText(this.frame.headers[col.name],xx+2,y+p.HeaderSize/2);xx+=w;}
+   for(const col of columns){
+    const colProperty=col.properties,w=colProperty.Width??colProperty.DefaultWidth,caption=this.frame.headers[col.name]??colProperty['Header.Caption']??'';
+    c.fillStyle='#d4d0c8';c.fillRect(xx,y,w,headerSize);c.fillStyle='#000';c.font=`bold ${Math.abs(colProperty['Font.Height']??-12)}px "${colProperty['Font.Name']??'Arial'}"`;
+    c.save();c.beginPath();c.rect(xx,y,w,headerSize);c.clip();ink(caption,xx,w,colProperty['Header.Alignment'],y+headerSize/2);c.restore();
+    xx+=w;
+   }
    this.frame.rows.forEach((row,i)=>{
-    if(i<this.firstRow)return;const yy=y+p.HeaderSize+(i-this.firstRow)*p.RowSize,selected=row.playerId===this.frame.selectedId;
-    c.fillStyle=selected?'#d6d6d6':'#fff';c.fillRect(x,yy,p.Width,p.RowSize);let xx=x;
-    for(const col of columns){const w=col.properties.Width;c.save();c.beginPath();c.rect(xx,yy,w,p.RowSize);c.clip();
-     if(col.name==='energia'){c.fillStyle='#245b2d';c.fillRect(xx+3,yy+3,(w-6)*Math.max(0,Math.min(100,row.cells.energia))/100,p.RowSize-6);}
-     c.fillStyle='#000';c.fillText(String(row.cells[col.name]),xx+2,yy+p.RowSize/2);c.restore();xx+=w;
+    if(i<this.firstRow)return;const yy=y+headerSize+(i-this.firstRow)*rowSize,selected=row.playerId===this.frame.selectedId;
+    c.fillStyle=selected?'#d6d6d6':'#fff';c.fillRect(x,yy,p.Width,rowSize);let xx=x;
+    for(const col of columns){
+     const colProperty=col.properties,w=colProperty.Width??colProperty.DefaultWidth;c.save();c.beginPath();c.rect(xx,yy,w,rowSize);c.clip();
+     if(col.name==='energia'){c.fillStyle='#245b2d';c.fillRect(xx+3,yy+3,(w-6)*Math.max(0,Math.min(100,row.cells.energia??0))/100,rowSize-6);}
+     c.font=`${colProperty['Font.Style']?.includes('fsBold')?'bold ':''}${Math.abs(colProperty['Font.Height']??-12)}px "${colProperty['Font.Name']??'Arial'}"`;
+     c.fillStyle=colour(colProperty['Font.Color']??'clBlack');ink(String(row.cells[col.name]??''),xx,w,colProperty.Alignment,yy+rowSize/2);c.restore();xx+=w;
     }
-    if(this.activeFrame&&yy<y+p.Height&&this.frame.phase==='selection')this.hitTargets.push({name:'player-'+row.playerId,operation:'gridview1SelectCell',value:row.playerId,x:this.frame.origin.x+1+x,y:this.frame.origin.y+1+yy,width:p.Width,height:Math.min(p.RowSize,y+p.Height-yy)});
+    if(this.activeFrame&&yy<y+p.Height&&this.frame.phase==='selection')this.hitTargets.push({name:'player-'+row.playerId,operation:'gridview1SelectCell',value:row.playerId,x:this.frame.origin.x+1+x,y:this.frame.origin.y+1+yy,width:p.Width,height:Math.min(rowSize,y+p.Height-yy)});
    });c.restore();return;
   }
   return super.control(node,parent,ox,oy);

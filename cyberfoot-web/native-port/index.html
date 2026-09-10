@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cyberfoot 2015 — native reconstruction (development preview)</title>
+<style>
+body{margin:0;background:#3a6ea5;color:#fff;font:14px Arial,sans-serif}
+main{max-width:1024px;margin:0 auto;padding:16px}
+h1{font-size:22px;margin:0 0 4px}
+h2{font-size:16px;margin:0 0 8px}
+p{margin:8px 0;line-height:1.5}
+section{background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.25);border-radius:6px;padding:12px;margin-bottom:16px}
+.banner{border-color:#ffd964}
+.banner strong{color:#ffd964}
+ul{margin:6px 0;padding-left:20px}
+li{margin:4px 0;line-height:1.45}
+.flows{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:12px;margin-bottom:16px}
+.flow{display:block;background:#d8e6f2;color:#123;border:1px solid #7a9cbd;border-radius:6px;padding:12px;text-decoration:none}
+.flow:hover{background:#fff}
+.flow h3{margin:0 0 6px;font-size:15px}
+.flow p{margin:0 0 6px;font-size:13px}
+.flow .kind{display:inline-block;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:.05em;color:#345;margin-bottom:4px}
+.flow .caveat{color:#612;margin-bottom:0}
+code{background:rgba(0,0,0,.25);padding:1px 4px;border-radius:3px;font:12px monospace}
+.note{opacity:.8;font-size:12px}
+footer{opacity:.75;font-size:12px;padding:0 0 16px}
+</style>
+</head>
+<body>
+<main>
+<h1>Cyberfoot 2015 — native JavaScript reconstruction</h1>
+<p>A from-scratch browser reconstruction of Cyberfoot 2015, built by reverse engineering the original Windows game. It runs as plain ES modules in the browser; it does not load the original executable, Wine, WebAssembly or a CPU interpreter.</p>
+
+<section class="banner">
+<h2>Status: development preview — <strong>not feature-complete and not pixel-identical</strong></h2>
+<ul>
+<li>This is an unfinished reconstruction, not a released game. Several screens below are development fixtures that use automatic test decisions, and complete-game end-to-end parity has not been achieved.</li>
+<li>Progress so far: the match engine, fixtures, settlement, standings, history, transfers, contracts, training, manager changes and several original forms have native implementations, and the original 2,658,632-byte career save round-trips byte-for-byte.</li>
+<li>Verification approach: a development-only oracle executes the original machine instructions and the native module must reproduce the same result, mutated state and random draws. 255,507 recorded original-execution comparisons currently pass in both Node and Chromium with 0 failures.</li>
+<li>Those comparisons are routine-level and dispatcher-level checks, not a proof of whole-game equivalence. UI pixel parity (Windows fonts, control rendering, exact message-box styling) is not certified, and registered-edition content is not covered.</li>
+</ul>
+</section>
+
+<h2>Playable flows</h2>
+<div class="flows">
+<a class="flow" href="career-menu-preview.html">
+<span class="kind">New game</span>
+<h3>Career entry</h3>
+<p>Create or load a career from the original career template and persist it in localStorage.</p>
+<p class="caveat">Entry flow only: after creation it hands off to the development career loop.</p>
+</a>
+<a class="flow" href="career-loop-preview.html">
+<span class="kind">League &amp; cup</span>
+<h3>Career loop</h3>
+<p>The development league/cup loop: lineup, match, results, round advancement and player development.</p>
+<p class="caveat">Round loop with automatic test decisions; regular day-to-day career routing and complete season progression are unfinished.</p>
+</a>
+<a class="flow" href="auction-window-preview.html">
+<span class="kind">Transfers</span>
+<h3>Transfer auction window</h3>
+<p>The original Form23 auction window driven by the native transfer engine.</p>
+<p class="caveat">Standalone component preview; not yet wired into a full transfer day.</p>
+</a>
+<a class="flow" href="contract-window-preview.html">
+<span class="kind">Squad</span>
+<h3>Contract renewal &amp; loans</h3>
+<p>Original Form24 contract negotiation plus Form59 loan offers, listing, recalls and persistence.</p>
+<p class="caveat">Development fixture; exact original message-box and pixel fidelity are pending.</p>
+</a>
+<a class="flow" href="training-window-preview.html">
+<span class="kind">Squad</span>
+<h3>Player training</h3>
+<p>Native player development (senior growth, youth progress and older-player decline) applied to a saved career.</p>
+<p class="caveat">Development fixture around the verified development routines.</p>
+</a>
+<a class="flow" href="lineup-window-preview.html">
+<span class="kind">Match</span>
+<h3>Lineup window</h3>
+<p>Original Form87 lineup window with formations, tactics, captain, set-piece taker, kit choice and manual drag placement.</p>
+<p class="caveat">Saved-formations dialog and full Form87 parity remain unported; some operations are not connected.</p>
+</a>
+<a class="flow" href="penalty-window-preview.html">
+<span class="kind">Match</span>
+<h3>Penalty dialog</h3>
+<p>The attacking-manager Form34 penalty: taker selection, both timed stages, the verified shot rule and the result delay.</p>
+<p class="caveat">Attacking side only; sound playback and some human dialogs remain unfinished.</p>
+</a>
+</div>
+
+<section>
+<h2>How this is verified</h2>
+<ul>
+<li>A separate, development-only oracle runs blocks of the original executable and records outputs, mutated memory and RNG draws.</li>
+<li>Native modules are accepted only when they reproduce those records; the suite is executed in both Node.js and Chromium.</li>
+<li>Browser previews expose their state through <code>render_game_to_text()</code> and explicitly report <code>developmentProof: true, completeGame: false</code>.</li>
+</ul>
+</section>
+
+<section>
+<h2>Known limitations</h2>
+<ul>
+<li>No whole-original-game or whole-career equivalence proof, and no complete-season or registered-edition gameplay.</li>
+<li>Interactive forms are partial; some flows use automated test choices instead of the original dialogs.</li>
+<li>Fonts, native controls, gradients and exact layouts are approximations, not certified pixel-identical.</li>
+<li>Audio requests are recorded rather than played in the development previews.</li>
+</ul>
+</section>
+
+<footer>Original Cyberfoot material and third-party components retain their rights; no license is asserted for them.</footer>
+</main>
+</body>
+</html>

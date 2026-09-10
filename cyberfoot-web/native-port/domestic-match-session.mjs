@@ -8,13 +8,14 @@ import {clubCrestPath} from './club-crest.mjs';
 import {createMatchTacticsHost} from './match-tactics-host.mjs';
 import {createPenaltyDialogHost} from './penalty-dialog-host.mjs';
 import {createInjuryDialogHost} from './injury-dialog-host.mjs';
+import {createMatchAutoInteractions} from './match-auto-interactions.mjs';
 const view=b=>new DataView(b.buffer,b.byteOffset,b.byteLength);
 
 /** Shared native match session for the recovered four-division league display.
  * Team preparation is owned by the caller, preserving the human lineup.
  * Competition/day continuation remains an explicit dependency.
  */
-export async function openDomesticMatchSession(renderer,{save,state,rng,context,language,crestAssets,kitAssets,continueCompetition}){
+export async function openDomesticMatchSession(renderer,{save,state,rng,context,language,crestAssets,kitAssets,autoInteractions=false,continueCompetition}){
  const career=view(save.career),displayRound=career.getInt32(0x4c,true);
  if(context.competitionType!==1||career.getInt32(0x168,true)!==4)throw RangeError('This presentation currently supports the four-division league.');
  if(typeof continueCompetition!=='function')throw TypeError('Competition continuation is required.');
@@ -29,13 +30,19 @@ export async function openDomesticMatchSession(renderer,{save,state,rng,context,
  const penaltyHost=createPenaltyDialogHost(renderer,{save,state,language,assets:crestAssets,playSound:name=>soundRequests.push(name)}),injuryHost=createInjuryDialogHost(renderer,{state,language,playSound:name=>soundRequests.push(name)});
  const showEvent=index=>{const event=state.events[index],fixture=fixtures.find(f=>f.id===event[5]);const presentation=matchEventPresentation(event,fixture,state,language,{silent:runtime.silent,sound:!!career.getUint8(0xdc),fullGameGauge:!!career.getUint8(0xdd)});latestEvents.set(fixture.id,presentation);return {fixture,presentation};};
  const tacticsHost=createMatchTacticsHost(renderer,{save,state,language,assets:crestAssets,kitAssets,rng,recordEvent:recordCareerEvent,presentEvent:showEvent});
- const controller=createRegulationController({fixtures,teamsFor,state,rng,decisions:{penalty:c=>penaltyHost.decide(c),injuryReplacement:c=>injuryHost.decide(c)},recordEvent:recordCareerEvent,fullGameGauge:!!career.getUint8(0xdd),pauseAtHalftime:!!career.getUint8(0xd9),humanFixtureIds:prepared.humanFixtureIds??runtime.humanFixtures,humanManagerCount:career.getInt32(0x13c,true),sound:!!career.getUint8(0xdc),present:async e=>{
-  if(e.type==='event'){const {fixture,presentation}=showEvent(e.index);if(presentation.redCardPrompt){renderer.update(windowView());await tacticsHost.open({fixture,teams:teamsFor(fixture),side:presentation.redCardPrompt.side,minute,period:controller.flow.period});}}
-  if(e.type==='clearFixtureEvent')latestEvents.delete(e.fixtureId);
-  if(e.type==='minute')minute=e.minute;if(e.languageId)period=language[e.languageId].text;if(e.type==='gauge')minute=e.value;if(e.type==='sound')soundRequests.push(e.resource);
- },halftime:async fixture=>{
-  renderer.update(windowView());const side=state.clubs[fixture.clubs[0]].human?1:2;await tacticsHost.open({fixture,teams:teamsFor(fixture),side,minute,period:1});
- },finalize:async()=>{
+ // autoInteractions resolves the original modal decisions with their first
+ // option so a watched human fixture can finish unattended. The engine branch
+ // and random sequence are untouched; sound assets are absent in cyberfoot-web
+ // so playSound only records requests.
+ const auto=autoInteractions?createMatchAutoInteractions({renderer,injuryHost,penaltyHost,tacticsHost}):null;
+ const openTactics=options=>{const opened=tacticsHost.open(options);return auto?Promise.all([opened,auto.tactics()]):opened;};
+ const controller=createRegulationController({fixtures,teamsFor,state,rng,decisions:{penalty:c=>auto?auto.penalty(c):penaltyHost.decide(c),injuryReplacement:c=>auto?auto.injury(c):injuryHost.decide(c)},recordEvent:recordCareerEvent,fullGameGauge:!!career.getUint8(0xdd),pauseAtHalftime:!!career.getUint8(0xd9),humanFixtureIds:prepared.humanFixtureIds??runtime.humanFixtures,humanManagerCount:career.getInt32(0x13c,true),sound:!!career.getUint8(0xdc),present:async e=>{
+   if(e.type==='event'){const {fixture,presentation}=showEvent(e.index);if(presentation.redCardPrompt){renderer.update(windowView());await openTactics({fixture,teams:teamsFor(fixture),side:presentation.redCardPrompt.side,minute,period:controller.flow.period});}}
+   if(e.type==='clearFixtureEvent')latestEvents.delete(e.fixtureId);
+   if(e.type==='minute')minute=e.minute;if(e.languageId)period=language[e.languageId].text;if(e.type==='gauge')minute=e.value;if(e.type==='sound')soundRequests.push(e.resource);
+  },halftime:async fixture=>{
+   renderer.update(windowView());const side=state.clubs[fixture.clubs[0]].human?1:2;await openTactics({fixture,teams:teamsFor(fixture),side,minute,period:1});
+  },finalize:async()=>{
   const leagueMetadataId=view(record(save,'records_0066b6ac',fixtures[0].competition)).getInt32(4,true);
   await finalizeMatchBatch(save,fixtures,state,rng,{runtime,teamsFor,historyContext:{competitionGroupId:0,subgroupId:context.subgroup,leagueMetadataId},continueCompetition:route=>continueCompetition(route,runtime),present:(type,resource)=>{if(type==='sound')soundRequests.push(resource);if(type==='finishing')renderer.update(windowView());}});finished=true;
  }});
@@ -44,5 +51,5 @@ export async function openDomesticMatchSession(renderer,{save,state,rng,context,
  // Never await a modal decision inside the UI clock callback: later frames
  // must still service its timer and allow pointer/keyboard input.
  const advanceTime=async ms=>{if(penaltyHost.active||penaltyHost.opening){penaltyHost.advanceTime(ms);return;}if(pending||modal()||finished||failure)return;elapsed+=ms;const interval=Math.max(1,runtime.batchTimerInterval);if(elapsed>=interval){elapsed%=interval;advance()?.catch(error=>console.error(error));await Promise.resolve();}};
- return {advanceTime,advance,controller,fixtures,teamsFor,tacticsHost,penaltyHost,injuryHost,runtime,get pending(){return pending;},snapshot:()=>({form:renderer.frame?.form,tick:controller.flow.tick,minute,period,finished,error:failure?.message,timerEnabled:controller.flow.timerEnabled,modal:modal(),fixtures:windowView().fixtures,soundRequests})};
+ return {advanceTime,advance,controller,fixtures,teamsFor,tacticsHost,penaltyHost,injuryHost,runtime,auto,get pending(){return pending;},snapshot:()=>({form:renderer.frame?.form,tick:controller.flow.tick,minute,period,finished,error:failure?.message,timerEnabled:controller.flow.timerEnabled,modal:modal(),fixtures:windowView().fixtures,autoInteractions:auto?auto.resolved:null,soundRequests})};
 }

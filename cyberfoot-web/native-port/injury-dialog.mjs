@@ -15,5 +15,9 @@ export function createInjuryDecision(context){
  const present=()=>context.present({...view});
  function select(id){if(view.phase!=='selection')return false;if(!view.rows.includes(id))throw RangeError('Player is not an original injury replacement candidate.');view.selectedId=id;present();return true;}
  function confirm(){if(view.phase!=='selection'||(view.selectedId===null&&!view.canContinueEmpty))return false;view.phase='closed';present();resolve(view.selectedId??-1);return true;}
- present();return {view,result,select,confirm};
+ // The original keeper-only branch can render an empty list with the OK button
+ // disabled. The unattended automatic path uses this to continue without a
+ // replacement instead of stalling on a dialog that has no enabled option.
+ function resolveDefault(){if(view.phase!=='selection')return false;view.phase='closed';present();resolve(-1);return true;}
+ present();return {view,result,select,confirm,resolveDefault};
 }

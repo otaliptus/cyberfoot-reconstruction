@@ -16,6 +16,8 @@ import {openCareer} from './career-state.mjs';
 import {careerAgenda,careerSchedule} from './schedule.mjs';
 import {nativeResultsCareerEffects} from './results-native-effects.mjs';
 import {continueResultsCareer} from './results-career-continuation.mjs';
+import {advanceCareerSeason,nextHumanFixtureDay,preSeasonFriendlyView,seasonTransitionView} from './season-transition.mjs';
+import {createSeasonMoveHost} from './season-move-host.mjs';
 import {selectResultHistory} from './results-data.mjs';
 import {settleAutomaticDecider} from './knockout-decider.mjs';
 import {finalizeCupChampion} from './champion-finalization.mjs';
@@ -26,11 +28,12 @@ const [forms,language,bytes,kitAssets,crestAssets]=await Promise.all([fetch('for
 const save=readSave(bytes),career=new DataView(save.career.buffer,save.career.byteOffset,save.career.byteLength),view=b=>new DataView(b.buffer,b.byteOffset,b.byteLength),renderer=await new RouteScreensWindow(document.querySelector('canvas'),forms).prepare();
 const query=new URLSearchParams(location.search);if(query.has('skipHalftime'))career.setUint8(0xd9,0);
 let clock=2015;const rng=new OriginalRandom(2015,()=>clock+=7919);let runtime={nationalManagerCount:0,nationalAssignmentsActive:false},temporary={lineups:[],matchTeams:[]},clubId=11,rounds=0,continuations=[],playedCompetition=null;
-let state,agenda,rows,slots,formation=4,checkedKit=1,shirtImage=null,kitPaths=[],opponentId=null,opponentKit=null,matchSession=null,resultsHost=null,starting=false,startMessage=null,fixtureCompetition=1,fixtureSubgroup=0,roundDay=0,roundDate=0,roundFixtureId=-1,routeScreen=null,routeSessionFixtures=[];
-const stubDialogs={humanDismissal:async()=>{},showChanges:async()=>{},showOffer:async()=>{},humanNext:async()=>{},automaticNext:async()=>{},showMove:async()=>{}};
+let state,agenda,rows,slots,formation=4,checkedKit=1,shirtImage=null,kitPaths=[],opponentId=null,opponentKit=null,matchSession=null,resultsHost=null,starting=false,startMessage=null,fixtureCompetition=1,fixtureSubgroup=0,roundDay=0,roundDate=0,roundFixtureId=-1,routeScreen=null,routeSessionFixtures=[],seasonTransitions=[];
+const seasonMoveHost=createSeasonMoveHost(renderer,{save,language,crestAssets});
+const stubDialogs={humanDismissal:async()=>{},showChanges:async()=>{},showOffer:async()=>{},humanNext:async()=>{},automaticNext:async()=>{},showMove:move=>seasonMoveHost.open(move)};
 function presentScreen(screen){return new Promise(resolve=>{routeScreen={view:screen,resolve};renderer.show(screen);});}
 function resolveScreen(){if(!routeScreen)return false;const entry=routeScreen;routeScreen=null;entry.resolve();return true;}
-for(const key of ['Form13.btjogarClick','Form13.lb_infonextClick','Form26.bt3Click','Form75.btjogarClick','Form77.bt2Click'])renderer.register(key,resolveScreen);
+for(const key of ['Form13.btjogarClick','Form13.lb_infonextClick','Form26.bt3Click','Form75.btjogarClick','Form77.bt2Click','Form85.XiButton1Click','Form85.XiButton2Click'])renderer.register(key,resolveScreen);
 async function presentScreens(screens){for(const screen of screens){await presentScreen(screen);if(screen.form==='Form77'){runtime.routeNationalIndex=screen.managerIndex;selectNationalPlayers(save,screen.country,screen.nationalClubId,{rng});}}}
 function currentDate(){const calendar=careerSchedule(save),day=career.getInt32(0x16c,true);return calendar[day-1]?.date;}
 async function humanNext(){
@@ -46,12 +49,18 @@ async function humanNext(){
  return presentScreen(clubHubView(save,language,{state,date}));
 }
 async function automaticNext(){const screens=automaticNextScreens(save,runtime,language,{state,subgroup:fixtureSubgroup,currentDate:currentDate(),date:currentDate()});return presentScreens(screens);}
-const managerDialogs={humanDismissal:async()=>{},showChanges:async()=>{},showOffer:async()=>{},humanNext,automaticNext,showMove:async()=>{}};
+const managerDialogs={humanDismissal:async()=>{},showChanges:async()=>{},showOffer:async()=>{},humanNext,automaticNext,showMove:move=>seasonMoveHost.open(move)};
 function prepareRound(fromCursor=false){
  agenda=careerAgenda(save);
  let day=agenda.nextDay,date=agenda.nextDate,fixtureId=agenda.fixtureId;
  const onCursor=agenda.currentFixtureId>=0?agenda.fixtures[agenda.currentFixtureId]:null;
  if(fromCursor&&onCursor&&!onCursor.complete){day=agenda.currentDay;date=agenda.currentDate;fixtureId=agenda.currentFixtureId;}
+ // Competition days the human does not play are skipped through the native
+ // calendar, the way the original advances screen by screen.
+ if(fixtureId<0){
+  const skip=nextHumanFixtureDay(save,careerSchedule(save),clubId,agenda.nextDay);
+  if(skip>agenda.nextDay){career.setInt32(0x16c,skip-1,true);agenda=careerAgenda(save);day=agenda.nextDay;date=agenda.nextDate;fixtureId=agenda.fixtureId;}
+ }
  if(fixtureId<0)return false;
  roundDay=day;roundDate=date;roundFixtureId=fixtureId;
  const scheduled=view(record(save,'records_0066afa0',fixtureId));fixtureCompetition=scheduled.getInt32(0x18,true);fixtureSubgroup=scheduled.getInt32(0x38,true);
@@ -80,16 +89,15 @@ renderer.register('Form87.bt_irprojogoClick',async()=>{
   const knockoutOptions={decide:async id=>settleAutomaticDecider(save,id,routeSessionFixtures,rng).winner,champion:async(winner,fixtureId)=>finalizeCupChampion(save,winner,fixtureId,{activeSubgroup:fixtureSubgroup})};
   const session=await openRouteMatchSession(renderer,{save,state,rng,context:{competitionType:fixtureCompetition,subgroup:fixtureSubgroup,currentDate:roundDate},language,crestAssets,kitAssets,knockoutOptions,continueCompetition:async(route,matchRuntime)=>{
    matchSession=null;
-   if(route!=='batch'){playedCompetition=route;await presentScreensForRoute(route);rounds++;continuations.push({day:career.getInt32(0x16c,true),competition:runtime.nextCompetition,human:runtime.humanParticipation??null,played:playedCompetition});if(!prepareRound(true))startMessage=language[484].text;else await renderer.show(viewModel());return;}
+    if(route!=='batch'){playedCompetition=route;await presentScreensForRoute(route);rounds++;continuations.push({day:career.getInt32(0x16c,true),competition:runtime.nextCompetition,human:runtime.humanParticipation??null,played:playedCompetition});await finishContinuation();return;}
    await continueDomesticCompetition(save,matchRuntime,{close:async()=>{
     if(career.getInt32(0x88,true)===1){resultsHost=createResultsHost(renderer,{save,state,language,crestAssets,onContinue:()=>renderer.close()});await resultsHost.open({subgroup:fixtureSubgroup,caption:language[225].text});resultsHost=null;}
     else if(selectResultHistory(save,{subgroup:fixtureSubgroup,currentDate:currentDate()}).length)await presentScreen(competitionTableView(save,language,{subgroup:fixtureSubgroup,currentDate:currentDate(),state,date:currentDate()}));
     const effects=nativeResultsCareerEffects(save,runtime,{rng,temporary,calendar:careerSchedule(save),managerDialogs});
     await continueResultsCareer(save,runtime,effects,careerSchedule(save));
-    rounds++;continuations.push({day:career.getInt32(0x16c,true),competition:runtime.nextCompetition,human:runtime.humanParticipation??null,played:playedCompetition});
-    if(!prepareRound(true))startMessage=language[484].text;
-    else await renderer.show(viewModel());
-   }});
+     rounds++;continuations.push({day:career.getInt32(0x16c,true),competition:runtime.nextCompetition,human:runtime.humanParticipation??null,played:playedCompetition});
+     await finishContinuation();
+    }});
   }});
   routeSessionFixtures=session.fixtures;matchSession=session;
  }catch(error){startMessage=String(error);throw error;}finally{starting=false;}
@@ -99,16 +107,35 @@ async function presentScreensForRoute(route){
  if(route==='friendly'){await presentScreen(clubHubView(save,language,{state,date:currentDate()}));return;}
  await presentScreen(competitionTableView(save,language,{subgroup:fixtureSubgroup,currentDate:currentDate(),state,date:currentDate()}));
 }
+async function runSeasonTransition(){
+ const summary=seasonTransitionView(save,{language,crestAssets});
+ await presentScreen(summary);
+ await presentScreen(preSeasonFriendlyView(language));
+ const result=advanceCareerSeason(save);
+ const nextDay=nextHumanFixtureDay(save,result.calendar,clubId,1);
+ if(nextDay>0)career.setInt32(0x16c,nextDay-1,true);
+ seasonTransitions.push({season:result.season,fixtures:result.fixtures.length,champion:summary.summary.champion?.name??null,human:summary.summary.human?.outcome??null,nextDay});
+ return result;
+}
+async function finishContinuation(){
+ if(runtime.nextCompetition===-1)await runSeasonTransition();
+ if(!prepareRound(true))startMessage=language[484].text;else await renderer.show(viewModel());
+}
 renderer.onLineupDrop=({source,targetSlot,x,y})=>{if(starting||matchSession)return;if(targetSlot){if(source.playerId!==undefined){const row=rows.find(r=>r.playerId===source.playerId);if(row)slots[targetSlot]=row;}else if(source.slot){const tmp=slots[source.slot];slots[source.slot]=slots[targetSlot];slots[targetSlot]=tmp;}}renderer.update(viewModel());};
 prepareRound();await renderer.show(viewModel());
-window.render_game_to_text=()=>JSON.stringify({developmentProof:true,completeGame:false,form:renderer.frame?.form??null,rounds,startMessage,starting,agenda:agenda?{nextDay:agenda.nextDay,nextDate:agenda.nextDate,fixtureId:agenda.fixtureId,competition:agenda.nextCompetition}:null,roundDay,roundDate,roundFixtureId,fixtureCompetition,fixtureSubgroup,playedCompetition,cursorDay:career.getInt32(0x16c,true),nextCompetition:runtime.nextCompetition,routeScreen:routeScreen?routeScreen.view.form:null,continuations,round:career.getInt32(0x4c,true),leg:career.getInt32(0x50,true),match:matchSession?.snapshot()??null,results:resultsHost?{active:true}:null,club:state?.clubs[clubId]?.name??null});
+window.render_game_to_text=()=>JSON.stringify({developmentProof:true,completeGame:false,form:renderer.frame?.form??null,rounds,season:career.getInt32(0xc0,true),seasonTransitions,startMessage,starting,agenda:agenda?{nextDay:agenda.nextDay,nextDate:agenda.nextDate,fixtureId:agenda.fixtureId,competition:agenda.nextCompetition}:null,roundDay,roundDate,roundFixtureId,fixtureCompetition,fixtureSubgroup,playedCompetition,cursorDay:career.getInt32(0x16c,true),nextCompetition:runtime.nextCompetition,routeScreen:routeScreen?routeScreen.view.form:null,continuations,round:career.getInt32(0x4c,true),leg:career.getInt32(0x50,true),match:matchSession?.snapshot()??null,results:resultsHost?{active:true}:null,club:state?.clubs[clubId]?.name??null});
 window.advanceTime=async ms=>matchSession?.advanceTime(ms);
-window.careerLoop={save:()=>writeSave(save),renderer,get state(){return state;},get match(){return matchSession;},get results(){return resultsHost;},get agenda(){return agenda;},get rounds(){return rounds;},get continuations(){return continuations;},continueRoute:resolveScreen,async runContinuation(){
+async function runContinuationFlow(){
  const calendar=careerSchedule(save),effects=nativeResultsCareerEffects(save,runtime,{rng,temporary,calendar,managerDialogs:stubDialogs});
  await continueResultsCareer(save,runtime,effects,calendar);
  rounds++;continuations.push({day:career.getInt32(0x16c,true),competition:runtime.nextCompetition,human:runtime.humanParticipation??null,played:playedCompetition});
- if(!prepareRound(true))startMessage=language[484].text;else await renderer.show(viewModel());
- return {rounds,agenda,continuations};
+ await finishContinuation();
+ return {rounds,agenda,continuations,season:career.getInt32(0xc0,true),seasonTransitions};
+}
+window.careerLoop={save:()=>writeSave(save),renderer,get state(){return state;},get match(){return matchSession;},get results(){return resultsHost;},get agenda(){return agenda;},get rounds(){return rounds;},get continuations(){return continuations;},get season(){return career.getInt32(0xc0,true);},get seasonTransitions(){return seasonTransitions;},continueRoute:resolveScreen,runContinuation:runContinuationFlow,showSeasonMove:move=>seasonMoveHost.open(move),async forceSeasonEnd(){
+ const calendar=careerSchedule(save);let last=0;for(const row of calendar)if(row.competition>0)last=row.dayIndex;
+ career.setInt32(0x16c,last,true);
+ return runContinuationFlow();
 }};
 if(!new URLSearchParams(location.search).has('manualClock')){let last=performance.now();const animate=now=>{const delta=now-last;last=now;matchSession?.advanceTime(delta);requestAnimationFrame(animate);};requestAnimationFrame(animate);}
 </script>

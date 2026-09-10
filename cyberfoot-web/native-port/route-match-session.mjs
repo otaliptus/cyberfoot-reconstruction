@@ -8,6 +8,7 @@ import {clubCrestPath} from './club-crest.mjs';
 import {createMatchTacticsHost} from './match-tactics-host.mjs';
 import {createPenaltyDialogHost} from './penalty-dialog-host.mjs';
 import {createInjuryDialogHost} from './injury-dialog-host.mjs';
+import {createMatchAutoInteractions} from './match-auto-interactions.mjs';
 import {prepareDomesticTeams} from './prematch-teams.mjs';
 import {generateAILineup} from './ai-lineup.mjs';
 import {randomizeAITactics} from './tactics.mjs';
@@ -27,7 +28,7 @@ export function prepareRouteTeams(save,state,rng,{competitionType,subgroup,curre
 /** Shared native match session for the playable batch competitions. Same
  * controller order as openDomesticMatchSession with the original competition
  * set and explicit knockout adapters supplied by the caller. */
-export async function openRouteMatchSession(renderer,{save,state,rng,context,language,crestAssets,kitAssets,knockoutOptions,nationalOptions,settlementOptions,continueCompetition}){
+export async function openRouteMatchSession(renderer,{save,state,rng,context,language,crestAssets,kitAssets,knockoutOptions,nationalOptions,settlementOptions,autoInteractions=false,continueCompetition}){
  const career=view(save.career),displayRound=career.getInt32(0x4c,true);
  if(![1,2,4,6].includes(context.competitionType)||career.getInt32(0x168,true)!==4)throw RangeError('This presentation supports original batch competitions 1,2,4 and 6.');
  if(typeof continueCompetition!=='function')throw TypeError('Competition continuation is required.');
@@ -42,12 +43,18 @@ export async function openRouteMatchSession(renderer,{save,state,rng,context,lan
  const penaltyHost=createPenaltyDialogHost(renderer,{save,state,language,assets:crestAssets,playSound:name=>soundRequests.push(name)}),injuryHost=createInjuryDialogHost(renderer,{state,language,playSound:name=>soundRequests.push(name)});
  const showEvent=index=>{const event=state.events[index],fixture=fixtures.find(f=>f.id===event[5]);const presentation=matchEventPresentation(event,fixture,state,language,{silent:runtime.silent,sound:!!career.getUint8(0xdc),fullGameGauge:!!career.getUint8(0xdd)});latestEvents.set(fixture.id,presentation);return {fixture,presentation};};
  const tacticsHost=createMatchTacticsHost(renderer,{save,state,language,assets:crestAssets,kitAssets,rng,recordEvent:recordCareerEvent,presentEvent:showEvent});
- const controller=createRegulationController({fixtures,teamsFor,state,rng,decisions:{penalty:c=>penaltyHost.decide(c),injuryReplacement:c=>injuryHost.decide(c)},recordEvent:recordCareerEvent,fullGameGauge:!!career.getUint8(0xdd),pauseAtHalftime:!!career.getUint8(0xd9),humanFixtureIds:prepared.humanFixtureIds??runtime.humanFixtures,humanManagerCount:career.getInt32(0x13c,true),sound:!!career.getUint8(0xdc),present:async e=>{
-  if(e.type==='event'){const {fixture,presentation}=showEvent(e.index);if(presentation.redCardPrompt){renderer.update(windowView());await tacticsHost.open({fixture,teams:teamsFor(fixture),side:presentation.redCardPrompt.side,minute,period:controller.flow.period});}}
+ // autoInteractions resolves the original modal decisions with their first
+ // option so a watched human fixture can finish unattended. The engine branch
+ // and random sequence are untouched; sound assets are absent in cyberfoot-web
+ // so playSound only records requests.
+ const auto=autoInteractions?createMatchAutoInteractions({renderer,injuryHost,penaltyHost,tacticsHost}):null;
+ const openTactics=options=>{const opened=tacticsHost.open(options);return auto?Promise.all([opened,auto.tactics()]):opened;};
+ const controller=createRegulationController({fixtures,teamsFor,state,rng,decisions:{penalty:c=>auto?auto.penalty(c):penaltyHost.decide(c),injuryReplacement:c=>auto?auto.injury(c):injuryHost.decide(c)},recordEvent:recordCareerEvent,fullGameGauge:!!career.getUint8(0xdd),pauseAtHalftime:!!career.getUint8(0xd9),humanFixtureIds:prepared.humanFixtureIds??runtime.humanFixtures,humanManagerCount:career.getInt32(0x13c,true),sound:!!career.getUint8(0xdc),present:async e=>{
+  if(e.type==='event'){const {fixture,presentation}=showEvent(e.index);if(presentation.redCardPrompt){renderer.update(windowView());await openTactics({fixture,teams:teamsFor(fixture),side:presentation.redCardPrompt.side,minute,period:controller.flow.period});}}
   if(e.type==='clearFixtureEvent')latestEvents.delete(e.fixtureId);
   if(e.type==='minute')minute=e.minute;if(e.languageId)period=language[e.languageId].text;if(e.type==='gauge')minute=e.value;if(e.type==='sound')soundRequests.push(e.resource);
  },halftime:async fixture=>{
-  renderer.update(windowView());const side=state.clubs[fixture.clubs[0]].human?1:2;await tacticsHost.open({fixture,teams:teamsFor(fixture),side,minute,period:1});
+  renderer.update(windowView());const side=state.clubs[fixture.clubs[0]].human?1:2;await openTactics({fixture,teams:teamsFor(fixture),side,minute,period:1});
  },finalize:async()=>{
   const leagueMetadataId=view(record(save,'records_0066b6ac',fixtures[0].competition)).getInt32(4,true);
   await finalizeMatchBatch(save,fixtures,state,rng,{runtime,teamsFor,historyContext:{competitionGroupId:0,subgroupId:context.subgroup,leagueMetadataId},knockoutOptions:{...knockoutOptions,subgroup:runtime.subgroup,alternateRound:runtime.alternateRound},nationalOptions,nationalPhase:runtime.nationalPhase,settlementOptions,continueCompetition:route=>continueCompetition(route,runtime),present:(type,resource)=>{if(type==='sound')soundRequests.push(resource);if(type==='finishing')renderer.update(windowView());}});finished=true;
@@ -55,5 +62,5 @@ export async function openRouteMatchSession(renderer,{save,state,rng,context,lan
  const modal=()=>!!(tacticsHost.active||injuryHost.active||injuryHost.opening||penaltyHost.active||penaltyHost.opening);
  const advance=()=>{if(pending||finished||failure||modal())return pending;pending=controller.advance().then(()=>{if(renderer.frame?.form==='Form46')renderer.update(windowView());},error=>{failure=error;throw error;}).finally(()=>{pending=null;});return pending;};
  const advanceTime=async ms=>{if(penaltyHost.active||penaltyHost.opening){penaltyHost.advanceTime(ms);return;}if(pending||modal()||finished||failure)return;elapsed+=ms;const interval=Math.max(1,runtime.batchTimerInterval);if(elapsed>=interval){elapsed%=interval;advance()?.catch(error=>console.error(error));await Promise.resolve();}};
- return {advanceTime,advance,controller,fixtures,teamsFor,tacticsHost,penaltyHost,injuryHost,runtime,get pending(){return pending;},snapshot:()=>({form:renderer.frame?.form,tick:controller.flow.tick,minute,period,finished,error:failure?.message,timerEnabled:controller.flow.timerEnabled,modal:modal(),fixtures:windowView().fixtures,soundRequests})};
+ return {advanceTime,advance,controller,fixtures,teamsFor,tacticsHost,penaltyHost,injuryHost,runtime,auto,get pending(){return pending;},snapshot:()=>({form:renderer.frame?.form,tick:controller.flow.tick,minute,period,finished,error:failure?.message,timerEnabled:controller.flow.timerEnabled,modal:modal(),fixtures:windowView().fixtures,autoInteractions:auto?auto.resolved:null,soundRequests})};
 }

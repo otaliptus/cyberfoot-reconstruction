@@ -395,6 +395,10 @@ Career menu: labels resolve, createCareerSave is accepted by openCareer (Node Ma
 Route screens: cup round 133->147 advanced to cup round 2 through native batch/knockout controllers; national setup and assignment produced 879 call-ups with next agenda 203.
 Contract/loan window: player 224 refused at 1, accepted counteroffer 6422 for 24 months, excessive offer blocked; loan list cap, division gate, loan-in+recall and loan-out (224 → club 4) all mutated the real save deterministically.
 Training window: senior 224 (#Schulze) and youth 6249 developed through native routines, sessions accumulate, plan replay is byte-identical, invalid focus/session bounds rejected.
+Original career season transition: settlement ran, 9 manager moves cleared, season2 calendar (18 league days) and 360 fixtures advanced, first human fixture #437; save round-trip passed.
+Automatic decisions pick the first original injury/penalty option deterministically, including the disabled keeper-only dialog.
+Unattended watched match resolved injury/penalty/halftime modals and reached full time.
+Match presentation: unattended 1 route(s), 186 offline ticks, byte-identical replay.
 800 whole original season-end manager move comparisons passed (stack slot controlled).
 Original career fixture: 10 season-end manager moves, slot flags cleared, deterministic replay, save round-trip and guards passed.
 Original career fixture: full results continuation with native engines and dev hosts reached humanNext; save round-trip and host guards passed.

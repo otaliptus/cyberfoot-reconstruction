@@ -44,15 +44,27 @@ export class FormRenderer {
  }
  control(node,parent,ox,oy){const c=this.ctx,p={...node.properties,...this.frame.properties?.[node.name]};if(p.Visible===false)return;const x=(p.Left??0)+ox,y=(p.Top??0)+oy,w=p.Width??0,h=p.Height??0;
   const font={};for(const key of ['Font.Height','Font.Name','Font.Style','Font.Color'])font[key]=p[key]??parent[key];
-  c.font=`${font['Font.Style']?.includes('fsBold')?'bold ':''}${Math.abs(font['Font.Height']??-11)}px "${font['Font.Name']==='MS Sans Serif'?'Arial':font['Font.Name']??'Arial'}"`;c.textBaseline='top';c.textAlign='left';
+  c.font=`${font['Font.Style']?.includes('fsBold')?'bold ':''}${font['Font.Style']?.includes('fsItalic')?'italic ':''}${Math.abs(font['Font.Height']??-11)}px "${font['Font.Name']==='MS Sans Serif'?'Arial':font['Font.Name']??'Arial'}"`;c.textBaseline='top';c.textAlign='left';
   if(node.class_name==='TShape'){c.fillStyle=color(p['Brush.Color']??'clWhite');c.fillRect(x,y,w,h);c.strokeStyle=color(p['Pen.Color']??'clBlack');c.lineWidth=p['Pen.Width']??1;if(p['Pen.Style']!=='psClear')c.strokeRect(x+0.5,y+0.5,w-1,h-1);}
   else if(['TTntLabel','TLabel','TUniHTMLabel'].includes(node.class_name)){
-   let text=plainText(p.HTMLText??p.Caption),align=p.Alignment==='taRightJustify'?'right':p.Alignment==='taCenter'||/align="center"/.test(p.HTMLText??'')?'center':'left';
+   const text=plainText(p.HTMLText??p.Caption);let align=p.Alignment==='taRightJustify'?'right':p.Alignment==='taCenter'||/align="center"/.test(p.HTMLText??'')?'center':'left';
    // AutoSize labels grow to text width in the original; fixed labels retain alignment.
    if(node.class_name==='TUniHTMLabel'&&p.AutoSizing!==false)align='left';
+   // Opaque labels fill their original Color rectangle; HTML labels with a fixed
+   // width wrap, and VAlignment positions the wrapped block as in the DFM.
+   if(p.Transparent===false){c.fillStyle=color(p.Color??'clBtnFace');c.fillRect(x,y,w,h);}
    c.textAlign=align;const tx=x+(align==='right'?w:align==='center'?w/2:0);
-   if((p.HTMLText??'').includes('<shad>')){c.fillStyle=color(p.ShadowColor??'clBlack');c.fillText(text,tx+(p.ShadowOffset??1),y+(p.ShadowOffset??1));}
-   c.fillStyle=color(font['Font.Color']);c.fillText(text,tx,y);
+   const lines=[];for(const paragraph of String(text).split(/\r?\n/)){
+    if(w<=0||(p.WordWrap!==true&&!(node.class_name==='TUniHTMLabel'&&p.AutoSizing===false))){lines.push(paragraph);continue;}
+    let line='';for(const word of paragraph.split(/\s+/).filter(Boolean)){const next=line?line+' '+word:word;if(line&&c.measureText(next).width>w){lines.push(line);line=word;}else line=next;}lines.push(line);
+   }
+   const lineHeight=Math.abs(font['Font.Height']??-11)+2,blockHeight=lines.length*lineHeight;
+   const top=p.VAlignment==='tvaCenter'?y+(h-blockHeight)/2:p.VAlignment==='tvaBottom'?y+h-blockHeight:y;
+   const shadow=(p.HTMLText??'').includes('<shad>')?{offset:p.ShadowOffset??1,color:color(p.ShadowColor??'clBlack')}:null;
+   lines.forEach((line,index)=>{
+    if(shadow){c.fillStyle=shadow.color;c.fillText(line,tx+shadow.offset,top+index*lineHeight+shadow.offset);}
+    c.fillStyle=color(font['Font.Color']);c.fillText(line,tx,top+index*lineHeight);
+   });
   }else if(node.class_name==='TTimer'){
    if(p.Enabled)throw new UnportedOperationError('Active timer '+node.name);
   }else if(node.class_name==='TEdit'||node.class_name==='TUniHTMLCombobox'){
