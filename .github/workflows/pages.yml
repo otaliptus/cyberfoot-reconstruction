@@ -24,10 +24,14 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
+      - name: Stage site without test oracle vectors
+        run: |
+          mkdir -p _site
+          rsync -a --exclude 'tests/*-vectors.json*' cyberfoot-web/native-port/ _site/
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: cyberfoot-web/native-port
+          path: _site
   deploy:
     needs: build
     runs-on: ubuntu-latest
