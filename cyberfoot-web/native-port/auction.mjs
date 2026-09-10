@@ -100,3 +100,15 @@ export function auctionResolve(save,runtime,{rng}={}){
  else records.push(['timer',0x3a0,1]);
  state.auctionRecords=records;return records;
 }
+import {completePaidTransfer} from './paid-transfer.mjs';
+import {currentCareerDate} from './calendar.mjs';
+/** Whole005a4354. The original transfers the player through650ec4; the page,
+ * caption and crest updates are returned as records for the Form23 host. */
+export function auctionFinalize(save,runtime,{accept=true,buyer=-1,price=0,player=-1,rng,date=currentCareerDate(save)}={}){
+ const state=runtime??{},records=[];state.auctionPreviousClub=0;
+ if(!accept){records.push(['page',0x37c,1],['hide',0x378,0],['language',0x174],['caption',0x39c]);state.auctionRecords=records;return {records};}
+ records.push(['page',0x37c,1],['language',0x175],['caption',0x39c,{buyer,price}],['crest',0x378,buyer]);
+ if(!rng||typeof rng.below!=='function')throw Error('Original random generator required for auction settlement.');
+ completePaidTransfer(save,player,buyer,price,{rng,runtime:state,date});
+ records.push(['transfer',player,buyer,price]);state.auctionRecords=records;return {records};
+}

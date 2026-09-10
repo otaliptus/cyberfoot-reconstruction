@@ -144,6 +144,8 @@ await import('./auction-bid-parity.mjs');
 
 await import('./auction-resolve-parity.mjs');
 
+await import('./auction-finalize-integration.mjs');
+
 await import('./season-move-parity.mjs');
 
 await import('./season-end-integration.mjs');

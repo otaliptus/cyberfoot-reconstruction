@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';
+import {readSave,writeSave,record} from '../save-format.mjs';import {auctionFinalize} from '../auction.mjs';import {currentCareerDate} from '../calendar.mjs';import {OriginalRandom} from '../match-core.mjs';
+const load=()=>readSave(fs.readFileSync(new URL('./original-career.s15',import.meta.url))),v=b=>new DataView(b.buffer,b.byteOffset,b.byteLength);
+const prepare=()=>{const save=load(),buyer=11,players=save.sections.find(s=>s.name==='players'),p=v(players.data),seller=(()=>{for(let id=1;id<players.count;id++)if(p.getInt32(id*304+0x20,true)>=0&&p.getInt32(id*304+0x20,true)!==buyer&&p.getInt32(id*304+0x24,true)>=0)return id;throw Error('no seller');})(),sellerClub=p.getInt32(seller*304+0x20,true),club=v(record(save,'clubs',buyer));club.setBigInt64(0x48,10000000000n,true);return {save,buyer,seller,sellerClub,date:currentCareerDate(save)};};
+const {save,buyer,seller,sellerClub,date}=prepare(),history=save.sections.find(s=>s.name==='records_0066b070'),historyCount=history.count,rng=new OriginalRandom(0x5a4354),runtime={};
+const {records}=auctionFinalize(save,runtime,{accept:true,buyer,price:50000,player:seller,rng,date});
+assert.equal(v(record(save,'players',seller)).getInt32(0x20,true),buyer);assert.equal(history.count,historyCount+1);assert.deepEqual(records[0],['page',0x37c,1]);assert.deepEqual(records.at(-1),['transfer',seller,buyer,50000]);assert.equal(v(record(save,'clubs',buyer)).getBigInt64(0x48,true)<10000000000n,true);
+const bytes=writeSave(save);assert.deepEqual(writeSave(readSave(bytes)),bytes);
+const second=prepare().save;auctionFinalize(second,{}, {accept:true,buyer,price:50000,player:seller,rng:new OriginalRandom(0x5a4354),date});assert.deepEqual(writeSave(second),bytes);
+const rejected=prepare().save,rejectedBefore=writeSave(rejected);auctionFinalize(rejected,{}, {accept:false,buyer:-1,price:0,player:seller});assert.deepEqual(writeSave(rejected),rejectedBefore);
+const guarded=prepare().save,guardedBytes=writeSave(guarded);assert.throws(()=>auctionFinalize(guarded,{}, {accept:true,buyer,price:1,player:seller}),/random generator/);assert.deepEqual(writeSave(guarded),guardedBytes);
+console.log(`Original career fixture: auction settlement moved player ${seller} from club ${sellerClub} to ${buyer}, charged the fee, archived history and round-tripped; reject and guards passed.`);
