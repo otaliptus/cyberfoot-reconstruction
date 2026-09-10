@@ -93,7 +93,7 @@ This is not pixel-perfect certification. Font rasterization, some control skins,
 
 ## Verification and repairs
 
-The cumulative development ledger records **253,107 original-comparison cases** through the latest season-end work. This is a historical coverage count, not unique features or a formal equivalence guarantee. Older READMEs contain earlier totals.
+The cumulative development ledger records **253,707 original-comparison cases** through the latest auction work. This is a historical coverage count, not unique features or a formal equivalence guarantee. Older READMEs contain earlier totals.
 
 Verification combines isolated original-instruction comparisons, whole-routine comparisons, original-save integration, browser interaction tests and screenshot inspection. Depending on the test, adapters substitute Delphi storage/string operations, UI boundaries or unported children. Those distinctions limit the claims each test supports.
 

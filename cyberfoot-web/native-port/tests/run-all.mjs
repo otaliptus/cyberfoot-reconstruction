@@ -138,6 +138,8 @@ await import('./human-next-state-parity.mjs');
 
 await import('./automatic-next-state-parity.mjs');
 
+await import('./auction-lot-parity.mjs');
+
 await import('./season-move-parity.mjs');
 
 await import('./season-end-integration.mjs');
