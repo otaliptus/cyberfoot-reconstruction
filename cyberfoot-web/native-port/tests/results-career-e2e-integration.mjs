@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';
+import {readSave,writeSave} from '../save-format.mjs';import {nativeResultsCareerEffects} from '../results-native-effects.mjs';import {continueResultsCareer} from '../results-career-continuation.mjs';import {careerSchedule} from '../schedule.mjs';import {OriginalRandom} from '../match-core.mjs';
+const load=()=>readSave(fs.readFileSync(new URL('./original-career.s15',import.meta.url))),v=b=>new DataView(b.buffer,b.byteOffset,b.byteLength);
+const save=load(),c=v(save.career),calendar=careerSchedule(save);
+c.setInt32(0x88,1,true);c.setInt32(0xc0,1,true);c.setInt32(0x6c8,1,true);c.setInt32(0x168,0,true);c.setInt32(0x16c,1,true);
+const calls=[],managerDialogs={humanDismissal:async()=>calls.push('humanDismissal'),showChanges:async()=>calls.push('showChanges'),showOffer:async()=>calls.push('showOffer'),humanNext:async()=>calls.push('humanNext'),automaticNext:async()=>calls.push('automaticNext'),showMove:async()=>calls.push('showMove')};
+const runtime={nationalManagerCount:0,nationalAssignmentsActive:false},temporary={lineups:[],matchTeams:[]},rng=new OriginalRandom(0x5f9388),effects=nativeResultsCareerEffects(save,runtime,{rng,temporary,calendar,managerDialogs});
+assert.throws(()=>nativeResultsCareerEffects(save,runtime,{rng,temporary,calendar,managerDialogs:{humanDismissal:async()=>{},showChanges:async()=>{},showOffer:async()=>{},humanNext:async()=>{}}}),/Both original next-screen hosts/);
+await continueResultsCareer(save,runtime,effects,calendar);
+assert.ok(calls.includes('humanNext')||calls.includes('automaticNext'),`Expected next screen, got ${calls.join(',')}`);
+assert.ok(Number.isFinite(runtime.completedMatchDate));
+const bytes=writeSave(save);assert.deepEqual(writeSave(readSave(bytes)),bytes);
+const guarded=load(),guardedBytes=writeSave(guarded);
+assert.throws(()=>nativeResultsCareerEffects(guarded,{},{rng:new OriginalRandom(1),temporary:{lineups:[],matchTeams:[]},managerDialogs:{humanDismissal:()=>{},showChanges:()=>{},humanNext:()=>{},automaticNext:()=>{}}}),/manager effects required/);
+assert.deepEqual(writeSave(guarded),guardedBytes);
+console.log(`Original career fixture: full results continuation with native engines and dev hosts reached ${calls[calls.length-1]}; save round-trip and host guards passed.`);

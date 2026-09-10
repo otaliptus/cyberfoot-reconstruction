@@ -142,6 +142,8 @@ await import('./season-move-parity.mjs');
 
 await import('./season-end-integration.mjs');
 
+await import('./results-career-e2e-integration.mjs');
+
 await import('./continental-post-round-whole-parity.mjs');
 
 await import('./player-move-parity.mjs');
