@@ -138,6 +138,10 @@ await import('./human-next-state-parity.mjs');
 
 await import('./automatic-next-state-parity.mjs');
 
+await import('./season-move-parity.mjs');
+
+await import('./season-end-integration.mjs');
+
 await import('./continental-post-round-whole-parity.mjs');
 
 await import('./player-move-parity.mjs');

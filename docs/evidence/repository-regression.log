@@ -384,6 +384,8 @@ Original career fixture: club-world champions, 18-country table, six-flag field,
 300 original national-next and cup/other dispatch comparisons passed (subcontroller adapters).
 800 original human-next state comparisons passed (400 under-limit, 400 national index; no adapters).
 600 whole original automatic-next state comparisons passed (UI boundary adapters only).
+800 whole original season-end manager move comparisons passed (stack slot controlled).
+Original career fixture: 10 season-end manager moves, slot flags cleared, deterministic replay, save round-trip and guards passed.
 200 whole original continental post-round comparisons passed (storage adapters only).
 2000 original player move/return comparisons passed (allocation adapter only)
 Original career fixture: capacity-limited returns, repeated pending notice, retry after a vacancy, future-date exclusion, immediate recall and save reload passed; incomplete Continue fails before mutation.
