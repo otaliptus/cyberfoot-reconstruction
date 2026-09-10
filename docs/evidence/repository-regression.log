@@ -381,6 +381,7 @@ Original results data: 2200 label/selection blocks passed.
 Original career fixture: 12 national sides, full-quota selections, ineligible countries preserved, deterministic replay, save round-trip, assignment restoration and argument guards passed.
 400 whole original club-world comparisons passed (storage adapters only).
 Original career fixture: club-world champions, 18-country table, six-flag field, deterministic replay, save round-trip, error path and guards passed.
+300 original national-next and cup/other dispatch comparisons passed (subcontroller adapters).
 2000 original player move/return comparisons passed (allocation adapter only)
 Original career fixture: capacity-limited returns, repeated pending notice, retry after a vacancy, future-date exclusion, immediate recall and save reload passed; incomplete Continue fails before mutation.
 1600 original paid-transfer comparisons passed (allocation adapter only)
