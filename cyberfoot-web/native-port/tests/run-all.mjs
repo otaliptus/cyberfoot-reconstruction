@@ -152,6 +152,11 @@ await import('./auction-finalize-integration.mjs');
 
 await import('./auction-window-node.mjs');
 
+await import('./career-menu-node.mjs');
+await import('./route-screens-node.mjs');
+await import('./contract-window-node.mjs');
+await import('./training-window-node.mjs');
+
 await import('./season-move-parity.mjs');
 
 await import('./season-end-integration.mjs');

@@ -1,0 +1,57 @@
+<!doctype html><meta charset="utf-8"><title>Original training window — development</title><style>body{margin:0;padding:16px;font:13px Arial,sans-serif;background:#3a6ea5;color:#fff}h2{font-size:15px;margin:18px 0 6px}section{margin-top:10px}pre{background:#111;color:#8f8;padding:8px;max-height:240px;overflow:auto;white-space:pre-wrap}button{margin-right:4px}input{width:60px}</style>
+<h1>Player training / development — development preview</h1>
+<div id="preview-controls">
+ <label>Club id: <input id="clubId" type="number" min="0" value="11"></label>
+ <label>Focus:
+  <select id="focus">
+   <option value="automatic">automatic</option>
+   <option value="senior">senior</option>
+   <option value="youth">youth</option>
+   <option value="decline">decline</option>
+  </select>
+ </label>
+ <label>Sessions: <input id="sessions" type="number" min="1" max="52" value="8"></label>
+ <button id="applySelected" data-training-apply-selected>Train selected player</button>
+ <button id="applyPlan" data-training-apply-plan>Apply plan</button>
+</div>
+<div id="training"></div>
+<h2>Events</h2>
+<pre id="log" data-training-log></pre>
+<script type="module">
+import {readSave,record,shortString} from './save-format.mjs';
+import {mountTrainingWindow,trainingRoster,applyTraining,createTrainingSession} from './training-window.mjs';
+const [language,bytes]=await Promise.all([fetch('language.json').then(response=>response.json()),fetch('tests/original-career.s15').then(response=>response.arrayBuffer())]);
+const save=readSave(bytes),view=bytes=>new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength);
+const manual=new URLSearchParams(location.search).has('manualClock');
+const humanClub=view(save.career).getInt32(8,true);
+const logBox=document.querySelector('#log'),lines=[];
+const log=line=>{lines.push(line);if(lines.length>200)lines.shift();logBox.textContent=lines.join('\n');};
+const clubInput=document.querySelector('#clubId'),focusInput=document.querySelector('#focus'),sessionsInput=document.querySelector('#sessions');
+const roster=()=>trainingRoster(save,Number(clubInput.value));
+const senior=()=>roster().find(row=>!row.youth&&row.age<32)??roster()[0];
+let host=null,selected=null;
+function formatReport(report){return `#${report.id} ${report.focus} x${report.sessions}: skill ${report.before.skill}→${report.after.skill} progress ${report.before.progress.toFixed(2)}→${report.after.progress.toFixed(2)} youth ${report.before.youthRating}→${report.after.youthRating}`;}
+function mount(){
+ host?.element.remove();host=null;
+ const clubId=Number(clubInput.value),name=shortString(record(save,'clubs',clubId),0,25);
+ selected=roster()[0]?.id??null;
+ try{host=mountTrainingWindow(document.querySelector('#training'),{save,clubId,language,onEvent:event=>log(`train ${JSON.stringify(event)}`)});log(`--- training club ${clubId} (${name}) rows ${roster().length}`);}
+ catch(error){log(`training error: ${error.message}`);}
+ if(selected!==null){host.session.setFocus(selected,focusInput.value);host.session.setSessions(selected,Number(sessionsInput.value));host.render();}
+}
+document.querySelector('#applySelected').addEventListener('click',()=>{
+ if(selected===null)return;
+ const report=applyTraining(save,selected,focusInput.value,{sessions:Number(sessionsInput.value)});
+ log(formatReport(report));host?.render();
+});
+document.querySelector('#applyPlan').addEventListener('click',()=>{
+ if(!host)return;
+ host.session.setFocus(selected,focusInput.value);host.session.setSessions(selected,Number(sessionsInput.value));
+ const results=host.session.applyPlan();for(const report of results)log(formatReport(report));host.render();
+});
+clubInput.addEventListener('change',mount);focusInput.addEventListener('change',()=>{if(host&&selected!==null){host.session.setFocus(selected,focusInput.value);host.render();}});sessionsInput.addEventListener('change',()=>{if(host&&selected!==null){host.session.setSessions(selected,Number(sessionsInput.value));host.render();}});
+mount();
+log(manual?'ready (manual clock)':'ready (auto clock)');
+window.trainingDevelopment={save,language,get host(){return host;},get session(){return host?.session??null;},roster,selected:()=>selected,apply:(id=selected,focus=focusInput.value,sessions=Number(sessionsInput.value))=>applyTraining(save,id,focus,{sessions}),lines,humanClub};
+window.render_game_to_text=()=>JSON.stringify({developmentProof:true,completeGame:false,form:'TrainingWindow',clubId:Number(clubInput.value),players:roster().length,selected,reports:host?host.session.reports.map(report=>({id:report.id,focus:report.focus,sessions:report.sessions,skill:report.after.skill,progress:report.after.progress})):[],events:lines.length});
+</script>

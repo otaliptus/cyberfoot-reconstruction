@@ -391,6 +391,10 @@ Original career fixture: club-world champions, 18-country table, six-flag field,
 200 whole original auction turn comparisons passed (stubs only).
 Original career fixture: auction settlement moved player 1 from club 0 to 11, charged the fee, archived history and round-tripped; reject and guards passed.
 Auction window: real-save lot 181 (Sailer) bid to 500 000, resolved and sold to club 191 for 525 934; view, language fallback and host result passed.
+Career menu: labels resolve, createCareerSave is accepted by openCareer (Node Manager, Fortuna Düsseldorf, 2015-05-03), localStorage round-trip (2658632 bytes, 2 careers) and first fixture 29v13 on day 130 OK.
+Route screens: cup round 133->147 advanced to cup round 2 through native batch/knockout controllers; national setup and assignment produced 879 call-ups with next agenda 203.
+Contract/loan window: player 224 refused at 1, accepted counteroffer 6422 for 24 months, excessive offer blocked; loan list cap, division gate, loan-in+recall and loan-out (224 → club 4) all mutated the real save deterministically.
+Training window: senior 224 (#Schulze) and youth 6249 developed through native routines, sessions accumulate, plan replay is byte-identical, invalid focus/session bounds rejected.
 800 whole original season-end manager move comparisons passed (stack slot controlled).
 Original career fixture: 10 season-end manager moves, slot flags cleared, deterministic replay, save round-trip and guards passed.
 Original career fixture: full results continuation with native engines and dev hosts reached humanNext; save round-trip and host guards passed.

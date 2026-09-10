@@ -1,0 +1,67 @@
+<!doctype html><meta charset="utf-8"><title>Original contract + loan windows — development</title><style>body{margin:0;padding:16px;font:13px Arial,sans-serif;background:#3a6ea5;color:#fff}input{width:90px}h2{font-size:15px;margin:18px 0 6px}section{margin-top:10px}pre{background:#111;color:#8f8;padding:8px;max-height:260px;overflow:auto;white-space:pre-wrap}button{margin-right:4px}</style>
+<h1>TForm24 contract renewal + TForm59 loan offers — development preview</h1>
+<div id="preview-controls">
+ <label>Player id: <input id="playerId" type="number" min="0" value="224"></label>
+ <button id="openContract" data-contract-start>Open contract</button>
+ <button id="stepUp" data-contract-step="up">Offer +500</button>
+ <button id="stepDown" data-contract-step="down">Offer -500</button>
+</div>
+<div id="contract"></div>
+<h2>Loan list and offers</h2>
+<div id="loan-controls">
+ <label>Destination club: <input id="destinationClub" type="number" min="0" value="4"></label>
+ <button id="openLoan" data-loan-start>Open loan offer</button>
+ <button id="listLoan" data-loan-list>List for loan</button>
+ <button id="withdrawLoan" data-loan-withdraw>Withdraw</button>
+ <button id="loanIn" data-loan-in>Loan in</button>
+ <button id="loanOut" data-loan-out>Loan out</button>
+ <button id="recallLoan" data-loan-recall>Recall</button>
+ <span id="loanCounts" data-loan-counts></span>
+</div>
+<div id="loan"></div>
+<h2>Events</h2>
+<pre id="log" data-contract-log></pre>
+<script type="module">
+import {readSave,record,shortString} from './save-format.mjs';
+import {OriginalRandom} from './match-core.mjs';
+import {currentCareerDate} from './calendar.mjs';
+import {mountContractWindow} from './contract-window.mjs';
+import {mountLoanWindow,listPlayerForLoan,withdrawPlayerFromLoanList,loanPlayerIn,loanPlayerOut,recallLoan,loanListedCount,loanedOutCount,loanedInCount} from './loan-window.mjs';
+const [language,bytes]=await Promise.all([fetch('language.json').then(response=>response.json()),fetch('tests/original-career.s15').then(response=>response.arrayBuffer())]);
+const save=readSave(bytes),view=bytes=>new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength);
+const manual=new URLSearchParams(location.search).has('manualClock');
+const humanClub=view(save.career).getInt32(8,true),date=currentCareerDate(save);
+const logBox=document.querySelector('#log'),lines=[];
+const log=line=>{lines.push(line);if(lines.length>200)lines.shift();logBox.textContent=lines.join('\n');};
+const counts=document.querySelector('#loanCounts');
+const playerInput=document.querySelector('#playerId'),clubInput=document.querySelector('#destinationClub');
+let host=null,loanHost=null,clock=2015;
+const rng=()=>new OriginalRandom(1,()=>clock+=7919);
+function refreshCounts(){counts.textContent=`listed ${loanListedCount(save,humanClub)} · out ${loanedOutCount(save,humanClub)} · in ${loanedInCount(save,humanClub)}`;}
+function playerName(id){try{return shortString(record(save,'players',id),0,20);}catch{return `#${id}`;}}
+function openContract(){
+ host?.element.remove();host=null;
+ const id=Number(playerInput.value);
+ try{host=mountContractWindow(document.querySelector('#contract'),{save,id,rng:rng(),language,currentDate:date,onEvent:event=>log(`contract ${JSON.stringify(event)}`)});log(`--- contract player ${id} (${playerName(id)}) salary raw ${view(record(save,'players',id)).getBigInt64(0x38,true)}`);}
+ catch(error){log(`contract error: ${error.message}`);}
+}
+function openLoanOffer(){
+ loanHost?.element.remove();loanHost=null;
+ const id=Number(playerInput.value),destination=Number(clubInput.value),row=view(record(save,'players',id)),mode=row.getInt32(0x20,true)===humanClub?'out':'in';
+ try{loanHost=mountLoanWindow(document.querySelector('#loan'),{save,playerId:id,toClubId:destination,clubId:humanClub,rng:rng(),runtime:{},language,date,onEvent:event=>log(`loan ${JSON.stringify(event)}`),onFinished:result=>refreshCounts()});log(`--- loan offer ${mode} player ${id} → club ${destination}`);}
+ catch(error){log(`loan offer error: ${error.message}`);}
+}
+document.querySelector('#openContract').addEventListener('click',openContract);
+document.querySelector('#openLoan').addEventListener('click',openLoanOffer);
+document.querySelector('#stepUp').addEventListener('click',()=>{if(!host)return;host.session.stepOffer(0);host.render();log(`offer ${host.session.state.offer}`);});
+document.querySelector('#stepDown').addEventListener('click',()=>{if(!host)return;host.session.stepOffer(1);host.render();log(`offer ${host.session.state.offer}`);});
+document.querySelector('#listLoan').addEventListener('click',()=>{const id=Number(playerInput.value);log(`list ${id}: ${listPlayerForLoan(save,id,{clubId:humanClub})}`);refreshCounts();});
+document.querySelector('#withdrawLoan').addEventListener('click',()=>{const id=Number(playerInput.value);log(`withdraw ${id}: ${withdrawPlayerFromLoanList(save,id)}`);refreshCounts();});
+document.querySelector('#loanIn').addEventListener('click',()=>{const id=Number(playerInput.value);const result=loanPlayerIn(save,id,{clubId:humanClub,rng:rng(),date});log(`loan in ${id}: ${JSON.stringify(result)}`);refreshCounts();});
+document.querySelector('#loanOut').addEventListener('click',()=>{const id=Number(playerInput.value),destination=Number(clubInput.value);try{const result=loanPlayerOut(save,id,destination,{clubId:humanClub,rng:rng(),date});log(`loan out ${id} → ${destination}: ${JSON.stringify(result)}`);}catch(error){log(`loan out error: ${error.message}`);}refreshCounts();});
+document.querySelector('#recallLoan').addEventListener('click',()=>{const id=Number(playerInput.value);try{const result=recallLoan(save,id,{rng:rng(),date});log(`recall ${id}: ${JSON.stringify(result)}`);}catch(error){log(`recall error: ${error.message}`);}refreshCounts();});
+refreshCounts();openContract();
+log(manual?'ready (manual clock)':'ready (auto clock)');
+window.contractDevelopment={save,language,start:openContract,loanOffer:openLoanOffer,get host(){return host;},get loanHost(){return loanHost;},get view(){return host?.session.view()??null;},get loanView(){return loanHost?.session.view()??null;},counts:()=>({listed:loanListedCount(save,humanClub),out:loanedOutCount(save,humanClub),inLoaned:loanedInCount(save,humanClub)}),lines,humanClub,date};
+window.render_game_to_text=()=>JSON.stringify({developmentProof:true,completeGame:false,form:host?'Form24':loanHost?'Form59':null,humanClub,date,player:playerInput.value===''?null:Number(playerInput.value),contract:host?{offer:host.session.state.offer,durationIndex:host.session.state.durationIndex,finished:host.session.finished,result:host.session.result?{decision:host.session.result.decision,required:host.session.result.required}:null}:null,loan:loanHost?{mode:loanHost.session.mode,playerId:loanHost.session.playerId,finished:loanHost.session.finished}:null,counts:{listed:loanListedCount(save,humanClub),out:loanedOutCount(save,humanClub),inLoaned:loanedInCount(save,humanClub)},events:lines.length});
+</script>

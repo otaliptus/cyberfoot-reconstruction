@@ -1,0 +1,55 @@
+<!doctype html><meta charset="utf-8"><title>Native career entry — development</title><style>
+body{margin:0;background:#3a6ea5;color:#fff;font:14px Arial,sans-serif}
+main{display:grid;grid-template-columns:minmax(320px,430px) 1fr;gap:16px;max-width:1180px;margin:0 auto;padding:16px}
+section{background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.25);border-radius:6px;padding:12px}
+h2{margin:0 0 8px;font-size:16px}
+#career{min-height:44px;background:rgba(255,255,255,.08);border-radius:4px;padding:8px;margin-bottom:8px}
+#log{max-height:360px;overflow:auto;background:#101820;color:#9fe;padding:8px;border-radius:4px;font:12px/1.5 monospace;white-space:pre-wrap}
+.cm-button{display:block;width:100%;margin:4px 0;padding:8px;background:#d8e6f2;border:1px solid #7a9cbd;border-radius:4px;color:#123;font-weight:bold;cursor:pointer}
+.cm-button:disabled{opacity:.45;cursor:default}
+.cm-button:not(:disabled):hover{background:#fff}
+input,select{width:100%;margin:4px 0 10px;padding:6px;border-radius:4px;border:1px solid #7a9cbd;box-sizing:border-box}
+.cm-label{display:block;font-weight:bold;margin-top:6px}
+.cm-error{color:#ffd0d0;min-height:18px;margin:6px 0}
+.cm-career{display:flex;gap:8px;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.15);padding:4px 0}
+.cm-career .cm-button{width:auto;margin:0}
+a#continue{display:inline-block;margin-top:8px;padding:10px 14px;background:#ffd964;color:#123;font-weight:bold;border-radius:4px;text-decoration:none}
+a#continue[hidden]{display:none}
+.note{opacity:.75;font-size:12px;margin-top:8px}
+</style><main><section><div id="menu"></div></section><section><h2>Created career</h2><div id="career">Waiting for career data...</div><a id="continue" href="career-loop-preview.html" hidden>Continue to career loop →</a><p class="note">The created save is persisted in localStorage under <code>cyberfoot.careerSave</code> plus a stored career record. career-loop-preview.html can open it with <code>readActiveCareerSave(localStorage)</code>.</p><h2>Log</h2><pre id="log"></pre></section></main><script type="module">
+import {mountCareerMenu,listStoredCareers,removeStoredCareer,readStoredCareer,decodeCareerSave,playableClubIds,CAREER_SAVE_STORAGE_KEY,CAREER_INDEX_STORAGE_KEY} from './career-menu.mjs';
+import {readSave,record,shortString} from './save-format.mjs';
+const query=new URLSearchParams(location.search),logElement=document.getElementById('log'),careerElement=document.getElementById('career'),continueLink=document.getElementById('continue'),lines=[];
+function log(message){lines.push(`${new Date().toISOString().slice(11,19)} ${message}`);logElement.textContent=lines.join('\n');console.log('[career-menu]',message);}
+function errorLine(message){lines.push(`ERROR ${message}`);logElement.textContent=lines.join('\n');console.error('[career-menu]',message);}
+try{
+ const [language,template]=await Promise.all([fetch('language.json').then(response=>response.json()),fetch('tests/original-career.s15').then(response=>response.arrayBuffer())]);
+ const templateBytes=new Uint8Array(template);
+ log(`Loaded language.json (${language.length} entries) and ${templateBytes.length} bytes of the original career template.`);
+ const save=readSave(templateBytes),clubsSection=save.sections.find(section=>section.name==='clubs'),playable=new Set(playableClubIds(save)),clubs=[];
+ for(let id=0;id<clubsSection.count;id++){
+  const bytes=record(save,'clubs',id),view=new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength),name=shortString(bytes,0,25),country=view.getInt32(0x3c,true),division=view.getInt32(0x7c,true);
+  clubs.push({id,name,country,division,label:`${name} · country ${country} · division ${division}${playable.has(id)?'':' (outside the played schedule)'}`});
+ }
+ log(`Prepared ${clubs.length} clubs; ${playable.size} have a fixture on the current original schedule.`);
+ const storage=window.localStorage;
+ if(query.has('reset')){for(const entry of listStoredCareers(storage))removeStoredCareer(storage,entry.id);log('Cleared stored careers.');}
+ const manager=query.get('manager')||'New Manager',requestedClub=query.has('club')?Number(query.get('club')):NaN,defaultClub=playable.has(11)?11:(playable.values().next().value??clubs[0]?.id??0),clubId=Number.isInteger(requestedClub)&&requestedClub>=0?requestedClub:defaultClub;
+ const host=mountCareerMenu(document.getElementById('menu'),{language,clubs,template:templateBytes,storage,seed:2015,defaultManager:manager,onLog:log,onStart:async(bytes,careerRecord)=>{
+  const stored=readStoredCareer(storage,careerRecord.id),reloaded=stored?await decodeCareerSave(stored):null;
+  let verified=false;
+  if(reloaded&&reloaded.length===bytes.length){verified=true;for(let i=0;i<reloaded.length;i++)if(reloaded[i]!==bytes[i]){verified=false;break;}}
+  careerElement.textContent=`${careerRecord.managerName} — ${careerRecord.clubName} — ${careerRecord.dateIso} (season ${careerRecord.season}, day ${careerRecord.day})`;
+  continueLink.hidden=false;
+  log(`Career ready: ${careerRecord.managerName} at ${careerRecord.clubName} on ${careerRecord.dateIso}.`);
+  log(`Persisted ${bytes.length} bytes as ${careerRecord.encoding} under ${careerRecord.id}; active key ${CAREER_SAVE_STORAGE_KEY}; reload ${verified?'verified':'FAILED'}.`);
+  if(!verified)errorLine('Stored career did not match the generated save.');
+ }});
+ const stored=listStoredCareers(storage);
+ if(stored.length){log(`Loading stored career ${stored[0].id}.`);await host.load(stored[0].id);}
+ else{log(`Creating a new career for ${manager} at club ${clubId}.`);await host.create(manager,clubId);}
+ window.careerMenuPreview={host,get current(){const current=host.state.career;if(!current)return null;const {save:encoded,...metadata}=current.record;return {...metadata,stored:current.stored};},get stored(){return listStoredCareers(storage);},get log(){return lines.slice();}};
+ window.render_game_to_text=()=>JSON.stringify({page:'career-menu',menu:host.view(),current:window.careerMenuPreview.current,stored:window.careerMenuPreview.stored,log:lines});
+ log('Career menu host ready.');
+}catch(error){errorLine(error&&error.stack?error.stack:String(error));careerElement.textContent=`Career creation failed: ${error&&error.message?error.message:error}`;throw error;}
+</script>
