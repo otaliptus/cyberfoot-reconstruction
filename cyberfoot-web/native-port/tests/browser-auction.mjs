@@ -1,0 +1,32 @@
+import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';
+import assert from 'node:assert/strict';import {mkdirSync,writeFileSync} from 'node:fs';
+const output='/Users/talip/Documents/ChatGPT/misc/cyberfoot-web/output/native-auction/client';mkdirSync(output,{recursive:true});
+const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1024,height:768}}),errors=[];page.on('pageerror',e=>errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')errors.push('console: '+m.text());});
+await page.goto('http://127.0.0.1:8766/auction-window-preview.html?manualClock=1');await page.waitForFunction(()=>window.auctionDevelopment);
+const idle=JSON.parse(await page.evaluate(()=>window.render_game_to_text()));
+assert.equal(idle.form,'Form23');assert.ok(idle.events>0);assert.equal(idle.finished,false);
+await page.locator('#playerId').fill('181');
+await page.locator('[data-auction-start]').click();
+await page.waitForFunction(()=>window.auctionDevelopment.host&&window.auctionDevelopment.runtime.auctionCurrentClub>=0);
+const started=JSON.parse(await page.evaluate(()=>window.render_game_to_text()));
+assert.equal(started.player,181);assert.equal(started.highestBid,0);
+assert.equal(await page.evaluate(()=>window.auctionDevelopment.view.chbutton1),'Bid');
+assert.equal(await page.evaluate(()=>window.auctionDevelopment.view.jlnome),'Sailer');
+const bidButton=page.locator('[data-auction-button="chbutton1"]'),bidInput=page.locator('[data-auction-edit="Edit1"]');
+await bidInput.fill('not a number');assert.equal(await bidButton.isDisabled(),true);
+await bidInput.fill('');assert.equal(await bidButton.isDisabled(),true);
+await bidInput.fill('500');assert.equal(await bidButton.isDisabled(),false);
+await bidButton.click();
+const afterBid=JSON.parse(await page.evaluate(()=>window.render_game_to_text()));
+assert.equal(afterBid.highestBid,500000);
+assert.ok((await page.evaluate(()=>window.auctionDevelopment.view.Label15)).includes('Your money:'));
+if(!afterBid.finished){
+ const playerBefore=afterBid.player;
+ await page.evaluate(()=>window.auctionDevelopment.tick());
+ const afterTick=JSON.parse(await page.evaluate(()=>window.render_game_to_text()));
+ assert.ok(afterTick.finished||afterTick.player!==playerBefore);
+}
+await page.screenshot({path:output+'/auction-window.png'});
+writeFileSync(output+'/checks.json',JSON.stringify({idle,started,afterBid,errors},null,2));
+assert.deepEqual(errors,[]);
+await browser.close();console.log('Auction window: preview started a real-save lot, disabled empty/invalid bids, accepted a 500k bid, then advanced or finished the auction with no browser errors.');

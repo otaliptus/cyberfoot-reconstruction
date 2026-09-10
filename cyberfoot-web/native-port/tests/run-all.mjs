@@ -150,6 +150,8 @@ await import('./auction-turn-parity.mjs');
 
 await import('./auction-finalize-integration.mjs');
 
+await import('./auction-window-node.mjs');
+
 await import('./season-move-parity.mjs');
 
 await import('./season-end-integration.mjs');

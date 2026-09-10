@@ -1,0 +1,42 @@
+<!doctype html><meta charset="utf-8"><title>Original auction window — development</title><style>body{margin:0;padding:16px;font:13px Arial,sans-serif;background:#3a6ea5;color:#fff}input{width:110px}h2{font-size:15px;margin:18px 0 6px}#auction{margin-top:10px}pre{background:#111;color:#8f8;padding:8px;max-height:280px;overflow:auto;white-space:pre-wrap}</style>
+<h1>TForm23 transfer auction — development preview</h1>
+<div id="preview-controls">
+ <label>Player id: <input id="playerId" type="number" min="0" placeholder="random lot"></label>
+ <label>Base price: <input id="basePrice" type="number" min="0" value="100"></label>
+ <button id="start" data-auction-start>Start auction</button>
+ <button id="tick" data-auction-tick>Next lot (tick)</button>
+</div>
+<div id="auction"></div>
+<h2>Events</h2>
+<pre id="log" data-auction-log></pre>
+<script type="module">
+import {readSave,record} from './save-format.mjs';
+import {OriginalRandom} from './match-core.mjs';
+import {mountAuctionWindow} from './auction-window.mjs';
+const [language,bytes]=await Promise.all([fetch('language.json').then(response=>response.json()),fetch('tests/original-career.s15').then(response=>response.arrayBuffer())]);
+const save=readSave(bytes),view=bytes=>new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength);
+const manual=new URLSearchParams(location.search).has('manualClock');
+const logBox=document.querySelector('#log'),lines=[];
+const log=line=>{lines.push(line);if(lines.length>200)lines.shift();logBox.textContent=lines.join('\n');};
+const playerInput=document.querySelector('#playerId'),baseInput=document.querySelector('#basePrice');
+let host=null,clock=2015;
+function startAuction(pidText=playerInput.value,baseText=baseInput.value){
+ host?.dispose();host=null;
+ const requestedBase=Number(baseText),playerId=pidText===''?-1:Number(pidText);
+ const runtime={auctionBasePrice:Number.isFinite(requestedBase)&&requestedBase>=0?Math.trunc(requestedBase):100};
+ if(playerId>=0){
+  try{runtime.auctionPlayer=playerId;runtime.auctionSellerClub=view(record(save,'players',playerId)).getInt32(0x20,true);}
+  catch{log(`invalid player id ${playerId}`);return null;}
+ }
+ const rng=new OriginalRandom(1,()=>clock+=7919);
+ log(`--- start player=${playerId>=0?playerId:'auto'} base=${runtime.auctionBasePrice}`);
+ host=mountAuctionWindow(document.querySelector('#auction'),{save,runtime,rng,language,auto:!manual,onEvent:event=>log(JSON.stringify(event)),onFinished:result=>log(`--- finished ${JSON.stringify({sold:result.sold,buyer:result.buyer,price:result.price,player:result.player})}`)});
+ if((runtime.auctionPlayer??-1)<0)log('warning: no available player selected');
+ return host;
+}
+document.querySelector('#start').addEventListener('click',()=>startAuction());
+document.querySelector('#tick').addEventListener('click',()=>host?.tick());
+log(manual?'ready (manual clock)':'ready (auto clock)');
+window.auctionDevelopment={save,language,get host(){return host;},get runtime(){return host?.session.runtime??null;},get view(){return host?.session.view()??null;},start:startAuction,tick:()=>host?.tick(),finished:()=>!!host?.session.finished,result:()=>host?.session.result??null,lines};
+window.render_game_to_text=()=>JSON.stringify({developmentProof:true,completeGame:false,form:'Form23',player:host?.session.runtime.auctionPlayer??null,seller:host?.session.runtime.auctionSellerClub??null,current:host?.session.runtime.auctionCurrentClub??null,highestBid:host?.session.runtime.auctionHighestBid??0,finished:!!host?.session.finished,result:host?.session.result?{sold:host.session.result.sold,buyer:host.session.result.buyer,price:host.session.result.price,player:host.session.result.player}:null,events:lines.length});
+</script>

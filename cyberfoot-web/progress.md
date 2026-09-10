@@ -1,5 +1,10 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-10 — Auction window host
+- Previous goal turn classified verified progress (auction timer turn). Built the TForm23 host: auction-window.mjs provides a pure auctionWindowView (player name/position/strength/age/country, salary, season games/goals, injury status, energy, seller cash, language captions with raw-id fallback) plus createAuctionSession/mountAuctionWindow driving Edit1 parsing, auctionBid, tick auctionNextLot and resolve/finalize to a host result.
+- auction-window-preview.html playable in the browser; browser-auction.mjs playwright flow (empty bid disabled, bid sets highest bid, sale completes) and auction-window-node.mjs real-save flow registered in run-all. Deviations noted: 0x38c is actually 'Macedonia' so the faithful language0x133+money line is rendered as Label15; injury prefix uses0x3e; jlj/jlg use saved season fields because0064d944 is a3-byte stub.
+- Full run-all exit0; required client screenshot of Form23 clean; total original comparison cases255507 unchanged (this unit is real-save behavioral). Auction is now playable. Next: next-screen forms and career-entry/deployment for the end-to-end game. Native game incomplete/unpublished; goal active.
+
 ### 2026-09-10 — Auction timer turn
 - Previous goal turn classified verified progress (auction start). Added auctionNextLot(whole005a42e0): clears the selected player66ad44, best bid/bidder6d24d0/d4, Edit1 and the crest image, then selects the next lot through the verified selectAuctionLot. The turn emits the original clearEdit/hide/select records.
 - auction_turn_oracle.py runs200 whole original005a42e0 runs with466238/43aa68/5a3014 stubbed; reset state, records and the selection call match. Fixed the harness66ad44 direct-pointer setup a second time.
