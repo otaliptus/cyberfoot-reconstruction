@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {verifyWatchedKickoff} from './watched-kickoff-proof.mjs';const r=verifyWatchedKickoff(JSON.parse(readFileSync(new URL('./watched-kickoff-vectors.json',import.meta.url))));if(r.failures.length)throw Error(JSON.stringify(r.failures.slice(0,2)));console.log(`Original watched kickoff: ${r.cases} cases passed.`);

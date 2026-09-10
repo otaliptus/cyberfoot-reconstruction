@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {verifyKnockoutRounds} from './knockout-round-proof.mjs';const r=await verifyKnockoutRounds(JSON.parse(readFileSync(new URL('./knockout-round-vectors.json',import.meta.url))));if(r.failures.length)throw Error(JSON.stringify(r.failures.slice(0,2)));console.log(`Original knockout advancement: ${r.cases} cases passed.`);

@@ -1,0 +1,222 @@
+// Address: 0056e41c
+// Machine-generated pseudocode; Delphi types and calling conventions may be inaccurate.
+
+void TForm2_carregatimes(int param_1)
+
+{
+  undefined1 *puVar1;
+  int iVar2;
+  undefined4 *puVar3;
+  undefined4 *puVar4;
+  int *in_FS_OFFSET;
+  byte bVar5;
+  int iStack_2bc;
+  undefined1 *puStack_2b8;
+  undefined1 *puStack_2b4;
+  int iStack_2b0;
+  undefined1 *puStack_2ac;
+  undefined1 *puStack_2a8;
+  undefined4 local_298;
+  undefined4 local_294;
+  undefined4 local_290;
+  undefined4 local_28c;
+  undefined4 local_288;
+  undefined4 local_284;
+  undefined4 local_280;
+  undefined4 local_27c;
+  undefined4 local_278;
+  undefined1 local_274 [256];
+  undefined4 local_174;
+  undefined1 local_170 [12];
+  undefined4 local_164;
+  int local_18;
+  int local_14;
+  undefined1 local_10 [4];
+  int *local_c;
+  int local_8;
+  
+  bVar5 = 0;
+  local_298 = 0;
+  local_294 = 0;
+  local_28c = 0;
+  local_290 = 0;
+  local_288 = 0;
+  local_284 = 0;
+  local_27c = 0;
+  local_280 = 0;
+  local_278 = 0;
+  local_174 = 0;
+  puStack_2a8 = (undefined1 *)0x56e47a;
+  local_8 = param_1;
+  FUN_00405628(local_170,PTR_DAT_00408718);
+  puStack_2ac = &LAB_0056ea18;
+  iStack_2b0 = *in_FS_OFFSET;
+  *in_FS_OFFSET = (int)&iStack_2b0;
+  local_18 = 0;
+  puStack_2b4 = (undefined1 *)0x56e4a1;
+  puStack_2a8 = &stack0xfffffffc;
+  FUN_0044a82c(*(undefined4 *)(local_8 + 0x308),DAT_006d1f10);
+  local_14 = 0;
+  puStack_2b4 = (undefined1 *)0x56e4bb;
+  iVar2 = FUN_0040a4d4("teams\\*.b15",0x3f,local_170);
+  if (iVar2 == 0) {
+    local_18 = local_18 + 1;
+    puStack_2b4 = (undefined1 *)0x56e4d7;
+    FUN_0044a83c(*(undefined4 *)(local_8 + 0x308),local_18);
+    puStack_2b4 = (undefined1 *)0x56e4e3;
+    FUN_00487348(*(undefined4 *)PTR_DAT_0066b3ac);
+    puStack_2b4 = (undefined1 *)0x20;
+    puStack_2b8 = (undefined1 *)0x56e4fb;
+    FUN_00404bf0(&local_174,"teams\\",local_164);
+    puStack_2b8 = (undefined1 *)0x56e50d;
+    local_c = (int *)FUN_00420dec(PTR_PTR_0041bfa0,1,local_174);
+    puStack_2b8 = &LAB_0056e64c;
+    iStack_2bc = *in_FS_OFFSET;
+    *in_FS_OFFSET = (int)&iStack_2bc;
+    iVar2 = local_14 + 1;
+    puStack_2b4 = &stack0xfffffffc;
+    FUN_004060a8(PTR_DAT_0066b010,PTR_DAT_0056716c,1,iVar2);
+    FUN_004060a8(PTR_DAT_0066b110,PTR_DAT_0056718c,1,iVar2);
+    (**(code **)(*local_c + 0xc))(local_c,local_10,4);
+    iVar2 = local_14;
+    (**(code **)(*local_c + 0xc))(local_c,*(int *)PTR_DAT_0066b010 + local_14 * 200,200);
+    puVar3 = &local_278;
+    FUN_0040f7c8(local_164,&DAT_0056ea58,0,puVar3,DAT_0056ea4c);
+    FUN_00404b80(local_274,local_278,0xff);
+    FUN_004030e0(*(int *)PTR_DAT_0066b010 + 0x57 + iVar2 * 200,local_274,0x19);
+    (**(code **)(*local_c + 0xc))(local_c,local_10,4);
+    (**(code **)(*local_c + 0xc))(local_c,*(int *)PTR_DAT_0066b110 + local_14 * 0x708,0x708);
+    FUN_00409dd8(local_14,&local_280);
+    FUN_004051d4(&local_27c,local_280);
+    FUN_004e1414(*(undefined4 *)(local_8 + 0x2fc),local_27c);
+    iVar2 = iStack_2bc;
+    local_14 = local_14 + 1;
+    *in_FS_OFFSET = (int)puVar3;
+    iStack_2bc = 0x56e7e3;
+    FUN_00403a84(local_c,puVar3,iVar2);
+    return;
+  }
+  puStack_2b4 = (undefined1 *)0x56e7ee;
+  iVar2 = FUN_0040a524(local_170);
+  if (iVar2 == 0) {
+    local_18 = local_18 + 1;
+    puStack_2b4 = (undefined1 *)0x56e667;
+    FUN_0044a83c(*(undefined4 *)(local_8 + 0x308),local_18);
+    puStack_2b4 = (undefined1 *)0x56e673;
+    FUN_00487348(*(undefined4 *)PTR_DAT_0066b3ac);
+    puStack_2b4 = (undefined1 *)0x20;
+    puStack_2b8 = (undefined1 *)0x56e68b;
+    FUN_00404bf0(&local_284,"teams\\",local_164);
+    puStack_2b8 = (undefined1 *)0x56e69d;
+    local_c = (int *)FUN_00420dec(PTR_PTR_0041bfa0,1,local_284);
+    puStack_2b8 = &LAB_0056e7dc;
+    iStack_2bc = *in_FS_OFFSET;
+    *in_FS_OFFSET = (int)&iStack_2bc;
+    iVar2 = local_14 + 1;
+    puStack_2b4 = &stack0xfffffffc;
+    FUN_004060a8(PTR_DAT_0066b010,PTR_DAT_0056716c,1,iVar2);
+    FUN_004060a8(PTR_DAT_0066b110,PTR_DAT_0056718c,1,iVar2);
+    (**(code **)(*local_c + 0xc))(local_c,local_10,4);
+    iVar2 = local_14;
+    (**(code **)(*local_c + 0xc))(local_c,*(int *)PTR_DAT_0066b010 + local_14 * 200,200);
+    puVar3 = &local_288;
+    FUN_0040f7c8(local_164,&DAT_0056ea58,0,puVar3,DAT_0056ea4c);
+    FUN_00404b80(local_274,local_288,0xff);
+    FUN_004030e0(*(int *)PTR_DAT_0066b010 + 0x57 + iVar2 * 200,local_274,0x19);
+    (**(code **)(*local_c + 0xc))(local_c,local_10,4);
+    (**(code **)(*local_c + 0xc))(local_c,*(int *)PTR_DAT_0066b110 + local_14 * 0x708,0x708);
+    FUN_00409dd8(local_14,&local_290);
+    FUN_004051d4(&local_28c,local_290);
+    FUN_004e1414(*(undefined4 *)(local_8 + 0x2fc),local_28c);
+    iVar2 = iStack_2bc;
+    local_14 = local_14 + 1;
+    *in_FS_OFFSET = (int)puVar3;
+    iStack_2bc = 0x56e7e3;
+    FUN_00403a84(local_c,puVar3,iVar2);
+    return;
+  }
+  puStack_2b4 = (undefined1 *)0x56e80b;
+  iVar2 = FUN_0040a4d4("teams\\selecoes\\*.s11",0x3f,local_170);
+  if (iVar2 == 0) {
+    puStack_2b4 = (undefined1 *)0x20;
+    puStack_2b8 = (undefined1 *)0x56e82b;
+    FUN_00404bf0(&local_294,"teams\\selecoes\\",local_164);
+    puStack_2b8 = (undefined1 *)0x56e83d;
+    local_c = (int *)FUN_00420dec(PTR_PTR_0041bfa0,1,local_294);
+    puStack_2b8 = &LAB_0056e8aa;
+    iStack_2bc = *in_FS_OFFSET;
+    *in_FS_OFFSET = (int)&iStack_2bc;
+    puStack_2b4 = &stack0xfffffffc;
+    (**(code **)(*local_c + 0xc))(local_c,local_10,4);
+    (**(code **)(*local_c + 0xc))(local_c,PTR_DAT_0066b488,0x6d4);
+    puVar1 = puStack_2b4;
+    puVar3 = (undefined4 *)PTR_DAT_0066b488;
+    puVar4 = (undefined4 *)(PTR_DAT_0066b640 + *(int *)PTR_DAT_0066b488 * 0x6d4);
+    for (iVar2 = 0x1b5; iVar2 != 0; iVar2 = iVar2 + -1) {
+      *puVar4 = *puVar3;
+      puVar3 = puVar3 + (uint)bVar5 * -2 + 1;
+      puVar4 = puVar4 + (uint)bVar5 * -2 + 1;
+    }
+    *in_FS_OFFSET = iStack_2bc;
+    puStack_2b4 = (undefined1 *)0x56e94f;
+    puStack_2b8 = (undefined1 *)0x56e8a9;
+    FUN_00403a84(local_c,iStack_2bc,puVar1);
+    return;
+  }
+  puStack_2b4 = (undefined1 *)0x56e95a;
+  iVar2 = FUN_0040a524(local_170);
+  if (iVar2 != 0) {
+    *PTR_DAT_0066ac94 = 0;
+    puStack_2b4 = (undefined1 *)0x56e982;
+    FUN_00487474(*(undefined4 *)PTR_DAT_0066b3ac,PTR_PTR_005665f4,PTR_DAT_0066b300);
+    puStack_2b4 = (undefined1 *)0x56e98e;
+    FUN_00483d6c(*(undefined4 *)PTR_DAT_0066b300);
+    puStack_2b4 = (undefined1 *)0x56e998;
+    FUN_00483bc4(DAT_006d1f0c);
+    puStack_2b4 = (undefined1 *)0x56e9ad;
+    (**(code **)(**(int **)(*(int *)PTR_DAT_0066b300 + 0x2f8) + 0xc4))();
+    puVar1 = puStack_2a8;
+    *in_FS_OFFSET = iStack_2b0;
+    puStack_2a8 = &LAB_0056ea1f;
+    puStack_2ac = (undefined1 *)0x56e9ca;
+    FUN_004048f8(&local_298,3,puVar1);
+    puStack_2ac = (undefined1 *)0x56e9d5;
+    FUN_00404ff0(&local_28c);
+    puStack_2ac = (undefined1 *)0x56e9e5;
+    FUN_004048f8(&local_288,3);
+    puStack_2ac = (undefined1 *)0x56e9f0;
+    FUN_00404ff0(&local_27c);
+    puStack_2ac = (undefined1 *)0x56e9fb;
+    FUN_004048d4(&local_278);
+    puStack_2ac = (undefined1 *)0x56ea06;
+    FUN_004048d4(&local_174);
+    puStack_2ac = (undefined1 *)0x56ea17;
+    FUN_004056f8(local_170,PTR_DAT_00408718);
+    return;
+  }
+  puStack_2b4 = (undefined1 *)0x20;
+  puStack_2b8 = (undefined1 *)0x56e8c9;
+  FUN_00404bf0(&local_298,"teams\\selecoes\\",local_164);
+  puStack_2b8 = (undefined1 *)0x56e8db;
+  local_c = (int *)FUN_00420dec(PTR_PTR_0041bfa0,1,local_298);
+  puStack_2b8 = &LAB_0056e948;
+  iStack_2bc = *in_FS_OFFSET;
+  *in_FS_OFFSET = (int)&iStack_2bc;
+  puStack_2b4 = &stack0xfffffffc;
+  (**(code **)(*local_c + 0xc))(local_c,local_10,4);
+  (**(code **)(*local_c + 0xc))(local_c,PTR_DAT_0066b488,0x6d4);
+  puVar1 = puStack_2b4;
+  puVar3 = (undefined4 *)PTR_DAT_0066b488;
+  puVar4 = (undefined4 *)(PTR_DAT_0066b640 + *(int *)PTR_DAT_0066b488 * 0x6d4);
+  for (iVar2 = 0x1b5; iVar2 != 0; iVar2 = iVar2 + -1) {
+    *puVar4 = *puVar3;
+    puVar3 = puVar3 + (uint)bVar5 * -2 + 1;
+    puVar4 = puVar4 + (uint)bVar5 * -2 + 1;
+  }
+  *in_FS_OFFSET = iStack_2bc;
+  puStack_2b4 = (undefined1 *)0x56e94f;
+  puStack_2b8 = (undefined1 *)0x56e947;
+  FUN_00403a84(local_c,iStack_2bc,puVar1);
+  return;
+}
+

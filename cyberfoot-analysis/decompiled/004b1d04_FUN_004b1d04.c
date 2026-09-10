@@ -1,0 +1,10 @@
+// Address: 004b1d04
+// Machine-generated pseudocode; Delphi types and calling conventions may be inaccurate.
+
+void FUN_004b1d04(undefined4 param_1,undefined4 param_2,undefined4 param_3)
+
+{
+  FUN_004b1ca0(0xff,param_1,param_2,param_3);
+  return;
+}
+

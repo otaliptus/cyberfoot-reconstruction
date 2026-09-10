@@ -1,0 +1,12 @@
+<!doctype html><meta charset="utf-8"><title>Original manager dismissal — development</title><style>body{margin:0;background:#3a6ea5;display:grid;place-items:center;min-height:100vh}canvas{width:1024px;max-width:100vw;height:auto}</style><canvas width="1024" height="768" tabindex="0" aria-label="Original manager dismissal"></canvas><script type="module">
+import {ManagerNoticeWindow} from './manager-notice-window.mjs';import {createManagerDismissalHost} from './manager-dismissal-host.mjs';import {processManagerChanges} from './manager-changes.mjs';import {readSave,writeSave,record} from './save-format.mjs';import {OriginalRandom} from './match-core.mjs';
+const [forms,language,bytes,crestAssets]=await Promise.all([fetch('forms.json').then(r=>r.json()),fetch('language.json').then(r=>r.json()),fetch('tests/original-career.s15').then(r=>r.arrayBuffer()),fetch('crest-assets.json').then(r=>r.json())]);
+const save=readSave(bytes),v=b=>new DataView(b.buffer,b.byteOffset,b.byteLength),c=v(save.career),rng=new OriginalRandom(6421),runtime={nationalManagerCount:10,dismissalSpecialReason:new URLSearchParams(location.search).has('resigned')},renderer=await new ManagerNoticeWindow(document.querySelector('canvas'),forms).prepare(),host=createManagerDismissalHost(renderer,{save,runtime,rng,language,crestAssets});
+// A development trigger for the real656410 human-dismissal branch.
+for(let id=0;id<c.getInt32(0x3c,true);id++)v(record(save,'clubs',id)).setInt32(0x50,100,true);
+v(record(save,'clubs',11)).setInt32(0x50,0,true);v(record(save,'clubs',11)).setInt32(0x54,14,true);c.setInt32(0x88,1,true);
+let finished=false,error=null;const oldManager=v(record(save,'clubs',11)).getInt32(0x44,true);
+window.render_game_to_text=()=>JSON.stringify({developmentProof:true,completeGame:false,form:renderer.frame?.form??null,notice:host.snapshot(),finished,error,humanClubs:c.getInt32(0x13c,true),clubManager:v(record(save,'clubs',11)).getInt32(0x44,true),oldManager,oldManagerClub:v(record(save,'records_0066b718',oldManager)).getInt32(0x1c,true)});
+window.advanceTime=async()=>{};window.dismissalDevelopment={save:()=>writeSave(save),renderer,host};
+window.dismissalFlow=processManagerChanges(save,runtime,{rng,humanDismissal:()=>host.open(runtime.managerChangeClub),showChanges:()=>{throw Error('Unexpected AI recap in human dismissal fixture');}}).then(()=>{finished=true;}).catch(e=>{error=String(e);throw e;});
+</script>

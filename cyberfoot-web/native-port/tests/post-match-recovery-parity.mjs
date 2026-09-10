@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {verifyPostMatchRecovery} from './post-match-recovery-proof.mjs';const r=await verifyPostMatchRecovery(JSON.parse(readFileSync(new URL('./post-match-recovery-vectors.json',import.meta.url))));if(r.failures.length)throw Error(JSON.stringify(r.failures.slice(0,1)));console.log('Original post-match-recovery: '+r.cases+' cases passed.');

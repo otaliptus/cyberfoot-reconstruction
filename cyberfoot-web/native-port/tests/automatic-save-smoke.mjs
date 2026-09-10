@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {checkAutomaticSave} from './automatic-save-integration.mjs';console.log(await checkAutomaticSave(readFileSync(new URL('./original-career.s15',import.meta.url))));

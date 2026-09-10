@@ -1,0 +1,36 @@
+// Address: 00490374
+// Machine-generated pseudocode; Delphi types and calling conventions may be inaccurate.
+
+void FUN_00490374(int param_1,int *param_2,int param_3,int param_4,undefined4 *param_5)
+
+{
+  undefined1 uVar1;
+  uint uVar2;
+  undefined1 *puVar3;
+  undefined1 *puVar4;
+  uint uVar5;
+  
+  uVar2 = *(uint *)(param_1 + 0x70);
+  while( true ) {
+    param_4 = param_4 + -1;
+    if (param_4 < 0) break;
+    uVar5 = 0;
+    puVar4 = *(undefined1 **)(*param_2 + param_3 * 4);
+    param_3 = param_3 + 1;
+    puVar3 = (undefined1 *)*param_5;
+    param_5 = param_5 + 1;
+    if (uVar2 != 0) {
+      do {
+        uVar1 = *puVar4;
+        *puVar3 = uVar1;
+        puVar3[1] = uVar1;
+        puVar3[2] = uVar1;
+        puVar3 = puVar3 + 3;
+        uVar5 = uVar5 + 1;
+        puVar4 = puVar4 + 1;
+      } while (uVar5 < uVar2);
+    }
+  }
+  return;
+}
+

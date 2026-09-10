@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {checkChampionSave} from './champion-save-integration.mjs';console.log(await checkChampionSave(readFileSync(new URL('./original-career.s15',import.meta.url))));

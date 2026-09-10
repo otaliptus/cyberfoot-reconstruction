@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {verifyKnockoutResults} from './knockout-result-proof.mjs';const r=verifyKnockoutResults(JSON.parse(readFileSync(new URL('./knockout-result-vectors.json',import.meta.url))));if(r.failures.length)throw Error(JSON.stringify(r.failures.slice(0,3)));console.log(`Original two-leg result: ${r.cases} cases passed.`);

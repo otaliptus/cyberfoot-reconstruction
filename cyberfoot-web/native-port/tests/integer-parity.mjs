@@ -1,0 +1,2 @@
+import {readFile} from 'node:fs/promises';import assert from 'node:assert/strict';import {parseOriginalInteger} from '../contract-view.mjs';
+const cases=JSON.parse(await readFile(new URL('./integer-vectors.json',import.meta.url)));for(const [i,c] of cases.entries())assert.equal(parseOriginalInteger(c.text),c.expected,`Original integer ${i} ${c.text}`);console.log(`Original salary input parsing: ${cases.length} passed`);

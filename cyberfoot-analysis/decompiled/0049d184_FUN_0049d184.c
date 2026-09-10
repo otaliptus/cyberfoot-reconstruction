@@ -1,0 +1,120 @@
+// Address: 0049d184
+// Machine-generated pseudocode; Delphi types and calling conventions may be inaccurate.
+
+void FUN_0049d184(int *param_1,int param_2,int param_3,int *param_4)
+
+{
+  byte bVar1;
+  int iVar2;
+  char *pcVar3;
+  int *piVar4;
+  uint uVar5;
+  int iVar6;
+  byte *pbVar7;
+  int local_534 [257];
+  char local_130 [260];
+  char *local_2c;
+  int *local_28;
+  byte *local_24;
+  int local_20;
+  int local_1c;
+  int local_18;
+  int local_14;
+  int local_10;
+  int local_c;
+  int *local_8;
+  
+  local_c = param_2;
+  local_8 = param_1;
+  if ((param_3 < 0) || (3 < param_3)) {
+    iVar2 = *param_1;
+    *(undefined4 *)(iVar2 + 0x14) = 0x32;
+    *(int *)(iVar2 + 0x18) = param_3;
+    (**(code **)*param_1)();
+  }
+  if (local_c == 0) {
+    local_10 = local_8[param_3 + 0x19];
+  }
+  else {
+    local_10 = local_8[param_3 + 0x15];
+  }
+  if (local_10 == 0) {
+    iVar2 = *local_8;
+    *(undefined4 *)(iVar2 + 0x14) = 0x32;
+    *(int *)(iVar2 + 0x18) = param_3;
+    (**(code **)*local_8)();
+  }
+  if (*param_4 == 0) {
+    iVar2 = (**(code **)local_8[1])(local_8,1,0x500);
+    *param_4 = iVar2;
+  }
+  local_14 = *param_4;
+  iVar2 = 0;
+  iVar6 = 1;
+  local_24 = (byte *)(local_10 + 1);
+  do {
+    bVar1 = *local_24;
+    if (0x100 < (int)((uint)bVar1 + iVar2)) {
+      *(undefined4 *)(*local_8 + 0x14) = 8;
+      (**(code **)*local_8)();
+    }
+    pcVar3 = local_130 + iVar2;
+    uVar5 = (uint)bVar1;
+    while (uVar5 != 0) {
+      iVar2 = iVar2 + 1;
+      *pcVar3 = (char)iVar6;
+      pcVar3 = pcVar3 + 1;
+      uVar5 = uVar5 - 1;
+    }
+    iVar6 = iVar6 + 1;
+    local_24 = local_24 + 1;
+  } while (iVar6 < 0x11);
+  local_130[iVar2] = '\0';
+  local_18 = iVar2;
+  iVar2 = 0;
+  local_1c = (int)local_130[0];
+  iVar6 = 0;
+  while (local_130[iVar6] != '\0') {
+    piVar4 = local_534 + iVar6;
+    for (pcVar3 = local_130 + iVar6; *pcVar3 == local_1c; pcVar3 = pcVar3 + 1) {
+      *piVar4 = iVar2;
+      iVar6 = iVar6 + 1;
+      piVar4 = piVar4 + 1;
+      iVar2 = iVar2 + 1;
+    }
+    if (1 << ((byte)local_1c & 0x1f) <= iVar2) {
+      *(undefined4 *)(*local_8 + 0x14) = 8;
+      (**(code **)*local_8)();
+    }
+    iVar2 = iVar2 * 2;
+    local_1c = local_1c + 1;
+  }
+  FUN_0048aaf4();
+  if (local_c == 0) {
+    local_20 = 0xff;
+  }
+  else {
+    local_20 = 0xf;
+  }
+  local_2c = local_130;
+  local_28 = local_534;
+  iVar2 = 0;
+  pbVar7 = (byte *)(local_10 + 0x11);
+  if (0 < local_18) {
+    do {
+      uVar5 = (uint)*pbVar7;
+      if ((local_20 < (int)uVar5) || (*(char *)(local_14 + 0x400 + uVar5) != '\0')) {
+        *(undefined4 *)(*local_8 + 0x14) = 8;
+        (**(code **)*local_8)();
+      }
+      iVar2 = iVar2 + 1;
+      pbVar7 = pbVar7 + 1;
+      *(int *)(local_14 + uVar5 * 4) = *local_28;
+      *(char *)(local_14 + 0x400 + uVar5) = *local_2c;
+      local_2c = local_2c + 1;
+      local_28 = local_28 + 1;
+    } while (iVar2 < local_18);
+  }
+  return;
+}
+

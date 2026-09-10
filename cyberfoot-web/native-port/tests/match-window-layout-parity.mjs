@@ -1,0 +1,2 @@
+import {readFileSync} from 'node:fs';import {fourDivisionMatchLayout} from '../match-window.mjs';
+const vectors=JSON.parse(readFileSync(new URL('./match-window-layout-vectors.json',import.meta.url)));for(const [i,v] of vectors.entries()){const actual=fourDivisionMatchLayout(v.spacing);if(JSON.stringify(actual)!==JSON.stringify(v.expected))throw Error('Original layout mismatch '+i);}console.log('Original row/group placement helpers: '+vectors.length+' cases passed.');

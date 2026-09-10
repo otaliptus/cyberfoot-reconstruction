@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {verifyCupAttendance} from './cup-attendance-proof.mjs';const r=verifyCupAttendance(JSON.parse(readFileSync(new URL('./cup-attendance-vectors.json',import.meta.url))));if(r.failures.length)throw Error(JSON.stringify(r.failures.slice(0,3)));console.log(`Original cup and continental attendance: ${r.cases} cases passed.`);

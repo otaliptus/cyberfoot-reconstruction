@@ -1,0 +1,22 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';
+import {readSave,writeSave,record} from '../save-format.mjs';
+import {appointManager,removeManager} from '../manager-employment.mjs';
+import {appendRows} from '../match-records.mjs';import {OriginalRandom} from '../match-core.mjs';import {currentCareerDate} from '../calendar.mjs';
+const save=readSave(fs.readFileSync(new URL('./original-career.s15',import.meta.url))),v=b=>new DataView(b.buffer,b.byteOffset,b.byteLength),c=v(save.career),club=id=>v(record(save,'clubs',id)),manager=id=>v(record(save,'records_0066b718',id));
+const from=11,to=12,human=club(from).getInt32(0x44,true),old=club(to).getInt32(0x44,true),runtime={nationalManagerCount:10,currentLeagueConfiguration:-1},rng=new OriginalRandom(649138),date=currentCareerDate(save);
+assert.notEqual(manager(human).getUint8(0x31),0);assert.equal(manager(old).getUint8(0x31),0);c.setInt32(0x88,1,true);
+const friendly=appendRows(save,'records_0066b0d4',[[from,to,0,0,0,0],[to,from,1,0,0,0]]),notice=appendRows(save,'records_0066b770',[[from,0,0,0,0,0,0,0,0,0,0,0]]);
+const players=save.sections.find(s=>s.name==='players'),roster=id=>Array.from({length:players.count-1},(_,i)=>i+1).filter(i=>v(record(save,'players',i)).getInt32(0x20,true)===id),formerRoster=roster(from),newRoster=roster(to);
+assert.ok(formerRoster.length>0&&newRoster.length>0);
+function verifyContracts(ids){for(const id of ids){const p=v(record(save,'players',id)),days=p.getFloat64(0x70,true)-date;assert.ok(days>=70&&days<=273&&days%7===0);assert.equal(p.getInt32(0xfc,true),0);assert.equal(p.getInt32(0xe4,true),3);assert.equal(p.getInt32(0xe8,true),1);assert.equal(p.getUint8(0x7d),0);assert.notEqual(p.getInt32(0x100,true),1);}}
+removeManager(save,from,human,{rng,runtime,date});
+assert.equal(club(from).getInt32(0x44,true),-1);assert.equal(club(from).getUint8(0x39),0);assert.equal(manager(human).getInt32(0x1c,true),-1);assert.equal(manager(human).getInt32(0x20,true),from);assert.equal(c.getInt32(0x13c,true),0);verifyContracts(formerRoster);
+assert.equal(v(record(save,'records_0066b0d4',friendly)).getInt32(0,true),-1);assert.equal(v(record(save,'records_0066b0d4',friendly+1)).getInt32(0,true),to);assert.equal(v(record(save,'records_0066b770',notice)).getInt32(0,true),-1);
+removeManager(save,to,old,{rng,runtime,date});
+const history=save.sections.find(s=>s.name==='records_0066b2b8'),historyCount=history.count;
+appointManager(save,to,human,{rng,runtime,date});
+assert.equal(club(to).getInt32(0x44,true),human);assert.equal(manager(human).getInt32(0x1c,true),to);assert.equal(club(to).getUint8(0x39),1);assert.equal(c.getInt32(0x13c,true),1);assert.equal(c.getInt32(0x140,true),to);assert.equal(history.count,historyCount+1);verifyContracts(newRoster);
+const division=club(to).getInt32(0x7c,true),price=v(record(save,'records_0066b608',division));for(let i=0;i<4;i++)assert.equal(club(to).getInt32(0x1f4+i*4,true),price.getInt32(i*4,true));assert.equal(club(to).getInt32(0x50,true),100);assert.equal(club(to).getInt32(0x54,true),80);
+const cash=club(to).getBigInt64(0x48,true),[minimum,maximum]=[[500000,700000],[6000000,8000000],[4000000,5000000],[2000000,3000000],[1000000,1500000]][division];assert.ok(cash>=BigInt(minimum)*10000n&&cash<BigInt(maximum)*10000n);
+const bytes=writeSave(save);assert.deepEqual(writeSave(readSave(bytes)),bytes);
+console.log('Original career: human departure, AI departure, human appointment, contract resets, pending-friendly cancellation, notification removal, prices/cash, manager history and save reload passed.');

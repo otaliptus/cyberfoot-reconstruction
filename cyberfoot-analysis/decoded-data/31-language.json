@@ -1,0 +1,5502 @@
+[
+  {
+    "index": 0,
+    "metadata": 0,
+    "text": "български"
+  },
+  {
+    "index": 1,
+    "metadata": 0,
+    "text": "Нова игра"
+  },
+  {
+    "index": 2,
+    "metadata": 0,
+    "text": "Зареди запазена игра"
+  },
+  {
+    "index": 3,
+    "metadata": 0,
+    "text": "Редакция отбор"
+  },
+  {
+    "index": 4,
+    "metadata": 0,
+    "text": "Регистрирана игра"
+  },
+  {
+    "index": 5,
+    "metadata": 0,
+    "text": "Нерегистрирана версия"
+  },
+  {
+    "index": 6,
+    "metadata": 0,
+    "text": "Регистрирана версия"
+  },
+  {
+    "index": 7,
+    "metadata": 0,
+    "text": "ИЗХОД"
+  },
+  {
+    "index": 8,
+    "metadata": 0,
+    "text": "Избор на език"
+  },
+  {
+    "index": 9,
+    "metadata": 0,
+    "text": "Зареждане на играта..."
+  },
+  {
+    "index": 10,
+    "metadata": 0,
+    "text": "Игрови настройки"
+  },
+  {
+    "index": 11,
+    "metadata": 0,
+    "text": "Клубни шампионати"
+  },
+  {
+    "index": 12,
+    "metadata": 0,
+    "text": "Шампионатна система:"
+  },
+  {
+    "index": 13,
+    "metadata": 0,
+    "text": "4 дивизии с по 10 отбора"
+  },
+  {
+    "index": 14,
+    "metadata": 0,
+    "text": "2 дивизии с по 20 отбора"
+  },
+  {
+    "index": 15,
+    "metadata": 0,
+    "text": "Играй за националната купа"
+  },
+  {
+    "index": 16,
+    "metadata": 0,
+    "text": "Играй Шампионска лига/ Копа Либертадорес"
+  },
+  {
+    "index": 17,
+    "metadata": 0,
+    "text": "Играй УЕФА шампионат/Купа на Южна Америка"
+  },
+  {
+    "index": 18,
+    "metadata": 0,
+    "text": "Шампионат национална селекция"
+  },
+  {
+    "index": 19,
+    "metadata": 0,
+    "text": "Играй Световно първенство"
+  },
+  {
+    "index": 20,
+    "metadata": 0,
+    "text": "Използвай реални групи на Световно 2010"
+  },
+  {
+    "index": 21,
+    "metadata": 0,
+    "text": "Играй Купа на Европа"
+  },
+  {
+    "index": 22,
+    "metadata": 0,
+    "text": "Играй Америка Къп"
+  },
+  {
+    "index": 23,
+    "metadata": 0,
+    "text": "Играй тези национални шампионати:"
+  },
+  {
+    "index": 24,
+    "metadata": 0,
+    "text": "Избери всички"
+  },
+  {
+    "index": 25,
+    "metadata": 0,
+    "text": "отбори"
+  },
+  {
+    "index": 26,
+    "metadata": 0,
+    "text": "Може да добавите повече шампионати от Потребителската зона на www.cyberfoot.org"
+  },
+  {
+    "index": 27,
+    "metadata": 0,
+    "text": "Брой отбори, командвани от играчи:"
+  },
+  {
+    "index": 28,
+    "metadata": 0,
+    "text": "Някой опции са достъпни само при регистрирана версия: Първенства на Национални Селекции, повече отбори командвани от играчи и др."
+  },
+  {
+    "index": 29,
+    "metadata": 0,
+    "text": "Напред >>"
+  },
+  {
+    "index": 30,
+    "metadata": 0,
+    "text": "<< Назад"
+  },
+  {
+    "index": 31,
+    "metadata": 0,
+    "text": "Изберете поне един шампионат"
+  },
+  {
+    "index": 32,
+    "metadata": 0,
+    "text": "Изберете отбор"
+  },
+  {
+    "index": 33,
+    "metadata": 0,
+    "text": "Отбори по националност:"
+  },
+  {
+    "index": 34,
+    "metadata": 0,
+    "text": "Име:"
+  },
+  {
+    "index": 35,
+    "metadata": 0,
+    "text": "1ва дивизия"
+  },
+  {
+    "index": 36,
+    "metadata": 0,
+    "text": "2ра дивизия"
+  },
+  {
+    "index": 37,
+    "metadata": 0,
+    "text": "3та дивизия"
+  },
+  {
+    "index": 38,
+    "metadata": 0,
+    "text": "4та дивизия"
+  },
+  {
+    "index": 39,
+    "metadata": 0,
+    "text": "Избор на отбор:"
+  },
+  {
+    "index": 40,
+    "metadata": 0,
+    "text": "Изберете следващ отбор"
+  },
+  {
+    "index": 41,
+    "metadata": 0,
+    "text": "Начало >>>"
+  },
+  {
+    "index": 42,
+    "metadata": 0,
+    "text": "Отборът е вече избран"
+  },
+  {
+    "index": 43,
+    "metadata": 0,
+    "text": "Това е нерегистрирана версия на CyberFoot"
+  },
+  {
+    "index": 44,
+    "metadata": 0,
+    "text": "В нерегистрираната версия може да изберате отбори само от долната дивизия."
+  },
+  {
+    "index": 45,
+    "metadata": 0,
+    "text": "В регистрираната версия може да избирате от всички отбори."
+  },
+  {
+    "index": 46,
+    "metadata": 0,
+    "text": "Започване на игра..."
+  },
+  {
+    "index": 47,
+    "metadata": 0,
+    "text": "Рейтинг на мениджмънта"
+  },
+  {
+    "index": 48,
+    "metadata": 0,
+    "text": "Рейтинг на финовете"
+  },
+  {
+    "index": 49,
+    "metadata": 0,
+    "text": "Способности"
+  },
+  {
+    "index": 50,
+    "metadata": 0,
+    "text": "Възраст"
+  },
+  {
+    "index": 51,
+    "metadata": 0,
+    "text": "Цена"
+  },
+  {
+    "index": 52,
+    "metadata": 0,
+    "text": "Заплата"
+  },
+  {
+    "index": 53,
+    "metadata": 0,
+    "text": "Изиграни мачове"
+  },
+  {
+    "index": 54,
+    "metadata": 0,
+    "text": "Характеристики"
+  },
+  {
+    "index": 55,
+    "metadata": 0,
+    "text": "Договорът идтича на"
+  },
+  {
+    "index": 56,
+    "metadata": 0,
+    "text": "Изтекъл договор"
+  },
+  {
+    "index": 57,
+    "metadata": 0,
+    "text": "Договорът за наем изтича на"
+  },
+  {
+    "index": 58,
+    "metadata": 0,
+    "text": "Играчът е достъпен само за следващата среща"
+  },
+  {
+    "index": 59,
+    "metadata": 0,
+    "text": "Наказан за 1 среща: 3 жълти картона"
+  },
+  {
+    "index": 60,
+    "metadata": 0,
+    "text": "Наказан за"
+  },
+  {
+    "index": 61,
+    "metadata": 0,
+    "text": "среща (срещи)"
+  },
+  {
+    "index": 62,
+    "metadata": 0,
+    "text": "Контузен до"
+  },
+  {
+    "index": 63,
+    "metadata": 0,
+    "text": "Продай"
+  },
+  {
+    "index": 64,
+    "metadata": 0,
+    "text": "Договор"
+  },
+  {
+    "index": 65,
+    "metadata": 0,
+    "text": "Пенсионирай"
+  },
+  {
+    "index": 66,
+    "metadata": 0,
+    "text": "Изтегли от трансферния списък"
+  },
+  {
+    "index": 67,
+    "metadata": 0,
+    "text": "Средваща среща"
+  },
+  {
+    "index": 68,
+    "metadata": 0,
+    "text": "Състав"
+  },
+  {
+    "index": 69,
+    "metadata": 0,
+    "text": "Цветове на отбора"
+  },
+  {
+    "index": 70,
+    "metadata": 0,
+    "text": "Едно непрочетено съобщние"
+  },
+  {
+    "index": 71,
+    "metadata": 0,
+    "text": "непрочетени съобщения"
+  },
+  {
+    "index": 72,
+    "metadata": 0,
+    "text": "Няма нови съобщения"
+  },
+  {
+    "index": 73,
+    "metadata": 0,
+    "text": "играчи"
+  },
+  {
+    "index": 74,
+    "metadata": 0,
+    "text": "Предишни срещи"
+  },
+  {
+    "index": 75,
+    "metadata": 0,
+    "text": "среща"
+  },
+  {
+    "index": 76,
+    "metadata": 0,
+    "text": "срещи"
+  },
+  {
+    "index": 77,
+    "metadata": 0,
+    "text": "жребий"
+  },
+  {
+    "index": 78,
+    "metadata": 0,
+    "text": "изтеглени"
+  },
+  {
+    "index": 79,
+    "metadata": 0,
+    "text": "П"
+  },
+  {
+    "index": 80,
+    "metadata": 0,
+    "text": "Р"
+  },
+  {
+    "index": 81,
+    "metadata": 0,
+    "text": "З"
+  },
+  {
+    "index": 82,
+    "metadata": 0,
+    "text": "ГЗ"
+  },
+  {
+    "index": 83,
+    "metadata": 0,
+    "text": "ГС"
+  },
+  {
+    "index": 84,
+    "metadata": 0,
+    "text": "ИМ"
+  },
+  {
+    "index": 85,
+    "metadata": 0,
+    "text": "ГР"
+  },
+  {
+    "index": 86,
+    "metadata": 0,
+    "text": "Т"
+  },
+  {
+    "index": 87,
+    "metadata": 0,
+    "text": "КвТ"
+  },
+  {
+    "index": 88,
+    "metadata": 0,
+    "text": "КН"
+  },
+  {
+    "index": 89,
+    "metadata": 0,
+    "text": "Последна среща"
+  },
+  {
+    "index": 90,
+    "metadata": 0,
+    "text": "Всички срещи"
+  },
+  {
+    "index": 91,
+    "metadata": 0,
+    "text": "Първа среща между тези тимове"
+  },
+  {
+    "index": 92,
+    "metadata": 0,
+    "text": "История от предишни сезони"
+  },
+  {
+    "index": 93,
+    "metadata": 0,
+    "text": "Запази играта"
+  },
+  {
+    "index": 94,
+    "metadata": 0,
+    "text": "Настройки"
+  },
+  {
+    "index": 95,
+    "metadata": 0,
+    "text": "Напусни"
+  },
+  {
+    "index": 96,
+    "metadata": 0,
+    "text": "Изход от играта"
+  },
+  {
+    "index": 97,
+    "metadata": 0,
+    "text": "За играта"
+  },
+  {
+    "index": 98,
+    "metadata": 0,
+    "text": "Класация Треньори"
+  },
+  {
+    "index": 99,
+    "metadata": 0,
+    "text": "Прибави/премахни треньор"
+  },
+  {
+    "index": 100,
+    "metadata": 0,
+    "text": "Последни Трансфери Треньори"
+  },
+  {
+    "index": 101,
+    "metadata": 0,
+    "text": "Класация Клубове"
+  },
+  {
+    "index": 102,
+    "metadata": 0,
+    "text": "Трансфери Играчи"
+  },
+  {
+    "index": 103,
+    "metadata": 0,
+    "text": "Всички срещи"
+  },
+  {
+    "index": 104,
+    "metadata": 0,
+    "text": "Лична програма"
+  },
+  {
+    "index": 105,
+    "metadata": 0,
+    "text": "Програма"
+  },
+  {
+    "index": 106,
+    "metadata": 0,
+    "text": "Схема на купата"
+  },
+  {
+    "index": 107,
+    "metadata": 0,
+    "text": "Плейофи на международни състецания"
+  },
+  {
+    "index": 108,
+    "metadata": 0,
+    "text": "Приятелски срещи"
+  },
+  {
+    "index": 109,
+    "metadata": 0,
+    "text": "Финанси"
+  },
+  {
+    "index": 110,
+    "metadata": 0,
+    "text": "Заем от банката"
+  },
+  {
+    "index": 111,
+    "metadata": 0,
+    "text": "Договор"
+  },
+  {
+    "index": 112,
+    "metadata": 0,
+    "text": "Продай играч"
+  },
+  {
+    "index": 113,
+    "metadata": 0,
+    "text": "Пенсионирай играч"
+  },
+  {
+    "index": 114,
+    "metadata": 0,
+    "text": "Брой"
+  },
+  {
+    "index": 115,
+    "metadata": 0,
+    "text": "История Срещи"
+  },
+  {
+    "index": 116,
+    "metadata": 0,
+    "text": "Отмени заем"
+  },
+  {
+    "index": 117,
+    "metadata": 0,
+    "text": "Закупуване Играч"
+  },
+  {
+    "index": 118,
+    "metadata": 0,
+    "text": "Прибави към списък за наем"
+  },
+  {
+    "index": 119,
+    "metadata": 0,
+    "text": "Премахни от списък за наем"
+  },
+  {
+    "index": 120,
+    "metadata": 0,
+    "text": "Класиране"
+  },
+  {
+    "index": 121,
+    "metadata": 0,
+    "text": "Стадион"
+  },
+  {
+    "index": 122,
+    "metadata": 0,
+    "text": "Покажи всички клубове"
+  },
+  {
+    "index": 123,
+    "metadata": 0,
+    "text": "Търси играчи"
+  },
+  {
+    "index": 124,
+    "metadata": 0,
+    "text": "Информация Треньор"
+  },
+  {
+    "index": 125,
+    "metadata": 0,
+    "text": "Списък Шампиони"
+  },
+  {
+    "index": 126,
+    "metadata": 0,
+    "text": "Голмайстор"
+  },
+  {
+    "index": 127,
+    "metadata": 0,
+    "text": "Класиране Клубове"
+  },
+  {
+    "index": 128,
+    "metadata": 0,
+    "text": "М"
+  },
+  {
+    "index": 129,
+    "metadata": 0,
+    "text": "Име"
+  },
+  {
+    "index": 130,
+    "metadata": 0,
+    "text": "Позиция"
+  },
+  {
+    "index": 131,
+    "metadata": 0,
+    "text": "С"
+  },
+  {
+    "index": 132,
+    "metadata": 0,
+    "text": "Здраве"
+  },
+  {
+    "index": 133,
+    "metadata": 0,
+    "text": "Заплата"
+  },
+  {
+    "index": 134,
+    "metadata": 0,
+    "text": "Цена"
+  },
+  {
+    "index": 135,
+    "metadata": 0,
+    "text": "Г"
+  },
+  {
+    "index": 136,
+    "metadata": 0,
+    "text": "Х-ки"
+  },
+  {
+    "index": 137,
+    "metadata": 0,
+    "text": "В"
+  },
+  {
+    "index": 138,
+    "metadata": 0,
+    "text": "М"
+  },
+  {
+    "index": 139,
+    "metadata": 0,
+    "text": "Една седмица до изтичане на договор"
+  },
+  {
+    "index": 140,
+    "metadata": 0,
+    "text": "Договорът изтича скоро"
+  },
+  {
+    "index": 141,
+    "metadata": 0,
+    "text": "Регистрирай CyberFoot тук!"
+  },
+  {
+    "index": 142,
+    "metadata": 0,
+    "text": "Вратар"
+  },
+  {
+    "index": 143,
+    "metadata": 0,
+    "text": "Вр"
+  },
+  {
+    "index": 144,
+    "metadata": 0,
+    "text": "Централен защитник"
+  },
+  {
+    "index": 145,
+    "metadata": 0,
+    "text": "ЦЗ"
+  },
+  {
+    "index": 146,
+    "metadata": 0,
+    "text": "Флангови защитник"
+  },
+  {
+    "index": 147,
+    "metadata": 0,
+    "text": "ФЗ"
+  },
+  {
+    "index": 148,
+    "metadata": 0,
+    "text": "Халф"
+  },
+  {
+    "index": 149,
+    "metadata": 0,
+    "text": "Х"
+  },
+  {
+    "index": 150,
+    "metadata": 0,
+    "text": "Нападател"
+  },
+  {
+    "index": 151,
+    "metadata": 0,
+    "text": "Н"
+  },
+  {
+    "index": 152,
+    "metadata": 0,
+    "text": "Дясно"
+  },
+  {
+    "index": 153,
+    "metadata": 0,
+    "text": "Д"
+  },
+  {
+    "index": 154,
+    "metadata": 0,
+    "text": "Ляво"
+  },
+  {
+    "index": 155,
+    "metadata": 0,
+    "text": "Л"
+  },
+  {
+    "index": 156,
+    "metadata": 0,
+    "text": "Позиция"
+  },
+  {
+    "index": 157,
+    "metadata": 0,
+    "text": "Поз"
+  },
+  {
+    "index": 158,
+    "metadata": 0,
+    "text": "Защитник дузпа"
+  },
+  {
+    "index": 159,
+    "metadata": 0,
+    "text": "ЗДуз"
+  },
+  {
+    "index": 160,
+    "metadata": 0,
+    "text": "Скоростен"
+  },
+  {
+    "index": 161,
+    "metadata": 0,
+    "text": "Ск"
+  },
+  {
+    "index": 162,
+    "metadata": 0,
+    "text": "Притежание на топката"
+  },
+  {
+    "index": 163,
+    "metadata": 0,
+    "text": "ПнТ"
+  },
+  {
+    "index": 164,
+    "metadata": 0,
+    "text": "Плеймейкър"
+  },
+  {
+    "index": 165,
+    "metadata": 0,
+    "text": "ПМ"
+  },
+  {
+    "index": 166,
+    "metadata": 0,
+    "text": "Удари с глава"
+  },
+  {
+    "index": 167,
+    "metadata": 0,
+    "text": "Гл"
+  },
+  {
+    "index": 168,
+    "metadata": 0,
+    "text": "Дълги пасове"
+  },
+  {
+    "index": 169,
+    "metadata": 0,
+    "text": "ДПас"
+  },
+  {
+    "index": 170,
+    "metadata": 0,
+    "text": "Борби за топката"
+  },
+  {
+    "index": 171,
+    "metadata": 0,
+    "text": "БТоп"
+  },
+  {
+    "index": 172,
+    "metadata": 0,
+    "text": "Дрибъл"
+  },
+  {
+    "index": 173,
+    "metadata": 0,
+    "text": "Дрб"
+  },
+  {
+    "index": 174,
+    "metadata": 0,
+    "text": "Стрелба"
+  },
+  {
+    "index": 175,
+    "metadata": 0,
+    "text": "Стр"
+  },
+  {
+    "index": 176,
+    "metadata": 0,
+    "text": "Гардиране"
+  },
+  {
+    "index": 177,
+    "metadata": 0,
+    "text": "Грд"
+  },
+  {
+    "index": 178,
+    "metadata": 0,
+    "text": "Подаване"
+  },
+  {
+    "index": 179,
+    "metadata": 0,
+    "text": "Пас"
+  },
+  {
+    "index": 180,
+    "metadata": 0,
+    "text": "Сила"
+  },
+  {
+    "index": 181,
+    "metadata": 0,
+    "text": "Сл"
+  },
+  {
+    "index": 182,
+    "metadata": 0,
+    "text": "Скорост"
+  },
+  {
+    "index": 183,
+    "metadata": 0,
+    "text": "Скр"
+  },
+  {
+    "index": 184,
+    "metadata": 0,
+    "text": "1ви"
+  },
+  {
+    "index": 185,
+    "metadata": 0,
+    "text": "2ри"
+  },
+  {
+    "index": 186,
+    "metadata": 0,
+    "text": "3ти"
+  },
+  {
+    "index": 187,
+    "metadata": 0,
+    "text": "4ти"
+  },
+  {
+    "index": 188,
+    "metadata": 0,
+    "text": "5ти"
+  },
+  {
+    "index": 189,
+    "metadata": 0,
+    "text": "6ти"
+  },
+  {
+    "index": 190,
+    "metadata": 0,
+    "text": "7ми"
+  },
+  {
+    "index": 191,
+    "metadata": 0,
+    "text": "8ми"
+  },
+  {
+    "index": 192,
+    "metadata": 0,
+    "text": "9ти"
+  },
+  {
+    "index": 193,
+    "metadata": 0,
+    "text": "10ти"
+  },
+  {
+    "index": 194,
+    "metadata": 0,
+    "text": "11ти"
+  },
+  {
+    "index": 195,
+    "metadata": 0,
+    "text": "12ти"
+  },
+  {
+    "index": 196,
+    "metadata": 0,
+    "text": "13ти"
+  },
+  {
+    "index": 197,
+    "metadata": 0,
+    "text": "14ти"
+  },
+  {
+    "index": 198,
+    "metadata": 0,
+    "text": "15ти"
+  },
+  {
+    "index": 199,
+    "metadata": 0,
+    "text": "16ти"
+  },
+  {
+    "index": 200,
+    "metadata": 0,
+    "text": "17ти"
+  },
+  {
+    "index": 201,
+    "metadata": 0,
+    "text": "18ти"
+  },
+  {
+    "index": 202,
+    "metadata": 0,
+    "text": "19ти"
+  },
+  {
+    "index": 203,
+    "metadata": 0,
+    "text": "20ти"
+  },
+  {
+    "index": 204,
+    "metadata": 0,
+    "text": "Място"
+  },
+  {
+    "index": 205,
+    "metadata": 0,
+    "text": "Домакин"
+  },
+  {
+    "index": 206,
+    "metadata": 0,
+    "text": "Д"
+  },
+  {
+    "index": 207,
+    "metadata": 0,
+    "text": "Гост"
+  },
+  {
+    "index": 208,
+    "metadata": 0,
+    "text": "Г"
+  },
+  {
+    "index": 209,
+    "metadata": 0,
+    "text": "кръг"
+  },
+  {
+    "index": 210,
+    "metadata": 0,
+    "text": "Съдия"
+  },
+  {
+    "index": 211,
+    "metadata": 0,
+    "text": "Международен приятелски"
+  },
+  {
+    "index": 212,
+    "metadata": 0,
+    "text": "Приятелски"
+  },
+  {
+    "index": 213,
+    "metadata": 0,
+    "text": "1ви кръг"
+  },
+  {
+    "index": 214,
+    "metadata": 0,
+    "text": "2ри кръг"
+  },
+  {
+    "index": 215,
+    "metadata": 0,
+    "text": "Четвъртфинал"
+  },
+  {
+    "index": 216,
+    "metadata": 0,
+    "text": "Полуфинал"
+  },
+  {
+    "index": 217,
+    "metadata": 0,
+    "text": "Финал"
+  },
+  {
+    "index": 218,
+    "metadata": 0,
+    "text": "1ви етап"
+  },
+  {
+    "index": 219,
+    "metadata": 0,
+    "text": "2ри етап"
+  },
+  {
+    "index": 220,
+    "metadata": 0,
+    "text": "Шампионска лига"
+  },
+  {
+    "index": 221,
+    "metadata": 0,
+    "text": "УЕФА Лига Европа"
+  },
+  {
+    "index": 222,
+    "metadata": 0,
+    "text": "Копа Либертадорес"
+  },
+  {
+    "index": 223,
+    "metadata": 0,
+    "text": "Копа Судамерикана"
+  },
+  {
+    "index": 224,
+    "metadata": 0,
+    "text": "Световно първенство"
+  },
+  {
+    "index": 225,
+    "metadata": 0,
+    "text": "Бундеслига"
+  },
+  {
+    "index": 226,
+    "metadata": 0,
+    "text": "Купа Германия"
+  },
+  {
+    "index": 227,
+    "metadata": 0,
+    "text": "Скудето"
+  },
+  {
+    "index": 228,
+    "metadata": 0,
+    "text": "Купа Италия"
+  },
+  {
+    "index": 229,
+    "metadata": 0,
+    "text": "Примера дивисион"
+  },
+  {
+    "index": 230,
+    "metadata": 0,
+    "text": "Купа Испания"
+  },
+  {
+    "index": 231,
+    "metadata": 0,
+    "text": "Премиершип"
+  },
+  {
+    "index": 232,
+    "metadata": 0,
+    "text": "Купа Англия"
+  },
+  {
+    "index": 233,
+    "metadata": 0,
+    "text": "Френски шампионат"
+  },
+  {
+    "index": 234,
+    "metadata": 0,
+    "text": "Купа Франция"
+  },
+  {
+    "index": 235,
+    "metadata": 0,
+    "text": "Белгийски шампионат"
+  },
+  {
+    "index": 236,
+    "metadata": 0,
+    "text": "Купа Белгия"
+  },
+  {
+    "index": 237,
+    "metadata": 0,
+    "text": "Гръцки шампионат"
+  },
+  {
+    "index": 238,
+    "metadata": 0,
+    "text": "Купа Гърция"
+  },
+  {
+    "index": 239,
+    "metadata": 0,
+    "text": "Ередивизие"
+  },
+  {
+    "index": 240,
+    "metadata": 0,
+    "text": "Купа Холандия"
+  },
+  {
+    "index": 241,
+    "metadata": 0,
+    "text": "Португалски шампионат"
+  },
+  {
+    "index": 242,
+    "metadata": 0,
+    "text": "Купа Португалия"
+  },
+  {
+    "index": 243,
+    "metadata": 0,
+    "text": "Бразлски шампионат"
+  },
+  {
+    "index": 244,
+    "metadata": 0,
+    "text": "Купа Бразилия"
+  },
+  {
+    "index": 245,
+    "metadata": 0,
+    "text": "Аржентински шампионат"
+  },
+  {
+    "index": 246,
+    "metadata": 0,
+    "text": "Купа Аржентина"
+  },
+  {
+    "index": 247,
+    "metadata": 0,
+    "text": "Шотландси шампионат"
+  },
+  {
+    "index": 248,
+    "metadata": 0,
+    "text": "Купа Шотландия"
+  },
+  {
+    "index": 249,
+    "metadata": 0,
+    "text": "Мексикански шампионат"
+  },
+  {
+    "index": 250,
+    "metadata": 0,
+    "text": "Купа Мексико"
+  },
+  {
+    "index": 251,
+    "metadata": 0,
+    "text": "Швейцарски шампионат"
+  },
+  {
+    "index": 252,
+    "metadata": 0,
+    "text": "Купа Швейцария"
+  },
+  {
+    "index": 253,
+    "metadata": 0,
+    "text": "Турски шампионат"
+  },
+  {
+    "index": 254,
+    "metadata": 0,
+    "text": "Купа Турция"
+  },
+  {
+    "index": 255,
+    "metadata": 0,
+    "text": "Чилийски шампионат"
+  },
+  {
+    "index": 256,
+    "metadata": 0,
+    "text": "Купа Чили"
+  },
+  {
+    "index": 257,
+    "metadata": 0,
+    "text": "Парагвайски шампионат"
+  },
+  {
+    "index": 258,
+    "metadata": 0,
+    "text": "Купа Парагвай"
+  },
+  {
+    "index": 259,
+    "metadata": 0,
+    "text": "Колумбийски шампионат"
+  },
+  {
+    "index": 260,
+    "metadata": 0,
+    "text": "Купа Колумбия"
+  },
+  {
+    "index": 261,
+    "metadata": 0,
+    "text": "Руски шампионат"
+  },
+  {
+    "index": 262,
+    "metadata": 0,
+    "text": "Купа Русия"
+  },
+  {
+    "index": 263,
+    "metadata": 0,
+    "text": "Шведски шампионат"
+  },
+  {
+    "index": 264,
+    "metadata": 0,
+    "text": "Купа Швеция"
+  },
+  {
+    "index": 265,
+    "metadata": 0,
+    "text": "Украински шампионат"
+  },
+  {
+    "index": 266,
+    "metadata": 0,
+    "text": "Купа Украйна"
+  },
+  {
+    "index": 267,
+    "metadata": 0,
+    "text": "Уругвайски шампионат"
+  },
+  {
+    "index": 268,
+    "metadata": 0,
+    "text": "Купа Уругвай"
+  },
+  {
+    "index": 269,
+    "metadata": 0,
+    "text": "Сръбски шампионат"
+  },
+  {
+    "index": 270,
+    "metadata": 0,
+    "text": "Купа Сърбия"
+  },
+  {
+    "index": 271,
+    "metadata": 0,
+    "text": "Полски шампионат"
+  },
+  {
+    "index": 272,
+    "metadata": 0,
+    "text": "Купа Полша"
+  },
+  {
+    "index": 273,
+    "metadata": 0,
+    "text": "Индонезийски шампионат"
+  },
+  {
+    "index": 274,
+    "metadata": 0,
+    "text": "Купа Индонезия"
+  },
+  {
+    "index": 275,
+    "metadata": 0,
+    "text": "Шампионат на САЩ"
+  },
+  {
+    "index": 276,
+    "metadata": 0,
+    "text": "Купа САЩ"
+  },
+  {
+    "index": 277,
+    "metadata": 0,
+    "text": "Български шампионат"
+  },
+  {
+    "index": 278,
+    "metadata": 0,
+    "text": "Купа България"
+  },
+  {
+    "index": 279,
+    "metadata": 0,
+    "text": "Шампионат на"
+  },
+  {
+    "index": 280,
+    "metadata": 0,
+    "text": "Купа на"
+  },
+  {
+    "index": 281,
+    "metadata": 0,
+    "text": "Запомни състав"
+  },
+  {
+    "index": 282,
+    "metadata": 0,
+    "text": "Автоматичен избор на състав"
+  },
+  {
+    "index": 283,
+    "metadata": 0,
+    "text": "Отборно представяне"
+  },
+  {
+    "index": 284,
+    "metadata": 0,
+    "text": "Защитен натиск"
+  },
+  {
+    "index": 285,
+    "metadata": 0,
+    "text": "Повече атаки на"
+  },
+  {
+    "index": 286,
+    "metadata": 0,
+    "text": "Подреждане на състав"
+  },
+  {
+    "index": 287,
+    "metadata": 0,
+    "text": "Капитан"
+  },
+  {
+    "index": 288,
+    "metadata": 0,
+    "text": "Автоматичен избор на състав"
+  },
+  {
+    "index": 289,
+    "metadata": 0,
+    "text": "Отборно представяне"
+  },
+  {
+    "index": 290,
+    "metadata": 0,
+    "text": "Балансирано"
+  },
+  {
+    "index": 291,
+    "metadata": 0,
+    "text": "Само атака"
+  },
+  {
+    "index": 292,
+    "metadata": 0,
+    "text": "Защитно"
+  },
+  {
+    "index": 293,
+    "metadata": 0,
+    "text": "Внимателно"
+  },
+  {
+    "index": 294,
+    "metadata": 0,
+    "text": "Агресивно"
+  },
+  {
+    "index": 295,
+    "metadata": 0,
+    "text": "Изключително агресивно"
+  },
+  {
+    "index": 296,
+    "metadata": 0,
+    "text": "Междинна линия"
+  },
+  {
+    "index": 297,
+    "metadata": 0,
+    "text": "Крила"
+  },
+  {
+    "index": 298,
+    "metadata": 0,
+    "text": "<< Назад"
+  },
+  {
+    "index": 299,
+    "metadata": 0,
+    "text": "Начало на срещата >>"
+  },
+  {
+    "index": 300,
+    "metadata": 0,
+    "text": "играе като"
+  },
+  {
+    "index": 301,
+    "metadata": 0,
+    "text": "Изберете поне 11 играчи, за начало на мач"
+  },
+  {
+    "index": 302,
+    "metadata": 0,
+    "text": "Избор на отбор:"
+  },
+  {
+    "index": 303,
+    "metadata": 0,
+    "text": "История"
+  },
+  {
+    "index": 304,
+    "metadata": 0,
+    "text": "Срещи"
+  },
+  {
+    "index": 305,
+    "metadata": 0,
+    "text": "Трансфери"
+  },
+  {
+    "index": 306,
+    "metadata": 0,
+    "text": "Награди"
+  },
+  {
+    "index": 307,
+    "metadata": 0,
+    "text": "Вашите пари:"
+  },
+  {
+    "index": 308,
+    "metadata": 0,
+    "text": "Може да изберете до 28 играчи"
+  },
+  {
+    "index": 309,
+    "metadata": 0,
+    "text": "не желае трансфер във Вашия отбор"
+  },
+  {
+    "index": 310,
+    "metadata": 0,
+    "text": "успешен трансфер"
+  },
+  {
+    "index": 311,
+    "metadata": 0,
+    "text": "За трансфер"
+  },
+  {
+    "index": 312,
+    "metadata": 0,
+    "text": "За под наем"
+  },
+  {
+    "index": 313,
+    "metadata": 0,
+    "text": "ЗТ"
+  },
+  {
+    "index": 314,
+    "metadata": 0,
+    "text": "ЗПН"
+  },
+  {
+    "index": 315,
+    "metadata": 0,
+    "text": "Наем на играч"
+  },
+  {
+    "index": 316,
+    "metadata": 0,
+    "text": "Може да взимате под наем само 2ма играчи"
+  },
+  {
+    "index": 317,
+    "metadata": 0,
+    "text": "Закупуване на играч"
+  },
+  {
+    "index": 318,
+    "metadata": 0,
+    "text": "Предложи"
+  },
+  {
+    "index": 319,
+    "metadata": 0,
+    "text": "Пълна история"
+  },
+  {
+    "index": 320,
+    "metadata": 0,
+    "text": "Година"
+  },
+  {
+    "index": 321,
+    "metadata": 0,
+    "text": "Отбор"
+  },
+  {
+    "index": 322,
+    "metadata": 0,
+    "text": "Кариера"
+  },
+  {
+    "index": 323,
+    "metadata": 0,
+    "text": "Регионални тимове"
+  },
+  {
+    "index": 324,
+    "metadata": 0,
+    "text": "Национален тим"
+  },
+  {
+    "index": 325,
+    "metadata": 0,
+    "text": "Списък на мачовете"
+  },
+  {
+    "index": 326,
+    "metadata": 0,
+    "text": "Световни първенства"
+  },
+  {
+    "index": 327,
+    "metadata": 0,
+    "text": "Купи на Америка"
+  },
+  {
+    "index": 328,
+    "metadata": 0,
+    "text": "Евро купи"
+  },
+  {
+    "index": 329,
+    "metadata": 0,
+    "text": "Покажи:"
+  },
+  {
+    "index": 330,
+    "metadata": 0,
+    "text": "Всички мачове"
+  },
+  {
+    "index": 331,
+    "metadata": 0,
+    "text": "нед"
+  },
+  {
+    "index": 332,
+    "metadata": 0,
+    "text": "пон"
+  },
+  {
+    "index": 333,
+    "metadata": 0,
+    "text": "вто"
+  },
+  {
+    "index": 334,
+    "metadata": 0,
+    "text": "сря"
+  },
+  {
+    "index": 335,
+    "metadata": 0,
+    "text": "чет"
+  },
+  {
+    "index": 336,
+    "metadata": 0,
+    "text": "пет"
+  },
+  {
+    "index": 337,
+    "metadata": 0,
+    "text": "съб"
+  },
+  {
+    "index": 338,
+    "metadata": 0,
+    "text": "Играч"
+  },
+  {
+    "index": 339,
+    "metadata": 0,
+    "text": "Голове"
+  },
+  {
+    "index": 340,
+    "metadata": 0,
+    "text": "Мачове"
+  },
+  {
+    "index": 341,
+    "metadata": 0,
+    "text": "Шампионат"
+  },
+  {
+    "index": 342,
+    "metadata": 0,
+    "text": "Купа"
+  },
+  {
+    "index": 343,
+    "metadata": 0,
+    "text": "Най-добро"
+  },
+  {
+    "index": 344,
+    "metadata": 0,
+    "text": "Показване на първите 100, натиснете тук за всички"
+  },
+  {
+    "index": 345,
+    "metadata": 0,
+    "text": "Зареди"
+  },
+  {
+    "index": 346,
+    "metadata": 0,
+    "text": "Отказ"
+  },
+  {
+    "index": 347,
+    "metadata": 0,
+    "text": "Изтрий"
+  },
+  {
+    "index": 348,
+    "metadata": 0,
+    "text": "Треньор:"
+  },
+  {
+    "index": 349,
+    "metadata": 0,
+    "text": "Средваща среща:"
+  },
+  {
+    "index": 350,
+    "metadata": 0,
+    "text": "Приход"
+  },
+  {
+    "index": 351,
+    "metadata": 0,
+    "text": "Разход"
+  },
+  {
+    "index": 352,
+    "metadata": 0,
+    "text": "Продадени играчи:"
+  },
+  {
+    "index": 353,
+    "metadata": 0,
+    "text": "Билети:"
+  },
+  {
+    "index": 354,
+    "metadata": 0,
+    "text": "Награди:"
+  },
+  {
+    "index": 355,
+    "metadata": 0,
+    "text": "Бенкови заеми:"
+  },
+  {
+    "index": 356,
+    "metadata": 0,
+    "text": "Спонсори:"
+  },
+  {
+    "index": 357,
+    "metadata": 0,
+    "text": "Всичко:"
+  },
+  {
+    "index": 358,
+    "metadata": 0,
+    "text": "Закупени играчи:"
+  },
+  {
+    "index": 359,
+    "metadata": 0,
+    "text": "Стадион:"
+  },
+  {
+    "index": 360,
+    "metadata": 0,
+    "text": "Заплата:"
+  },
+  {
+    "index": 361,
+    "metadata": 0,
+    "text": "Лихва на заем:"
+  },
+  {
+    "index": 362,
+    "metadata": 0,
+    "text": "Трансфери:"
+  },
+  {
+    "index": 363,
+    "metadata": 0,
+    "text": "Други:"
+  },
+  {
+    "index": 364,
+    "metadata": 0,
+    "text": "Баланс:"
+  },
+  {
+    "index": 365,
+    "metadata": 0,
+    "text": "Ежеседмична лихва:"
+  },
+  {
+    "index": 366,
+    "metadata": 0,
+    "text": "Седмична заплата:"
+  },
+  {
+    "index": 367,
+    "metadata": 0,
+    "text": "Налични пари:"
+  },
+  {
+    "index": 368,
+    "metadata": 0,
+    "text": "Играч на търг"
+  },
+  {
+    "index": 369,
+    "metadata": 0,
+    "text": "Начална цена:"
+  },
+  {
+    "index": 370,
+    "metadata": 0,
+    "text": "продава играча"
+  },
+  {
+    "index": 371,
+    "metadata": 0,
+    "text": "Предложения в хиляди, например: 300=300.000"
+  },
+  {
+    "index": 372,
+    "metadata": 0,
+    "text": "Няма купувачи"
+  },
+  {
+    "index": 373,
+    "metadata": 0,
+    "text": "Продаден на"
+  },
+  {
+    "index": 374,
+    "metadata": 0,
+    "text": "Вашето предложения:"
+  },
+  {
+    "index": 375,
+    "metadata": 0,
+    "text": "Предложи"
+  },
+  {
+    "index": 376,
+    "metadata": 0,
+    "text": "повече от наличните Ви пари"
+  },
+  {
+    "index": 377,
+    "metadata": 0,
+    "text": "Нямате достатъчно средства."
+  },
+  {
+    "index": 378,
+    "metadata": 0,
+    "text": "Договор"
+  },
+  {
+    "index": 379,
+    "metadata": 0,
+    "text": "Нова заплата:"
+  },
+  {
+    "index": 380,
+    "metadata": 0,
+    "text": "Продължителност на договора:"
+  },
+  {
+    "index": 381,
+    "metadata": 0,
+    "text": "6 месеца"
+  },
+  {
+    "index": 382,
+    "metadata": 0,
+    "text": "1 година"
+  },
+  {
+    "index": 383,
+    "metadata": 0,
+    "text": "2 години"
+  },
+  {
+    "index": 384,
+    "metadata": 0,
+    "text": "Предложи"
+  },
+  {
+    "index": 385,
+    "metadata": 0,
+    "text": "Отказ"
+  },
+  {
+    "index": 386,
+    "metadata": 0,
+    "text": "Вашето предложение беше отказано. Той иска:"
+  },
+  {
+    "index": 387,
+    "metadata": 0,
+    "text": "Приеми"
+  },
+  {
+    "index": 388,
+    "metadata": 0,
+    "text": "Откажи"
+  },
+  {
+    "index": 389,
+    "metadata": 0,
+    "text": "Този играч има лимит на заплатата от "
+  },
+  {
+    "index": 390,
+    "metadata": 0,
+    "text": "Шампиони"
+  },
+  {
+    "index": 391,
+    "metadata": 0,
+    "text": "Продължи >>>"
+  },
+  {
+    "index": 392,
+    "metadata": 0,
+    "text": "голове"
+  },
+  {
+    "index": 393,
+    "metadata": 0,
+    "text": "Търси"
+  },
+  {
+    "index": 394,
+    "metadata": 0,
+    "text": "Позиция:"
+  },
+  {
+    "index": 395,
+    "metadata": 0,
+    "text": "Гражданство:"
+  },
+  {
+    "index": 396,
+    "metadata": 0,
+    "text": "Покажи само достъпните за трансфер"
+  },
+  {
+    "index": 397,
+    "metadata": 0,
+    "text": "Покажи само футболисти, играещи на"
+  },
+  {
+    "index": 398,
+    "metadata": 0,
+    "text": "Покажи само звездни играчи"
+  },
+  {
+    "index": 399,
+    "metadata": 0,
+    "text": "Покажи само достъпните за наемане"
+  },
+  {
+    "index": 400,
+    "metadata": 0,
+    "text": "Всякаква цена"
+  },
+  {
+    "index": 401,
+    "metadata": 0,
+    "text": "намерени играчи"
+  },
+  {
+    "index": 402,
+    "metadata": 0,
+    "text": "Вече под наем:"
+  },
+  {
+    "index": 403,
+    "metadata": 0,
+    "text": "Лихва на мач:"
+  },
+  {
+    "index": 404,
+    "metadata": 0,
+    "text": "Получи още 500.000$"
+  },
+  {
+    "index": 405,
+    "metadata": 0,
+    "text": "Плати 500.000$"
+  },
+  {
+    "index": 406,
+    "metadata": 0,
+    "text": "Година"
+  },
+  {
+    "index": 407,
+    "metadata": 0,
+    "text": "Шампион"
+  },
+  {
+    "index": 408,
+    "metadata": 0,
+    "text": "Второ място"
+  },
+  {
+    "index": 409,
+    "metadata": 0,
+    "text": "Голмайстор"
+  },
+  {
+    "index": 410,
+    "metadata": 0,
+    "text": "Най-добър треньор"
+  },
+  {
+    "index": 411,
+    "metadata": 0,
+    "text": "Покана за треньор"
+  },
+  {
+    "index": 412,
+    "metadata": 0,
+    "text": "Следният тим иска да Ви наеме, желаете ли да го ръководите?"
+  },
+  {
+    "index": 413,
+    "metadata": 0,
+    "text": "Приеми"
+  },
+  {
+    "index": 414,
+    "metadata": 0,
+    "text": "Откажи всички"
+  },
+  {
+    "index": 415,
+    "metadata": 0,
+    "text": "уволнява Ви, защото:"
+  },
+  {
+    "index": 416,
+    "metadata": 0,
+    "text": "феновете притискаха мениджърския екип, заради Вашите лоши резултати."
+  },
+  {
+    "index": 417,
+    "metadata": 0,
+    "text": "причини финансова криза в клуба."
+  },
+  {
+    "index": 418,
+    "metadata": 0,
+    "text": "заради толкова лошите резултати."
+  },
+  {
+    "index": 419,
+    "metadata": 0,
+    "text": "изпаднахме в 4та дивизия..."
+  },
+  {
+    "index": 420,
+    "metadata": 0,
+    "text": "си пожелахте. Успех в следващия Ви тим."
+  },
+  {
+    "index": 421,
+    "metadata": 0,
+    "text": "Новият треньор, който ще Ви замести е:"
+  },
+  {
+    "index": 422,
+    "metadata": 0,
+    "text": "В очакване на нов отбор..."
+  },
+  {
+    "index": 423,
+    "metadata": 0,
+    "text": "Уволнен!"
+  },
+  {
+    "index": 424,
+    "metadata": 0,
+    "text": "Игрови настройки"
+  },
+  {
+    "index": 425,
+    "metadata": 0,
+    "text": "Покажи първенства"
+  },
+  {
+    "index": 426,
+    "metadata": 0,
+    "text": "Автозапазване"
+  },
+  {
+    "index": 427,
+    "metadata": 0,
+    "text": "Скорост на играта"
+  },
+  {
+    "index": 428,
+    "metadata": 0,
+    "text": "Скорост без играчи"
+  },
+  {
+    "index": 429,
+    "metadata": 0,
+    "text": "Покажи решенията за дузпа без хора:"
+  },
+  {
+    "index": 430,
+    "metadata": 0,
+    "text": "Покажи треньорски трансфери:"
+  },
+  {
+    "index": 431,
+    "metadata": 0,
+    "text": "Отвори статистика на полувремето:"
+  },
+  {
+    "index": 432,
+    "metadata": 0,
+    "text": "Получаване на предизвестие за изтичане на договори:"
+  },
+  {
+    "index": 433,
+    "metadata": 0,
+    "text": "Автоматично подновяване на договори"
+  },
+  {
+    "index": 434,
+    "metadata": 0,
+    "text": "Цвят и звук"
+  },
+  {
+    "index": 435,
+    "metadata": 0,
+    "text": "Разреши звукови ефекти"
+  },
+  {
+    "index": 436,
+    "metadata": 0,
+    "text": "Потъмни домакинства"
+  },
+  {
+    "index": 437,
+    "metadata": 0,
+    "text": "Използвай цветове в списъка с играчи"
+  },
+  {
+    "index": 438,
+    "metadata": 0,
+    "text": "Без антоматичен запис"
+  },
+  {
+    "index": 439,
+    "metadata": 0,
+    "text": "Всеки 3 пътувания"
+  },
+  {
+    "index": 440,
+    "metadata": 0,
+    "text": "След всеки мач"
+  },
+  {
+    "index": 441,
+    "metadata": 0,
+    "text": "Начало на сезон"
+  },
+  {
+    "index": 442,
+    "metadata": 0,
+    "text": "Бавно"
+  },
+  {
+    "index": 443,
+    "metadata": 0,
+    "text": "Нормално"
+  },
+  {
+    "index": 444,
+    "metadata": 0,
+    "text": "Бързо"
+  },
+  {
+    "index": 445,
+    "metadata": 0,
+    "text": "Много бързо"
+  },
+  {
+    "index": 446,
+    "metadata": 0,
+    "text": "Супер бързо"
+  },
+  {
+    "index": 447,
+    "metadata": 0,
+    "text": "Ултра бързо"
+  },
+  {
+    "index": 448,
+    "metadata": 0,
+    "text": "Хипер бързо"
+  },
+  {
+    "index": 449,
+    "metadata": 0,
+    "text": "Не"
+  },
+  {
+    "index": 450,
+    "metadata": 0,
+    "text": "Да"
+  },
+  {
+    "index": 451,
+    "metadata": 0,
+    "text": "Само изтекли"
+  },
+  {
+    "index": 452,
+    "metadata": 0,
+    "text": "Само които ще изтекат скоро"
+  },
+  {
+    "index": 453,
+    "metadata": 0,
+    "text": "Покажи времето в европейски стил"
+  },
+  {
+    "index": 454,
+    "metadata": 0,
+    "text": "Покажи срещи от шампионати без хора:"
+  },
+  {
+    "index": 455,
+    "metadata": 0,
+    "text": "използвате различен цвят човешките мачове"
+  },
+  {
+    "index": 456,
+    "metadata": 0,
+    "text": "Цвят на списък с играчи"
+  },
+  {
+    "index": 457,
+    "metadata": 0,
+    "text": "Върни към настройки по подразбиране"
+  },
+  {
+    "index": 458,
+    "metadata": 0,
+    "text": "Дузпа"
+  },
+  {
+    "index": 459,
+    "metadata": 0,
+    "text": "Избери изпълнител"
+  },
+  {
+    "index": 460,
+    "metadata": 0,
+    "text": "Изпълни"
+  },
+  {
+    "index": 461,
+    "metadata": 0,
+    "text": "Приготвя се за изпълнение..."
+  },
+  {
+    "index": 462,
+    "metadata": 0,
+    "text": "Рита топката и..."
+  },
+  {
+    "index": 463,
+    "metadata": 0,
+    "text": "Добър удар! Гол!!!"
+  },
+  {
+    "index": 464,
+    "metadata": 0,
+    "text": "Вътре е, гол!!!"
+  },
+  {
+    "index": 465,
+    "metadata": 0,
+    "text": "Вкарва страхотен гол!!!"
+  },
+  {
+    "index": 466,
+    "metadata": 0,
+    "text": "И вратарят спасява!"
+  },
+  {
+    "index": 467,
+    "metadata": 0,
+    "text": "Греда!!!"
+  },
+  {
+    "index": 468,
+    "metadata": 0,
+    "text": "Удар в напречната греда!!!"
+  },
+  {
+    "index": 469,
+    "metadata": 0,
+    "text": "Точки"
+  },
+  {
+    "index": 470,
+    "metadata": 0,
+    "text": "Изиграни мачове"
+  },
+  {
+    "index": 471,
+    "metadata": 0,
+    "text": "Победи"
+  },
+  {
+    "index": 472,
+    "metadata": 0,
+    "text": "Равенства"
+  },
+  {
+    "index": 473,
+    "metadata": 0,
+    "text": "Загуби"
+  },
+  {
+    "index": 474,
+    "metadata": 0,
+    "text": "Голове за"
+  },
+  {
+    "index": 475,
+    "metadata": 0,
+    "text": "Голове срещу"
+  },
+  {
+    "index": 476,
+    "metadata": 0,
+    "text": "Голова разлика"
+  },
+  {
+    "index": 477,
+    "metadata": 0,
+    "text": "Група"
+  },
+  {
+    "index": 478,
+    "metadata": 0,
+    "text": "Не е насрочена дата"
+  },
+  {
+    "index": 479,
+    "metadata": 0,
+    "text": "Решения Дузпи"
+  },
+  {
+    "index": 480,
+    "metadata": 0,
+    "text": "Решения дузпи - Избор на изпълнител"
+  },
+  {
+    "index": 481,
+    "metadata": 0,
+    "text": "Достъпни играчи:"
+  },
+  {
+    "index": 482,
+    "metadata": 0,
+    "text": "Избрани идпълнители:"
+  },
+  {
+    "index": 483,
+    "metadata": 0,
+    "text": "Автоматичен избор"
+  },
+  {
+    "index": 484,
+    "metadata": 0,
+    "text": "Продължи >>>"
+  },
+  {
+    "index": 485,
+    "metadata": 0,
+    "text": "Гол"
+  },
+  {
+    "index": 486,
+    "metadata": 0,
+    "text": "Пропуск"
+  },
+  {
+    "index": 487,
+    "metadata": 0,
+    "text": "Победа"
+  },
+  {
+    "index": 488,
+    "metadata": 0,
+    "text": "Напишете има на файл за запис:"
+  },
+  {
+    "index": 489,
+    "metadata": 0,
+    "text": "Запази"
+  },
+  {
+    "index": 490,
+    "metadata": 0,
+    "text": "Името вече съществува, заместване?"
+  },
+  {
+    "index": 491,
+    "metadata": 0,
+    "text": "Да"
+  },
+  {
+    "index": 492,
+    "metadata": 0,
+    "text": "Не"
+  },
+  {
+    "index": 493,
+    "metadata": 0,
+    "text": "Трансфер на играч"
+  },
+  {
+    "index": 494,
+    "metadata": 0,
+    "text": "Трансферен търг"
+  },
+  {
+    "index": 495,
+    "metadata": 0,
+    "text": "Първоначална цена:"
+  },
+  {
+    "index": 496,
+    "metadata": 0,
+    "text": "(в хиляди $)"
+  },
+  {
+    "index": 497,
+    "metadata": 0,
+    "text": "Прибави към трансферен списък"
+  },
+  {
+    "index": 498,
+    "metadata": 0,
+    "text": "Начало на търга"
+  },
+  {
+    "index": 499,
+    "metadata": 0,
+    "text": "Отказ"
+  },
+  {
+    "index": 500,
+    "metadata": 0,
+    "text": "Трансферен списък"
+  },
+  {
+    "index": 501,
+    "metadata": 0,
+    "text": "(Трябва да заплатите трансферна такса според останалото време от дотовора на играча)"
+  },
+  {
+    "index": 502,
+    "metadata": 0,
+    "text": "Трансферна такса за този играч:"
+  },
+  {
+    "index": 503,
+    "metadata": 0,
+    "text": "Точна цена:"
+  },
+  {
+    "index": 504,
+    "metadata": 0,
+    "text": "1во полувреме"
+  },
+  {
+    "index": 505,
+    "metadata": 0,
+    "text": "2ро полувреме"
+  },
+  {
+    "index": 506,
+    "metadata": 0,
+    "text": "Почивка"
+  },
+  {
+    "index": 507,
+    "metadata": 0,
+    "text": "Добавено време"
+  },
+  {
+    "index": 508,
+    "metadata": 0,
+    "text": "Край на мача"
+  },
+  {
+    "index": 509,
+    "metadata": 0,
+    "text": "Мач за 3тото място"
+  },
+  {
+    "index": 510,
+    "metadata": 0,
+    "text": "(автогол)"
+  },
+  {
+    "index": 511,
+    "metadata": 0,
+    "text": "(дузпа)"
+  },
+  {
+    "index": 512,
+    "metadata": 0,
+    "text": "(пряк свободен удар)"
+  },
+  {
+    "index": 513,
+    "metadata": 0,
+    "text": "(пропусната дузпа)"
+  },
+  {
+    "index": 514,
+    "metadata": 0,
+    "text": "Треньор"
+  },
+  {
+    "index": 515,
+    "metadata": 0,
+    "text": "Настоящ състав"
+  },
+  {
+    "index": 516,
+    "metadata": 0,
+    "text": "Точки"
+  },
+  {
+    "index": 517,
+    "metadata": 0,
+    "text": "Световно класиране"
+  },
+  {
+    "index": 518,
+    "metadata": 0,
+    "text": "Награди"
+  },
+  {
+    "index": 519,
+    "metadata": 0,
+    "text": "Пенсиониране на играч"
+  },
+  {
+    "index": 520,
+    "metadata": 0,
+    "text": "Пенсионираните играчи могат да бъдат заменени от млади таланти от младежкия тим."
+  },
+  {
+    "index": 521,
+    "metadata": 0,
+    "text": "Младият играч ще има ниво на способности между 1 и 20. Възрастта ще е между 17 и 20 години."
+  },
+  {
+    "index": 522,
+    "metadata": 0,
+    "text": "Може да му дадете ново име ли просто да запазите това на пенсионирания."
+  },
+  {
+    "index": 523,
+    "metadata": 0,
+    "text": "Име на новия играч"
+  },
+  {
+    "index": 524,
+    "metadata": 0,
+    "text": "Позиция"
+  },
+  {
+    "index": 525,
+    "metadata": 0,
+    "text": "Пенсионирай"
+  },
+  {
+    "index": 526,
+    "metadata": 0,
+    "text": "Отказ"
+  },
+  {
+    "index": 527,
+    "metadata": 0,
+    "text": "Предложи сума за играч"
+  },
+  {
+    "index": 528,
+    "metadata": 0,
+    "text": "Иска играча"
+  },
+  {
+    "index": 529,
+    "metadata": 0,
+    "text": "Приеми оферта?"
+  },
+  {
+    "index": 530,
+    "metadata": 0,
+    "text": "Човешки треньори"
+  },
+  {
+    "index": 531,
+    "metadata": 0,
+    "text": "Изтрий"
+  },
+  {
+    "index": 532,
+    "metadata": 0,
+    "text": "Добави нов"
+  },
+  {
+    "index": 533,
+    "metadata": 0,
+    "text": "За да изтриете треньор първо трябва да го отстраните от настоящата му длъжност"
+  },
+  {
+    "index": 534,
+    "metadata": 0,
+    "text": "Ново треньорско име"
+  },
+  {
+    "index": 535,
+    "metadata": 0,
+    "text": "Контузен играч"
+  },
+  {
+    "index": 536,
+    "metadata": 0,
+    "text": "Избор на заместник"
+  },
+  {
+    "index": 537,
+    "metadata": 0,
+    "text": "Дузпа"
+  },
+  {
+    "index": 538,
+    "metadata": 0,
+    "text": "История Сезони"
+  },
+  {
+    "index": 539,
+    "metadata": 0,
+    "text": "Турнир"
+  },
+  {
+    "index": 540,
+    "metadata": 0,
+    "text": "Позиция"
+  },
+  {
+    "index": 541,
+    "metadata": 0,
+    "text": "Треньори"
+  },
+  {
+    "index": 542,
+    "metadata": 0,
+    "text": "3то място"
+  },
+  {
+    "index": 543,
+    "metadata": 0,
+    "text": "4то място"
+  },
+  {
+    "index": 544,
+    "metadata": 0,
+    "text": "Уволнен треньор"
+  },
+  {
+    "index": 545,
+    "metadata": 0,
+    "text": "Смяна на треньор"
+  },
+  {
+    "index": 546,
+    "metadata": 0,
+    "text": "уволнен от"
+  },
+  {
+    "index": 547,
+    "metadata": 0,
+    "text": "Нов треньор:"
+  },
+  {
+    "index": 548,
+    "metadata": 0,
+    "text": "отива в "
+  },
+  {
+    "index": 549,
+    "metadata": 0,
+    "text": "Последни трансфери"
+  },
+  {
+    "index": 550,
+    "metadata": 0,
+    "text": "Играчи"
+  },
+  {
+    "index": 551,
+    "metadata": 0,
+    "text": "От"
+  },
+  {
+    "index": 552,
+    "metadata": 0,
+    "text": "В"
+  },
+  {
+    "index": 553,
+    "metadata": 0,
+    "text": "Играчи"
+  },
+  {
+    "index": 554,
+    "metadata": 0,
+    "text": "Треньори"
+  },
+  {
+    "index": 555,
+    "metadata": 0,
+    "text": "Всички играчи"
+  },
+  {
+    "index": 556,
+    "metadata": 0,
+    "text": "Направи оферта"
+  },
+  {
+    "index": 557,
+    "metadata": 0,
+    "text": "Цена на играч:"
+  },
+  {
+    "index": 558,
+    "metadata": 0,
+    "text": "Вашата оферта:"
+  },
+  {
+    "index": 559,
+    "metadata": 0,
+    "text": "Предложи"
+  },
+  {
+    "index": 560,
+    "metadata": 0,
+    "text": "не желае да играе във Вашия тим"
+  },
+  {
+    "index": 561,
+    "metadata": 0,
+    "text": "Офертата Ви беше отхвърлена"
+  },
+  {
+    "index": 562,
+    "metadata": 0,
+    "text": "Да играе в тима Ви"
+  },
+  {
+    "index": 563,
+    "metadata": 0,
+    "text": "иска повишение на заплатата"
+  },
+  {
+    "index": 564,
+    "metadata": 0,
+    "text": "Приеми"
+  },
+  {
+    "index": 565,
+    "metadata": 0,
+    "text": "Откажи"
+  },
+  {
+    "index": 566,
+    "metadata": 0,
+    "text": "И-мейл"
+  },
+  {
+    "index": 567,
+    "metadata": 0,
+    "text": "Искате ли да глобите играча?"
+  },
+  {
+    "index": 568,
+    "metadata": 0,
+    "text": "Мениджмънт"
+  },
+  {
+    "index": 569,
+    "metadata": 0,
+    "text": "Фенове"
+  },
+  {
+    "index": 570,
+    "metadata": 0,
+    "text": "Играч"
+  },
+  {
+    "index": 571,
+    "metadata": 0,
+    "text": "Преса"
+  },
+  {
+    "index": 572,
+    "metadata": 0,
+    "text": "Лечебница"
+  },
+  {
+    "index": 573,
+    "metadata": 0,
+    "text": "Добре дошли в"
+  },
+  {
+    "index": 574,
+    "metadata": 0,
+    "text": "изгонен"
+  },
+  {
+    "index": 575,
+    "metadata": 0,
+    "text": "Не ми харесва"
+  },
+  {
+    "index": 576,
+    "metadata": 0,
+    "text": "контузен"
+  },
+  {
+    "index": 577,
+    "metadata": 0,
+    "text": "Няма да бъде допуснато"
+  },
+  {
+    "index": 578,
+    "metadata": 0,
+    "text": "Няма да бъде допуснато"
+  },
+  {
+    "index": 579,
+    "metadata": 0,
+    "text": "отива в"
+  },
+  {
+    "index": 580,
+    "metadata": 0,
+    "text": "Racha no elenco causado por"
+  },
+  {
+    "index": 581,
+    "metadata": 0,
+    "text": "Благодария Ви"
+  },
+  {
+    "index": 582,
+    "metadata": 0,
+    "text": "Оплакване"
+  },
+  {
+    "index": 583,
+    "metadata": 0,
+    "text": "Договорът ми е изтекъл"
+  },
+  {
+    "index": 584,
+    "metadata": 0,
+    "text": "Сбиване между"
+  },
+  {
+    "index": 585,
+    "metadata": 0,
+    "text": "Сбиване между агитките"
+  },
+  {
+    "index": 586,
+    "metadata": 0,
+    "text": "преминава в"
+  },
+  {
+    "index": 587,
+    "metadata": 0,
+    "text": "Покани за национална селекция"
+  },
+  {
+    "index": 588,
+    "metadata": 0,
+    "text": "Договорът изтича скоро"
+  },
+  {
+    "index": 589,
+    "metadata": 0,
+    "text": "Изтекъл договор"
+  },
+  {
+    "index": 590,
+    "metadata": 0,
+    "text": "няма място за играч"
+  },
+  {
+    "index": 591,
+    "metadata": 0,
+    "text": "10 мача наказания след като се изплю в лицето на съдията"
+  },
+  {
+    "index": 592,
+    "metadata": 0,
+    "text": "10 мача наказания за обида на съдия"
+  },
+  {
+    "index": 593,
+    "metadata": 0,
+    "text": "5 мача наказания за опасно влизане отзад"
+  },
+  {
+    "index": 594,
+    "metadata": 0,
+    "text": "5 мача наказание за обида на противников играч. Считаме го за нечестно."
+  },
+  {
+    "index": 595,
+    "metadata": 0,
+    "text": "5 мача наказание за ритник на противников играч. Считаме го за нечестно."
+  },
+  {
+    "index": 596,
+    "metadata": 0,
+    "text": "3 мача наказание за влизане отзад"
+  },
+  {
+    "index": 597,
+    "metadata": 0,
+    "text": "3 мача наказание за удар в носа на противников играч"
+  },
+  {
+    "index": 598,
+    "metadata": 0,
+    "text": "3 мача наказание за трубо нарушение, предотвратило явен гол."
+  },
+  {
+    "index": 599,
+    "metadata": 0,
+    "text": "3 мача наказание за удар в лицето на противников играч"
+  },
+  {
+    "index": 600,
+    "metadata": 0,
+    "text": "2 мача наказание за изключително грубо нарушение"
+  },
+  {
+    "index": 601,
+    "metadata": 0,
+    "text": "Ритна опонента! Да не би играча да мисли, че е на боксов мач? 2 мача наказание!"
+  },
+  {
+    "index": 602,
+    "metadata": 0,
+    "text": "Грубо нарушение. 2 мача наказание."
+  },
+  {
+    "index": 603,
+    "metadata": 0,
+    "text": "Разтежение на мускул. Около седмица отсъствие"
+  },
+  {
+    "index": 604,
+    "metadata": 0,
+    "text": "Разтежение на  връзки. Ще отсъства за някалка мача"
+  },
+  {
+    "index": 605,
+    "metadata": 0,
+    "text": "Контузия в слабините. Отсъствие около две седмици"
+  },
+  {
+    "index": 606,
+    "metadata": 0,
+    "text": "Натъртване в бедрото. Контузен за няколко мача"
+  },
+  {
+    "index": 607,
+    "metadata": 0,
+    "text": "С контузия в слабините. Ще остъства около две седмици"
+  },
+  {
+    "index": 608,
+    "metadata": 0,
+    "text": "Мускулно разтежение. Ще отсъства около седмица"
+  },
+  {
+    "index": 609,
+    "metadata": 0,
+    "text": "Леко изкълчване на глезена. Ще отсъства около 2 седмици"
+  },
+  {
+    "index": 610,
+    "metadata": 0,
+    "text": "Разтежение на бедрен мускул. Очаква се да остъства дълго"
+  },
+  {
+    "index": 611,
+    "metadata": 0,
+    "text": "Лекува се от нараняване в петата. Ще отсъства няколко дни"
+  },
+  {
+    "index": 612,
+    "metadata": 0,
+    "text": "Нарнен пръст на крака. Ще отсъства няколко седмици"
+  },
+  {
+    "index": 613,
+    "metadata": 0,
+    "text": "Изкълчено коляно. Ще остъства няколко дни"
+  },
+  {
+    "index": 614,
+    "metadata": 0,
+    "text": "Счупен пръст на крака. Ще остъства много седмици"
+  },
+  {
+    "index": 615,
+    "metadata": 0,
+    "text": "Счупена китка. Ще остъства много седмици"
+  },
+  {
+    "index": 616,
+    "metadata": 0,
+    "text": "Разтежение на бедрен мускул. Ще остъства много седмици"
+  },
+  {
+    "index": 617,
+    "metadata": 0,
+    "text": "Дълбока рана в крана. Ще остъства много седмици"
+  },
+  {
+    "index": 618,
+    "metadata": 0,
+    "text": "Сериозно разтежение на глезена. Ще остъства много седмици"
+  },
+  {
+    "index": 619,
+    "metadata": 0,
+    "text": "Сърдечен удар. Може би е време за пенсиониране?"
+  },
+  {
+    "index": 620,
+    "metadata": 0,
+    "text": "Фрактура на пищяла. Ще остъства много седмици"
+  },
+  {
+    "index": 621,
+    "metadata": 0,
+    "text": "Травма в кръстните връзки. Ще остъства много месеца"
+  },
+  {
+    "index": 622,
+    "metadata": 0,
+    "text": "Счупен крак. Ще остъства много месеца"
+  },
+  {
+    "index": 623,
+    "metadata": 0,
+    "text": "Скъсани кръстни връзки. Дали това е краят на кариерата му?"
+  },
+  {
+    "index": 624,
+    "metadata": 0,
+    "text": "Добре дошли в нашия клуб. Тук ще виждате забележки и предупреждения."
+  },
+  {
+    "index": 625,
+    "metadata": 0,
+    "text": "Клубът ни не може да се срами така! Не допускаме такива нещ.  Внимавайте!"
+  },
+  {
+    "index": 626,
+    "metadata": 0,
+    "text": "Не може да губите с такава голяма разлика. Ако това продължи ще говорим с мениджъра да ви уволни!"
+  },
+  {
+    "index": 627,
+    "metadata": 0,
+    "text": "Не подкрепяме загуби с такава голяма разлика. Ако това продължи ще говорим с мениджъра да ви уволни!"
+  },
+  {
+    "index": 628,
+    "metadata": 0,
+    "text": "Благодаря за повишението на заплатата. На терена ще покажа благодарността си."
+  },
+  {
+    "index": 629,
+    "metadata": 0,
+    "text": "играчът за продан беше продаден за "
+  },
+  {
+    "index": 630,
+    "metadata": 0,
+    "text": "Чухме за поканата Ви за националната селекция. Изкачайте до другата седмица за Вашата официална покана."
+  },
+  {
+    "index": 631,
+    "metadata": 0,
+    "text": "Договорът с играча изтича след около 3 седмици"
+  },
+  {
+    "index": 632,
+    "metadata": 0,
+    "text": "Договорът с играча изтече днес"
+  },
+  {
+    "index": 633,
+    "metadata": 0,
+    "text": "Периодът под наем на играча приключи, но той ще играе за Вас само след като имате под 28 играчи"
+  },
+  {
+    "index": 634,
+    "metadata": 0,
+    "text": "Тази седмица се осъществи идеален трансфер. Играчът е вече в новия си тим."
+  },
+  {
+    "index": 635,
+    "metadata": 0,
+    "text": "Днес играчът даде пресконференция за трансфера."
+  },
+  {
+    "index": 636,
+    "metadata": 0,
+    "text": "Абе, ти луд ли си? Не можеш да ме глобяваш!"
+  },
+  {
+    "index": 637,
+    "metadata": 0,
+    "text": "Това не ми хареса. Изгонването не беше моя вина."
+  },
+  {
+    "index": 638,
+    "metadata": 0,
+    "text": "Новият играч не беше приет добре. Може би има прекалено много звездни играчи в отбора ви."
+  },
+  {
+    "index": 639,
+    "metadata": 0,
+    "text": "Играчът е недоволен, защото не играе. Иска да се премести в друг клуб."
+  },
+  {
+    "index": 640,
+    "metadata": 0,
+    "text": "Договорът ми изтече. Моля той да бъде подновен или да бъда преместен в нов клуб."
+  },
+  {
+    "index": 641,
+    "metadata": 0,
+    "text": "Избухна сбиване на терена между тези играчи."
+  },
+  {
+    "index": 642,
+    "metadata": 0,
+    "text": "Днес фенове и играчи се сбиха- Мисля, че причината са лошите резултати."
+  },
+  {
+    "index": 643,
+    "metadata": 0,
+    "text": "Недоволен съм от пренатоварването на програмата ми. Имам нужда от почивка."
+  },
+  {
+    "index": 644,
+    "metadata": 0,
+    "text": "(празно)"
+  },
+  {
+    "index": 645,
+    "metadata": 0,
+    "text": "(празно)"
+  },
+  {
+    "index": 646,
+    "metadata": 0,
+    "text": "(празно)"
+  },
+  {
+    "index": 647,
+    "metadata": 0,
+    "text": "(празно)"
+  },
+  {
+    "index": 648,
+    "metadata": 0,
+    "text": "(празно)"
+  },
+  {
+    "index": 649,
+    "metadata": 0,
+    "text": "Лимитът от 3 замествания"
+  },
+  {
+    "index": 650,
+    "metadata": 0,
+    "text": "Срещи"
+  },
+  {
+    "index": 651,
+    "metadata": 0,
+    "text": "публика"
+  },
+  {
+    "index": 652,
+    "metadata": 0,
+    "text": "приходи"
+  },
+  {
+    "index": 653,
+    "metadata": 0,
+    "text": "Потвърди"
+  },
+  {
+    "index": 654,
+    "metadata": 0,
+    "text": "Искате ли да напуснете?"
+  },
+  {
+    "index": 655,
+    "metadata": 0,
+    "text": "Голове"
+  },
+  {
+    "index": 656,
+    "metadata": 0,
+    "text": "Класиране"
+  },
+  {
+    "index": 657,
+    "metadata": 0,
+    "text": "притежание на топката"
+  },
+  {
+    "index": 658,
+    "metadata": 0,
+    "text": "изстрели"
+  },
+  {
+    "index": 659,
+    "metadata": 0,
+    "text": "единоборства"
+  },
+  {
+    "index": 660,
+    "metadata": 0,
+    "text": "грешни пасове"
+  },
+  {
+    "index": 661,
+    "metadata": 0,
+    "text": "фалове"
+  },
+  {
+    "index": 662,
+    "metadata": 0,
+    "text": "Оферта за трансфер"
+  },
+  {
+    "index": 663,
+    "metadata": 0,
+    "text": "Иска играча:"
+  },
+  {
+    "index": 664,
+    "metadata": 0,
+    "text": "Предложена сума:"
+  },
+  {
+    "index": 665,
+    "metadata": 0,
+    "text": "Приеми и осъществи трансфер?"
+  },
+  {
+    "index": 666,
+    "metadata": 0,
+    "text": "Класиране по крайна позиция"
+  },
+  {
+    "index": 667,
+    "metadata": 0,
+    "text": "Класиране по точки"
+  },
+  {
+    "index": 668,
+    "metadata": 0,
+    "text": "Формат: (Т/ГЗ/ГС)"
+  },
+  {
+    "index": 669,
+    "metadata": 0,
+    "text": "Класиране Свят"
+  },
+  {
+    "index": 670,
+    "metadata": 0,
+    "text": "Точки"
+  },
+  {
+    "index": 671,
+    "metadata": 0,
+    "text": "Т"
+  },
+  {
+    "index": 672,
+    "metadata": 0,
+    "text": "Смърт на играч"
+  },
+  {
+    "index": 673,
+    "metadata": 0,
+    "text": "Играчът почина по време на тренировка. Може би, поради напредналата си възраст."
+  },
+  {
+    "index": 674,
+    "metadata": 0,
+    "text": "Заради това, тимът Ви загуби 5 точки в шампионата."
+  },
+  {
+    "index": 675,
+    "metadata": 0,
+    "text": "Изеберете национален отбор за ръководене"
+  },
+  {
+    "index": 676,
+    "metadata": 0,
+    "text": "Някои национални селекции искат да им бъдете треньор. Направете избор:"
+  },
+  {
+    "index": 677,
+    "metadata": 0,
+    "text": "Търсете играчи, които да повикате в националния"
+  },
+  {
+    "index": 678,
+    "metadata": 0,
+    "text": "Търсете играчите и след това кликнете \">>\" за добавяне. Може да викнете до 20 полеви играчи и 3ма вратари."
+  },
+  {
+    "index": 679,
+    "metadata": 0,
+    "text": "Победител"
+  },
+  {
+    "index": 680,
+    "metadata": 0,
+    "text": "Загубил"
+  },
+  {
+    "index": 681,
+    "metadata": 0,
+    "text": "Най-добро 3то място"
+  },
+  {
+    "index": 682,
+    "metadata": 0,
+    "text": "Технически:"
+  },
+  {
+    "index": 683,
+    "metadata": 0,
+    "text": "Дисциплина:"
+  },
+  {
+    "index": 684,
+    "metadata": 0,
+    "text": "Програма Приятелски мачове"
+  },
+  {
+    "index": 685,
+    "metadata": 0,
+    "text": "Предсезонни приятелски срещи"
+  },
+  {
+    "index": 686,
+    "metadata": 0,
+    "text": "Шампионатът започва на"
+  },
+  {
+    "index": 687,
+    "metadata": 0,
+    "text": "Свободни дати:"
+  },
+  {
+    "index": 688,
+    "metadata": 0,
+    "text": "Изберете противник:"
+  },
+  {
+    "index": 689,
+    "metadata": 0,
+    "text": "Място на провеждане на мача:"
+  },
+  {
+    "index": 690,
+    "metadata": 0,
+    "text": "У дома"
+  },
+  {
+    "index": 691,
+    "metadata": 0,
+    "text": "На гости"
+  },
+  {
+    "index": 692,
+    "metadata": 0,
+    "text": "Запазване на приятелски мач"
+  },
+  {
+    "index": 693,
+    "metadata": 0,
+    "text": "вече има приятелски мач на тази дата"
+  },
+  {
+    "index": 694,
+    "metadata": 0,
+    "text": "предложение отхвърлено"
+  },
+  {
+    "index": 695,
+    "metadata": 0,
+    "text": "няма достатъчно налични пари за нужните такси за приятелска среща"
+  },
+  {
+    "index": 696,
+    "metadata": 0,
+    "text": "Записан приятелски мач"
+  },
+  {
+    "index": 697,
+    "metadata": 0,
+    "text": "Потвърждение за приятелски мач"
+  },
+  {
+    "index": 698,
+    "metadata": 0,
+    "text": "иска за тази приятелска среща"
+  },
+  {
+    "index": 699,
+    "metadata": 0,
+    "text": "Трябва да платите за този приятелски мач сега, потвърждавате ли?"
+  },
+  {
+    "index": 700,
+    "metadata": 0,
+    "text": "За да потвърдите приятелската среща между тези два клуба, натиснете да."
+  },
+  {
+    "index": 701,
+    "metadata": 0,
+    "text": "Изберете номер"
+  },
+  {
+    "index": 702,
+    "metadata": 0,
+    "text": "Няма номер"
+  },
+  {
+    "index": 703,
+    "metadata": 0,
+    "text": "Искате ли да насрочите приятелски мачове, преди началото на сезона?"
+  },
+  {
+    "index": 704,
+    "metadata": 0,
+    "text": "Предложение за наем"
+  },
+  {
+    "index": 705,
+    "metadata": 0,
+    "text": "Искате ли да отдадете този играч под наем?"
+  },
+  {
+    "index": 706,
+    "metadata": 0,
+    "text": "Галирията за трофеи е празна"
+  },
+  {
+    "index": 707,
+    "metadata": 0,
+    "text": "Отборни цветове"
+  },
+  {
+    "index": 708,
+    "metadata": 0,
+    "text": "Основен цвят:"
+  },
+  {
+    "index": 709,
+    "metadata": 0,
+    "text": "Втори цвят:"
+  },
+  {
+    "index": 710,
+    "metadata": 0,
+    "text": "Продължи мача"
+  },
+  {
+    "index": 711,
+    "metadata": 0,
+    "text": "Статистика Мач"
+  },
+  {
+    "index": 712,
+    "metadata": 0,
+    "text": "Първи етап"
+  },
+  {
+    "index": 713,
+    "metadata": 0,
+    "text": "Кариерна статистика"
+  },
+  {
+    "index": 714,
+    "metadata": 0,
+    "text": "Срещи за настоящ сезон"
+  },
+  {
+    "index": 715,
+    "metadata": 0,
+    "text": "Дата"
+  },
+  {
+    "index": 716,
+    "metadata": 0,
+    "text": "Мач"
+  },
+  {
+    "index": 717,
+    "metadata": 0,
+    "text": "Рейтинг"
+  },
+  {
+    "index": 718,
+    "metadata": 0,
+    "text": "Текущ капацитет"
+  },
+  {
+    "index": 719,
+    "metadata": 0,
+    "text": "Тераса:"
+  },
+  {
+    "index": 720,
+    "metadata": 0,
+    "text": "Стандартни места:"
+  },
+  {
+    "index": 721,
+    "metadata": 0,
+    "text": "Закрити места:"
+  },
+  {
+    "index": 722,
+    "metadata": 0,
+    "text": "ВИП ложи:"
+  },
+  {
+    "index": 723,
+    "metadata": 0,
+    "text": "Цена на билет"
+  },
+  {
+    "index": 724,
+    "metadata": 0,
+    "text": "Примерни цени за тази дивизия:"
+  },
+  {
+    "index": 725,
+    "metadata": 0,
+    "text": "места"
+  },
+  {
+    "index": 726,
+    "metadata": 0,
+    "text": "Разшири стадион"
+  },
+  {
+    "index": 727,
+    "metadata": 0,
+    "text": "Текущото разширение завършва след"
+  },
+  {
+    "index": 728,
+    "metadata": 0,
+    "text": "Максимум"
+  },
+  {
+    "index": 729,
+    "metadata": 0,
+    "text": "Нови места:"
+  },
+  {
+    "index": 730,
+    "metadata": 0,
+    "text": "Изискай цена"
+  },
+  {
+    "index": 731,
+    "metadata": 0,
+    "text": "Започни разширение"
+  },
+  {
+    "index": 732,
+    "metadata": 0,
+    "text": "Приблизителна цена на разширението, плюс изпълнението на проекта"
+  },
+  {
+    "index": 733,
+    "metadata": 0,
+    "text": "Проектът се очаква да бъде завършен за"
+  },
+  {
+    "index": 734,
+    "metadata": 0,
+    "text": "В момента няма възможност стадионът да бъде разширен с толкова места"
+  },
+  {
+    "index": 735,
+    "metadata": 0,
+    "text": "Нямате достатъчно пари, за да започне разширението"
+  },
+  {
+    "index": 736,
+    "metadata": 0,
+    "text": "Редактор на отбори"
+  },
+  {
+    "index": 737,
+    "metadata": 0,
+    "text": "Зареждане отбори..."
+  },
+  {
+    "index": 738,
+    "metadata": 0,
+    "text": "Всички отбори:"
+  },
+  {
+    "index": 739,
+    "metadata": 0,
+    "text": "Отбори"
+  },
+  {
+    "index": 740,
+    "metadata": 0,
+    "text": "Национални отбори"
+  },
+  {
+    "index": 741,
+    "metadata": 0,
+    "text": "Добави отбор"
+  },
+  {
+    "index": 742,
+    "metadata": 0,
+    "text": "Редактирай отбор"
+  },
+  {
+    "index": 743,
+    "metadata": 0,
+    "text": "Изтрий отбор"
+  },
+  {
+    "index": 744,
+    "metadata": 0,
+    "text": "Държава"
+  },
+  {
+    "index": 745,
+    "metadata": 0,
+    "text": "Ниво"
+  },
+  {
+    "index": 746,
+    "metadata": 0,
+    "text": "Главно меню"
+  },
+  {
+    "index": 747,
+    "metadata": 0,
+    "text": "Изход"
+  },
+  {
+    "index": 748,
+    "metadata": 0,
+    "text": "Възраст"
+  },
+  {
+    "index": 749,
+    "metadata": 0,
+    "text": "Треньор"
+  },
+  {
+    "index": 750,
+    "metadata": 0,
+    "text": "Стадион"
+  },
+  {
+    "index": 751,
+    "metadata": 0,
+    "text": "играчи"
+  },
+  {
+    "index": 752,
+    "metadata": 0,
+    "text": "Добави играч"
+  },
+  {
+    "index": 753,
+    "metadata": 0,
+    "text": "Редактирай играч"
+  },
+  {
+    "index": 754,
+    "metadata": 0,
+    "text": "Изтрий играч"
+  },
+  {
+    "index": 755,
+    "metadata": 0,
+    "text": "Имате лимит от 25 играчи."
+  },
+  {
+    "index": 756,
+    "metadata": 0,
+    "text": "Искате ли да изтриете избрания тим?"
+  },
+  {
+    "index": 757,
+    "metadata": 0,
+    "text": "Пълно наименование"
+  },
+  {
+    "index": 758,
+    "metadata": 0,
+    "text": "Кратко наименование"
+  },
+  {
+    "index": 759,
+    "metadata": 0,
+    "text": "Основен цвят"
+  },
+  {
+    "index": 760,
+    "metadata": 0,
+    "text": "Втори цвят"
+  },
+  {
+    "index": 761,
+    "metadata": 0,
+    "text": "Звезден играч"
+  },
+  {
+    "index": 762,
+    "metadata": 0,
+    "text": "Характеристики"
+  },
+  {
+    "index": 763,
+    "metadata": 0,
+    "text": "Позиция"
+  },
+  {
+    "index": 764,
+    "metadata": 0,
+    "text": "Изберете лого"
+  },
+  {
+    "index": 765,
+    "metadata": 0,
+    "text": "Име на файл"
+  },
+  {
+    "index": 766,
+    "metadata": 0,
+    "text": "Файлът вече съществува, изберете друг"
+  },
+  {
+    "index": 767,
+    "metadata": 0,
+    "text": "Вашата регистрация ще ви даде достъп до по-новите версии в бъдеще, новите приложения и поправките на бъгове и ще ви осигури техническа поддръжка по e-mail."
+  },
+  {
+    "index": 768,
+    "metadata": 0,
+    "text": "В регистрираната версия, Вие можете:"
+  },
+  {
+    "index": 769,
+    "metadata": 0,
+    "text": "Да имате достъп до потребителската зона, където да свалите нови първенства, лога и т.н. "
+  },
+  {
+    "index": 770,
+    "metadata": 0,
+    "text": "Да започвате играта с отбор от всяка дивизия"
+  },
+  {
+    "index": 771,
+    "metadata": 0,
+    "text": "Да играете с повече от един отбор"
+  },
+  {
+    "index": 772,
+    "metadata": 0,
+    "text": "Да играете в състезания за националните отбори (Световното първенство, Европейската купа, Копа Америка)"
+  },
+  {
+    "index": 773,
+    "metadata": 0,
+    "text": "Да направите оферта за всеки играч, дори да не е в листата за трансфери и да наемате играчи"
+  },
+  {
+    "index": 774,
+    "metadata": 0,
+    "text": "Да играете мачове с по-висока скорост"
+  },
+  {
+    "index": 775,
+    "metadata": 0,
+    "text": "За да регистрирате играта, отидете на:"
+  },
+  {
+    "index": 776,
+    "metadata": 0,
+    "text": "Цената е само $12. Може да платите с кредитна карта (Visa, MasterCard, American Express, Discover), чекове, банков превод, PayPal, Western Union, Moneybookers или с пощенски превод"
+  },
+  {
+    "index": 777,
+    "metadata": 0,
+    "text": "Веднага щом получим известие, че преводът е извършен (обикновено в рамките на един работен ден), ще Ви изпратим регистрационен номер, който да напишете тук:"
+  },
+  {
+    "index": 778,
+    "metadata": 0,
+    "text": "Име"
+  },
+  {
+    "index": 779,
+    "metadata": 0,
+    "text": "Код"
+  },
+  {
+    "index": 780,
+    "metadata": 0,
+    "text": "Напишете кода"
+  },
+  {
+    "index": 781,
+    "metadata": 0,
+    "text": "CyberFoot e безплатна игра за футболен мениджмънт."
+  },
+  {
+    "index": 782,
+    "metadata": 0,
+    "text": "Свалете я на www.cyberfoot.org"
+  },
+  {
+    "index": 783,
+    "metadata": 0,
+    "text": "Само в регистрираната версия може да правите оферти за играчи, които не са в трансферната листа. Регистрирайте играта си на: www.cyberfoot.org."
+  },
+  {
+    "index": 784,
+    "metadata": 0,
+    "text": "Само регистрираната версия ви позволява да наемате играчи. Регистрирайте играта си на: www.cyberfoot.org."
+  },
+  {
+    "index": 785,
+    "metadata": 0,
+    "text": "Страни"
+  },
+  {
+    "index": 786,
+    "metadata": 0,
+    "text": "Афганистан"
+  },
+  {
+    "index": 787,
+    "metadata": 0,
+    "text": "Южна Африка"
+  },
+  {
+    "index": 788,
+    "metadata": 0,
+    "text": "Албания"
+  },
+  {
+    "index": 789,
+    "metadata": 0,
+    "text": "Германия"
+  },
+  {
+    "index": 790,
+    "metadata": 0,
+    "text": "Андора"
+  },
+  {
+    "index": 791,
+    "metadata": 0,
+    "text": "Ангола"
+  },
+  {
+    "index": 792,
+    "metadata": 0,
+    "text": "Ангила"
+  },
+  {
+    "index": 793,
+    "metadata": 0,
+    "text": "Антигуа"
+  },
+  {
+    "index": 794,
+    "metadata": 0,
+    "text": "Нидерландски Антили"
+  },
+  {
+    "index": 795,
+    "metadata": 0,
+    "text": "Саудитска Арабия"
+  },
+  {
+    "index": 796,
+    "metadata": 0,
+    "text": "Алжир"
+  },
+  {
+    "index": 797,
+    "metadata": 0,
+    "text": "Аржентина"
+  },
+  {
+    "index": 798,
+    "metadata": 0,
+    "text": "Армения"
+  },
+  {
+    "index": 799,
+    "metadata": 0,
+    "text": "Аруба"
+  },
+  {
+    "index": 800,
+    "metadata": 0,
+    "text": "Австралия"
+  },
+  {
+    "index": 801,
+    "metadata": 0,
+    "text": "Австрия"
+  },
+  {
+    "index": 802,
+    "metadata": 0,
+    "text": "Азербайджан"
+  },
+  {
+    "index": 803,
+    "metadata": 0,
+    "text": "Бахамите"
+  },
+  {
+    "index": 804,
+    "metadata": 0,
+    "text": "Бахрейн"
+  },
+  {
+    "index": 805,
+    "metadata": 0,
+    "text": "Бангладеш"
+  },
+  {
+    "index": 806,
+    "metadata": 0,
+    "text": "Барбадос"
+  },
+  {
+    "index": 807,
+    "metadata": 0,
+    "text": "Белгия"
+  },
+  {
+    "index": 808,
+    "metadata": 0,
+    "text": "Белиз (Британски Хондурас)"
+  },
+  {
+    "index": 809,
+    "metadata": 0,
+    "text": "Бенин"
+  },
+  {
+    "index": 810,
+    "metadata": 0,
+    "text": "Бермуди"
+  },
+  {
+    "index": 811,
+    "metadata": 0,
+    "text": "Беларус"
+  },
+  {
+    "index": 812,
+    "metadata": 0,
+    "text": "Боливия"
+  },
+  {
+    "index": 813,
+    "metadata": 0,
+    "text": "Босна"
+  },
+  {
+    "index": 814,
+    "metadata": 0,
+    "text": "Ботсвана"
+  },
+  {
+    "index": 815,
+    "metadata": 0,
+    "text": "Бразилия"
+  },
+  {
+    "index": 816,
+    "metadata": 0,
+    "text": "Бруней"
+  },
+  {
+    "index": 817,
+    "metadata": 0,
+    "text": "България"
+  },
+  {
+    "index": 818,
+    "metadata": 0,
+    "text": "Буркина Фасо"
+  },
+  {
+    "index": 819,
+    "metadata": 0,
+    "text": "Бурунди"
+  },
+  {
+    "index": 820,
+    "metadata": 0,
+    "text": "Бутан"
+  },
+  {
+    "index": 821,
+    "metadata": 0,
+    "text": "Кабо Верде"
+  },
+  {
+    "index": 822,
+    "metadata": 0,
+    "text": "Камерун"
+  },
+  {
+    "index": 823,
+    "metadata": 0,
+    "text": "Камбоджа"
+  },
+  {
+    "index": 824,
+    "metadata": 0,
+    "text": "Канада"
+  },
+  {
+    "index": 825,
+    "metadata": 0,
+    "text": "Катар"
+  },
+  {
+    "index": 826,
+    "metadata": 0,
+    "text": "Казахстан"
+  },
+  {
+    "index": 827,
+    "metadata": 0,
+    "text": "Чад"
+  },
+  {
+    "index": 828,
+    "metadata": 0,
+    "text": "Чили"
+  },
+  {
+    "index": 829,
+    "metadata": 0,
+    "text": "Китай"
+  },
+  {
+    "index": 830,
+    "metadata": 0,
+    "text": "Кипър"
+  },
+  {
+    "index": 831,
+    "metadata": 0,
+    "text": "Сингапур"
+  },
+  {
+    "index": 832,
+    "metadata": 0,
+    "text": "Колумбия"
+  },
+  {
+    "index": 833,
+    "metadata": 0,
+    "text": "Конго"
+  },
+  {
+    "index": 834,
+    "metadata": 0,
+    "text": "Северна Кореа"
+  },
+  {
+    "index": 835,
+    "metadata": 0,
+    "text": "Южна Кореа"
+  },
+  {
+    "index": 836,
+    "metadata": 0,
+    "text": "Кот д'Ивоар"
+  },
+  {
+    "index": 837,
+    "metadata": 0,
+    "text": "Коста Рика"
+  },
+  {
+    "index": 838,
+    "metadata": 0,
+    "text": "Хърватия"
+  },
+  {
+    "index": 839,
+    "metadata": 0,
+    "text": "Куба"
+  },
+  {
+    "index": 840,
+    "metadata": 0,
+    "text": "Дания"
+  },
+  {
+    "index": 841,
+    "metadata": 0,
+    "text": "Джибути"
+  },
+  {
+    "index": 842,
+    "metadata": 0,
+    "text": "Доминиканска република"
+  },
+  {
+    "index": 843,
+    "metadata": 0,
+    "text": "Егирет"
+  },
+  {
+    "index": 844,
+    "metadata": 0,
+    "text": "Ел Салвадор"
+  },
+  {
+    "index": 845,
+    "metadata": 0,
+    "text": "ОАЕ"
+  },
+  {
+    "index": 846,
+    "metadata": 0,
+    "text": "Еквадор"
+  },
+  {
+    "index": 847,
+    "metadata": 0,
+    "text": "Еритрея"
+  },
+  {
+    "index": 848,
+    "metadata": 0,
+    "text": "Шотландия"
+  },
+  {
+    "index": 849,
+    "metadata": 0,
+    "text": "Словакия"
+  },
+  {
+    "index": 850,
+    "metadata": 0,
+    "text": "Словения"
+  },
+  {
+    "index": 851,
+    "metadata": 0,
+    "text": "Испания"
+  },
+  {
+    "index": 852,
+    "metadata": 0,
+    "text": "Естония"
+  },
+  {
+    "index": 853,
+    "metadata": 0,
+    "text": "Етиопия"
+  },
+  {
+    "index": 854,
+    "metadata": 0,
+    "text": "САЩ"
+  },
+  {
+    "index": 855,
+    "metadata": 0,
+    "text": "Фиджи"
+  },
+  {
+    "index": 856,
+    "metadata": 0,
+    "text": "Финландия"
+  },
+  {
+    "index": 857,
+    "metadata": 0,
+    "text": "Филипините"
+  },
+  {
+    "index": 858,
+    "metadata": 0,
+    "text": "Франция"
+  },
+  {
+    "index": 859,
+    "metadata": 0,
+    "text": "Габон"
+  },
+  {
+    "index": 860,
+    "metadata": 0,
+    "text": "Гамбия"
+  },
+  {
+    "index": 861,
+    "metadata": 0,
+    "text": "Гана"
+  },
+  {
+    "index": 862,
+    "metadata": 0,
+    "text": "Грузия"
+  },
+  {
+    "index": 863,
+    "metadata": 0,
+    "text": "Гренада"
+  },
+  {
+    "index": 864,
+    "metadata": 0,
+    "text": "Гърция"
+  },
+  {
+    "index": 865,
+    "metadata": 0,
+    "text": "Гватемала"
+  },
+  {
+    "index": 866,
+    "metadata": 0,
+    "text": "Гвиана"
+  },
+  {
+    "index": 867,
+    "metadata": 0,
+    "text": "Гвинея"
+  },
+  {
+    "index": 868,
+    "metadata": 0,
+    "text": "Гвинеа-Бисау"
+  },
+  {
+    "index": 869,
+    "metadata": 0,
+    "text": "Екваториална Гвинея"
+  },
+  {
+    "index": 870,
+    "metadata": 0,
+    "text": "Хаити"
+  },
+  {
+    "index": 871,
+    "metadata": 0,
+    "text": "Холандия"
+  },
+  {
+    "index": 872,
+    "metadata": 0,
+    "text": "Хондурас"
+  },
+  {
+    "index": 873,
+    "metadata": 0,
+    "text": "Хонг Конг"
+  },
+  {
+    "index": 874,
+    "metadata": 0,
+    "text": "Унгария"
+  },
+  {
+    "index": 875,
+    "metadata": 0,
+    "text": "Йемен"
+  },
+  {
+    "index": 876,
+    "metadata": 0,
+    "text": "Каймански острови"
+  },
+  {
+    "index": 877,
+    "metadata": 0,
+    "text": "Острови Кук"
+  },
+  {
+    "index": 878,
+    "metadata": 0,
+    "text": "Фарьорски острови"
+  },
+  {
+    "index": 879,
+    "metadata": 0,
+    "text": "Соломонови острови"
+  },
+  {
+    "index": 880,
+    "metadata": 0,
+    "text": "Британски Вирджински острови"
+  },
+  {
+    "index": 881,
+    "metadata": 0,
+    "text": "Индия"
+  },
+  {
+    "index": 882,
+    "metadata": 0,
+    "text": "Индонезия"
+  },
+  {
+    "index": 883,
+    "metadata": 0,
+    "text": "Англия"
+  },
+  {
+    "index": 884,
+    "metadata": 0,
+    "text": "Иран"
+  },
+  {
+    "index": 885,
+    "metadata": 0,
+    "text": "Ирак"
+  },
+  {
+    "index": 886,
+    "metadata": 0,
+    "text": "Ирландия"
+  },
+  {
+    "index": 887,
+    "metadata": 0,
+    "text": "Северна Ирландия"
+  },
+  {
+    "index": 888,
+    "metadata": 0,
+    "text": "Исландия"
+  },
+  {
+    "index": 889,
+    "metadata": 0,
+    "text": "Израел"
+  },
+  {
+    "index": 890,
+    "metadata": 0,
+    "text": "Италия"
+  },
+  {
+    "index": 891,
+    "metadata": 0,
+    "text": "Черна гора"
+  },
+  {
+    "index": 892,
+    "metadata": 0,
+    "text": "Ямайка"
+  },
+  {
+    "index": 893,
+    "metadata": 0,
+    "text": "Япония"
+  },
+  {
+    "index": 894,
+    "metadata": 0,
+    "text": "Йордания"
+  },
+  {
+    "index": 895,
+    "metadata": 0,
+    "text": "Кения"
+  },
+  {
+    "index": 896,
+    "metadata": 0,
+    "text": "Косово"
+  },
+  {
+    "index": 897,
+    "metadata": 0,
+    "text": "Кувейт"
+  },
+  {
+    "index": 898,
+    "metadata": 0,
+    "text": "Лаос"
+  },
+  {
+    "index": 899,
+    "metadata": 0,
+    "text": "Лесото"
+  },
+  {
+    "index": 900,
+    "metadata": 0,
+    "text": "Латвия"
+  },
+  {
+    "index": 901,
+    "metadata": 0,
+    "text": "Ливан"
+  },
+  {
+    "index": 902,
+    "metadata": 0,
+    "text": "Либия"
+  },
+  {
+    "index": 903,
+    "metadata": 0,
+    "text": "Либерия"
+  },
+  {
+    "index": 904,
+    "metadata": 0,
+    "text": "Лихтенщайн"
+  },
+  {
+    "index": 905,
+    "metadata": 0,
+    "text": "Литва"
+  },
+  {
+    "index": 906,
+    "metadata": 0,
+    "text": "Люксембург"
+  },
+  {
+    "index": 907,
+    "metadata": 0,
+    "text": "Макау"
+  },
+  {
+    "index": 908,
+    "metadata": 0,
+    "text": "Македония"
+  },
+  {
+    "index": 909,
+    "metadata": 0,
+    "text": "Мадагаскар"
+  },
+  {
+    "index": 910,
+    "metadata": 0,
+    "text": "Малайзия"
+  },
+  {
+    "index": 911,
+    "metadata": 0,
+    "text": "Малауи"
+  },
+  {
+    "index": 912,
+    "metadata": 0,
+    "text": "Малдивски острови"
+  },
+  {
+    "index": 913,
+    "metadata": 0,
+    "text": "Мали"
+  },
+  {
+    "index": 914,
+    "metadata": 0,
+    "text": "Малта"
+  },
+  {
+    "index": 915,
+    "metadata": 0,
+    "text": "Мароко"
+  },
+  {
+    "index": 916,
+    "metadata": 0,
+    "text": "Мавритания"
+  },
+  {
+    "index": 917,
+    "metadata": 0,
+    "text": "Мексико"
+  },
+  {
+    "index": 918,
+    "metadata": 0,
+    "text": "Мианмар"
+  },
+  {
+    "index": 919,
+    "metadata": 0,
+    "text": "Мозамбик"
+  },
+  {
+    "index": 920,
+    "metadata": 0,
+    "text": "Молдова"
+  },
+  {
+    "index": 921,
+    "metadata": 0,
+    "text": "Монако"
+  },
+  {
+    "index": 922,
+    "metadata": 0,
+    "text": "Монголия"
+  },
+  {
+    "index": 923,
+    "metadata": 0,
+    "text": "Намибия"
+  },
+  {
+    "index": 924,
+    "metadata": 0,
+    "text": "Непал"
+  },
+  {
+    "index": 925,
+    "metadata": 0,
+    "text": "Никарагуа"
+  },
+  {
+    "index": 926,
+    "metadata": 0,
+    "text": "Нигер"
+  },
+  {
+    "index": 927,
+    "metadata": 0,
+    "text": "Нигерия"
+  },
+  {
+    "index": 928,
+    "metadata": 0,
+    "text": "Норвегия"
+  },
+  {
+    "index": 929,
+    "metadata": 0,
+    "text": "Нова Зеландия"
+  },
+  {
+    "index": 930,
+    "metadata": 0,
+    "text": "Оман"
+  },
+  {
+    "index": 931,
+    "metadata": 0,
+    "text": "Уелс"
+  },
+  {
+    "index": 932,
+    "metadata": 0,
+    "text": "Палестина"
+  },
+  {
+    "index": 933,
+    "metadata": 0,
+    "text": "Панама"
+  },
+  {
+    "index": 934,
+    "metadata": 0,
+    "text": "Папуа-Нова Гвинея"
+  },
+  {
+    "index": 935,
+    "metadata": 0,
+    "text": "Пакистан"
+  },
+  {
+    "index": 936,
+    "metadata": 0,
+    "text": "Парагвай"
+  },
+  {
+    "index": 937,
+    "metadata": 0,
+    "text": "Перу"
+  },
+  {
+    "index": 938,
+    "metadata": 0,
+    "text": "Полша"
+  },
+  {
+    "index": 939,
+    "metadata": 0,
+    "text": "Порто Рико"
+  },
+  {
+    "index": 940,
+    "metadata": 0,
+    "text": "Португалия"
+  },
+  {
+    "index": 941,
+    "metadata": 0,
+    "text": "Киргизстан"
+  },
+  {
+    "index": 942,
+    "metadata": 0,
+    "text": "Централна Африканска Република"
+  },
+  {
+    "index": 943,
+    "metadata": 0,
+    "text": "Демократична Република Конго"
+  },
+  {
+    "index": 944,
+    "metadata": 0,
+    "text": "Доминиканска Република"
+  },
+  {
+    "index": 945,
+    "metadata": 0,
+    "text": "Чехия"
+  },
+  {
+    "index": 946,
+    "metadata": 0,
+    "text": "Румъния"
+  },
+  {
+    "index": 947,
+    "metadata": 0,
+    "text": "Руанда"
+  },
+  {
+    "index": 948,
+    "metadata": 0,
+    "text": "Русия"
+  },
+  {
+    "index": 949,
+    "metadata": 0,
+    "text": "Самоа"
+  },
+  {
+    "index": 950,
+    "metadata": 0,
+    "text": "Сан Марино"
+  },
+  {
+    "index": 951,
+    "metadata": 0,
+    "text": "Санта Лусия"
+  },
+  {
+    "index": 952,
+    "metadata": 0,
+    "text": "Сейнт Китс и Невис"
+  },
+  {
+    "index": 953,
+    "metadata": 0,
+    "text": "Сао Томе и Принсипи"
+  },
+  {
+    "index": 954,
+    "metadata": 0,
+    "text": "Св. Висент и Гренадини"
+  },
+  {
+    "index": 955,
+    "metadata": 0,
+    "text": "Сенегал"
+  },
+  {
+    "index": 956,
+    "metadata": 0,
+    "text": "Сиера Леоне"
+  },
+  {
+    "index": 957,
+    "metadata": 0,
+    "text": "Сърбия"
+  },
+  {
+    "index": 958,
+    "metadata": 0,
+    "text": "Сейшели"
+  },
+  {
+    "index": 959,
+    "metadata": 0,
+    "text": "Сингапур"
+  },
+  {
+    "index": 960,
+    "metadata": 0,
+    "text": "Сирия"
+  },
+  {
+    "index": 961,
+    "metadata": 0,
+    "text": "Сомалия"
+  },
+  {
+    "index": 962,
+    "metadata": 0,
+    "text": "Шри Ланка"
+  },
+  {
+    "index": 963,
+    "metadata": 0,
+    "text": "Свазиленд"
+  },
+  {
+    "index": 964,
+    "metadata": 0,
+    "text": "Судан"
+  },
+  {
+    "index": 965,
+    "metadata": 0,
+    "text": "Швеция"
+  },
+  {
+    "index": 966,
+    "metadata": 0,
+    "text": "Швейцария"
+  },
+  {
+    "index": 967,
+    "metadata": 0,
+    "text": "Суринам"
+  },
+  {
+    "index": 968,
+    "metadata": 0,
+    "text": "Таджикистан"
+  },
+  {
+    "index": 969,
+    "metadata": 0,
+    "text": "Тайланд"
+  },
+  {
+    "index": 970,
+    "metadata": 0,
+    "text": "Таити"
+  },
+  {
+    "index": 971,
+    "metadata": 0,
+    "text": "Тайван"
+  },
+  {
+    "index": 972,
+    "metadata": 0,
+    "text": "Танзания"
+  },
+  {
+    "index": 973,
+    "metadata": 0,
+    "text": "Того"
+  },
+  {
+    "index": 974,
+    "metadata": 0,
+    "text": "Тонга"
+  },
+  {
+    "index": 975,
+    "metadata": 0,
+    "text": "Тринидад и Тобаго"
+  },
+  {
+    "index": 976,
+    "metadata": 0,
+    "text": "Тунис"
+  },
+  {
+    "index": 977,
+    "metadata": 0,
+    "text": "Туркменистан"
+  },
+  {
+    "index": 978,
+    "metadata": 0,
+    "text": "Турция"
+  },
+  {
+    "index": 979,
+    "metadata": 0,
+    "text": "Украйна"
+  },
+  {
+    "index": 980,
+    "metadata": 0,
+    "text": "Уганда"
+  },
+  {
+    "index": 981,
+    "metadata": 0,
+    "text": "Уругвай"
+  },
+  {
+    "index": 982,
+    "metadata": 0,
+    "text": "Узбекистан"
+  },
+  {
+    "index": 983,
+    "metadata": 0,
+    "text": "Вануату"
+  },
+  {
+    "index": 984,
+    "metadata": 0,
+    "text": "Венецуела"
+  },
+  {
+    "index": 985,
+    "metadata": 0,
+    "text": "Виетнам"
+  },
+  {
+    "index": 986,
+    "metadata": 0,
+    "text": "Замбия"
+  },
+  {
+    "index": 987,
+    "metadata": 0,
+    "text": "Зимбабве"
+  },
+  {
+    "index": 988,
+    "metadata": 0,
+    "text": "select al least one league of 42 teams"
+  },
+  {
+    "index": 989,
+    "metadata": 0,
+    "text": "Схема Копа Судамерикана"
+  },
+  {
+    "index": 990,
+    "metadata": 0,
+    "text": "Златна топка на"
+  },
+  {
+    "index": 991,
+    "metadata": 0,
+    "text": "Екипът на седмицата"
+  },
+  {
+    "index": 992,
+    "metadata": 0,
+    "text": "Oтбор на годината"
+  },
+  {
+    "index": 993,
+    "metadata": 0,
+    "text": "Младежка академия"
+  },
+  {
+    "index": 994,
+    "metadata": 0,
+    "text": "Aфриканската лига"
+  },
+  {
+    "index": 995,
+    "metadata": 0,
+    "text": "азиатски лига"
+  },
+  {
+    "index": 996,
+    "metadata": 0,
+    "text": "Суперкупа на УЕФА"
+  },
+  {
+    "index": 997,
+    "metadata": 0,
+    "text": "Рекопа Судамерикана"
+  },
+  {
+    "index": 998,
+    "metadata": 0,
+    "text": "Saved formations"
+  },
+  {
+    "index": 999,
+    "metadata": 0,
+    "text": "Save current formation"
+  },
+  {
+    "index": 1000,
+    "metadata": 0,
+    "text": "Изберете име"
+  },
+  {
+    "index": 1001,
+    "metadata": 0,
+    "text": "Save"
+  },
+  {
+    "index": 1002,
+    "metadata": 0,
+    "text": "Seelct at least 11 players"
+  },
+  {
+    "index": 1003,
+    "metadata": 0,
+    "text": "Back"
+  },
+  {
+    "index": 1004,
+    "metadata": 0,
+    "text": "Load"
+  },
+  {
+    "index": 1005,
+    "metadata": 0,
+    "text": "Delete"
+  },
+  {
+    "index": 1006,
+    "metadata": 0,
+    "text": "Pиза"
+  },
+  {
+    "index": 1007,
+    "metadata": 0,
+    "text": "от младежката взвод в"
+  },
+  {
+    "index": 1008,
+    "metadata": 0,
+    "text": "местен"
+  },
+  {
+    "index": 1009,
+    "metadata": 0,
+    "text": "провинция"
+  },
+  {
+    "index": 1010,
+    "metadata": 0,
+    "text": "окръжен"
+  },
+  {
+    "index": 1011,
+    "metadata": 0,
+    "text": "национална"
+  },
+  {
+    "index": 1012,
+    "metadata": 0,
+    "text": "континентален"
+  },
+  {
+    "index": 1013,
+    "metadata": 0,
+    "text": "свят"
+  },
+  {
+    "index": 1014,
+    "metadata": 0,
+    "text": "Pепутация"
+  },
+  {
+    "index": 1015,
+    "metadata": 0,
+    "text": "3 години"
+  },
+  {
+    "index": 1016,
+    "metadata": 0,
+    "text": "покажи мачове"
+  },
+  {
+    "index": 1017,
+    "metadata": 0,
+    "text": "само резултати"
+  },
+  {
+    "index": 1018,
+    "metadata": 0,
+    "text": "Лига"
+  },
+  {
+    "index": 1019,
+    "metadata": 0,
+    "text": "Шампионска лига"
+  },
+  {
+    "index": 1020,
+    "metadata": 0,
+    "text": "Либертадорес"
+  },
+  {
+    "index": 1021,
+    "metadata": 0,
+    "text": "УЕФА Лига"
+  },
+  {
+    "index": 1022,
+    "metadata": 0,
+    "text": "Aфриканската"
+  },
+  {
+    "index": 1023,
+    "metadata": 0,
+    "text": "Aзиатски"
+  },
+  {
+    "index": 1024,
+    "metadata": 0,
+    "text": "Лричина"
+  },
+  {
+    "index": 1025,
+    "metadata": 0,
+    "text": "лоши резултати"
+  },
+  {
+    "index": 1026,
+    "metadata": 0,
+    "text": "финансовата криза"
+  },
+  {
+    "index": 1027,
+    "metadata": 0,
+    "text": "недоволни привърженици"
+  },
+  {
+    "index": 1028,
+    "metadata": 0,
+    "text": "приемам"
+  },
+  {
+    "index": 1029,
+    "metadata": 0,
+    "text": "отказвам"
+  },
+  {
+    "index": 1030,
+    "metadata": 0,
+    "text": "use"
+  },
+  {
+    "index": 1031,
+    "metadata": 0,
+    "text": "Младежи"
+  },
+  {
+    "index": 1032,
+    "metadata": 0,
+    "text": "първият отбор"
+  },
+  {
+    "index": 1033,
+    "metadata": 0,
+    "text": "Търсене на отбора"
+  },
+  {
+    "index": 1034,
+    "metadata": 0,
+    "text": "Търси играч"
+  },
+  {
+    "index": 1035,
+    "metadata": 0,
+    "text": "търсене"
+  },
+  {
+    "index": 1036,
+    "metadata": 0,
+    "text": "развитие"
+  },
+  {
+    "index": 1037,
+    "metadata": 0,
+    "text": "талант"
+  },
+  {
+    "index": 1038,
+    "metadata": 0,
+    "text": "насърчаване"
+  },
+  {
+    "index": 1039,
+    "metadata": 0,
+    "text": "откажи"
+  },
+  {
+    "index": 1040,
+    "metadata": 0,
+    "text": "Вие вече имате 30 играчи"
+  },
+  {
+    "index": 1041,
+    "metadata": 0,
+    "text": "потвърди насърчаването на"
+  },
+  {
+    "index": 1042,
+    "metadata": 0,
+    "text": "Младежка академия е пълна"
+  },
+  {
+    "index": 1043,
+    "metadata": 0,
+    "text": "пращам"
+  },
+  {
+    "index": 1044,
+    "metadata": 0,
+    "text": "анулира"
+  },
+  {
+    "index": 1045,
+    "metadata": 0,
+    "text": "успешно прехвърлени"
+  },
+  {
+    "index": 1046,
+    "metadata": 0,
+    "text": "потвърди трансфера"
+  },
+  {
+    "index": 1047,
+    "metadata": 0,
+    "text": "потвърди оставката на играчите"
+  },
+  {
+    "index": 1048,
+    "metadata": 0,
+    "text": "Настройки на международни състезания"
+  },
+  {
+    "index": 1049,
+    "metadata": 0,
+    "text": "Играйте на първата година"
+  },
+  {
+    "index": 1050,
+    "metadata": 0,
+    "text": "Използвай реални групи в първата година"
+  },
+  {
+    "index": 1051,
+    "metadata": 0,
+    "text": "без хората"
+  },
+  {
+    "index": 1052,
+    "metadata": 0,
+    "text": "стойност отбор"
+  },
+  {
+    "index": 1053,
+    "metadata": 0,
+    "text": "националност"
+  },
+  {
+    "index": 1054,
+    "metadata": 0,
+    "text": "среден"
+  },
+  {
+    "index": 1055,
+    "metadata": 0,
+    "text": "Дефанзивен полузащитник"
+  },
+  {
+    "index": 1056,
+    "metadata": 0,
+    "text": "Офанзивен полузащитник"
+  },
+  {
+    "index": 1057,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1058,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1059,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1060,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1061,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1062,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1063,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1064,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1065,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1066,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1067,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1068,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1069,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1070,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1071,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1072,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1073,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1074,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1075,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1076,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1077,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1078,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1079,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1080,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1081,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1082,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1083,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1084,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1085,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1086,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1087,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1088,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1089,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1090,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1091,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1092,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1093,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1094,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1095,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1096,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1097,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1098,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1099,
+    "metadata": 0,
+    "text": ""
+  }
+]

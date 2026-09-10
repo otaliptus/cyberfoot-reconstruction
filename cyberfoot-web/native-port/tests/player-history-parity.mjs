@@ -1,0 +1,2 @@
+import {readFileSync} from 'node:fs';import assert from 'node:assert/strict';import {verifyPlayerHistory} from './player-history-proof.mjs';
+const r=verifyPlayerHistory(JSON.parse(readFileSync(new URL('./player-history-vectors.json',import.meta.url))));if(r.failures.length)console.log(JSON.stringify(r.failures.slice(0,2),null,2));assert.equal(r.failures.length,0);console.log(`Original player history: ${r.cases} cases passed.`);

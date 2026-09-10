@@ -1,0 +1,10782 @@
+{
+ "TForm7": {
+  "Image1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Shape3": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Edit4": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "Shape1": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "Shape2": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "estadocombo": {
+   "offset": 780,
+   "typeIndex": 3
+  },
+  "ComboBox1": {
+   "offset": 784,
+   "typeIndex": 4
+  },
+  "Edit5": {
+   "offset": 788,
+   "typeIndex": 2
+  },
+  "Edit3": {
+   "offset": 792,
+   "typeIndex": 2
+  },
+  "Edit2": {
+   "offset": 796,
+   "typeIndex": 2
+  },
+  "Edit1": {
+   "offset": 800,
+   "typeIndex": 2
+  },
+  "BitBtn1": {
+   "offset": 804,
+   "typeIndex": 5
+  },
+  "BitBtn2": {
+   "offset": 808,
+   "typeIndex": 5
+  },
+  "Shape4": {
+   "offset": 812,
+   "typeIndex": 1
+  },
+  "ColorDialog1": {
+   "offset": 816,
+   "typeIndex": 6
+  },
+  "Edit6": {
+   "offset": 820,
+   "typeIndex": 2
+  },
+  "label9": {
+   "offset": 824,
+   "typeIndex": 7
+  },
+  "TntLabel1": {
+   "offset": 828,
+   "typeIndex": 7
+  },
+  "TntLabel2": {
+   "offset": 832,
+   "typeIndex": 7
+  },
+  "TntLabel4": {
+   "offset": 836,
+   "typeIndex": 7
+  },
+  "TntLabel5": {
+   "offset": 840,
+   "typeIndex": 7
+  },
+  "TntLabel7": {
+   "offset": 844,
+   "typeIndex": 7
+  },
+  "TntLabel9": {
+   "offset": 848,
+   "typeIndex": 7
+  },
+  "combo1": {
+   "offset": 852,
+   "typeIndex": 8
+  },
+  "TntLabel6": {
+   "offset": 856,
+   "typeIndex": 7
+  },
+  "TntLabel3": {
+   "offset": 860,
+   "typeIndex": 7
+  },
+  "TntLabel8": {
+   "offset": 864,
+   "typeIndex": 7
+  },
+  "combobox2": {
+   "offset": 868,
+   "typeIndex": 8
+  },
+  "TntLabel10": {
+   "offset": 872,
+   "typeIndex": 7
+  },
+  "TntLabel11": {
+   "offset": 876,
+   "typeIndex": 7
+  }
+ },
+ "TForm73": {
+  "Label12": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label6": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "Shape1": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Label7": {
+   "offset": 772,
+   "typeIndex": 0
+  },
+  "Shape2": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "Label2": {
+   "offset": 780,
+   "typeIndex": 0
+  },
+  "Label3": {
+   "offset": 784,
+   "typeIndex": 0
+  },
+  "Label4": {
+   "offset": 788,
+   "typeIndex": 0
+  },
+  "image1": {
+   "offset": 792,
+   "typeIndex": 2
+  },
+  "ComboBox1": {
+   "offset": 796,
+   "typeIndex": 3
+  },
+  "Edit3": {
+   "offset": 800,
+   "typeIndex": 4
+  },
+  "BitBtn1": {
+   "offset": 804,
+   "typeIndex": 5
+  },
+  "BitBtn2": {
+   "offset": 808,
+   "typeIndex": 5
+  },
+  "ColorDialog1": {
+   "offset": 812,
+   "typeIndex": 6
+  },
+  "Shape4": {
+   "offset": 816,
+   "typeIndex": 1
+  },
+  "Label13": {
+   "offset": 820,
+   "typeIndex": 0
+  },
+  "Shape3": {
+   "offset": 824,
+   "typeIndex": 1
+  },
+  "combo1": {
+   "offset": 828,
+   "typeIndex": 7
+  }
+ },
+ "TForm4": {
+  "Shape1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Shape2": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "Edit1": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Edit2": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "Edit3": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "ComboBox1": {
+   "offset": 780,
+   "typeIndex": 2
+  },
+  "BitBtn1": {
+   "offset": 784,
+   "typeIndex": 3
+  },
+  "BitBtn2": {
+   "offset": 788,
+   "typeIndex": 3
+  },
+  "Edit4": {
+   "offset": 792,
+   "typeIndex": 1
+  },
+  "estadocombo": {
+   "offset": 796,
+   "typeIndex": 4
+  },
+  "ColorDialog1": {
+   "offset": 800,
+   "typeIndex": 5
+  },
+  "Shape4": {
+   "offset": 804,
+   "typeIndex": 0
+  },
+  "Edit6": {
+   "offset": 808,
+   "typeIndex": 1
+  },
+  "label9": {
+   "offset": 812,
+   "typeIndex": 6
+  },
+  "TntLabel1": {
+   "offset": 816,
+   "typeIndex": 6
+  },
+  "TntLabel2": {
+   "offset": 820,
+   "typeIndex": 6
+  },
+  "TntLabel3": {
+   "offset": 824,
+   "typeIndex": 6
+  },
+  "TntLabel4": {
+   "offset": 828,
+   "typeIndex": 6
+  },
+  "TntLabel5": {
+   "offset": 832,
+   "typeIndex": 6
+  },
+  "TntLabel7": {
+   "offset": 836,
+   "typeIndex": 6
+  },
+  "TntLabel6": {
+   "offset": 840,
+   "typeIndex": 6
+  },
+  "combo1": {
+   "offset": 844,
+   "typeIndex": 7
+  },
+  "TntLabel8": {
+   "offset": 848,
+   "typeIndex": 6
+  },
+  "TntLabel9": {
+   "offset": 852,
+   "typeIndex": 6
+  },
+  "TntLabel10": {
+   "offset": 856,
+   "typeIndex": 6
+  },
+  "combobox2": {
+   "offset": 860,
+   "typeIndex": 7
+  }
+ },
+ "TForm5": {
+  "Label5": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Edit1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "CheckBox1": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "BitBtn1": {
+   "offset": 772,
+   "typeIndex": 3
+  },
+  "BitBtn2": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "TrackBar1": {
+   "offset": 780,
+   "typeIndex": 4
+  },
+  "Shape4": {
+   "offset": 784,
+   "typeIndex": 5
+  },
+  "label9": {
+   "offset": 788,
+   "typeIndex": 6
+  },
+  "TntLabel1": {
+   "offset": 792,
+   "typeIndex": 6
+  },
+  "TntLabel6": {
+   "offset": 796,
+   "typeIndex": 6
+  },
+  "TntLabel4": {
+   "offset": 800,
+   "typeIndex": 6
+  },
+  "TntLabel5": {
+   "offset": 804,
+   "typeIndex": 6
+  },
+  "TntLabel2": {
+   "offset": 808,
+   "typeIndex": 6
+  },
+  "TntLabel3": {
+   "offset": 812,
+   "typeIndex": 6
+  },
+  "combobox1": {
+   "offset": 816,
+   "typeIndex": 7
+  },
+  "combo1": {
+   "offset": 820,
+   "typeIndex": 7
+  },
+  "combobox2": {
+   "offset": 824,
+   "typeIndex": 7
+  },
+  "combobox4": {
+   "offset": 828,
+   "typeIndex": 7
+  },
+  "combobox3": {
+   "offset": 832,
+   "typeIndex": 7
+  }
+ },
+ "TForm6": {
+  "Label5": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "CheckBox1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Edit1": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "TrackBar1": {
+   "offset": 772,
+   "typeIndex": 3
+  },
+  "Shape4": {
+   "offset": 776,
+   "typeIndex": 4
+  },
+  "BitBtn1": {
+   "offset": 780,
+   "typeIndex": 5
+  },
+  "BitBtn2": {
+   "offset": 784,
+   "typeIndex": 5
+  },
+  "label9": {
+   "offset": 788,
+   "typeIndex": 6
+  },
+  "TntLabel1": {
+   "offset": 792,
+   "typeIndex": 6
+  },
+  "TntLabel6": {
+   "offset": 796,
+   "typeIndex": 6
+  },
+  "TntLabel4": {
+   "offset": 800,
+   "typeIndex": 6
+  },
+  "TntLabel5": {
+   "offset": 804,
+   "typeIndex": 6
+  },
+  "TntLabel2": {
+   "offset": 808,
+   "typeIndex": 6
+  },
+  "TntLabel3": {
+   "offset": 812,
+   "typeIndex": 6
+  },
+  "combobox1": {
+   "offset": 816,
+   "typeIndex": 7
+  },
+  "combobox4": {
+   "offset": 820,
+   "typeIndex": 7
+  },
+  "combo1": {
+   "offset": 824,
+   "typeIndex": 7
+  },
+  "combobox2": {
+   "offset": 828,
+   "typeIndex": 7
+  },
+  "combobox3": {
+   "offset": 832,
+   "typeIndex": 7
+  }
+ },
+ "TForm79": {
+  "Label1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label2": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "grid1": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "idtr": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "clube": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "paisimg": {
+   "offset": 780,
+   "typeIndex": 4
+  },
+  "paisnome": {
+   "offset": 784,
+   "typeIndex": 3
+  },
+  "XiButton1": {
+   "offset": 788,
+   "typeIndex": 5
+  },
+  "XiButton2": {
+   "offset": 792,
+   "typeIndex": 5
+  },
+  "Label6": {
+   "offset": 796,
+   "typeIndex": 0
+  },
+  "Label4": {
+   "offset": 800,
+   "typeIndex": 0
+  },
+  "XiButton3": {
+   "offset": 804,
+   "typeIndex": 5
+  },
+  "Edit1": {
+   "offset": 808,
+   "typeIndex": 6
+  },
+  "Label3": {
+   "offset": 812,
+   "typeIndex": 0
+  },
+  "Shape1": {
+   "offset": 816,
+   "typeIndex": 7
+  }
+ },
+ "TForm3": {
+  "gridtimes": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "id": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "clube": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "paisnome": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "nivel": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "Panel1": {
+   "offset": 780,
+   "typeIndex": 3
+  },
+  "Label6": {
+   "offset": 784,
+   "typeIndex": 4
+  },
+  "Label11": {
+   "offset": 788,
+   "typeIndex": 4
+  },
+  "Label1": {
+   "offset": 792,
+   "typeIndex": 4
+  },
+  "Label4": {
+   "offset": 796,
+   "typeIndex": 4
+  },
+  "Label12": {
+   "offset": 800,
+   "typeIndex": 4
+  },
+  "Image3": {
+   "offset": 804,
+   "typeIndex": 5
+  },
+  "Image1": {
+   "offset": 808,
+   "typeIndex": 5
+  },
+  "Image2": {
+   "offset": 812,
+   "typeIndex": 5
+  },
+  "Label9": {
+   "offset": 816,
+   "typeIndex": 4
+  },
+  "Label8": {
+   "offset": 820,
+   "typeIndex": 4
+  },
+  "Label7": {
+   "offset": 824,
+   "typeIndex": 4
+  },
+  "Grid1": {
+   "offset": 828,
+   "typeIndex": 0
+  },
+  "idjog": {
+   "offset": 832,
+   "typeIndex": 1
+  },
+  "status": {
+   "offset": 836,
+   "typeIndex": 6
+  },
+  "estrela": {
+   "offset": 840,
+   "typeIndex": 6
+  },
+  "nome": {
+   "offset": 844,
+   "typeIndex": 2
+  },
+  "posicaojog": {
+   "offset": 848,
+   "typeIndex": 2
+  },
+  "paisjog": {
+   "offset": 852,
+   "typeIndex": 6
+  },
+  "idade": {
+   "offset": 856,
+   "typeIndex": 1
+  },
+  "habilidadejog": {
+   "offset": 860,
+   "typeIndex": 2
+  },
+  "ImageList1": {
+   "offset": 864,
+   "typeIndex": 7
+  },
+  "Label13": {
+   "offset": 868,
+   "typeIndex": 4
+  },
+  "Image4": {
+   "offset": 872,
+   "typeIndex": 5
+  },
+  "Label14": {
+   "offset": 876,
+   "typeIndex": 4
+  },
+  "gridselecoes": {
+   "offset": 880,
+   "typeIndex": 0
+  },
+  "idsel": {
+   "offset": 884,
+   "typeIndex": 1
+  },
+  "selnome": {
+   "offset": 888,
+   "typeIndex": 2
+  },
+  "selnivel": {
+   "offset": 892,
+   "typeIndex": 1
+  },
+  "PopupMenu1": {
+   "offset": 896,
+   "typeIndex": 8
+  },
+  "Adicionarjogador1": {
+   "offset": 900,
+   "typeIndex": 9
+  },
+  "DeletarJogador1": {
+   "offset": 904,
+   "typeIndex": 9
+  },
+  "N1": {
+   "offset": 908,
+   "typeIndex": 9
+  },
+  "EditarJogador1": {
+   "offset": 912,
+   "typeIndex": 9
+  },
+  "N3": {
+   "offset": 916,
+   "typeIndex": 9
+  },
+  "ransferirjogador1": {
+   "offset": 920,
+   "typeIndex": 9
+  },
+  "PopupMenu2": {
+   "offset": 924,
+   "typeIndex": 8
+  },
+  "AdicionarEquipe1": {
+   "offset": 928,
+   "typeIndex": 9
+  },
+  "EditarEquipe1": {
+   "offset": 932,
+   "typeIndex": 9
+  },
+  "N2": {
+   "offset": 936,
+   "typeIndex": 9
+  },
+  "ExcluirEquipe1": {
+   "offset": 940,
+   "typeIndex": 9
+  },
+  "Button1": {
+   "offset": 944,
+   "typeIndex": 10
+  },
+  "nxlado": {
+   "offset": 948,
+   "typeIndex": 2
+  },
+  "Label3": {
+   "offset": 952,
+   "typeIndex": 4
+  },
+  "Image13": {
+   "offset": 956,
+   "typeIndex": 5
+  },
+  "Image14": {
+   "offset": 960,
+   "typeIndex": 5
+  },
+  "erros": {
+   "offset": 964,
+   "typeIndex": 2
+  },
+  "Button2": {
+   "offset": 968,
+   "typeIndex": 10
+  },
+  "Button3": {
+   "offset": 972,
+   "typeIndex": 10
+  },
+  "bt1": {
+   "offset": 976,
+   "typeIndex": 11
+  },
+  "AdvGlowButton1": {
+   "offset": 980,
+   "typeIndex": 11
+  },
+  "AdvGlowButton2": {
+   "offset": 984,
+   "typeIndex": 11
+  },
+  "AdvGlowButton3": {
+   "offset": 988,
+   "typeIndex": 11
+  },
+  "AdvGlowButton4": {
+   "offset": 992,
+   "typeIndex": 11
+  },
+  "AdvGlowButton5": {
+   "offset": 996,
+   "typeIndex": 11
+  },
+  "Edit1": {
+   "offset": 1000,
+   "typeIndex": 12
+  },
+  "btpt": {
+   "offset": 1004,
+   "typeIndex": 11
+  },
+  "Edit2": {
+   "offset": 1008,
+   "typeIndex": 12
+  },
+  "btpj": {
+   "offset": 1012,
+   "typeIndex": 11
+  },
+  "Label15": {
+   "offset": 1016,
+   "typeIndex": 4
+  },
+  "Label16": {
+   "offset": 1020,
+   "typeIndex": 4
+  },
+  "Panel2": {
+   "offset": 1024,
+   "typeIndex": 3
+  },
+  "btdup": {
+   "offset": 1028,
+   "typeIndex": 10
+  },
+  "Label17": {
+   "offset": 1032,
+   "typeIndex": 4
+  },
+  "Label18": {
+   "offset": 1036,
+   "typeIndex": 4
+  },
+  "Image5": {
+   "offset": 1040,
+   "typeIndex": 5
+  },
+  "paisimg": {
+   "offset": 1044,
+   "typeIndex": 13
+  },
+  "paisimg2": {
+   "offset": 1048,
+   "typeIndex": 13
+  },
+  "Label20": {
+   "offset": 1052,
+   "typeIndex": 4
+  },
+  "IMGP": {
+   "offset": 1056,
+   "typeIndex": 5
+  },
+  "barra": {
+   "offset": 1060,
+   "typeIndex": 5
+  },
+  "IMGJ": {
+   "offset": 1064,
+   "typeIndex": 5
+  },
+  "xbt2": {
+   "offset": 1068,
+   "typeIndex": 14
+  },
+  "xbt1": {
+   "offset": 1072,
+   "typeIndex": 14
+  },
+  "TntLabel1": {
+   "offset": 1076,
+   "typeIndex": 4
+  },
+  "TntLabel2": {
+   "offset": 1080,
+   "typeIndex": 4
+  },
+  "TntBitBtn5": {
+   "offset": 1084,
+   "typeIndex": 14
+  },
+  "TntBitBtn4": {
+   "offset": 1088,
+   "typeIndex": 14
+  }
+ },
+ "TForm2": {
+  "Label4": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label3": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "Label5": {
+   "offset": 768,
+   "typeIndex": 0
+  },
+  "Label6": {
+   "offset": 772,
+   "typeIndex": 0
+  },
+  "barra": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "Timer1": {
+   "offset": 780,
+   "typeIndex": 2
+  }
+ },
+ "TForm52": {
+  "Image2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "sh1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "bck1": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "Shape2": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "sh2": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "bck2": {
+   "offset": 780,
+   "typeIndex": 2
+  },
+  "f52esc2": {
+   "offset": 784,
+   "typeIndex": 0
+  },
+  "f52esc1": {
+   "offset": 788,
+   "typeIndex": 0
+  },
+  "nometime_s2": {
+   "offset": 792,
+   "typeIndex": 2
+  },
+  "nometime2": {
+   "offset": 796,
+   "typeIndex": 2
+  },
+  "nometime1": {
+   "offset": 800,
+   "typeIndex": 2
+  },
+  "p2": {
+   "offset": 804,
+   "typeIndex": 3
+  },
+  "p1": {
+   "offset": 808,
+   "typeIndex": 3
+  },
+  "lb_estadio": {
+   "offset": 812,
+   "typeIndex": 3
+  },
+  "lb_pub": {
+   "offset": 816,
+   "typeIndex": 3
+  },
+  "lb_renda": {
+   "offset": 820,
+   "typeIndex": 3
+  },
+  "Image4": {
+   "offset": 824,
+   "typeIndex": 0
+  },
+  "HTMLabel1": {
+   "offset": 828,
+   "typeIndex": 3
+  },
+  "Panel1": {
+   "offset": 832,
+   "typeIndex": 4
+  },
+  "Image1": {
+   "offset": 836,
+   "typeIndex": 0
+  },
+  "Image3": {
+   "offset": 840,
+   "typeIndex": 0
+  },
+  "info1": {
+   "offset": 844,
+   "typeIndex": 3
+  },
+  "lb_tat1": {
+   "offset": 848,
+   "typeIndex": 3
+  },
+  "lb_tat2": {
+   "offset": 852,
+   "typeIndex": 3
+  },
+  "lb_tat3": {
+   "offset": 856,
+   "typeIndex": 3
+  },
+  "teste": {
+   "offset": 860,
+   "typeIndex": 5
+  },
+  "bt_irprojogo": {
+   "offset": 864,
+   "typeIndex": 6
+  },
+  "dlg_info1": {
+   "offset": 868,
+   "typeIndex": 7
+  },
+  "GDIPPictureContainer1": {
+   "offset": 872,
+   "typeIndex": 8
+  },
+  "nometime_s1": {
+   "offset": 876,
+   "typeIndex": 2
+  },
+  "labstats": {
+   "offset": 880,
+   "typeIndex": 3
+  }
+ },
+ "TForm78": {
+  "Shape1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "j1t1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "p1": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "j1t2": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "est1": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "j2t1": {
+   "offset": 780,
+   "typeIndex": 1
+  },
+  "est2": {
+   "offset": 784,
+   "typeIndex": 1
+  },
+  "p2": {
+   "offset": 788,
+   "typeIndex": 1
+  },
+  "j2t2": {
+   "offset": 792,
+   "typeIndex": 1
+  },
+  "e1": {
+   "offset": 796,
+   "typeIndex": 2
+  },
+  "e3": {
+   "offset": 800,
+   "typeIndex": 2
+  },
+  "e2": {
+   "offset": 804,
+   "typeIndex": 2
+  },
+  "e4": {
+   "offset": 808,
+   "typeIndex": 2
+  },
+  "est3": {
+   "offset": 812,
+   "typeIndex": 1
+  },
+  "est4": {
+   "offset": 816,
+   "typeIndex": 1
+  },
+  "e7": {
+   "offset": 820,
+   "typeIndex": 2
+  },
+  "e5": {
+   "offset": 824,
+   "typeIndex": 2
+  },
+  "j3t1": {
+   "offset": 828,
+   "typeIndex": 1
+  },
+  "j4t1": {
+   "offset": 832,
+   "typeIndex": 1
+  },
+  "p4": {
+   "offset": 836,
+   "typeIndex": 1
+  },
+  "p3": {
+   "offset": 840,
+   "typeIndex": 1
+  },
+  "j3t2": {
+   "offset": 844,
+   "typeIndex": 1
+  },
+  "j4t2": {
+   "offset": 848,
+   "typeIndex": 1
+  },
+  "e8": {
+   "offset": 852,
+   "typeIndex": 2
+  },
+  "e6": {
+   "offset": 856,
+   "typeIndex": 2
+  },
+  "est5": {
+   "offset": 860,
+   "typeIndex": 1
+  },
+  "est6": {
+   "offset": 864,
+   "typeIndex": 1
+  },
+  "e11": {
+   "offset": 868,
+   "typeIndex": 2
+  },
+  "e9": {
+   "offset": 872,
+   "typeIndex": 2
+  },
+  "j5t1": {
+   "offset": 876,
+   "typeIndex": 1
+  },
+  "j6t1": {
+   "offset": 880,
+   "typeIndex": 1
+  },
+  "p6": {
+   "offset": 884,
+   "typeIndex": 1
+  },
+  "p5": {
+   "offset": 888,
+   "typeIndex": 1
+  },
+  "j5t2": {
+   "offset": 892,
+   "typeIndex": 1
+  },
+  "j6t2": {
+   "offset": 896,
+   "typeIndex": 1
+  },
+  "e12": {
+   "offset": 900,
+   "typeIndex": 2
+  },
+  "e10": {
+   "offset": 904,
+   "typeIndex": 2
+  },
+  "Shape2": {
+   "offset": 908,
+   "typeIndex": 0
+  },
+  "eo11": {
+   "offset": 912,
+   "typeIndex": 2
+  },
+  "esto1": {
+   "offset": 916,
+   "typeIndex": 1
+  },
+  "esto2": {
+   "offset": 920,
+   "typeIndex": 1
+  },
+  "eo21": {
+   "offset": 924,
+   "typeIndex": 2
+  },
+  "po2": {
+   "offset": 928,
+   "typeIndex": 1
+  },
+  "po1": {
+   "offset": 932,
+   "typeIndex": 1
+  },
+  "eo22": {
+   "offset": 936,
+   "typeIndex": 2
+  },
+  "eo12": {
+   "offset": 940,
+   "typeIndex": 2
+  },
+  "num1": {
+   "offset": 944,
+   "typeIndex": 1
+  },
+  "num2": {
+   "offset": 948,
+   "typeIndex": 1
+  },
+  "esto3": {
+   "offset": 952,
+   "typeIndex": 1
+  },
+  "esto4": {
+   "offset": 956,
+   "typeIndex": 1
+  },
+  "eo31": {
+   "offset": 960,
+   "typeIndex": 2
+  },
+  "eo41": {
+   "offset": 964,
+   "typeIndex": 2
+  },
+  "po3": {
+   "offset": 968,
+   "typeIndex": 1
+  },
+  "po4": {
+   "offset": 972,
+   "typeIndex": 1
+  },
+  "eo42": {
+   "offset": 976,
+   "typeIndex": 2
+  },
+  "eo32": {
+   "offset": 980,
+   "typeIndex": 2
+  },
+  "num3": {
+   "offset": 984,
+   "typeIndex": 1
+  },
+  "num4": {
+   "offset": 988,
+   "typeIndex": 1
+  },
+  "esto8": {
+   "offset": 992,
+   "typeIndex": 1
+  },
+  "eo81": {
+   "offset": 996,
+   "typeIndex": 2
+  },
+  "eo71": {
+   "offset": 1000,
+   "typeIndex": 2
+  },
+  "esto7": {
+   "offset": 1004,
+   "typeIndex": 1
+  },
+  "esto6": {
+   "offset": 1008,
+   "typeIndex": 1
+  },
+  "eo61": {
+   "offset": 1012,
+   "typeIndex": 2
+  },
+  "eo51": {
+   "offset": 1016,
+   "typeIndex": 2
+  },
+  "esto5": {
+   "offset": 1020,
+   "typeIndex": 1
+  },
+  "po8": {
+   "offset": 1024,
+   "typeIndex": 1
+  },
+  "po7": {
+   "offset": 1028,
+   "typeIndex": 1
+  },
+  "po6": {
+   "offset": 1032,
+   "typeIndex": 1
+  },
+  "po5": {
+   "offset": 1036,
+   "typeIndex": 1
+  },
+  "eo82": {
+   "offset": 1040,
+   "typeIndex": 2
+  },
+  "eo72": {
+   "offset": 1044,
+   "typeIndex": 2
+  },
+  "eo62": {
+   "offset": 1048,
+   "typeIndex": 2
+  },
+  "eo52": {
+   "offset": 1052,
+   "typeIndex": 2
+  },
+  "num5": {
+   "offset": 1056,
+   "typeIndex": 1
+  },
+  "num6": {
+   "offset": 1060,
+   "typeIndex": 1
+  },
+  "num7": {
+   "offset": 1064,
+   "typeIndex": 1
+  },
+  "num8": {
+   "offset": 1068,
+   "typeIndex": 1
+  },
+  "esto9": {
+   "offset": 1072,
+   "typeIndex": 1
+  },
+  "eo91": {
+   "offset": 1076,
+   "typeIndex": 2
+  },
+  "eo101": {
+   "offset": 1080,
+   "typeIndex": 2
+  },
+  "esto10": {
+   "offset": 1084,
+   "typeIndex": 1
+  },
+  "esto11": {
+   "offset": 1088,
+   "typeIndex": 1
+  },
+  "eo111": {
+   "offset": 1092,
+   "typeIndex": 2
+  },
+  "eo121": {
+   "offset": 1096,
+   "typeIndex": 2
+  },
+  "esto12": {
+   "offset": 1100,
+   "typeIndex": 1
+  },
+  "lo121": {
+   "offset": 1104,
+   "typeIndex": 1
+  },
+  "lo111": {
+   "offset": 1108,
+   "typeIndex": 1
+  },
+  "lo101": {
+   "offset": 1112,
+   "typeIndex": 1
+  },
+  "lo91": {
+   "offset": 1116,
+   "typeIndex": 1
+  },
+  "po9": {
+   "offset": 1120,
+   "typeIndex": 1
+  },
+  "po10": {
+   "offset": 1124,
+   "typeIndex": 1
+  },
+  "po11": {
+   "offset": 1128,
+   "typeIndex": 1
+  },
+  "po12": {
+   "offset": 1132,
+   "typeIndex": 1
+  },
+  "lo122": {
+   "offset": 1136,
+   "typeIndex": 1
+  },
+  "lo112": {
+   "offset": 1140,
+   "typeIndex": 1
+  },
+  "lo102": {
+   "offset": 1144,
+   "typeIndex": 1
+  },
+  "lo92": {
+   "offset": 1148,
+   "typeIndex": 1
+  },
+  "eo92": {
+   "offset": 1152,
+   "typeIndex": 2
+  },
+  "eo102": {
+   "offset": 1156,
+   "typeIndex": 2
+  },
+  "eo112": {
+   "offset": 1160,
+   "typeIndex": 2
+  },
+  "eo122": {
+   "offset": 1164,
+   "typeIndex": 2
+  },
+  "num12": {
+   "offset": 1168,
+   "typeIndex": 1
+  },
+  "num11": {
+   "offset": 1172,
+   "typeIndex": 1
+  },
+  "num10": {
+   "offset": 1176,
+   "typeIndex": 1
+  },
+  "num9": {
+   "offset": 1180,
+   "typeIndex": 1
+  },
+  "lo131": {
+   "offset": 1184,
+   "typeIndex": 1
+  },
+  "eo131": {
+   "offset": 1188,
+   "typeIndex": 2
+  },
+  "esto13": {
+   "offset": 1192,
+   "typeIndex": 1
+  },
+  "esto14": {
+   "offset": 1196,
+   "typeIndex": 1
+  },
+  "eo141": {
+   "offset": 1200,
+   "typeIndex": 2
+  },
+  "lo141": {
+   "offset": 1204,
+   "typeIndex": 1
+  },
+  "po14": {
+   "offset": 1208,
+   "typeIndex": 1
+  },
+  "po13": {
+   "offset": 1212,
+   "typeIndex": 1
+  },
+  "lo132": {
+   "offset": 1216,
+   "typeIndex": 1
+  },
+  "lo142": {
+   "offset": 1220,
+   "typeIndex": 1
+  },
+  "eo142": {
+   "offset": 1224,
+   "typeIndex": 2
+  },
+  "eo132": {
+   "offset": 1228,
+   "typeIndex": 2
+  },
+  "num13": {
+   "offset": 1232,
+   "typeIndex": 1
+  },
+  "num14": {
+   "offset": 1236,
+   "typeIndex": 1
+  },
+  "esto15": {
+   "offset": 1240,
+   "typeIndex": 1
+  },
+  "eo151": {
+   "offset": 1244,
+   "typeIndex": 2
+  },
+  "lo151": {
+   "offset": 1248,
+   "typeIndex": 1
+  },
+  "po15": {
+   "offset": 1252,
+   "typeIndex": 1
+  },
+  "lo152": {
+   "offset": 1256,
+   "typeIndex": 1
+  },
+  "eo152": {
+   "offset": 1260,
+   "typeIndex": 2
+  },
+  "num15": {
+   "offset": 1264,
+   "typeIndex": 1
+  },
+  "lo161": {
+   "offset": 1268,
+   "typeIndex": 1
+  },
+  "eo161": {
+   "offset": 1272,
+   "typeIndex": 2
+  },
+  "esto16": {
+   "offset": 1276,
+   "typeIndex": 1
+  },
+  "po16": {
+   "offset": 1280,
+   "typeIndex": 1
+  },
+  "lo162": {
+   "offset": 1284,
+   "typeIndex": 1
+  },
+  "eo162": {
+   "offset": 1288,
+   "typeIndex": 2
+  },
+  "num16": {
+   "offset": 1292,
+   "typeIndex": 1
+  },
+  "gr1": {
+   "offset": 1296,
+   "typeIndex": 1
+  },
+  "gr2": {
+   "offset": 1300,
+   "typeIndex": 1
+  },
+  "gr3": {
+   "offset": 1304,
+   "typeIndex": 1
+  },
+  "gr4": {
+   "offset": 1308,
+   "typeIndex": 1
+  },
+  "gr5": {
+   "offset": 1312,
+   "typeIndex": 1
+  },
+  "gr6": {
+   "offset": 1316,
+   "typeIndex": 1
+  },
+  "gr7": {
+   "offset": 1320,
+   "typeIndex": 1
+  },
+  "gr8": {
+   "offset": 1324,
+   "typeIndex": 1
+  },
+  "bt3": {
+   "offset": 1328,
+   "typeIndex": 3
+  },
+  "Image1": {
+   "offset": 1332,
+   "typeIndex": 2
+  },
+  "label1": {
+   "offset": 1336,
+   "typeIndex": 1
+  },
+  "TntLabel1": {
+   "offset": 1340,
+   "typeIndex": 1
+  },
+  "label70": {
+   "offset": 1344,
+   "typeIndex": 1
+  },
+  "label81": {
+   "offset": 1348,
+   "typeIndex": 1
+  },
+  "label87": {
+   "offset": 1352,
+   "typeIndex": 1
+  },
+  "TntLabel2": {
+   "offset": 1356,
+   "typeIndex": 1
+  },
+  "lo11": {
+   "offset": 1360,
+   "typeIndex": 1
+  },
+  "lo81": {
+   "offset": 1364,
+   "typeIndex": 1
+  },
+  "lo71": {
+   "offset": 1368,
+   "typeIndex": 1
+  },
+  "lo61": {
+   "offset": 1372,
+   "typeIndex": 1
+  },
+  "lo51": {
+   "offset": 1376,
+   "typeIndex": 1
+  },
+  "lo41": {
+   "offset": 1380,
+   "typeIndex": 1
+  },
+  "lo31": {
+   "offset": 1384,
+   "typeIndex": 1
+  },
+  "lo21": {
+   "offset": 1388,
+   "typeIndex": 1
+  },
+  "lo12": {
+   "offset": 1392,
+   "typeIndex": 1
+  },
+  "lo22": {
+   "offset": 1396,
+   "typeIndex": 1
+  },
+  "lo32": {
+   "offset": 1400,
+   "typeIndex": 1
+  },
+  "lo42": {
+   "offset": 1404,
+   "typeIndex": 1
+  },
+  "lo52": {
+   "offset": 1408,
+   "typeIndex": 1
+  },
+  "lo62": {
+   "offset": 1412,
+   "typeIndex": 1
+  },
+  "lo72": {
+   "offset": 1416,
+   "typeIndex": 1
+  },
+  "lo82": {
+   "offset": 1420,
+   "typeIndex": 1
+  }
+ },
+ "TForm10": {
+  "Image1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "bt3": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Editg": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "Edita": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "Editc": {
+   "offset": 776,
+   "typeIndex": 2
+  },
+  "Editcm": {
+   "offset": 780,
+   "typeIndex": 2
+  },
+  "Label1": {
+   "offset": 784,
+   "typeIndex": 3
+  },
+  "Labelmg": {
+   "offset": 788,
+   "typeIndex": 3
+  },
+  "Labelmc": {
+   "offset": 792,
+   "typeIndex": 3
+  },
+  "Labelma": {
+   "offset": 796,
+   "typeIndex": 3
+  },
+  "Labelmcm": {
+   "offset": 800,
+   "typeIndex": 3
+  },
+  "xibutton1": {
+   "offset": 804,
+   "typeIndex": 4
+  },
+  "btconstruir": {
+   "offset": 808,
+   "typeIndex": 4
+  },
+  "label32": {
+   "offset": 812,
+   "typeIndex": 5
+  },
+  "label2": {
+   "offset": 816,
+   "typeIndex": 5
+  },
+  "TntLabel1": {
+   "offset": 820,
+   "typeIndex": 3
+  },
+  "TntLabel2": {
+   "offset": 824,
+   "typeIndex": 3
+  },
+  "TntLabel3": {
+   "offset": 828,
+   "typeIndex": 3
+  },
+  "TntLabel4": {
+   "offset": 832,
+   "typeIndex": 3
+  },
+  "TntLabel5": {
+   "offset": 836,
+   "typeIndex": 3
+  }
+ },
+ "TForm8": {
+  "Image1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label22": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label20": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Label21": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "Label34": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "label18": {
+   "offset": 780,
+   "typeIndex": 1
+  },
+  "label16": {
+   "offset": 784,
+   "typeIndex": 1
+  },
+  "label17": {
+   "offset": 788,
+   "typeIndex": 1
+  },
+  "Label33": {
+   "offset": 792,
+   "typeIndex": 1
+  },
+  "upc": {
+   "offset": 796,
+   "typeIndex": 2
+  },
+  "upa": {
+   "offset": 800,
+   "typeIndex": 2
+  },
+  "upg": {
+   "offset": 804,
+   "typeIndex": 2
+  },
+  "upcm": {
+   "offset": 808,
+   "typeIndex": 2
+  },
+  "label14": {
+   "offset": 812,
+   "typeIndex": 1
+  },
+  "label12": {
+   "offset": 816,
+   "typeIndex": 1
+  },
+  "label13": {
+   "offset": 820,
+   "typeIndex": 1
+  },
+  "Label28": {
+   "offset": 824,
+   "typeIndex": 1
+  },
+  "Label2": {
+   "offset": 828,
+   "typeIndex": 1
+  },
+  "label1": {
+   "offset": 832,
+   "typeIndex": 3
+  },
+  "AdvGlowButton1": {
+   "offset": 836,
+   "typeIndex": 4
+  },
+  "TntLabel2": {
+   "offset": 840,
+   "typeIndex": 1
+  },
+  "TntLabel1": {
+   "offset": 844,
+   "typeIndex": 1
+  },
+  "TntLabel3": {
+   "offset": 848,
+   "typeIndex": 1
+  },
+  "TntLabel4": {
+   "offset": 852,
+   "typeIndex": 1
+  },
+  "TntLabel5": {
+   "offset": 856,
+   "typeIndex": 1
+  },
+  "TntLabel6": {
+   "offset": 860,
+   "typeIndex": 1
+  },
+  "TntLabel7": {
+   "offset": 864,
+   "typeIndex": 1
+  },
+  "TntLabel8": {
+   "offset": 868,
+   "typeIndex": 1
+  },
+  "TntLabel9": {
+   "offset": 872,
+   "typeIndex": 1
+  },
+  "TntLabel10": {
+   "offset": 876,
+   "typeIndex": 1
+  },
+  "bt1": {
+   "offset": 880,
+   "typeIndex": 5
+  },
+  "TntLabel11": {
+   "offset": 884,
+   "typeIndex": 1
+  },
+  "AdvGlowButton2": {
+   "offset": 888,
+   "typeIndex": 5
+  }
+ },
+ "TForm91": {
+  "Image8": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Image1": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "gridview1": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "id": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "status": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "posicaojog": {
+   "offset": 780,
+   "typeIndex": 4
+  },
+  "condicao": {
+   "offset": 784,
+   "typeIndex": 3
+  },
+  "nome": {
+   "offset": 788,
+   "typeIndex": 4
+  },
+  "funcaojog": {
+   "offset": 792,
+   "typeIndex": 4
+  },
+  "energia": {
+   "offset": 796,
+   "typeIndex": 5
+  },
+  "salario": {
+   "offset": 800,
+   "typeIndex": 4
+  },
+  "passe": {
+   "offset": 804,
+   "typeIndex": 4
+  },
+  "habilidades": {
+   "offset": 808,
+   "typeIndex": 4
+  },
+  "idade": {
+   "offset": 812,
+   "typeIndex": 4
+  },
+  "moral": {
+   "offset": 816,
+   "typeIndex": 3
+  },
+  "passet": {
+   "offset": 820,
+   "typeIndex": 2
+  },
+  "salariot": {
+   "offset": 824,
+   "typeIndex": 2
+  },
+  "nxstatus": {
+   "offset": 828,
+   "typeIndex": 2
+  },
+  "lb_total": {
+   "offset": 832,
+   "typeIndex": 6
+  },
+  "ImageList1": {
+   "offset": 836,
+   "typeIndex": 7
+  },
+  "cpe": {
+   "offset": 840,
+   "typeIndex": 3
+  },
+  "forca": {
+   "offset": 844,
+   "typeIndex": 4
+  },
+  "Shape1": {
+   "offset": 848,
+   "typeIndex": 8
+  },
+  "Label1": {
+   "offset": 852,
+   "typeIndex": 9
+  },
+  "Edit1": {
+   "offset": 856,
+   "typeIndex": 10
+  },
+  "Label6": {
+   "offset": 860,
+   "typeIndex": 9
+  },
+  "nxpais": {
+   "offset": 864,
+   "typeIndex": 11
+  },
+  "Image2": {
+   "offset": 868,
+   "typeIndex": 0
+  },
+  "Shape2": {
+   "offset": 872,
+   "typeIndex": 8
+  },
+  "Label2": {
+   "offset": 876,
+   "typeIndex": 9
+  },
+  "btacao": {
+   "offset": 880,
+   "typeIndex": 12
+  },
+  "XiButton1": {
+   "offset": 884,
+   "typeIndex": 12
+  },
+  "XiButton3": {
+   "offset": 888,
+   "typeIndex": 12
+  },
+  "XiButton4": {
+   "offset": 892,
+   "typeIndex": 12
+  }
+ },
+ "TForm18": {
+  "escudo": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "list1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "bt3": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "nxtime1": {
+   "offset": 772,
+   "typeIndex": 3
+  },
+  "nxx": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "nxtime2": {
+   "offset": 780,
+   "typeIndex": 3
+  },
+  "nxpublico": {
+   "offset": 784,
+   "typeIndex": 3
+  },
+  "nxrenda": {
+   "offset": 788,
+   "typeIndex": 3
+  },
+  "nxnomecamp": {
+   "offset": 792,
+   "typeIndex": 3
+  },
+  "Label1": {
+   "offset": 796,
+   "typeIndex": 4
+  },
+  "nxdata": {
+   "offset": 800,
+   "typeIndex": 3
+  },
+  "Label2": {
+   "offset": 804,
+   "typeIndex": 4
+  },
+  "nxforacasa": {
+   "offset": 808,
+   "typeIndex": 3
+  },
+  "nxid": {
+   "offset": 812,
+   "typeIndex": 5
+  },
+  "nxdatareal": {
+   "offset": 816,
+   "typeIndex": 6
+  },
+  "label32": {
+   "offset": 820,
+   "typeIndex": 7
+  },
+  "combo1": {
+   "offset": 824,
+   "typeIndex": 8
+  }
+ },
+ "TForm55": {
+  "Shape2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label2": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Shape3": {
+   "offset": 772,
+   "typeIndex": 0
+  },
+  "escudo": {
+   "offset": 776,
+   "typeIndex": 2
+  },
+  "Grid": {
+   "offset": 780,
+   "typeIndex": 3
+  },
+  "NxTextColumn1": {
+   "offset": 784,
+   "typeIndex": 4
+  },
+  "NxTextColumn2": {
+   "offset": 788,
+   "typeIndex": 4
+  },
+  "NxTextColumn3": {
+   "offset": 792,
+   "typeIndex": 4
+  },
+  "NxTextColumn4": {
+   "offset": 796,
+   "typeIndex": 4
+  },
+  "NxTextColumn5": {
+   "offset": 800,
+   "typeIndex": 4
+  },
+  "NxTextColumn6": {
+   "offset": 804,
+   "typeIndex": 4
+  },
+  "NxTextColumn7": {
+   "offset": 808,
+   "typeIndex": 4
+  },
+  "NxTextColumn8": {
+   "offset": 812,
+   "typeIndex": 4
+  },
+  "NxTextColumn9": {
+   "offset": 816,
+   "typeIndex": 4
+  },
+  "NxTextColumn10": {
+   "offset": 820,
+   "typeIndex": 4
+  },
+  "Label5": {
+   "offset": 824,
+   "typeIndex": 1
+  },
+  "anoid": {
+   "offset": 828,
+   "typeIndex": 4
+  },
+  "Image1": {
+   "offset": 832,
+   "typeIndex": 2
+  },
+  "Shape4": {
+   "offset": 836,
+   "typeIndex": 0
+  },
+  "Image2": {
+   "offset": 840,
+   "typeIndex": 2
+  },
+  "label32": {
+   "offset": 844,
+   "typeIndex": 5
+  }
+ },
+ "TForm49": {
+  "Shape2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label2": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Label3": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "Label4": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "Label5": {
+   "offset": 780,
+   "typeIndex": 1
+  },
+  "escudo": {
+   "offset": 784,
+   "typeIndex": 2
+  },
+  "bt1": {
+   "offset": 788,
+   "typeIndex": 3
+  },
+  "bt2": {
+   "offset": 792,
+   "typeIndex": 3
+  }
+ },
+ "TForm61": {
+  "Shape2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "btconf": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "bt2": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "label1": {
+   "offset": 772,
+   "typeIndex": 2
+  }
+ },
+ "TForm60": {
+  "Shape2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label5": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Edit1": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "info1": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "TntLabel1": {
+   "offset": 780,
+   "typeIndex": 4
+  },
+  "TntLabel2": {
+   "offset": 784,
+   "typeIndex": 4
+  },
+  "Label6": {
+   "offset": 788,
+   "typeIndex": 1
+  },
+  "TntLabel4": {
+   "offset": 792,
+   "typeIndex": 4
+  },
+  "TntLabel3": {
+   "offset": 796,
+   "typeIndex": 4
+  },
+  "bt1": {
+   "offset": 800,
+   "typeIndex": 5
+  },
+  "bt2": {
+   "offset": 804,
+   "typeIndex": 5
+  }
+ },
+ "TForm58": {
+  "Shape3": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Shape1": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "bt3": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Gridview1": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "id": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "Nxjogador": {
+   "offset": 780,
+   "typeIndex": 4
+  },
+  "nxorigem": {
+   "offset": 784,
+   "typeIndex": 4
+  },
+  "nxdestino": {
+   "offset": 788,
+   "typeIndex": 4
+  },
+  "nxvalor": {
+   "offset": 792,
+   "typeIndex": 4
+  },
+  "nxano": {
+   "offset": 796,
+   "typeIndex": 4
+  },
+  "label4": {
+   "offset": 800,
+   "typeIndex": 5
+  },
+  "combopais": {
+   "offset": 804,
+   "typeIndex": 6
+  },
+  "label5": {
+   "offset": 808,
+   "typeIndex": 7
+  }
+ },
+ "TForm74": {
+  "escudoimg": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "XiButton1": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "Shape1": {
+   "offset": 772,
+   "typeIndex": 3
+  },
+  "tr_lib": {
+   "offset": 776,
+   "typeIndex": 0
+  },
+  "lab1": {
+   "offset": 780,
+   "typeIndex": 1
+  },
+  "lab2": {
+   "offset": 784,
+   "typeIndex": 1
+  },
+  "tr_copabra": {
+   "offset": 788,
+   "typeIndex": 0
+  },
+  "tr_copaesp": {
+   "offset": 792,
+   "typeIndex": 0
+  },
+  "tr_copaita": {
+   "offset": 796,
+   "typeIndex": 0
+  },
+  "tr_copaeng": {
+   "offset": 800,
+   "typeIndex": 0
+  },
+  "tr_sul": {
+   "offset": 804,
+   "typeIndex": 0
+  },
+  "tr_cl": {
+   "offset": 808,
+   "typeIndex": 0
+  },
+  "tr_nacgen": {
+   "offset": 812,
+   "typeIndex": 0
+  },
+  "tr_uefa": {
+   "offset": 816,
+   "typeIndex": 0
+  },
+  "tr_copagen": {
+   "offset": 820,
+   "typeIndex": 0
+  },
+  "tr_mundial": {
+   "offset": 824,
+   "typeIndex": 0
+  },
+  "tr_nacbra": {
+   "offset": 828,
+   "typeIndex": 0
+  },
+  "tr_naceng": {
+   "offset": 832,
+   "typeIndex": 0
+  },
+  "tr_nacita": {
+   "offset": 836,
+   "typeIndex": 0
+  },
+  "tr_nacesp": {
+   "offset": 840,
+   "typeIndex": 0
+  },
+  "lab3": {
+   "offset": 844,
+   "typeIndex": 1
+  },
+  "lab4": {
+   "offset": 848,
+   "typeIndex": 1
+  },
+  "lab5": {
+   "offset": 852,
+   "typeIndex": 1
+  },
+  "lab6": {
+   "offset": 856,
+   "typeIndex": 1
+  },
+  "labc1": {
+   "offset": 860,
+   "typeIndex": 1
+  },
+  "labc2": {
+   "offset": 864,
+   "typeIndex": 1
+  },
+  "labc4": {
+   "offset": 868,
+   "typeIndex": 1
+  },
+  "labc3": {
+   "offset": 872,
+   "typeIndex": 1
+  },
+  "labc6": {
+   "offset": 876,
+   "typeIndex": 1
+  },
+  "labc5": {
+   "offset": 880,
+   "typeIndex": 1
+  },
+  "tr_estadual": {
+   "offset": 884,
+   "typeIndex": 0
+  },
+  "Label2": {
+   "offset": 888,
+   "typeIndex": 1
+  },
+  "tr_recopas": {
+   "offset": 892,
+   "typeIndex": 0
+  },
+  "tr_recopae": {
+   "offset": 896,
+   "typeIndex": 0
+  },
+  "tr_casi": {
+   "offset": 900,
+   "typeIndex": 0
+  },
+  "tr_cafr": {
+   "offset": 904,
+   "typeIndex": 0
+  },
+  "lab7": {
+   "offset": 908,
+   "typeIndex": 1
+  },
+  "labc7": {
+   "offset": 912,
+   "typeIndex": 1
+  },
+  "label32": {
+   "offset": 916,
+   "typeIndex": 4
+  }
+ },
+ "TForm16": {
+  "XiButton1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "HTMLabel1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "XiButton2": {
+   "offset": 768,
+   "typeIndex": 0
+  },
+  "XiButton3": {
+   "offset": 772,
+   "typeIndex": 0
+  },
+  "gridview1": {
+   "offset": 776,
+   "typeIndex": 2
+  },
+  "nxid": {
+   "offset": 780,
+   "typeIndex": 3
+  },
+  "nxdata": {
+   "offset": 784,
+   "typeIndex": 4
+  },
+  "nxjogo": {
+   "offset": 788,
+   "typeIndex": 5
+  },
+  "nxnota": {
+   "offset": 792,
+   "typeIndex": 5
+  },
+  "label32": {
+   "offset": 796,
+   "typeIndex": 1
+  },
+  "UniHTMLabel1": {
+   "offset": 800,
+   "typeIndex": 1
+  },
+  "infojt2": {
+   "offset": 804,
+   "typeIndex": 6
+  },
+  "infojt": {
+   "offset": 808,
+   "typeIndex": 1
+  },
+  "PictureContainer1": {
+   "offset": 812,
+   "typeIndex": 7
+  }
+ },
+ "TForm47": {
+  "gridview1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "id": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "colocacao": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "nxtecnico": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "timeatual": {
+   "offset": 776,
+   "typeIndex": 2
+  },
+  "Mundial": {
+   "offset": 780,
+   "typeIndex": 1
+  },
+  "lib": {
+   "offset": 784,
+   "typeIndex": 1
+  },
+  "sul": {
+   "offset": 788,
+   "typeIndex": 1
+  },
+  "nacional": {
+   "offset": 792,
+   "typeIndex": 1
+  },
+  "copa": {
+   "offset": 796,
+   "typeIndex": 1
+  },
+  "estadual": {
+   "offset": 800,
+   "typeIndex": 1
+  },
+  "pontos": {
+   "offset": 804,
+   "typeIndex": 1
+  },
+  "Label4": {
+   "offset": 808,
+   "typeIndex": 3
+  },
+  "infojt2": {
+   "offset": 812,
+   "typeIndex": 4
+  },
+  "Shape1": {
+   "offset": 816,
+   "typeIndex": 5
+  },
+  "label13": {
+   "offset": 820,
+   "typeIndex": 6
+  },
+  "label53": {
+   "offset": 824,
+   "typeIndex": 6
+  },
+  "Shape2": {
+   "offset": 828,
+   "typeIndex": 5
+  },
+  "XiButton1": {
+   "offset": 832,
+   "typeIndex": 7
+  },
+  "XiButton3": {
+   "offset": 836,
+   "typeIndex": 7
+  },
+  "Image2": {
+   "offset": 840,
+   "typeIndex": 8
+  },
+  "Shape3": {
+   "offset": 844,
+   "typeIndex": 5
+  },
+  "label32": {
+   "offset": 848,
+   "typeIndex": 6
+  },
+  "labinfo": {
+   "offset": 852,
+   "typeIndex": 6
+  },
+  "label5": {
+   "offset": 856,
+   "typeIndex": 3
+  },
+  "label2": {
+   "offset": 860,
+   "typeIndex": 3
+  },
+  "combopais": {
+   "offset": 864,
+   "typeIndex": 9
+  }
+ },
+ "TForm27": {
+  "Label3": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label4": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "Label6": {
+   "offset": 768,
+   "typeIndex": 0
+  },
+  "Label7": {
+   "offset": 772,
+   "typeIndex": 0
+  },
+  "Label8": {
+   "offset": 776,
+   "typeIndex": 0
+  },
+  "Label9": {
+   "offset": 780,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 784,
+   "typeIndex": 0
+  },
+  "Label10": {
+   "offset": 788,
+   "typeIndex": 0
+  },
+  "Label11": {
+   "offset": 792,
+   "typeIndex": 0
+  },
+  "Label2": {
+   "offset": 796,
+   "typeIndex": 0
+  },
+  "ckpais": {
+   "offset": 800,
+   "typeIndex": 1
+  },
+  "Edit1": {
+   "offset": 804,
+   "typeIndex": 2
+  },
+  "ckavenda": {
+   "offset": 808,
+   "typeIndex": 1
+  },
+  "c1": {
+   "offset": 812,
+   "typeIndex": 3
+  },
+  "c4": {
+   "offset": 816,
+   "typeIndex": 3
+  },
+  "c3": {
+   "offset": 820,
+   "typeIndex": 3
+  },
+  "ckestrela": {
+   "offset": 824,
+   "typeIndex": 1
+  },
+  "MaskImageList": {
+   "offset": 828,
+   "typeIndex": 4
+  },
+  "NormalImageList": {
+   "offset": 832,
+   "typeIndex": 4
+  },
+  "gfind": {
+   "offset": 836,
+   "typeIndex": 5
+  },
+  "nxpais": {
+   "offset": 840,
+   "typeIndex": 6
+  },
+  "nximg": {
+   "offset": 844,
+   "typeIndex": 6
+  },
+  "nxnome": {
+   "offset": 848,
+   "typeIndex": 7
+  },
+  "nxclube": {
+   "offset": 852,
+   "typeIndex": 7
+  },
+  "nxposicao": {
+   "offset": 856,
+   "typeIndex": 7
+  },
+  "nxforca": {
+   "offset": 860,
+   "typeIndex": 8
+  },
+  "nxidade": {
+   "offset": 864,
+   "typeIndex": 8
+  },
+  "nxsalario": {
+   "offset": 868,
+   "typeIndex": 7
+  },
+  "nxavenda": {
+   "offset": 872,
+   "typeIndex": 6
+  },
+  "nxpasse": {
+   "offset": 876,
+   "typeIndex": 7
+  },
+  "nxhabilidade": {
+   "offset": 880,
+   "typeIndex": 7
+  },
+  "nxid": {
+   "offset": 884,
+   "typeIndex": 8
+  },
+  "nxvalortmp": {
+   "offset": 888,
+   "typeIndex": 8
+  },
+  "ckemp": {
+   "offset": 892,
+   "typeIndex": 1
+  },
+  "nxlado": {
+   "offset": 896,
+   "typeIndex": 7
+  },
+  "Label5": {
+   "offset": 900,
+   "typeIndex": 0
+  },
+  "nxgols": {
+   "offset": 904,
+   "typeIndex": 7
+  },
+  "Shape1": {
+   "offset": 908,
+   "typeIndex": 9
+  },
+  "Image4": {
+   "offset": 912,
+   "typeIndex": 10
+  },
+  "Label12": {
+   "offset": 916,
+   "typeIndex": 0
+  },
+  "Label13": {
+   "offset": 920,
+   "typeIndex": 0
+  },
+  "Label14": {
+   "offset": 924,
+   "typeIndex": 0
+  },
+  "Label15": {
+   "offset": 928,
+   "typeIndex": 0
+  },
+  "label32": {
+   "offset": 932,
+   "typeIndex": 11
+  },
+  "c5": {
+   "offset": 936,
+   "typeIndex": 12
+  },
+  "c6": {
+   "offset": 940,
+   "typeIndex": 12
+  },
+  "c2": {
+   "offset": 944,
+   "typeIndex": 12
+  },
+  "c7": {
+   "offset": 948,
+   "typeIndex": 12
+  },
+  "button2": {
+   "offset": 952,
+   "typeIndex": 13
+  },
+  "combopais": {
+   "offset": 956,
+   "typeIndex": 12
+  },
+  "combo_lado": {
+   "offset": 960,
+   "typeIndex": 12
+  },
+  "TntLabel1": {
+   "offset": 964,
+   "typeIndex": 0
+  }
+ },
+ "TForm14": {
+  "Label13": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "NormalImageList": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "ImageList1": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "MaskImageList": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "ImageList2": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "Label21": {
+   "offset": 780,
+   "typeIndex": 0
+  },
+  "Label22": {
+   "offset": 784,
+   "typeIndex": 0
+  },
+  "Timer1": {
+   "offset": 788,
+   "typeIndex": 2
+  },
+  "joglist": {
+   "offset": 792,
+   "typeIndex": 3
+  },
+  "posicaojog": {
+   "offset": 796,
+   "typeIndex": 4
+  },
+  "id": {
+   "offset": 800,
+   "typeIndex": 5
+  },
+  "status": {
+   "offset": 804,
+   "typeIndex": 6
+  },
+  "nomejog": {
+   "offset": 808,
+   "typeIndex": 4
+  },
+  "forca": {
+   "offset": 812,
+   "typeIndex": 5
+  },
+  "energia": {
+   "offset": 816,
+   "typeIndex": 4
+  },
+  "passe": {
+   "offset": 820,
+   "typeIndex": 4
+  },
+  "salario": {
+   "offset": 824,
+   "typeIndex": 4
+  },
+  "idade": {
+   "offset": 828,
+   "typeIndex": 5
+  },
+  "gols": {
+   "offset": 832,
+   "typeIndex": 5
+  },
+  "habilidadejog": {
+   "offset": 836,
+   "typeIndex": 4
+  },
+  "avenda": {
+   "offset": 840,
+   "typeIndex": 6
+  },
+  "Image1": {
+   "offset": 844,
+   "typeIndex": 7
+  },
+  "PopupMenu1": {
+   "offset": 848,
+   "typeIndex": 8
+  },
+  "Histricodejogos1": {
+   "offset": 852,
+   "typeIndex": 9
+  },
+  "NextGrid1": {
+   "offset": 856,
+   "typeIndex": 3
+  },
+  "treetree": {
+   "offset": 860,
+   "typeIndex": 10
+  },
+  "treeid": {
+   "offset": 864,
+   "typeIndex": 4
+  },
+  "treeimg": {
+   "offset": 868,
+   "typeIndex": 6
+  },
+  "nxemp": {
+   "offset": 872,
+   "typeIndex": 6
+  },
+  "Label27": {
+   "offset": 876,
+   "typeIndex": 0
+  },
+  "Image13": {
+   "offset": 880,
+   "typeIndex": 7
+  },
+  "infojt2": {
+   "offset": 884,
+   "typeIndex": 11
+  },
+  "GDIPPictureContainer1": {
+   "offset": 888,
+   "typeIndex": 12
+  },
+  "Image4": {
+   "offset": 892,
+   "typeIndex": 7
+  },
+  "Image9": {
+   "offset": 896,
+   "typeIndex": 7
+  },
+  "vendej": {
+   "offset": 900,
+   "typeIndex": 13
+  },
+  "nxlado": {
+   "offset": 904,
+   "typeIndex": 4
+  },
+  "paisjog": {
+   "offset": 908,
+   "typeIndex": 14
+  },
+  "Label6": {
+   "offset": 912,
+   "typeIndex": 0
+  },
+  "Image8": {
+   "offset": 916,
+   "typeIndex": 7
+  },
+  "Label4": {
+   "offset": 920,
+   "typeIndex": 0
+  },
+  "Label3": {
+   "offset": 924,
+   "typeIndex": 0
+  },
+  "gp2": {
+   "offset": 928,
+   "typeIndex": 15
+  },
+  "gp1": {
+   "offset": 932,
+   "typeIndex": 15
+  },
+  "Label2": {
+   "offset": 936,
+   "typeIndex": 0
+  },
+  "Label8": {
+   "offset": 940,
+   "typeIndex": 0
+  },
+  "escudo": {
+   "offset": 944,
+   "typeIndex": 7
+  },
+  "Image7": {
+   "offset": 948,
+   "typeIndex": 7
+  },
+  "Label5": {
+   "offset": 952,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 956,
+   "typeIndex": 0
+  },
+  "Shape1": {
+   "offset": 960,
+   "typeIndex": 16
+  },
+  "Image2": {
+   "offset": 964,
+   "typeIndex": 7
+  },
+  "bt4": {
+   "offset": 968,
+   "typeIndex": 17
+  },
+  "bt1": {
+   "offset": 972,
+   "typeIndex": 17
+  },
+  "bt2": {
+   "offset": 976,
+   "typeIndex": 17
+  },
+  "bt3": {
+   "offset": 980,
+   "typeIndex": 18
+  },
+  "TntLabel1": {
+   "offset": 984,
+   "typeIndex": 0
+  },
+  "infojt": {
+   "offset": 988,
+   "typeIndex": 19
+  },
+  "XiButton2": {
+   "offset": 992,
+   "typeIndex": 17
+  }
+ },
+ "TForm15": {
+  "Shape2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label2": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Shape1": {
+   "offset": 772,
+   "typeIndex": 0
+  },
+  "Label3": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "Label4": {
+   "offset": 780,
+   "typeIndex": 1
+  },
+  "Label5": {
+   "offset": 784,
+   "typeIndex": 1
+  },
+  "Label6": {
+   "offset": 788,
+   "typeIndex": 1
+  },
+  "c2": {
+   "offset": 792,
+   "typeIndex": 2
+  },
+  "c1": {
+   "offset": 796,
+   "typeIndex": 2
+  },
+  "Gridview1": {
+   "offset": 800,
+   "typeIndex": 3
+  },
+  "nxano": {
+   "offset": 804,
+   "typeIndex": 4
+  },
+  "nxestadio": {
+   "offset": 808,
+   "typeIndex": 5
+  },
+  "nxt1": {
+   "offset": 812,
+   "typeIndex": 5
+  },
+  "nxp": {
+   "offset": 816,
+   "typeIndex": 5
+  },
+  "nxt2": {
+   "offset": 820,
+   "typeIndex": 5
+  },
+  "nxcamp": {
+   "offset": 824,
+   "typeIndex": 5
+  },
+  "bt3": {
+   "offset": 828,
+   "typeIndex": 6
+  }
+ },
+ "TForm20": {
+  "combo2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "t1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "nxjogador": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "nxclube": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "nxgols": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "nxjogos": {
+   "offset": 780,
+   "typeIndex": 3
+  },
+  "nxjogid": {
+   "offset": 784,
+   "typeIndex": 3
+  },
+  "nxgolst": {
+   "offset": 788,
+   "typeIndex": 3
+  },
+  "nxjogost": {
+   "offset": 792,
+   "typeIndex": 3
+  },
+  "Label4": {
+   "offset": 796,
+   "typeIndex": 4
+  },
+  "XiButton1": {
+   "offset": 800,
+   "typeIndex": 5
+  },
+  "nxid": {
+   "offset": 804,
+   "typeIndex": 3
+  },
+  "ncpos": {
+   "offset": 808,
+   "typeIndex": 6
+  },
+  "label32": {
+   "offset": 812,
+   "typeIndex": 7
+  },
+  "combopais": {
+   "offset": 816,
+   "typeIndex": 8
+  },
+  "combo1": {
+   "offset": 820,
+   "typeIndex": 8
+  }
+ },
+ "TForm22": {
+  "Shape1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label2": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Label3": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "Label4": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "Label5": {
+   "offset": 780,
+   "typeIndex": 1
+  },
+  "Label6": {
+   "offset": 784,
+   "typeIndex": 1
+  },
+  "Label7": {
+   "offset": 788,
+   "typeIndex": 1
+  },
+  "Label8": {
+   "offset": 792,
+   "typeIndex": 1
+  },
+  "Label9": {
+   "offset": 796,
+   "typeIndex": 1
+  },
+  "Label10": {
+   "offset": 800,
+   "typeIndex": 1
+  },
+  "Label11": {
+   "offset": 804,
+   "typeIndex": 1
+  },
+  "Label12": {
+   "offset": 808,
+   "typeIndex": 1
+  },
+  "Label13": {
+   "offset": 812,
+   "typeIndex": 1
+  },
+  "l8": {
+   "offset": 816,
+   "typeIndex": 1
+  },
+  "l1": {
+   "offset": 820,
+   "typeIndex": 1
+  },
+  "l2": {
+   "offset": 824,
+   "typeIndex": 1
+  },
+  "l3": {
+   "offset": 828,
+   "typeIndex": 1
+  },
+  "l4": {
+   "offset": 832,
+   "typeIndex": 1
+  },
+  "l5": {
+   "offset": 836,
+   "typeIndex": 1
+  },
+  "l6": {
+   "offset": 840,
+   "typeIndex": 1
+  },
+  "l7": {
+   "offset": 844,
+   "typeIndex": 1
+  },
+  "l9": {
+   "offset": 848,
+   "typeIndex": 1
+  },
+  "l10": {
+   "offset": 852,
+   "typeIndex": 1
+  },
+  "l11": {
+   "offset": 856,
+   "typeIndex": 1
+  },
+  "Label14": {
+   "offset": 860,
+   "typeIndex": 1
+  },
+  "Label15": {
+   "offset": 864,
+   "typeIndex": 1
+  },
+  "Label16": {
+   "offset": 868,
+   "typeIndex": 1
+  },
+  "Label17": {
+   "offset": 872,
+   "typeIndex": 1
+  },
+  "Label18": {
+   "offset": 876,
+   "typeIndex": 1
+  },
+  "Label19": {
+   "offset": 880,
+   "typeIndex": 1
+  },
+  "Label20": {
+   "offset": 884,
+   "typeIndex": 1
+  },
+  "Label21": {
+   "offset": 888,
+   "typeIndex": 1
+  },
+  "XiButton2": {
+   "offset": 892,
+   "typeIndex": 2
+  },
+  "Label23": {
+   "offset": 896,
+   "typeIndex": 1
+  },
+  "Label24": {
+   "offset": 900,
+   "typeIndex": 1
+  },
+  "Label25": {
+   "offset": 904,
+   "typeIndex": 1
+  },
+  "Label26": {
+   "offset": 908,
+   "typeIndex": 1
+  },
+  "label32": {
+   "offset": 912,
+   "typeIndex": 3
+  }
+ },
+ "TForm24": {
+  "Shape2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label4": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label2": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Label3": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "Label1": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "Edit1": {
+   "offset": 780,
+   "typeIndex": 2
+  },
+  "UpDown1": {
+   "offset": 784,
+   "typeIndex": 3
+  },
+  "Label6": {
+   "offset": 788,
+   "typeIndex": 1
+  },
+  "Label7": {
+   "offset": 792,
+   "typeIndex": 1
+  },
+  "label32": {
+   "offset": 796,
+   "typeIndex": 4
+  },
+  "combom": {
+   "offset": 800,
+   "typeIndex": 5
+  },
+  "CHButton1": {
+   "offset": 804,
+   "typeIndex": 6
+  },
+  "bt3": {
+   "offset": 808,
+   "typeIndex": 6
+  }
+ },
+ "TForm25": {
+  "Shape2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label2": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label3": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Timer1": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "button1": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "button2": {
+   "offset": 780,
+   "typeIndex": 3
+  },
+  "label1": {
+   "offset": 784,
+   "typeIndex": 4
+  }
+ },
+ "TForm23": {
+  "Shape4": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "l1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Shape1": {
+   "offset": 768,
+   "typeIndex": 0
+  },
+  "jlnome": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "jlpos": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "Image1": {
+   "offset": 780,
+   "typeIndex": 2
+  },
+  "Shape2": {
+   "offset": 784,
+   "typeIndex": 0
+  },
+  "Label8": {
+   "offset": 788,
+   "typeIndex": 1
+  },
+  "jlforca": {
+   "offset": 792,
+   "typeIndex": 1
+  },
+  "Label1": {
+   "offset": 796,
+   "typeIndex": 1
+  },
+  "Label6": {
+   "offset": 800,
+   "typeIndex": 1
+  },
+  "jlage": {
+   "offset": 804,
+   "typeIndex": 1
+  },
+  "Label14": {
+   "offset": 808,
+   "typeIndex": 1
+  },
+  "Label19": {
+   "offset": 812,
+   "typeIndex": 1
+  },
+  "jlpais": {
+   "offset": 816,
+   "typeIndex": 1
+  },
+  "Label9": {
+   "offset": 820,
+   "typeIndex": 1
+  },
+  "jlsalario": {
+   "offset": 824,
+   "typeIndex": 1
+  },
+  "Label11": {
+   "offset": 828,
+   "typeIndex": 1
+  },
+  "jlj": {
+   "offset": 832,
+   "typeIndex": 1
+  },
+  "jlstatus": {
+   "offset": 836,
+   "typeIndex": 1
+  },
+  "Label10": {
+   "offset": 840,
+   "typeIndex": 1
+  },
+  "jlpasse": {
+   "offset": 844,
+   "typeIndex": 1
+  },
+  "Image2": {
+   "offset": 848,
+   "typeIndex": 2
+  },
+  "jlg": {
+   "offset": 852,
+   "typeIndex": 1
+  },
+  "Image3": {
+   "offset": 856,
+   "typeIndex": 2
+  },
+  "jlca": {
+   "offset": 860,
+   "typeIndex": 1
+  },
+  "Shape3": {
+   "offset": 864,
+   "typeIndex": 0
+  },
+  "jlenergia": {
+   "offset": 868,
+   "typeIndex": 1
+  },
+  "Label5": {
+   "offset": 872,
+   "typeIndex": 1
+  },
+  "Label3": {
+   "offset": 876,
+   "typeIndex": 1
+  },
+  "Shape5": {
+   "offset": 880,
+   "typeIndex": 0
+  },
+  "escudo": {
+   "offset": 884,
+   "typeIndex": 2
+  },
+  "escudo2": {
+   "offset": 888,
+   "typeIndex": 2
+  },
+  "Notebook1": {
+   "offset": 892,
+   "typeIndex": 3
+  },
+  "Label2": {
+   "offset": 896,
+   "typeIndex": 1
+  },
+  "Label4": {
+   "offset": 900,
+   "typeIndex": 1
+  },
+  "Label7": {
+   "offset": 904,
+   "typeIndex": 1
+  },
+  "Label15": {
+   "offset": 908,
+   "typeIndex": 1
+  },
+  "Label17": {
+   "offset": 912,
+   "typeIndex": 1
+  },
+  "Label18": {
+   "offset": 916,
+   "typeIndex": 1
+  },
+  "Edit1": {
+   "offset": 920,
+   "typeIndex": 4
+  },
+  "Label16": {
+   "offset": 924,
+   "typeIndex": 1
+  },
+  "Timer1": {
+   "offset": 928,
+   "typeIndex": 5
+  },
+  "Timer2": {
+   "offset": 932,
+   "typeIndex": 5
+  },
+  "Label12": {
+   "offset": 936,
+   "typeIndex": 1
+  },
+  "chbutton1": {
+   "offset": 940,
+   "typeIndex": 6
+  }
+ },
+ "TForm28": {
+  "Panel1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label3": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label4": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Label6": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "Label7": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "Label5": {
+   "offset": 780,
+   "typeIndex": 1
+  },
+  "Label2": {
+   "offset": 784,
+   "typeIndex": 1
+  },
+  "bt3": {
+   "offset": 788,
+   "typeIndex": 2
+  },
+  "label32": {
+   "offset": 792,
+   "typeIndex": 3
+  },
+  "bt2": {
+   "offset": 796,
+   "typeIndex": 4
+  },
+  "bt1": {
+   "offset": 800,
+   "typeIndex": 4
+  }
+ },
+ "TForm29": {
+  "Shape2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label2": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "XiButton1": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "ImageList1": {
+   "offset": 772,
+   "typeIndex": 3
+  },
+  "ScrollBox1": {
+   "offset": 776,
+   "typeIndex": 4
+  },
+  "p_camp": {
+   "offset": 780,
+   "typeIndex": 5
+  },
+  "label32": {
+   "offset": 784,
+   "typeIndex": 6
+  },
+  "TntLabel4": {
+   "offset": 788,
+   "typeIndex": 7
+  },
+  "TntLabel3": {
+   "offset": 792,
+   "typeIndex": 7
+  },
+  "TntLabel2": {
+   "offset": 796,
+   "typeIndex": 7
+  },
+  "TntLabel1": {
+   "offset": 800,
+   "typeIndex": 7
+  },
+  "label7": {
+   "offset": 804,
+   "typeIndex": 7
+  },
+  "combo1": {
+   "offset": 808,
+   "typeIndex": 8
+  }
+ },
+ "TForm64": {
+  "Shape1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Shape2": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Label2": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "Label3": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "Shape3": {
+   "offset": 780,
+   "typeIndex": 0
+  },
+  "Shape4": {
+   "offset": 784,
+   "typeIndex": 0
+  },
+  "Label4": {
+   "offset": 788,
+   "typeIndex": 1
+  },
+  "Label5": {
+   "offset": 792,
+   "typeIndex": 1
+  },
+  "Label6": {
+   "offset": 796,
+   "typeIndex": 1
+  },
+  "Shape5": {
+   "offset": 800,
+   "typeIndex": 0
+  },
+  "ColorDialog1": {
+   "offset": 804,
+   "typeIndex": 2
+  },
+  "bt3": {
+   "offset": 808,
+   "typeIndex": 3
+  },
+  "TntBitBtn1": {
+   "offset": 812,
+   "typeIndex": 3
+  }
+ },
+ "TForm32": {
+  "Shape1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label2": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Label3": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "Shape3": {
+   "offset": 776,
+   "typeIndex": 0
+  },
+  "Label4": {
+   "offset": 780,
+   "typeIndex": 1
+  },
+  "Label5": {
+   "offset": 784,
+   "typeIndex": 1
+  },
+  "Label6": {
+   "offset": 788,
+   "typeIndex": 1
+  },
+  "Label8": {
+   "offset": 792,
+   "typeIndex": 1
+  },
+  "Label9": {
+   "offset": 796,
+   "typeIndex": 1
+  },
+  "cksom": {
+   "offset": 800,
+   "typeIndex": 2
+  },
+  "cknegrito": {
+   "offset": 804,
+   "typeIndex": 2
+  },
+  "ckcor": {
+   "offset": 808,
+   "typeIndex": 2
+  },
+  "Image1": {
+   "offset": 812,
+   "typeIndex": 3
+  },
+  "Label10": {
+   "offset": 816,
+   "typeIndex": 1
+  },
+  "Shape2": {
+   "offset": 820,
+   "typeIndex": 0
+  },
+  "Label11": {
+   "offset": 824,
+   "typeIndex": 1
+  },
+  "Label12": {
+   "offset": 828,
+   "typeIndex": 1
+  },
+  "list1": {
+   "offset": 832,
+   "typeIndex": 4
+  },
+  "NxImageColumn1": {
+   "offset": 836,
+   "typeIndex": 5
+  },
+  "NxImageColumn2": {
+   "offset": 840,
+   "typeIndex": 5
+  },
+  "NxTextColumn1": {
+   "offset": 844,
+   "typeIndex": 6
+  },
+  "NxTextColumn3": {
+   "offset": 848,
+   "typeIndex": 6
+  },
+  "ImageList2": {
+   "offset": 852,
+   "typeIndex": 7
+  },
+  "Label15": {
+   "offset": 856,
+   "typeIndex": 1
+  },
+  "Label16": {
+   "offset": 860,
+   "typeIndex": 1
+  },
+  "Label17": {
+   "offset": 864,
+   "typeIndex": 1
+  },
+  "Label18": {
+   "offset": 868,
+   "typeIndex": 1
+  },
+  "ckcontrato": {
+   "offset": 872,
+   "typeIndex": 2
+  },
+  "Label13": {
+   "offset": 876,
+   "typeIndex": 1
+  },
+  "Label14": {
+   "offset": 880,
+   "typeIndex": 1
+  },
+  "Label19": {
+   "offset": 884,
+   "typeIndex": 1
+  },
+  "Label20": {
+   "offset": 888,
+   "typeIndex": 1
+  },
+  "Image2": {
+   "offset": 892,
+   "typeIndex": 3
+  },
+  "chdestaque": {
+   "offset": 896,
+   "typeIndex": 2
+  },
+  "Label21": {
+   "offset": 900,
+   "typeIndex": 1
+  },
+  "c1d": {
+   "offset": 904,
+   "typeIndex": 0
+  },
+  "c2d": {
+   "offset": 908,
+   "typeIndex": 0
+  },
+  "c3d": {
+   "offset": 912,
+   "typeIndex": 0
+  },
+  "ComboBox2": {
+   "offset": 916,
+   "typeIndex": 8
+  },
+  "ComboBox1": {
+   "offset": 920,
+   "typeIndex": 8
+  },
+  "ComboBox4": {
+   "offset": 924,
+   "typeIndex": 8
+  },
+  "combobox7": {
+   "offset": 928,
+   "typeIndex": 8
+  },
+  "combobox6": {
+   "offset": 932,
+   "typeIndex": 8
+  },
+  "combobox5": {
+   "offset": 936,
+   "typeIndex": 8
+  },
+  "ComboBox3": {
+   "offset": 940,
+   "typeIndex": 8
+  },
+  "combo42": {
+   "offset": 944,
+   "typeIndex": 8
+  },
+  "combo41": {
+   "offset": 948,
+   "typeIndex": 8
+  },
+  "combo61": {
+   "offset": 952,
+   "typeIndex": 8
+  },
+  "combo62": {
+   "offset": 956,
+   "typeIndex": 8
+  }
+ },
+ "TForm35": {
+  "Label1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "j1t1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "j2t2": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "j2t1": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "j3t2": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "j3t1": {
+   "offset": 780,
+   "typeIndex": 1
+  },
+  "j4t2": {
+   "offset": 784,
+   "typeIndex": 1
+  },
+  "j4t1": {
+   "offset": 788,
+   "typeIndex": 1
+  },
+  "j5t2": {
+   "offset": 792,
+   "typeIndex": 1
+  },
+  "j5t1": {
+   "offset": 796,
+   "typeIndex": 1
+  },
+  "j6t2": {
+   "offset": 800,
+   "typeIndex": 1
+  },
+  "j6t1": {
+   "offset": 804,
+   "typeIndex": 1
+  },
+  "j7t2": {
+   "offset": 808,
+   "typeIndex": 1
+  },
+  "j7t1": {
+   "offset": 812,
+   "typeIndex": 1
+  },
+  "j8t2": {
+   "offset": 816,
+   "typeIndex": 1
+  },
+  "j8t1": {
+   "offset": 820,
+   "typeIndex": 1
+  },
+  "j9t1": {
+   "offset": 824,
+   "typeIndex": 1
+  },
+  "j9t2": {
+   "offset": 828,
+   "typeIndex": 1
+  },
+  "j10t1": {
+   "offset": 832,
+   "typeIndex": 1
+  },
+  "j10t2": {
+   "offset": 836,
+   "typeIndex": 1
+  },
+  "j11t1": {
+   "offset": 840,
+   "typeIndex": 1
+  },
+  "j11t2": {
+   "offset": 844,
+   "typeIndex": 1
+  },
+  "j12t1": {
+   "offset": 848,
+   "typeIndex": 1
+  },
+  "j12t2": {
+   "offset": 852,
+   "typeIndex": 1
+  },
+  "j13t1": {
+   "offset": 856,
+   "typeIndex": 1
+  },
+  "j13t2": {
+   "offset": 860,
+   "typeIndex": 1
+  },
+  "j14t1": {
+   "offset": 864,
+   "typeIndex": 1
+  },
+  "j14t2": {
+   "offset": 868,
+   "typeIndex": 1
+  },
+  "j15t1": {
+   "offset": 872,
+   "typeIndex": 1
+  },
+  "j15t2": {
+   "offset": 876,
+   "typeIndex": 1
+  },
+  "j16t1": {
+   "offset": 880,
+   "typeIndex": 1
+  },
+  "j16t2": {
+   "offset": 884,
+   "typeIndex": 1
+  },
+  "j25t1": {
+   "offset": 888,
+   "typeIndex": 1
+  },
+  "Shape1": {
+   "offset": 892,
+   "typeIndex": 2
+  },
+  "Shape2": {
+   "offset": 896,
+   "typeIndex": 2
+  },
+  "j25t2": {
+   "offset": 900,
+   "typeIndex": 1
+  },
+  "j26t1": {
+   "offset": 904,
+   "typeIndex": 1
+  },
+  "j26t2": {
+   "offset": 908,
+   "typeIndex": 1
+  },
+  "j28t2": {
+   "offset": 912,
+   "typeIndex": 1
+  },
+  "j28t1": {
+   "offset": 916,
+   "typeIndex": 1
+  },
+  "j27t2": {
+   "offset": 920,
+   "typeIndex": 1
+  },
+  "j27t1": {
+   "offset": 924,
+   "typeIndex": 1
+  },
+  "Shape33": {
+   "offset": 928,
+   "typeIndex": 2
+  },
+  "Shape34": {
+   "offset": 932,
+   "typeIndex": 2
+  },
+  "Shape35": {
+   "offset": 936,
+   "typeIndex": 2
+  },
+  "Shape360": {
+   "offset": 940,
+   "typeIndex": 2
+  },
+  "Shape37": {
+   "offset": 944,
+   "typeIndex": 2
+  },
+  "Shape38": {
+   "offset": 948,
+   "typeIndex": 2
+  },
+  "Shape39": {
+   "offset": 952,
+   "typeIndex": 2
+  },
+  "Shape40": {
+   "offset": 956,
+   "typeIndex": 2
+  },
+  "Shape41": {
+   "offset": 960,
+   "typeIndex": 2
+  },
+  "Shape42": {
+   "offset": 964,
+   "typeIndex": 2
+  },
+  "Shape43": {
+   "offset": 968,
+   "typeIndex": 2
+  },
+  "Shape44": {
+   "offset": 972,
+   "typeIndex": 2
+  },
+  "Shape45": {
+   "offset": 976,
+   "typeIndex": 2
+  },
+  "Shape46": {
+   "offset": 980,
+   "typeIndex": 2
+  },
+  "Shape47": {
+   "offset": 984,
+   "typeIndex": 2
+  },
+  "Shape48": {
+   "offset": 988,
+   "typeIndex": 2
+  },
+  "j29t1": {
+   "offset": 992,
+   "typeIndex": 1
+  },
+  "j29t2": {
+   "offset": 996,
+   "typeIndex": 1
+  },
+  "j30t1": {
+   "offset": 1000,
+   "typeIndex": 1
+  },
+  "j30t2": {
+   "offset": 1004,
+   "typeIndex": 1
+  },
+  "Shape4": {
+   "offset": 1008,
+   "typeIndex": 2
+  },
+  "Shape5": {
+   "offset": 1012,
+   "typeIndex": 2
+  },
+  "Shape6": {
+   "offset": 1016,
+   "typeIndex": 2
+  },
+  "Shape7": {
+   "offset": 1020,
+   "typeIndex": 2
+  },
+  "Shape8": {
+   "offset": 1024,
+   "typeIndex": 2
+  },
+  "Shape9": {
+   "offset": 1028,
+   "typeIndex": 2
+  },
+  "Shape10": {
+   "offset": 1032,
+   "typeIndex": 2
+  },
+  "Shape11": {
+   "offset": 1036,
+   "typeIndex": 2
+  },
+  "Shape12": {
+   "offset": 1040,
+   "typeIndex": 2
+  },
+  "Shape13": {
+   "offset": 1044,
+   "typeIndex": 2
+  },
+  "Shape14": {
+   "offset": 1048,
+   "typeIndex": 2
+  },
+  "Shape15": {
+   "offset": 1052,
+   "typeIndex": 2
+  },
+  "Shape16": {
+   "offset": 1056,
+   "typeIndex": 2
+  },
+  "Shape17": {
+   "offset": 1060,
+   "typeIndex": 2
+  },
+  "Shape19": {
+   "offset": 1064,
+   "typeIndex": 2
+  },
+  "Shape20": {
+   "offset": 1068,
+   "typeIndex": 2
+  },
+  "Shape21": {
+   "offset": 1072,
+   "typeIndex": 2
+  },
+  "Shape22": {
+   "offset": 1076,
+   "typeIndex": 2
+  },
+  "Shape23": {
+   "offset": 1080,
+   "typeIndex": 2
+  },
+  "Shape24": {
+   "offset": 1084,
+   "typeIndex": 2
+  },
+  "Shape25": {
+   "offset": 1088,
+   "typeIndex": 2
+  },
+  "Shape26": {
+   "offset": 1092,
+   "typeIndex": 2
+  },
+  "Shape27": {
+   "offset": 1096,
+   "typeIndex": 2
+  },
+  "Shape28": {
+   "offset": 1100,
+   "typeIndex": 2
+  },
+  "Shape29": {
+   "offset": 1104,
+   "typeIndex": 2
+  },
+  "Shape30": {
+   "offset": 1108,
+   "typeIndex": 2
+  },
+  "Shape31": {
+   "offset": 1112,
+   "typeIndex": 2
+  },
+  "Shape32": {
+   "offset": 1116,
+   "typeIndex": 2
+  },
+  "Shape49": {
+   "offset": 1120,
+   "typeIndex": 2
+  },
+  "Shape50": {
+   "offset": 1124,
+   "typeIndex": 2
+  },
+  "Shape51": {
+   "offset": 1128,
+   "typeIndex": 2
+  },
+  "Shape52": {
+   "offset": 1132,
+   "typeIndex": 2
+  },
+  "Shape53": {
+   "offset": 1136,
+   "typeIndex": 2
+  },
+  "Shape54": {
+   "offset": 1140,
+   "typeIndex": 2
+  },
+  "Shape55": {
+   "offset": 1144,
+   "typeIndex": 2
+  },
+  "Shape56": {
+   "offset": 1148,
+   "typeIndex": 2
+  },
+  "Shape57": {
+   "offset": 1152,
+   "typeIndex": 2
+  },
+  "Shape58": {
+   "offset": 1156,
+   "typeIndex": 2
+  },
+  "Shape59": {
+   "offset": 1160,
+   "typeIndex": 2
+  },
+  "Shape60": {
+   "offset": 1164,
+   "typeIndex": 2
+  },
+  "Shape61": {
+   "offset": 1168,
+   "typeIndex": 2
+  },
+  "Shape62": {
+   "offset": 1172,
+   "typeIndex": 2
+  },
+  "Shape63": {
+   "offset": 1176,
+   "typeIndex": 2
+  },
+  "Shape64": {
+   "offset": 1180,
+   "typeIndex": 2
+  },
+  "Shape65": {
+   "offset": 1184,
+   "typeIndex": 2
+  },
+  "Shape3": {
+   "offset": 1188,
+   "typeIndex": 2
+  },
+  "Shape66": {
+   "offset": 1192,
+   "typeIndex": 2
+  },
+  "Shape67": {
+   "offset": 1196,
+   "typeIndex": 2
+  },
+  "Shape68": {
+   "offset": 1200,
+   "typeIndex": 2
+  },
+  "Shape69": {
+   "offset": 1204,
+   "typeIndex": 2
+  },
+  "Shape70": {
+   "offset": 1208,
+   "typeIndex": 2
+  },
+  "Shape71": {
+   "offset": 1212,
+   "typeIndex": 2
+  },
+  "Shape72": {
+   "offset": 1216,
+   "typeIndex": 2
+  },
+  "Shape73": {
+   "offset": 1220,
+   "typeIndex": 2
+  },
+  "Shape74": {
+   "offset": 1224,
+   "typeIndex": 2
+  },
+  "Shape75": {
+   "offset": 1228,
+   "typeIndex": 2
+  },
+  "Shape76": {
+   "offset": 1232,
+   "typeIndex": 2
+  },
+  "Shape77": {
+   "offset": 1236,
+   "typeIndex": 2
+  },
+  "Shape78": {
+   "offset": 1240,
+   "typeIndex": 2
+  },
+  "Shape79": {
+   "offset": 1244,
+   "typeIndex": 2
+  },
+  "j17t1": {
+   "offset": 1248,
+   "typeIndex": 1
+  },
+  "j17t2": {
+   "offset": 1252,
+   "typeIndex": 1
+  },
+  "j18t1": {
+   "offset": 1256,
+   "typeIndex": 1
+  },
+  "j18t2": {
+   "offset": 1260,
+   "typeIndex": 1
+  },
+  "j20t2": {
+   "offset": 1264,
+   "typeIndex": 1
+  },
+  "j20t1": {
+   "offset": 1268,
+   "typeIndex": 1
+  },
+  "j19t2": {
+   "offset": 1272,
+   "typeIndex": 1
+  },
+  "j19t1": {
+   "offset": 1276,
+   "typeIndex": 1
+  },
+  "j21t1": {
+   "offset": 1280,
+   "typeIndex": 1
+  },
+  "j21t2": {
+   "offset": 1284,
+   "typeIndex": 1
+  },
+  "j22t1": {
+   "offset": 1288,
+   "typeIndex": 1
+  },
+  "j22t2": {
+   "offset": 1292,
+   "typeIndex": 1
+  },
+  "j24t2": {
+   "offset": 1296,
+   "typeIndex": 1
+  },
+  "j24t1": {
+   "offset": 1300,
+   "typeIndex": 1
+  },
+  "j23t2": {
+   "offset": 1304,
+   "typeIndex": 1
+  },
+  "j23t1": {
+   "offset": 1308,
+   "typeIndex": 1
+  },
+  "Shape80": {
+   "offset": 1312,
+   "typeIndex": 2
+  },
+  "Shape81": {
+   "offset": 1316,
+   "typeIndex": 2
+  },
+  "Shape82": {
+   "offset": 1320,
+   "typeIndex": 2
+  },
+  "Shape84": {
+   "offset": 1324,
+   "typeIndex": 2
+  },
+  "Shape85": {
+   "offset": 1328,
+   "typeIndex": 2
+  },
+  "Shape86": {
+   "offset": 1332,
+   "typeIndex": 2
+  },
+  "Shape87": {
+   "offset": 1336,
+   "typeIndex": 2
+  },
+  "Shape88": {
+   "offset": 1340,
+   "typeIndex": 2
+  },
+  "Shape89": {
+   "offset": 1344,
+   "typeIndex": 2
+  },
+  "Shape90": {
+   "offset": 1348,
+   "typeIndex": 2
+  },
+  "Shape91": {
+   "offset": 1352,
+   "typeIndex": 2
+  },
+  "Shape92": {
+   "offset": 1356,
+   "typeIndex": 2
+  },
+  "Shape93": {
+   "offset": 1360,
+   "typeIndex": 2
+  },
+  "Shape94": {
+   "offset": 1364,
+   "typeIndex": 2
+  },
+  "Shape95": {
+   "offset": 1368,
+   "typeIndex": 2
+  },
+  "Shape96": {
+   "offset": 1372,
+   "typeIndex": 2
+  },
+  "Shape97": {
+   "offset": 1376,
+   "typeIndex": 2
+  },
+  "Shape98": {
+   "offset": 1380,
+   "typeIndex": 2
+  },
+  "Shape99": {
+   "offset": 1384,
+   "typeIndex": 2
+  },
+  "Shape100": {
+   "offset": 1388,
+   "typeIndex": 2
+  },
+  "Shape101": {
+   "offset": 1392,
+   "typeIndex": 2
+  },
+  "Shape102": {
+   "offset": 1396,
+   "typeIndex": 2
+  },
+  "Shape103": {
+   "offset": 1400,
+   "typeIndex": 2
+  },
+  "Shape104": {
+   "offset": 1404,
+   "typeIndex": 2
+  },
+  "Shape105": {
+   "offset": 1408,
+   "typeIndex": 2
+  },
+  "Shape106": {
+   "offset": 1412,
+   "typeIndex": 2
+  },
+  "Shape107": {
+   "offset": 1416,
+   "typeIndex": 2
+  },
+  "Shape108": {
+   "offset": 1420,
+   "typeIndex": 2
+  },
+  "Shape109": {
+   "offset": 1424,
+   "typeIndex": 2
+  },
+  "Shape110": {
+   "offset": 1428,
+   "typeIndex": 2
+  },
+  "Shape111": {
+   "offset": 1432,
+   "typeIndex": 2
+  },
+  "Shape112": {
+   "offset": 1436,
+   "typeIndex": 2
+  },
+  "Shape36": {
+   "offset": 1440,
+   "typeIndex": 2
+  },
+  "Shape113": {
+   "offset": 1444,
+   "typeIndex": 2
+  },
+  "Shape114": {
+   "offset": 1448,
+   "typeIndex": 2
+  },
+  "Shape115": {
+   "offset": 1452,
+   "typeIndex": 2
+  },
+  "Shape116": {
+   "offset": 1456,
+   "typeIndex": 2
+  },
+  "Shape117": {
+   "offset": 1460,
+   "typeIndex": 2
+  },
+  "Shape118": {
+   "offset": 1464,
+   "typeIndex": 2
+  },
+  "Shape119": {
+   "offset": 1468,
+   "typeIndex": 2
+  },
+  "Shape120": {
+   "offset": 1472,
+   "typeIndex": 2
+  },
+  "j31t1": {
+   "offset": 1476,
+   "typeIndex": 1
+  },
+  "j31t2": {
+   "offset": 1480,
+   "typeIndex": 1
+  },
+  "Shape121": {
+   "offset": 1484,
+   "typeIndex": 2
+  },
+  "Shape122": {
+   "offset": 1488,
+   "typeIndex": 2
+  },
+  "Label62": {
+   "offset": 1492,
+   "typeIndex": 1
+  },
+  "Label63": {
+   "offset": 1496,
+   "typeIndex": 0
+  },
+  "j1t2": {
+   "offset": 1500,
+   "typeIndex": 1
+  },
+  "pl1": {
+   "offset": 1504,
+   "typeIndex": 1
+  },
+  "pl2": {
+   "offset": 1508,
+   "typeIndex": 1
+  },
+  "pl3": {
+   "offset": 1512,
+   "typeIndex": 1
+  },
+  "pl4": {
+   "offset": 1516,
+   "typeIndex": 1
+  },
+  "pl5": {
+   "offset": 1520,
+   "typeIndex": 1
+  },
+  "pl6": {
+   "offset": 1524,
+   "typeIndex": 1
+  },
+  "pl7": {
+   "offset": 1528,
+   "typeIndex": 1
+  },
+  "pl8": {
+   "offset": 1532,
+   "typeIndex": 1
+  },
+  "pl9": {
+   "offset": 1536,
+   "typeIndex": 1
+  },
+  "pl10": {
+   "offset": 1540,
+   "typeIndex": 1
+  },
+  "pl11": {
+   "offset": 1544,
+   "typeIndex": 1
+  },
+  "pl12": {
+   "offset": 1548,
+   "typeIndex": 1
+  },
+  "pl13": {
+   "offset": 1552,
+   "typeIndex": 1
+  },
+  "pl14": {
+   "offset": 1556,
+   "typeIndex": 1
+  },
+  "pl15": {
+   "offset": 1560,
+   "typeIndex": 1
+  },
+  "pl16": {
+   "offset": 1564,
+   "typeIndex": 1
+  },
+  "pl17": {
+   "offset": 1568,
+   "typeIndex": 1
+  },
+  "pl18": {
+   "offset": 1572,
+   "typeIndex": 1
+  },
+  "pl19": {
+   "offset": 1576,
+   "typeIndex": 1
+  },
+  "pl20": {
+   "offset": 1580,
+   "typeIndex": 1
+  },
+  "pl21": {
+   "offset": 1584,
+   "typeIndex": 1
+  },
+  "pl22": {
+   "offset": 1588,
+   "typeIndex": 1
+  },
+  "pl23": {
+   "offset": 1592,
+   "typeIndex": 1
+  },
+  "pl24": {
+   "offset": 1596,
+   "typeIndex": 1
+  },
+  "pl25": {
+   "offset": 1600,
+   "typeIndex": 1
+  },
+  "pl26": {
+   "offset": 1604,
+   "typeIndex": 1
+  },
+  "pl27": {
+   "offset": 1608,
+   "typeIndex": 1
+  },
+  "pl28": {
+   "offset": 1612,
+   "typeIndex": 1
+  },
+  "pl29": {
+   "offset": 1616,
+   "typeIndex": 1
+  },
+  "pl30": {
+   "offset": 1620,
+   "typeIndex": 1
+  },
+  "pl31": {
+   "offset": 1624,
+   "typeIndex": 1
+  },
+  "img2": {
+   "offset": 1628,
+   "typeIndex": 3
+  },
+  "img4": {
+   "offset": 1632,
+   "typeIndex": 3
+  },
+  "img3": {
+   "offset": 1636,
+   "typeIndex": 3
+  },
+  "img6": {
+   "offset": 1640,
+   "typeIndex": 3
+  },
+  "img5": {
+   "offset": 1644,
+   "typeIndex": 3
+  },
+  "img8": {
+   "offset": 1648,
+   "typeIndex": 3
+  },
+  "img7": {
+   "offset": 1652,
+   "typeIndex": 3
+  },
+  "img10": {
+   "offset": 1656,
+   "typeIndex": 3
+  },
+  "img9": {
+   "offset": 1660,
+   "typeIndex": 3
+  },
+  "img12": {
+   "offset": 1664,
+   "typeIndex": 3
+  },
+  "img11": {
+   "offset": 1668,
+   "typeIndex": 3
+  },
+  "img14": {
+   "offset": 1672,
+   "typeIndex": 3
+  },
+  "img13": {
+   "offset": 1676,
+   "typeIndex": 3
+  },
+  "img16": {
+   "offset": 1680,
+   "typeIndex": 3
+  },
+  "img15": {
+   "offset": 1684,
+   "typeIndex": 3
+  },
+  "img18": {
+   "offset": 1688,
+   "typeIndex": 3
+  },
+  "img17": {
+   "offset": 1692,
+   "typeIndex": 3
+  },
+  "img20": {
+   "offset": 1696,
+   "typeIndex": 3
+  },
+  "img19": {
+   "offset": 1700,
+   "typeIndex": 3
+  },
+  "img22": {
+   "offset": 1704,
+   "typeIndex": 3
+  },
+  "img21": {
+   "offset": 1708,
+   "typeIndex": 3
+  },
+  "img24": {
+   "offset": 1712,
+   "typeIndex": 3
+  },
+  "img23": {
+   "offset": 1716,
+   "typeIndex": 3
+  },
+  "img26": {
+   "offset": 1720,
+   "typeIndex": 3
+  },
+  "img25": {
+   "offset": 1724,
+   "typeIndex": 3
+  },
+  "img28": {
+   "offset": 1728,
+   "typeIndex": 3
+  },
+  "img27": {
+   "offset": 1732,
+   "typeIndex": 3
+  },
+  "img30": {
+   "offset": 1736,
+   "typeIndex": 3
+  },
+  "img29": {
+   "offset": 1740,
+   "typeIndex": 3
+  },
+  "img32": {
+   "offset": 1744,
+   "typeIndex": 3
+  },
+  "img31": {
+   "offset": 1748,
+   "typeIndex": 3
+  },
+  "img1": {
+   "offset": 1752,
+   "typeIndex": 3
+  },
+  "chave2_j17t1": {
+   "offset": 1756,
+   "typeIndex": 1
+  },
+  "chave2_j18t2": {
+   "offset": 1760,
+   "typeIndex": 1
+  },
+  "chave2_j18t1": {
+   "offset": 1764,
+   "typeIndex": 1
+  },
+  "chave2_j19t2": {
+   "offset": 1768,
+   "typeIndex": 1
+  },
+  "chave2_j19t1": {
+   "offset": 1772,
+   "typeIndex": 1
+  },
+  "chave2_j20t2": {
+   "offset": 1776,
+   "typeIndex": 1
+  },
+  "chave2_j20t1": {
+   "offset": 1780,
+   "typeIndex": 1
+  },
+  "chave2_j21t2": {
+   "offset": 1784,
+   "typeIndex": 1
+  },
+  "chave2_j21t1": {
+   "offset": 1788,
+   "typeIndex": 1
+  },
+  "chave2_j22t2": {
+   "offset": 1792,
+   "typeIndex": 1
+  },
+  "chave2_j22t1": {
+   "offset": 1796,
+   "typeIndex": 1
+  },
+  "chave2_j23t2": {
+   "offset": 1800,
+   "typeIndex": 1
+  },
+  "chave2_j23t1": {
+   "offset": 1804,
+   "typeIndex": 1
+  },
+  "chave2_j24t2": {
+   "offset": 1808,
+   "typeIndex": 1
+  },
+  "chave2_j24t1": {
+   "offset": 1812,
+   "typeIndex": 1
+  },
+  "chave2_j25t1": {
+   "offset": 1816,
+   "typeIndex": 1
+  },
+  "chave2_j25t2": {
+   "offset": 1820,
+   "typeIndex": 1
+  },
+  "chave2_j26t1": {
+   "offset": 1824,
+   "typeIndex": 1
+  },
+  "chave2_j26t2": {
+   "offset": 1828,
+   "typeIndex": 1
+  },
+  "chave2_j27t1": {
+   "offset": 1832,
+   "typeIndex": 1
+  },
+  "chave2_j27t2": {
+   "offset": 1836,
+   "typeIndex": 1
+  },
+  "chave2_j28t1": {
+   "offset": 1840,
+   "typeIndex": 1
+  },
+  "chave2_j28t2": {
+   "offset": 1844,
+   "typeIndex": 1
+  },
+  "chave2_j29t1": {
+   "offset": 1848,
+   "typeIndex": 1
+  },
+  "chave2_j29t2": {
+   "offset": 1852,
+   "typeIndex": 1
+  },
+  "chave2_j30t1": {
+   "offset": 1856,
+   "typeIndex": 1
+  },
+  "chave2_j30t2": {
+   "offset": 1860,
+   "typeIndex": 1
+  },
+  "chave2_j31t1": {
+   "offset": 1864,
+   "typeIndex": 1
+  },
+  "chave2_j31t2": {
+   "offset": 1868,
+   "typeIndex": 1
+  },
+  "chave2_j32t1": {
+   "offset": 1872,
+   "typeIndex": 1
+  },
+  "chave2_j32t2": {
+   "offset": 1876,
+   "typeIndex": 1
+  },
+  "chave2_j17t2": {
+   "offset": 1880,
+   "typeIndex": 1
+  },
+  "Label34": {
+   "offset": 1884,
+   "typeIndex": 1
+  },
+  "Label35": {
+   "offset": 1888,
+   "typeIndex": 1
+  },
+  "Label36": {
+   "offset": 1892,
+   "typeIndex": 1
+  },
+  "Label37": {
+   "offset": 1896,
+   "typeIndex": 1
+  },
+  "Label38": {
+   "offset": 1900,
+   "typeIndex": 1
+  },
+  "Label39": {
+   "offset": 1904,
+   "typeIndex": 1
+  },
+  "Label40": {
+   "offset": 1908,
+   "typeIndex": 1
+  },
+  "Label41": {
+   "offset": 1912,
+   "typeIndex": 1
+  },
+  "Label42": {
+   "offset": 1916,
+   "typeIndex": 1
+  },
+  "Label43": {
+   "offset": 1920,
+   "typeIndex": 1
+  },
+  "Label44": {
+   "offset": 1924,
+   "typeIndex": 1
+  },
+  "Label45": {
+   "offset": 1928,
+   "typeIndex": 1
+  },
+  "Label46": {
+   "offset": 1932,
+   "typeIndex": 1
+  },
+  "Label47": {
+   "offset": 1936,
+   "typeIndex": 1
+  },
+  "Label49": {
+   "offset": 1940,
+   "typeIndex": 1
+  },
+  "img34": {
+   "offset": 1944,
+   "typeIndex": 3
+  },
+  "img36": {
+   "offset": 1948,
+   "typeIndex": 3
+  },
+  "img35": {
+   "offset": 1952,
+   "typeIndex": 3
+  },
+  "img38": {
+   "offset": 1956,
+   "typeIndex": 3
+  },
+  "img37": {
+   "offset": 1960,
+   "typeIndex": 3
+  },
+  "img40": {
+   "offset": 1964,
+   "typeIndex": 3
+  },
+  "img39": {
+   "offset": 1968,
+   "typeIndex": 3
+  },
+  "img42": {
+   "offset": 1972,
+   "typeIndex": 3
+  },
+  "img41": {
+   "offset": 1976,
+   "typeIndex": 3
+  },
+  "img44": {
+   "offset": 1980,
+   "typeIndex": 3
+  },
+  "img43": {
+   "offset": 1984,
+   "typeIndex": 3
+  },
+  "img46": {
+   "offset": 1988,
+   "typeIndex": 3
+  },
+  "img45": {
+   "offset": 1992,
+   "typeIndex": 3
+  },
+  "img48": {
+   "offset": 1996,
+   "typeIndex": 3
+  },
+  "img47": {
+   "offset": 2000,
+   "typeIndex": 3
+  },
+  "img50": {
+   "offset": 2004,
+   "typeIndex": 3
+  },
+  "img49": {
+   "offset": 2008,
+   "typeIndex": 3
+  },
+  "img52": {
+   "offset": 2012,
+   "typeIndex": 3
+  },
+  "img51": {
+   "offset": 2016,
+   "typeIndex": 3
+  },
+  "img54": {
+   "offset": 2020,
+   "typeIndex": 3
+  },
+  "img53": {
+   "offset": 2024,
+   "typeIndex": 3
+  },
+  "img56": {
+   "offset": 2028,
+   "typeIndex": 3
+  },
+  "img55": {
+   "offset": 2032,
+   "typeIndex": 3
+  },
+  "img58": {
+   "offset": 2036,
+   "typeIndex": 3
+  },
+  "img57": {
+   "offset": 2040,
+   "typeIndex": 3
+  },
+  "img60": {
+   "offset": 2044,
+   "typeIndex": 3
+  },
+  "img59": {
+   "offset": 2048,
+   "typeIndex": 3
+  },
+  "img62": {
+   "offset": 2052,
+   "typeIndex": 3
+  },
+  "img61": {
+   "offset": 2056,
+   "typeIndex": 3
+  },
+  "img64": {
+   "offset": 2060,
+   "typeIndex": 3
+  },
+  "img63": {
+   "offset": 2064,
+   "typeIndex": 3
+  },
+  "img33": {
+   "offset": 2068,
+   "typeIndex": 3
+  },
+  "Shape123": {
+   "offset": 2072,
+   "typeIndex": 2
+  },
+  "Shape124": {
+   "offset": 2076,
+   "typeIndex": 2
+  },
+  "m1": {
+   "offset": 2080,
+   "typeIndex": 2
+  },
+  "Shape125": {
+   "offset": 2084,
+   "typeIndex": 2
+  },
+  "Shape127": {
+   "offset": 2088,
+   "typeIndex": 2
+  },
+  "m2": {
+   "offset": 2092,
+   "typeIndex": 2
+  },
+  "Shape126": {
+   "offset": 2096,
+   "typeIndex": 2
+  },
+  "Shape128": {
+   "offset": 2100,
+   "typeIndex": 2
+  },
+  "m3": {
+   "offset": 2104,
+   "typeIndex": 2
+  },
+  "Shape129": {
+   "offset": 2108,
+   "typeIndex": 2
+  },
+  "Shape130": {
+   "offset": 2112,
+   "typeIndex": 2
+  },
+  "m4": {
+   "offset": 2116,
+   "typeIndex": 2
+  },
+  "Shape131": {
+   "offset": 2120,
+   "typeIndex": 2
+  },
+  "Shape132": {
+   "offset": 2124,
+   "typeIndex": 2
+  },
+  "m5": {
+   "offset": 2128,
+   "typeIndex": 2
+  },
+  "Shape133": {
+   "offset": 2132,
+   "typeIndex": 2
+  },
+  "Shape134": {
+   "offset": 2136,
+   "typeIndex": 2
+  },
+  "m6": {
+   "offset": 2140,
+   "typeIndex": 2
+  },
+  "Shape135": {
+   "offset": 2144,
+   "typeIndex": 2
+  },
+  "Shape136": {
+   "offset": 2148,
+   "typeIndex": 2
+  },
+  "m7": {
+   "offset": 2152,
+   "typeIndex": 2
+  },
+  "Shape137": {
+   "offset": 2156,
+   "typeIndex": 2
+  },
+  "Shape138": {
+   "offset": 2160,
+   "typeIndex": 2
+  },
+  "m8": {
+   "offset": 2164,
+   "typeIndex": 2
+  },
+  "Shape139": {
+   "offset": 2168,
+   "typeIndex": 2
+  },
+  "Shape140": {
+   "offset": 2172,
+   "typeIndex": 2
+  },
+  "m9": {
+   "offset": 2176,
+   "typeIndex": 2
+  },
+  "Shape141": {
+   "offset": 2180,
+   "typeIndex": 2
+  },
+  "Shape142": {
+   "offset": 2184,
+   "typeIndex": 2
+  },
+  "m10": {
+   "offset": 2188,
+   "typeIndex": 2
+  },
+  "Shape143": {
+   "offset": 2192,
+   "typeIndex": 2
+  },
+  "Shape144": {
+   "offset": 2196,
+   "typeIndex": 2
+  },
+  "m11": {
+   "offset": 2200,
+   "typeIndex": 2
+  },
+  "Shape145": {
+   "offset": 2204,
+   "typeIndex": 2
+  },
+  "Shape146": {
+   "offset": 2208,
+   "typeIndex": 2
+  },
+  "m12": {
+   "offset": 2212,
+   "typeIndex": 2
+  },
+  "Shape147": {
+   "offset": 2216,
+   "typeIndex": 2
+  },
+  "Shape148": {
+   "offset": 2220,
+   "typeIndex": 2
+  },
+  "m13": {
+   "offset": 2224,
+   "typeIndex": 2
+  },
+  "Shape149": {
+   "offset": 2228,
+   "typeIndex": 2
+  },
+  "Shape150": {
+   "offset": 2232,
+   "typeIndex": 2
+  },
+  "m14": {
+   "offset": 2236,
+   "typeIndex": 2
+  },
+  "Shape151": {
+   "offset": 2240,
+   "typeIndex": 2
+  },
+  "Shape152": {
+   "offset": 2244,
+   "typeIndex": 2
+  },
+  "m15": {
+   "offset": 2248,
+   "typeIndex": 2
+  },
+  "Shape153": {
+   "offset": 2252,
+   "typeIndex": 2
+  },
+  "Shape154": {
+   "offset": 2256,
+   "typeIndex": 2
+  },
+  "m16": {
+   "offset": 2260,
+   "typeIndex": 2
+  },
+  "Shape155": {
+   "offset": 2264,
+   "typeIndex": 2
+  },
+  "Shape156": {
+   "offset": 2268,
+   "typeIndex": 2
+  },
+  "Shape157": {
+   "offset": 2272,
+   "typeIndex": 2
+  },
+  "Shape158": {
+   "offset": 2276,
+   "typeIndex": 2
+  },
+  "Shape159": {
+   "offset": 2280,
+   "typeIndex": 2
+  },
+  "Shape160": {
+   "offset": 2284,
+   "typeIndex": 2
+  },
+  "Shape161": {
+   "offset": 2288,
+   "typeIndex": 2
+  },
+  "Shape162": {
+   "offset": 2292,
+   "typeIndex": 2
+  },
+  "Shape163": {
+   "offset": 2296,
+   "typeIndex": 2
+  },
+  "Shape164": {
+   "offset": 2300,
+   "typeIndex": 2
+  },
+  "Shape165": {
+   "offset": 2304,
+   "typeIndex": 2
+  },
+  "Shape166": {
+   "offset": 2308,
+   "typeIndex": 2
+  },
+  "Shape167": {
+   "offset": 2312,
+   "typeIndex": 2
+  },
+  "Shape168": {
+   "offset": 2316,
+   "typeIndex": 2
+  },
+  "Shape169": {
+   "offset": 2320,
+   "typeIndex": 2
+  },
+  "Shape171": {
+   "offset": 2324,
+   "typeIndex": 2
+  },
+  "cl_j17_t1": {
+   "offset": 2328,
+   "typeIndex": 1
+  },
+  "cl_j17_t2": {
+   "offset": 2332,
+   "typeIndex": 1
+  },
+  "cl_j18_t1": {
+   "offset": 2336,
+   "typeIndex": 1
+  },
+  "cl_j18_t2": {
+   "offset": 2340,
+   "typeIndex": 1
+  },
+  "cl_j20_t2": {
+   "offset": 2344,
+   "typeIndex": 1
+  },
+  "cl_j20_t1": {
+   "offset": 2348,
+   "typeIndex": 1
+  },
+  "cl_j19_t2": {
+   "offset": 2352,
+   "typeIndex": 1
+  },
+  "cl_j19_t1": {
+   "offset": 2356,
+   "typeIndex": 1
+  },
+  "cl_j21_t1": {
+   "offset": 2360,
+   "typeIndex": 1
+  },
+  "cl_j21_t2": {
+   "offset": 2364,
+   "typeIndex": 1
+  },
+  "cl_j22_t1": {
+   "offset": 2368,
+   "typeIndex": 1
+  },
+  "cl_j22_t2": {
+   "offset": 2372,
+   "typeIndex": 1
+  },
+  "cl_j24_t2": {
+   "offset": 2376,
+   "typeIndex": 1
+  },
+  "cl_j24_t1": {
+   "offset": 2380,
+   "typeIndex": 1
+  },
+  "cl_j23_t2": {
+   "offset": 2384,
+   "typeIndex": 1
+  },
+  "cl_j23_t1": {
+   "offset": 2388,
+   "typeIndex": 1
+  },
+  "ch2_pj17": {
+   "offset": 2392,
+   "typeIndex": 1
+  },
+  "ch2_pj18": {
+   "offset": 2396,
+   "typeIndex": 1
+  },
+  "ch2_pj19": {
+   "offset": 2400,
+   "typeIndex": 1
+  },
+  "ch2_pj20": {
+   "offset": 2404,
+   "typeIndex": 1
+  },
+  "ch2_pj21": {
+   "offset": 2408,
+   "typeIndex": 1
+  },
+  "ch2_pj22": {
+   "offset": 2412,
+   "typeIndex": 1
+  },
+  "ch2_pj23": {
+   "offset": 2416,
+   "typeIndex": 1
+  },
+  "ch2_pj24": {
+   "offset": 2420,
+   "typeIndex": 1
+  },
+  "ch2_pj25": {
+   "offset": 2424,
+   "typeIndex": 1
+  },
+  "ch2_pj26": {
+   "offset": 2428,
+   "typeIndex": 1
+  },
+  "ch2_pj27": {
+   "offset": 2432,
+   "typeIndex": 1
+  },
+  "ch2_pj28": {
+   "offset": 2436,
+   "typeIndex": 1
+  },
+  "ch2_pj29": {
+   "offset": 2440,
+   "typeIndex": 1
+  },
+  "ch2_pj30": {
+   "offset": 2444,
+   "typeIndex": 1
+  },
+  "ch2_pj31": {
+   "offset": 2448,
+   "typeIndex": 1
+  },
+  "ch2_pj32": {
+   "offset": 2452,
+   "typeIndex": 1
+  },
+  "Shape186": {
+   "offset": 2456,
+   "typeIndex": 2
+  },
+  "Shape187": {
+   "offset": 2460,
+   "typeIndex": 2
+  },
+  "Shape188": {
+   "offset": 2464,
+   "typeIndex": 2
+  },
+  "Shape189": {
+   "offset": 2468,
+   "typeIndex": 2
+  },
+  "Shape190": {
+   "offset": 2472,
+   "typeIndex": 2
+  },
+  "Shape191": {
+   "offset": 2476,
+   "typeIndex": 2
+  },
+  "Shape192": {
+   "offset": 2480,
+   "typeIndex": 2
+  },
+  "Shape193": {
+   "offset": 2484,
+   "typeIndex": 2
+  },
+  "Shape194": {
+   "offset": 2488,
+   "typeIndex": 2
+  },
+  "Shape195": {
+   "offset": 2492,
+   "typeIndex": 2
+  },
+  "Shape196": {
+   "offset": 2496,
+   "typeIndex": 2
+  },
+  "Shape197": {
+   "offset": 2500,
+   "typeIndex": 2
+  },
+  "Shape198": {
+   "offset": 2504,
+   "typeIndex": 2
+  },
+  "Shape199": {
+   "offset": 2508,
+   "typeIndex": 2
+  },
+  "Shape200": {
+   "offset": 2512,
+   "typeIndex": 2
+  },
+  "Shape201": {
+   "offset": 2516,
+   "typeIndex": 2
+  },
+  "Shape202": {
+   "offset": 2520,
+   "typeIndex": 2
+  },
+  "Shape203": {
+   "offset": 2524,
+   "typeIndex": 2
+  },
+  "Shape204": {
+   "offset": 2528,
+   "typeIndex": 2
+  },
+  "Shape205": {
+   "offset": 2532,
+   "typeIndex": 2
+  },
+  "Shape206": {
+   "offset": 2536,
+   "typeIndex": 2
+  },
+  "Shape207": {
+   "offset": 2540,
+   "typeIndex": 2
+  },
+  "Shape208": {
+   "offset": 2544,
+   "typeIndex": 2
+  },
+  "Shape209": {
+   "offset": 2548,
+   "typeIndex": 2
+  },
+  "Label2": {
+   "offset": 2552,
+   "typeIndex": 1
+  },
+  "Label3": {
+   "offset": 2556,
+   "typeIndex": 0
+  },
+  "Shape18": {
+   "offset": 2560,
+   "typeIndex": 2
+  },
+  "Image1": {
+   "offset": 2564,
+   "typeIndex": 3
+  },
+  "combopais": {
+   "offset": 2568,
+   "typeIndex": 4
+  }
+ },
+ "TForm36": {
+  "btteste": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "labcamp": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Image1": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "Image2": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "barra": {
+   "offset": 776,
+   "typeIndex": 2
+  },
+  "Image3": {
+   "offset": 780,
+   "typeIndex": 2
+  },
+  "Image4": {
+   "offset": 784,
+   "typeIndex": 2
+  },
+  "Image6": {
+   "offset": 788,
+   "typeIndex": 2
+  },
+  "Image7": {
+   "offset": 792,
+   "typeIndex": 2
+  },
+  "Image8": {
+   "offset": 796,
+   "typeIndex": 2
+  },
+  "Image5": {
+   "offset": 800,
+   "typeIndex": 2
+  },
+  "Shape1": {
+   "offset": 804,
+   "typeIndex": 3
+  },
+  "Image9": {
+   "offset": 808,
+   "typeIndex": 2
+  },
+  "Image10": {
+   "offset": 812,
+   "typeIndex": 2
+  },
+  "Image11": {
+   "offset": 816,
+   "typeIndex": 2
+  },
+  "barra2": {
+   "offset": 820,
+   "typeIndex": 2
+  },
+  "painel_quartas": {
+   "offset": 824,
+   "typeIndex": 4
+  },
+  "labq1": {
+   "offset": 828,
+   "typeIndex": 5
+  },
+  "painel_final": {
+   "offset": 832,
+   "typeIndex": 4
+  },
+  "labf1": {
+   "offset": 836,
+   "typeIndex": 5
+  },
+  "painel_semi": {
+   "offset": 840,
+   "typeIndex": 4
+  },
+  "labs1": {
+   "offset": 844,
+   "typeIndex": 5
+  },
+  "Image12": {
+   "offset": 848,
+   "typeIndex": 2
+  },
+  "Shape2": {
+   "offset": 852,
+   "typeIndex": 3
+  },
+  "lab1": {
+   "offset": 856,
+   "typeIndex": 6
+  },
+  "lab3": {
+   "offset": 860,
+   "typeIndex": 6
+  },
+  "lab4": {
+   "offset": 864,
+   "typeIndex": 6
+  },
+  "lab5": {
+   "offset": 868,
+   "typeIndex": 6
+  },
+  "lab6": {
+   "offset": 872,
+   "typeIndex": 6
+  },
+  "lab7": {
+   "offset": 876,
+   "typeIndex": 6
+  },
+  "Shape3": {
+   "offset": 880,
+   "typeIndex": 3
+  },
+  "ld1": {
+   "offset": 884,
+   "typeIndex": 6
+  },
+  "ld2": {
+   "offset": 888,
+   "typeIndex": 6
+  },
+  "ld3": {
+   "offset": 892,
+   "typeIndex": 6
+  }
+ },
+ "TForm41": {
+  "label1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "bt1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "TntBitBtn1": {
+   "offset": 768,
+   "typeIndex": 1
+  }
+ },
+ "TForm40": {
+  "Edit1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "TntLabel1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "label1": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "bt1": {
+   "offset": 772,
+   "typeIndex": 2
+  }
+ },
+ "TForm42": {
+  "Panel1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Bevel1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label8": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "Label9": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "Label7": {
+   "offset": 776,
+   "typeIndex": 2
+  },
+  "Label6": {
+   "offset": 780,
+   "typeIndex": 2
+  },
+  "Label5": {
+   "offset": 784,
+   "typeIndex": 2
+  },
+  "Label10": {
+   "offset": 788,
+   "typeIndex": 2
+  },
+  "Shape1": {
+   "offset": 792,
+   "typeIndex": 3
+  },
+  "Label11": {
+   "offset": 796,
+   "typeIndex": 2
+  },
+  "Edit2": {
+   "offset": 800,
+   "typeIndex": 4
+  },
+  "Edit1": {
+   "offset": 804,
+   "typeIndex": 4
+  },
+  "Label12": {
+   "offset": 808,
+   "typeIndex": 2
+  },
+  "Label13": {
+   "offset": 812,
+   "typeIndex": 2
+  },
+  "Label14": {
+   "offset": 816,
+   "typeIndex": 2
+  },
+  "Label15": {
+   "offset": 820,
+   "typeIndex": 2
+  },
+  "Label17": {
+   "offset": 824,
+   "typeIndex": 2
+  },
+  "Label18": {
+   "offset": 828,
+   "typeIndex": 2
+  },
+  "Label4": {
+   "offset": 832,
+   "typeIndex": 2
+  },
+  "Label20": {
+   "offset": 836,
+   "typeIndex": 2
+  },
+  "label1": {
+   "offset": 840,
+   "typeIndex": 5
+  },
+  "Image1": {
+   "offset": 844,
+   "typeIndex": 6
+  },
+  "TntLabel1": {
+   "offset": 848,
+   "typeIndex": 2
+  },
+  "xibutton2": {
+   "offset": 852,
+   "typeIndex": 7
+  }
+ },
+ "TForm44": {
+  "Shape2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label3": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Edit1": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "ck1": {
+   "offset": 772,
+   "typeIndex": 3
+  },
+  "ck2": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "Edit2": {
+   "offset": 780,
+   "typeIndex": 2
+  },
+  "Label13": {
+   "offset": 784,
+   "typeIndex": 1
+  },
+  "TntLabel1": {
+   "offset": 788,
+   "typeIndex": 4
+  },
+  "TntLabel2": {
+   "offset": 792,
+   "typeIndex": 4
+  },
+  "TntLabel3": {
+   "offset": 796,
+   "typeIndex": 4
+  },
+  "TntLabel4": {
+   "offset": 800,
+   "typeIndex": 4
+  },
+  "label6": {
+   "offset": 804,
+   "typeIndex": 4
+  },
+  "TntLabel6": {
+   "offset": 808,
+   "typeIndex": 4
+  },
+  "TntLabel7": {
+   "offset": 812,
+   "typeIndex": 4
+  },
+  "TntLabel5": {
+   "offset": 816,
+   "typeIndex": 4
+  },
+  "label19": {
+   "offset": 820,
+   "typeIndex": 4
+  },
+  "label11": {
+   "offset": 824,
+   "typeIndex": 4
+  },
+  "label12": {
+   "offset": 828,
+   "typeIndex": 4
+  },
+  "XiButton1": {
+   "offset": 832,
+   "typeIndex": 5
+  },
+  "bt1": {
+   "offset": 836,
+   "typeIndex": 5
+  }
+ },
+ "TForm45": {
+  "Label1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label8": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "Label9": {
+   "offset": 768,
+   "typeIndex": 0
+  },
+  "Label4": {
+   "offset": 772,
+   "typeIndex": 0
+  },
+  "XiButton2": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "Label6": {
+   "offset": 780,
+   "typeIndex": 0
+  },
+  "Label10": {
+   "offset": 784,
+   "typeIndex": 0
+  }
+ },
+ "TForm48": {
+  "Shape2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label2": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label3": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Label4": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "Label7": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "Edit1": {
+   "offset": 780,
+   "typeIndex": 2
+  },
+  "Label8": {
+   "offset": 784,
+   "typeIndex": 1
+  },
+  "Image1": {
+   "offset": 788,
+   "typeIndex": 3
+  },
+  "Label5": {
+   "offset": 792,
+   "typeIndex": 1
+  },
+  "label32": {
+   "offset": 796,
+   "typeIndex": 4
+  },
+  "combopos": {
+   "offset": 800,
+   "typeIndex": 5
+  },
+  "XiButton1": {
+   "offset": 804,
+   "typeIndex": 6
+  }
+ },
+ "TForm51": {
+  "Label1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Edit1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "bt2": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "Label2": {
+   "offset": 772,
+   "typeIndex": 0
+  },
+  "combonac": {
+   "offset": 776,
+   "typeIndex": 3
+  }
+ },
+ "TForm50": {
+  "Image1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Image2": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "Shape1": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "gridview1": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "id": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "nome": {
+   "offset": 780,
+   "typeIndex": 4
+  },
+  "nxtime": {
+   "offset": 784,
+   "typeIndex": 4
+  },
+  "nxpais": {
+   "offset": 788,
+   "typeIndex": 5
+  },
+  "TntLabel1": {
+   "offset": 792,
+   "typeIndex": 6
+  },
+  "bt1": {
+   "offset": 796,
+   "typeIndex": 7
+  },
+  "bt2": {
+   "offset": 800,
+   "typeIndex": 7
+  }
+ },
+ "TForm62": {
+  "grid1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "id": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "lido": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "assunto": {
+   "offset": 772,
+   "typeIndex": 3
+  },
+  "from": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "Image1": {
+   "offset": 780,
+   "typeIndex": 4
+  },
+  "bt1": {
+   "offset": 784,
+   "typeIndex": 5
+  },
+  "Shape1": {
+   "offset": 788,
+   "typeIndex": 6
+  },
+  "imlGrid": {
+   "offset": 792,
+   "typeIndex": 7
+  },
+  "Panel1": {
+   "offset": 796,
+   "typeIndex": 8
+  },
+  "nxdata": {
+   "offset": 800,
+   "typeIndex": 3
+  },
+  "label2": {
+   "offset": 804,
+   "typeIndex": 9
+  },
+  "label7": {
+   "offset": 808,
+   "typeIndex": 10
+  },
+  "XiButton2": {
+   "offset": 812,
+   "typeIndex": 11
+  },
+  "XiButton1": {
+   "offset": 816,
+   "typeIndex": 11
+  },
+  "memo1": {
+   "offset": 820,
+   "typeIndex": 12
+  }
+ },
+ "TForm69": {
+  "j9t1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "j9t2": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "j10t1": {
+   "offset": 768,
+   "typeIndex": 0
+  },
+  "j10t2": {
+   "offset": 772,
+   "typeIndex": 0
+  },
+  "j12t2": {
+   "offset": 776,
+   "typeIndex": 0
+  },
+  "j12t1": {
+   "offset": 780,
+   "typeIndex": 0
+  },
+  "j11t2": {
+   "offset": 784,
+   "typeIndex": 0
+  },
+  "j11t1": {
+   "offset": 788,
+   "typeIndex": 0
+  },
+  "Shape33": {
+   "offset": 792,
+   "typeIndex": 1
+  },
+  "Shape34": {
+   "offset": 796,
+   "typeIndex": 1
+  },
+  "Shape35": {
+   "offset": 800,
+   "typeIndex": 1
+  },
+  "Shape37": {
+   "offset": 804,
+   "typeIndex": 1
+  },
+  "Shape38": {
+   "offset": 808,
+   "typeIndex": 1
+  },
+  "Shape39": {
+   "offset": 812,
+   "typeIndex": 1
+  },
+  "Shape40": {
+   "offset": 816,
+   "typeIndex": 1
+  },
+  "Shape41": {
+   "offset": 820,
+   "typeIndex": 1
+  },
+  "Shape42": {
+   "offset": 824,
+   "typeIndex": 1
+  },
+  "Shape43": {
+   "offset": 828,
+   "typeIndex": 1
+  },
+  "Shape44": {
+   "offset": 832,
+   "typeIndex": 1
+  },
+  "Shape45": {
+   "offset": 836,
+   "typeIndex": 1
+  },
+  "Shape46": {
+   "offset": 840,
+   "typeIndex": 1
+  },
+  "Shape47": {
+   "offset": 844,
+   "typeIndex": 1
+  },
+  "Shape48": {
+   "offset": 848,
+   "typeIndex": 1
+  },
+  "j13t1": {
+   "offset": 852,
+   "typeIndex": 0
+  },
+  "j13t2": {
+   "offset": 856,
+   "typeIndex": 0
+  },
+  "j14t1": {
+   "offset": 860,
+   "typeIndex": 0
+  },
+  "j14t2": {
+   "offset": 864,
+   "typeIndex": 0
+  },
+  "j1t1": {
+   "offset": 868,
+   "typeIndex": 0
+  },
+  "j1t2": {
+   "offset": 872,
+   "typeIndex": 0
+  },
+  "j2t1": {
+   "offset": 876,
+   "typeIndex": 0
+  },
+  "j2t2": {
+   "offset": 880,
+   "typeIndex": 0
+  },
+  "j4t2": {
+   "offset": 884,
+   "typeIndex": 0
+  },
+  "j4t1": {
+   "offset": 888,
+   "typeIndex": 0
+  },
+  "j3t2": {
+   "offset": 892,
+   "typeIndex": 0
+  },
+  "j3t1": {
+   "offset": 896,
+   "typeIndex": 0
+  },
+  "j5t1": {
+   "offset": 900,
+   "typeIndex": 0
+  },
+  "j5t2": {
+   "offset": 904,
+   "typeIndex": 0
+  },
+  "j6t1": {
+   "offset": 908,
+   "typeIndex": 0
+  },
+  "j6t2": {
+   "offset": 912,
+   "typeIndex": 0
+  },
+  "j8t2": {
+   "offset": 916,
+   "typeIndex": 0
+  },
+  "j8t1": {
+   "offset": 920,
+   "typeIndex": 0
+  },
+  "j7t2": {
+   "offset": 924,
+   "typeIndex": 0
+  },
+  "j7t1": {
+   "offset": 928,
+   "typeIndex": 0
+  },
+  "Shape80": {
+   "offset": 932,
+   "typeIndex": 1
+  },
+  "Shape81": {
+   "offset": 936,
+   "typeIndex": 1
+  },
+  "Shape82": {
+   "offset": 940,
+   "typeIndex": 1
+  },
+  "Shape84": {
+   "offset": 944,
+   "typeIndex": 1
+  },
+  "Shape85": {
+   "offset": 948,
+   "typeIndex": 1
+  },
+  "Shape86": {
+   "offset": 952,
+   "typeIndex": 1
+  },
+  "Shape87": {
+   "offset": 956,
+   "typeIndex": 1
+  },
+  "Shape88": {
+   "offset": 960,
+   "typeIndex": 1
+  },
+  "Shape89": {
+   "offset": 964,
+   "typeIndex": 1
+  },
+  "Shape90": {
+   "offset": 968,
+   "typeIndex": 1
+  },
+  "Shape91": {
+   "offset": 972,
+   "typeIndex": 1
+  },
+  "Shape92": {
+   "offset": 976,
+   "typeIndex": 1
+  },
+  "Shape93": {
+   "offset": 980,
+   "typeIndex": 1
+  },
+  "Shape94": {
+   "offset": 984,
+   "typeIndex": 1
+  },
+  "Shape95": {
+   "offset": 988,
+   "typeIndex": 1
+  },
+  "Shape96": {
+   "offset": 992,
+   "typeIndex": 1
+  },
+  "Shape97": {
+   "offset": 996,
+   "typeIndex": 1
+  },
+  "Shape98": {
+   "offset": 1000,
+   "typeIndex": 1
+  },
+  "Shape99": {
+   "offset": 1004,
+   "typeIndex": 1
+  },
+  "Shape100": {
+   "offset": 1008,
+   "typeIndex": 1
+  },
+  "Shape101": {
+   "offset": 1012,
+   "typeIndex": 1
+  },
+  "Shape102": {
+   "offset": 1016,
+   "typeIndex": 1
+  },
+  "Shape103": {
+   "offset": 1020,
+   "typeIndex": 1
+  },
+  "Shape104": {
+   "offset": 1024,
+   "typeIndex": 1
+  },
+  "Shape105": {
+   "offset": 1028,
+   "typeIndex": 1
+  },
+  "Shape106": {
+   "offset": 1032,
+   "typeIndex": 1
+  },
+  "Shape107": {
+   "offset": 1036,
+   "typeIndex": 1
+  },
+  "Shape108": {
+   "offset": 1040,
+   "typeIndex": 1
+  },
+  "Shape109": {
+   "offset": 1044,
+   "typeIndex": 1
+  },
+  "Shape110": {
+   "offset": 1048,
+   "typeIndex": 1
+  },
+  "Shape111": {
+   "offset": 1052,
+   "typeIndex": 1
+  },
+  "Shape112": {
+   "offset": 1056,
+   "typeIndex": 1
+  },
+  "Shape83": {
+   "offset": 1060,
+   "typeIndex": 1
+  },
+  "Shape113": {
+   "offset": 1064,
+   "typeIndex": 1
+  },
+  "Shape114": {
+   "offset": 1068,
+   "typeIndex": 1
+  },
+  "Shape115": {
+   "offset": 1072,
+   "typeIndex": 1
+  },
+  "Shape116": {
+   "offset": 1076,
+   "typeIndex": 1
+  },
+  "Shape117": {
+   "offset": 1080,
+   "typeIndex": 1
+  },
+  "Shape118": {
+   "offset": 1084,
+   "typeIndex": 1
+  },
+  "Shape119": {
+   "offset": 1088,
+   "typeIndex": 1
+  },
+  "Shape120": {
+   "offset": 1092,
+   "typeIndex": 1
+  },
+  "j15t1": {
+   "offset": 1096,
+   "typeIndex": 0
+  },
+  "j15t2": {
+   "offset": 1100,
+   "typeIndex": 0
+  },
+  "Shape121": {
+   "offset": 1104,
+   "typeIndex": 1
+  },
+  "Shape122": {
+   "offset": 1108,
+   "typeIndex": 1
+  },
+  "Label62": {
+   "offset": 1112,
+   "typeIndex": 0
+  },
+  "Label63": {
+   "offset": 1116,
+   "typeIndex": 2
+  },
+  "pl1": {
+   "offset": 1120,
+   "typeIndex": 0
+  },
+  "pl2": {
+   "offset": 1124,
+   "typeIndex": 0
+  },
+  "pl3": {
+   "offset": 1128,
+   "typeIndex": 0
+  },
+  "pl4": {
+   "offset": 1132,
+   "typeIndex": 0
+  },
+  "pl5": {
+   "offset": 1136,
+   "typeIndex": 0
+  },
+  "pl6": {
+   "offset": 1140,
+   "typeIndex": 0
+  },
+  "pl7": {
+   "offset": 1144,
+   "typeIndex": 0
+  },
+  "pl8": {
+   "offset": 1148,
+   "typeIndex": 0
+  },
+  "pl9": {
+   "offset": 1152,
+   "typeIndex": 0
+  },
+  "pl10": {
+   "offset": 1156,
+   "typeIndex": 0
+  },
+  "pl11": {
+   "offset": 1160,
+   "typeIndex": 0
+  },
+  "pl12": {
+   "offset": 1164,
+   "typeIndex": 0
+  },
+  "pl13": {
+   "offset": 1168,
+   "typeIndex": 0
+  },
+  "pl14": {
+   "offset": 1172,
+   "typeIndex": 0
+  },
+  "pl15": {
+   "offset": 1176,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 1180,
+   "typeIndex": 2
+  },
+  "img1": {
+   "offset": 1184,
+   "typeIndex": 3
+  },
+  "img2": {
+   "offset": 1188,
+   "typeIndex": 3
+  },
+  "img4": {
+   "offset": 1192,
+   "typeIndex": 3
+  },
+  "img3": {
+   "offset": 1196,
+   "typeIndex": 3
+  },
+  "img6": {
+   "offset": 1200,
+   "typeIndex": 3
+  },
+  "img5": {
+   "offset": 1204,
+   "typeIndex": 3
+  },
+  "img8": {
+   "offset": 1208,
+   "typeIndex": 3
+  },
+  "img7": {
+   "offset": 1212,
+   "typeIndex": 3
+  },
+  "img10": {
+   "offset": 1216,
+   "typeIndex": 3
+  },
+  "img9": {
+   "offset": 1220,
+   "typeIndex": 3
+  },
+  "img12": {
+   "offset": 1224,
+   "typeIndex": 3
+  },
+  "img11": {
+   "offset": 1228,
+   "typeIndex": 3
+  },
+  "img14": {
+   "offset": 1232,
+   "typeIndex": 3
+  },
+  "img13": {
+   "offset": 1236,
+   "typeIndex": 3
+  },
+  "img16": {
+   "offset": 1240,
+   "typeIndex": 3
+  },
+  "img15": {
+   "offset": 1244,
+   "typeIndex": 3
+  },
+  "Shape1": {
+   "offset": 1248,
+   "typeIndex": 1
+  },
+  "Image1": {
+   "offset": 1252,
+   "typeIndex": 3
+  },
+  "combo1": {
+   "offset": 1256,
+   "typeIndex": 4
+  }
+ },
+ "TForm63": {
+  "t1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "NxTextColumn1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "NxTextColumn2": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "NxTextColumn3": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "NxTextColumn4": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "NxTextColumn5": {
+   "offset": 780,
+   "typeIndex": 1
+  },
+  "NxTextColumn6": {
+   "offset": 784,
+   "typeIndex": 1
+  },
+  "NxTextColumn7": {
+   "offset": 788,
+   "typeIndex": 1
+  },
+  "NxNumberColumn1": {
+   "offset": 792,
+   "typeIndex": 2
+  },
+  "Label2": {
+   "offset": 796,
+   "typeIndex": 3
+  },
+  "bt3": {
+   "offset": 800,
+   "typeIndex": 4
+  },
+  "XiButton3": {
+   "offset": 804,
+   "typeIndex": 4
+  },
+  "combo1": {
+   "offset": 808,
+   "typeIndex": 5
+  },
+  "ImageList1": {
+   "offset": 812,
+   "typeIndex": 6
+  },
+  "nxescudo1": {
+   "offset": 816,
+   "typeIndex": 7
+  },
+  "nxescudo2": {
+   "offset": 820,
+   "typeIndex": 7
+  },
+  "Shape3": {
+   "offset": 824,
+   "typeIndex": 8
+  },
+  "imgfechar": {
+   "offset": 828,
+   "typeIndex": 9
+  },
+  "Shape2": {
+   "offset": 832,
+   "typeIndex": 8
+  },
+  "Image1": {
+   "offset": 836,
+   "typeIndex": 9
+  },
+  "Image2": {
+   "offset": 840,
+   "typeIndex": 9
+  },
+  "Image3": {
+   "offset": 844,
+   "typeIndex": 9
+  },
+  "Image4": {
+   "offset": 848,
+   "typeIndex": 9
+  },
+  "Image6": {
+   "offset": 852,
+   "typeIndex": 9
+  },
+  "Image7": {
+   "offset": 856,
+   "typeIndex": 9
+  },
+  "Image5": {
+   "offset": 860,
+   "typeIndex": 9
+  },
+  "image8": {
+   "offset": 864,
+   "typeIndex": 9
+  },
+  "lab1": {
+   "offset": 868,
+   "typeIndex": 3
+  },
+  "lab3": {
+   "offset": 872,
+   "typeIndex": 3
+  },
+  "lab4": {
+   "offset": 876,
+   "typeIndex": 3
+  },
+  "lab5": {
+   "offset": 880,
+   "typeIndex": 3
+  },
+  "lab6": {
+   "offset": 884,
+   "typeIndex": 3
+  },
+  "lab7": {
+   "offset": 888,
+   "typeIndex": 3
+  },
+  "c1": {
+   "offset": 892,
+   "typeIndex": 10
+  },
+  "combopais": {
+   "offset": 896,
+   "typeIndex": 10
+  }
+ },
+ "TForm65": {
+  "Label2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "XiButton2": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "XiButton1": {
+   "offset": 772,
+   "typeIndex": 1
+  }
+ },
+ "TForm68": {
+  "Shape2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label5": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label2": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Label1": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "Label7": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "escudo": {
+   "offset": 780,
+   "typeIndex": 2
+  },
+  "Label8": {
+   "offset": 784,
+   "typeIndex": 1
+  },
+  "Shape1": {
+   "offset": 788,
+   "typeIndex": 0
+  },
+  "Label9": {
+   "offset": 792,
+   "typeIndex": 1
+  },
+  "Label10": {
+   "offset": 796,
+   "typeIndex": 1
+  },
+  "Label11": {
+   "offset": 800,
+   "typeIndex": 1
+  },
+  "Label12": {
+   "offset": 804,
+   "typeIndex": 1
+  },
+  "Label13": {
+   "offset": 808,
+   "typeIndex": 1
+  },
+  "Label14": {
+   "offset": 812,
+   "typeIndex": 1
+  },
+  "bt3": {
+   "offset": 816,
+   "typeIndex": 3
+  },
+  "TntBitBtn1": {
+   "offset": 820,
+   "typeIndex": 3
+  },
+  "TntLabel3": {
+   "offset": 824,
+   "typeIndex": 4
+  },
+  "TntLabel2": {
+   "offset": 828,
+   "typeIndex": 4
+  },
+  "TntLabel4": {
+   "offset": 832,
+   "typeIndex": 4
+  }
+ },
+ "TForm71": {
+  "bt3": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "listr1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "nxid1": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "nxclube1": {
+   "offset": 772,
+   "typeIndex": 3
+  },
+  "nxnacional1": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "nxestadual1": {
+   "offset": 780,
+   "typeIndex": 3
+  },
+  "nxcopa1": {
+   "offset": 784,
+   "typeIndex": 3
+  },
+  "nxlibertadores1": {
+   "offset": 788,
+   "typeIndex": 3
+  },
+  "nxsulamericana1": {
+   "offset": 792,
+   "typeIndex": 3
+  },
+  "nxmundial1": {
+   "offset": 796,
+   "typeIndex": 3
+  },
+  "nxtotal1": {
+   "offset": 800,
+   "typeIndex": 2
+  },
+  "listr2": {
+   "offset": 804,
+   "typeIndex": 1
+  },
+  "nxid2": {
+   "offset": 808,
+   "typeIndex": 2
+  },
+  "nxclube2": {
+   "offset": 812,
+   "typeIndex": 3
+  },
+  "nxnacional2": {
+   "offset": 816,
+   "typeIndex": 3
+  },
+  "nxestadual2": {
+   "offset": 820,
+   "typeIndex": 3
+  },
+  "nxcopa2": {
+   "offset": 824,
+   "typeIndex": 3
+  },
+  "nxlibertadores2": {
+   "offset": 828,
+   "typeIndex": 3
+  },
+  "nxsulamericana2": {
+   "offset": 832,
+   "typeIndex": 3
+  },
+  "nxmundial2": {
+   "offset": 836,
+   "typeIndex": 3
+  },
+  "nxtotal2": {
+   "offset": 840,
+   "typeIndex": 2
+  },
+  "nxcolocacao2": {
+   "offset": 844,
+   "typeIndex": 2
+  },
+  "nxcolocacao1": {
+   "offset": 848,
+   "typeIndex": 2
+  },
+  "ImageList2": {
+   "offset": 852,
+   "typeIndex": 4
+  },
+  "ImageList1": {
+   "offset": 856,
+   "typeIndex": 4
+  },
+  "bt4": {
+   "offset": 860,
+   "typeIndex": 0
+  },
+  "nxescudo1": {
+   "offset": 864,
+   "typeIndex": 5
+  },
+  "nxescudo2": {
+   "offset": 868,
+   "typeIndex": 5
+  },
+  "label32": {
+   "offset": 872,
+   "typeIndex": 6
+  },
+  "combopais": {
+   "offset": 876,
+   "typeIndex": 7
+  },
+  "label2": {
+   "offset": 880,
+   "typeIndex": 8
+  },
+  "bt2": {
+   "offset": 884,
+   "typeIndex": 9
+  },
+  "bt1": {
+   "offset": 888,
+   "typeIndex": 9
+  },
+  "Shape1": {
+   "offset": 892,
+   "typeIndex": 10
+  }
+ },
+ "TForm72": {
+  "Shape2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Image1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "bt3": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "TntLabel2": {
+   "offset": 772,
+   "typeIndex": 3
+  },
+  "TntLabel1": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "Label3": {
+   "offset": 780,
+   "typeIndex": 4
+  },
+  "label7": {
+   "offset": 784,
+   "typeIndex": 3
+  }
+ },
+ "TForm75": {
+  "Image1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Image2": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "thumb2": {
+   "offset": 768,
+   "typeIndex": 0
+  },
+  "thumb1": {
+   "offset": 772,
+   "typeIndex": 0
+  },
+  "ImageList2": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "PopupMenu2": {
+   "offset": 780,
+   "typeIndex": 2
+  },
+  "PopupMenu1": {
+   "offset": 784,
+   "typeIndex": 2
+  },
+  "Image9": {
+   "offset": 788,
+   "typeIndex": 0
+  },
+  "Panel1": {
+   "offset": 792,
+   "typeIndex": 3
+  },
+  "Shape8": {
+   "offset": 796,
+   "typeIndex": 4
+  },
+  "Label3": {
+   "offset": 800,
+   "typeIndex": 5
+  },
+  "Label12": {
+   "offset": 804,
+   "typeIndex": 5
+  },
+  "escudo": {
+   "offset": 808,
+   "typeIndex": 0
+  },
+  "gridview1": {
+   "offset": 812,
+   "typeIndex": 6
+  },
+  "id": {
+   "offset": 816,
+   "typeIndex": 7
+  },
+  "status": {
+   "offset": 820,
+   "typeIndex": 8
+  },
+  "posicaojog": {
+   "offset": 824,
+   "typeIndex": 9
+  },
+  "condicao": {
+   "offset": 828,
+   "typeIndex": 8
+  },
+  "nome": {
+   "offset": 832,
+   "typeIndex": 9
+  },
+  "funcaojog": {
+   "offset": 836,
+   "typeIndex": 10
+  },
+  "forca": {
+   "offset": 840,
+   "typeIndex": 7
+  },
+  "energia": {
+   "offset": 844,
+   "typeIndex": 11
+  },
+  "gols": {
+   "offset": 848,
+   "typeIndex": 9
+  },
+  "habilidades": {
+   "offset": 852,
+   "typeIndex": 9
+  },
+  "idade": {
+   "offset": 856,
+   "typeIndex": 9
+  },
+  "moral": {
+   "offset": 860,
+   "typeIndex": 8
+  },
+  "nometime_shad": {
+   "offset": 864,
+   "typeIndex": 12
+  },
+  "nometime": {
+   "offset": 868,
+   "typeIndex": 12
+  },
+  "btjogar": {
+   "offset": 872,
+   "typeIndex": 13
+  },
+  "TntLabel3": {
+   "offset": 876,
+   "typeIndex": 14
+  },
+  "TntLabel2": {
+   "offset": 880,
+   "typeIndex": 14
+  },
+  "label6": {
+   "offset": 884,
+   "typeIndex": 14
+  },
+  "label5": {
+   "offset": 888,
+   "typeIndex": 14
+  },
+  "TntLabel1": {
+   "offset": 892,
+   "typeIndex": 14
+  },
+  "label21": {
+   "offset": 896,
+   "typeIndex": 14
+  },
+  "label22": {
+   "offset": 900,
+   "typeIndex": 14
+  },
+  "Sairdojogo1": {
+   "offset": 904,
+   "typeIndex": 15
+  },
+  "N3": {
+   "offset": 908,
+   "typeIndex": 15
+  },
+  "opcoes": {
+   "offset": 912,
+   "typeIndex": 15
+  },
+  "N4": {
+   "offset": 916,
+   "typeIndex": 15
+  },
+  "Salvar": {
+   "offset": 920,
+   "typeIndex": 15
+  }
+ },
+ "TForm76": {
+  "Shape1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label2": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "image0": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "Image1": {
+   "offset": 776,
+   "typeIndex": 2
+  },
+  "Image2": {
+   "offset": 780,
+   "typeIndex": 2
+  },
+  "Image3": {
+   "offset": 784,
+   "typeIndex": 2
+  },
+  "Image4": {
+   "offset": 788,
+   "typeIndex": 2
+  },
+  "Image5": {
+   "offset": 792,
+   "typeIndex": 2
+  },
+  "Image6": {
+   "offset": 796,
+   "typeIndex": 2
+  },
+  "Image7": {
+   "offset": 800,
+   "typeIndex": 2
+  },
+  "r1": {
+   "offset": 804,
+   "typeIndex": 3
+  },
+  "r2": {
+   "offset": 808,
+   "typeIndex": 3
+  },
+  "r3": {
+   "offset": 812,
+   "typeIndex": 3
+  },
+  "r4": {
+   "offset": 816,
+   "typeIndex": 3
+  },
+  "r5": {
+   "offset": 820,
+   "typeIndex": 3
+  },
+  "r6": {
+   "offset": 824,
+   "typeIndex": 3
+  },
+  "r7": {
+   "offset": 828,
+   "typeIndex": 3
+  },
+  "r8": {
+   "offset": 832,
+   "typeIndex": 3
+  },
+  "Image8": {
+   "offset": 836,
+   "typeIndex": 2
+  },
+  "Image9": {
+   "offset": 840,
+   "typeIndex": 2
+  },
+  "TntLabel1": {
+   "offset": 844,
+   "typeIndex": 1
+  },
+  "btfechar": {
+   "offset": 848,
+   "typeIndex": 4
+  },
+  "XiButton1": {
+   "offset": 852,
+   "typeIndex": 4
+  }
+ },
+ "TForm80": {
+  "Label1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label2": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "Label3": {
+   "offset": 768,
+   "typeIndex": 0
+  },
+  "gp1": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "Label4": {
+   "offset": 776,
+   "typeIndex": 0
+  },
+  "gp2": {
+   "offset": 780,
+   "typeIndex": 1
+  },
+  "Label5": {
+   "offset": 784,
+   "typeIndex": 0
+  }
+ },
+ "TForm84": {
+  "Shape2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "xibutton2": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "xibutton1": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Label4": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "label3": {
+   "offset": 776,
+   "typeIndex": 2
+  },
+  "label2": {
+   "offset": 780,
+   "typeIndex": 2
+  }
+ },
+ "TForm81": {
+  "combo1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "ComboBox1": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "XiButton1": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Shape2": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "Label1": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "Label6": {
+   "offset": 780,
+   "typeIndex": 3
+  },
+  "TntLabel1": {
+   "offset": 784,
+   "typeIndex": 3
+  },
+  "TntLabel2": {
+   "offset": 788,
+   "typeIndex": 3
+  },
+  "TntLabel3": {
+   "offset": 792,
+   "typeIndex": 3
+  },
+  "bt1": {
+   "offset": 796,
+   "typeIndex": 4
+  },
+  "Label4": {
+   "offset": 800,
+   "typeIndex": 3
+  },
+  "combo3": {
+   "offset": 804,
+   "typeIndex": 5
+  },
+  "Label7": {
+   "offset": 808,
+   "typeIndex": 3
+  }
+ },
+ "TForm82": {
+  "button1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Shape2": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "combo1": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "label3": {
+   "offset": 772,
+   "typeIndex": 3
+  },
+  "label7": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "Image1": {
+   "offset": 780,
+   "typeIndex": 4
+  }
+ },
+ "TForm30": {
+  "Label7": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "ljog": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "ImageList1": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "image0": {
+   "offset": 772,
+   "typeIndex": 3
+  },
+  "r1": {
+   "offset": 776,
+   "typeIndex": 4
+  },
+  "Image1": {
+   "offset": 780,
+   "typeIndex": 3
+  },
+  "r2": {
+   "offset": 784,
+   "typeIndex": 4
+  },
+  "Image2": {
+   "offset": 788,
+   "typeIndex": 3
+  },
+  "r3": {
+   "offset": 792,
+   "typeIndex": 4
+  },
+  "Image3": {
+   "offset": 796,
+   "typeIndex": 3
+  },
+  "r4": {
+   "offset": 800,
+   "typeIndex": 4
+  },
+  "Shape1": {
+   "offset": 804,
+   "typeIndex": 5
+  },
+  "Label6": {
+   "offset": 808,
+   "typeIndex": 0
+  },
+  "Label4": {
+   "offset": 812,
+   "typeIndex": 0
+  },
+  "Label2": {
+   "offset": 816,
+   "typeIndex": 0
+  },
+  "bt3": {
+   "offset": 820,
+   "typeIndex": 6
+  },
+  "XiButton1": {
+   "offset": 824,
+   "typeIndex": 6
+  },
+  "bt2": {
+   "offset": 828,
+   "typeIndex": 6
+  },
+  "label1": {
+   "offset": 832,
+   "typeIndex": 0
+  }
+ },
+ "TForm70": {
+  "Image1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "bt3": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "bolaimg": {
+   "offset": 768,
+   "typeIndex": 0
+  },
+  "labtitulo": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "comboano": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "combobox1": {
+   "offset": 780,
+   "typeIndex": 3
+  },
+  "combo1": {
+   "offset": 784,
+   "typeIndex": 3
+  },
+  "combopais": {
+   "offset": 788,
+   "typeIndex": 3
+  }
+ },
+ "TForm85": {
+  "Image1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "TntLabel1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "label7": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "xibutton1": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "xibutton2": {
+   "offset": 776,
+   "typeIndex": 2
+  }
+ },
+ "TForm26": {
+  "Timer1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "gridc": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "nximg1": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "nxinfo1": {
+   "offset": 772,
+   "typeIndex": 3
+  },
+  "ImageList1": {
+   "offset": 776,
+   "typeIndex": 4
+  },
+  "ImageList2": {
+   "offset": 780,
+   "typeIndex": 4
+  },
+  "gridi": {
+   "offset": 784,
+   "typeIndex": 1
+  },
+  "nximg1i": {
+   "offset": 788,
+   "typeIndex": 2
+  },
+  "nxinfo1i": {
+   "offset": 792,
+   "typeIndex": 3
+  },
+  "Panel1": {
+   "offset": 796,
+   "typeIndex": 5
+  },
+  "nximg2": {
+   "offset": 800,
+   "typeIndex": 6
+  },
+  "nximg2i": {
+   "offset": 804,
+   "typeIndex": 6
+  },
+  "label32": {
+   "offset": 808,
+   "typeIndex": 7
+  },
+  "bt3": {
+   "offset": 812,
+   "typeIndex": 8
+  },
+  "combopais": {
+   "offset": 816,
+   "typeIndex": 9
+  },
+  "TntBitBtn1": {
+   "offset": 820,
+   "typeIndex": 8
+  }
+ },
+ "TForm59": {
+  "escudo": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "TntLabel1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "label2": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Label7": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "bt3": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "xibutton1": {
+   "offset": 780,
+   "typeIndex": 3
+  },
+  "label4": {
+   "offset": 784,
+   "typeIndex": 1
+  }
+ },
+ "TForm86": {
+  "Shape1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Shape2": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "XiButton1": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "ColorDialog1": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "label7": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "TntLabel1": {
+   "offset": 780,
+   "typeIndex": 3
+  },
+  "TntLabel2": {
+   "offset": 784,
+   "typeIndex": 3
+  }
+ },
+ "TForm83": {
+  "HTMLabel2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "oinfojt": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "bt3": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "HTMLabel1": {
+   "offset": 772,
+   "typeIndex": 0
+  },
+  "HTMLabel3": {
+   "offset": 776,
+   "typeIndex": 0
+  },
+  "oinfojt4": {
+   "offset": 780,
+   "typeIndex": 1
+  },
+  "HTMLabel4": {
+   "offset": 784,
+   "typeIndex": 0
+  },
+  "HTMLabel5": {
+   "offset": 788,
+   "typeIndex": 0
+  },
+  "HTMLabel6": {
+   "offset": 792,
+   "typeIndex": 0
+  },
+  "HTMLabel7": {
+   "offset": 796,
+   "typeIndex": 0
+  },
+  "HTMLabel8": {
+   "offset": 800,
+   "typeIndex": 0
+  },
+  "Image1": {
+   "offset": 804,
+   "typeIndex": 3
+  },
+  "combo1": {
+   "offset": 808,
+   "typeIndex": 4
+  },
+  "infojt": {
+   "offset": 812,
+   "typeIndex": 0
+  },
+  "infojt4": {
+   "offset": 816,
+   "typeIndex": 0
+  },
+  "AdvSmoothPanel1": {
+   "offset": 820,
+   "typeIndex": 1
+  },
+  "infojt2": {
+   "offset": 824,
+   "typeIndex": 0
+  },
+  "AdvSmoothPanel2": {
+   "offset": 828,
+   "typeIndex": 1
+  },
+  "infojt5": {
+   "offset": 832,
+   "typeIndex": 0
+  },
+  "AdvSmoothPanel3": {
+   "offset": 836,
+   "typeIndex": 1
+  },
+  "infojt7": {
+   "offset": 840,
+   "typeIndex": 0
+  },
+  "AdvSmoothPanel4": {
+   "offset": 844,
+   "typeIndex": 1
+  },
+  "infojt3": {
+   "offset": 848,
+   "typeIndex": 0
+  },
+  "AdvSmoothPanel5": {
+   "offset": 852,
+   "typeIndex": 1
+  },
+  "infojt6": {
+   "offset": 856,
+   "typeIndex": 0
+  },
+  "AdvSmoothPanel6": {
+   "offset": 860,
+   "typeIndex": 1
+  },
+  "infojt8": {
+   "offset": 864,
+   "typeIndex": 0
+  },
+  "combopais": {
+   "offset": 868,
+   "typeIndex": 4
+  }
+ },
+ "TForm90": {
+  "grid1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "tid": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "tnome": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "tformacao": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "Panel1": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "AdvGlowButton2": {
+   "offset": 780,
+   "typeIndex": 4
+  },
+  "AdvGlowButton1": {
+   "offset": 784,
+   "typeIndex": 4
+  },
+  "Label1": {
+   "offset": 788,
+   "typeIndex": 5
+  },
+  "Label2": {
+   "offset": 792,
+   "typeIndex": 5
+  },
+  "Edit1": {
+   "offset": 796,
+   "typeIndex": 6
+  },
+  "AdvGlowButton3": {
+   "offset": 800,
+   "typeIndex": 4
+  },
+  "AdvGlowButton4": {
+   "offset": 804,
+   "typeIndex": 4
+  },
+  "Label3": {
+   "offset": 808,
+   "typeIndex": 5
+  }
+ },
+ "TForm87": {
+  "Panel1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Panel2": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "Image1": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "gridview1": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "id": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "status": {
+   "offset": 780,
+   "typeIndex": 4
+  },
+  "posicaojog": {
+   "offset": 784,
+   "typeIndex": 5
+  },
+  "condicao": {
+   "offset": 788,
+   "typeIndex": 4
+  },
+  "nome": {
+   "offset": 792,
+   "typeIndex": 5
+  },
+  "funcaojog": {
+   "offset": 796,
+   "typeIndex": 6
+  },
+  "forca": {
+   "offset": 800,
+   "typeIndex": 3
+  },
+  "energia": {
+   "offset": 804,
+   "typeIndex": 7
+  },
+  "lado": {
+   "offset": 808,
+   "typeIndex": 5
+  },
+  "passe": {
+   "offset": 812,
+   "typeIndex": 5
+  },
+  "gols": {
+   "offset": 816,
+   "typeIndex": 5
+  },
+  "habilidades": {
+   "offset": 820,
+   "typeIndex": 5
+  },
+  "idade": {
+   "offset": 824,
+   "typeIndex": 5
+  },
+  "moral": {
+   "offset": 828,
+   "typeIndex": 4
+  },
+  "passet": {
+   "offset": 832,
+   "typeIndex": 3
+  },
+  "salariot": {
+   "offset": 836,
+   "typeIndex": 3
+  },
+  "nxstatus": {
+   "offset": 840,
+   "typeIndex": 3
+  },
+  "ImageList1": {
+   "offset": 844,
+   "typeIndex": 8
+  },
+  "Image3": {
+   "offset": 848,
+   "typeIndex": 1
+  },
+  "lab1": {
+   "offset": 852,
+   "typeIndex": 9
+  },
+  "Label54": {
+   "offset": 856,
+   "typeIndex": 9
+  },
+  "ckescalacao": {
+   "offset": 860,
+   "typeIndex": 10
+  },
+  "Lab2": {
+   "offset": 864,
+   "typeIndex": 9
+  },
+  "Lab4": {
+   "offset": 868,
+   "typeIndex": 9
+  },
+  "lab3": {
+   "offset": 872,
+   "typeIndex": 9
+  },
+  "lab5": {
+   "offset": 876,
+   "typeIndex": 9
+  },
+  "lab6": {
+   "offset": 880,
+   "typeIndex": 9
+  },
+  "Label12": {
+   "offset": 884,
+   "typeIndex": 9
+  },
+  "Gradient1": {
+   "offset": 888,
+   "typeIndex": 11
+  },
+  "Button1": {
+   "offset": 892,
+   "typeIndex": 12
+  },
+  "Button2": {
+   "offset": 896,
+   "typeIndex": 12
+  },
+  "Button3": {
+   "offset": 900,
+   "typeIndex": 12
+  },
+  "ImageList5old": {
+   "offset": 904,
+   "typeIndex": 8
+  },
+  "Label1": {
+   "offset": 908,
+   "typeIndex": 9
+  },
+  "Label2": {
+   "offset": 912,
+   "typeIndex": 9
+  },
+  "Button4": {
+   "offset": 916,
+   "typeIndex": 12
+  },
+  "Image13": {
+   "offset": 920,
+   "typeIndex": 1
+  },
+  "Image2": {
+   "offset": 924,
+   "typeIndex": 1
+  },
+  "Image4": {
+   "offset": 928,
+   "typeIndex": 1
+  },
+  "Label3": {
+   "offset": 932,
+   "typeIndex": 9
+  },
+  "rd1": {
+   "offset": 936,
+   "typeIndex": 13
+  },
+  "rd2": {
+   "offset": 940,
+   "typeIndex": 13
+  },
+  "rd3": {
+   "offset": 944,
+   "typeIndex": 13
+  },
+  "Image5": {
+   "offset": 948,
+   "typeIndex": 1
+  },
+  "AdvGlowButton1": {
+   "offset": 952,
+   "typeIndex": 14
+  },
+  "ImageList5": {
+   "offset": 956,
+   "typeIndex": 8
+  },
+  "combtat": {
+   "offset": 960,
+   "typeIndex": 15
+  },
+  "combomarc": {
+   "offset": 964,
+   "typeIndex": 15
+  },
+  "comboej": {
+   "offset": 968,
+   "typeIndex": 15
+  },
+  "combo_cataq": {
+   "offset": 972,
+   "typeIndex": 15
+  },
+  "combo2": {
+   "offset": 976,
+   "typeIndex": 15
+  },
+  "combo1": {
+   "offset": 980,
+   "typeIndex": 15
+  },
+  "TntLabel1": {
+   "offset": 984,
+   "typeIndex": 9
+  },
+  "bt_voltar": {
+   "offset": 988,
+   "typeIndex": 16
+  },
+  "bt_irprojogo": {
+   "offset": 992,
+   "typeIndex": 16
+  },
+  "TntLabel2": {
+   "offset": 996,
+   "typeIndex": 9
+  }
+ },
+ "TForm21": {
+  "Label2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "Label3": {
+   "offset": 768,
+   "typeIndex": 0
+  },
+  "Label4": {
+   "offset": 772,
+   "typeIndex": 0
+  },
+  "Label6": {
+   "offset": 776,
+   "typeIndex": 0
+  },
+  "Label5": {
+   "offset": 780,
+   "typeIndex": 0
+  },
+  "BitBtn3": {
+   "offset": 784,
+   "typeIndex": 1
+  },
+  "BitBtn2": {
+   "offset": 788,
+   "typeIndex": 1
+  },
+  "BitBtn1": {
+   "offset": 792,
+   "typeIndex": 1
+  },
+  "Label8": {
+   "offset": 796,
+   "typeIndex": 0
+  },
+  "grid1": {
+   "offset": 800,
+   "typeIndex": 2
+  },
+  "nxstatus": {
+   "offset": 804,
+   "typeIndex": 3
+  },
+  "nxarquivo": {
+   "offset": 808,
+   "typeIndex": 4
+  },
+  "Shape1": {
+   "offset": 812,
+   "typeIndex": 5
+  },
+  "TntLabel1": {
+   "offset": 816,
+   "typeIndex": 0
+  }
+ },
+ "TForm17": {
+  "Button1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label2": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Label3": {
+   "offset": 772,
+   "typeIndex": 1
+  }
+ },
+ "TForm19": {
+  "grid1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "nxano": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "nxclube": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "ImageList1": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "Label1": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "nxpais": {
+   "offset": 780,
+   "typeIndex": 4
+  },
+  "XiButton1": {
+   "offset": 784,
+   "typeIndex": 5
+  },
+  "Image2": {
+   "offset": 788,
+   "typeIndex": 6
+  },
+  "nxescudo": {
+   "offset": 792,
+   "typeIndex": 7
+  },
+  "label2": {
+   "offset": 796,
+   "typeIndex": 8
+  }
+ },
+ "TForm57": {
+  "Shape1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Shape5": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "Label2": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Timer1": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "ImageList1": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "ScrollBox1": {
+   "offset": 780,
+   "typeIndex": 4
+  },
+  "xibutton2": {
+   "offset": 784,
+   "typeIndex": 5
+  },
+  "p_camp": {
+   "offset": 788,
+   "typeIndex": 6
+  },
+  "lab1": {
+   "offset": 792,
+   "typeIndex": 6
+  },
+  "lab2": {
+   "offset": 796,
+   "typeIndex": 6
+  },
+  "lab3": {
+   "offset": 800,
+   "typeIndex": 6
+  },
+  "lab4": {
+   "offset": 804,
+   "typeIndex": 6
+  }
+ },
+ "TForm77": {
+  "panel1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label9": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label10": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Label15": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "Image3": {
+   "offset": 776,
+   "typeIndex": 2
+  },
+  "Image4": {
+   "offset": 780,
+   "typeIndex": 2
+  },
+  "escudo": {
+   "offset": 784,
+   "typeIndex": 2
+  },
+  "Edit1": {
+   "offset": 788,
+   "typeIndex": 3
+  },
+  "c1": {
+   "offset": 792,
+   "typeIndex": 4
+  },
+  "c4": {
+   "offset": 796,
+   "typeIndex": 4
+  },
+  "c3": {
+   "offset": 800,
+   "typeIndex": 4
+  },
+  "ckestrela": {
+   "offset": 804,
+   "typeIndex": 5
+  },
+  "NormalImageList": {
+   "offset": 808,
+   "typeIndex": 6
+  },
+  "bt2": {
+   "offset": 812,
+   "typeIndex": 7
+  },
+  "gfind": {
+   "offset": 816,
+   "typeIndex": 8
+  },
+  "nximg": {
+   "offset": 820,
+   "typeIndex": 9
+  },
+  "nxnome": {
+   "offset": 824,
+   "typeIndex": 10
+  },
+  "nxclube": {
+   "offset": 828,
+   "typeIndex": 10
+  },
+  "nxposicao": {
+   "offset": 832,
+   "typeIndex": 10
+  },
+  "nxforca": {
+   "offset": 836,
+   "typeIndex": 11
+  },
+  "nxidade": {
+   "offset": 840,
+   "typeIndex": 11
+  },
+  "nxhabilidade": {
+   "offset": 844,
+   "typeIndex": 10
+  },
+  "gsel": {
+   "offset": 848,
+   "typeIndex": 8
+  },
+  "nximg2": {
+   "offset": 852,
+   "typeIndex": 9
+  },
+  "nxnome2": {
+   "offset": 856,
+   "typeIndex": 10
+  },
+  "nxposicao2": {
+   "offset": 860,
+   "typeIndex": 10
+  },
+  "nxforca2": {
+   "offset": 864,
+   "typeIndex": 11
+  },
+  "nxidade2": {
+   "offset": 868,
+   "typeIndex": 11
+  },
+  "nxid2": {
+   "offset": 872,
+   "typeIndex": 11
+  },
+  "nxid": {
+   "offset": 876,
+   "typeIndex": 11
+  },
+  "XiButton1": {
+   "offset": 880,
+   "typeIndex": 7
+  },
+  "XiButton2": {
+   "offset": 884,
+   "typeIndex": 7
+  },
+  "Label16": {
+   "offset": 888,
+   "typeIndex": 1
+  },
+  "nxlado": {
+   "offset": 892,
+   "typeIndex": 10
+  },
+  "nxlado2": {
+   "offset": 896,
+   "typeIndex": 10
+  },
+  "TntLabel1": {
+   "offset": 900,
+   "typeIndex": 12
+  },
+  "TntLabel2": {
+   "offset": 904,
+   "typeIndex": 12
+  },
+  "TntLabel3": {
+   "offset": 908,
+   "typeIndex": 12
+  },
+  "TntLabel4": {
+   "offset": 912,
+   "typeIndex": 12
+  },
+  "TntLabel5": {
+   "offset": 916,
+   "typeIndex": 12
+  },
+  "TntLabel9": {
+   "offset": 920,
+   "typeIndex": 12
+  },
+  "TntLabel8": {
+   "offset": 924,
+   "typeIndex": 12
+  },
+  "TntLabel7": {
+   "offset": 928,
+   "typeIndex": 12
+  },
+  "TntLabel6": {
+   "offset": 932,
+   "typeIndex": 12
+  },
+  "xibutton3": {
+   "offset": 936,
+   "typeIndex": 13
+  },
+  "label14": {
+   "offset": 940,
+   "typeIndex": 12
+  },
+  "c6": {
+   "offset": 944,
+   "typeIndex": 14
+  },
+  "c5": {
+   "offset": 948,
+   "typeIndex": 14
+  },
+  "c2": {
+   "offset": 952,
+   "typeIndex": 14
+  }
+ },
+ "TForm67": {
+  "ImageList1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "ImageList4": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "Timer1": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Panel1": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "grid1": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "NxNumberColumn1": {
+   "offset": 780,
+   "typeIndex": 4
+  },
+  "NxTextColumn1": {
+   "offset": 784,
+   "typeIndex": 5
+  },
+  "NxTextColumn2": {
+   "offset": 788,
+   "typeIndex": 5
+  },
+  "NxTextColumn3": {
+   "offset": 792,
+   "typeIndex": 5
+  },
+  "Label26": {
+   "offset": 796,
+   "typeIndex": 6
+  },
+  "Label8": {
+   "offset": 800,
+   "typeIndex": 6
+  },
+  "Label70": {
+   "offset": 804,
+   "typeIndex": 6
+  },
+  "lcamp": {
+   "offset": 808,
+   "typeIndex": 6
+  },
+  "Label5": {
+   "offset": 812,
+   "typeIndex": 6
+  },
+  "Label12": {
+   "offset": 816,
+   "typeIndex": 6
+  },
+  "Label33": {
+   "offset": 820,
+   "typeIndex": 6
+  },
+  "Label13": {
+   "offset": 824,
+   "typeIndex": 6
+  },
+  "Label34": {
+   "offset": 828,
+   "typeIndex": 6
+  },
+  "Label32": {
+   "offset": 832,
+   "typeIndex": 6
+  },
+  "Label35": {
+   "offset": 836,
+   "typeIndex": 6
+  },
+  "Image7": {
+   "offset": 840,
+   "typeIndex": 7
+  },
+  "Image6": {
+   "offset": 844,
+   "typeIndex": 7
+  },
+  "Image5": {
+   "offset": 848,
+   "typeIndex": 7
+  },
+  "Button1": {
+   "offset": 852,
+   "typeIndex": 8
+  },
+  "Label29": {
+   "offset": 856,
+   "typeIndex": 6
+  },
+  "Label30": {
+   "offset": 860,
+   "typeIndex": 6
+  },
+  "escudo": {
+   "offset": 864,
+   "typeIndex": 7
+  },
+  "escudo2": {
+   "offset": 868,
+   "typeIndex": 7
+  },
+  "label6": {
+   "offset": 872,
+   "typeIndex": 6
+  },
+  "label2": {
+   "offset": 876,
+   "typeIndex": 6
+  },
+  "TntLabel1": {
+   "offset": 880,
+   "typeIndex": 6
+  },
+  "TntLabel2": {
+   "offset": 884,
+   "typeIndex": 6
+  },
+  "TntLabel3": {
+   "offset": 888,
+   "typeIndex": 6
+  },
+  "TntLabel4": {
+   "offset": 892,
+   "typeIndex": 6
+  },
+  "Label4": {
+   "offset": 896,
+   "typeIndex": 6
+  },
+  "Label3": {
+   "offset": 900,
+   "typeIndex": 6
+  },
+  "Label25": {
+   "offset": 904,
+   "typeIndex": 6
+  },
+  "Label24": {
+   "offset": 908,
+   "typeIndex": 6
+  },
+  "Label23": {
+   "offset": 912,
+   "typeIndex": 9
+  },
+  "Label22": {
+   "offset": 916,
+   "typeIndex": 6
+  },
+  "Label17": {
+   "offset": 920,
+   "typeIndex": 9
+  },
+  "Label16": {
+   "offset": 924,
+   "typeIndex": 6
+  },
+  "Label11": {
+   "offset": 928,
+   "typeIndex": 9
+  },
+  "Label10": {
+   "offset": 932,
+   "typeIndex": 6
+  },
+  "Image2": {
+   "offset": 936,
+   "typeIndex": 7
+  },
+  "Label31": {
+   "offset": 940,
+   "typeIndex": 6
+  },
+  "Image1": {
+   "offset": 944,
+   "typeIndex": 7
+  },
+  "Image3": {
+   "offset": 948,
+   "typeIndex": 7
+  },
+  "l_gols": {
+   "offset": 952,
+   "typeIndex": 10
+  },
+  "GDIPPictureContainer1": {
+   "offset": 956,
+   "typeIndex": 11
+  },
+  "Label1": {
+   "offset": 960,
+   "typeIndex": 6
+  },
+  "nxescudo1": {
+   "offset": 964,
+   "typeIndex": 12
+  },
+  "nxescudo2": {
+   "offset": 968,
+   "typeIndex": 12
+  },
+  "Image4": {
+   "offset": 972,
+   "typeIndex": 7
+  },
+  "bt2": {
+   "offset": 976,
+   "typeIndex": 13
+  },
+  "button2": {
+   "offset": 980,
+   "typeIndex": 13
+  },
+  "bt3": {
+   "offset": 984,
+   "typeIndex": 13
+  },
+  "labg": {
+   "offset": 988,
+   "typeIndex": 14
+  },
+  "escalacao1": {
+   "offset": 992,
+   "typeIndex": 14
+  },
+  "escalacao2": {
+   "offset": 996,
+   "typeIndex": 14
+  },
+  "card1": {
+   "offset": 1000,
+   "typeIndex": 10
+  },
+  "card2": {
+   "offset": 1004,
+   "typeIndex": 10
+  },
+  "combopais": {
+   "offset": 1008,
+   "typeIndex": 15
+  },
+  "combolib": {
+   "offset": 1012,
+   "typeIndex": 15
+  }
+ },
+ "TForm38": {
+  "Shape1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label2": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "pl2": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "pl1": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "Label3": {
+   "offset": 780,
+   "typeIndex": 1
+  },
+  "Label4": {
+   "offset": 784,
+   "typeIndex": 1
+  },
+  "Label6": {
+   "offset": 788,
+   "typeIndex": 1
+  },
+  "Shape5": {
+   "offset": 792,
+   "typeIndex": 0
+  },
+  "Label5": {
+   "offset": 796,
+   "typeIndex": 1
+  },
+  "escudo1": {
+   "offset": 800,
+   "typeIndex": 2
+  },
+  "escudo2": {
+   "offset": 804,
+   "typeIndex": 2
+  },
+  "l1": {
+   "offset": 808,
+   "typeIndex": 3
+  },
+  "l2": {
+   "offset": 812,
+   "typeIndex": 3
+  },
+  "Timer1": {
+   "offset": 816,
+   "typeIndex": 4
+  },
+  "Timer2": {
+   "offset": 820,
+   "typeIndex": 4
+  },
+  "Timer3": {
+   "offset": 824,
+   "typeIndex": 4
+  },
+  "Timer4": {
+   "offset": 828,
+   "typeIndex": 4
+  },
+  "Timer5": {
+   "offset": 832,
+   "typeIndex": 4
+  }
+ },
+ "TForm37": {
+  "Shape5": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Shape1": {
+   "offset": 768,
+   "typeIndex": 0
+  },
+  "Shape2": {
+   "offset": 772,
+   "typeIndex": 0
+  },
+  "Shape3": {
+   "offset": 776,
+   "typeIndex": 0
+  },
+  "Shape4": {
+   "offset": 780,
+   "typeIndex": 0
+  },
+  "Shape6": {
+   "offset": 784,
+   "typeIndex": 0
+  },
+  "Label3": {
+   "offset": 788,
+   "typeIndex": 1
+  },
+  "Shape7": {
+   "offset": 792,
+   "typeIndex": 0
+  },
+  "Label2": {
+   "offset": 796,
+   "typeIndex": 1
+  },
+  "escudo1": {
+   "offset": 800,
+   "typeIndex": 2
+  },
+  "l1": {
+   "offset": 804,
+   "typeIndex": 3
+  },
+  "l2": {
+   "offset": 808,
+   "typeIndex": 3
+  },
+  "ImageList1": {
+   "offset": 812,
+   "typeIndex": 4
+  },
+  "XiButton2": {
+   "offset": 816,
+   "typeIndex": 5
+  },
+  "Shape8": {
+   "offset": 820,
+   "typeIndex": 0
+  },
+  "btp": {
+   "offset": 824,
+   "typeIndex": 6
+  },
+  "bt1": {
+   "offset": 828,
+   "typeIndex": 6
+  }
+ },
+ "TForm54": {
+  "Label2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Timer1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Timer2": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Image1": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "escudo": {
+   "offset": 776,
+   "typeIndex": 2
+  },
+  "label32": {
+   "offset": 780,
+   "typeIndex": 3
+  }
+ },
+ "TForm34": {
+  "Timer1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Timer2": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "ImageList1": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Image2": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "escudo": {
+   "offset": 776,
+   "typeIndex": 2
+  },
+  "info1": {
+   "offset": 780,
+   "typeIndex": 3
+  },
+  "label32": {
+   "offset": 784,
+   "typeIndex": 3
+  },
+  "UniHTMLabel1": {
+   "offset": 788,
+   "typeIndex": 3
+  },
+  "bt1": {
+   "offset": 792,
+   "typeIndex": 4
+  },
+  "gridview1": {
+   "offset": 796,
+   "typeIndex": 5
+  },
+  "id": {
+   "offset": 800,
+   "typeIndex": 6
+  },
+  "posicaojog": {
+   "offset": 804,
+   "typeIndex": 7
+  },
+  "nome": {
+   "offset": 808,
+   "typeIndex": 7
+  },
+  "forca": {
+   "offset": 812,
+   "typeIndex": 7
+  },
+  "energia": {
+   "offset": 816,
+   "typeIndex": 8
+  },
+  "habilidades": {
+   "offset": 820,
+   "typeIndex": 7
+  }
+ },
+ "TForm53": {
+  "Shape1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label2": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label3": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "ImageList1": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "bt1": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "Image1": {
+   "offset": 780,
+   "typeIndex": 4
+  },
+  "label32": {
+   "offset": 784,
+   "typeIndex": 5
+  },
+  "gridview1": {
+   "offset": 788,
+   "typeIndex": 6
+  },
+  "id": {
+   "offset": 792,
+   "typeIndex": 7
+  },
+  "posicaojog": {
+   "offset": 796,
+   "typeIndex": 8
+  },
+  "nome": {
+   "offset": 800,
+   "typeIndex": 8
+  },
+  "energia": {
+   "offset": 804,
+   "typeIndex": 9
+  },
+  "habilidades": {
+   "offset": 808,
+   "typeIndex": 8
+  },
+  "forca": {
+   "offset": 812,
+   "typeIndex": 8
+  }
+ },
+ "TForm88": {
+  "Image1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Image3": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "f88esc1": {
+   "offset": 768,
+   "typeIndex": 0
+  },
+  "f88esc2": {
+   "offset": 772,
+   "typeIndex": 0
+  },
+  "Panel1": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "bck1": {
+   "offset": 780,
+   "typeIndex": 2
+  },
+  "bck2": {
+   "offset": 784,
+   "typeIndex": 2
+  },
+  "nometime2": {
+   "offset": 788,
+   "typeIndex": 2
+  },
+  "nometime_s2": {
+   "offset": 792,
+   "typeIndex": 2
+  },
+  "nometime_s1": {
+   "offset": 796,
+   "typeIndex": 2
+  },
+  "nometime1": {
+   "offset": 800,
+   "typeIndex": 2
+  },
+  "p2": {
+   "offset": 804,
+   "typeIndex": 3
+  },
+  "p1": {
+   "offset": 808,
+   "typeIndex": 3
+  },
+  "sh2": {
+   "offset": 812,
+   "typeIndex": 4
+  },
+  "Shape2": {
+   "offset": 816,
+   "typeIndex": 4
+  },
+  "sh1": {
+   "offset": 820,
+   "typeIndex": 4
+  },
+  "info1": {
+   "offset": 824,
+   "typeIndex": 3
+  },
+  "lb_tat1": {
+   "offset": 828,
+   "typeIndex": 3
+  },
+  "lb_tat2": {
+   "offset": 832,
+   "typeIndex": 3
+  },
+  "lb_tat3": {
+   "offset": 836,
+   "typeIndex": 3
+  },
+  "Image2": {
+   "offset": 840,
+   "typeIndex": 0
+  },
+  "lb_estadio": {
+   "offset": 844,
+   "typeIndex": 3
+  },
+  "lb_pub": {
+   "offset": 848,
+   "typeIndex": 3
+  },
+  "lb_renda": {
+   "offset": 852,
+   "typeIndex": 3
+  },
+  "lb_tempo": {
+   "offset": 856,
+   "typeIndex": 3
+  },
+  "lb_tempo2": {
+   "offset": 860,
+   "typeIndex": 3
+  },
+  "ImageList1": {
+   "offset": 864,
+   "typeIndex": 5
+  },
+  "dlg_info1": {
+   "offset": 868,
+   "typeIndex": 6
+  },
+  "lb_jogo1": {
+   "offset": 872,
+   "typeIndex": 3
+  },
+  "dlg_st": {
+   "offset": 876,
+   "typeIndex": 6
+  },
+  "Image4": {
+   "offset": 880,
+   "typeIndex": 0
+  },
+  "Button1": {
+   "offset": 884,
+   "typeIndex": 7
+  },
+  "l_tec1": {
+   "offset": 888,
+   "typeIndex": 3
+  },
+  "l_tec2": {
+   "offset": 892,
+   "typeIndex": 3
+  },
+  "labadvert": {
+   "offset": 896,
+   "typeIndex": 3
+  },
+  "bt_irprojogo": {
+   "offset": 900,
+   "typeIndex": 8
+  },
+  "label7": {
+   "offset": 904,
+   "typeIndex": 9
+  },
+  "comboej": {
+   "offset": 908,
+   "typeIndex": 10
+  },
+  "combomarc": {
+   "offset": 912,
+   "typeIndex": 10
+  },
+  "combo_cataq": {
+   "offset": 916,
+   "typeIndex": 10
+  },
+  "teste": {
+   "offset": 920,
+   "typeIndex": 3
+  },
+  "PictureContainer1": {
+   "offset": 924,
+   "typeIndex": 11
+  }
+ },
+ "TForm46": {
+  "g1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "labtempo": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Timerl": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "ImageList1": {
+   "offset": 772,
+   "typeIndex": 3
+  },
+  "Button1": {
+   "offset": 776,
+   "typeIndex": 4
+  },
+  "Label1": {
+   "offset": 780,
+   "typeIndex": 1
+  },
+  "HTMLabel3": {
+   "offset": 784,
+   "typeIndex": 5
+  },
+  "lab_div1": {
+   "offset": 788,
+   "typeIndex": 5
+  },
+  "lab_div2": {
+   "offset": 792,
+   "typeIndex": 5
+  },
+  "lab_div3": {
+   "offset": 796,
+   "typeIndex": 5
+  },
+  "lab_div4": {
+   "offset": 800,
+   "typeIndex": 5
+  },
+  "lcamp": {
+   "offset": 804,
+   "typeIndex": 1
+  },
+  "lab_div5": {
+   "offset": 808,
+   "typeIndex": 5
+  },
+  "lab_div7": {
+   "offset": 812,
+   "typeIndex": 5
+  },
+  "lab_div8": {
+   "offset": 816,
+   "typeIndex": 5
+  },
+  "lab_div6": {
+   "offset": 820,
+   "typeIndex": 5
+  },
+  "labvn2": {
+   "offset": 824,
+   "typeIndex": 5
+  },
+  "labvn3": {
+   "offset": 828,
+   "typeIndex": 5
+  },
+  "labvn4": {
+   "offset": 832,
+   "typeIndex": 5
+  }
+ },
+ "TForm12": {
+  "progress": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Timer1": {
+   "offset": 768,
+   "typeIndex": 2
+  }
+ },
+ "TForm11": {
+  "Label10": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label5": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "Label7": {
+   "offset": 768,
+   "typeIndex": 0
+  },
+  "Label8": {
+   "offset": 772,
+   "typeIndex": 0
+  },
+  "Label6": {
+   "offset": 776,
+   "typeIndex": 0
+  },
+  "Label2": {
+   "offset": 780,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 784,
+   "typeIndex": 0
+  },
+  "Label4": {
+   "offset": 788,
+   "typeIndex": 0
+  },
+  "Label3": {
+   "offset": 792,
+   "typeIndex": 0
+  },
+  "Label9": {
+   "offset": 796,
+   "typeIndex": 0
+  },
+  "Edit1": {
+   "offset": 800,
+   "typeIndex": 1
+  },
+  "label11": {
+   "offset": 804,
+   "typeIndex": 0
+  },
+  "Shape1": {
+   "offset": 808,
+   "typeIndex": 2
+  },
+  "ImageList1": {
+   "offset": 812,
+   "typeIndex": 3
+  },
+  "Label12": {
+   "offset": 816,
+   "typeIndex": 0
+  },
+  "UniHTMLabel7": {
+   "offset": 820,
+   "typeIndex": 4
+  },
+  "combo1": {
+   "offset": 824,
+   "typeIndex": 5
+  },
+  "combonac": {
+   "offset": 828,
+   "typeIndex": 5
+  },
+  "button1": {
+   "offset": 832,
+   "typeIndex": 6
+  },
+  "labvn2": {
+   "offset": 836,
+   "typeIndex": 4
+  },
+  "labvn3": {
+   "offset": 840,
+   "typeIndex": 4
+  },
+  "labvn4": {
+   "offset": 844,
+   "typeIndex": 4
+  }
+ },
+ "TForm39": {
+  "Label1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label2": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "Label3": {
+   "offset": 768,
+   "typeIndex": 0
+  },
+  "Label4": {
+   "offset": 772,
+   "typeIndex": 0
+  },
+  "Label5": {
+   "offset": 776,
+   "typeIndex": 0
+  },
+  "Label6": {
+   "offset": 780,
+   "typeIndex": 0
+  },
+  "Label7": {
+   "offset": 784,
+   "typeIndex": 0
+  },
+  "Label8": {
+   "offset": 788,
+   "typeIndex": 0
+  },
+  "Label9": {
+   "offset": 792,
+   "typeIndex": 0
+  },
+  "Label10": {
+   "offset": 796,
+   "typeIndex": 0
+  },
+  "ImageList2": {
+   "offset": 800,
+   "typeIndex": 1
+  },
+  "bt1": {
+   "offset": 804,
+   "typeIndex": 2
+  },
+  "XiButton1": {
+   "offset": 808,
+   "typeIndex": 2
+  },
+  "list1": {
+   "offset": 812,
+   "typeIndex": 3
+  },
+  "ckcopaper": {
+   "offset": 816,
+   "typeIndex": 4
+  },
+  "formulaper": {
+   "offset": 820,
+   "typeIndex": 5
+  },
+  "Label11": {
+   "offset": 824,
+   "typeIndex": 0
+  },
+  "Panel1": {
+   "offset": 828,
+   "typeIndex": 6
+  },
+  "NxImageColumn1": {
+   "offset": 832,
+   "typeIndex": 7
+  },
+  "NxImageColumn2": {
+   "offset": 836,
+   "typeIndex": 7
+  },
+  "NxTextColumn1": {
+   "offset": 840,
+   "typeIndex": 8
+  },
+  "NxTextColumn2": {
+   "offset": 844,
+   "typeIndex": 8
+  },
+  "NxTextColumn3": {
+   "offset": 848,
+   "typeIndex": 8
+  }
+ },
+ "TForm92": {
+  "Image1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "gridview1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "nxid": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "nxestado": {
+   "offset": 772,
+   "typeIndex": 3
+  },
+  "nxtimes": {
+   "offset": 776,
+   "typeIndex": 3
+  },
+  "nxsistema": {
+   "offset": 780,
+   "typeIndex": 4
+  },
+  "nxdesempate": {
+   "offset": 784,
+   "typeIndex": 4
+  },
+  "Button1": {
+   "offset": 788,
+   "typeIndex": 5
+  },
+  "Button3": {
+   "offset": 792,
+   "typeIndex": 5
+  },
+  "gr": {
+   "offset": 796,
+   "typeIndex": 6
+  },
+  "Image2": {
+   "offset": 800,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 804,
+   "typeIndex": 7
+  }
+ },
+ "TForm93": {
+  "Image2": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Shape1": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "ck_dt1": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "Label1": {
+   "offset": 772,
+   "typeIndex": 3
+  },
+  "ck_grl": {
+   "offset": 776,
+   "typeIndex": 2
+  },
+  "ck_grll": {
+   "offset": 780,
+   "typeIndex": 3
+  },
+  "Label3": {
+   "offset": 784,
+   "typeIndex": 3
+  },
+  "ck_verjlib": {
+   "offset": 788,
+   "typeIndex": 2
+  },
+  "ck_verjlig": {
+   "offset": 792,
+   "typeIndex": 2
+  },
+  "ck_verjafr": {
+   "offset": 796,
+   "typeIndex": 2
+  },
+  "ck_verjasi": {
+   "offset": 800,
+   "typeIndex": 2
+  },
+  "ck_verjlibl": {
+   "offset": 804,
+   "typeIndex": 3
+  },
+  "ck_verjligl": {
+   "offset": 808,
+   "typeIndex": 3
+  },
+  "ck_verjafrl": {
+   "offset": 812,
+   "typeIndex": 3
+  },
+  "ck_verjasil": {
+   "offset": 816,
+   "typeIndex": 3
+  },
+  "Label2": {
+   "offset": 820,
+   "typeIndex": 3
+  },
+  "ck_gre": {
+   "offset": 824,
+   "typeIndex": 2
+  },
+  "Label4": {
+   "offset": 828,
+   "typeIndex": 3
+  },
+  "Shape2": {
+   "offset": 832,
+   "typeIndex": 1
+  },
+  "TntLabel1": {
+   "offset": 836,
+   "typeIndex": 3
+  }
+ },
+ "TForm9": {
+  "combo1": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "ComboBox2": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Label9": {
+   "offset": 768,
+   "typeIndex": 2
+  },
+  "ImageList2": {
+   "offset": 772,
+   "typeIndex": 3
+  },
+  "list1": {
+   "offset": 776,
+   "typeIndex": 4
+  },
+  "NxTextColumn1": {
+   "offset": 780,
+   "typeIndex": 5
+  },
+  "nxtimes": {
+   "offset": 784,
+   "typeIndex": 5
+  },
+  "NxTextColumn3": {
+   "offset": 788,
+   "typeIndex": 5
+  },
+  "Shape2": {
+   "offset": 792,
+   "typeIndex": 6
+  },
+  "Shape3": {
+   "offset": 796,
+   "typeIndex": 6
+  },
+  "Shape4": {
+   "offset": 800,
+   "typeIndex": 6
+  },
+  "ckinter2": {
+   "offset": 804,
+   "typeIndex": 7
+  },
+  "ckinter1": {
+   "offset": 808,
+   "typeIndex": 7
+  },
+  "ckcopa": {
+   "offset": 812,
+   "typeIndex": 7
+  },
+  "ckestadual": {
+   "offset": 816,
+   "typeIndex": 7
+  },
+  "HTMLabel1": {
+   "offset": 820,
+   "typeIndex": 8
+  },
+  "HTMLabel2": {
+   "offset": 824,
+   "typeIndex": 8
+  },
+  "HTMLabel3": {
+   "offset": 828,
+   "typeIndex": 8
+  },
+  "ckcopamundo": {
+   "offset": 832,
+   "typeIndex": 7
+  },
+  "ckeurocopa": {
+   "offset": 836,
+   "typeIndex": 7
+  },
+  "ckcopaamerica": {
+   "offset": 840,
+   "typeIndex": 7
+  },
+  "HTMLabel5": {
+   "offset": 844,
+   "typeIndex": 8
+  },
+  "HTMLabel6": {
+   "offset": 848,
+   "typeIndex": 8
+  },
+  "rd1": {
+   "offset": 852,
+   "typeIndex": 9
+  },
+  "rd2": {
+   "offset": 856,
+   "typeIndex": 9
+  },
+  "ckgruposcopamundo": {
+   "offset": 860,
+   "typeIndex": 7
+  },
+  "NxImageColumn2": {
+   "offset": 864,
+   "typeIndex": 10
+  },
+  "nxpais": {
+   "offset": 868,
+   "typeIndex": 11
+  },
+  "Shape1": {
+   "offset": 872,
+   "typeIndex": 6
+  },
+  "AdvGlowButton2": {
+   "offset": 876,
+   "typeIndex": 12
+  },
+  "AdvGlowButton3": {
+   "offset": 880,
+   "typeIndex": 12
+  },
+  "ComboBox1": {
+   "offset": 884,
+   "typeIndex": 13
+  },
+  "UniHTMLabel1": {
+   "offset": 888,
+   "typeIndex": 8
+  },
+  "UniHTMLabel2": {
+   "offset": 892,
+   "typeIndex": 8
+  },
+  "UniHTMLabel3": {
+   "offset": 896,
+   "typeIndex": 8
+  },
+  "UniHTMLabel4": {
+   "offset": 900,
+   "typeIndex": 8
+  },
+  "UniHTMLabel5": {
+   "offset": 904,
+   "typeIndex": 8
+  },
+  "UniHTMLabel6": {
+   "offset": 908,
+   "typeIndex": 8
+  },
+  "HTMLabel4": {
+   "offset": 912,
+   "typeIndex": 8
+  },
+  "UniHTMLabel7": {
+   "offset": 916,
+   "typeIndex": 8
+  },
+  "xibutton1": {
+   "offset": 920,
+   "typeIndex": 14
+  },
+  "xibutton2": {
+   "offset": 924,
+   "typeIndex": 14
+  },
+  "AdvGlowButton1": {
+   "offset": 928,
+   "typeIndex": 12
+  }
+ },
+ "TForm13": {
+  "escudo": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "imgmoral": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "imgj": {
+   "offset": 768,
+   "typeIndex": 0
+  },
+  "Image9": {
+   "offset": 772,
+   "typeIndex": 0
+  },
+  "Label23": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "imgjornal": {
+   "offset": 780,
+   "typeIndex": 2
+  },
+  "PopupMenu6": {
+   "offset": 784,
+   "typeIndex": 3
+  },
+  "ImageList1": {
+   "offset": 788,
+   "typeIndex": 2
+  },
+  "ImageList2": {
+   "offset": 792,
+   "typeIndex": 2
+  },
+  "PopupMenu1": {
+   "offset": 796,
+   "typeIndex": 3
+  },
+  "PopupMenu2": {
+   "offset": 800,
+   "typeIndex": 3
+  },
+  "PopupMenu3": {
+   "offset": 804,
+   "typeIndex": 3
+  },
+  "PopupMenu4": {
+   "offset": 808,
+   "typeIndex": 3
+  },
+  "PopupMenu7": {
+   "offset": 812,
+   "typeIndex": 3
+  },
+  "ImageList3": {
+   "offset": 816,
+   "typeIndex": 2
+  },
+  "gridview1": {
+   "offset": 820,
+   "typeIndex": 4
+  },
+  "id": {
+   "offset": 824,
+   "typeIndex": 5
+  },
+  "posicaojog": {
+   "offset": 828,
+   "typeIndex": 6
+  },
+  "condicao": {
+   "offset": 832,
+   "typeIndex": 7
+  },
+  "nome": {
+   "offset": 836,
+   "typeIndex": 6
+  },
+  "forca": {
+   "offset": 840,
+   "typeIndex": 5
+  },
+  "energia": {
+   "offset": 844,
+   "typeIndex": 8
+  },
+  "salario": {
+   "offset": 848,
+   "typeIndex": 6
+  },
+  "passe": {
+   "offset": 852,
+   "typeIndex": 6
+  },
+  "gols": {
+   "offset": 856,
+   "typeIndex": 6
+  },
+  "habilidades": {
+   "offset": 860,
+   "typeIndex": 6
+  },
+  "idade": {
+   "offset": 864,
+   "typeIndex": 6
+  },
+  "moral": {
+   "offset": 868,
+   "typeIndex": 7
+  },
+  "passet": {
+   "offset": 872,
+   "typeIndex": 5
+  },
+  "salariot": {
+   "offset": 876,
+   "typeIndex": 5
+  },
+  "lab17": {
+   "offset": 880,
+   "typeIndex": 1
+  },
+  "Shape1": {
+   "offset": 884,
+   "typeIndex": 9
+  },
+  "Image1": {
+   "offset": 888,
+   "typeIndex": 0
+  },
+  "Label12": {
+   "offset": 892,
+   "typeIndex": 1
+  },
+  "Label24": {
+   "offset": 896,
+   "typeIndex": 1
+  },
+  "Button1": {
+   "offset": 900,
+   "typeIndex": 10
+  },
+  "nxstatus": {
+   "offset": 904,
+   "typeIndex": 5
+  },
+  "Timer1": {
+   "offset": 908,
+   "typeIndex": 11
+  },
+  "f13esc1": {
+   "offset": 912,
+   "typeIndex": 0
+  },
+  "Image10": {
+   "offset": 916,
+   "typeIndex": 0
+  },
+  "bar1": {
+   "offset": 920,
+   "typeIndex": 12
+  },
+  "nova_barra": {
+   "offset": 924,
+   "typeIndex": 0
+  },
+  "pinfo_panel": {
+   "offset": 928,
+   "typeIndex": 13
+  },
+  "bar2": {
+   "offset": 932,
+   "typeIndex": 12
+  },
+  "nometime_shad": {
+   "offset": 936,
+   "typeIndex": 14
+  },
+  "nometime": {
+   "offset": 940,
+   "typeIndex": 14
+  },
+  "lb_infonext": {
+   "offset": 944,
+   "typeIndex": 15
+  },
+  "lb_infojog": {
+   "offset": 948,
+   "typeIndex": 15
+  },
+  "Image12": {
+   "offset": 952,
+   "typeIndex": 0
+  },
+  "Image13": {
+   "offset": 956,
+   "typeIndex": 0
+  },
+  "icon_arbitro": {
+   "offset": 960,
+   "typeIndex": 0
+  },
+  "lb_infojogn": {
+   "offset": 964,
+   "typeIndex": 15
+  },
+  "lb_cd": {
+   "offset": 968,
+   "typeIndex": 15
+  },
+  "lb_ct": {
+   "offset": 972,
+   "typeIndex": 15
+  },
+  "lb_tec": {
+   "offset": 976,
+   "typeIndex": 15
+  },
+  "lb_infot": {
+   "offset": 980,
+   "typeIndex": 15
+  },
+  "Gradient1": {
+   "offset": 984,
+   "typeIndex": 16
+  },
+  "lab_data": {
+   "offset": 988,
+   "typeIndex": 15
+  },
+  "p_conf": {
+   "offset": 992,
+   "typeIndex": 13
+  },
+  "Shape5": {
+   "offset": 996,
+   "typeIndex": 9
+  },
+  "lb_conf1": {
+   "offset": 1000,
+   "typeIndex": 15
+  },
+  "lb_conf2": {
+   "offset": 1004,
+   "typeIndex": 15
+  },
+  "lb_conf3": {
+   "offset": 1008,
+   "typeIndex": 15
+  },
+  "lb_conf4": {
+   "offset": 1012,
+   "typeIndex": 15
+  },
+  "lb_conft1": {
+   "offset": 1016,
+   "typeIndex": 15
+  },
+  "lb_conft2": {
+   "offset": 1020,
+   "typeIndex": 15
+  },
+  "pimg": {
+   "offset": 1024,
+   "typeIndex": 0
+  },
+  "pimg2": {
+   "offset": 1028,
+   "typeIndex": 0
+  },
+  "Image4": {
+   "offset": 1032,
+   "typeIndex": 0
+  },
+  "lb_cores": {
+   "offset": 1036,
+   "typeIndex": 15
+  },
+  "lb_total": {
+   "offset": 1040,
+   "typeIndex": 15
+  },
+  "funcaojog": {
+   "offset": 1044,
+   "typeIndex": 6
+  },
+  "ImageList5": {
+   "offset": 1048,
+   "typeIndex": 2
+  },
+  "status": {
+   "offset": 1052,
+   "typeIndex": 7
+  },
+  "labmoney": {
+   "offset": 1056,
+   "typeIndex": 15
+  },
+  "label32": {
+   "offset": 1060,
+   "typeIndex": 15
+  },
+  "Image5": {
+   "offset": 1064,
+   "typeIndex": 0
+  },
+  "Button2": {
+   "offset": 1068,
+   "typeIndex": 10
+  },
+  "m2": {
+   "offset": 1072,
+   "typeIndex": 0
+  },
+  "m3": {
+   "offset": 1076,
+   "typeIndex": 0
+  },
+  "m1": {
+   "offset": 1080,
+   "typeIndex": 0
+  },
+  "Button3": {
+   "offset": 1084,
+   "typeIndex": 10
+  },
+  "Button5": {
+   "offset": 1088,
+   "typeIndex": 10
+  },
+  "Button6": {
+   "offset": 1092,
+   "typeIndex": 10
+  },
+  "Button7": {
+   "offset": 1096,
+   "typeIndex": 10
+  },
+  "TntLabel1": {
+   "offset": 1100,
+   "typeIndex": 1
+  },
+  "Retirardoemprstimo1": {
+   "offset": 1104,
+   "typeIndex": 17
+  },
+  "Disponibilizarparaemprstimo1": {
+   "offset": 1108,
+   "typeIndex": 17
+  },
+  "N18": {
+   "offset": 1112,
+   "typeIndex": 17
+  },
+  "Comprarjogador1": {
+   "offset": 1116,
+   "typeIndex": 17
+  },
+  "CancelarEmprstimo1": {
+   "offset": 1120,
+   "typeIndex": 17
+  },
+  "N12": {
+   "offset": 1124,
+   "typeIndex": 17
+  },
+  "HistricoJogos1": {
+   "offset": 1128,
+   "typeIndex": 17
+  },
+  "N16": {
+   "offset": 1132,
+   "typeIndex": 17
+  },
+  "Escolhernmero1": {
+   "offset": 1136,
+   "typeIndex": 17
+  },
+  "N15": {
+   "offset": 1140,
+   "typeIndex": 17
+  },
+  "Aposentarjogador1": {
+   "offset": 1144,
+   "typeIndex": 17
+  },
+  "Venderjogador1": {
+   "offset": 1148,
+   "typeIndex": 17
+  },
+  "N17": {
+   "offset": 1152,
+   "typeIndex": 17
+  },
+  "Alterarsalrio1": {
+   "offset": 1156,
+   "typeIndex": 17
+  },
+  "Sobreojogo1": {
+   "offset": 1160,
+   "typeIndex": 17
+  },
+  "N2": {
+   "offset": 1164,
+   "typeIndex": 17
+  },
+  "Sairdojogo1": {
+   "offset": 1168,
+   "typeIndex": 17
+  },
+  "N1": {
+   "offset": 1172,
+   "typeIndex": 17
+  },
+  "Sedemitir1": {
+   "offset": 1176,
+   "typeIndex": 17
+  },
+  "N3": {
+   "offset": 1180,
+   "typeIndex": 17
+  },
+  "opcoes": {
+   "offset": 1184,
+   "typeIndex": 17
+  },
+  "N4": {
+   "offset": 1188,
+   "typeIndex": 17
+  },
+  "Salvar": {
+   "offset": 1192,
+   "typeIndex": 17
+  },
+  "Emprstimobancrio1": {
+   "offset": 1196,
+   "typeIndex": 17
+  },
+  "N8": {
+   "offset": 1200,
+   "typeIndex": 17
+  },
+  "Finanas1": {
+   "offset": 1204,
+   "typeIndex": 17
+  },
+  "JogosAmistosos1": {
+   "offset": 1208,
+   "typeIndex": 17
+  },
+  "N14": {
+   "offset": 1212,
+   "typeIndex": 17
+  },
+  "mn_lib": {
+   "offset": 1216,
+   "typeIndex": 17
+  },
+  "N11": {
+   "offset": 1220,
+   "typeIndex": 17
+  },
+  "mn_copa": {
+   "offset": 1224,
+   "typeIndex": 17
+  },
+  "N19": {
+   "offset": 1228,
+   "typeIndex": 17
+  },
+  "mn_sul": {
+   "offset": 1232,
+   "typeIndex": 17
+  },
+  "N10": {
+   "offset": 1236,
+   "typeIndex": 17
+  },
+  "MenuItem7": {
+   "offset": 1240,
+   "typeIndex": 17
+  },
+  "N9": {
+   "offset": 1244,
+   "typeIndex": 17
+  },
+  "mn_seutime": {
+   "offset": 1248,
+   "typeIndex": 17
+  },
+  "N20": {
+   "offset": 1252,
+   "typeIndex": 17
+  },
+  "mn_timedoano": {
+   "offset": 1256,
+   "typeIndex": 17
+  },
+  "N24": {
+   "offset": 1260,
+   "typeIndex": 17
+  },
+  "mn_boladeouro": {
+   "offset": 1264,
+   "typeIndex": 17
+  },
+  "N23": {
+   "offset": 1268,
+   "typeIndex": 17
+  },
+  "mn_timerodada": {
+   "offset": 1272,
+   "typeIndex": 17
+  },
+  "N5": {
+   "offset": 1276,
+   "typeIndex": 17
+  },
+  "Histricocompletodejogos1": {
+   "offset": 1280,
+   "typeIndex": 17
+  },
+  "ransfernciasJogadores2": {
+   "offset": 1284,
+   "typeIndex": 17
+  },
+  "RansfernciasJogadores1": {
+   "offset": 1288,
+   "typeIndex": 17
+  },
+  "N7": {
+   "offset": 1292,
+   "typeIndex": 17
+  },
+  "Rankingdeclubes1": {
+   "offset": 1296,
+   "typeIndex": 17
+  },
+  "N21": {
+   "offset": 1300,
+   "typeIndex": 17
+  },
+  "Artilheiros1": {
+   "offset": 1304,
+   "typeIndex": 17
+  },
+  "N13": {
+   "offset": 1308,
+   "typeIndex": 17
+  },
+  "Campees1": {
+   "offset": 1312,
+   "typeIndex": 17
+  },
+  "ltimascontrataesdetcnicos1": {
+   "offset": 1316,
+   "typeIndex": 17
+  },
+  "N6": {
+   "offset": 1320,
+   "typeIndex": 17
+  },
+  "MenuItem5": {
+   "offset": 1324,
+   "typeIndex": 17
+  },
+  "MenuItem4": {
+   "offset": 1328,
+   "typeIndex": 17
+  },
+  "MenuItem3": {
+   "offset": 1332,
+   "typeIndex": 17
+  },
+  "btvender": {
+   "offset": 1336,
+   "typeIndex": 18
+  },
+  "btalterasal": {
+   "offset": 1340,
+   "typeIndex": 18
+  },
+  "btaposenta": {
+   "offset": 1344,
+   "typeIndex": 18
+  },
+  "Button4": {
+   "offset": 1348,
+   "typeIndex": 18
+  },
+  "btjogar": {
+   "offset": 1352,
+   "typeIndex": 18
+  }
+ },
+ "TForm31": {
+  "Shape5": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "Label2": {
+   "offset": 764,
+   "typeIndex": 1
+  },
+  "Shape1": {
+   "offset": 768,
+   "typeIndex": 0
+  },
+  "Label1": {
+   "offset": 772,
+   "typeIndex": 1
+  },
+  "Label3": {
+   "offset": 776,
+   "typeIndex": 1
+  },
+  "Label4": {
+   "offset": 780,
+   "typeIndex": 1
+  },
+  "Label5": {
+   "offset": 784,
+   "typeIndex": 1
+  },
+  "escudo": {
+   "offset": 788,
+   "typeIndex": 2
+  },
+  "xibutton2": {
+   "offset": 792,
+   "typeIndex": 3
+  },
+  "Shape2": {
+   "offset": 796,
+   "typeIndex": 0
+  }
+ },
+ "TForm1": {
+  "estados": {
+   "offset": 760,
+   "typeIndex": 0
+  },
+  "ImageList1": {
+   "offset": 764,
+   "typeIndex": 0
+  },
+  "Button1": {
+   "offset": 768,
+   "typeIndex": 1
+  },
+  "Image2": {
+   "offset": 772,
+   "typeIndex": 2
+  },
+  "Image1": {
+   "offset": 776,
+   "typeIndex": 2
+  },
+  "comboi2": {
+   "offset": 780,
+   "typeIndex": 3
+  },
+  "lb_sl": {
+   "offset": 784,
+   "typeIndex": 4
+  },
+  "TntLabel1": {
+   "offset": 788,
+   "typeIndex": 4
+  },
+  "Shape1": {
+   "offset": 792,
+   "typeIndex": 5
+  },
+  "Shape2": {
+   "offset": 796,
+   "typeIndex": 5
+  },
+  "Shape3": {
+   "offset": 800,
+   "typeIndex": 5
+  },
+  "Shape4": {
+   "offset": 804,
+   "typeIndex": 5
+  }
+ }
+}

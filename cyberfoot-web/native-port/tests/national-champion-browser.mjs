@@ -1,0 +1,1 @@
+import {checkNationalChampion} from './national-champion-proof.mjs';import {checkNationalFinalSave} from './national-final-save-integration.mjs';export async function checkNationalChampionBrowser(){return {comparisons:await checkNationalChampion(),integration:await checkNationalFinalSave(await fetch(new URL('./original-career.s15',import.meta.url)).then(r=>r.arrayBuffer()))};}

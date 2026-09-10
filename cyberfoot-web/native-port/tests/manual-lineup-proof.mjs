@@ -1,0 +1,3 @@
+import {findScreenPlayer,positionAtPitchPoint} from '../manual-lineup.mjs';
+export function verifyManualLookup(vectors){const failures=[];for(const [i,v] of vectors.lookup.entries())if(findScreenPlayer(v.players.map(playerId=>({playerId})),v.target)!==v.expected)failures.push({kind:'lookup',i});for(const [i,v] of vectors.positions.entries())if(positionAtPitchPoint(v.x,v.y)!==v.expected)failures.push({kind:'position',i});return {cases:vectors.lookup.length+vectors.positions.length,failures};}
+export async function checkManualLookup(){const result=verifyManualLookup(await fetch(new URL('./manual-lineup-vectors.json',import.meta.url)).then(r=>r.json()));if(result.failures.length)throw Error(JSON.stringify(result.failures));return {...result,failures:0};}

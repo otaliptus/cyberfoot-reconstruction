@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {verifyKnockoutDeciders} from './knockout-decider-proof.mjs';const r=verifyKnockoutDeciders(JSON.parse(readFileSync(new URL('./knockout-decider-vectors.json',import.meta.url))));if(r.failures.length)throw Error(JSON.stringify(r.failures.slice(0,3)));console.log(`Original automatic decider: ${r.cases} cases passed.`);

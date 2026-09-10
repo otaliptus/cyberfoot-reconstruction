@@ -1,0 +1,1 @@
+import {checkCompetitionBatch} from './competition-batch-proof.mjs';import {checkBatchSelectors} from './batch-selectors-proof.mjs';export async function checkCompetitionBatchBrowser(){return {routing:await checkCompetitionBatch(),selectors:await checkBatchSelectors()};}

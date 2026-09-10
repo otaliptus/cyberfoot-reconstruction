@@ -1,0 +1,5502 @@
+[
+  {
+    "index": 0,
+    "metadata": 0,
+    "text": "Tiếng Việt"
+  },
+  {
+    "index": 1,
+    "metadata": 0,
+    "text": "Bắt đầu"
+  },
+  {
+    "index": 2,
+    "metadata": 0,
+    "text": "Tải file lưu"
+  },
+  {
+    "index": 3,
+    "metadata": 0,
+    "text": "Chỉnh sửa CLB"
+  },
+  {
+    "index": 4,
+    "metadata": 0,
+    "text": "Đăng kí game"
+  },
+  {
+    "index": 5,
+    "metadata": 0,
+    "text": "Chưa đăng kí bản quyền"
+  },
+  {
+    "index": 6,
+    "metadata": 0,
+    "text": "Đã đang kí bản quyền"
+  },
+  {
+    "index": 7,
+    "metadata": 0,
+    "text": "Thoát"
+  },
+  {
+    "index": 8,
+    "metadata": 0,
+    "text": "Chọn ngôn ngữ"
+  },
+  {
+    "index": 9,
+    "metadata": 0,
+    "text": "Đang load game..."
+  },
+  {
+    "index": 10,
+    "metadata": 0,
+    "text": "Thiết lập"
+  },
+  {
+    "index": 11,
+    "metadata": 0,
+    "text": "Giải đấu CLB"
+  },
+  {
+    "index": 12,
+    "metadata": 0,
+    "text": "Hệ thống giải đấu"
+  },
+  {
+    "index": 13,
+    "metadata": 0,
+    "text": "4 hạng đấu với 10 đội mỗi hạng"
+  },
+  {
+    "index": 14,
+    "metadata": 0,
+    "text": "2 hạng đấu với 20 đội mỗi hạng"
+  },
+  {
+    "index": 15,
+    "metadata": 0,
+    "text": "Chơi cúp quốc gia"
+  },
+  {
+    "index": 16,
+    "metadata": 0,
+    "text": "Chơi Champions League/Libertadores"
+  },
+  {
+    "index": 17,
+    "metadata": 0,
+    "text": "Chơi UEFA League/Sul-Americana Cup"
+  },
+  {
+    "index": 18,
+    "metadata": 0,
+    "text": "Các giải đấu của đội tuyển quốc gia"
+  },
+  {
+    "index": 19,
+    "metadata": 0,
+    "text": "Chơi World Cup"
+  },
+  {
+    "index": 20,
+    "metadata": 0,
+    "text": "Sử dụng bảng đấu World Cup 2010 thật"
+  },
+  {
+    "index": 21,
+    "metadata": 0,
+    "text": "Chơi Euro Cup"
+  },
+  {
+    "index": 22,
+    "metadata": 0,
+    "text": "Chơi America Cup"
+  },
+  {
+    "index": 23,
+    "metadata": 0,
+    "text": "Chơi những giải đấu sau:"
+  },
+  {
+    "index": 24,
+    "metadata": 0,
+    "text": "Chọn toàn bộ"
+  },
+  {
+    "index": 25,
+    "metadata": 0,
+    "text": "đội"
+  },
+  {
+    "index": 26,
+    "metadata": 0,
+    "text": "Bạn có thể tải thêm giải đấu từ Members Area tại www.cyberfoot.org"
+  },
+  {
+    "index": 27,
+    "metadata": 0,
+    "text": "Số lượng đội điều khiển bởi người chơi"
+  },
+  {
+    "index": 28,
+    "metadata": 0,
+    "text": "Một số lựa chọn chỉ có trong phiên bản đã đăng kí bản quyền: chơi các giải đấu của đội tuyển quốc gia, điều khiển nhiều đội..."
+  },
+  {
+    "index": 29,
+    "metadata": 0,
+    "text": "Tiếp tục >>"
+  },
+  {
+    "index": 30,
+    "metadata": 0,
+    "text": "<< Quay về"
+  },
+  {
+    "index": 31,
+    "metadata": 0,
+    "text": "Chọn ít nhất một giải đấu"
+  },
+  {
+    "index": 32,
+    "metadata": 0,
+    "text": "Chọn đội"
+  },
+  {
+    "index": 33,
+    "metadata": 0,
+    "text": "Chọn CLB của quốc gia:"
+  },
+  {
+    "index": 34,
+    "metadata": 0,
+    "text": "Tên người chơi:"
+  },
+  {
+    "index": 35,
+    "metadata": 0,
+    "text": "Hạng đấu 1"
+  },
+  {
+    "index": 36,
+    "metadata": 0,
+    "text": "Hạng đấu 2"
+  },
+  {
+    "index": 37,
+    "metadata": 0,
+    "text": "Hạng đấu 3"
+  },
+  {
+    "index": 38,
+    "metadata": 0,
+    "text": "Hạng đấu 4"
+  },
+  {
+    "index": 39,
+    "metadata": 0,
+    "text": "Chọn đội:"
+  },
+  {
+    "index": 40,
+    "metadata": 0,
+    "text": "Chọn đột tiếp theo:"
+  },
+  {
+    "index": 41,
+    "metadata": 0,
+    "text": "Băt đầu trò chơi >>>"
+  },
+  {
+    "index": 42,
+    "metadata": 0,
+    "text": "Đội đã chọn"
+  },
+  {
+    "index": 43,
+    "metadata": 0,
+    "text": "Đây là phiên bản CyberFoot chưa đăng kí bản quyền"
+  },
+  {
+    "index": 44,
+    "metadata": 0,
+    "text": "Trong phiên bản chưa đăng kí bản quyền, người chơi chỉ có thể chọn CLB ở hạng đấu dưới cùng."
+  },
+  {
+    "index": 45,
+    "metadata": 0,
+    "text": "Trong phiên bản đã đăng kí bản quyền, người chơi có thể chọn CLB ở bất cứ hạng đấu nào."
+  },
+  {
+    "index": 46,
+    "metadata": 0,
+    "text": "Đang bắt đầu trò chơi..."
+  },
+  {
+    "index": 47,
+    "metadata": 0,
+    "text": "Khả năng HLV:"
+  },
+  {
+    "index": 48,
+    "metadata": 0,
+    "text": "Ủng hộ của CĐV:"
+  },
+  {
+    "index": 49,
+    "metadata": 0,
+    "text": "Kĩ năng"
+  },
+  {
+    "index": 50,
+    "metadata": 0,
+    "text": "Tuổi"
+  },
+  {
+    "index": 51,
+    "metadata": 0,
+    "text": "Giá trị"
+  },
+  {
+    "index": 52,
+    "metadata": 0,
+    "text": "Lương"
+  },
+  {
+    "index": 53,
+    "metadata": 0,
+    "text": "Trận đấu"
+  },
+  {
+    "index": 54,
+    "metadata": 0,
+    "text": "Kĩ thuật"
+  },
+  {
+    "index": 55,
+    "metadata": 0,
+    "text": "Hợp đồng hết hạn vào"
+  },
+  {
+    "index": 56,
+    "metadata": 0,
+    "text": "Hợp đồng đã hết hạn"
+  },
+  {
+    "index": 57,
+    "metadata": 0,
+    "text": "Ngày hêt hạn mượn cầu thủ"
+  },
+  {
+    "index": 58,
+    "metadata": 0,
+    "text": "Cầu thủ có thể đá trận tiếp theo"
+  },
+  {
+    "index": 59,
+    "metadata": 0,
+    "text": "Treo giò 1 trận: 3 thẻ vàng"
+  },
+  {
+    "index": 60,
+    "metadata": 0,
+    "text": "Treo giò vì"
+  },
+  {
+    "index": 61,
+    "metadata": 0,
+    "text": "trận đấu"
+  },
+  {
+    "index": 62,
+    "metadata": 0,
+    "text": "Chấn thương đến"
+  },
+  {
+    "index": 63,
+    "metadata": 0,
+    "text": "Bán"
+  },
+  {
+    "index": 64,
+    "metadata": 0,
+    "text": "Hợp đồng"
+  },
+  {
+    "index": 65,
+    "metadata": 0,
+    "text": "Giải nghệ"
+  },
+  {
+    "index": 66,
+    "metadata": 0,
+    "text": "Rút khỏi danh sách chuyển nhượng"
+  },
+  {
+    "index": 67,
+    "metadata": 0,
+    "text": "Trận tiếp theo"
+  },
+  {
+    "index": 68,
+    "metadata": 0,
+    "text": "Đội hinh"
+  },
+  {
+    "index": 69,
+    "metadata": 0,
+    "text": "Màu đội bóng"
+  },
+  {
+    "index": 70,
+    "metadata": 0,
+    "text": "Một tin nhắn chưa đọc"
+  },
+  {
+    "index": 71,
+    "metadata": 0,
+    "text": "những tin nhắn chưa đọc"
+  },
+  {
+    "index": 72,
+    "metadata": 0,
+    "text": "Không có tin nhắn mới"
+  },
+  {
+    "index": 73,
+    "metadata": 0,
+    "text": "cầu thủ"
+  },
+  {
+    "index": 74,
+    "metadata": 0,
+    "text": "Lịch sử đối đầu"
+  },
+  {
+    "index": 75,
+    "metadata": 0,
+    "text": "trận đấu"
+  },
+  {
+    "index": 76,
+    "metadata": 0,
+    "text": "trận đấu"
+  },
+  {
+    "index": 77,
+    "metadata": 0,
+    "text": "hòa"
+  },
+  {
+    "index": 78,
+    "metadata": 0,
+    "text": "hòa"
+  },
+  {
+    "index": 79,
+    "metadata": 0,
+    "text": "T"
+  },
+  {
+    "index": 80,
+    "metadata": 0,
+    "text": "H"
+  },
+  {
+    "index": 81,
+    "metadata": 0,
+    "text": "B"
+  },
+  {
+    "index": 82,
+    "metadata": 0,
+    "text": "BT"
+  },
+  {
+    "index": 83,
+    "metadata": 0,
+    "text": "BB"
+  },
+  {
+    "index": 84,
+    "metadata": 0,
+    "text": "Tr"
+  },
+  {
+    "index": 85,
+    "metadata": 0,
+    "text": "+/-"
+  },
+  {
+    "index": 86,
+    "metadata": 0,
+    "text": "Đ"
+  },
+  {
+    "index": 87,
+    "metadata": 0,
+    "text": "RP"
+  },
+  {
+    "index": 88,
+    "metadata": 0,
+    "text": "TH"
+  },
+  {
+    "index": 89,
+    "metadata": 0,
+    "text": "Đối đầu gần nhất"
+  },
+  {
+    "index": 90,
+    "metadata": 0,
+    "text": "Tất cả các trận"
+  },
+  {
+    "index": 91,
+    "metadata": 0,
+    "text": "Trận đối đầu đầu tiên giữa 2 đội"
+  },
+  {
+    "index": 92,
+    "metadata": 0,
+    "text": "Lịch sử các mùa giải trước"
+  },
+  {
+    "index": 93,
+    "metadata": 0,
+    "text": "Lưu trò chơi"
+  },
+  {
+    "index": 94,
+    "metadata": 0,
+    "text": "Thiết lập"
+  },
+  {
+    "index": 95,
+    "metadata": 0,
+    "text": "Từ chức"
+  },
+  {
+    "index": 96,
+    "metadata": 0,
+    "text": "Thoát trò chơi"
+  },
+  {
+    "index": 97,
+    "metadata": 0,
+    "text": "Thông tin trò chơi"
+  },
+  {
+    "index": 98,
+    "metadata": 0,
+    "text": "Xếp hạng HLV"
+  },
+  {
+    "index": 99,
+    "metadata": 0,
+    "text": "Thêm/bớt HLV"
+  },
+  {
+    "index": 100,
+    "metadata": 0,
+    "text": "Chuyển nhượng HLV"
+  },
+  {
+    "index": 101,
+    "metadata": 0,
+    "text": "Xếp hạng CLB"
+  },
+  {
+    "index": 102,
+    "metadata": 0,
+    "text": "Chuyển nhượng cầu thủ"
+  },
+  {
+    "index": 103,
+    "metadata": 0,
+    "text": "Lịch sử toàn bộ các trận đấu"
+  },
+  {
+    "index": 104,
+    "metadata": 0,
+    "text": "Lịch thi đấu"
+  },
+  {
+    "index": 105,
+    "metadata": 0,
+    "text": "Lich thi đấu giải quốc gia"
+  },
+  {
+    "index": 106,
+    "metadata": 0,
+    "text": "Lich thi đấu cúp"
+  },
+  {
+    "index": 107,
+    "metadata": 0,
+    "text": "Đấu loại cúp quốc tế"
+  },
+  {
+    "index": 108,
+    "metadata": 0,
+    "text": "Giao hữu"
+  },
+  {
+    "index": 109,
+    "metadata": 0,
+    "text": "Tài chính"
+  },
+  {
+    "index": 110,
+    "metadata": 0,
+    "text": "Vay ngân hàng"
+  },
+  {
+    "index": 111,
+    "metadata": 0,
+    "text": "Kí hợp đồng"
+  },
+  {
+    "index": 112,
+    "metadata": 0,
+    "text": "Bán cầu thủ"
+  },
+  {
+    "index": 113,
+    "metadata": 0,
+    "text": "Giải nghệ"
+  },
+  {
+    "index": 114,
+    "metadata": 0,
+    "text": "Chọn số áo"
+  },
+  {
+    "index": 115,
+    "metadata": 0,
+    "text": "Sự nghiệp thi đấu"
+  },
+  {
+    "index": 116,
+    "metadata": 0,
+    "text": "Hủy bỏ hợp đồng vay cầu thủ"
+  },
+  {
+    "index": 117,
+    "metadata": 0,
+    "text": "Mua cầu thủ"
+  },
+  {
+    "index": 118,
+    "metadata": 0,
+    "text": "Cho vào danh sách cầu thủ cho vay"
+  },
+  {
+    "index": 119,
+    "metadata": 0,
+    "text": "Bỏ khỏi danh sách cầu thủ cho vay "
+  },
+  {
+    "index": 120,
+    "metadata": 0,
+    "text": "Bảng xếp hạng"
+  },
+  {
+    "index": 121,
+    "metadata": 0,
+    "text": "Sân vận động"
+  },
+  {
+    "index": 122,
+    "metadata": 0,
+    "text": "Xem CLB"
+  },
+  {
+    "index": 123,
+    "metadata": 0,
+    "text": "Tìm cầu thủ"
+  },
+  {
+    "index": 124,
+    "metadata": 0,
+    "text": "Thông tin HLV"
+  },
+  {
+    "index": 125,
+    "metadata": 0,
+    "text": "Danh sách các nhà vô địch"
+  },
+  {
+    "index": 126,
+    "metadata": 0,
+    "text": "Vua phá lưới"
+  },
+  {
+    "index": 127,
+    "metadata": 0,
+    "text": "Xếp hạng CLB"
+  },
+  {
+    "index": 128,
+    "metadata": 0,
+    "text": "VT"
+  },
+  {
+    "index": 129,
+    "metadata": 0,
+    "text": "Tên"
+  },
+  {
+    "index": 130,
+    "metadata": 0,
+    "text": "Cánh"
+  },
+  {
+    "index": 131,
+    "metadata": 0,
+    "text": "Khả năng"
+  },
+  {
+    "index": 132,
+    "metadata": 0,
+    "text": "Thể lực"
+  },
+  {
+    "index": 133,
+    "metadata": 0,
+    "text": "Lương"
+  },
+  {
+    "index": 134,
+    "metadata": 0,
+    "text": "Giá trị"
+  },
+  {
+    "index": 135,
+    "metadata": 0,
+    "text": "BT"
+  },
+  {
+    "index": 136,
+    "metadata": 0,
+    "text": "Kĩ thuật"
+  },
+  {
+    "index": 137,
+    "metadata": 0,
+    "text": "T"
+  },
+  {
+    "index": 138,
+    "metadata": 0,
+    "text": "Tinh thần"
+  },
+  {
+    "index": 139,
+    "metadata": 0,
+    "text": "Hợp đồng hết hạn trong 1 tuần"
+  },
+  {
+    "index": 140,
+    "metadata": 0,
+    "text": "Hợp đồng sắp hết hạn"
+  },
+  {
+    "index": 141,
+    "metadata": 0,
+    "text": "Đăng kí Cyberfoot, click tại đây!"
+  },
+  {
+    "index": 142,
+    "metadata": 0,
+    "text": "Thủ môn"
+  },
+  {
+    "index": 143,
+    "metadata": 0,
+    "text": "TM"
+  },
+  {
+    "index": 144,
+    "metadata": 0,
+    "text": "Trung vệ"
+  },
+  {
+    "index": 145,
+    "metadata": 0,
+    "text": "TV"
+  },
+  {
+    "index": 146,
+    "metadata": 0,
+    "text": "Hậu vệ cánh"
+  },
+  {
+    "index": 147,
+    "metadata": 0,
+    "text": "HVC"
+  },
+  {
+    "index": 148,
+    "metadata": 0,
+    "text": "Tiền vệ"
+  },
+  {
+    "index": 149,
+    "metadata": 0,
+    "text": "TV"
+  },
+  {
+    "index": 150,
+    "metadata": 0,
+    "text": "Tiền đạo"
+  },
+  {
+    "index": 151,
+    "metadata": 0,
+    "text": "TĐ"
+  },
+  {
+    "index": 152,
+    "metadata": 0,
+    "text": "Phải"
+  },
+  {
+    "index": 153,
+    "metadata": 0,
+    "text": "P"
+  },
+  {
+    "index": 154,
+    "metadata": 0,
+    "text": "Trái"
+  },
+  {
+    "index": 155,
+    "metadata": 0,
+    "text": "T"
+  },
+  {
+    "index": 156,
+    "metadata": 0,
+    "text": "Vị trí"
+  },
+  {
+    "index": 157,
+    "metadata": 0,
+    "text": "Vị trí"
+  },
+  {
+    "index": 158,
+    "metadata": 0,
+    "text": "Bắt penalty"
+  },
+  {
+    "index": 159,
+    "metadata": 0,
+    "text": "Bắt penalty"
+  },
+  {
+    "index": 160,
+    "metadata": 0,
+    "text": "Tốc độ"
+  },
+  {
+    "index": 161,
+    "metadata": 0,
+    "text": "Tốc độ"
+  },
+  {
+    "index": 162,
+    "metadata": 0,
+    "text": "Kiểm soát trên không"
+  },
+  {
+    "index": 163,
+    "metadata": 0,
+    "text": "Kiểm soát trên không"
+  },
+  {
+    "index": 164,
+    "metadata": 0,
+    "text": "Kiến tạo"
+  },
+  {
+    "index": 165,
+    "metadata": 0,
+    "text": "Kiến tạo"
+  },
+  {
+    "index": 166,
+    "metadata": 0,
+    "text": "Đánh đầu"
+  },
+  {
+    "index": 167,
+    "metadata": 0,
+    "text": "Đánh đầu"
+  },
+  {
+    "index": 168,
+    "metadata": 0,
+    "text": "Chuyền cross"
+  },
+  {
+    "index": 169,
+    "metadata": 0,
+    "text": "Cross"
+  },
+  {
+    "index": 170,
+    "metadata": 0,
+    "text": "Xoạc bóng"
+  },
+  {
+    "index": 171,
+    "metadata": 0,
+    "text": "Xoạc"
+  },
+  {
+    "index": 172,
+    "metadata": 0,
+    "text": "Rê bóng"
+  },
+  {
+    "index": 173,
+    "metadata": 0,
+    "text": "Rê"
+  },
+  {
+    "index": 174,
+    "metadata": 0,
+    "text": "Sút"
+  },
+  {
+    "index": 175,
+    "metadata": 0,
+    "text": "Sút"
+  },
+  {
+    "index": 176,
+    "metadata": 0,
+    "text": "Kèm người"
+  },
+  {
+    "index": 177,
+    "metadata": 0,
+    "text": "Kèm người"
+  },
+  {
+    "index": 178,
+    "metadata": 0,
+    "text": "Chuyền"
+  },
+  {
+    "index": 179,
+    "metadata": 0,
+    "text": "Chuyền"
+  },
+  {
+    "index": 180,
+    "metadata": 0,
+    "text": "Sức mạnh"
+  },
+  {
+    "index": 181,
+    "metadata": 0,
+    "text": "Sức mạnh"
+  },
+  {
+    "index": 182,
+    "metadata": 0,
+    "text": "Tốc độ"
+  },
+  {
+    "index": 183,
+    "metadata": 0,
+    "text": "Tốc độ"
+  },
+  {
+    "index": 184,
+    "metadata": 0,
+    "text": "1"
+  },
+  {
+    "index": 185,
+    "metadata": 0,
+    "text": "2"
+  },
+  {
+    "index": 186,
+    "metadata": 0,
+    "text": "3"
+  },
+  {
+    "index": 187,
+    "metadata": 0,
+    "text": "4"
+  },
+  {
+    "index": 188,
+    "metadata": 0,
+    "text": "5"
+  },
+  {
+    "index": 189,
+    "metadata": 0,
+    "text": "6"
+  },
+  {
+    "index": 190,
+    "metadata": 0,
+    "text": "7"
+  },
+  {
+    "index": 191,
+    "metadata": 0,
+    "text": "8"
+  },
+  {
+    "index": 192,
+    "metadata": 0,
+    "text": "9"
+  },
+  {
+    "index": 193,
+    "metadata": 0,
+    "text": "10"
+  },
+  {
+    "index": 194,
+    "metadata": 0,
+    "text": "11"
+  },
+  {
+    "index": 195,
+    "metadata": 0,
+    "text": "12"
+  },
+  {
+    "index": 196,
+    "metadata": 0,
+    "text": "13"
+  },
+  {
+    "index": 197,
+    "metadata": 0,
+    "text": "14"
+  },
+  {
+    "index": 198,
+    "metadata": 0,
+    "text": "15"
+  },
+  {
+    "index": 199,
+    "metadata": 0,
+    "text": "16"
+  },
+  {
+    "index": 200,
+    "metadata": 0,
+    "text": "17"
+  },
+  {
+    "index": 201,
+    "metadata": 0,
+    "text": "18"
+  },
+  {
+    "index": 202,
+    "metadata": 0,
+    "text": "19"
+  },
+  {
+    "index": 203,
+    "metadata": 0,
+    "text": "20"
+  },
+  {
+    "index": 204,
+    "metadata": 0,
+    "text": "vị trí"
+  },
+  {
+    "index": 205,
+    "metadata": 0,
+    "text": "Chủ"
+  },
+  {
+    "index": 206,
+    "metadata": 0,
+    "text": "C"
+  },
+  {
+    "index": 207,
+    "metadata": 0,
+    "text": "Khách"
+  },
+  {
+    "index": 208,
+    "metadata": 0,
+    "text": "K"
+  },
+  {
+    "index": 209,
+    "metadata": 0,
+    "text": "vòng"
+  },
+  {
+    "index": 210,
+    "metadata": 0,
+    "text": "Trọng tài"
+  },
+  {
+    "index": 211,
+    "metadata": 0,
+    "text": "Giao hữu quốc tế"
+  },
+  {
+    "index": 212,
+    "metadata": 0,
+    "text": "Giao hữu"
+  },
+  {
+    "index": 213,
+    "metadata": 0,
+    "text": "Vòng 1"
+  },
+  {
+    "index": 214,
+    "metadata": 0,
+    "text": "Vòng 2"
+  },
+  {
+    "index": 215,
+    "metadata": 0,
+    "text": "Tứ kết"
+  },
+  {
+    "index": 216,
+    "metadata": 0,
+    "text": "Bán kết"
+  },
+  {
+    "index": 217,
+    "metadata": 0,
+    "text": "Chung kết"
+  },
+  {
+    "index": 218,
+    "metadata": 0,
+    "text": "Lượt đi"
+  },
+  {
+    "index": 219,
+    "metadata": 0,
+    "text": "Lượt về"
+  },
+  {
+    "index": 220,
+    "metadata": 0,
+    "text": "Champions League"
+  },
+  {
+    "index": 221,
+    "metadata": 0,
+    "text": "UEFA Europa League"
+  },
+  {
+    "index": 222,
+    "metadata": 0,
+    "text": "Libertadores Cup"
+  },
+  {
+    "index": 223,
+    "metadata": 0,
+    "text": "Sul-Americana Cup"
+  },
+  {
+    "index": 224,
+    "metadata": 0,
+    "text": "FIFA Club World Cup"
+  },
+  {
+    "index": 225,
+    "metadata": 0,
+    "text": "Giải quốc gia Đức"
+  },
+  {
+    "index": 226,
+    "metadata": 0,
+    "text": "Cúp quốc gia Đức"
+  },
+  {
+    "index": 227,
+    "metadata": 0,
+    "text": "Giải quốc gia Ý"
+  },
+  {
+    "index": 228,
+    "metadata": 0,
+    "text": "Cúp quốc gia Ý"
+  },
+  {
+    "index": 229,
+    "metadata": 0,
+    "text": "Giải quốc gia Tây Ban Nha"
+  },
+  {
+    "index": 230,
+    "metadata": 0,
+    "text": "Cúp quốc gia Tây Ban Nha"
+  },
+  {
+    "index": 231,
+    "metadata": 0,
+    "text": "Giải quốc gia Anh"
+  },
+  {
+    "index": 232,
+    "metadata": 0,
+    "text": "Cúp quốc gia Anh"
+  },
+  {
+    "index": 233,
+    "metadata": 0,
+    "text": "Giải quốc gia Pháp"
+  },
+  {
+    "index": 234,
+    "metadata": 0,
+    "text": "Cúp quốc gia Pháp"
+  },
+  {
+    "index": 235,
+    "metadata": 0,
+    "text": "Giải quốc gia Bỉ"
+  },
+  {
+    "index": 236,
+    "metadata": 0,
+    "text": "Cúp quốc gia Bỉ"
+  },
+  {
+    "index": 237,
+    "metadata": 0,
+    "text": "Giải quốc gia Hi Lạp"
+  },
+  {
+    "index": 238,
+    "metadata": 0,
+    "text": "Cúp quốc gia Hi Lạp"
+  },
+  {
+    "index": 239,
+    "metadata": 0,
+    "text": "Giải quốc gia Hà Lan"
+  },
+  {
+    "index": 240,
+    "metadata": 0,
+    "text": "Cúp quốc gia Hà Lan"
+  },
+  {
+    "index": 241,
+    "metadata": 0,
+    "text": "Giải quốc gia Bồ Đào Nha"
+  },
+  {
+    "index": 242,
+    "metadata": 0,
+    "text": "Cúp quốc gia Bồ Đào Nha"
+  },
+  {
+    "index": 243,
+    "metadata": 0,
+    "text": "Giải quốc gia Brazil"
+  },
+  {
+    "index": 244,
+    "metadata": 0,
+    "text": "Cúp quốc gia Brazil"
+  },
+  {
+    "index": 245,
+    "metadata": 0,
+    "text": "Giải quốc gia Argentina"
+  },
+  {
+    "index": 246,
+    "metadata": 0,
+    "text": "Cúp quốc gia Argentina"
+  },
+  {
+    "index": 247,
+    "metadata": 0,
+    "text": "Giải quốc gia Scotland"
+  },
+  {
+    "index": 248,
+    "metadata": 0,
+    "text": "Cúp quốc gia Scotland"
+  },
+  {
+    "index": 249,
+    "metadata": 0,
+    "text": "Giải quốc gia Mexico"
+  },
+  {
+    "index": 250,
+    "metadata": 0,
+    "text": "Cúp quốc gia Mexico"
+  },
+  {
+    "index": 251,
+    "metadata": 0,
+    "text": "Giải quốc gia Thụy Sỹ"
+  },
+  {
+    "index": 252,
+    "metadata": 0,
+    "text": "Cúp quốc gia Thụy Sỹ"
+  },
+  {
+    "index": 253,
+    "metadata": 0,
+    "text": "Giải quốc gia Thổ Nhĩ Kỳ"
+  },
+  {
+    "index": 254,
+    "metadata": 0,
+    "text": "Cúp quốc gia Thổ Nhĩ Kỳ"
+  },
+  {
+    "index": 255,
+    "metadata": 0,
+    "text": "Giải quốc gia Chile"
+  },
+  {
+    "index": 256,
+    "metadata": 0,
+    "text": "Cúp quốc gia Chile"
+  },
+  {
+    "index": 257,
+    "metadata": 0,
+    "text": "Giải quốc gia Paraguay"
+  },
+  {
+    "index": 258,
+    "metadata": 0,
+    "text": "Cúp quốc gia Paraguay"
+  },
+  {
+    "index": 259,
+    "metadata": 0,
+    "text": "Giải quốc gia Colombia"
+  },
+  {
+    "index": 260,
+    "metadata": 0,
+    "text": "Cúp quốc gia Colombia"
+  },
+  {
+    "index": 261,
+    "metadata": 0,
+    "text": "Giải quốc gia Nga"
+  },
+  {
+    "index": 262,
+    "metadata": 0,
+    "text": "Cúp quốc gia Nga"
+  },
+  {
+    "index": 263,
+    "metadata": 0,
+    "text": "Giải quốc gia Thụy Điển"
+  },
+  {
+    "index": 264,
+    "metadata": 0,
+    "text": "Cúp quốc gia Thụy Điển"
+  },
+  {
+    "index": 265,
+    "metadata": 0,
+    "text": "Giải quốc gia Ukraina"
+  },
+  {
+    "index": 266,
+    "metadata": 0,
+    "text": "Cúp quốc gia Ukraina"
+  },
+  {
+    "index": 267,
+    "metadata": 0,
+    "text": "Giải quốc gia Uruguay"
+  },
+  {
+    "index": 268,
+    "metadata": 0,
+    "text": "Cúp quốc gia Uruguay"
+  },
+  {
+    "index": 269,
+    "metadata": 0,
+    "text": "Giải quốc gia Serbia"
+  },
+  {
+    "index": 270,
+    "metadata": 0,
+    "text": "Cúp quốc gia Serbia"
+  },
+  {
+    "index": 271,
+    "metadata": 0,
+    "text": "Giải quốc gia Ba Lan"
+  },
+  {
+    "index": 272,
+    "metadata": 0,
+    "text": "Cúp quốc gia Ba Lan"
+  },
+  {
+    "index": 273,
+    "metadata": 0,
+    "text": "Giải quốc gia Indonesia"
+  },
+  {
+    "index": 274,
+    "metadata": 0,
+    "text": "Cúp quốc gia Indonesia"
+  },
+  {
+    "index": 275,
+    "metadata": 0,
+    "text": "Giải quốc gia Mỹ"
+  },
+  {
+    "index": 276,
+    "metadata": 0,
+    "text": "Cúp quốc gia Mỹ"
+  },
+  {
+    "index": 277,
+    "metadata": 0,
+    "text": "Giải quốc gia Bungari"
+  },
+  {
+    "index": 278,
+    "metadata": 0,
+    "text": "Cúp quốc gia Bungari"
+  },
+  {
+    "index": 279,
+    "metadata": 0,
+    "text": "Giải đấu của"
+  },
+  {
+    "index": 280,
+    "metadata": 0,
+    "text": "Cúp của"
+  },
+  {
+    "index": 281,
+    "metadata": 0,
+    "text": "Ghi nhớ đội hình"
+  },
+  {
+    "index": 282,
+    "metadata": 0,
+    "text": "Tự động chọn đội hình"
+  },
+  {
+    "index": 283,
+    "metadata": 0,
+    "text": "Chiến thuật"
+  },
+  {
+    "index": 284,
+    "metadata": 0,
+    "text": "Mức độ phòng thủ"
+  },
+  {
+    "index": 285,
+    "metadata": 0,
+    "text": "Tập trung tấn công tại"
+  },
+  {
+    "index": 286,
+    "metadata": 0,
+    "text": "Đá phạt"
+  },
+  {
+    "index": 287,
+    "metadata": 0,
+    "text": "Đổi trưởng"
+  },
+  {
+    "index": 288,
+    "metadata": 0,
+    "text": "Tự động chọn đội hình"
+  },
+  {
+    "index": 289,
+    "metadata": 0,
+    "text": "Chiến thuật"
+  },
+  {
+    "index": 290,
+    "metadata": 0,
+    "text": "Cân bằng"
+  },
+  {
+    "index": 291,
+    "metadata": 0,
+    "text": "Tổng tấn công"
+  },
+  {
+    "index": 292,
+    "metadata": 0,
+    "text": "Phòng thủ"
+  },
+  {
+    "index": 293,
+    "metadata": 0,
+    "text": "Mềm mỏng"
+  },
+  {
+    "index": 294,
+    "metadata": 0,
+    "text": "Cứng rắn"
+  },
+  {
+    "index": 295,
+    "metadata": 0,
+    "text": "Siêu cứng rắn"
+  },
+  {
+    "index": 296,
+    "metadata": 0,
+    "text": "Trung lộ"
+  },
+  {
+    "index": 297,
+    "metadata": 0,
+    "text": "Cánh"
+  },
+  {
+    "index": 298,
+    "metadata": 0,
+    "text": "<< Quay về"
+  },
+  {
+    "index": 299,
+    "metadata": 0,
+    "text": "Bắt đầu trận đấu >>"
+  },
+  {
+    "index": 300,
+    "metadata": 0,
+    "text": "chơi ở vị trí"
+  },
+  {
+    "index": 301,
+    "metadata": 0,
+    "text": "Chọn ít nhất 11 cầu thủ để bắt đầu trận đấu"
+  },
+  {
+    "index": 302,
+    "metadata": 0,
+    "text": "Chọn đội:"
+  },
+  {
+    "index": 303,
+    "metadata": 0,
+    "text": "Lịch sử"
+  },
+  {
+    "index": 304,
+    "metadata": 0,
+    "text": "Lịch thi đấu"
+  },
+  {
+    "index": 305,
+    "metadata": 0,
+    "text": "Chuyển nhượng"
+  },
+  {
+    "index": 306,
+    "metadata": 0,
+    "text": "Giải thưởng"
+  },
+  {
+    "index": 307,
+    "metadata": 0,
+    "text": "Ngân qũy:"
+  },
+  {
+    "index": 308,
+    "metadata": 0,
+    "text": "Mỗi CLB chỉ được có tối đá 28 cầu thủ"
+  },
+  {
+    "index": 309,
+    "metadata": 0,
+    "text": "không muốn chuyển đến CLB của bạn"
+  },
+  {
+    "index": 310,
+    "metadata": 0,
+    "text": "chuyển nhượng thành công"
+  },
+  {
+    "index": 311,
+    "metadata": 0,
+    "text": "trong danh sách chuyển nhượng"
+  },
+  {
+    "index": 312,
+    "metadata": 0,
+    "text": "có thể mượn"
+  },
+  {
+    "index": 313,
+    "metadata": 0,
+    "text": "TL"
+  },
+  {
+    "index": 314,
+    "metadata": 0,
+    "text": "LA"
+  },
+  {
+    "index": 315,
+    "metadata": 0,
+    "text": "Mượn cầu thủ"
+  },
+  {
+    "index": 316,
+    "metadata": 0,
+    "text": "Mỗi CLB chỉ được có 2 cầu thủ cho mượn"
+  },
+  {
+    "index": 317,
+    "metadata": 0,
+    "text": "Mua cầu thủ"
+  },
+  {
+    "index": 318,
+    "metadata": 0,
+    "text": "Đặt giá"
+  },
+  {
+    "index": 319,
+    "metadata": 0,
+    "text": "Lịch sử"
+  },
+  {
+    "index": 320,
+    "metadata": 0,
+    "text": "Năm"
+  },
+  {
+    "index": 321,
+    "metadata": 0,
+    "text": "Đội"
+  },
+  {
+    "index": 322,
+    "metadata": 0,
+    "text": "Sự nghiệp"
+  },
+  {
+    "index": 323,
+    "metadata": 0,
+    "text": "Đội hạng vùng"
+  },
+  {
+    "index": 324,
+    "metadata": 0,
+    "text": "Quốc tế"
+  },
+  {
+    "index": 325,
+    "metadata": 0,
+    "text": "Liệt kê trận đấu"
+  },
+  {
+    "index": 326,
+    "metadata": 0,
+    "text": "World Cup"
+  },
+  {
+    "index": 327,
+    "metadata": 0,
+    "text": "America Cup"
+  },
+  {
+    "index": 328,
+    "metadata": 0,
+    "text": "Euro Cup"
+  },
+  {
+    "index": 329,
+    "metadata": 0,
+    "text": "Xem:"
+  },
+  {
+    "index": 330,
+    "metadata": 0,
+    "text": "Tất cả trận đấu"
+  },
+  {
+    "index": 331,
+    "metadata": 0,
+    "text": "Chủ Nhật"
+  },
+  {
+    "index": 332,
+    "metadata": 0,
+    "text": "Thứ 2"
+  },
+  {
+    "index": 333,
+    "metadata": 0,
+    "text": "Thứ 3"
+  },
+  {
+    "index": 334,
+    "metadata": 0,
+    "text": "Thứ 4"
+  },
+  {
+    "index": 335,
+    "metadata": 0,
+    "text": "Thứ 5"
+  },
+  {
+    "index": 336,
+    "metadata": 0,
+    "text": "Thứ 6"
+  },
+  {
+    "index": 337,
+    "metadata": 0,
+    "text": "Thứ 7"
+  },
+  {
+    "index": 338,
+    "metadata": 0,
+    "text": "Cầu thủ"
+  },
+  {
+    "index": 339,
+    "metadata": 0,
+    "text": "Bàn thắng"
+  },
+  {
+    "index": 340,
+    "metadata": 0,
+    "text": "Trận đấu"
+  },
+  {
+    "index": 341,
+    "metadata": 0,
+    "text": "Giải đấu"
+  },
+  {
+    "index": 342,
+    "metadata": 0,
+    "text": "Cúp"
+  },
+  {
+    "index": 343,
+    "metadata": 0,
+    "text": "Tôt nhất"
+  },
+  {
+    "index": 344,
+    "metadata": 0,
+    "text": "Liệt kê 100 cầu thủ đầu tiên, click tại đây để liệt kê toàn bộ"
+  },
+  {
+    "index": 345,
+    "metadata": 0,
+    "text": "Tải"
+  },
+  {
+    "index": 346,
+    "metadata": 0,
+    "text": "Hủy bỏ"
+  },
+  {
+    "index": 347,
+    "metadata": 0,
+    "text": "Xóa"
+  },
+  {
+    "index": 348,
+    "metadata": 0,
+    "text": "Huấn luyện viên:"
+  },
+  {
+    "index": 349,
+    "metadata": 0,
+    "text": "Trận tiếp theo"
+  },
+  {
+    "index": 350,
+    "metadata": 0,
+    "text": "Thu nhập"
+  },
+  {
+    "index": 351,
+    "metadata": 0,
+    "text": "Chi tiêu"
+  },
+  {
+    "index": 352,
+    "metadata": 0,
+    "text": "Bán cầu thủ:"
+  },
+  {
+    "index": 353,
+    "metadata": 0,
+    "text": "Vé:"
+  },
+  {
+    "index": 354,
+    "metadata": 0,
+    "text": "Tiền thưởng:"
+  },
+  {
+    "index": 355,
+    "metadata": 0,
+    "text": "Vay ngân hàng:"
+  },
+  {
+    "index": 356,
+    "metadata": 0,
+    "text": "Tài trợ:"
+  },
+  {
+    "index": 357,
+    "metadata": 0,
+    "text": "Tổng cộng:"
+  },
+  {
+    "index": 358,
+    "metadata": 0,
+    "text": "Mua cầu thủ:"
+  },
+  {
+    "index": 359,
+    "metadata": 0,
+    "text": "Sân vận động:"
+  },
+  {
+    "index": 360,
+    "metadata": 0,
+    "text": "Lương:"
+  },
+  {
+    "index": 361,
+    "metadata": 0,
+    "text": "Lãi vay:"
+  },
+  {
+    "index": 362,
+    "metadata": 0,
+    "text": "Phí chuyển nhượng:"
+  },
+  {
+    "index": 363,
+    "metadata": 0,
+    "text": "Khác:"
+  },
+  {
+    "index": 364,
+    "metadata": 0,
+    "text": "Cân băng ngân sách:"
+  },
+  {
+    "index": 365,
+    "metadata": 0,
+    "text": "Lãi vay hàng tuần:"
+  },
+  {
+    "index": 366,
+    "metadata": 0,
+    "text": "Lương hàng tuần:"
+  },
+  {
+    "index": 367,
+    "metadata": 0,
+    "text": "Tiền:"
+  },
+  {
+    "index": 368,
+    "metadata": 0,
+    "text": "Bán đấu giá cầu thủ"
+  },
+  {
+    "index": 369,
+    "metadata": 0,
+    "text": "Giá khởi điểm:"
+  },
+  {
+    "index": 370,
+    "metadata": 0,
+    "text": "đang bán cầu thủ"
+  },
+  {
+    "index": 371,
+    "metadata": 0,
+    "text": "Đặt giá, vd 300 = 300 nghìn"
+  },
+  {
+    "index": 372,
+    "metadata": 0,
+    "text": "Không có người mua"
+  },
+  {
+    "index": 373,
+    "metadata": 0,
+    "text": "Bán cho"
+  },
+  {
+    "index": 374,
+    "metadata": 0,
+    "text": "Giá bạn trả:"
+  },
+  {
+    "index": 375,
+    "metadata": 0,
+    "text": "Trả giá"
+  },
+  {
+    "index": 376,
+    "metadata": 0,
+    "text": "nhiều hơn tiền bạn đang có"
+  },
+  {
+    "index": 377,
+    "metadata": 0,
+    "text": "Bạn không có đủ tiền."
+  },
+  {
+    "index": 378,
+    "metadata": 0,
+    "text": "Hợp đồng"
+  },
+  {
+    "index": 379,
+    "metadata": 0,
+    "text": "Lương mới:"
+  },
+  {
+    "index": 380,
+    "metadata": 0,
+    "text": "Thời hạn hợp đồng:"
+  },
+  {
+    "index": 381,
+    "metadata": 0,
+    "text": "6 tháng"
+  },
+  {
+    "index": 382,
+    "metadata": 0,
+    "text": "1 năm"
+  },
+  {
+    "index": 383,
+    "metadata": 0,
+    "text": "2 năm"
+  },
+  {
+    "index": 384,
+    "metadata": 0,
+    "text": "Đề nghị hợp đồng"
+  },
+  {
+    "index": 385,
+    "metadata": 0,
+    "text": "Hủy bỏ"
+  },
+  {
+    "index": 386,
+    "metadata": 0,
+    "text": "Đề nghị của bạn bị từ chối, cầu thủ muốn:"
+  },
+  {
+    "index": 387,
+    "metadata": 0,
+    "text": "Đồng ý"
+  },
+  {
+    "index": 388,
+    "metadata": 0,
+    "text": "Từ chối"
+  },
+  {
+    "index": 389,
+    "metadata": 0,
+    "text": "Cầu thủ này có giới hạn lương "
+  },
+  {
+    "index": 390,
+    "metadata": 0,
+    "text": "Nhà vô địch"
+  },
+  {
+    "index": 391,
+    "metadata": 0,
+    "text": "Tiếp tục >>>"
+  },
+  {
+    "index": 392,
+    "metadata": 0,
+    "text": "bàn thắng"
+  },
+  {
+    "index": 393,
+    "metadata": 0,
+    "text": "Tìm"
+  },
+  {
+    "index": 394,
+    "metadata": 0,
+    "text": "Vị trí:"
+  },
+  {
+    "index": 395,
+    "metadata": 0,
+    "text": "Quốc tịch:"
+  },
+  {
+    "index": 396,
+    "metadata": 0,
+    "text": "Chỉ xem cầu thủ trong danh sách chuyển nhượng"
+  },
+  {
+    "index": 397,
+    "metadata": 0,
+    "text": "Chỉ xem cầu thủ chơi tại"
+  },
+  {
+    "index": 398,
+    "metadata": 0,
+    "text": "Chỉ xem cầu thủ ngôi sao"
+  },
+  {
+    "index": 399,
+    "metadata": 0,
+    "text": "Chỉ xem cầu thủ trong danh sách cho mượn"
+  },
+  {
+    "index": 400,
+    "metadata": 0,
+    "text": "Bất cứ giá nào"
+  },
+  {
+    "index": 401,
+    "metadata": 0,
+    "text": "cầu thủ được tìm thấy"
+  },
+  {
+    "index": 402,
+    "metadata": 0,
+    "text": "Đã được cho mượn:"
+  },
+  {
+    "index": 403,
+    "metadata": 0,
+    "text": "Lãi vay mỗi trận:"
+  },
+  {
+    "index": 404,
+    "metadata": 0,
+    "text": "Vay thêm $ 500,000"
+  },
+  {
+    "index": 405,
+    "metadata": 0,
+    "text": "Trả $ 500,000"
+  },
+  {
+    "index": 406,
+    "metadata": 0,
+    "text": "Năm"
+  },
+  {
+    "index": 407,
+    "metadata": 0,
+    "text": "Nhà vô địch"
+  },
+  {
+    "index": 408,
+    "metadata": 0,
+    "text": "Thứ nhì"
+  },
+  {
+    "index": 409,
+    "metadata": 0,
+    "text": "Vua phá lưới"
+  },
+  {
+    "index": 410,
+    "metadata": 0,
+    "text": "HLV vô địch"
+  },
+  {
+    "index": 411,
+    "metadata": 0,
+    "text": "Lời mời làm HLV"
+  },
+  {
+    "index": 412,
+    "metadata": 0,
+    "text": "Đội sau muốn mời bạn làm huấn luyện viên, bạn có đồng ý không?"
+  },
+  {
+    "index": 413,
+    "metadata": 0,
+    "text": "Đồng ý"
+  },
+  {
+    "index": 414,
+    "metadata": 0,
+    "text": "Từ chối"
+  },
+  {
+    "index": 415,
+    "metadata": 0,
+    "text": "sa thải bạn vì"
+  },
+  {
+    "index": 416,
+    "metadata": 0,
+    "text": "cổ động viên gây sức ép vì kết quả kém gần đây"
+  },
+  {
+    "index": 417,
+    "metadata": 0,
+    "text": "đẩy câu lạc bộ vào khủng hoảng tài chính."
+  },
+  {
+    "index": 418,
+    "metadata": 0,
+    "text": "quá nhiều thất bại gần đây"
+  },
+  {
+    "index": 419,
+    "metadata": 0,
+    "text": "câu lạc bộ bị tụt xuống hạng 4..."
+  },
+  {
+    "index": 420,
+    "metadata": 0,
+    "text": "bạn từ chức. Chúc may mắn ở câu lạc bộ tiếp theo."
+  },
+  {
+    "index": 421,
+    "metadata": 0,
+    "text": "HLV thay thế bạn là:"
+  },
+  {
+    "index": 422,
+    "metadata": 0,
+    "text": "Chờ một CLB mới..."
+  },
+  {
+    "index": 423,
+    "metadata": 0,
+    "text": "Bị sa thải!"
+  },
+  {
+    "index": 424,
+    "metadata": 0,
+    "text": "Thiết lập"
+  },
+  {
+    "index": 425,
+    "metadata": 0,
+    "text": "Xem giải đấu"
+  },
+  {
+    "index": 426,
+    "metadata": 0,
+    "text": "Tự động lưu:"
+  },
+  {
+    "index": 427,
+    "metadata": 0,
+    "text": "Tốc độ trận đấu:"
+  },
+  {
+    "index": 428,
+    "metadata": 0,
+    "text": "Tốc độ khi không có người chơi:"
+  },
+  {
+    "index": 429,
+    "metadata": 0,
+    "text": "Xem penalty khi không có người chơi:"
+  },
+  {
+    "index": 430,
+    "metadata": 0,
+    "text": "Xem chuyển nhượng HLV:"
+  },
+  {
+    "index": 431,
+    "metadata": 0,
+    "text": "Xem thông tin trân đấu giữa 2 hiệp:"
+  },
+  {
+    "index": 432,
+    "metadata": 0,
+    "text": "Nhận cảnh báo cầu thủ sắp hết hạn hợp đồng:"
+  },
+  {
+    "index": 433,
+    "metadata": 0,
+    "text": "Tự động gia hạn hợp đồng"
+  },
+  {
+    "index": 434,
+    "metadata": 0,
+    "text": "Màu sắc và âm thanh"
+  },
+  {
+    "index": 435,
+    "metadata": 0,
+    "text": "Thiết lập âm thanh"
+  },
+  {
+    "index": 436,
+    "metadata": 0,
+    "text": "Đánh dấu đậm các sự kiện của đội nhà"
+  },
+  {
+    "index": 437,
+    "metadata": 0,
+    "text": "Sử dụng màu sắc cho các vị trí cầu thủ"
+  },
+  {
+    "index": 438,
+    "metadata": 0,
+    "text": "Không lưu tự động"
+  },
+  {
+    "index": 439,
+    "metadata": 0,
+    "text": "Sau mỗi 3 trận"
+  },
+  {
+    "index": 440,
+    "metadata": 0,
+    "text": "Sau mỗi trận"
+  },
+  {
+    "index": 441,
+    "metadata": 0,
+    "text": "Đầu mùa giải"
+  },
+  {
+    "index": 442,
+    "metadata": 0,
+    "text": "Chậm"
+  },
+  {
+    "index": 443,
+    "metadata": 0,
+    "text": "Bình thường"
+  },
+  {
+    "index": 444,
+    "metadata": 0,
+    "text": "Nhanh"
+  },
+  {
+    "index": 445,
+    "metadata": 0,
+    "text": "Rất nhanh"
+  },
+  {
+    "index": 446,
+    "metadata": 0,
+    "text": "Siêu nhanh"
+  },
+  {
+    "index": 447,
+    "metadata": 0,
+    "text": "Cực kì nhanh"
+  },
+  {
+    "index": 448,
+    "metadata": 0,
+    "text": "Nhanh hết cỡ"
+  },
+  {
+    "index": 449,
+    "metadata": 0,
+    "text": "Không"
+  },
+  {
+    "index": 450,
+    "metadata": 0,
+    "text": "Có"
+  },
+  {
+    "index": 451,
+    "metadata": 0,
+    "text": "Đã hết hạn"
+  },
+  {
+    "index": 452,
+    "metadata": 0,
+    "text": "Sắp hết hạn"
+  },
+  {
+    "index": 453,
+    "metadata": 0,
+    "text": "Hiển thì phút theo phong cách châu Âu (vd: 60' thay vì 15' hiệp 2)"
+  },
+  {
+    "index": 454,
+    "metadata": 0,
+    "text": "Xem trận đấu trong giải đấu không có người chơi"
+  },
+  {
+    "index": 455,
+    "metadata": 0,
+    "text": "Sử dụng màu sắc khác cho trận đấu có người chơi"
+  },
+  {
+    "index": 456,
+    "metadata": 0,
+    "text": "Màu sắc cho các vị trí cầu thủ"
+  },
+  {
+    "index": 457,
+    "metadata": 0,
+    "text": "Đặt lại mặc định"
+  },
+  {
+    "index": 458,
+    "metadata": 0,
+    "text": "Penalty"
+  },
+  {
+    "index": 459,
+    "metadata": 0,
+    "text": "Chọn cầu thủ đá penalty"
+  },
+  {
+    "index": 460,
+    "metadata": 0,
+    "text": "Sút"
+  },
+  {
+    "index": 461,
+    "metadata": 0,
+    "text": "chuyển bị sút..."
+  },
+  {
+    "index": 462,
+    "metadata": 0,
+    "text": "sút và..."
+  },
+  {
+    "index": 463,
+    "metadata": 0,
+    "text": "Tinh tế! Vào!!!"
+  },
+  {
+    "index": 464,
+    "metadata": 0,
+    "text": "Vào!!!"
+  },
+  {
+    "index": 465,
+    "metadata": 0,
+    "text": "Ghi một bàn thắng tuyệt đẹp!!!"
+  },
+  {
+    "index": 466,
+    "metadata": 0,
+    "text": "Thủ môn bắt penalty thành công!"
+  },
+  {
+    "index": 467,
+    "metadata": 0,
+    "text": "Trúng cột dọc!!!"
+  },
+  {
+    "index": 468,
+    "metadata": 0,
+    "text": "Trúng xà ngang!!!"
+  },
+  {
+    "index": 469,
+    "metadata": 0,
+    "text": "Điểm"
+  },
+  {
+    "index": 470,
+    "metadata": 0,
+    "text": "Trận đã đấu"
+  },
+  {
+    "index": 471,
+    "metadata": 0,
+    "text": "Thắng"
+  },
+  {
+    "index": 472,
+    "metadata": 0,
+    "text": "Hòa"
+  },
+  {
+    "index": 473,
+    "metadata": 0,
+    "text": "Bại"
+  },
+  {
+    "index": 474,
+    "metadata": 0,
+    "text": "Bàn thắng"
+  },
+  {
+    "index": 475,
+    "metadata": 0,
+    "text": "Bàn bại"
+  },
+  {
+    "index": 476,
+    "metadata": 0,
+    "text": "Hiệu số"
+  },
+  {
+    "index": 477,
+    "metadata": 0,
+    "text": "Bảng"
+  },
+  {
+    "index": 478,
+    "metadata": 0,
+    "text": "Chưa có lịch thi đấu"
+  },
+  {
+    "index": 479,
+    "metadata": 0,
+    "text": "Penalty"
+  },
+  {
+    "index": 480,
+    "metadata": 0,
+    "text": "Chọn cầu thủ đá penalty"
+  },
+  {
+    "index": 481,
+    "metadata": 0,
+    "text": "Cầu thủ:"
+  },
+  {
+    "index": 482,
+    "metadata": 0,
+    "text": "Chọn cầu thủ:"
+  },
+  {
+    "index": 483,
+    "metadata": 0,
+    "text": "Tự động chọn"
+  },
+  {
+    "index": 484,
+    "metadata": 0,
+    "text": "Tiếp tục >>>"
+  },
+  {
+    "index": 485,
+    "metadata": 0,
+    "text": "Vào"
+  },
+  {
+    "index": 486,
+    "metadata": 0,
+    "text": "Trượt"
+  },
+  {
+    "index": 487,
+    "metadata": 0,
+    "text": "Thắng"
+  },
+  {
+    "index": 488,
+    "metadata": 0,
+    "text": "Gõ tên file lưu trò chơi:"
+  },
+  {
+    "index": 489,
+    "metadata": 0,
+    "text": "Lưu"
+  },
+  {
+    "index": 490,
+    "metadata": 0,
+    "text": "Lưu đè lên file đã tồn tại?"
+  },
+  {
+    "index": 491,
+    "metadata": 0,
+    "text": "Đồng ý"
+  },
+  {
+    "index": 492,
+    "metadata": 0,
+    "text": "Không"
+  },
+  {
+    "index": 493,
+    "metadata": 0,
+    "text": "Chuyển nhượng cầu thủ"
+  },
+  {
+    "index": 494,
+    "metadata": 0,
+    "text": "Đấu giá"
+  },
+  {
+    "index": 495,
+    "metadata": 0,
+    "text": "Giá khởi điểm:"
+  },
+  {
+    "index": 496,
+    "metadata": 0,
+    "text": "(nghìn $)"
+  },
+  {
+    "index": 497,
+    "metadata": 0,
+    "text": "Cho vào danh sách chuyển nhượng"
+  },
+  {
+    "index": 498,
+    "metadata": 0,
+    "text": "Bắt đầu đấu giá"
+  },
+  {
+    "index": 499,
+    "metadata": 0,
+    "text": "Hủy bỏ"
+  },
+  {
+    "index": 500,
+    "metadata": 0,
+    "text": "Danh sách chuyển nhượng"
+  },
+  {
+    "index": 501,
+    "metadata": 0,
+    "text": "(Bạn phải trả phí chuyển nhượng tùy theo thời gian còn lại trong hợp đồng cầu thủ)"
+  },
+  {
+    "index": 502,
+    "metadata": 0,
+    "text": "Giá trị chuyển nhượng ước tính:"
+  },
+  {
+    "index": 503,
+    "metadata": 0,
+    "text": "Giá trị cố định:"
+  },
+  {
+    "index": 504,
+    "metadata": 0,
+    "text": "Hiệp 1"
+  },
+  {
+    "index": 505,
+    "metadata": 0,
+    "text": "Hiệp 2"
+  },
+  {
+    "index": 506,
+    "metadata": 0,
+    "text": "Nghỉ giữa giờ"
+  },
+  {
+    "index": 507,
+    "metadata": 0,
+    "text": "Hiệp phụ"
+  },
+  {
+    "index": 508,
+    "metadata": 0,
+    "text": "Kết thúc"
+  },
+  {
+    "index": 509,
+    "metadata": 0,
+    "text": "Trận tranh giải 3"
+  },
+  {
+    "index": 510,
+    "metadata": 0,
+    "text": "(phản lưới nhà)"
+  },
+  {
+    "index": 511,
+    "metadata": 0,
+    "text": "(penalty)"
+  },
+  {
+    "index": 512,
+    "metadata": 0,
+    "text": "(đá phạt)"
+  },
+  {
+    "index": 513,
+    "metadata": 0,
+    "text": "(trượt penalty)"
+  },
+  {
+    "index": 514,
+    "metadata": 0,
+    "text": "Huấn luyện viên"
+  },
+  {
+    "index": 515,
+    "metadata": 0,
+    "text": "Câu lạc bộ"
+  },
+  {
+    "index": 516,
+    "metadata": 0,
+    "text": "Điểm"
+  },
+  {
+    "index": 517,
+    "metadata": 0,
+    "text": "Xếp hạng thế giới"
+  },
+  {
+    "index": 518,
+    "metadata": 0,
+    "text": "Danh dự"
+  },
+  {
+    "index": 519,
+    "metadata": 0,
+    "text": "Giải nghệ"
+  },
+  {
+    "index": 520,
+    "metadata": 0,
+    "text": "Khi một cầu thủ giải nghệ, một cầu thủ trẻ sẽ vào học viện bóng đá của CLB."
+  },
+  {
+    "index": 521,
+    "metadata": 0,
+    "text": "Nếu không có chỗ trống trong học viện bóng đá, cầu thủ sẽ được cho lên đội 1."
+  },
+  {
+    "index": 522,
+    "metadata": 0,
+    "text": "Bạn có thể chọn tên cho cầu thủ mới hoặc để trò chơi tự chọn:"
+  },
+  {
+    "index": 523,
+    "metadata": 0,
+    "text": "Tên cầu thủ mới"
+  },
+  {
+    "index": 524,
+    "metadata": 0,
+    "text": "Vị trí"
+  },
+  {
+    "index": 525,
+    "metadata": 0,
+    "text": "Giải nghệ"
+  },
+  {
+    "index": 526,
+    "metadata": 0,
+    "text": "Hủy bỏ"
+  },
+  {
+    "index": 527,
+    "metadata": 0,
+    "text": "Giá hỏi mua"
+  },
+  {
+    "index": 528,
+    "metadata": 0,
+    "text": "Muốn cầu thủ"
+  },
+  {
+    "index": 529,
+    "metadata": 0,
+    "text": "Chấp nhận lời đề nghị?"
+  },
+  {
+    "index": 530,
+    "metadata": 0,
+    "text": "Người chơi"
+  },
+  {
+    "index": 531,
+    "metadata": 0,
+    "text": "Xóa"
+  },
+  {
+    "index": 532,
+    "metadata": 0,
+    "text": "Thêm mới"
+  },
+  {
+    "index": 533,
+    "metadata": 0,
+    "text": "Để xóa một HLV, trước hêt hãy từ chức HLV đó"
+  },
+  {
+    "index": 534,
+    "metadata": 0,
+    "text": "Tên HLV mới"
+  },
+  {
+    "index": 535,
+    "metadata": 0,
+    "text": "Cầu thủ chấn thương"
+  },
+  {
+    "index": 536,
+    "metadata": 0,
+    "text": "Chọn câu thủ thay thế"
+  },
+  {
+    "index": 537,
+    "metadata": 0,
+    "text": "Penalty"
+  },
+  {
+    "index": 538,
+    "metadata": 0,
+    "text": "Lịch sử các mùa giải"
+  },
+  {
+    "index": 539,
+    "metadata": 0,
+    "text": "Giải đấu"
+  },
+  {
+    "index": 540,
+    "metadata": 0,
+    "text": "Vị trí"
+  },
+  {
+    "index": 541,
+    "metadata": 0,
+    "text": "HLV"
+  },
+  {
+    "index": 542,
+    "metadata": 0,
+    "text": "Thứ 3"
+  },
+  {
+    "index": 543,
+    "metadata": 0,
+    "text": "Thứ 4"
+  },
+  {
+    "index": 544,
+    "metadata": 0,
+    "text": "Sa thải HLV"
+  },
+  {
+    "index": 545,
+    "metadata": 0,
+    "text": "Thay đổi HLV"
+  },
+  {
+    "index": 546,
+    "metadata": 0,
+    "text": "bị sa thải từ"
+  },
+  {
+    "index": 547,
+    "metadata": 0,
+    "text": "HLV mới:"
+  },
+  {
+    "index": 548,
+    "metadata": 0,
+    "text": "chuyển đến"
+  },
+  {
+    "index": 549,
+    "metadata": 0,
+    "text": "Chuyển nhượng mới nhất"
+  },
+  {
+    "index": 550,
+    "metadata": 0,
+    "text": "Cầu thủ"
+  },
+  {
+    "index": 551,
+    "metadata": 0,
+    "text": "Từ"
+  },
+  {
+    "index": 552,
+    "metadata": 0,
+    "text": "Chuyển đến"
+  },
+  {
+    "index": 553,
+    "metadata": 0,
+    "text": "Cầu thủ"
+  },
+  {
+    "index": 554,
+    "metadata": 0,
+    "text": "HLV"
+  },
+  {
+    "index": 555,
+    "metadata": 0,
+    "text": "Tất cả các cầu thủ"
+  },
+  {
+    "index": 556,
+    "metadata": 0,
+    "text": "Ra giá"
+  },
+  {
+    "index": 557,
+    "metadata": 0,
+    "text": "Giá trị cầu thủ:"
+  },
+  {
+    "index": 558,
+    "metadata": 0,
+    "text": "Đề nghị của bạn:"
+  },
+  {
+    "index": 559,
+    "metadata": 0,
+    "text": "Ra giá"
+  },
+  {
+    "index": 560,
+    "metadata": 0,
+    "text": "không muốn chơi cho CLB của bạn"
+  },
+  {
+    "index": 561,
+    "metadata": 0,
+    "text": "Đề nghị của bạn bị từ chối"
+  },
+  {
+    "index": 562,
+    "metadata": 0,
+    "text": "để chơi cho CLB của bạn"
+  },
+  {
+    "index": 563,
+    "metadata": 0,
+    "text": "muốn tăng lương."
+  },
+  {
+    "index": 564,
+    "metadata": 0,
+    "text": "Đồng ý"
+  },
+  {
+    "index": 565,
+    "metadata": 0,
+    "text": "Từ chối"
+  },
+  {
+    "index": 566,
+    "metadata": 0,
+    "text": "Hòm thư"
+  },
+  {
+    "index": 567,
+    "metadata": 0,
+    "text": "Kỉ luật cầu thủ này?"
+  },
+  {
+    "index": 568,
+    "metadata": 0,
+    "text": "Hội đồng quản trị"
+  },
+  {
+    "index": 569,
+    "metadata": 0,
+    "text": "Cổ động viên"
+  },
+  {
+    "index": 570,
+    "metadata": 0,
+    "text": "Cầu thủ"
+  },
+  {
+    "index": 571,
+    "metadata": 0,
+    "text": "Báo chí"
+  },
+  {
+    "index": 572,
+    "metadata": 0,
+    "text": "Phòng y tế"
+  },
+  {
+    "index": 573,
+    "metadata": 0,
+    "text": "Chào mừng tới"
+  },
+  {
+    "index": 574,
+    "metadata": 0,
+    "text": "bị đuổi khỏi sân"
+  },
+  {
+    "index": 575,
+    "metadata": 0,
+    "text": "Tôi không thích điều đó"
+  },
+  {
+    "index": 576,
+    "metadata": 0,
+    "text": "bị chấn thương"
+  },
+  {
+    "index": 577,
+    "metadata": 0,
+    "text": "Chúng tôi sẽ không để điều đó xảy ra"
+  },
+  {
+    "index": 578,
+    "metadata": 0,
+    "text": "Chúng tôi sẽ không để điều đó xảy ra"
+  },
+  {
+    "index": 579,
+    "metadata": 0,
+    "text": "chuyển đến"
+  },
+  {
+    "index": 580,
+    "metadata": 0,
+    "text": "Racha no elenco causado por"
+  },
+  {
+    "index": 581,
+    "metadata": 0,
+    "text": "Cám ơn"
+  },
+  {
+    "index": 582,
+    "metadata": 0,
+    "text": "Than phiền"
+  },
+  {
+    "index": 583,
+    "metadata": 0,
+    "text": "Hợp đồng của tôi đã hêt hạn"
+  },
+  {
+    "index": 584,
+    "metadata": 0,
+    "text": "Mâu thuẫn giữa"
+  },
+  {
+    "index": 585,
+    "metadata": 0,
+    "text": "Cổ động viên xung đột"
+  },
+  {
+    "index": 586,
+    "metadata": 0,
+    "text": "chuyển đến"
+  },
+  {
+    "index": 587,
+    "metadata": 0,
+    "text": "Lời mời từ đội tuyển quốc gia"
+  },
+  {
+    "index": 588,
+    "metadata": 0,
+    "text": "Hợp đồng sắp hết hạn"
+  },
+  {
+    "index": 589,
+    "metadata": 0,
+    "text": "Hợp đồng đã hết hạn"
+  },
+  {
+    "index": 590,
+    "metadata": 0,
+    "text": "hết chỗ cho cầu thủ"
+  },
+  {
+    "index": 591,
+    "metadata": 0,
+    "text": "Cầu thủ bị treo giò 10 trận vì nhổ vào mặt trọng tài"
+  },
+  {
+    "index": 592,
+    "metadata": 0,
+    "text": "Cầu thủ bị treo giò 10 trận vì chửi trọng tài"
+  },
+  {
+    "index": 593,
+    "metadata": 0,
+    "text": "Cầu thủ bị treo giò 5 trận vì xoạc bóng nguy hiểm từ đằng sau"
+  },
+  {
+    "index": 594,
+    "metadata": 0,
+    "text": "Cầu thủ bị treo giò 5 trận vì xúc phạm đối phương. Chúng tôi nghĩ đây là một hình phạt không công băng"
+  },
+  {
+    "index": 595,
+    "metadata": 0,
+    "text": "Cầu thủ đá đối phương và bị treo giò 5 trận. Chúng tôi nghĩ đây là một hình phạt không công băng"
+  },
+  {
+    "index": 596,
+    "metadata": 0,
+    "text": "Cầu thủ xoạc bóng từ phía sau và bị treo giò 3 trận"
+  },
+  {
+    "index": 597,
+    "metadata": 0,
+    "text": "Cầu thủ húc vào đối phương và bị treo giò 3 trận"
+  },
+  {
+    "index": 598,
+    "metadata": 0,
+    "text": "Cầu thủ phạm lỗi nguy hiểm với đối phương để ngăn cẳn một cơ hội ghi bàn rõ ràng. Treo giò 3 trận"
+  },
+  {
+    "index": 599,
+    "metadata": 0,
+    "text": "Cầu thủ đấm vào mặt đối phưong. Treo giò 3 trận"
+  },
+  {
+    "index": 600,
+    "metadata": 0,
+    "text": "Phạm lỗi nguy hiểm. Treo giò 2 trận"
+  },
+  {
+    "index": 601,
+    "metadata": 0,
+    "text": "Cầu thủ đá đối phương. Anh ta nghĩ bóng đá là quyền anh ư? Treo giò 2 trận"
+  },
+  {
+    "index": 602,
+    "metadata": 0,
+    "text": "Cầu thủ phạm lỗi nguy hiểm. Treo giò 2 trận"
+  },
+  {
+    "index": 603,
+    "metadata": 0,
+    "text": "Cầu thủ bị căng cơ. Nghỉ 1 tuần"
+  },
+  {
+    "index": 604,
+    "metadata": 0,
+    "text": "Cầu thủ bị đứt dây chằng. Nghỉ vài trận"
+  },
+  {
+    "index": 605,
+    "metadata": 0,
+    "text": "Cầu thủ bị chấn thương háng. Nghỉ 2 tuần."
+  },
+  {
+    "index": 606,
+    "metadata": 0,
+    "text": "Chấn thương đùi. Nghỉ vài trận."
+  },
+  {
+    "index": 607,
+    "metadata": 0,
+    "text": "Cầu thủ bị chấn thương háng. Nghỉ 2 tuần."
+  },
+  {
+    "index": 608,
+    "metadata": 0,
+    "text": "Cầu thủ bi căng cơ. Nghỉ một tuần."
+  },
+  {
+    "index": 609,
+    "metadata": 0,
+    "text": "Bong gân nhẹ. Nghỉ 2 tuần."
+  },
+  {
+    "index": 610,
+    "metadata": 0,
+    "text": "Chấn thương gân kheo. Dự đoán ngồi ngoài một thời gian dài."
+  },
+  {
+    "index": 611,
+    "metadata": 0,
+    "text": "Đang điều trị chấn thương gót chân. Nghỉ vài ngày."
+  },
+  {
+    "index": 612,
+    "metadata": 0,
+    "text": "Vấp ngón chân. Nghỉ vài trận."
+  },
+  {
+    "index": 613,
+    "metadata": 0,
+    "text": "Trẹo đầu gối. Nghỉ vài ngày."
+  },
+  {
+    "index": 614,
+    "metadata": 0,
+    "text": "Gãy ngón chân. Nghỉ nhiều tuần."
+  },
+  {
+    "index": 615,
+    "metadata": 0,
+    "text": "Gãy cổ tay. Nghỉ nhiều tuần."
+  },
+  {
+    "index": 616,
+    "metadata": 0,
+    "text": "Căng cơ đùi. Nghỉ nhiều tuần."
+  },
+  {
+    "index": 617,
+    "metadata": 0,
+    "text": "Rạch chân. Nghỉ nhiều trận."
+  },
+  {
+    "index": 618,
+    "metadata": 0,
+    "text": "Bong gân nặng. Nghỉ nhiều tuần."
+  },
+  {
+    "index": 619,
+    "metadata": 0,
+    "text": "Cầu thủ bị vấn đề tim mạch. Có lẽ đã đến lúc giải nghệ."
+  },
+  {
+    "index": 620,
+    "metadata": 0,
+    "text": "Cầu thủ bị vỡ xương chày. Nghỉ nhiều tuần."
+  },
+  {
+    "index": 621,
+    "metadata": 0,
+    "text": "Chấn thương dây chằng nặng. Nghỉ nhiều tháng."
+  },
+  {
+    "index": 622,
+    "metadata": 0,
+    "text": "Gãy bàn chân. Nghỉ nhiều tháng."
+  },
+  {
+    "index": 623,
+    "metadata": 0,
+    "text": "Căng dây chằng đầu gối. Có phải đây là dấu chấm hết cho sự nghiệp cầu thủ?"
+  },
+  {
+    "index": 624,
+    "metadata": 0,
+    "text": "Chào mừng đến câu lạc bộ. Đây là nơi bạn được thông báo về các tin tức."
+  },
+  {
+    "index": 625,
+    "metadata": 0,
+    "text": "Câu lạc bộ không thể bị hạ nhục thế này. Không thể chấp nhận được. Hãy cẩn thận!"
+  },
+  {
+    "index": 626,
+    "metadata": 0,
+    "text": "Anh không được thua đậm như trận này nữa. Nếu chuyện này xảy ra lần nữa. hội đồng quản trị sẽ sa thải anh."
+  },
+  {
+    "index": 627,
+    "metadata": 0,
+    "text": "Chúng tôi không chấp nhận trận thua quá đậm như thế này. Nếu chuyện này xảy ra lần nữa, hội đồng quản trị sẽ sa thải anh."
+  },
+  {
+    "index": 628,
+    "metadata": 0,
+    "text": "Cám ơn đã tăng lương cho tôi. Tôi sẽ cố gắng hơn nữa trên sân cỏ."
+  },
+  {
+    "index": 629,
+    "metadata": 0,
+    "text": "cầu thủ trong danh sách chuyển nhượng được bán cho"
+  },
+  {
+    "index": 630,
+    "metadata": 0,
+    "text": "Chúng tôi có tin tức về lời mời của đội tuyển quốc gia dành cho anh. Hãy chờ đến tuần tới cho một lời mời chính thức."
+  },
+  {
+    "index": 631,
+    "metadata": 0,
+    "text": "Hợp đồng cầu thủ hết hạn trong 3 tuần."
+  },
+  {
+    "index": 632,
+    "metadata": 0,
+    "text": "Hợp đồng cầu thủ hết hạn ngày hôm nay."
+  },
+  {
+    "index": 633,
+    "metadata": 0,
+    "text": "Hợp đồng cho mượn câu thủ đã hết. Tuy nhiên cầu thủ chỉ trở về CLB của bạn nếu CLB có ít hơn 28 cầu thủ."
+  },
+  {
+    "index": 634,
+    "metadata": 0,
+    "text": "Một cuộc chuyển nhượng lớn trong tuần này. Cầu thủ đã kí hợp đồng với đội bóng mới."
+  },
+  {
+    "index": 635,
+    "metadata": 0,
+    "text": "Cầu thủ tổ chức họp báo ngày hôm nay để nói về cuộc chuyển nhượng này."
+  },
+  {
+    "index": 636,
+    "metadata": 0,
+    "text": "Ông có điên không? Ông không thể sa thải tôi."
+  },
+  {
+    "index": 637,
+    "metadata": 0,
+    "text": "Tôi không đồng ý. Bị đuổi khỏi sân không phải là lỗi của tôi."
+  },
+  {
+    "index": 638,
+    "metadata": 0,
+    "text": "Cầu thủ mới không được chào đón. Có lẽ đã có quá nhiều ngôi sao trong đội hình."
+  },
+  {
+    "index": 639,
+    "metadata": 0,
+    "text": "Cầu thủ không hài lòng vì không được đá trận nào. Chúng tôi muốn chuyển đến một câu lạc bộ khác."
+  },
+  {
+    "index": 640,
+    "metadata": 0,
+    "text": "Hợp đồng của tôi đã hết hạn. Hãy gia hạn hợp đồng hoặc cho tôi chuyển đến một CLB khác."
+  },
+  {
+    "index": 641,
+    "metadata": 0,
+    "text": "Xung đột xãy ra trên sân cỏ giữa những cầu thủ này."
+  },
+  {
+    "index": 642,
+    "metadata": 0,
+    "text": "Cầu thủ và CĐV đánh nhau hôm nay, có lẽ do kết quả tồi tệ."
+  },
+  {
+    "index": 643,
+    "metadata": 0,
+    "text": "Tôi không hài lòng với việc phải đá quá nhiều. Tôi muốn có thời gian nghỉ ngơi."
+  },
+  {
+    "index": 644,
+    "metadata": 0,
+    "text": "(trống)"
+  },
+  {
+    "index": 645,
+    "metadata": 0,
+    "text": "(trống)"
+  },
+  {
+    "index": 646,
+    "metadata": 0,
+    "text": "(trống)"
+  },
+  {
+    "index": 647,
+    "metadata": 0,
+    "text": "(trống)"
+  },
+  {
+    "index": 648,
+    "metadata": 0,
+    "text": "(trống)"
+  },
+  {
+    "index": 649,
+    "metadata": 0,
+    "text": "Giới hạn 3 dự bị"
+  },
+  {
+    "index": 650,
+    "metadata": 0,
+    "text": "Lịch thi đấu"
+  },
+  {
+    "index": 651,
+    "metadata": 0,
+    "text": "CĐV"
+  },
+  {
+    "index": 652,
+    "metadata": 0,
+    "text": "thu nhập"
+  },
+  {
+    "index": 653,
+    "metadata": 0,
+    "text": "Đồng ý"
+  },
+  {
+    "index": 654,
+    "metadata": 0,
+    "text": "Bạn muốn từ chức?"
+  },
+  {
+    "index": 655,
+    "metadata": 0,
+    "text": "Bàn thắng"
+  },
+  {
+    "index": 656,
+    "metadata": 0,
+    "text": "Bảng xếp hạng"
+  },
+  {
+    "index": 657,
+    "metadata": 0,
+    "text": "Kiểm soát bóng"
+  },
+  {
+    "index": 658,
+    "metadata": 0,
+    "text": "sút"
+  },
+  {
+    "index": 659,
+    "metadata": 0,
+    "text": "xoạc"
+  },
+  {
+    "index": 660,
+    "metadata": 0,
+    "text": "chuyền hỏng"
+  },
+  {
+    "index": 661,
+    "metadata": 0,
+    "text": "phạm lỗi"
+  },
+  {
+    "index": 662,
+    "metadata": 0,
+    "text": "Đề nghị chuyển nhượng"
+  },
+  {
+    "index": 663,
+    "metadata": 0,
+    "text": "Muốn cầu thủ:"
+  },
+  {
+    "index": 664,
+    "metadata": 0,
+    "text": "Ra giá:"
+  },
+  {
+    "index": 665,
+    "metadata": 0,
+    "text": "Đồng ý bán cầu thủ?"
+  },
+  {
+    "index": 666,
+    "metadata": 0,
+    "text": "Xếp hạng bằng thứ hạng giải đấu"
+  },
+  {
+    "index": 667,
+    "metadata": 0,
+    "text": "Xếp hạng bằng điểm"
+  },
+  {
+    "index": 668,
+    "metadata": 0,
+    "text": "Dạng thức: (Đ/BT/BB)"
+  },
+  {
+    "index": 669,
+    "metadata": 0,
+    "text": "Xếp hạng thế giới"
+  },
+  {
+    "index": 670,
+    "metadata": 0,
+    "text": "Điểm"
+  },
+  {
+    "index": 671,
+    "metadata": 0,
+    "text": "Đ"
+  },
+  {
+    "index": 672,
+    "metadata": 0,
+    "text": "Cầu thủ qua đời"
+  },
+  {
+    "index": 673,
+    "metadata": 0,
+    "text": "Cầu thủ qua đời trong lúc tập luyện. Nhiều khả năng vì tuổi đã cao."
+  },
+  {
+    "index": 674,
+    "metadata": 0,
+    "text": "Vì CLB đã mất 5 điểm trong giải đấu."
+  },
+  {
+    "index": 675,
+    "metadata": 0,
+    "text": "Chọn làm HLV của đội tuyển quốc gia"
+  },
+  {
+    "index": 676,
+    "metadata": 0,
+    "text": "Một số đội tuyển quốc gia muốn bạn làm HLV, chọn một đội:"
+  },
+  {
+    "index": 677,
+    "metadata": 0,
+    "text": "Tim cầu thủ để gọi vào ĐTQG"
+  },
+  {
+    "index": 678,
+    "metadata": 0,
+    "text": "Tìm cầu thủ và click \"> >\" để chọn. Có thể gọi tối đa 20 cầu thủ bà 3 thủ môn."
+  },
+  {
+    "index": 679,
+    "metadata": 0,
+    "text": "Trận thắng"
+  },
+  {
+    "index": 680,
+    "metadata": 0,
+    "text": "Trận thua"
+  },
+  {
+    "index": 681,
+    "metadata": 0,
+    "text": "Vị trí thứ 3 tốt nhất"
+  },
+  {
+    "index": 682,
+    "metadata": 0,
+    "text": "Chuyên môn:"
+  },
+  {
+    "index": 683,
+    "metadata": 0,
+    "text": "Nghiêm khắc:"
+  },
+  {
+    "index": 684,
+    "metadata": 0,
+    "text": "Lịch giao hữu"
+  },
+  {
+    "index": 685,
+    "metadata": 0,
+    "text": "Lịch giao hữu trước mùa giải"
+  },
+  {
+    "index": 686,
+    "metadata": 0,
+    "text": "Giải đấu bắt đầu vào"
+  },
+  {
+    "index": 687,
+    "metadata": 0,
+    "text": "Ngày rỗi:"
+  },
+  {
+    "index": 688,
+    "metadata": 0,
+    "text": "Chọn đối thủ:"
+  },
+  {
+    "index": 689,
+    "metadata": 0,
+    "text": "Ngày đấu:"
+  },
+  {
+    "index": 690,
+    "metadata": 0,
+    "text": "Sân nhà"
+  },
+  {
+    "index": 691,
+    "metadata": 0,
+    "text": "Sân khách"
+  },
+  {
+    "index": 692,
+    "metadata": 0,
+    "text": "Xếp đá giao hữu"
+  },
+  {
+    "index": 693,
+    "metadata": 0,
+    "text": "đã có một trận đấu vào ngày này"
+  },
+  {
+    "index": 694,
+    "metadata": 0,
+    "text": "bị từ chối đá giao hữu"
+  },
+  {
+    "index": 695,
+    "metadata": 0,
+    "text": "không đủ tiền để tổ chức giao hữu"
+  },
+  {
+    "index": 696,
+    "metadata": 0,
+    "text": "Lịch giao hữu"
+  },
+  {
+    "index": 697,
+    "metadata": 0,
+    "text": "Xác nhận giao hữu"
+  },
+  {
+    "index": 698,
+    "metadata": 0,
+    "text": "muốn cho trận giao hữu này:"
+  },
+  {
+    "index": 699,
+    "metadata": 0,
+    "text": "Bạn phải trả phí cho trận giao hữu này bây giờ, đồng ý?"
+  },
+  {
+    "index": 700,
+    "metadata": 0,
+    "text": "Để xác nhận giao hữu giữa 2 CLB của người chơi, click đồng ý."
+  },
+  {
+    "index": 701,
+    "metadata": 0,
+    "text": "Chọn số"
+  },
+  {
+    "index": 702,
+    "metadata": 0,
+    "text": "Không có số"
+  },
+  {
+    "index": 703,
+    "metadata": 0,
+    "text": "Muốn xếp lịch giao hữu trước mùa giải?"
+  },
+  {
+    "index": 704,
+    "metadata": 0,
+    "text": "Đề nghị mượn cầu thủ"
+  },
+  {
+    "index": 705,
+    "metadata": 0,
+    "text": "Cho mượn cầu thủ này?"
+  },
+  {
+    "index": 706,
+    "metadata": 0,
+    "text": "Phòng trưng bày cúp không có gì"
+  },
+  {
+    "index": 707,
+    "metadata": 0,
+    "text": "Màu sắc đội bóng"
+  },
+  {
+    "index": 708,
+    "metadata": 0,
+    "text": "Màu chính:"
+  },
+  {
+    "index": 709,
+    "metadata": 0,
+    "text": "Màu phụ:"
+  },
+  {
+    "index": 710,
+    "metadata": 0,
+    "text": "Tiếp tục trận đấu"
+  },
+  {
+    "index": 711,
+    "metadata": 0,
+    "text": "Chỉ số"
+  },
+  {
+    "index": 712,
+    "metadata": 0,
+    "text": "Lượt đi"
+  },
+  {
+    "index": 713,
+    "metadata": 0,
+    "text": "Thống kê sự nghiệp"
+  },
+  {
+    "index": 714,
+    "metadata": 0,
+    "text": "Mùa giải hiện tại"
+  },
+  {
+    "index": 715,
+    "metadata": 0,
+    "text": "Ngày"
+  },
+  {
+    "index": 716,
+    "metadata": 0,
+    "text": "Trận đấu"
+  },
+  {
+    "index": 717,
+    "metadata": 0,
+    "text": "Đánh giá"
+  },
+  {
+    "index": 718,
+    "metadata": 0,
+    "text": "Khả năng hiện tại"
+  },
+  {
+    "index": 719,
+    "metadata": 0,
+    "text": "Chỗ đứng:"
+  },
+  {
+    "index": 720,
+    "metadata": 0,
+    "text": "Ghế ngồi thường:"
+  },
+  {
+    "index": 721,
+    "metadata": 0,
+    "text": "Ghế ngồi xịn:"
+  },
+  {
+    "index": 722,
+    "metadata": 0,
+    "text": "Chỗ ngồi VIP:"
+  },
+  {
+    "index": 723,
+    "metadata": 0,
+    "text": "Giá vé"
+  },
+  {
+    "index": 724,
+    "metadata": 0,
+    "text": "Gợi ý giá vé cho hạng đấu này:"
+  },
+  {
+    "index": 725,
+    "metadata": 0,
+    "text": "chỗ ngồi"
+  },
+  {
+    "index": 726,
+    "metadata": 0,
+    "text": "Mở rộng SVĐ"
+  },
+  {
+    "index": 727,
+    "metadata": 0,
+    "text": "Hoàn thành thi công vào"
+  },
+  {
+    "index": 728,
+    "metadata": 0,
+    "text": "Tối đa"
+  },
+  {
+    "index": 729,
+    "metadata": 0,
+    "text": "Ghế mới:"
+  },
+  {
+    "index": 730,
+    "metadata": 0,
+    "text": "Ước tính chi phí"
+  },
+  {
+    "index": 731,
+    "metadata": 0,
+    "text": "Bắt đầu mở rộng"
+  },
+  {
+    "index": 732,
+    "metadata": 0,
+    "text": "Ước tính chi phí dự án mở rộng SVĐ"
+  },
+  {
+    "index": 733,
+    "metadata": 0,
+    "text": "Dự án ước tính hoàn thành vào"
+  },
+  {
+    "index": 734,
+    "metadata": 0,
+    "text": "Không thể mở rộng SVĐ thêm nữa với trình độ công nghệ hiện tại"
+  },
+  {
+    "index": 735,
+    "metadata": 0,
+    "text": "Không đủ tiền bắt đầu dự án"
+  },
+  {
+    "index": 736,
+    "metadata": 0,
+    "text": "Chỉnh sửa đội bóng"
+  },
+  {
+    "index": 737,
+    "metadata": 0,
+    "text": "Tải đội..."
+  },
+  {
+    "index": 738,
+    "metadata": 0,
+    "text": "Số lượng đội:"
+  },
+  {
+    "index": 739,
+    "metadata": 0,
+    "text": "CLB"
+  },
+  {
+    "index": 740,
+    "metadata": 0,
+    "text": "ĐTQG"
+  },
+  {
+    "index": 741,
+    "metadata": 0,
+    "text": "Thêm đội"
+  },
+  {
+    "index": 742,
+    "metadata": 0,
+    "text": "Chỉnh sửa"
+  },
+  {
+    "index": 743,
+    "metadata": 0,
+    "text": "Xóa đội"
+  },
+  {
+    "index": 744,
+    "metadata": 0,
+    "text": "Quốc gia"
+  },
+  {
+    "index": 745,
+    "metadata": 0,
+    "text": "Cấp độ"
+  },
+  {
+    "index": 746,
+    "metadata": 0,
+    "text": "Menu chính"
+  },
+  {
+    "index": 747,
+    "metadata": 0,
+    "text": "Thoát trò chơi"
+  },
+  {
+    "index": 748,
+    "metadata": 0,
+    "text": "Tuổi"
+  },
+  {
+    "index": 749,
+    "metadata": 0,
+    "text": "Huấn luyện viên"
+  },
+  {
+    "index": 750,
+    "metadata": 0,
+    "text": "Sân vận động"
+  },
+  {
+    "index": 751,
+    "metadata": 0,
+    "text": "cầu thủ"
+  },
+  {
+    "index": 752,
+    "metadata": 0,
+    "text": "Thêm cầu thủ"
+  },
+  {
+    "index": 753,
+    "metadata": 0,
+    "text": "Chỉnh sửa cầu thủ"
+  },
+  {
+    "index": 754,
+    "metadata": 0,
+    "text": "Xóa cầu thủ"
+  },
+  {
+    "index": 755,
+    "metadata": 0,
+    "text": "Tối đa 25 cầu thủ"
+  },
+  {
+    "index": 756,
+    "metadata": 0,
+    "text": "Xóa đội này?"
+  },
+  {
+    "index": 757,
+    "metadata": 0,
+    "text": "Họ tên"
+  },
+  {
+    "index": 758,
+    "metadata": 0,
+    "text": "Tên gọi"
+  },
+  {
+    "index": 759,
+    "metadata": 0,
+    "text": "Màu chính"
+  },
+  {
+    "index": 760,
+    "metadata": 0,
+    "text": "Màu phụ"
+  },
+  {
+    "index": 761,
+    "metadata": 0,
+    "text": "Ngôi sao"
+  },
+  {
+    "index": 762,
+    "metadata": 0,
+    "text": "Khả năng"
+  },
+  {
+    "index": 763,
+    "metadata": 0,
+    "text": "Vị trí"
+  },
+  {
+    "index": 764,
+    "metadata": 0,
+    "text": "Click để chọn logo"
+  },
+  {
+    "index": 765,
+    "metadata": 0,
+    "text": "Tên file"
+  },
+  {
+    "index": 766,
+    "metadata": 0,
+    "text": "File đã tồn tại, chọn file khác"
+  },
+  {
+    "index": 767,
+    "metadata": 0,
+    "text": "Sự đăng kí bản quyền của bạn sẽ giúp đỡ sự duy trì và phát triển của trò chơi trong tương lai."
+  },
+  {
+    "index": 768,
+    "metadata": 0,
+    "text": "Trong phiên bản đăng kí bản quyền bạn có thể:"
+  },
+  {
+    "index": 769,
+    "metadata": 0,
+    "text": "Truy cập Members Area để tải giải đấu mới, logo, vv;"
+  },
+  {
+    "index": 770,
+    "metadata": 0,
+    "text": "Chọn đội từ bất kì hạng đấu nào"
+  },
+  {
+    "index": 771,
+    "metadata": 0,
+    "text": "Chọn hơn 1 đội"
+  },
+  {
+    "index": 772,
+    "metadata": 0,
+    "text": "Chơi ĐTQG (World Cup, Euro Cup, Copa America)"
+  },
+  {
+    "index": 773,
+    "metadata": 0,
+    "text": "Dạm hỏi cầu thủ không trong danh sách chuyển nhượng, và mượn cầu thủ."
+  },
+  {
+    "index": 774,
+    "metadata": 0,
+    "text": "Giả lập trận đấu với tốc độ nhanh hơn"
+  },
+  {
+    "index": 775,
+    "metadata": 0,
+    "text": "Để đăng kí bản quyền, truy cập website:"
+  },
+  {
+    "index": 776,
+    "metadata": 0,
+    "text": "Giá là $12 đô la. Bạn có thể trả bằng Credit Card (Visa, Master Card, American Express, Discover), check, money order, PayPal, Western Union, Moneybookers hoặc Internatioal Postal Order."
+  },
+  {
+    "index": 777,
+    "metadata": 0,
+    "text": "Ngay khi chúng tôi biết bạn đã trả tiền (khoảng sau 1 ngày), chúng tôi sẽ cung cấp thông tin đăng kí để điền vào dưới đây:"
+  },
+  {
+    "index": 778,
+    "metadata": 0,
+    "text": "Tên:"
+  },
+  {
+    "index": 779,
+    "metadata": 0,
+    "text": "Mã"
+  },
+  {
+    "index": 780,
+    "metadata": 0,
+    "text": "Điền mã"
+  },
+  {
+    "index": 781,
+    "metadata": 0,
+    "text": "Cyberfoot là một trò quản lí bóng đá miễn phí."
+  },
+  {
+    "index": 782,
+    "metadata": 0,
+    "text": "Tải về tại www.cyberfoot.org"
+  },
+  {
+    "index": 783,
+    "metadata": 0,
+    "text": "Chỉ trong bản đăng kí bản quyền bạn mới có thể hỏi mua cầu thủ không trong danh sách chuyển nhượng. Đăng kí tại www.cyberfoot.org"
+  },
+  {
+    "index": 784,
+    "metadata": 0,
+    "text": "Chỉ trong bản đăng kí bản quyền bạn mới có thể mượn cầu thủ. Đăng kí tại www.cyberfoot.org"
+  },
+  {
+    "index": 785,
+    "metadata": 0,
+    "text": "Quốc gia"
+  },
+  {
+    "index": 786,
+    "metadata": 0,
+    "text": "Afghanistan"
+  },
+  {
+    "index": 787,
+    "metadata": 0,
+    "text": "Nam Phi"
+  },
+  {
+    "index": 788,
+    "metadata": 0,
+    "text": "Albania"
+  },
+  {
+    "index": 789,
+    "metadata": 0,
+    "text": "Đức"
+  },
+  {
+    "index": 790,
+    "metadata": 0,
+    "text": "Andorra"
+  },
+  {
+    "index": 791,
+    "metadata": 0,
+    "text": "Angola"
+  },
+  {
+    "index": 792,
+    "metadata": 0,
+    "text": "Anguilla"
+  },
+  {
+    "index": 793,
+    "metadata": 0,
+    "text": "Antigua"
+  },
+  {
+    "index": 794,
+    "metadata": 0,
+    "text": "Netherlands Antilles"
+  },
+  {
+    "index": 795,
+    "metadata": 0,
+    "text": "Ả Rập Xê Út"
+  },
+  {
+    "index": 796,
+    "metadata": 0,
+    "text": "Algeria"
+  },
+  {
+    "index": 797,
+    "metadata": 0,
+    "text": "Argentina"
+  },
+  {
+    "index": 798,
+    "metadata": 0,
+    "text": "Armenia"
+  },
+  {
+    "index": 799,
+    "metadata": 0,
+    "text": "Aruba"
+  },
+  {
+    "index": 800,
+    "metadata": 0,
+    "text": "Úc"
+  },
+  {
+    "index": 801,
+    "metadata": 0,
+    "text": "Áo"
+  },
+  {
+    "index": 802,
+    "metadata": 0,
+    "text": "Azerbaijan"
+  },
+  {
+    "index": 803,
+    "metadata": 0,
+    "text": "Bahamas"
+  },
+  {
+    "index": 804,
+    "metadata": 0,
+    "text": "Bahrain"
+  },
+  {
+    "index": 805,
+    "metadata": 0,
+    "text": "Bangladesh"
+  },
+  {
+    "index": 806,
+    "metadata": 0,
+    "text": "Barbados"
+  },
+  {
+    "index": 807,
+    "metadata": 0,
+    "text": "Bỉ"
+  },
+  {
+    "index": 808,
+    "metadata": 0,
+    "text": "Belize"
+  },
+  {
+    "index": 809,
+    "metadata": 0,
+    "text": "Benin"
+  },
+  {
+    "index": 810,
+    "metadata": 0,
+    "text": "Bermuda"
+  },
+  {
+    "index": 811,
+    "metadata": 0,
+    "text": "Belarus"
+  },
+  {
+    "index": 812,
+    "metadata": 0,
+    "text": "Bolivia"
+  },
+  {
+    "index": 813,
+    "metadata": 0,
+    "text": "Bosnia"
+  },
+  {
+    "index": 814,
+    "metadata": 0,
+    "text": "Botswana"
+  },
+  {
+    "index": 815,
+    "metadata": 0,
+    "text": "Brazil"
+  },
+  {
+    "index": 816,
+    "metadata": 0,
+    "text": "Brunei"
+  },
+  {
+    "index": 817,
+    "metadata": 0,
+    "text": "Bulgaria"
+  },
+  {
+    "index": 818,
+    "metadata": 0,
+    "text": "Burkina Faso"
+  },
+  {
+    "index": 819,
+    "metadata": 0,
+    "text": "Burundi"
+  },
+  {
+    "index": 820,
+    "metadata": 0,
+    "text": "Bhutan"
+  },
+  {
+    "index": 821,
+    "metadata": 0,
+    "text": "Cape Verde"
+  },
+  {
+    "index": 822,
+    "metadata": 0,
+    "text": "Cameroon"
+  },
+  {
+    "index": 823,
+    "metadata": 0,
+    "text": "Cambodia"
+  },
+  {
+    "index": 824,
+    "metadata": 0,
+    "text": "Canada"
+  },
+  {
+    "index": 825,
+    "metadata": 0,
+    "text": "Qatar"
+  },
+  {
+    "index": 826,
+    "metadata": 0,
+    "text": "Kazakhstan"
+  },
+  {
+    "index": 827,
+    "metadata": 0,
+    "text": "Chad"
+  },
+  {
+    "index": 828,
+    "metadata": 0,
+    "text": "Chile"
+  },
+  {
+    "index": 829,
+    "metadata": 0,
+    "text": "Trung Quốc"
+  },
+  {
+    "index": 830,
+    "metadata": 0,
+    "text": "Cyprus"
+  },
+  {
+    "index": 831,
+    "metadata": 0,
+    "text": "Singapore"
+  },
+  {
+    "index": 832,
+    "metadata": 0,
+    "text": "Colombia"
+  },
+  {
+    "index": 833,
+    "metadata": 0,
+    "text": "Congo"
+  },
+  {
+    "index": 834,
+    "metadata": 0,
+    "text": "Triều Tiên"
+  },
+  {
+    "index": 835,
+    "metadata": 0,
+    "text": "Hàn Quốc"
+  },
+  {
+    "index": 836,
+    "metadata": 0,
+    "text": "Bờ Biển Ngà"
+  },
+  {
+    "index": 837,
+    "metadata": 0,
+    "text": "Costa Rica"
+  },
+  {
+    "index": 838,
+    "metadata": 0,
+    "text": "Croatia"
+  },
+  {
+    "index": 839,
+    "metadata": 0,
+    "text": "Cuba"
+  },
+  {
+    "index": 840,
+    "metadata": 0,
+    "text": "Đan Mạch"
+  },
+  {
+    "index": 841,
+    "metadata": 0,
+    "text": "Djibouti"
+  },
+  {
+    "index": 842,
+    "metadata": 0,
+    "text": "Dominica"
+  },
+  {
+    "index": 843,
+    "metadata": 0,
+    "text": "Ai Cập"
+  },
+  {
+    "index": 844,
+    "metadata": 0,
+    "text": "El Salvador"
+  },
+  {
+    "index": 845,
+    "metadata": 0,
+    "text": "Các Tiểu vương quốc Ả rập thống nhất"
+  },
+  {
+    "index": 846,
+    "metadata": 0,
+    "text": "Ecuador"
+  },
+  {
+    "index": 847,
+    "metadata": 0,
+    "text": "Eritrea"
+  },
+  {
+    "index": 848,
+    "metadata": 0,
+    "text": "Scotland"
+  },
+  {
+    "index": 849,
+    "metadata": 0,
+    "text": "Slovakia"
+  },
+  {
+    "index": 850,
+    "metadata": 0,
+    "text": "Slovenia"
+  },
+  {
+    "index": 851,
+    "metadata": 0,
+    "text": "Tây Ban Nha"
+  },
+  {
+    "index": 852,
+    "metadata": 0,
+    "text": "Estonia"
+  },
+  {
+    "index": 853,
+    "metadata": 0,
+    "text": "Ethiopia"
+  },
+  {
+    "index": 854,
+    "metadata": 0,
+    "text": "Mỹ"
+  },
+  {
+    "index": 855,
+    "metadata": 0,
+    "text": "Fiji"
+  },
+  {
+    "index": 856,
+    "metadata": 0,
+    "text": "Phần Lan"
+  },
+  {
+    "index": 857,
+    "metadata": 0,
+    "text": "Philippines"
+  },
+  {
+    "index": 858,
+    "metadata": 0,
+    "text": "Pháp"
+  },
+  {
+    "index": 859,
+    "metadata": 0,
+    "text": "Gabon"
+  },
+  {
+    "index": 860,
+    "metadata": 0,
+    "text": "Gambia"
+  },
+  {
+    "index": 861,
+    "metadata": 0,
+    "text": "Ghana"
+  },
+  {
+    "index": 862,
+    "metadata": 0,
+    "text": "Georgia"
+  },
+  {
+    "index": 863,
+    "metadata": 0,
+    "text": "Grenada"
+  },
+  {
+    "index": 864,
+    "metadata": 0,
+    "text": "Hi Lạp"
+  },
+  {
+    "index": 865,
+    "metadata": 0,
+    "text": "Guatemala"
+  },
+  {
+    "index": 866,
+    "metadata": 0,
+    "text": "Guyana"
+  },
+  {
+    "index": 867,
+    "metadata": 0,
+    "text": "Guinea"
+  },
+  {
+    "index": 868,
+    "metadata": 0,
+    "text": "Guinea-Bissau"
+  },
+  {
+    "index": 869,
+    "metadata": 0,
+    "text": "Guinea-Equatorial"
+  },
+  {
+    "index": 870,
+    "metadata": 0,
+    "text": "Haiti"
+  },
+  {
+    "index": 871,
+    "metadata": 0,
+    "text": "Hà Lan"
+  },
+  {
+    "index": 872,
+    "metadata": 0,
+    "text": "Honduras"
+  },
+  {
+    "index": 873,
+    "metadata": 0,
+    "text": "Hong Kong"
+  },
+  {
+    "index": 874,
+    "metadata": 0,
+    "text": "Hungary"
+  },
+  {
+    "index": 875,
+    "metadata": 0,
+    "text": "Yemen"
+  },
+  {
+    "index": 876,
+    "metadata": 0,
+    "text": "Cayman Islands"
+  },
+  {
+    "index": 877,
+    "metadata": 0,
+    "text": "Cook Islands"
+  },
+  {
+    "index": 878,
+    "metadata": 0,
+    "text": "Faroe Islands"
+  },
+  {
+    "index": 879,
+    "metadata": 0,
+    "text": "Solomon Islands"
+  },
+  {
+    "index": 880,
+    "metadata": 0,
+    "text": "British Virgin Islands"
+  },
+  {
+    "index": 881,
+    "metadata": 0,
+    "text": "Ấn Độ"
+  },
+  {
+    "index": 882,
+    "metadata": 0,
+    "text": "Indonesia"
+  },
+  {
+    "index": 883,
+    "metadata": 0,
+    "text": "Anh"
+  },
+  {
+    "index": 884,
+    "metadata": 0,
+    "text": "Iran"
+  },
+  {
+    "index": 885,
+    "metadata": 0,
+    "text": "Iraq"
+  },
+  {
+    "index": 886,
+    "metadata": 0,
+    "text": "Ai Len"
+  },
+  {
+    "index": 887,
+    "metadata": 0,
+    "text": "Bắc Ai Len"
+  },
+  {
+    "index": 888,
+    "metadata": 0,
+    "text": "Iceland"
+  },
+  {
+    "index": 889,
+    "metadata": 0,
+    "text": "Israel"
+  },
+  {
+    "index": 890,
+    "metadata": 0,
+    "text": "Ý"
+  },
+  {
+    "index": 891,
+    "metadata": 0,
+    "text": "Montenegro"
+  },
+  {
+    "index": 892,
+    "metadata": 0,
+    "text": "Jamaica"
+  },
+  {
+    "index": 893,
+    "metadata": 0,
+    "text": "Nhật"
+  },
+  {
+    "index": 894,
+    "metadata": 0,
+    "text": "Jordan"
+  },
+  {
+    "index": 895,
+    "metadata": 0,
+    "text": "Kenya"
+  },
+  {
+    "index": 896,
+    "metadata": 0,
+    "text": "Kosovo"
+  },
+  {
+    "index": 897,
+    "metadata": 0,
+    "text": "Kwait"
+  },
+  {
+    "index": 898,
+    "metadata": 0,
+    "text": "Lào"
+  },
+  {
+    "index": 899,
+    "metadata": 0,
+    "text": "Lesotho"
+  },
+  {
+    "index": 900,
+    "metadata": 0,
+    "text": "Latvia"
+  },
+  {
+    "index": 901,
+    "metadata": 0,
+    "text": "Lebanon"
+  },
+  {
+    "index": 902,
+    "metadata": 0,
+    "text": "Libya"
+  },
+  {
+    "index": 903,
+    "metadata": 0,
+    "text": "Liberia"
+  },
+  {
+    "index": 904,
+    "metadata": 0,
+    "text": "Liechenstein"
+  },
+  {
+    "index": 905,
+    "metadata": 0,
+    "text": "Lithuania"
+  },
+  {
+    "index": 906,
+    "metadata": 0,
+    "text": "Luxembourg"
+  },
+  {
+    "index": 907,
+    "metadata": 0,
+    "text": "Macau"
+  },
+  {
+    "index": 908,
+    "metadata": 0,
+    "text": "Macedonia"
+  },
+  {
+    "index": 909,
+    "metadata": 0,
+    "text": "Madagascar"
+  },
+  {
+    "index": 910,
+    "metadata": 0,
+    "text": "Malaysia"
+  },
+  {
+    "index": 911,
+    "metadata": 0,
+    "text": "Malawi"
+  },
+  {
+    "index": 912,
+    "metadata": 0,
+    "text": "Maldives Islands"
+  },
+  {
+    "index": 913,
+    "metadata": 0,
+    "text": "Mali"
+  },
+  {
+    "index": 914,
+    "metadata": 0,
+    "text": "Malta"
+  },
+  {
+    "index": 915,
+    "metadata": 0,
+    "text": "Morocco"
+  },
+  {
+    "index": 916,
+    "metadata": 0,
+    "text": "Mauritania"
+  },
+  {
+    "index": 917,
+    "metadata": 0,
+    "text": "Mexico"
+  },
+  {
+    "index": 918,
+    "metadata": 0,
+    "text": "Myanmar"
+  },
+  {
+    "index": 919,
+    "metadata": 0,
+    "text": "Mozambique"
+  },
+  {
+    "index": 920,
+    "metadata": 0,
+    "text": "Moldava"
+  },
+  {
+    "index": 921,
+    "metadata": 0,
+    "text": "Monaco"
+  },
+  {
+    "index": 922,
+    "metadata": 0,
+    "text": "Mông Cổ"
+  },
+  {
+    "index": 923,
+    "metadata": 0,
+    "text": "Namibia"
+  },
+  {
+    "index": 924,
+    "metadata": 0,
+    "text": "Nepal"
+  },
+  {
+    "index": 925,
+    "metadata": 0,
+    "text": "Nicaragua"
+  },
+  {
+    "index": 926,
+    "metadata": 0,
+    "text": "Niger"
+  },
+  {
+    "index": 927,
+    "metadata": 0,
+    "text": "Nigeria"
+  },
+  {
+    "index": 928,
+    "metadata": 0,
+    "text": "Na Uy"
+  },
+  {
+    "index": 929,
+    "metadata": 0,
+    "text": "New Zealand"
+  },
+  {
+    "index": 930,
+    "metadata": 0,
+    "text": "Oman"
+  },
+  {
+    "index": 931,
+    "metadata": 0,
+    "text": "Wales"
+  },
+  {
+    "index": 932,
+    "metadata": 0,
+    "text": "Palestines"
+  },
+  {
+    "index": 933,
+    "metadata": 0,
+    "text": "Panama"
+  },
+  {
+    "index": 934,
+    "metadata": 0,
+    "text": "Papua New Guinea"
+  },
+  {
+    "index": 935,
+    "metadata": 0,
+    "text": "Pakistan"
+  },
+  {
+    "index": 936,
+    "metadata": 0,
+    "text": "Paraguay"
+  },
+  {
+    "index": 937,
+    "metadata": 0,
+    "text": "Peru"
+  },
+  {
+    "index": 938,
+    "metadata": 0,
+    "text": "Ba Lan"
+  },
+  {
+    "index": 939,
+    "metadata": 0,
+    "text": "Puerto Rico"
+  },
+  {
+    "index": 940,
+    "metadata": 0,
+    "text": "Bồ Đào Nha"
+  },
+  {
+    "index": 941,
+    "metadata": 0,
+    "text": "Kyrgyzstan"
+  },
+  {
+    "index": 942,
+    "metadata": 0,
+    "text": "Trung Phi"
+  },
+  {
+    "index": 943,
+    "metadata": 0,
+    "text": "Conga Dem. Republic"
+  },
+  {
+    "index": 944,
+    "metadata": 0,
+    "text": "Dominican Republic"
+  },
+  {
+    "index": 945,
+    "metadata": 0,
+    "text": "Séc"
+  },
+  {
+    "index": 946,
+    "metadata": 0,
+    "text": "Romania"
+  },
+  {
+    "index": 947,
+    "metadata": 0,
+    "text": "Rwanda"
+  },
+  {
+    "index": 948,
+    "metadata": 0,
+    "text": "Nga"
+  },
+  {
+    "index": 949,
+    "metadata": 0,
+    "text": "Samoa"
+  },
+  {
+    "index": 950,
+    "metadata": 0,
+    "text": "San Marino"
+  },
+  {
+    "index": 951,
+    "metadata": 0,
+    "text": "St. Lucia"
+  },
+  {
+    "index": 952,
+    "metadata": 0,
+    "text": "St. Kitts and Nevis"
+  },
+  {
+    "index": 953,
+    "metadata": 0,
+    "text": "Sao Tome và Principe"
+  },
+  {
+    "index": 954,
+    "metadata": 0,
+    "text": "St. Vincent và Grenadines"
+  },
+  {
+    "index": 955,
+    "metadata": 0,
+    "text": "Senegal"
+  },
+  {
+    "index": 956,
+    "metadata": 0,
+    "text": "Sierra Leone"
+  },
+  {
+    "index": 957,
+    "metadata": 0,
+    "text": "Serbia"
+  },
+  {
+    "index": 958,
+    "metadata": 0,
+    "text": "Seychelles"
+  },
+  {
+    "index": 959,
+    "metadata": 0,
+    "text": "Singapore"
+  },
+  {
+    "index": 960,
+    "metadata": 0,
+    "text": "Syria"
+  },
+  {
+    "index": 961,
+    "metadata": 0,
+    "text": "Somalia"
+  },
+  {
+    "index": 962,
+    "metadata": 0,
+    "text": "Sri Lanka"
+  },
+  {
+    "index": 963,
+    "metadata": 0,
+    "text": "Swaziland"
+  },
+  {
+    "index": 964,
+    "metadata": 0,
+    "text": "Sudan"
+  },
+  {
+    "index": 965,
+    "metadata": 0,
+    "text": "Thụy Điển"
+  },
+  {
+    "index": 966,
+    "metadata": 0,
+    "text": "Thụy Sỹ"
+  },
+  {
+    "index": 967,
+    "metadata": 0,
+    "text": "Suriname"
+  },
+  {
+    "index": 968,
+    "metadata": 0,
+    "text": "Tajikistan"
+  },
+  {
+    "index": 969,
+    "metadata": 0,
+    "text": "Thái Lan"
+  },
+  {
+    "index": 970,
+    "metadata": 0,
+    "text": "Taiti"
+  },
+  {
+    "index": 971,
+    "metadata": 0,
+    "text": "Đài Loan"
+  },
+  {
+    "index": 972,
+    "metadata": 0,
+    "text": "Tanzania"
+  },
+  {
+    "index": 973,
+    "metadata": 0,
+    "text": "Togo"
+  },
+  {
+    "index": 974,
+    "metadata": 0,
+    "text": "Tonga"
+  },
+  {
+    "index": 975,
+    "metadata": 0,
+    "text": "Trinidad và Tobago"
+  },
+  {
+    "index": 976,
+    "metadata": 0,
+    "text": "Tunisia"
+  },
+  {
+    "index": 977,
+    "metadata": 0,
+    "text": "Turkmenistan"
+  },
+  {
+    "index": 978,
+    "metadata": 0,
+    "text": "Thổ Nhĩ Kỳ"
+  },
+  {
+    "index": 979,
+    "metadata": 0,
+    "text": "Ukraine"
+  },
+  {
+    "index": 980,
+    "metadata": 0,
+    "text": "Uganda"
+  },
+  {
+    "index": 981,
+    "metadata": 0,
+    "text": "Uruguay"
+  },
+  {
+    "index": 982,
+    "metadata": 0,
+    "text": "Uzbekistan"
+  },
+  {
+    "index": 983,
+    "metadata": 0,
+    "text": "Vanuatu"
+  },
+  {
+    "index": 984,
+    "metadata": 0,
+    "text": "Venezuela"
+  },
+  {
+    "index": 985,
+    "metadata": 0,
+    "text": "Vietnam"
+  },
+  {
+    "index": 986,
+    "metadata": 0,
+    "text": "Zambia"
+  },
+  {
+    "index": 987,
+    "metadata": 0,
+    "text": "Zimbabwe"
+  },
+  {
+    "index": 988,
+    "metadata": 0,
+    "text": "Chọn ít nhât một giải đấu"
+  },
+  {
+    "index": 989,
+    "metadata": 0,
+    "text": "Lịch thi đấu Sul-Americana Cup"
+  },
+  {
+    "index": 990,
+    "metadata": 0,
+    "text": "Quả bóng vàng"
+  },
+  {
+    "index": 991,
+    "metadata": 0,
+    "text": "Đội hình của tuần"
+  },
+  {
+    "index": 992,
+    "metadata": 0,
+    "text": "Đội hình của năm"
+  },
+  {
+    "index": 993,
+    "metadata": 0,
+    "text": "Học viện bóng đá trẻ"
+  },
+  {
+    "index": 994,
+    "metadata": 0,
+    "text": "African Ch. League"
+  },
+  {
+    "index": 995,
+    "metadata": 0,
+    "text": "Asian Ch. League"
+  },
+  {
+    "index": 996,
+    "metadata": 0,
+    "text": "UEFA Super Cup"
+  },
+  {
+    "index": 997,
+    "metadata": 0,
+    "text": "Recopa Sul-Americana"
+  },
+  {
+    "index": 998,
+    "metadata": 0,
+    "text": "Đội hình đã lưu"
+  },
+  {
+    "index": 999,
+    "metadata": 0,
+    "text": "Lưu đội hình"
+  },
+  {
+    "index": 1000,
+    "metadata": 0,
+    "text": "Chọn tên:"
+  },
+  {
+    "index": 1001,
+    "metadata": 0,
+    "text": "Lưu"
+  },
+  {
+    "index": 1002,
+    "metadata": 0,
+    "text": "Chọn ít nhất 11 cầu thủ"
+  },
+  {
+    "index": 1003,
+    "metadata": 0,
+    "text": "Quay về"
+  },
+  {
+    "index": 1004,
+    "metadata": 0,
+    "text": "Tải"
+  },
+  {
+    "index": 1005,
+    "metadata": 0,
+    "text": "Xóa"
+  },
+  {
+    "index": 1006,
+    "metadata": 0,
+    "text": "Áo đấu"
+  },
+  {
+    "index": 1007,
+    "metadata": 0,
+    "text": "được đưa lên từ đội trẻ trong"
+  },
+  {
+    "index": 1008,
+    "metadata": 0,
+    "text": "Địa phương"
+  },
+  {
+    "index": 1009,
+    "metadata": 0,
+    "text": "Tỉnh"
+  },
+  {
+    "index": 1010,
+    "metadata": 0,
+    "text": "Vùng"
+  },
+  {
+    "index": 1011,
+    "metadata": 0,
+    "text": "Quốc gia"
+  },
+  {
+    "index": 1012,
+    "metadata": 0,
+    "text": "Châu lục"
+  },
+  {
+    "index": 1013,
+    "metadata": 0,
+    "text": "Thế giới"
+  },
+  {
+    "index": 1014,
+    "metadata": 0,
+    "text": "Danh tiếng"
+  },
+  {
+    "index": 1015,
+    "metadata": 0,
+    "text": "3 năm"
+  },
+  {
+    "index": 1016,
+    "metadata": 0,
+    "text": "Xem trận đấu"
+  },
+  {
+    "index": 1017,
+    "metadata": 0,
+    "text": "Chỉ hiện kết quả"
+  },
+  {
+    "index": 1018,
+    "metadata": 0,
+    "text": "LEAGUE"
+  },
+  {
+    "index": 1019,
+    "metadata": 0,
+    "text": "CHAMPION L."
+  },
+  {
+    "index": 1020,
+    "metadata": 0,
+    "text": "LIBERTADORES"
+  },
+  {
+    "index": 1021,
+    "metadata": 0,
+    "text": "UEFA LEAGUE"
+  },
+  {
+    "index": 1022,
+    "metadata": 0,
+    "text": "AFRICAN CH."
+  },
+  {
+    "index": 1023,
+    "metadata": 0,
+    "text": "ASIAN CH."
+  },
+  {
+    "index": 1024,
+    "metadata": 0,
+    "text": "Lí do"
+  },
+  {
+    "index": 1025,
+    "metadata": 0,
+    "text": "kết quả tồi tệ"
+  },
+  {
+    "index": 1026,
+    "metadata": 0,
+    "text": "khủng hoảng tài chính"
+  },
+  {
+    "index": 1027,
+    "metadata": 0,
+    "text": "cổ động viên không hài lòng"
+  },
+  {
+    "index": 1028,
+    "metadata": 0,
+    "text": "Đồng ý"
+  },
+  {
+    "index": 1029,
+    "metadata": 0,
+    "text": "Từ chối"
+  },
+  {
+    "index": 1030,
+    "metadata": 0,
+    "text": "sử dụng"
+  },
+  {
+    "index": 1031,
+    "metadata": 0,
+    "text": "trẻ"
+  },
+  {
+    "index": 1032,
+    "metadata": 0,
+    "text": "nhất"
+  },
+  {
+    "index": 1033,
+    "metadata": 0,
+    "text": "Tìm CLB"
+  },
+  {
+    "index": 1034,
+    "metadata": 0,
+    "text": "Tìm cầu thủ"
+  },
+  {
+    "index": 1035,
+    "metadata": 0,
+    "text": "Tìm"
+  },
+  {
+    "index": 1036,
+    "metadata": 0,
+    "text": "Tiến bộ"
+  },
+  {
+    "index": 1037,
+    "metadata": 0,
+    "text": "Tài năng"
+  },
+  {
+    "index": 1038,
+    "metadata": 0,
+    "text": "Lên đội 1"
+  },
+  {
+    "index": 1039,
+    "metadata": 0,
+    "text": "Sa thải"
+  },
+  {
+    "index": 1040,
+    "metadata": 0,
+    "text": "CLB đã có 30 cầu thủ"
+  },
+  {
+    "index": 1041,
+    "metadata": 0,
+    "text": "Xác nhận cho lên đội 1"
+  },
+  {
+    "index": 1042,
+    "metadata": 0,
+    "text": "Không còn chỗ cho cầu thủ trẻ"
+  },
+  {
+    "index": 1043,
+    "metadata": 0,
+    "text": "Gửi"
+  },
+  {
+    "index": 1044,
+    "metadata": 0,
+    "text": "Hủy bỏ"
+  },
+  {
+    "index": 1045,
+    "metadata": 0,
+    "text": "Xác nhận chuyển nhượng"
+  },
+  {
+    "index": 1046,
+    "metadata": 0,
+    "text": "Xác nhận chuyển nhượng của cầu thủ trẻ"
+  },
+  {
+    "index": 1047,
+    "metadata": 0,
+    "text": "Sa thải cầu thủ?"
+  },
+  {
+    "index": 1048,
+    "metadata": 0,
+    "text": "Thiết lập giải đấu quốc tế"
+  },
+  {
+    "index": 1049,
+    "metadata": 0,
+    "text": "Chơi trong mùa giải đầu tiên"
+  },
+  {
+    "index": 1050,
+    "metadata": 0,
+    "text": "Sử dụng bảng đấu thật trong mùa giải thứ nhất:"
+  },
+  {
+    "index": 1051,
+    "metadata": 0,
+    "text": "Xem trận đấu khi không có người chơi:"
+  },
+  {
+    "index": 1052,
+    "metadata": 0,
+    "text": "Giá trị đội"
+  },
+  {
+    "index": 1053,
+    "metadata": 0,
+    "text": "Quốc tịch"
+  },
+  {
+    "index": 1054,
+    "metadata": 0,
+    "text": "trung bình"
+  },
+  {
+    "index": 1055,
+    "metadata": 0,
+    "text": "Tiền vệ thủ"
+  },
+  {
+    "index": 1056,
+    "metadata": 0,
+    "text": "Tiền vệ công"
+  },
+  {
+    "index": 1057,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1058,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1059,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1060,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1061,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1062,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1063,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1064,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1065,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1066,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1067,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1068,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1069,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1070,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1071,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1072,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1073,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1074,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1075,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1076,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1077,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1078,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1079,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1080,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1081,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1082,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1083,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1084,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1085,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1086,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1087,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1088,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1089,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1090,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1091,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1092,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1093,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1094,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1095,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1096,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1097,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1098,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1099,
+    "metadata": 0,
+    "text": ""
+  }
+]

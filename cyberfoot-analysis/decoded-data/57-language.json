@@ -1,0 +1,5502 @@
+[
+  {
+    "index": 0,
+    "metadata": 0,
+    "text": "العربية"
+  },
+  {
+    "index": 1,
+    "metadata": 0,
+    "text": "جديدة مباراة "
+  },
+  {
+    "index": 2,
+    "metadata": 0,
+    "text": "مسجلة لعبة حمل "
+  },
+  {
+    "index": 3,
+    "metadata": 0,
+    "text": "النادى محرر "
+  },
+  {
+    "index": 4,
+    "metadata": 0,
+    "text": "اللعبة سجل   "
+  },
+  {
+    "index": 5,
+    "metadata": 0,
+    "text": "مسجلة غير نسخة  "
+  },
+  {
+    "index": 6,
+    "metadata": 0,
+    "text": "نسخة مسجلة"
+  },
+  {
+    "index": 7,
+    "metadata": 0,
+    "text": "خروج"
+  },
+  {
+    "index": 8,
+    "metadata": 0,
+    "text": "لغتك إختر"
+  },
+  {
+    "index": 9,
+    "metadata": 0,
+    "text": "جارى تحميل اللعبة "
+  },
+  {
+    "index": 10,
+    "metadata": 0,
+    "text": "اللعبة إعدادات"
+  },
+  {
+    "index": 11,
+    "metadata": 0,
+    "text": "النوادى مباريات دورة"
+  },
+  {
+    "index": 12,
+    "metadata": 0,
+    "text": "الدورى نظام"
+  },
+  {
+    "index": 13,
+    "metadata": 0,
+    "text": "أندية ١٠ من منها كل يتكون مجموعات ٤ "
+  },
+  {
+    "index": 14,
+    "metadata": 0,
+    "text": "نادى ٢٠ من منهما كل يتكون مجموعتان"
+  },
+  {
+    "index": 15,
+    "metadata": 0,
+    "text": "محلى كأس إلعب"
+  },
+  {
+    "index": 16,
+    "metadata": 0,
+    "text": "ليبرتادوريس / الدورى بطولات إلعب"
+  },
+  {
+    "index": 17,
+    "metadata": 0,
+    "text": "أمريكا جنوب كأس / أوروبا دورى إلعب"
+  },
+  {
+    "index": 18,
+    "metadata": 0,
+    "text": "المحلية الفرق مباريات"
+  },
+  {
+    "index": 19,
+    "metadata": 0,
+    "text": "العالم كأس إلعب"
+  },
+  {
+    "index": 20,
+    "metadata": 0,
+    "text": "٢٠١٠ العالم كأس من حقيقية مجموعات إستخدم"
+  },
+  {
+    "index": 21,
+    "metadata": 0,
+    "text": "أوروبا كأس إلعب"
+  },
+  {
+    "index": 22,
+    "metadata": 0,
+    "text": "أمريكا كأس إلعب"
+  },
+  {
+    "index": 23,
+    "metadata": 0,
+    "text": "هذة المحلية الدورى بطولات إلعب"
+  },
+  {
+    "index": 24,
+    "metadata": 0,
+    "text": "إختر كلة"
+  },
+  {
+    "index": 25,
+    "metadata": 0,
+    "text": "الفرق"
+  },
+  {
+    "index": 26,
+    "metadata": 0,
+    "text": "  www.cyberfoot.org على الأعضاء منطقة من الدورى بطولات من المذيد إضافة يمكنك"
+  },
+  {
+    "index": 27,
+    "metadata": 0,
+    "text": "الإنسان بها يتحكم التى الفرق عدد"
+  },
+  {
+    "index": 28,
+    "metadata": 0,
+    "text": "...إلخ الإنسان بها يتحكم التى الفرق من المذيد أضف ,المحلية الفرق مباريات إلعب :فقط المسجلة النسخة فى متاحة الخيارات بعض"
+  },
+  {
+    "index": 29,
+    "metadata": 0,
+    "text": "التالى˃˃˃ "
+  },
+  {
+    "index": 30,
+    "metadata": 0,
+    "text": "˂˂˂ رجوع  "
+  },
+  {
+    "index": 31,
+    "metadata": 0,
+    "text": "الأقل على واحدة دورى بطولة إختر"
+  },
+  {
+    "index": 32,
+    "metadata": 0,
+    "text": "فرقتك إختر"
+  },
+  {
+    "index": 33,
+    "metadata": 0,
+    "text": ":البلد فرق"
+  },
+  {
+    "index": 34,
+    "metadata": 0,
+    "text": ":إسمك"
+  },
+  {
+    "index": 35,
+    "metadata": 0,
+    "text": "الأولى المجموعة"
+  },
+  {
+    "index": 36,
+    "metadata": 0,
+    "text": "الثانية المجموعة"
+  },
+  {
+    "index": 37,
+    "metadata": 0,
+    "text": "الثالثة المجموعة"
+  },
+  {
+    "index": 38,
+    "metadata": 0,
+    "text": "الرابعة المجموعة"
+  },
+  {
+    "index": 39,
+    "metadata": 0,
+    "text": "الفريق إختيار"
+  },
+  {
+    "index": 40,
+    "metadata": 0,
+    "text": "التالى الفريق إختر"
+  },
+  {
+    "index": 41,
+    "metadata": 0,
+    "text": "إبدأ اللعبة ˃˃˃"
+  },
+  {
+    "index": 42,
+    "metadata": 0,
+    "text": "مسبقاً الفريق إختيار تم"
+  },
+  {
+    "index": 43,
+    "metadata": 0,
+    "text": "CyberFoot من مسجلة غير نسخة هذة"
+  },
+  {
+    "index": 44,
+    "metadata": 0,
+    "text": "مسجلة الغير النسخة فى الأسفل فى المجموعة من فريق إختيار فقط يمكنك"
+  },
+  {
+    "index": 45,
+    "metadata": 0,
+    "text": "المسجلة النسخة فى مجموعة أى من فريق إختيار يمكنك"
+  },
+  {
+    "index": 46,
+    "metadata": 0,
+    "text": "... جارى تحميل اللعبة"
+  },
+  {
+    "index": 47,
+    "metadata": 0,
+    "text": "الإدارة تقييم"
+  },
+  {
+    "index": 48,
+    "metadata": 0,
+    "text": "المشجعين تقييم  "
+  },
+  {
+    "index": 49,
+    "metadata": 0,
+    "text": "المهارة"
+  },
+  {
+    "index": 50,
+    "metadata": 0,
+    "text": "السن"
+  },
+  {
+    "index": 51,
+    "metadata": 0,
+    "text": "القيمة"
+  },
+  {
+    "index": 52,
+    "metadata": 0,
+    "text": "الراتب"
+  },
+  {
+    "index": 53,
+    "metadata": 0,
+    "text": "لعبها مباريات"
+  },
+  {
+    "index": 54,
+    "metadata": 0,
+    "text": "الخصائص"
+  },
+  {
+    "index": 55,
+    "metadata": 0,
+    "text": "فى ينتهى العقد "
+  },
+  {
+    "index": 56,
+    "metadata": 0,
+    "text": "منتهى عقد "
+  },
+  {
+    "index": 57,
+    "metadata": 0,
+    "text": "القرض إنهاء تاريخ "
+  },
+  {
+    "index": 58,
+    "metadata": 0,
+    "text": "القادمة المباراة فى فقط متاح اللاعب "
+  },
+  {
+    "index": 59,
+    "metadata": 0,
+    "text": " صفراء كروت ٣ واحدة: لمباراة موقوف "
+  },
+  {
+    "index": 60,
+    "metadata": 0,
+    "text": "ل موقوف "
+  },
+  {
+    "index": 61,
+    "metadata": 0,
+    "text": "مباراة/مباريات"
+  },
+  {
+    "index": 62,
+    "metadata": 0,
+    "text": "مصاب مازال "
+  },
+  {
+    "index": 63,
+    "metadata": 0,
+    "text": "بيع"
+  },
+  {
+    "index": 64,
+    "metadata": 0,
+    "text": "تعاقد"
+  },
+  {
+    "index": 65,
+    "metadata": 0,
+    "text": "إجعلة يعتزل"
+  },
+  {
+    "index": 66,
+    "metadata": 0,
+    "text": "الإنتقالات قائمة من إسحب "
+  },
+  {
+    "index": 67,
+    "metadata": 0,
+    "text": "المباراة التالية"
+  },
+  {
+    "index": 68,
+    "metadata": 0,
+    "text": "التشكيل"
+  },
+  {
+    "index": 69,
+    "metadata": 0,
+    "text": "الفريق ألوان "
+  },
+  {
+    "index": 70,
+    "metadata": 0,
+    "text": "مقروءة غير رسالة"
+  },
+  {
+    "index": 71,
+    "metadata": 0,
+    "text": "مقروءة غير رسائل"
+  },
+  {
+    "index": 72,
+    "metadata": 0,
+    "text": "جديدة رسائل يوجد لا"
+  },
+  {
+    "index": 73,
+    "metadata": 0,
+    "text": "لاعب"
+  },
+  {
+    "index": 74,
+    "metadata": 0,
+    "text": "السابقة المباريات "
+  },
+  {
+    "index": 75,
+    "metadata": 0,
+    "text": "مباراة"
+  },
+  {
+    "index": 76,
+    "metadata": 0,
+    "text": "مباريات"
+  },
+  {
+    "index": 77,
+    "metadata": 0,
+    "text": "تعادل"
+  },
+  {
+    "index": 78,
+    "metadata": 0,
+    "text": "تعادل"
+  },
+  {
+    "index": 79,
+    "metadata": 0,
+    "text": "فوز"
+  },
+  {
+    "index": 80,
+    "metadata": 0,
+    "text": "تعادل"
+  },
+  {
+    "index": 81,
+    "metadata": 0,
+    "text": "خسارة"
+  },
+  {
+    "index": 82,
+    "metadata": 0,
+    "text": "ل أهداف"
+  },
+  {
+    "index": 83,
+    "metadata": 0,
+    "text": "ضد أهداف"
+  },
+  {
+    "index": 84,
+    "metadata": 0,
+    "text": "مباريات إنتهت "
+  },
+  {
+    "index": 85,
+    "metadata": 0,
+    "text": "الأهداف فارق"
+  },
+  {
+    "index": 86,
+    "metadata": 0,
+    "text": "النقاط"
+  },
+  {
+    "index": 87,
+    "metadata": 0,
+    "text": "النقاط ترتيب"
+  },
+  {
+    "index": 88,
+    "metadata": 0,
+    "text": "الفريق شهرة"
+  },
+  {
+    "index": 89,
+    "metadata": 0,
+    "text": "الأخيرة المباراة"
+  },
+  {
+    "index": 90,
+    "metadata": 0,
+    "text": "المباريات كل"
+  },
+  {
+    "index": 91,
+    "metadata": 0,
+    "text": "الفرق هذة بين مباراة أول"
+  },
+  {
+    "index": 92,
+    "metadata": 0,
+    "text": "السابق الموسم سجل "
+  },
+  {
+    "index": 93,
+    "metadata": 0,
+    "text": "حفظ اللعبة "
+  },
+  {
+    "index": 94,
+    "metadata": 0,
+    "text": "إعدادات"
+  },
+  {
+    "index": 95,
+    "metadata": 0,
+    "text": "إستقيل"
+  },
+  {
+    "index": 96,
+    "metadata": 0,
+    "text": "خروج من اللعبة"
+  },
+  {
+    "index": 97,
+    "metadata": 0,
+    "text": "حول اللعبة"
+  },
+  {
+    "index": 98,
+    "metadata": 0,
+    "text": "تقييم المدرب"
+  },
+  {
+    "index": 99,
+    "metadata": 0,
+    "text": "إضافة/إزالة مدرب"
+  },
+  {
+    "index": 100,
+    "metadata": 0,
+    "text": "إنتقالات المدرب الأخيرة"
+  },
+  {
+    "index": 101,
+    "metadata": 0,
+    "text": "ترتيب النوادى"
+  },
+  {
+    "index": 102,
+    "metadata": 0,
+    "text": "إنتقالات اللعيبة"
+  },
+  {
+    "index": 103,
+    "metadata": 0,
+    "text": "تاريخ كل المباريات"
+  },
+  {
+    "index": 104,
+    "metadata": 0,
+    "text": "إعداداتك"
+  },
+  {
+    "index": 105,
+    "metadata": 0,
+    "text": "الإعدادات"
+  },
+  {
+    "index": 106,
+    "metadata": 0,
+    "text": "إعدادات الكأس"
+  },
+  {
+    "index": 107,
+    "metadata": 0,
+    "text": "مباريات الفصل فى الكؤس الدولية"
+  },
+  {
+    "index": 108,
+    "metadata": 0,
+    "text": "مباريات ودية"
+  },
+  {
+    "index": 109,
+    "metadata": 0,
+    "text": "الموارد المالية"
+  },
+  {
+    "index": 110,
+    "metadata": 0,
+    "text": "قرض بنكى"
+  },
+  {
+    "index": 111,
+    "metadata": 0,
+    "text": "إعداد عقد"
+  },
+  {
+    "index": 112,
+    "metadata": 0,
+    "text": "بيع لاعب"
+  },
+  {
+    "index": 113,
+    "metadata": 0,
+    "text": "لاعب متقاعد"
+  },
+  {
+    "index": 114,
+    "metadata": 0,
+    "text": "إعداد رقم"
+  },
+  {
+    "index": 115,
+    "metadata": 0,
+    "text": "تاريخ المباريات"
+  },
+  {
+    "index": 116,
+    "metadata": 0,
+    "text": "إلغاء قرض"
+  },
+  {
+    "index": 117,
+    "metadata": 0,
+    "text": "إشتر لاعب"
+  },
+  {
+    "index": 118,
+    "metadata": 0,
+    "text": "أعد قائمة قرض"
+  },
+  {
+    "index": 119,
+    "metadata": 0,
+    "text": "سحب من قائمة القرض"
+  },
+  {
+    "index": 120,
+    "metadata": 0,
+    "text": "الترتيبات"
+  },
+  {
+    "index": 121,
+    "metadata": 0,
+    "text": "الاستاد"
+  },
+  {
+    "index": 122,
+    "metadata": 0,
+    "text": "إعرض كل النوادى"
+  },
+  {
+    "index": 123,
+    "metadata": 0,
+    "text": "بحث عن اللاعبين"
+  },
+  {
+    "index": 124,
+    "metadata": 0,
+    "text": "بيانات المدرب"
+  },
+  {
+    "index": 125,
+    "metadata": 0,
+    "text": "قائمة الأبطال"
+  },
+  {
+    "index": 126,
+    "metadata": 0,
+    "text": "أعلى هداف"
+  },
+  {
+    "index": 127,
+    "metadata": 0,
+    "text": "ترتيب الأندية"
+  },
+  {
+    "index": 128,
+    "metadata": 0,
+    "text": "الموقع"
+  },
+  {
+    "index": 129,
+    "metadata": 0,
+    "text": "الإسم"
+  },
+  {
+    "index": 130,
+    "metadata": 0,
+    "text": "القدم"
+  },
+  {
+    "index": 131,
+    "metadata": 0,
+    "text": "مهارة"
+  },
+  {
+    "index": 132,
+    "metadata": 0,
+    "text": "قدرة التحمل"
+  },
+  {
+    "index": 133,
+    "metadata": 0,
+    "text": "الراتب"
+  },
+  {
+    "index": 134,
+    "metadata": 0,
+    "text": "القيمة"
+  },
+  {
+    "index": 135,
+    "metadata": 0,
+    "text": "الأهداف"
+  },
+  {
+    "index": 136,
+    "metadata": 0,
+    "text": "خصائص"
+  },
+  {
+    "index": 137,
+    "metadata": 0,
+    "text": "السن"
+  },
+  {
+    "index": 138,
+    "metadata": 0,
+    "text": "الروح الرياضية"
+  },
+  {
+    "index": 139,
+    "metadata": 0,
+    "text": "سينتهى العقد بعد أسبوع"
+  },
+  {
+    "index": 140,
+    "metadata": 0,
+    "text": "سينتهى العقد قريباً"
+  },
+  {
+    "index": 141,
+    "metadata": 0,
+    "text": "CyberFoot لتسجيل هنا إضغط"
+  },
+  {
+    "index": 142,
+    "metadata": 0,
+    "text": "حارس مرمى"
+  },
+  {
+    "index": 143,
+    "metadata": 0,
+    "text": "حارس مرمى"
+  },
+  {
+    "index": 144,
+    "metadata": 0,
+    "text": "مدافع"
+  },
+  {
+    "index": 145,
+    "metadata": 0,
+    "text": "مدافع"
+  },
+  {
+    "index": 146,
+    "metadata": 0,
+    "text": "جناح خلفى"
+  },
+  {
+    "index": 147,
+    "metadata": 0,
+    "text": "جناح خلفى"
+  },
+  {
+    "index": 148,
+    "metadata": 0,
+    "text": "خط منتصف"
+  },
+  {
+    "index": 149,
+    "metadata": 0,
+    "text": "خط منتصف"
+  },
+  {
+    "index": 150,
+    "metadata": 0,
+    "text": "هجوم"
+  },
+  {
+    "index": 151,
+    "metadata": 0,
+    "text": "هجوم"
+  },
+  {
+    "index": 152,
+    "metadata": 0,
+    "text": "أيمن"
+  },
+  {
+    "index": 153,
+    "metadata": 0,
+    "text": "أيمن"
+  },
+  {
+    "index": 154,
+    "metadata": 0,
+    "text": "أشول"
+  },
+  {
+    "index": 155,
+    "metadata": 0,
+    "text": "أشول"
+  },
+  {
+    "index": 156,
+    "metadata": 0,
+    "text": "المكان"
+  },
+  {
+    "index": 157,
+    "metadata": 0,
+    "text": "المكان"
+  },
+  {
+    "index": 158,
+    "metadata": 0,
+    "text": "مدافع ضربة جزاء"
+  },
+  {
+    "index": 159,
+    "metadata": 0,
+    "text": "مدافع ضربة جزاء"
+  },
+  {
+    "index": 160,
+    "metadata": 0,
+    "text": "سرعة اللاعب"
+  },
+  {
+    "index": 161,
+    "metadata": 0,
+    "text": "سرعة اللاعب"
+  },
+  {
+    "index": 162,
+    "metadata": 0,
+    "text": "المكان"
+  },
+  {
+    "index": 163,
+    "metadata": 0,
+    "text": "المكان"
+  },
+  {
+    "index": 164,
+    "metadata": 0,
+    "text": "صانع األعاب"
+  },
+  {
+    "index": 165,
+    "metadata": 0,
+    "text": "صانع ألعاب"
+  },
+  {
+    "index": 166,
+    "metadata": 0,
+    "text": "ضربة رأس"
+  },
+  {
+    "index": 167,
+    "metadata": 0,
+    "text": "ضربة رأس"
+  },
+  {
+    "index": 168,
+    "metadata": 0,
+    "text": "العرضية"
+  },
+  {
+    "index": 169,
+    "metadata": 0,
+    "text": "العرضية"
+  },
+  {
+    "index": 170,
+    "metadata": 0,
+    "text": "معالجة"
+  },
+  {
+    "index": 171,
+    "metadata": 0,
+    "text": "معالجة"
+  },
+  {
+    "index": 172,
+    "metadata": 0,
+    "text": "ترقيص"
+  },
+  {
+    "index": 173,
+    "metadata": 0,
+    "text": "ترقيص"
+  },
+  {
+    "index": 174,
+    "metadata": 0,
+    "text": "تسديد"
+  },
+  {
+    "index": 175,
+    "metadata": 0,
+    "text": "تسديد"
+  },
+  {
+    "index": 176,
+    "metadata": 0,
+    "text": "مدافع"
+  },
+  {
+    "index": 177,
+    "metadata": 0,
+    "text": "مدافع"
+  },
+  {
+    "index": 178,
+    "metadata": 0,
+    "text": "تمريرة"
+  },
+  {
+    "index": 179,
+    "metadata": 0,
+    "text": "تمريرة"
+  },
+  {
+    "index": 180,
+    "metadata": 0,
+    "text": "القوة"
+  },
+  {
+    "index": 181,
+    "metadata": 0,
+    "text": "القوة"
+  },
+  {
+    "index": 182,
+    "metadata": 0,
+    "text": "السرعة"
+  },
+  {
+    "index": 183,
+    "metadata": 0,
+    "text": "السرعة"
+  },
+  {
+    "index": 184,
+    "metadata": 0,
+    "text": "الأول"
+  },
+  {
+    "index": 185,
+    "metadata": 0,
+    "text": "الثانى"
+  },
+  {
+    "index": 186,
+    "metadata": 0,
+    "text": "الثالث"
+  },
+  {
+    "index": 187,
+    "metadata": 0,
+    "text": "الرابع"
+  },
+  {
+    "index": 188,
+    "metadata": 0,
+    "text": "الخامس"
+  },
+  {
+    "index": 189,
+    "metadata": 0,
+    "text": "السادس"
+  },
+  {
+    "index": 190,
+    "metadata": 0,
+    "text": "السابع"
+  },
+  {
+    "index": 191,
+    "metadata": 0,
+    "text": "الثامن"
+  },
+  {
+    "index": 192,
+    "metadata": 0,
+    "text": "التاسع"
+  },
+  {
+    "index": 193,
+    "metadata": 0,
+    "text": "العاشر"
+  },
+  {
+    "index": 194,
+    "metadata": 0,
+    "text": "الحادى عشر"
+  },
+  {
+    "index": 195,
+    "metadata": 0,
+    "text": "الثانى عشر"
+  },
+  {
+    "index": 196,
+    "metadata": 0,
+    "text": "الثالث عشر"
+  },
+  {
+    "index": 197,
+    "metadata": 0,
+    "text": "الرابع عشر"
+  },
+  {
+    "index": 198,
+    "metadata": 0,
+    "text": "الخامس عشر"
+  },
+  {
+    "index": 199,
+    "metadata": 0,
+    "text": "السادس عشر"
+  },
+  {
+    "index": 200,
+    "metadata": 0,
+    "text": "السابع عشر"
+  },
+  {
+    "index": 201,
+    "metadata": 0,
+    "text": "الثامن عشر"
+  },
+  {
+    "index": 202,
+    "metadata": 0,
+    "text": "التاسع عشر"
+  },
+  {
+    "index": 203,
+    "metadata": 0,
+    "text": "العشرين"
+  },
+  {
+    "index": 204,
+    "metadata": 0,
+    "text": "المركز"
+  },
+  {
+    "index": 205,
+    "metadata": 0,
+    "text": "إياب مباراة"
+  },
+  {
+    "index": 206,
+    "metadata": 0,
+    "text": "إياب مباراة"
+  },
+  {
+    "index": 207,
+    "metadata": 0,
+    "text": "ذهاب مباراة"
+  },
+  {
+    "index": 208,
+    "metadata": 0,
+    "text": "ذهاب مباراة"
+  },
+  {
+    "index": 209,
+    "metadata": 0,
+    "text": "جولة"
+  },
+  {
+    "index": 210,
+    "metadata": 0,
+    "text": "الحكم"
+  },
+  {
+    "index": 211,
+    "metadata": 0,
+    "text": "دولية ودية مباراة"
+  },
+  {
+    "index": 212,
+    "metadata": 0,
+    "text": "ودية مباراة"
+  },
+  {
+    "index": 213,
+    "metadata": 0,
+    "text": "الأولى الجولة"
+  },
+  {
+    "index": 214,
+    "metadata": 0,
+    "text": "الثانية الجولة"
+  },
+  {
+    "index": 215,
+    "metadata": 0,
+    "text": "النهائى الربع"
+  },
+  {
+    "index": 216,
+    "metadata": 0,
+    "text": "النهائى النصف"
+  },
+  {
+    "index": 217,
+    "metadata": 0,
+    "text": "النهائى"
+  },
+  {
+    "index": 218,
+    "metadata": 0,
+    "text": "الأول اللقاء"
+  },
+  {
+    "index": 219,
+    "metadata": 0,
+    "text": "الأول اللقاء"
+  },
+  {
+    "index": 220,
+    "metadata": 0,
+    "text": "الدورى أبطال"
+  },
+  {
+    "index": 221,
+    "metadata": 0,
+    "text": "أوروبا دورى"
+  },
+  {
+    "index": 222,
+    "metadata": 0,
+    "text": "ليبرتادوريس كأس"
+  },
+  {
+    "index": 223,
+    "metadata": 0,
+    "text": "أمريكا جنوب كأس"
+  },
+  {
+    "index": 224,
+    "metadata": 0,
+    "text": "للأندية العالم كأس"
+  },
+  {
+    "index": 225,
+    "metadata": 0,
+    "text": "الألمانى الدورى"
+  },
+  {
+    "index": 226,
+    "metadata": 0,
+    "text": "الألمانى الكأس"
+  },
+  {
+    "index": 227,
+    "metadata": 0,
+    "text": "الإيطالى الدورى"
+  },
+  {
+    "index": 228,
+    "metadata": 0,
+    "text": "الإيطالى الكأس"
+  },
+  {
+    "index": 229,
+    "metadata": 0,
+    "text": "الأسبانى الدورى"
+  },
+  {
+    "index": 230,
+    "metadata": 0,
+    "text": "الأسبانى الكأس"
+  },
+  {
+    "index": 231,
+    "metadata": 0,
+    "text": "الإنجليزى الدورى"
+  },
+  {
+    "index": 232,
+    "metadata": 0,
+    "text": "الإنجليزى الكأس"
+  },
+  {
+    "index": 233,
+    "metadata": 0,
+    "text": "الفرنسى الدورى"
+  },
+  {
+    "index": 234,
+    "metadata": 0,
+    "text": "الفرنسى الكأس"
+  },
+  {
+    "index": 235,
+    "metadata": 0,
+    "text": "البلجيكى الدورى"
+  },
+  {
+    "index": 236,
+    "metadata": 0,
+    "text": "البلجيكى الكأس"
+  },
+  {
+    "index": 237,
+    "metadata": 0,
+    "text": "اليونانى الدورى"
+  },
+  {
+    "index": 238,
+    "metadata": 0,
+    "text": "اليونانى الكأس"
+  },
+  {
+    "index": 239,
+    "metadata": 0,
+    "text": "الهولندى الدورى"
+  },
+  {
+    "index": 240,
+    "metadata": 0,
+    "text": "الهولندى الكأس"
+  },
+  {
+    "index": 241,
+    "metadata": 0,
+    "text": "البرتغالى الدورى"
+  },
+  {
+    "index": 242,
+    "metadata": 0,
+    "text": "البرتغالى الكأس"
+  },
+  {
+    "index": 243,
+    "metadata": 0,
+    "text": "البرازيلى الدورى"
+  },
+  {
+    "index": 244,
+    "metadata": 0,
+    "text": "البرازيلى الكأس"
+  },
+  {
+    "index": 245,
+    "metadata": 0,
+    "text": "الأرجنتينى الدورى"
+  },
+  {
+    "index": 246,
+    "metadata": 0,
+    "text": "الأرجنتينى الكأس"
+  },
+  {
+    "index": 247,
+    "metadata": 0,
+    "text": "الإسكتنلندى الدورى "
+  },
+  {
+    "index": 248,
+    "metadata": 0,
+    "text": "الإسكتلندى الكأس "
+  },
+  {
+    "index": 249,
+    "metadata": 0,
+    "text": "المكسيكى الدورى "
+  },
+  {
+    "index": 250,
+    "metadata": 0,
+    "text": "المكسيكى الكأس "
+  },
+  {
+    "index": 251,
+    "metadata": 0,
+    "text": "السويسرى الدورى "
+  },
+  {
+    "index": 252,
+    "metadata": 0,
+    "text": "السويسرى الكأس "
+  },
+  {
+    "index": 253,
+    "metadata": 0,
+    "text": "التركى الدورى\t"
+  },
+  {
+    "index": 254,
+    "metadata": 0,
+    "text": "التركى الكأس "
+  },
+  {
+    "index": 255,
+    "metadata": 0,
+    "text": "التشيلى الدورى "
+  },
+  {
+    "index": 256,
+    "metadata": 0,
+    "text": "التشيلى الكأس "
+  },
+  {
+    "index": 257,
+    "metadata": 0,
+    "text": "باراجواى دورى "
+  },
+  {
+    "index": 258,
+    "metadata": 0,
+    "text": "باراجواى كأس "
+  },
+  {
+    "index": 259,
+    "metadata": 0,
+    "text": "كولومبيا دورى "
+  },
+  {
+    "index": 260,
+    "metadata": 0,
+    "text": "كولومبيا كأس "
+  },
+  {
+    "index": 261,
+    "metadata": 0,
+    "text": "روسيا دورى "
+  },
+  {
+    "index": 262,
+    "metadata": 0,
+    "text": "روسيا كأس "
+  },
+  {
+    "index": 263,
+    "metadata": 0,
+    "text": "السويد دورى "
+  },
+  {
+    "index": 264,
+    "metadata": 0,
+    "text": "السويد كأس "
+  },
+  {
+    "index": 265,
+    "metadata": 0,
+    "text": "أوكرانيا دورى "
+  },
+  {
+    "index": 266,
+    "metadata": 0,
+    "text": "أوكرانيا كأس "
+  },
+  {
+    "index": 267,
+    "metadata": 0,
+    "text": "أوروجواى دورى "
+  },
+  {
+    "index": 268,
+    "metadata": 0,
+    "text": "أوروجواى كأس "
+  },
+  {
+    "index": 269,
+    "metadata": 0,
+    "text": "صربيا دورى "
+  },
+  {
+    "index": 270,
+    "metadata": 0,
+    "text": "صربيا كأس "
+  },
+  {
+    "index": 271,
+    "metadata": 0,
+    "text": "بولندا دورى "
+  },
+  {
+    "index": 272,
+    "metadata": 0,
+    "text": "بولندا كأس "
+  },
+  {
+    "index": 273,
+    "metadata": 0,
+    "text": "إندونيسيا دورى "
+  },
+  {
+    "index": 274,
+    "metadata": 0,
+    "text": "إندونيسيا كأس "
+  },
+  {
+    "index": 275,
+    "metadata": 0,
+    "text": "الأمريكية المتحدة الولايات دورى "
+  },
+  {
+    "index": 276,
+    "metadata": 0,
+    "text": "الأمريكية المتحدة الولايات كأس "
+  },
+  {
+    "index": 277,
+    "metadata": 0,
+    "text": "بلغاريا دورى "
+  },
+  {
+    "index": 278,
+    "metadata": 0,
+    "text": "بلغاريا كأس "
+  },
+  {
+    "index": 279,
+    "metadata": 0,
+    "text": "دورى"
+  },
+  {
+    "index": 280,
+    "metadata": 0,
+    "text": "كأس"
+  },
+  {
+    "index": 281,
+    "metadata": 0,
+    "text": "التشكيل تذكر "
+  },
+  {
+    "index": 282,
+    "metadata": 0,
+    "text": "أوتوماتيك تشكيل "
+  },
+  {
+    "index": 283,
+    "metadata": 0,
+    "text": "الفريق موقف "
+  },
+  {
+    "index": 284,
+    "metadata": 0,
+    "text": "الدفاع ضغط "
+  },
+  {
+    "index": 285,
+    "metadata": 0,
+    "text": "على إضافية هجمات "
+  },
+  {
+    "index": 286,
+    "metadata": 0,
+    "text": "القطع حدد "
+  },
+  {
+    "index": 287,
+    "metadata": 0,
+    "text": "الفريق كابتن "
+  },
+  {
+    "index": 288,
+    "metadata": 0,
+    "text": "الفريق كابتن "
+  },
+  {
+    "index": 289,
+    "metadata": 0,
+    "text": "الفريق موقف "
+  },
+  {
+    "index": 290,
+    "metadata": 0,
+    "text": "متوازن"
+  },
+  {
+    "index": 291,
+    "metadata": 0,
+    "text": "هجوم كلة "
+  },
+  {
+    "index": 292,
+    "metadata": 0,
+    "text": "دفاعى"
+  },
+  {
+    "index": 293,
+    "metadata": 0,
+    "text": "خفيف"
+  },
+  {
+    "index": 294,
+    "metadata": 0,
+    "text": "ثقيل"
+  },
+  {
+    "index": 295,
+    "metadata": 0,
+    "text": "جداً ثقيل "
+  },
+  {
+    "index": 296,
+    "metadata": 0,
+    "text": "وسط"
+  },
+  {
+    "index": 297,
+    "metadata": 0,
+    "text": "أجنحة"
+  },
+  {
+    "index": 298,
+    "metadata": 0,
+    "text": "˂˂رجوع "
+  },
+  {
+    "index": 299,
+    "metadata": 0,
+    "text": "إبدأ المباراة ˃˃"
+  },
+  {
+    "index": 300,
+    "metadata": 0,
+    "text": "يلعب "
+  },
+  {
+    "index": 301,
+    "metadata": 0,
+    "text": "إختر على الأقل ١١ لاعب لبدء المباراة "
+  },
+  {
+    "index": 302,
+    "metadata": 0,
+    "text": ": فريق إختر "
+  },
+  {
+    "index": 303,
+    "metadata": 0,
+    "text": "سجل"
+  },
+  {
+    "index": 304,
+    "metadata": 0,
+    "text": "التجهيزات"
+  },
+  {
+    "index": 305,
+    "metadata": 0,
+    "text": "الإنتقالات"
+  },
+  {
+    "index": 306,
+    "metadata": 0,
+    "text": "الجوائز"
+  },
+  {
+    "index": 307,
+    "metadata": 0,
+    "text": ":نقودك"
+  },
+  {
+    "index": 308,
+    "metadata": 0,
+    "text": "الفريق فى أقصى كحد لاعب٢٨  لديك "
+  },
+  {
+    "index": 309,
+    "metadata": 0,
+    "text": "فريقك إلى الإنتقال يريد لا "
+  },
+  {
+    "index": 310,
+    "metadata": 0,
+    "text": "بنجاح الإنتقال تم "
+  },
+  {
+    "index": 311,
+    "metadata": 0,
+    "text": "الإنتقال تسجيل تم "
+  },
+  {
+    "index": 312,
+    "metadata": 0,
+    "text": "متاح القرض "
+  },
+  {
+    "index": 313,
+    "metadata": 0,
+    "text": "للبيع"
+  },
+  {
+    "index": 314,
+    "metadata": 0,
+    "text": "متاح القرض "
+  },
+  {
+    "index": 315,
+    "metadata": 0,
+    "text": "إقترض لاعب"
+  },
+  {
+    "index": 316,
+    "metadata": 0,
+    "text": "فريقك فى فقط لاعبين تقترض أن يمكنك "
+  },
+  {
+    "index": 317,
+    "metadata": 0,
+    "text": "إشتر لاعب"
+  },
+  {
+    "index": 318,
+    "metadata": 0,
+    "text": "قدم عرض"
+  },
+  {
+    "index": 319,
+    "metadata": 0,
+    "text": "كامل سجل "
+  },
+  {
+    "index": 320,
+    "metadata": 0,
+    "text": "سنة"
+  },
+  {
+    "index": 321,
+    "metadata": 0,
+    "text": "فريق"
+  },
+  {
+    "index": 322,
+    "metadata": 0,
+    "text": "المهنة مجموع "
+  },
+  {
+    "index": 323,
+    "metadata": 0,
+    "text": "المحلية الفرق "
+  },
+  {
+    "index": 324,
+    "metadata": 0,
+    "text": "عالمى"
+  },
+  {
+    "index": 325,
+    "metadata": 0,
+    "text": "المباريات قيد "
+  },
+  {
+    "index": 326,
+    "metadata": 0,
+    "text": "العالم كأس "
+  },
+  {
+    "index": 327,
+    "metadata": 0,
+    "text": "أمريكا كأس "
+  },
+  {
+    "index": 328,
+    "metadata": 0,
+    "text": "أوروبا كأس "
+  },
+  {
+    "index": 329,
+    "metadata": 0,
+    "text": ":إعرض"
+  },
+  {
+    "index": 330,
+    "metadata": 0,
+    "text": "المباريات كل "
+  },
+  {
+    "index": 331,
+    "metadata": 0,
+    "text": "الأحد"
+  },
+  {
+    "index": 332,
+    "metadata": 0,
+    "text": "الإثنين"
+  },
+  {
+    "index": 333,
+    "metadata": 0,
+    "text": "الثلاثاء"
+  },
+  {
+    "index": 334,
+    "metadata": 0,
+    "text": "الأربعاء"
+  },
+  {
+    "index": 335,
+    "metadata": 0,
+    "text": "الخميس"
+  },
+  {
+    "index": 336,
+    "metadata": 0,
+    "text": "الجمعة"
+  },
+  {
+    "index": 337,
+    "metadata": 0,
+    "text": "السبت"
+  },
+  {
+    "index": 338,
+    "metadata": 0,
+    "text": "لاعب"
+  },
+  {
+    "index": 339,
+    "metadata": 0,
+    "text": "لاعب"
+  },
+  {
+    "index": 340,
+    "metadata": 0,
+    "text": "مباريات"
+  },
+  {
+    "index": 341,
+    "metadata": 0,
+    "text": "دورى"
+  },
+  {
+    "index": 342,
+    "metadata": 0,
+    "text": "كأس"
+  },
+  {
+    "index": 343,
+    "metadata": 0,
+    "text": "الإطلاق على الأحسن "
+  },
+  {
+    "index": 344,
+    "metadata": 0,
+    "text": "الجميع لعرض هنا إضغط, لاعب ١٠٠  أول عرض "
+  },
+  {
+    "index": 345,
+    "metadata": 0,
+    "text": "حمل"
+  },
+  {
+    "index": 346,
+    "metadata": 0,
+    "text": "إلغاء"
+  },
+  {
+    "index": 347,
+    "metadata": 0,
+    "text": "مسح"
+  },
+  {
+    "index": 348,
+    "metadata": 0,
+    "text": ": مدرب"
+  },
+  {
+    "index": 349,
+    "metadata": 0,
+    "text": ": التالية المباراة "
+  },
+  {
+    "index": 350,
+    "metadata": 0,
+    "text": "العائد"
+  },
+  {
+    "index": 351,
+    "metadata": 0,
+    "text": "النفقات"
+  },
+  {
+    "index": 352,
+    "metadata": 0,
+    "text": "اللعيبة التى تم بيعها "
+  },
+  {
+    "index": 353,
+    "metadata": 0,
+    "text": "التذاكر:"
+  },
+  {
+    "index": 354,
+    "metadata": 0,
+    "text": "الجوائز:"
+  },
+  {
+    "index": 355,
+    "metadata": 0,
+    "text": "قرض بنكى: "
+  },
+  {
+    "index": 356,
+    "metadata": 0,
+    "text": "الراعى الرسمى: "
+  },
+  {
+    "index": 357,
+    "metadata": 0,
+    "text": "المجموع الفرعى:"
+  },
+  {
+    "index": 358,
+    "metadata": 0,
+    "text": "اللعيبة التى تم شرائها: "
+  },
+  {
+    "index": 359,
+    "metadata": 0,
+    "text": "الإستاد:"
+  },
+  {
+    "index": 360,
+    "metadata": 0,
+    "text": "الراتب:"
+  },
+  {
+    "index": 361,
+    "metadata": 0,
+    "text": "فوائد القرض: "
+  },
+  {
+    "index": 362,
+    "metadata": 0,
+    "text": "نفقات الإنتقالات: "
+  },
+  {
+    "index": 363,
+    "metadata": 0,
+    "text": "أخرى:"
+  },
+  {
+    "index": 364,
+    "metadata": 0,
+    "text": "الرصيد:"
+  },
+  {
+    "index": 365,
+    "metadata": 0,
+    "text": "الفائدة الأسبوعية: "
+  },
+  {
+    "index": 366,
+    "metadata": 0,
+    "text": "الراتب المدفوع أسبوعياً: "
+  },
+  {
+    "index": 367,
+    "metadata": 0,
+    "text": "السيولة النقدية المتاحة: "
+  },
+  {
+    "index": 368,
+    "metadata": 0,
+    "text": "مزاد فى للبيع لاعب "
+  },
+  {
+    "index": 369,
+    "metadata": 0,
+    "text": ": البدء سعر "
+  },
+  {
+    "index": 370,
+    "metadata": 0,
+    "text": "اللعب يبيع "
+  },
+  {
+    "index": 371,
+    "metadata": 0,
+    "text": "ألف ٣٠٠ تعنى ٣٠٠ مثلاُ ،بالآلاف رهانك ضع "
+  },
+  {
+    "index": 372,
+    "metadata": 0,
+    "text": "مشترين لا "
+  },
+  {
+    "index": 373,
+    "metadata": 0,
+    "text": "ل بيع "
+  },
+  {
+    "index": 374,
+    "metadata": 0,
+    "text": ":رهانك"
+  },
+  {
+    "index": 375,
+    "metadata": 0,
+    "text": "رهان"
+  },
+  {
+    "index": 376,
+    "metadata": 0,
+    "text": "لديك المالية السيولة من أكثر "
+  },
+  {
+    "index": 377,
+    "metadata": 0,
+    "text": ". كاف مال لديك ليس "
+  },
+  {
+    "index": 378,
+    "metadata": 0,
+    "text": "عقد"
+  },
+  {
+    "index": 379,
+    "metadata": 0,
+    "text": ": جديد راتب "
+  },
+  {
+    "index": 380,
+    "metadata": 0,
+    "text": ": العقد مدة "
+  },
+  {
+    "index": 381,
+    "metadata": 0,
+    "text": "شهور ٦ "
+  },
+  {
+    "index": 382,
+    "metadata": 0,
+    "text": "سنة"
+  },
+  {
+    "index": 383,
+    "metadata": 0,
+    "text": "سنتين"
+  },
+  {
+    "index": 384,
+    "metadata": 0,
+    "text": "عرض"
+  },
+  {
+    "index": 385,
+    "metadata": 0,
+    "text": "إلغاء"
+  },
+  {
+    "index": 386,
+    "metadata": 0,
+    "text": "يريد هو ،عرضك رفض لقد "
+  },
+  {
+    "index": 387,
+    "metadata": 0,
+    "text": "موافق"
+  },
+  {
+    "index": 388,
+    "metadata": 0,
+    "text": "رفض"
+  },
+  {
+    "index": 389,
+    "metadata": 0,
+    "text": "اللاعب هذا مرتب أدنى حد "
+  },
+  {
+    "index": 390,
+    "metadata": 0,
+    "text": "أبطال"
+  },
+  {
+    "index": 391,
+    "metadata": 0,
+    "text": "˃˃˃إستكمل "
+  },
+  {
+    "index": 392,
+    "metadata": 0,
+    "text": "أهداف"
+  },
+  {
+    "index": 393,
+    "metadata": 0,
+    "text": "بحث"
+  },
+  {
+    "index": 394,
+    "metadata": 0,
+    "text": ":موقع"
+  },
+  {
+    "index": 395,
+    "metadata": 0,
+    "text": ":جنسية"
+  },
+  {
+    "index": 396,
+    "metadata": 0,
+    "text": "إعرض قائمة التحويلات فقط "
+  },
+  {
+    "index": 397,
+    "metadata": 0,
+    "text": "إعرض اللاعبين فقط فى "
+  },
+  {
+    "index": 398,
+    "metadata": 0,
+    "text": "إعرض اللعيبة النجوم فقط "
+  },
+  {
+    "index": 399,
+    "metadata": 0,
+    "text": "إعرض المتاح للقرض فقط "
+  },
+  {
+    "index": 400,
+    "metadata": 0,
+    "text": "أى قيمة"
+  },
+  {
+    "index": 401,
+    "metadata": 0,
+    "text": "اللعيبة التى وجدت "
+  },
+  {
+    "index": 402,
+    "metadata": 0,
+    "text": "مقرضين سابقاً "
+  },
+  {
+    "index": 403,
+    "metadata": 0,
+    "text": "الإهتمام  باللعبة: "
+  },
+  {
+    "index": 404,
+    "metadata": 0,
+    "text": "أحصل على $٥٠٠٫٠٠٠أكثر "
+  },
+  {
+    "index": 405,
+    "metadata": 0,
+    "text": "  أدفع ٥٠٠٫٠٠٠ "
+  },
+  {
+    "index": 406,
+    "metadata": 0,
+    "text": "سنة"
+  },
+  {
+    "index": 407,
+    "metadata": 0,
+    "text": "بطل"
+  },
+  {
+    "index": 408,
+    "metadata": 0,
+    "text": "الثانى المركز "
+  },
+  {
+    "index": 409,
+    "metadata": 0,
+    "text": "الهداف"
+  },
+  {
+    "index": 410,
+    "metadata": 0,
+    "text": "البطل المدرب "
+  },
+  {
+    "index": 411,
+    "metadata": 0,
+    "text": "للتدريب دعوة "
+  },
+  {
+    "index": 412,
+    "metadata": 0,
+    "text": "؟ الفريق هذا إدارة تريد هل ، معك التعاقد يريد أدناة الفريق "
+  },
+  {
+    "index": 413,
+    "metadata": 0,
+    "text": "موافق"
+  },
+  {
+    "index": 414,
+    "metadata": 0,
+    "text": "الكل أرفض "
+  },
+  {
+    "index": 415,
+    "metadata": 0,
+    "text": ": بسبب فصلك تم "
+  },
+  {
+    "index": 416,
+    "metadata": 0,
+    "text": ". السيئة نتائجك بسبب الإدارة على بقوة المشجعين ضغط "
+  },
+  {
+    "index": 417,
+    "metadata": 0,
+    "text": ". مادية مشاكل إلى نادينا تقود "
+  },
+  {
+    "index": 418,
+    "metadata": 0,
+    "text": ". جداً سيئة نتائجك "
+  },
+  {
+    "index": 419,
+    "metadata": 0,
+    "text": "... الرابعة المجموعة من هبطنا "
+  },
+  {
+    "index": 420,
+    "metadata": 0,
+    "text": ". الجديد فريقك مع طيب حظ ،طلبك على بناء "
+  },
+  {
+    "index": 421,
+    "metadata": 0,
+    "text": ": هو البديل المدرب "
+  },
+  {
+    "index": 422,
+    "metadata": 0,
+    "text": "... جديد نادى إنتظر "
+  },
+  {
+    "index": 423,
+    "metadata": 0,
+    "text": "!مفصول"
+  },
+  {
+    "index": 424,
+    "metadata": 0,
+    "text": "إعدادات اللعبة "
+  },
+  {
+    "index": 425,
+    "metadata": 0,
+    "text": "إعرض بطولات الدورى "
+  },
+  {
+    "index": 426,
+    "metadata": 0,
+    "text": "حفظ تلقائى :"
+  },
+  {
+    "index": 427,
+    "metadata": 0,
+    "text": "سرعة اللعبة :"
+  },
+  {
+    "index": 428,
+    "metadata": 0,
+    "text": "السرعة بدون لاعب بشرى :"
+  },
+  {
+    "index": 429,
+    "metadata": 0,
+    "text": "إعرض قرارات ضربات الجزاء مع / بدون بشر : "
+  },
+  {
+    "index": 430,
+    "metadata": 0,
+    "text": "إعرض إنتقالات المدربين :"
+  },
+  {
+    "index": 431,
+    "metadata": 0,
+    "text": "إفتح بيانات المباراة بين الشوطين :"
+  },
+  {
+    "index": 432,
+    "metadata": 0,
+    "text": "تلقى رسائل تحزير بالعقود المنتهية :"
+  },
+  {
+    "index": 433,
+    "metadata": 0,
+    "text": "تجديد تلقائى للعقود المنتهية :"
+  },
+  {
+    "index": 434,
+    "metadata": 0,
+    "text": "اللون و الأصوات "
+  },
+  {
+    "index": 435,
+    "metadata": 0,
+    "text": "إتاحة أصوات الأحداث "
+  },
+  {
+    "index": 436,
+    "metadata": 0,
+    "text": "أحداث الفريق المضيف "
+  },
+  {
+    "index": 437,
+    "metadata": 0,
+    "text": "إستخدم الألوان فى قائمة اللاعبين "
+  },
+  {
+    "index": 438,
+    "metadata": 0,
+    "text": "التلقائى التسجيل إلغاء "
+  },
+  {
+    "index": 439,
+    "metadata": 0,
+    "text": "رحلات ٣ كل "
+  },
+  {
+    "index": 440,
+    "metadata": 0,
+    "text": "مباراة كل بعد "
+  },
+  {
+    "index": 441,
+    "metadata": 0,
+    "text": "الموسم بداية "
+  },
+  {
+    "index": 442,
+    "metadata": 0,
+    "text": "بطىء"
+  },
+  {
+    "index": 443,
+    "metadata": 0,
+    "text": "عادى"
+  },
+  {
+    "index": 444,
+    "metadata": 0,
+    "text": "سريع"
+  },
+  {
+    "index": 445,
+    "metadata": 0,
+    "text": "جداً سريع "
+  },
+  {
+    "index": 446,
+    "metadata": 0,
+    "text": "جداً جداً سريع "
+  },
+  {
+    "index": 447,
+    "metadata": 0,
+    "text": "جداً جداً جداً سريع  "
+  },
+  {
+    "index": 448,
+    "metadata": 0,
+    "text": "السرعة قمة "
+  },
+  {
+    "index": 449,
+    "metadata": 0,
+    "text": "لا"
+  },
+  {
+    "index": 450,
+    "metadata": 0,
+    "text": "نعم"
+  },
+  {
+    "index": 451,
+    "metadata": 0,
+    "text": "فقط المنتهى "
+  },
+  {
+    "index": 452,
+    "metadata": 0,
+    "text": "فقط الإنتهاء على قارب الذى "
+  },
+  {
+    "index": 453,
+    "metadata": 0,
+    "text": "الثانى الشوط ١٥ من بدلا ٦٠ مثال  ،الأوروبية الطريقة على الدقائق إعرض "
+  },
+  {
+    "index": 454,
+    "metadata": 0,
+    "text": "إعرض مباريات الدورى بدون بشر: "
+  },
+  {
+    "index": 455,
+    "metadata": 0,
+    "text": "استخدام لون مختلف في المباريات الإنسان"
+  },
+  {
+    "index": 456,
+    "metadata": 0,
+    "text": "اللاعبين قائمة ألوان "
+  },
+  {
+    "index": 457,
+    "metadata": 0,
+    "text": "الإفتراضى إعادة "
+  },
+  {
+    "index": 458,
+    "metadata": 0,
+    "text": "جزاء ضربة "
+  },
+  {
+    "index": 459,
+    "metadata": 0,
+    "text": "الكرة سيركل من إختر "
+  },
+  {
+    "index": 460,
+    "metadata": 0,
+    "text": "شوط"
+  },
+  {
+    "index": 461,
+    "metadata": 0,
+    "text": "للشوط يستعد "
+  },
+  {
+    "index": 462,
+    "metadata": 0,
+    "text": "و الكرة شاط "
+  },
+  {
+    "index": 463,
+    "metadata": 0,
+    "text": "!!! هدف ! جيدة ركلة كانت "
+  },
+  {
+    "index": 464,
+    "metadata": 0,
+    "text": "!!! هدف هناك، إنها "
+  },
+  {
+    "index": 465,
+    "metadata": 0,
+    "text": "!!! رائع هدف سجل "
+  },
+  {
+    "index": 466,
+    "metadata": 0,
+    "text": "! يدافع المرمى حارس "
+  },
+  {
+    "index": 467,
+    "metadata": 0,
+    "text": "!!! العارضة أصابت "
+  },
+  {
+    "index": 468,
+    "metadata": 0,
+    "text": "!!! العارضة زاوية فى إرتطمت "
+  },
+  {
+    "index": 469,
+    "metadata": 0,
+    "text": "نقاط"
+  },
+  {
+    "index": 470,
+    "metadata": 0,
+    "text": "ملعوبة مباريات "
+  },
+  {
+    "index": 471,
+    "metadata": 0,
+    "text": "فوز"
+  },
+  {
+    "index": 472,
+    "metadata": 0,
+    "text": "تعادل"
+  },
+  {
+    "index": 473,
+    "metadata": 0,
+    "text": "خسارة"
+  },
+  {
+    "index": 474,
+    "metadata": 0,
+    "text": "ل أهداف "
+  },
+  {
+    "index": 475,
+    "metadata": 0,
+    "text": "على أهداف "
+  },
+  {
+    "index": 476,
+    "metadata": 0,
+    "text": "الأهداف فارق "
+  },
+  {
+    "index": 477,
+    "metadata": 0,
+    "text": "مجموعة"
+  },
+  {
+    "index": 478,
+    "metadata": 0,
+    "text": "بعد جدولتة تتم لم "
+  },
+  {
+    "index": 479,
+    "metadata": 0,
+    "text": "الجزاء ضربات قرار "
+  },
+  {
+    "index": 480,
+    "metadata": 0,
+    "text": "الكرة سيركل من إختر-  الجزاء ضربات قرار "
+  },
+  {
+    "index": 481,
+    "metadata": 0,
+    "text": ": المتاحة اللعيبة "
+  },
+  {
+    "index": 482,
+    "metadata": 0,
+    "text": ": الكرة لركل المختارة اللعيبة "
+  },
+  {
+    "index": 483,
+    "metadata": 0,
+    "text": "تلقائى إختيار "
+  },
+  {
+    "index": 484,
+    "metadata": 0,
+    "text": "˃˃˃إستكمل "
+  },
+  {
+    "index": 485,
+    "metadata": 0,
+    "text": "هدف"
+  },
+  {
+    "index": 486,
+    "metadata": 0,
+    "text": "أخطأ"
+  },
+  {
+    "index": 487,
+    "metadata": 0,
+    "text": "كسبت"
+  },
+  {
+    "index": 488,
+    "metadata": 0,
+    "text": "أكتب إسم للملف فى الأسفل لتسجيل اللعبة"
+  },
+  {
+    "index": 489,
+    "metadata": 0,
+    "text": "سجل"
+  },
+  {
+    "index": 490,
+    "metadata": 0,
+    "text": "؟ الملف إستبدال تريد هل ،مسبقاً موجود الملف إسم "
+  },
+  {
+    "index": 491,
+    "metadata": 0,
+    "text": "نعم"
+  },
+  {
+    "index": 492,
+    "metadata": 0,
+    "text": "لا"
+  },
+  {
+    "index": 493,
+    "metadata": 0,
+    "text": "لاعب نقل "
+  },
+  {
+    "index": 494,
+    "metadata": 0,
+    "text": "مزاد نقل "
+  },
+  {
+    "index": 495,
+    "metadata": 0,
+    "text": ": البداية قيمة "
+  },
+  {
+    "index": 496,
+    "metadata": 0,
+    "text": "بالآلاف"
+  },
+  {
+    "index": 497,
+    "metadata": 0,
+    "text": "الإنتقالات قائمة على ضع "
+  },
+  {
+    "index": 498,
+    "metadata": 0,
+    "text": "نجم مزاد "
+  },
+  {
+    "index": 499,
+    "metadata": 0,
+    "text": "إلغاء"
+  },
+  {
+    "index": 500,
+    "metadata": 0,
+    "text": "الإنتقالات قائمة "
+  },
+  {
+    "index": 501,
+    "metadata": 0,
+    "text": "يجب أن تدفع رسوم إنتقال تبعاً للوقت المتبقى فى عقد اللاعب"
+  },
+  {
+    "index": 502,
+    "metadata": 0,
+    "text": "رسوم الإنتقال المقدرة لهذا اللاعب:"
+  },
+  {
+    "index": 503,
+    "metadata": 0,
+    "text": "قيمة ثابتة:"
+  },
+  {
+    "index": 504,
+    "metadata": 0,
+    "text": "الشوط الأول"
+  },
+  {
+    "index": 505,
+    "metadata": 0,
+    "text": "الشوط الثانى"
+  },
+  {
+    "index": 506,
+    "metadata": 0,
+    "text": "بين الشوطين"
+  },
+  {
+    "index": 507,
+    "metadata": 0,
+    "text": "وقت إضافى"
+  },
+  {
+    "index": 508,
+    "metadata": 0,
+    "text": "دوام كامل"
+  },
+  {
+    "index": 509,
+    "metadata": 0,
+    "text": "مباراة المركز الثالث"
+  },
+  {
+    "index": 510,
+    "metadata": 0,
+    "text": "هدف فى مرمااك"
+  },
+  {
+    "index": 511,
+    "metadata": 0,
+    "text": "ضربة جزاء"
+  },
+  {
+    "index": 512,
+    "metadata": 0,
+    "text": "ضربة حرة"
+  },
+  {
+    "index": 513,
+    "metadata": 0,
+    "text": "ضربة جزاء لم تصب"
+  },
+  {
+    "index": 514,
+    "metadata": 0,
+    "text": "مدرب"
+  },
+  {
+    "index": 515,
+    "metadata": 0,
+    "text": "الفريق الحالى"
+  },
+  {
+    "index": 516,
+    "metadata": 0,
+    "text": "نقاط"
+  },
+  {
+    "index": 517,
+    "metadata": 0,
+    "text": "ترتيب العالم"
+  },
+  {
+    "index": 518,
+    "metadata": 0,
+    "text": "شرف"
+  },
+  {
+    "index": 519,
+    "metadata": 0,
+    "text": "أقل لاعب للإعتزال "
+  },
+  {
+    "index": 520,
+    "metadata": 0,
+    "text": "اللعب المتزل يمكن إستبدالة بلاعب من الناشئين لديك"
+  },
+  {
+    "index": 521,
+    "metadata": 0,
+    "text": "الناشئ الذى تمت ترقيتة ستكون مهارتة بين ١- ٢٠ والسن بين ١٧ - ٢٠ "
+  },
+  {
+    "index": 522,
+    "metadata": 0,
+    "text": "يمكنك تسمية اللاعب الناشىء أو إعطائة نفس إسم اللاعب المعتزل"
+  },
+  {
+    "index": 523,
+    "metadata": 0,
+    "text": "إسم اللاعب الجديد"
+  },
+  {
+    "index": 524,
+    "metadata": 0,
+    "text": "موقع"
+  },
+  {
+    "index": 525,
+    "metadata": 0,
+    "text": "أقلة للإعتزال"
+  },
+  {
+    "index": 526,
+    "metadata": 0,
+    "text": "إلغاء"
+  },
+  {
+    "index": 527,
+    "metadata": 0,
+    "text": "رهان اللاعب"
+  },
+  {
+    "index": 528,
+    "metadata": 0,
+    "text": "يريد اللاعب"
+  },
+  {
+    "index": 529,
+    "metadata": 0,
+    "text": "أقبل العرض؟"
+  },
+  {
+    "index": 530,
+    "metadata": 0,
+    "text": "مدربين بشريين"
+  },
+  {
+    "index": 531,
+    "metadata": 0,
+    "text": "حذف"
+  },
+  {
+    "index": 532,
+    "metadata": 0,
+    "text": "أضف جديد"
+  },
+  {
+    "index": 533,
+    "metadata": 0,
+    "text": "لحذف مدرب يجب تسريحة من نادية أولاً"
+  },
+  {
+    "index": 534,
+    "metadata": 0,
+    "text": "إسم مدرب جديد"
+  },
+  {
+    "index": 535,
+    "metadata": 0,
+    "text": "لاعب مصاب"
+  },
+  {
+    "index": 536,
+    "metadata": 0,
+    "text": "إختر لاعب لإستبدالة"
+  },
+  {
+    "index": 537,
+    "metadata": 0,
+    "text": "ضربة جزاء"
+  },
+  {
+    "index": 538,
+    "metadata": 0,
+    "text": "الموسم سجل "
+  },
+  {
+    "index": 539,
+    "metadata": 0,
+    "text": "دورة"
+  },
+  {
+    "index": 540,
+    "metadata": 0,
+    "text": "موقع"
+  },
+  {
+    "index": 541,
+    "metadata": 0,
+    "text": "مدربين"
+  },
+  {
+    "index": 542,
+    "metadata": 0,
+    "text": "المركز الثالث"
+  },
+  {
+    "index": 543,
+    "metadata": 0,
+    "text": "المركز الرابع"
+  },
+  {
+    "index": 544,
+    "metadata": 0,
+    "text": "مدرب طرد"
+  },
+  {
+    "index": 545,
+    "metadata": 0,
+    "text": "تغيرات المدربين"
+  },
+  {
+    "index": 546,
+    "metadata": 0,
+    "text": "طرد من"
+  },
+  {
+    "index": 547,
+    "metadata": 0,
+    "text": "مدرب جديد"
+  },
+  {
+    "index": 548,
+    "metadata": 0,
+    "text": "ذهب إلى"
+  },
+  {
+    "index": 549,
+    "metadata": 0,
+    "text": "الإنتقالات الأخيرة"
+  },
+  {
+    "index": 550,
+    "metadata": 0,
+    "text": "اللاعبين"
+  },
+  {
+    "index": 551,
+    "metadata": 0,
+    "text": "من"
+  },
+  {
+    "index": 552,
+    "metadata": 0,
+    "text": "إلى"
+  },
+  {
+    "index": 553,
+    "metadata": 0,
+    "text": "لاعبين"
+  },
+  {
+    "index": 554,
+    "metadata": 0,
+    "text": "مدربين"
+  },
+  {
+    "index": 555,
+    "metadata": 0,
+    "text": "كل اللاعبين"
+  },
+  {
+    "index": 556,
+    "metadata": 0,
+    "text": "قدم عرض"
+  },
+  {
+    "index": 557,
+    "metadata": 0,
+    "text": "قيمة اللاعب:"
+  },
+  {
+    "index": 558,
+    "metadata": 0,
+    "text": "عرضك:"
+  },
+  {
+    "index": 559,
+    "metadata": 0,
+    "text": "إعرض"
+  },
+  {
+    "index": 560,
+    "metadata": 0,
+    "text": "لا يريد اللعب فى فريقك"
+  },
+  {
+    "index": 561,
+    "metadata": 0,
+    "text": "لم يتم قبول عرضك"
+  },
+  {
+    "index": 562,
+    "metadata": 0,
+    "text": "ليلعب فى ناديك"
+  },
+  {
+    "index": 563,
+    "metadata": 0,
+    "text": "يريد علاوة"
+  },
+  {
+    "index": 564,
+    "metadata": 0,
+    "text": "أقبل"
+  },
+  {
+    "index": 565,
+    "metadata": 0,
+    "text": "أرفض"
+  },
+  {
+    "index": 566,
+    "metadata": 0,
+    "text": "صندوق البريد الإلكترونى"
+  },
+  {
+    "index": 567,
+    "metadata": 0,
+    "text": "هل تريد معاقبة اللاعب؟"
+  },
+  {
+    "index": 568,
+    "metadata": 0,
+    "text": "إدارة"
+  },
+  {
+    "index": 569,
+    "metadata": 0,
+    "text": "مشجعين"
+  },
+  {
+    "index": 570,
+    "metadata": 0,
+    "text": "لاعب"
+  },
+  {
+    "index": 571,
+    "metadata": 0,
+    "text": "ضغط"
+  },
+  {
+    "index": 572,
+    "metadata": 0,
+    "text": "المركز الطبى"
+  },
+  {
+    "index": 573,
+    "metadata": 0,
+    "text": "مرحباً إلى"
+  },
+  {
+    "index": 574,
+    "metadata": 0,
+    "text": "طرد"
+  },
+  {
+    "index": 575,
+    "metadata": 0,
+    "text": "لا أحب هذا"
+  },
+  {
+    "index": 576,
+    "metadata": 0,
+    "text": "مصاب"
+  },
+  {
+    "index": 577,
+    "metadata": 0,
+    "text": "لن نسمح بذلك"
+  },
+  {
+    "index": 578,
+    "metadata": 0,
+    "text": "لن نسمح بذلك"
+  },
+  {
+    "index": 579,
+    "metadata": 0,
+    "text": "يذهب إلى"
+  },
+  {
+    "index": 580,
+    "metadata": 0,
+    "text": "لم يوضح سبب "
+  },
+  {
+    "index": 581,
+    "metadata": 0,
+    "text": "شكراً لك"
+  },
+  {
+    "index": 582,
+    "metadata": 0,
+    "text": "شكوى"
+  },
+  {
+    "index": 583,
+    "metadata": 0,
+    "text": "إنتهى عقدى"
+  },
+  {
+    "index": 584,
+    "metadata": 0,
+    "text": "شجار بين"
+  },
+  {
+    "index": 585,
+    "metadata": 0,
+    "text": "شجار بين المشجعين"
+  },
+  {
+    "index": 586,
+    "metadata": 0,
+    "text": "نقل إلى"
+  },
+  {
+    "index": 587,
+    "metadata": 0,
+    "text": "دعاوى الفريق المحلى"
+  },
+  {
+    "index": 588,
+    "metadata": 0,
+    "text": "ينتهى العقد قريباً"
+  },
+  {
+    "index": 589,
+    "metadata": 0,
+    "text": "عقد منتهى"
+  },
+  {
+    "index": 590,
+    "metadata": 0,
+    "text": "لا يوجد مكان للاعب"
+  },
+  {
+    "index": 591,
+    "metadata": 0,
+    "text": "موقوف ل١٠ مباريات بعد أن بصق فى وجة الحكم"
+  },
+  {
+    "index": 592,
+    "metadata": 0,
+    "text": "موقوف ل١٠ مباريات بعد أن شتم الحكم"
+  },
+  {
+    "index": 593,
+    "metadata": 0,
+    "text": "موقوف ل٥ مباريات بعد أن تزحلق على لاعب من الخلف وكسرة"
+  },
+  {
+    "index": 594,
+    "metadata": 0,
+    "text": "موقوف ل٥ مباريات بعد أن شتم لاعب أخر. نعتقد بأنة عقاب غير عادل"
+  },
+  {
+    "index": 595,
+    "metadata": 0,
+    "text": "موقوف ل٥ مباريات بعد أن ضرب لاعب. نعتقد بأنة عقاب غير عادل"
+  },
+  {
+    "index": 596,
+    "metadata": 0,
+    "text": "موقوف ل٣ مباريات بعد أن تزحلق على لاعب من الخلف "
+  },
+  {
+    "index": 597,
+    "metadata": 0,
+    "text": "موقوف ل٣ مباريات بعد أن وغز أنف لاعب "
+  },
+  {
+    "index": 598,
+    "metadata": 0,
+    "text": " موقوف ل٣ مباريات بعد أن أعاق لاعب من تسجيل هدف محتم"
+  },
+  {
+    "index": 599,
+    "metadata": 0,
+    "text": " موقوف ل٣ مباريات بعد ضرب لاعب فى وجهه"
+  },
+  {
+    "index": 600,
+    "metadata": 0,
+    "text": "موقوف لمبارتين لإستعمالة العنف فى اللعب"
+  },
+  {
+    "index": 601,
+    "metadata": 0,
+    "text": "موقوف لمبارتين لركلة للاعب، هل يظن ان كرة القدم لعبة قتال؟"
+  },
+  {
+    "index": 602,
+    "metadata": 0,
+    "text": "موقوف لمبارتين لتسببة فى ضربة جزاء"
+  },
+  {
+    "index": 603,
+    "metadata": 0,
+    "text": "مصاب لأسبوع بسبب شد عضلى"
+  },
+  {
+    "index": 604,
+    "metadata": 0,
+    "text": "مصاب فى بعض المباريات بسبب إلتواء فى الأربطة"
+  },
+  {
+    "index": 605,
+    "metadata": 0,
+    "text": "مصاب لإسبوعين لإصابتة فى الفخذ"
+  },
+  {
+    "index": 606,
+    "metadata": 0,
+    "text": "مصاب فى بعض المباريات بسبب كدمات فى الفخذ"
+  },
+  {
+    "index": 607,
+    "metadata": 0,
+    "text": "مصاب لإسبوعين لإصابتة فى الفخذ"
+  },
+  {
+    "index": 608,
+    "metadata": 0,
+    "text": "اللاعب مصاب لأسبوع بسبب شد عضلى"
+  },
+  {
+    "index": 609,
+    "metadata": 0,
+    "text": "مصاب لإسبوعين بسبب إلتواء كاحلة"
+  },
+  {
+    "index": 610,
+    "metadata": 0,
+    "text": "متوقع خروجة فى العديد من المباريات بسبب تمزق فى أوتار الركبة"
+  },
+  {
+    "index": 611,
+    "metadata": 0,
+    "text": "لن يلعب بدعة أيام لتلقية علاج لكعبة"
+  },
+  {
+    "index": 612,
+    "metadata": 0,
+    "text": "لن يلعب بدعة أيام لإستئصال إصبع قدمة"
+  },
+  {
+    "index": 613,
+    "metadata": 0,
+    "text": "لن يلعب بدعة أيام لإلتواء ركبتة"
+  },
+  {
+    "index": 614,
+    "metadata": 0,
+    "text": "لن يلعب عدة أسابيع بسبب كسر فى إصبع قدمة"
+  },
+  {
+    "index": 615,
+    "metadata": 0,
+    "text": "لن يلعب عدة أسابيع بسبب كسر معصمة"
+  },
+  {
+    "index": 616,
+    "metadata": 0,
+    "text": "مصاب لعدة أسابيع بسبب إجهاد عضلى فى الفخذ"
+  },
+  {
+    "index": 617,
+    "metadata": 0,
+    "text": "مصاب لعدة أسابيع بسبب جرح بليغ فى القدم"
+  },
+  {
+    "index": 618,
+    "metadata": 0,
+    "text": "مصاب لعدة أسابيع بسبب إلتواء قوى لكاحلة"
+  },
+  {
+    "index": 619,
+    "metadata": 0,
+    "text": "اللاعب أصيب بأزمة قلبية، ربما حان الوقت ليعتزل"
+  },
+  {
+    "index": 620,
+    "metadata": 0,
+    "text": "مصاب لعدة أسابيع بسبب كسر ساقة"
+  },
+  {
+    "index": 621,
+    "metadata": 0,
+    "text": "مصاب لعدة أشهر بسبب تمزق فى الرباط الصليبى"
+  },
+  {
+    "index": 622,
+    "metadata": 0,
+    "text": "مصاب لعدة أشهر بسبب كسر ساقة"
+  },
+  {
+    "index": 623,
+    "metadata": 0,
+    "text": "إجهلد فى أربطة الركبة، هل هذا نهاية مهنتة؟"
+  },
+  {
+    "index": 624,
+    "metadata": 0,
+    "text": "مرحباً بك فى نادينا، ستتلقى هنا بعض الملاحظات والتحذيرات"
+  },
+  {
+    "index": 625,
+    "metadata": 0,
+    "text": "لن نسمح بأن يذل نادينا هكذا! إحظر"
+  },
+  {
+    "index": 626,
+    "metadata": 0,
+    "text": "لا تستطيع الخسارة بهذا الفارق الكبير، إذا إستمر الأمر سنطلب من الإدارة بطردك"
+  },
+  {
+    "index": 627,
+    "metadata": 0,
+    "text": "لن نتهاون فى الخسارة بهذا الفارق الكبير، إذا إستمر الأمر سنطلب من الإدارة بطردك"
+  },
+  {
+    "index": 628,
+    "metadata": 0,
+    "text": "شكراً لذيادة راتبى، سأبين أمتنانى فى الملعب"
+  },
+  {
+    "index": 629,
+    "metadata": 0,
+    "text": "تم بيع اللاعب المعروض للبيع"
+  },
+  {
+    "index": 630,
+    "metadata": 0,
+    "text": "سمعنا بعض الملاحظات عن دعوتك للفرق المحلية، إنتظر دعوة رسمية خلال الأسبوع القادم"
+  },
+  {
+    "index": 631,
+    "metadata": 0,
+    "text": "سينتهى عقد اللاعب خلال ٣ أسابيع"
+  },
+  {
+    "index": 632,
+    "metadata": 0,
+    "text": "إنتهى عقد اللاعب اليوم"
+  },
+  {
+    "index": 633,
+    "metadata": 0,
+    "text": "إنتهى قرض اللعب لكنة سيعود للفريق فقط حين يكون عدد اللعيبة أقل من ٢٨ لاعب"
+  },
+  {
+    "index": 634,
+    "metadata": 0,
+    "text": "حدث إنتقال كبير هذا الإسبوع، اللاعب متواجد حالياً فى الفريق المنافس"
+  },
+  {
+    "index": 635,
+    "metadata": 0,
+    "text": "اللاعب سيقيم مؤتمر صحفى اليوم ليتحدث عن هذا الإنتقال الكبير"
+  },
+  {
+    "index": 636,
+    "metadata": 0,
+    "text": "هل أنت مجنون؟ أنت لا تستطيع معاقبتى!"
+  },
+  {
+    "index": 637,
+    "metadata": 0,
+    "text": "لم يعجبنى ذلك، الطرد لم يكن خطئى"
+  },
+  {
+    "index": 638,
+    "metadata": 0,
+    "text": "لم يرحب باللاعب الجديد، ربما لديك الكثير من اللعيبة النجوم فى فريقك"
+  },
+  {
+    "index": 639,
+    "metadata": 0,
+    "text": "اللاعب غير سعيد لأنة لم يلعب أى مباراة و يريد الإنتقال لنادى أخر"
+  },
+  {
+    "index": 640,
+    "metadata": 0,
+    "text": "إنتهى عقدى، رجاء جدد عقدى أو أنقلنى لأى نادى أخر"
+  },
+  {
+    "index": 641,
+    "metadata": 0,
+    "text": "إندلعت عركة فى الملعب بين هذة اللعيبة"
+  },
+  {
+    "index": 642,
+    "metadata": 0,
+    "text": "اللعيبة والمعجبين تشاجرو اليوم، أعتقد أن السبب هو نتائجنا السيئة"
+  },
+  {
+    "index": 643,
+    "metadata": 0,
+    "text": "أنا غير مسرور بالضغط على فى المباريات، أحتاج لبعض الوقت للراحة"
+  },
+  {
+    "index": 644,
+    "metadata": 0,
+    "text": "فارغ"
+  },
+  {
+    "index": 645,
+    "metadata": 0,
+    "text": "فارغ"
+  },
+  {
+    "index": 646,
+    "metadata": 0,
+    "text": "فارغ"
+  },
+  {
+    "index": 647,
+    "metadata": 0,
+    "text": "فارغ"
+  },
+  {
+    "index": 648,
+    "metadata": 0,
+    "text": "فارغ"
+  },
+  {
+    "index": 649,
+    "metadata": 0,
+    "text": "الحد من 3 بدائل"
+  },
+  {
+    "index": 650,
+    "metadata": 0,
+    "text": "التجهيزات"
+  },
+  {
+    "index": 651,
+    "metadata": 0,
+    "text": "حشد"
+  },
+  {
+    "index": 652,
+    "metadata": 0,
+    "text": "دخل"
+  },
+  {
+    "index": 653,
+    "metadata": 0,
+    "text": "أكد"
+  },
+  {
+    "index": 654,
+    "metadata": 0,
+    "text": "عل تريد الإستقالة؟"
+  },
+  {
+    "index": 655,
+    "metadata": 0,
+    "text": "أهداف"
+  },
+  {
+    "index": 656,
+    "metadata": 0,
+    "text": "تصنيف الدورى"
+  },
+  {
+    "index": 657,
+    "metadata": 0,
+    "text": "إستحواز الكرة"
+  },
+  {
+    "index": 658,
+    "metadata": 0,
+    "text": "تسديدات"
+  },
+  {
+    "index": 659,
+    "metadata": 0,
+    "text": "المعالجة"
+  },
+  {
+    "index": 660,
+    "metadata": 0,
+    "text": "تمريرات خاطئة"
+  },
+  {
+    "index": 661,
+    "metadata": 0,
+    "text": "إرتكب خطأ"
+  },
+  {
+    "index": 662,
+    "metadata": 0,
+    "text": "عرض إنتقال"
+  },
+  {
+    "index": 663,
+    "metadata": 0,
+    "text": "يريد اللاعب:"
+  },
+  {
+    "index": 664,
+    "metadata": 0,
+    "text": "قيمة العرض:"
+  },
+  {
+    "index": 665,
+    "metadata": 0,
+    "text": "أقبل و أنقل اللاعب؟"
+  },
+  {
+    "index": 666,
+    "metadata": 0,
+    "text": "الترتيب حسب الموقع النهائى"
+  },
+  {
+    "index": 667,
+    "metadata": 0,
+    "text": "الترتيب حسب النقط"
+  },
+  {
+    "index": 668,
+    "metadata": 0,
+    "text": "الصيغة: نقاط/أهداف لصالح/أهداف على"
+  },
+  {
+    "index": 669,
+    "metadata": 0,
+    "text": "ترتيب العالم"
+  },
+  {
+    "index": 670,
+    "metadata": 0,
+    "text": "نقاط"
+  },
+  {
+    "index": 671,
+    "metadata": 0,
+    "text": "نقاط"
+  },
+  {
+    "index": 672,
+    "metadata": 0,
+    "text": "وفاة لاعب"
+  },
+  {
+    "index": 673,
+    "metadata": 0,
+    "text": "توفى اللاعب اليوم أثناء التدريب، غالباً بسبب تقدمة فى السن"
+  },
+  {
+    "index": 674,
+    "metadata": 0,
+    "text": "بسبب هذا خسر فريقك ٥ نقاط فى الدورى"
+  },
+  {
+    "index": 675,
+    "metadata": 0,
+    "text": "أختر فريق محلى لتدريبة"
+  },
+  {
+    "index": 676,
+    "metadata": 0,
+    "text": "بعض الفرق المحلية تريدك كمدرب لها، إختر من الأسفل الفريق المحلى الذى تريد تدريبة"
+  },
+  {
+    "index": 677,
+    "metadata": 0,
+    "text": "إبحث عن لعيبة لبدء فريق محلى"
+  },
+  {
+    "index": 678,
+    "metadata": 0,
+    "text": "إبحث عن اللعيبة ثم إضغط على \"˃˃\" لإضافتة. يمكنك إستدعاء ٢٠ لاعب و ٣ حراس مرمى"
+  },
+  {
+    "index": 679,
+    "metadata": 0,
+    "text": "المباريات الرابحة"
+  },
+  {
+    "index": 680,
+    "metadata": 0,
+    "text": "المباريات الخاسرة"
+  },
+  {
+    "index": 681,
+    "metadata": 0,
+    "text": "أفضل مركز ثالث"
+  },
+  {
+    "index": 682,
+    "metadata": 0,
+    "text": "تقنى:"
+  },
+  {
+    "index": 683,
+    "metadata": 0,
+    "text": "إنضباط:"
+  },
+  {
+    "index": 684,
+    "metadata": 0,
+    "text": "موعد مباراة ودية"
+  },
+  {
+    "index": 685,
+    "metadata": 0,
+    "text": "موعد مباراة ودية قبل الموسم"
+  },
+  {
+    "index": 686,
+    "metadata": 0,
+    "text": "الدورى يبدأ فى"
+  },
+  {
+    "index": 687,
+    "metadata": 0,
+    "text": "تواريخ متاحة:"
+  },
+  {
+    "index": 688,
+    "metadata": 0,
+    "text": "إختر الفريق المنافس:"
+  },
+  {
+    "index": 689,
+    "metadata": 0,
+    "text": "مكان المباراة:"
+  },
+  {
+    "index": 690,
+    "metadata": 0,
+    "text": "ذهاب"
+  },
+  {
+    "index": 691,
+    "metadata": 0,
+    "text": "عودة"
+  },
+  {
+    "index": 692,
+    "metadata": 0,
+    "text": "إحجز مباراة ودية"
+  },
+  {
+    "index": 693,
+    "metadata": 0,
+    "text": "لدية مباراة ودية فى هذا الوقت"
+  },
+  {
+    "index": 694,
+    "metadata": 0,
+    "text": "رفض المباراة الودية"
+  },
+  {
+    "index": 695,
+    "metadata": 0,
+    "text": "لا يوجد مال كاف لدفع مصاريف المباراة الودية"
+  },
+  {
+    "index": 696,
+    "metadata": 0,
+    "text": "تم تحديد موعد للمباراة الودية"
+  },
+  {
+    "index": 697,
+    "metadata": 0,
+    "text": "تأكيد المباراة الودية"
+  },
+  {
+    "index": 698,
+    "metadata": 0,
+    "text": "يريد لهذة المباراة الودية"
+  },
+  {
+    "index": 699,
+    "metadata": 0,
+    "text": "يجب أن تدفع لهذة المباراة الودية، هل تريد تأكيد المباراة الودية؟"
+  },
+  {
+    "index": 700,
+    "metadata": 0,
+    "text": "لتأكيد المباراة الودية بين الناديين البشريين إختر نعم"
+  },
+  {
+    "index": 701,
+    "metadata": 0,
+    "text": "إختر رقم"
+  },
+  {
+    "index": 702,
+    "metadata": 0,
+    "text": "لا رقم"
+  },
+  {
+    "index": 703,
+    "metadata": 0,
+    "text": "هل تريد حجز مباراة ودية قبل الموسم؟"
+  },
+  {
+    "index": 704,
+    "metadata": 0,
+    "text": "عرض قرض"
+  },
+  {
+    "index": 705,
+    "metadata": 0,
+    "text": "هل تريد إقراض هذا اللاعب؟"
+  },
+  {
+    "index": 706,
+    "metadata": 0,
+    "text": "معرض الجوائز خال"
+  },
+  {
+    "index": 707,
+    "metadata": 0,
+    "text": "ألوان الفريق"
+  },
+  {
+    "index": 708,
+    "metadata": 0,
+    "text": "اللون الرئيسى:"
+  },
+  {
+    "index": 709,
+    "metadata": 0,
+    "text": "اللون الفرعى:"
+  },
+  {
+    "index": 710,
+    "metadata": 0,
+    "text": "إستكمل المباراة"
+  },
+  {
+    "index": 711,
+    "metadata": 0,
+    "text": "إحصائيات المباراة"
+  },
+  {
+    "index": 712,
+    "metadata": 0,
+    "text": "الجذء الأول"
+  },
+  {
+    "index": 713,
+    "metadata": 0,
+    "text": "إحصائيات المهنة"
+  },
+  {
+    "index": 714,
+    "metadata": 0,
+    "text": "مباريات الموسم الحالى"
+  },
+  {
+    "index": 715,
+    "metadata": 0,
+    "text": "تاريخ"
+  },
+  {
+    "index": 716,
+    "metadata": 0,
+    "text": "مباراة"
+  },
+  {
+    "index": 717,
+    "metadata": 0,
+    "text": "تقييم"
+  },
+  {
+    "index": 718,
+    "metadata": 0,
+    "text": "قدرة الإستعاب الحالية"
+  },
+  {
+    "index": 719,
+    "metadata": 0,
+    "text": "بلكون:"
+  },
+  {
+    "index": 720,
+    "metadata": 0,
+    "text": "مقاعد عادية:"
+  },
+  {
+    "index": 721,
+    "metadata": 0,
+    "text": "مقاعد مغطاة:"
+  },
+  {
+    "index": 722,
+    "metadata": 0,
+    "text": "أماكن الشخصيات الهامة"
+  },
+  {
+    "index": 723,
+    "metadata": 0,
+    "text": "أسعار التذاكر"
+  },
+  {
+    "index": 724,
+    "metadata": 0,
+    "text": "أقترح أسعار لهذة المجموعة:"
+  },
+  {
+    "index": 725,
+    "metadata": 0,
+    "text": "مقاعد"
+  },
+  {
+    "index": 726,
+    "metadata": 0,
+    "text": "وسع الإستاد"
+  },
+  {
+    "index": 727,
+    "metadata": 0,
+    "text": "ستنتهى التوسيعات فى"
+  },
+  {
+    "index": 728,
+    "metadata": 0,
+    "text": "أقصى"
+  },
+  {
+    "index": 729,
+    "metadata": 0,
+    "text": "مقاعد جديدة"
+  },
+  {
+    "index": 730,
+    "metadata": 0,
+    "text": "طلب تخمين للأسعار"
+  },
+  {
+    "index": 731,
+    "metadata": 0,
+    "text": "إبدأ التوسيعات"
+  },
+  {
+    "index": 732,
+    "metadata": 0,
+    "text": "تخمين تكلفة التوسيعات يتضمن تنفيذ المشروع"
+  },
+  {
+    "index": 733,
+    "metadata": 0,
+    "text": "يتوقع إنتهاء المشروع فى"
+  },
+  {
+    "index": 734,
+    "metadata": 0,
+    "text": "لا توجد حاليا التكنولوجيا اللازمة لتوسيع الأستاد بالمقاعد المطلوبة"
+  },
+  {
+    "index": 735,
+    "metadata": 0,
+    "text": "لا يوجد مال كاف لبدء التوسيعات"
+  },
+  {
+    "index": 736,
+    "metadata": 0,
+    "text": "محرر الفرق"
+  },
+  {
+    "index": 737,
+    "metadata": 0,
+    "text": "جار تحميل الفرق..."
+  },
+  {
+    "index": 738,
+    "metadata": 0,
+    "text": "إجمالى الفرق:"
+  },
+  {
+    "index": 739,
+    "metadata": 0,
+    "text": "الفرق"
+  },
+  {
+    "index": 740,
+    "metadata": 0,
+    "text": "الفرق المحلية"
+  },
+  {
+    "index": 741,
+    "metadata": 0,
+    "text": "أضف فريق"
+  },
+  {
+    "index": 742,
+    "metadata": 0,
+    "text": "حرر فريق"
+  },
+  {
+    "index": 743,
+    "metadata": 0,
+    "text": "محو فريق"
+  },
+  {
+    "index": 744,
+    "metadata": 0,
+    "text": "بلد"
+  },
+  {
+    "index": 745,
+    "metadata": 0,
+    "text": "مستوى"
+  },
+  {
+    "index": 746,
+    "metadata": 0,
+    "text": "القائمة الرئيسية"
+  },
+  {
+    "index": 747,
+    "metadata": 0,
+    "text": "خروج من اللعبة"
+  },
+  {
+    "index": 748,
+    "metadata": 0,
+    "text": "السن"
+  },
+  {
+    "index": 749,
+    "metadata": 0,
+    "text": "المدرب"
+  },
+  {
+    "index": 750,
+    "metadata": 0,
+    "text": "الإستاد"
+  },
+  {
+    "index": 751,
+    "metadata": 0,
+    "text": "اللعيبة"
+  },
+  {
+    "index": 752,
+    "metadata": 0,
+    "text": "أضف لاعب"
+  },
+  {
+    "index": 753,
+    "metadata": 0,
+    "text": "حرر لاعب"
+  },
+  {
+    "index": 754,
+    "metadata": 0,
+    "text": "محو لاعب"
+  },
+  {
+    "index": 755,
+    "metadata": 0,
+    "text": "لديك حد أقصى ٢٥ لاعب"
+  },
+  {
+    "index": 756,
+    "metadata": 0,
+    "text": "هل تريد محو هذا الفريق؟"
+  },
+  {
+    "index": 757,
+    "metadata": 0,
+    "text": "الإسم الكامل"
+  },
+  {
+    "index": 758,
+    "metadata": 0,
+    "text": "الإسم المختصر"
+  },
+  {
+    "index": 759,
+    "metadata": 0,
+    "text": "اللون الرئيسى"
+  },
+  {
+    "index": 760,
+    "metadata": 0,
+    "text": "اللون الرئيسى"
+  },
+  {
+    "index": 761,
+    "metadata": 0,
+    "text": "اللاعب النجم"
+  },
+  {
+    "index": 762,
+    "metadata": 0,
+    "text": "خصائص"
+  },
+  {
+    "index": 763,
+    "metadata": 0,
+    "text": "موقع"
+  },
+  {
+    "index": 764,
+    "metadata": 0,
+    "text": "إضغط لإختيار شعار"
+  },
+  {
+    "index": 765,
+    "metadata": 0,
+    "text": "إسم الملف"
+  },
+  {
+    "index": 766,
+    "metadata": 0,
+    "text": "الإسم موجود بالفعل، رجاء إختر إسم أخر"
+  },
+  {
+    "index": 767,
+    "metadata": 0,
+    "text": "تسجيل نسختك سيدعم النسخ المستقبلية، إمكانيات جديدة، إصلاح المشاكل و دعم فنى عن طريق البريد الإلكترونى"
+  },
+  {
+    "index": 768,
+    "metadata": 0,
+    "text": "فى النسخة المسجلة يمكنك:"
+  },
+  {
+    "index": 769,
+    "metadata": 0,
+    "text": "دخول منطقة الأعضاء لتحميل دورات جديدة، شعارات، إلخ..."
+  },
+  {
+    "index": 770,
+    "metadata": 0,
+    "text": "إبدأ اللعبة بفريق من أى مجموعة"
+  },
+  {
+    "index": 771,
+    "metadata": 0,
+    "text": "إلعب بأكثر من فريق بشرى"
+  },
+  {
+    "index": 772,
+    "metadata": 0,
+    "text": "إلعب منافسات الفرق المحلية (كأس العالم، كأس أوروبا، كأس أمريكا)"
+  },
+  {
+    "index": 773,
+    "metadata": 0,
+    "text": "ضع عروض لأى لاعب حتى لو لم يكن على قائمة التحويلات أو القروض"
+  },
+  {
+    "index": 774,
+    "metadata": 0,
+    "text": "إلعب المباراة بخيارات سرعة أسرع"
+  },
+  {
+    "index": 775,
+    "metadata": 0,
+    "text": "لتسجيل نسختك برجاء الذهاب إلى هذا الموقع"
+  },
+  {
+    "index": 776,
+    "metadata": 0,
+    "text": ".يمكنك الدفع بالبطاقة الإئتمانية (فيزا, ماستر كارد, أميريكان إكسبريس, داينرز كلوب), شيك, حوالة بريدية, باى بال, ويسترن يونيون, مونيغرام أو حوالة بريدية دولية"
+  },
+  {
+    "index": 777,
+    "metadata": 0,
+    "text": "فور إخطارنا بتمام أمر الشراء (عادة يستغرق يوم عمل واحد), سنرسل لك رقم تسجيل الرخصة ثم أكتبة فى الأسفل"
+  },
+  {
+    "index": 778,
+    "metadata": 0,
+    "text": "الإسم"
+  },
+  {
+    "index": 779,
+    "metadata": 0,
+    "text": "الكود"
+  },
+  {
+    "index": 780,
+    "metadata": 0,
+    "text": "أدخل الكود"
+  },
+  {
+    "index": 781,
+    "metadata": 0,
+    "text": "CyberFoot عبارة عن لعبة مجانية لمحاكاة إدارة كرة القدم"
+  },
+  {
+    "index": 782,
+    "metadata": 0,
+    "text": "حمل اللعبة من www.cyberfoot.org "
+  },
+  {
+    "index": 783,
+    "metadata": 0,
+    "text": "فى النسخة المسجلة فقط تستطيع وضع عروض لأى لاعب حتى لو لم يكن على قائمة التحويلات. سجل نسختك على www.cyberfoot.org "
+  },
+  {
+    "index": 784,
+    "metadata": 0,
+    "text": "فى النسخة المسجلة فقط تستطيع الحصول على أى لاعب متاح للقرض. سجل نسختك على www.cyberfoot.org "
+  },
+  {
+    "index": 785,
+    "metadata": 0,
+    "text": "قائمة البلاد"
+  },
+  {
+    "index": 786,
+    "metadata": 0,
+    "text": "أفغانستان"
+  },
+  {
+    "index": 787,
+    "metadata": 0,
+    "text": "جنو أفريقيا"
+  },
+  {
+    "index": 788,
+    "metadata": 0,
+    "text": "ألبانيا"
+  },
+  {
+    "index": 789,
+    "metadata": 0,
+    "text": "ألمانيا"
+  },
+  {
+    "index": 790,
+    "metadata": 0,
+    "text": "أندورا"
+  },
+  {
+    "index": 791,
+    "metadata": 0,
+    "text": "أنجولا"
+  },
+  {
+    "index": 792,
+    "metadata": 0,
+    "text": "أنجويلا"
+  },
+  {
+    "index": 793,
+    "metadata": 0,
+    "text": "أنتيجا"
+  },
+  {
+    "index": 794,
+    "metadata": 0,
+    "text": "نيزرلاندز"
+  },
+  {
+    "index": 795,
+    "metadata": 0,
+    "text": "السعودية"
+  },
+  {
+    "index": 796,
+    "metadata": 0,
+    "text": "الجزائر"
+  },
+  {
+    "index": 797,
+    "metadata": 0,
+    "text": "الأرجنتين"
+  },
+  {
+    "index": 798,
+    "metadata": 0,
+    "text": "أرمنيا"
+  },
+  {
+    "index": 799,
+    "metadata": 0,
+    "text": "أروبا"
+  },
+  {
+    "index": 800,
+    "metadata": 0,
+    "text": "أستراليا"
+  },
+  {
+    "index": 801,
+    "metadata": 0,
+    "text": "أستريا"
+  },
+  {
+    "index": 802,
+    "metadata": 0,
+    "text": "أزيربايجان"
+  },
+  {
+    "index": 803,
+    "metadata": 0,
+    "text": "جزر البهاما"
+  },
+  {
+    "index": 804,
+    "metadata": 0,
+    "text": "البحرين"
+  },
+  {
+    "index": 805,
+    "metadata": 0,
+    "text": "بنجلادش"
+  },
+  {
+    "index": 806,
+    "metadata": 0,
+    "text": "بربادوس"
+  },
+  {
+    "index": 807,
+    "metadata": 0,
+    "text": "بلجيكا"
+  },
+  {
+    "index": 808,
+    "metadata": 0,
+    "text": "بليز"
+  },
+  {
+    "index": 809,
+    "metadata": 0,
+    "text": "بنين"
+  },
+  {
+    "index": 810,
+    "metadata": 0,
+    "text": "برمودا"
+  },
+  {
+    "index": 811,
+    "metadata": 0,
+    "text": "بلاروس"
+  },
+  {
+    "index": 812,
+    "metadata": 0,
+    "text": "بوليفيا"
+  },
+  {
+    "index": 813,
+    "metadata": 0,
+    "text": "بوسنيا"
+  },
+  {
+    "index": 814,
+    "metadata": 0,
+    "text": "بوتسوانا"
+  },
+  {
+    "index": 815,
+    "metadata": 0,
+    "text": "البرازيل"
+  },
+  {
+    "index": 816,
+    "metadata": 0,
+    "text": "برونى"
+  },
+  {
+    "index": 817,
+    "metadata": 0,
+    "text": "بلغاريا"
+  },
+  {
+    "index": 818,
+    "metadata": 0,
+    "text": "بوركينا فاسو"
+  },
+  {
+    "index": 819,
+    "metadata": 0,
+    "text": "بروندى"
+  },
+  {
+    "index": 820,
+    "metadata": 0,
+    "text": "بهوتان"
+  },
+  {
+    "index": 821,
+    "metadata": 0,
+    "text": "كيب فرتى"
+  },
+  {
+    "index": 822,
+    "metadata": 0,
+    "text": "الكاميرون"
+  },
+  {
+    "index": 823,
+    "metadata": 0,
+    "text": "كامبوديا"
+  },
+  {
+    "index": 824,
+    "metadata": 0,
+    "text": "كندا"
+  },
+  {
+    "index": 825,
+    "metadata": 0,
+    "text": "قطر"
+  },
+  {
+    "index": 826,
+    "metadata": 0,
+    "text": "كازاخستان"
+  },
+  {
+    "index": 827,
+    "metadata": 0,
+    "text": "شاد"
+  },
+  {
+    "index": 828,
+    "metadata": 0,
+    "text": "شيلى"
+  },
+  {
+    "index": 829,
+    "metadata": 0,
+    "text": "الصين"
+  },
+  {
+    "index": 830,
+    "metadata": 0,
+    "text": "القبرص"
+  },
+  {
+    "index": 831,
+    "metadata": 0,
+    "text": "سنغافورة"
+  },
+  {
+    "index": 832,
+    "metadata": 0,
+    "text": "كولومبيا"
+  },
+  {
+    "index": 833,
+    "metadata": 0,
+    "text": "الكونغو"
+  },
+  {
+    "index": 834,
+    "metadata": 0,
+    "text": "شمال كوريا"
+  },
+  {
+    "index": 835,
+    "metadata": 0,
+    "text": "جنوب كوريا"
+  },
+  {
+    "index": 836,
+    "metadata": 0,
+    "text": "كوتيفوار"
+  },
+  {
+    "index": 837,
+    "metadata": 0,
+    "text": "كوستاريكا"
+  },
+  {
+    "index": 838,
+    "metadata": 0,
+    "text": "كرواتيا"
+  },
+  {
+    "index": 839,
+    "metadata": 0,
+    "text": "كوبا"
+  },
+  {
+    "index": 840,
+    "metadata": 0,
+    "text": "دنمارك"
+  },
+  {
+    "index": 841,
+    "metadata": 0,
+    "text": "جيبوتى"
+  },
+  {
+    "index": 842,
+    "metadata": 0,
+    "text": "دومينيكا"
+  },
+  {
+    "index": 843,
+    "metadata": 0,
+    "text": "مصر"
+  },
+  {
+    "index": 844,
+    "metadata": 0,
+    "text": "السلفادور"
+  },
+  {
+    "index": 845,
+    "metadata": 0,
+    "text": "الإمارات"
+  },
+  {
+    "index": 846,
+    "metadata": 0,
+    "text": "الإكوادور"
+  },
+  {
+    "index": 847,
+    "metadata": 0,
+    "text": "إريتريا"
+  },
+  {
+    "index": 848,
+    "metadata": 0,
+    "text": "أسكتلندا"
+  },
+  {
+    "index": 849,
+    "metadata": 0,
+    "text": "سلوفاكيا"
+  },
+  {
+    "index": 850,
+    "metadata": 0,
+    "text": "سلوفين"
+  },
+  {
+    "index": 851,
+    "metadata": 0,
+    "text": "أسبانيا"
+  },
+  {
+    "index": 852,
+    "metadata": 0,
+    "text": "إستونيا"
+  },
+  {
+    "index": 853,
+    "metadata": 0,
+    "text": "أسيوبيا"
+  },
+  {
+    "index": 854,
+    "metadata": 0,
+    "text": "الولايات المتحدة الأمريكية"
+  },
+  {
+    "index": 855,
+    "metadata": 0,
+    "text": "فيجى"
+  },
+  {
+    "index": 856,
+    "metadata": 0,
+    "text": "فنلاند"
+  },
+  {
+    "index": 857,
+    "metadata": 0,
+    "text": "الفلبين"
+  },
+  {
+    "index": 858,
+    "metadata": 0,
+    "text": "فرنسا"
+  },
+  {
+    "index": 859,
+    "metadata": 0,
+    "text": "جابون"
+  },
+  {
+    "index": 860,
+    "metadata": 0,
+    "text": "جامبيا"
+  },
+  {
+    "index": 861,
+    "metadata": 0,
+    "text": "غانا"
+  },
+  {
+    "index": 862,
+    "metadata": 0,
+    "text": "جورجيا"
+  },
+  {
+    "index": 863,
+    "metadata": 0,
+    "text": "جرينادا"
+  },
+  {
+    "index": 864,
+    "metadata": 0,
+    "text": "اليونان"
+  },
+  {
+    "index": 865,
+    "metadata": 0,
+    "text": "جواتيمالا"
+  },
+  {
+    "index": 866,
+    "metadata": 0,
+    "text": "جويانا"
+  },
+  {
+    "index": 867,
+    "metadata": 0,
+    "text": "جوينا"
+  },
+  {
+    "index": 868,
+    "metadata": 0,
+    "text": "جوينا بيساو"
+  },
+  {
+    "index": 869,
+    "metadata": 0,
+    "text": "جوينا الإستوائية"
+  },
+  {
+    "index": 870,
+    "metadata": 0,
+    "text": "هايتى"
+  },
+  {
+    "index": 871,
+    "metadata": 0,
+    "text": "هولندا"
+  },
+  {
+    "index": 872,
+    "metadata": 0,
+    "text": "هندوراس"
+  },
+  {
+    "index": 873,
+    "metadata": 0,
+    "text": "هونج كونج"
+  },
+  {
+    "index": 874,
+    "metadata": 0,
+    "text": "المجر"
+  },
+  {
+    "index": 875,
+    "metadata": 0,
+    "text": "اليمن"
+  },
+  {
+    "index": 876,
+    "metadata": 0,
+    "text": "جزر كايمن"
+  },
+  {
+    "index": 877,
+    "metadata": 0,
+    "text": "جزر كووك"
+  },
+  {
+    "index": 878,
+    "metadata": 0,
+    "text": "جزر فاروى"
+  },
+  {
+    "index": 879,
+    "metadata": 0,
+    "text": "جزر سليمان"
+  },
+  {
+    "index": 880,
+    "metadata": 0,
+    "text": "جزر بريطانبا العزراء"
+  },
+  {
+    "index": 881,
+    "metadata": 0,
+    "text": "الهند"
+  },
+  {
+    "index": 882,
+    "metadata": 0,
+    "text": "إندونيسيا"
+  },
+  {
+    "index": 883,
+    "metadata": 0,
+    "text": "أنجلترا"
+  },
+  {
+    "index": 884,
+    "metadata": 0,
+    "text": "إيران"
+  },
+  {
+    "index": 885,
+    "metadata": 0,
+    "text": "العراق"
+  },
+  {
+    "index": 886,
+    "metadata": 0,
+    "text": "أيرلندا"
+  },
+  {
+    "index": 887,
+    "metadata": 0,
+    "text": "أيرلندا الشمالية"
+  },
+  {
+    "index": 888,
+    "metadata": 0,
+    "text": "أيسلندا"
+  },
+  {
+    "index": 889,
+    "metadata": 0,
+    "text": "إسرائيل"
+  },
+  {
+    "index": 890,
+    "metadata": 0,
+    "text": "إيطاليا"
+  },
+  {
+    "index": 891,
+    "metadata": 0,
+    "text": "منتينجرو"
+  },
+  {
+    "index": 892,
+    "metadata": 0,
+    "text": "جاميكا"
+  },
+  {
+    "index": 893,
+    "metadata": 0,
+    "text": "اليابان"
+  },
+  {
+    "index": 894,
+    "metadata": 0,
+    "text": "الأردن"
+  },
+  {
+    "index": 895,
+    "metadata": 0,
+    "text": "كينيا"
+  },
+  {
+    "index": 896,
+    "metadata": 0,
+    "text": "كوسفو"
+  },
+  {
+    "index": 897,
+    "metadata": 0,
+    "text": "الكويت"
+  },
+  {
+    "index": 898,
+    "metadata": 0,
+    "text": "لايوس"
+  },
+  {
+    "index": 899,
+    "metadata": 0,
+    "text": "ليسوسو"
+  },
+  {
+    "index": 900,
+    "metadata": 0,
+    "text": "لاتفيا"
+  },
+  {
+    "index": 901,
+    "metadata": 0,
+    "text": "لبنان"
+  },
+  {
+    "index": 902,
+    "metadata": 0,
+    "text": "ليبيا"
+  },
+  {
+    "index": 903,
+    "metadata": 0,
+    "text": "ليبيريا"
+  },
+  {
+    "index": 904,
+    "metadata": 0,
+    "text": "ليشنستين"
+  },
+  {
+    "index": 905,
+    "metadata": 0,
+    "text": "ليثوانيا"
+  },
+  {
+    "index": 906,
+    "metadata": 0,
+    "text": "لوكسمبرج"
+  },
+  {
+    "index": 907,
+    "metadata": 0,
+    "text": "ماكاو"
+  },
+  {
+    "index": 908,
+    "metadata": 0,
+    "text": "ماسيدونيا"
+  },
+  {
+    "index": 909,
+    "metadata": 0,
+    "text": "مدغشقر"
+  },
+  {
+    "index": 910,
+    "metadata": 0,
+    "text": "ماليزيا"
+  },
+  {
+    "index": 911,
+    "metadata": 0,
+    "text": "مالاوى"
+  },
+  {
+    "index": 912,
+    "metadata": 0,
+    "text": "جزر مالديفاز"
+  },
+  {
+    "index": 913,
+    "metadata": 0,
+    "text": "مالى"
+  },
+  {
+    "index": 914,
+    "metadata": 0,
+    "text": "مالتا"
+  },
+  {
+    "index": 915,
+    "metadata": 0,
+    "text": "المغرب"
+  },
+  {
+    "index": 916,
+    "metadata": 0,
+    "text": "موريتانيا"
+  },
+  {
+    "index": 917,
+    "metadata": 0,
+    "text": "المكسيك"
+  },
+  {
+    "index": 918,
+    "metadata": 0,
+    "text": "ميانمار"
+  },
+  {
+    "index": 919,
+    "metadata": 0,
+    "text": "مزامبيق"
+  },
+  {
+    "index": 920,
+    "metadata": 0,
+    "text": "مولدافا"
+  },
+  {
+    "index": 921,
+    "metadata": 0,
+    "text": "موناكو"
+  },
+  {
+    "index": 922,
+    "metadata": 0,
+    "text": "مونغوليا"
+  },
+  {
+    "index": 923,
+    "metadata": 0,
+    "text": "نامبيا"
+  },
+  {
+    "index": 924,
+    "metadata": 0,
+    "text": "نيبال"
+  },
+  {
+    "index": 925,
+    "metadata": 0,
+    "text": "نيكاراجوا"
+  },
+  {
+    "index": 926,
+    "metadata": 0,
+    "text": "نيجر"
+  },
+  {
+    "index": 927,
+    "metadata": 0,
+    "text": "نيجيريا"
+  },
+  {
+    "index": 928,
+    "metadata": 0,
+    "text": "النورواى"
+  },
+  {
+    "index": 929,
+    "metadata": 0,
+    "text": "نيوزيلاندا"
+  },
+  {
+    "index": 930,
+    "metadata": 0,
+    "text": "عمان"
+  },
+  {
+    "index": 931,
+    "metadata": 0,
+    "text": "والس"
+  },
+  {
+    "index": 932,
+    "metadata": 0,
+    "text": "فلسطين"
+  },
+  {
+    "index": 933,
+    "metadata": 0,
+    "text": "بنما"
+  },
+  {
+    "index": 934,
+    "metadata": 0,
+    "text": "بابوا نيو جوينا"
+  },
+  {
+    "index": 935,
+    "metadata": 0,
+    "text": "باكيستان"
+  },
+  {
+    "index": 936,
+    "metadata": 0,
+    "text": "براجواى"
+  },
+  {
+    "index": 937,
+    "metadata": 0,
+    "text": "بيرو"
+  },
+  {
+    "index": 938,
+    "metadata": 0,
+    "text": "بولاندا"
+  },
+  {
+    "index": 939,
+    "metadata": 0,
+    "text": "بورتو ريكو"
+  },
+  {
+    "index": 940,
+    "metadata": 0,
+    "text": "البرتغال"
+  },
+  {
+    "index": 941,
+    "metadata": 0,
+    "text": "كزخستان"
+  },
+  {
+    "index": 942,
+    "metadata": 0,
+    "text": "جنوب أفريقيا"
+  },
+  {
+    "index": 943,
+    "metadata": 0,
+    "text": "الكنغو"
+  },
+  {
+    "index": 944,
+    "metadata": 0,
+    "text": "دومينيكا"
+  },
+  {
+    "index": 945,
+    "metadata": 0,
+    "text": "التشيك"
+  },
+  {
+    "index": 946,
+    "metadata": 0,
+    "text": "رومانيا"
+  },
+  {
+    "index": 947,
+    "metadata": 0,
+    "text": "رواندا"
+  },
+  {
+    "index": 948,
+    "metadata": 0,
+    "text": "روسيا"
+  },
+  {
+    "index": 949,
+    "metadata": 0,
+    "text": "صموا"
+  },
+  {
+    "index": 950,
+    "metadata": 0,
+    "text": "سان مارينو"
+  },
+  {
+    "index": 951,
+    "metadata": 0,
+    "text": "سانت لوسيا"
+  },
+  {
+    "index": 952,
+    "metadata": 0,
+    "text": "سانت كيتس أند نيفيز"
+  },
+  {
+    "index": 953,
+    "metadata": 0,
+    "text": "وبرينسيبي تومي ساو "
+  },
+  {
+    "index": 954,
+    "metadata": 0,
+    "text": "سانت فينسنت أنت جريناديز"
+  },
+  {
+    "index": 955,
+    "metadata": 0,
+    "text": "السنغال"
+  },
+  {
+    "index": 956,
+    "metadata": 0,
+    "text": "سيرا ليون"
+  },
+  {
+    "index": 957,
+    "metadata": 0,
+    "text": "سيربيا"
+  },
+  {
+    "index": 958,
+    "metadata": 0,
+    "text": "سيشيليز"
+  },
+  {
+    "index": 959,
+    "metadata": 0,
+    "text": "سنغافورة"
+  },
+  {
+    "index": 960,
+    "metadata": 0,
+    "text": "سوريا"
+  },
+  {
+    "index": 961,
+    "metadata": 0,
+    "text": "السومال"
+  },
+  {
+    "index": 962,
+    "metadata": 0,
+    "text": "سريلانكا"
+  },
+  {
+    "index": 963,
+    "metadata": 0,
+    "text": "سوازىلاند"
+  },
+  {
+    "index": 964,
+    "metadata": 0,
+    "text": "السودان"
+  },
+  {
+    "index": 965,
+    "metadata": 0,
+    "text": "السويد"
+  },
+  {
+    "index": 966,
+    "metadata": 0,
+    "text": "سويتزرلاند"
+  },
+  {
+    "index": 967,
+    "metadata": 0,
+    "text": "سورينام"
+  },
+  {
+    "index": 968,
+    "metadata": 0,
+    "text": "تاتجكيستان"
+  },
+  {
+    "index": 969,
+    "metadata": 0,
+    "text": "تايلاند"
+  },
+  {
+    "index": 970,
+    "metadata": 0,
+    "text": "تاهيتى"
+  },
+  {
+    "index": 971,
+    "metadata": 0,
+    "text": "تايوان"
+  },
+  {
+    "index": 972,
+    "metadata": 0,
+    "text": "تانزانيا"
+  },
+  {
+    "index": 973,
+    "metadata": 0,
+    "text": "تونجو"
+  },
+  {
+    "index": 974,
+    "metadata": 0,
+    "text": "تونجا"
+  },
+  {
+    "index": 975,
+    "metadata": 0,
+    "text": "ترينيداد و توباجو"
+  },
+  {
+    "index": 976,
+    "metadata": 0,
+    "text": "تونس"
+  },
+  {
+    "index": 977,
+    "metadata": 0,
+    "text": "تركمنستان"
+  },
+  {
+    "index": 978,
+    "metadata": 0,
+    "text": "تركيا"
+  },
+  {
+    "index": 979,
+    "metadata": 0,
+    "text": "أوكرانيا"
+  },
+  {
+    "index": 980,
+    "metadata": 0,
+    "text": "أوغاندا"
+  },
+  {
+    "index": 981,
+    "metadata": 0,
+    "text": "أوروجواى"
+  },
+  {
+    "index": 982,
+    "metadata": 0,
+    "text": "أوزباكستان"
+  },
+  {
+    "index": 983,
+    "metadata": 0,
+    "text": "فانواتو"
+  },
+  {
+    "index": 984,
+    "metadata": 0,
+    "text": "فنزويلا"
+  },
+  {
+    "index": 985,
+    "metadata": 0,
+    "text": "فيتنام"
+  },
+  {
+    "index": 986,
+    "metadata": 0,
+    "text": "زامبيا"
+  },
+  {
+    "index": 987,
+    "metadata": 0,
+    "text": "زيمبابواى"
+  },
+  {
+    "index": 988,
+    "metadata": 0,
+    "text": "Select at least one league of 42 teams"
+  },
+  {
+    "index": 989,
+    "metadata": 0,
+    "text": "أمريكا جنوب كأس"
+  },
+  {
+    "index": 990,
+    "metadata": 0,
+    "text": "كرة الذهبية"
+  },
+  {
+    "index": 991,
+    "metadata": 0,
+    "text": "فريق الأسبوع"
+  },
+  {
+    "index": 992,
+    "metadata": 0,
+    "text": "فريق العام"
+  },
+  {
+    "index": 993,
+    "metadata": 0,
+    "text": "رنامج شبابي"
+  },
+  {
+    "index": 994,
+    "metadata": 0,
+    "text": "دوري أبطال أفريقيا"
+  },
+  {
+    "index": 995,
+    "metadata": 0,
+    "text": "دوري أبطال آسيا"
+  },
+  {
+    "index": 996,
+    "metadata": 0,
+    "text": "كأس السوبر الأوروبي لكرة القدم"
+  },
+  {
+    "index": 997,
+    "metadata": 0,
+    "text": "كوبا سود أمريكانا"
+  },
+  {
+    "index": 998,
+    "metadata": 0,
+    "text": "Saved formations"
+  },
+  {
+    "index": 999,
+    "metadata": 0,
+    "text": "Save current formation"
+  },
+  {
+    "index": 1000,
+    "metadata": 0,
+    "text": "Select a name:"
+  },
+  {
+    "index": 1001,
+    "metadata": 0,
+    "text": "Save"
+  },
+  {
+    "index": 1002,
+    "metadata": 0,
+    "text": "Select at least 11 players"
+  },
+  {
+    "index": 1003,
+    "metadata": 0,
+    "text": "˂˂˂ رجوع "
+  },
+  {
+    "index": 1004,
+    "metadata": 0,
+    "text": "Load"
+  },
+  {
+    "index": 1005,
+    "metadata": 0,
+    "text": "Delete"
+  },
+  {
+    "index": 1006,
+    "metadata": 0,
+    "text": "قميص"
+  },
+  {
+    "index": 1007,
+    "metadata": 0,
+    "text": "promoted from youth squad in"
+  },
+  {
+    "index": 1008,
+    "metadata": 0,
+    "text": "Local"
+  },
+  {
+    "index": 1009,
+    "metadata": 0,
+    "text": "Provincial"
+  },
+  {
+    "index": 1010,
+    "metadata": 0,
+    "text": "Regional"
+  },
+  {
+    "index": 1011,
+    "metadata": 0,
+    "text": "National"
+  },
+  {
+    "index": 1012,
+    "metadata": 0,
+    "text": "Continental"
+  },
+  {
+    "index": 1013,
+    "metadata": 0,
+    "text": "Worldwide"
+  },
+  {
+    "index": 1014,
+    "metadata": 0,
+    "text": "سمعة"
+  },
+  {
+    "index": 1015,
+    "metadata": 0,
+    "text": "ثلاث سنوات"
+  },
+  {
+    "index": 1016,
+    "metadata": 0,
+    "text": "رؤية الألعاب"
+  },
+  {
+    "index": 1017,
+    "metadata": 0,
+    "text": "النتائج فقط"
+  },
+  {
+    "index": 1018,
+    "metadata": 0,
+    "text": "LEAGUE"
+  },
+  {
+    "index": 1019,
+    "metadata": 0,
+    "text": "CHAMPIONS L."
+  },
+  {
+    "index": 1020,
+    "metadata": 0,
+    "text": "LIBERTADORES"
+  },
+  {
+    "index": 1021,
+    "metadata": 0,
+    "text": "UEFA LEAGUE"
+  },
+  {
+    "index": 1022,
+    "metadata": 0,
+    "text": "AFRICAN CH."
+  },
+  {
+    "index": 1023,
+    "metadata": 0,
+    "text": "ASIAN CH."
+  },
+  {
+    "index": 1024,
+    "metadata": 0,
+    "text": "سبب"
+  },
+  {
+    "index": 1025,
+    "metadata": 0,
+    "text": "bad results"
+  },
+  {
+    "index": 1026,
+    "metadata": 0,
+    "text": "financial crisis"
+  },
+  {
+    "index": 1027,
+    "metadata": 0,
+    "text": "unhappy supporters"
+  },
+  {
+    "index": 1028,
+    "metadata": 0,
+    "text": "استعرض"
+  },
+  {
+    "index": 1029,
+    "metadata": 0,
+    "text": "هبوط"
+  },
+  {
+    "index": 1030,
+    "metadata": 0,
+    "text": "use"
+  },
+  {
+    "index": 1031,
+    "metadata": 0,
+    "text": "شباب"
+  },
+  {
+    "index": 1032,
+    "metadata": 0,
+    "text": "رئيسي"
+  },
+  {
+    "index": 1033,
+    "metadata": 0,
+    "text": "Search club"
+  },
+  {
+    "index": 1034,
+    "metadata": 0,
+    "text": "Search player"
+  },
+  {
+    "index": 1035,
+    "metadata": 0,
+    "text": "Search"
+  },
+  {
+    "index": 1036,
+    "metadata": 0,
+    "text": "تطور"
+  },
+  {
+    "index": 1037,
+    "metadata": 0,
+    "text": "موهبة"
+  },
+  {
+    "index": 1038,
+    "metadata": 0,
+    "text": "تعزيز"
+  },
+  {
+    "index": 1039,
+    "metadata": 0,
+    "text": "رفض"
+  },
+  {
+    "index": 1040,
+    "metadata": 0,
+    "text": "You already have 30 players"
+  },
+  {
+    "index": 1041,
+    "metadata": 0,
+    "text": "Confirm the promotion of"
+  },
+  {
+    "index": 1042,
+    "metadata": 0,
+    "text": "The is no places for youth players"
+  },
+  {
+    "index": 1043,
+    "metadata": 0,
+    "text": "إرسال"
+  },
+  {
+    "index": 1044,
+    "metadata": 0,
+    "text": "إلغاء"
+  },
+  {
+    "index": 1045,
+    "metadata": 0,
+    "text": "confirmed transfer"
+  },
+  {
+    "index": 1046,
+    "metadata": 0,
+    "text": "Confirme the transfer os this youth"
+  },
+  {
+    "index": 1047,
+    "metadata": 0,
+    "text": "Dismiss the player?"
+  },
+  {
+    "index": 1048,
+    "metadata": 0,
+    "text": "International competition settings"
+  },
+  {
+    "index": 1049,
+    "metadata": 0,
+    "text": "لعب في الموسم الأول"
+  },
+  {
+    "index": 1050,
+    "metadata": 0,
+    "text": "من حقيقية مجموعات إستخدم"
+  },
+  {
+    "index": 1051,
+    "metadata": 0,
+    "text": "Without humans see the matches:"
+  },
+  {
+    "index": 1052,
+    "metadata": 0,
+    "text": "قيمة الفريق"
+  },
+  {
+    "index": 1053,
+    "metadata": 0,
+    "text": "جنسية"
+  },
+  {
+    "index": 1054,
+    "metadata": 0,
+    "text": "متوسط"
+  },
+  {
+    "index": 1055,
+    "metadata": 0,
+    "text": "مركز لاعب خط الوسط"
+  },
+  {
+    "index": 1056,
+    "metadata": 0,
+    "text": "لاعب خط وسط مهاجم"
+  },
+  {
+    "index": 1057,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1058,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1059,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1060,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1061,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1062,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1063,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1064,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1065,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1066,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1067,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1068,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1069,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1070,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1071,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1072,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1073,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1074,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1075,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1076,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1077,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1078,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1079,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1080,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1081,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1082,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1083,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1084,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1085,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1086,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1087,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1088,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1089,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1090,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1091,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1092,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1093,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1094,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1095,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1096,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1097,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1098,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1099,
+    "metadata": 0,
+    "text": ""
+  }
+]

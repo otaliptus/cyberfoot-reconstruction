@@ -1,0 +1,398 @@
+{"kind":"core","cases":17257,"failed":0}
+{"kind":"player","cases":20000,"failed":0}
+{"kind":"lineup","cases":6000,"failed":0}
+{"kind":"incident","cases":12000,"failed":0}
+{"kind":"event","cases":5000,"failed":0}
+{"kind":"clock","cases":6000,"failed":0}
+{"kind":"stats","cases":2500,"failed":0}
+{"kind":"step","cases":2000,"failed":0}
+{"kind":"record","cases":1000,"failed":0}
+{"total":71757,"failed":0}
+2000 whole original regional sort comparisons passed.
+Regional standings: all seven formats, grouped/lower pages, fixed-slot counts, global relegation candidates, wins-first sorting, tied ranks and immutable save verified.
+Regional knockout fixture captions, immutable reads and all seven panel layouts passed.
+Regional knockout placeholders, grouped pairings, tie labels and all three fixture blocks passed.
+Continental standings: six saved stage lists, separate statistics, wins-first ties, eight-group layout, first-season gates and immutable reads passed.
+Continental post-round: ranks, top-two qualification, elimination records, two-leg fixture assignments, dated result callback, missing child and round gate passed.
+All four primary continental lists update positions before the final group round, then independently seed their own knockout blocks.
+Connected continental effects retain the completed match date after calendar advancement and reject missing date context before mutation.
+800 whole original international post-round comparisons passed (storage adapters only).
+Competition results: all19 rivalries in both directions, negative IDs, outcome/side call order, career-based bonuses, draws and missing-child immutability passed.
+3000 whole original club confidence comparisons passed (no adapters).
+5000 whole original club performance comparisons passed (no adapters).
+2000 whole original match result comparisons passed (native children, no adapters).
+1400 original regional highlight segment comparisons passed.
+Standings view: title translations/fallback, tab visibility, packed original positions and immutable save verified.
+16480 whole original qualification-slot comparisons passed.
+1200 original standings-color instruction-segment comparisons passed.
+Standings integration: newest matching champion, ignored runner-up/other season, cup gate, winner-over-relegation highlighting and unchanged save verified.
+Standings data: saved order, rank ties, stats, 20/10-team layouts, division paging, regional fallback and no save mutation verified.
+Offer roster: original career, role/ID order, exclusions, ties-to-even money, traits, stars, empty selection and immutable save verified.
+Offer view: original captions, initial selection, radio Tags, missing offers, league asymmetry and no save mutation verified.
+{"roundTripBytes":2658632,"changedRecordBytes":1,"rejectedInvalidInputs":8,"career":{"clubId":11,"clubName":"Erzgebirge Aue","playerCount":7441,"clubCount":286,"sections":[{"name":"players","count":7441,"recordSize":304},{"name":"clubs","count":286,"recordSize":760},{"name":"records_0066b4b4","count":0,"recordSize":48},{"name":"records_0066b718","count":296,"recordSize":128},{"name":"records_0066b608","count":5,"recordSize":16},{"name":"records_0066afec","count":286,"recordSize":56},{"name":"records_0066ae84","count":16,"recordSize":24},{"name":"records_0066ad60","count":16,"recordSize":48},{"name":"records_0066af90","count":6,"recordSize":48},{"name":"records_0066ae98","count":27,"recordSize":1384},{"name":"records_0066b154","count":16,"recordSize":600},{"name":"records_0066b544","count":0,"recordSize":8},{"name":"records_0066b770","count":1,"recordSize":48},{"name":"records_0066b0d4","count":0,"recordSize":24},{"name":"records_0066aca0","count":1,"recordSize":660},{"name":"records_0066afa0","count":422,"recordSize":72},{"name":"records_0066b160","count":118,"recordSize":24},{"name":"records_0066b058","count":0,"recordSize":20},{"name":"records_0066b3d0","count":0,"recordSize":28},{"name":"records_0066b560","count":0,"recordSize":28},{"name":"records_0066b114","count":0,"recordSize":20},{"name":"records_0066b070","count":0,"recordSize":32},{"name":"records_0066b2b8","count":0,"recordSize":12},{"name":"records_0066b108","count":0,"recordSize":40},{"name":"records_0066b05c","count":0,"recordSize":24},{"name":"records_0066b308","count":0,"recordSize":28},{"name":"records_0066b128","count":352,"recordSize":32},{"name":"records_0066ae14","count":29,"recordSize":32},{"name":"playerSeasonStats","count":381,"recordSize":32},{"name":"scorers","count":49,"recordSize":16},{"name":"appearances","count":381,"recordSize":16},{"name":"records_0066b6ac","count":11,"recordSize":12},{"name":"records_0066b474","count":32,"recordSize":32},{"name":"records_0066b754","count":1,"recordSize":120},{"name":"records_0066add8","count":0,"recordSize":8},{"name":"records_0066b578","count":0,"recordSize":100},{"name":"records_0066b1b8","count":346,"recordSize":24},{"name":"records_0066acd8","count":0,"recordSize":104},{"name":"records_0066b540","count":0,"recordSize":156}]}}
+{"unchangedSaveRoundTrip":true,"goalSurvivesSaveReload":true,"player":"Schulze","club":"Erzgebirge Aue"}
+{"scope":"regulation engine with test lineups; not complete-game parity","clubs":["Erzgebirge Aue","Koln"],"ticks":185,"score":[0,1],"events":2,"statisticsAndPlayerChangesSurviveSave":true}
+Original finance parity: 1000 cases passed
+Original money formatting: 1010 cases passed
+Original loan parity: 2000 cases passed
+Original wage demand: 3000; original payroll: 1000 passed
+Original contract decisions: 3000 passed
+Original contract dates: 2000 passed
+Original contract commit: 2000 passed
+Original notification records: 3000 passed
+{"contractRejectedWithoutMutation":true,"acceptedRenewal":true,"salaryDatePayrollAndNotificationSurviveReload":true,"playerId":224}
+Original salary input parsing: 1526 passed
+Original base calendar: 1470 cases passed
+Original full calendar assignment: 500 passed
+Original calendar cursor: 1000; fixture lookup: 1000 passed
+{"originalCareerAgenda":true,"currentDay":123,"nextDay":130,"fixture":{"id":39,"clubs":[11,4],"competition":1,"complete":false,"date":42134},"saveUnchanged":true}
+Original AI specialty and selection: 6280 cases passed.
+Original complete AI lineup: 500 cases passed.
+{"scope":"saved-career integration with AI controlling both teams; not original whole-match parity","clubs":["Erzgebirge Aue","Bochum"],"initialPlayers":[[239,242,236,235,237,238,228,225,231,229,226],[102,103,99,100,101,88,94,90,89,92,87]],"ticks":186,"score":[0,1],"playerChangesSurviveSave":true}
+Original human selection, sorting and saved lineups: 4500 cases passed.
+Original tactical choices: 1000 passed; controls survive save/reload.
+Original roster sorting and filtering: 1500 passed.
+{
+  scope: 'native integration; complete screen controller original parity pending',
+  rosterPlayers: 20,
+  unavailable: 0,
+  formations: 10,
+  selectionAndSaveReload: true
+}
+Original lookup/target comparisons: 1225 passed; placement/swap invariants pass (full drag handler original parity pending).
+Original human lineup commit:300 passed.
+{"scope":"native human commit to regulation with automatic test decisions; not original whole-match parity or career finalization","clubs":["Erzgebirge Aue","Bochum"],"ticks":185,"score":[0,0],"commitAndMatchPlayerChangesSurviveReload":true}
+Original scoring plan and clock: 8726 cases passed.
+Async planned-goal delivery preserves event order and RNG in 1000 original scenarios.
+Human async decisions preserve complete fixture/state/RNG: { scenarios: 2000, penalty: 29, injuryReplacement: 5 }
+Original human penalty timer resolution: 1200 cases passed.
+Original penalty goalkeeper selection: 300 cases passed.
+Attacking penalty selection, timing, no-repeat and result delivery passed.
+Defending penalty: 500 original player selections and timed flows passed.
+Original injury dialog: 700 candidate/count cases and selection flows passed.
+Original match-lineup geometry: 600 cases passed.
+Original manual substitutions: 600 branch cases, including 67 paused successful changes passed.
+Original match pitch tactics: 792 swap/move branches passed; shirt initialization consumes 36 draws.
+Original match statistics: 1200 calculations passed.
+Original match event log: 400 full formatter cases passed.
+{
+  scope: 'native regulation controller with automatic test decisions; finalization callback is a test adapter, not career progression',
+  settlementSaved: false,
+  detailedHistorySaved: false,
+  weeklyTeamsSaved: false,
+  clubs: [ 'Erzgebirge Aue', 'Bochum' ],
+  controllerTicks: 190,
+  fixtureTicks: 184,
+  plannedGoals: 6,
+  halftimeDialogs: 1,
+  finalizationCalls: 1,
+  score: [ 3, 3 ],
+  commitAndMatchPlayerChangesSurviveReload: true
+}
+Regulation timer boundaries, pending finalization and reentry checks passed.
+Pending presentation pauses and resumes the clock without replay.
+Original match persistence and manager statistics:2500 passed.
+Original match financial settlement:3000 passed.
+{
+  scope: 'original result/event/manager/finance save integration with explicit test result and attendance, not complete finalization',
+  savedFixtureId: 39,
+  score: [ 2, 1 ],
+  completedFixture: true,
+  archivedEvents: 2,
+  allChangedSectionsSurviveReload: true
+}
+Original competition settlement: 2500 passed.
+Original connected fixture settlement: 500 cases passed.
+{
+  scope: 'regulation plus original per-fixture settlement using test attendance/income; full history, ratings and competition progression pending',
+  settlementSaved: true,
+  detailedHistorySaved: false,
+  weeklyTeamsSaved: false,
+  clubs: [ 'Erzgebirge Aue', 'Bochum' ],
+  controllerTicks: 190,
+  fixtureTicks: 184,
+  plannedGoals: 6,
+  halftimeDialogs: 1,
+  finalizationCalls: 1,
+  score: [ 3, 3 ],
+  commitAndMatchPlayerChangesSurviveReload: true
+}
+Competition result to original notification and save integration passed.
+Original player ratings and event counters: 9000 cases passed.
+{
+  scope: 'rating helpers and save records; explicit match fixture, complete history controller pending',
+  players: 28,
+  ratings: [
+    { id: 224, rating: 7.5 },
+    { id: 225, rating: 7 },
+    { id: 226, rating: 7.5 },
+    { id: 227, rating: 7 },
+    { id: 228, rating: 7 },
+    { id: 229, rating: 7.5 },
+    { id: 230, rating: 7 },
+    { id: 231, rating: 7.5 },
+    { id: 232, rating: 7 },
+    { id: 233, rating: 7 },
+    { id: 234, rating: 8 },
+    { id: 235, rating: 9.5 },
+    { id: 236, rating: 9.5 },
+    { id: 237, rating: 8.5 },
+    { id: 238, rating: 8.5 },
+    { id: 239, rating: 7 },
+    { id: 240, rating: 9 },
+    { id: 241, rating: 9 },
+    { id: 242, rating: 7 },
+    { id: 243, rating: 7 },
+    { id: 6249, rating: 7.5 },
+    { id: 6250, rating: 7 },
+    { id: 6251, rating: 6.5 },
+    { id: 6252, rating: 8.5 },
+    { id: 6253, rating: 7 },
+    { id: 6254, rating: 9 },
+    { id: 6255, rating: 8.5 },
+    { id: 6256, rating: 7.5 }
+  ],
+  originalSaveReload: true
+}
+Original player history: 500 cases passed.
+Original detailed match-history records: 600 cases passed.
+{
+  scope: 'regulation, settlement and detailed player/match history with explicit test metadata; weekly awards and competition progression pending',
+  settlementSaved: true,
+  detailedHistorySaved: true,
+  weeklyTeamsSaved: false,
+  clubs: [ 'Erzgebirge Aue', 'Bochum' ],
+  controllerTicks: 190,
+  fixtureTicks: 184,
+  plannedGoals: 6,
+  halftimeDialogs: 1,
+  finalizationCalls: 1,
+  score: [ 3, 3 ],
+  commitAndMatchPlayerChangesSurviveReload: true
+}
+Original weekly team: 1500 cases passed.
+{
+  scope: 'regulation through match-day history and weekly teams with explicit test metadata; competition progression pending',
+  settlementSaved: true,
+  detailedHistorySaved: true,
+  weeklyTeamsSaved: true,
+  clubs: [ 'Erzgebirge Aue', 'Bochum' ],
+  controllerTicks: 190,
+  fixtureTicks: 184,
+  plannedGoals: 6,
+  halftimeDialogs: 1,
+  finalizationCalls: 1,
+  score: [ 3, 3 ],
+  commitAndMatchPlayerChangesSurviveReload: true
+}
+Original two-leg result: 3000 cases passed.
+Original automatic decider: 1000 cases passed.
+Original knockout outcome/elimination: 1500 cases passed.
+Original knockout advancement: 300 cases passed.
+Original champion records: 1500 cases passed.
+Original champion finalization: 1000 cases passed.
+Original player awards: 1000 cases passed.
+{
+  scope: 'Explicit final and scoring-stat fixtures in an original career save; full season progression not exercised',
+  results: [
+    {
+      competition: 2,
+      champion: 11,
+      runnerUp: 4,
+      playerAward: 224,
+      prizes: [Array],
+      allRecordsSurviveReload: true
+    },
+    {
+      competition: 4,
+      champion: 11,
+      runnerUp: 4,
+      playerAward: 224,
+      prizes: [Array],
+      allRecordsSurviveReload: true
+    },
+    {
+      competition: 6,
+      champion: 11,
+      runnerUp: 4,
+      playerAward: 224,
+      prizes: [Array],
+      allRecordsSurviveReload: true
+    }
+  ]
+}
+Original national knockout advancement: 600 cases passed.
+Original national champion: 1000 cases passed.
+{
+  scope: 'Explicit one- and two-leg final fixtures in an original career save; full season not exercised',
+  results: [
+    {
+      phase: 11,
+      champion: 11,
+      runnerUp: 4,
+      playerAward: 224,
+      prizes: [Array],
+      allRecordsSurviveReload: true
+    },
+    {
+      phase: 12,
+      champion: 11,
+      runnerUp: 4,
+      playerAward: 224,
+      prizes: [Array],
+      allRecordsSurviveReload: true
+    }
+  ]
+}
+Original competition batch routing: 1500 cases passed.
+Original batch selectors: 1000 cases passed.
+Original automatic matches: 1300 cases passed.
+{
+  scope: 'Original-career AI lineups through automatic match, settlement, history and weekly awards; explicit test attendance/metadata and preparation adapter',
+  controllerTicks: 190,
+  fixtureTicks: 186,
+  plannedGoals: 6,
+  score: [ 3, 4 ],
+  allRecordsSurviveReload: true
+}
+Original match preparation: 1000 cases passed.
+Original attendance and ticket income: 2500 cases passed.
+Original cup and continental attendance: 3600 cases passed.
+Original full silent match preparation: 600 cases passed.
+Original watched kickoff: 500 cases passed.
+Original post-match-recovery: 1200 cases passed.
+Original match-finalization: 800 cases passed.
+{
+  scope: 'Real scheduled batch, metadata, original attendance and ticket income, AI lineups, automatic matches and history',
+  preparationTimers: { match: 300, batch: 300 },
+  stadiums: [
+    'Westfalenstadion',
+    'Diermar-Hopp',
+    'Olympiastadion',
+    'Weserstadion',
+    'Allianz Arena',
+    'Fritz-Walter',
+    'Dreisamstadion',
+    'Hermann-Löns',
+    'Böllenfalltor',
+    'Niedersachsenstadion',
+    'Hardtwaldstadion',
+    'Am Bornheimer Hang',
+    'Red Bull Arena',
+    'Olympiastadion',
+    'ESV-Stadion',
+    'Glücksgas Stadion',
+    'Preußen-Stadion',
+    'Stadion der Freundschaft',
+    'Holstein-Stadion',
+    'Erzgebirgsstadion'
+  ],
+  nextRoute: 'batch',
+  playerRecoveryVerified: true,
+  competitionType: 1,
+  fixtureCount: 20,
+  humanFixtureIds: [ 20 ],
+  controllerTicks: 190,
+  competitionMetadataIds: [ 1, 2, 3, 4 ],
+  divisions: [ 1, 2, 3, 4 ],
+  attendanceAndIncome: [
+    { fixtureId: 1, attendance: 60847, income: 935765 },
+    { fixtureId: 2, attendance: 19649, income: 315430 },
+    { fixtureId: 3, attendance: 55577, income: 871580 },
+    { fixtureId: 4, attendance: 28822, income: 437120 },
+    { fixtureId: 5, attendance: 38312, income: 626070 },
+    { fixtureId: 6, attendance: 38778, income: 508242 },
+    { fixtureId: 7, attendance: 17140, income: 224785 },
+    { fixtureId: 8, attendance: 9304, income: 119251 },
+    { fixtureId: 9, attendance: 12484, income: 164520 },
+    { fixtureId: 10, attendance: 27813, income: 372966 },
+    { fixtureId: 11, attendance: 7511, income: 85970 },
+    { fixtureId: 12, attendance: 9088, income: 106555 },
+    { fixtureId: 13, attendance: 32846, income: 383153 },
+    { fixtureId: 14, attendance: 39627, income: 438567 },
+    { fixtureId: 15, attendance: 10985, income: 131155 },
+    { fixtureId: 16, attendance: 11070, income: 123372 },
+    { fixtureId: 17, attendance: 8915, income: 95166 },
+    { fixtureId: 18, attendance: 13429, income: 148068 },
+    { fixtureId: 19, attendance: 9150, income: 102438 },
+    { fixtureId: 20, attendance: 10019, income: 112017 }
+  ],
+  allFixturesCompleted: true,
+  allRecordsSurviveReload: true
+}
+{
+  scope: 'Real scheduled batch, metadata, original attendance and ticket income, AI lineups, automatic matches and history',
+  preparationTimers: { match: 300, batch: 300 },
+  stadiums: [
+    'ESV-Stadion',        'Hardtwaldstadion',
+    'Böllenfalltor',      'Erzgebirgsstadion',
+    'Rewirpower',         'Dreisamstadion',
+    'Am Bornheimer Hang', 'Red Bull Arena',
+    'Frankenstadion',     'Eintracht-Stadion',
+    'Wildparkstadion',    'GAGFAH-Arena',
+    'Fritz-Walter',       'Hermann-Löns',
+    'Olympiastadion',     'Esprit Arena'
+  ],
+  nextRoute: 'batch',
+  playerRecoveryVerified: true,
+  competitionType: 2,
+  fixtureCount: 16,
+  humanFixtureIds: [ 4 ],
+  controllerTicks: 190,
+  competitionMetadataIds: [ 5 ],
+  divisions: [ 3, 2, 4 ],
+  attendanceAndIncome: [
+    { fixtureId: 1, attendance: 11505, income: 132994 },
+    { fixtureId: 2, attendance: 10281, income: 121771 },
+    { fixtureId: 3, attendance: 11385, income: 152332 },
+    { fixtureId: 4, attendance: 11963, income: 133446 },
+    { fixtureId: 5, attendance: 21029, income: 234561 },
+    { fixtureId: 6, attendance: 15423, income: 209120 },
+    { fixtureId: 7, attendance: 10007, income: 116309 },
+    { fixtureId: 8, attendance: 31778, income: 373073 },
+    { fixtureId: 9, attendance: 43045, income: 496900 },
+    { fixtureId: 10, attendance: 17959, income: 211779 },
+    { fixtureId: 11, attendance: 23320, income: 275149 },
+    { fixtureId: 12, attendance: 7313, income: 83240 },
+    { fixtureId: 13, attendance: 29083, income: 396226 },
+    { fixtureId: 14, attendance: 10596, income: 140494 },
+    { fixtureId: 15, attendance: 52055, income: 609067 },
+    { fixtureId: 16, attendance: 37576, income: 429241 }
+  ],
+  allFixturesCompleted: true,
+  allRecordsSurviveReload: true
+}
+Original row/group placement helpers: 40 cases passed.
+Original event presentation: 700 cases passed.
+Original crest lookup: 300 cases passed.
+Original club kit lookup: 800 cases passed.
+Original match kit selection: 800 branches passed.
+Original domestic prematch dispatch and player cleanup: 400 cases passed.
+Original player development: 4000 whole helper/round cases passed.
+Domestic completion: player development, round/leg rollover, season-finished flag, and save persistence passed.
+Original results data: 2200 label/selection blocks passed.
+800 original substitution-chain comparisons passed
+2400 original results-career controller comparisons passed (subcontroller adapters)
+4200 whole original results participation comparisons passed
+1000 original referee-assignment comparisons passed
+4000 whole original player-value comparisons passed
+600 original national-assignment restore comparisons passed
+2000 original player move/return comparisons passed (allocation adapter only)
+Original career fixture: capacity-limited returns, repeated pending notice, retry after a vacancy, future-date exclusion, immediate recall and save reload passed; incomplete Continue fails before mutation.
+1600 original paid-transfer comparisons passed (allocation adapter only)
+800 whole original AI transfer comparisons passed (283 completed transfers; allocation adapter only)
+Original career: 30 AI transfers in30 attempts; human clubs excluded, settlement and contract dates checked, all saved bytes survive reload.
+2000 whole original manager participation counts passed
+1600 whole original manager employment/helper comparisons passed (allocation adapter only)
+Original career: human departure, AI departure, human appointment, contract resets, pending-friendly cancellation, notification removal, prices/cash, manager history and save reload passed.
+4000 whole original manager selection comparisons passed (no adapters)
+500 original manager-change comparisons passed (400 allocation-only; 100 modal-boundary adapters)
+Original career: failing AI club replaced, recap reflects appointments, IDs/history persist, performance reset prevents repeated dismissal; missing UI handlers reject before mutation.
+1200 original dismissal replacement comparisons passed (allocation and Delphi string adapters only)
+Original career: human dismissal assigns replacement, removes human employment, preserves notice names/reasons and saves/reloads; financial/performance/special reason precedence checked.
+5000 complete original employed-manager offer comparisons passed (no adapters)
+4000 complete original unemployed-manager offer comparisons passed (no adapters)
+Original career: 30 employed offers and 74 unemployed offers across 30 passes each; human/previous clubs excluded, no duplicate unemployed offers or save mutation.
+800 original offer acceptance comparisons passed (allocation and input/close adapters only)
+1200 original job-offer timing comparisons passed (modal adapter only)
+Original career: timed employed and unemployed offers accepted, manager swap/re-employment and welcome news persisted; no-selection and missing-modal paths preserve state.

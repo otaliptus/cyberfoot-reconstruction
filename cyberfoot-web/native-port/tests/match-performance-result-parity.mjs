@@ -1,0 +1,7 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import {gunzipSync} from 'node:zlib';import {readSave,record} from '../save-format.mjs';import {applyMatchPerformanceResult} from '../match-performance-result.mjs';
+const save=readSave(fs.readFileSync(new URL('./original-career.s15',import.meta.url))),v=b=>new DataView(b.buffer,b.byteOffset,b.byteLength),c=v(save.career),leagues=save.sections.find(s=>s.name==='records_0066aca0');leagues.count=1;leagues.data=leagues.data.slice(0,660);v(leagues.data).setInt32(0x140,29,true);
+const cases=JSON.parse(gunzipSync(fs.readFileSync(new URL('./match-performance-result-vectors.json.gz',import.meta.url))));for(const [index,t] of cases.entries()){
+ const before=[];for(let i=0;i<2;i++){const raw=record(save,'clubs',i);raw.fill(0);const p=v(raw),input=t.clubs[i];for(const [o,n] of input.fields)p.setInt32(o,n,true);p.setBigInt64(0x48,BigInt(input.cash),true);p.setUint8(0x39,input.human);before.push(raw.slice());}
+ c.setInt32(0x88,t.current,true);c.setInt32(0x168,t.mode,true);applyMatchPerformanceResult(save,t.competition,0,1,0,t.scores[1],t.scores[0]);
+ for(let i=0;i<2;i++){const raw=record(save,'clubs',i),p=v(raw);assert.deepEqual([p.getInt32(0x50,true),p.getInt32(0x54,true)],t.expected[i],'case '+index+' club '+i);const checked=raw.slice();checked.set(before[i].slice(0x50,0x58),0x50);assert.deepEqual(checked,before[i]);}
+}console.log(cases.length+' whole original match result comparisons passed (native children, no adapters).');

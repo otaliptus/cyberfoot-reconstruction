@@ -1,0 +1,5502 @@
+[
+  {
+    "index": 0,
+    "metadata": 0,
+    "text": "Nederlands"
+  },
+  {
+    "index": 1,
+    "metadata": 0,
+    "text": "nieuwe spel"
+  },
+  {
+    "index": 2,
+    "metadata": 0,
+    "text": "Opgeslaan spel opladen"
+  },
+  {
+    "index": 3,
+    "metadata": 0,
+    "text": "Club bewerker"
+  },
+  {
+    "index": 4,
+    "metadata": 0,
+    "text": "Spel registreren"
+  },
+  {
+    "index": 5,
+    "metadata": 0,
+    "text": "ongeregistreerde spel"
+  },
+  {
+    "index": 6,
+    "metadata": 0,
+    "text": "geregistreerde spel"
+  },
+  {
+    "index": 7,
+    "metadata": 0,
+    "text": "Uitgang"
+  },
+  {
+    "index": 8,
+    "metadata": 0,
+    "text": "Kies je taal"
+  },
+  {
+    "index": 9,
+    "metadata": 0,
+    "text": "Spel aan het laden"
+  },
+  {
+    "index": 10,
+    "metadata": 0,
+    "text": "Spel instellingen"
+  },
+  {
+    "index": 11,
+    "metadata": 0,
+    "text": "Clubs toernooien"
+  },
+  {
+    "index": 12,
+    "metadata": 0,
+    "text": "Competitie serie systeem"
+  },
+  {
+    "index": 13,
+    "metadata": 0,
+    "text": "4 divisies met 10 teams in alke divisie"
+  },
+  {
+    "index": 14,
+    "metadata": 0,
+    "text": "2 divisies met 20 teams in alke divisie"
+  },
+  {
+    "index": 15,
+    "metadata": 0,
+    "text": "Nationalebeker spelen"
+  },
+  {
+    "index": 16,
+    "metadata": 0,
+    "text": "Kampioenenleague/ Copa Libertasores spelen"
+  },
+  {
+    "index": 17,
+    "metadata": 0,
+    "text": "UEFA league/ Sul-Americana beker"
+  },
+  {
+    "index": 18,
+    "metadata": 0,
+    "text": "Nationale teams toernooien"
+  },
+  {
+    "index": 19,
+    "metadata": 0,
+    "text": "Wereldbeker spelen"
+  },
+  {
+    "index": 20,
+    "metadata": 0,
+    "text": "2010 Wereldbeker echte teams gebruiken"
+  },
+  {
+    "index": 21,
+    "metadata": 0,
+    "text": "Europabeker spelen"
+  },
+  {
+    "index": 22,
+    "metadata": 0,
+    "text": "Amerikabeker spelen"
+  },
+  {
+    "index": 23,
+    "metadata": 0,
+    "text": "Deze nationale leagues sepelen"
+  },
+  {
+    "index": 24,
+    "metadata": 0,
+    "text": "Alles kiezen"
+  },
+  {
+    "index": 25,
+    "metadata": 0,
+    "text": "teams"
+  },
+  {
+    "index": 26,
+    "metadata": 0,
+    "text": "Je kunt meer competities van de Leden Zone op www.cyberfoot.org toevoegen"
+  },
+  {
+    "index": 27,
+    "metadata": 0,
+    "text": "Aantal teams gecontrolleerd door mensen:"
+  },
+  {
+    "index": 28,
+    "metadata": 0,
+    "text": "Enkele opties zijn beschikbaar alleen met de geregistreerde versie: speel Nationale Team Toernooi, voeg mee menselijke teams toe, etc."
+  },
+  {
+    "index": 29,
+    "metadata": 0,
+    "text": "Volgende >>"
+  },
+  {
+    "index": 30,
+    "metadata": 0,
+    "text": "<< Vorige"
+  },
+  {
+    "index": 31,
+    "metadata": 0,
+    "text": "Kies tenminste een league"
+  },
+  {
+    "index": 32,
+    "metadata": 0,
+    "text": "Kies je team"
+  },
+  {
+    "index": 33,
+    "metadata": 0,
+    "text": "Kies je land:"
+  },
+  {
+    "index": 34,
+    "metadata": 0,
+    "text": "Je naam:"
+  },
+  {
+    "index": 35,
+    "metadata": 0,
+    "text": "1ste divisie"
+  },
+  {
+    "index": 36,
+    "metadata": 0,
+    "text": "2de divisie"
+  },
+  {
+    "index": 37,
+    "metadata": 0,
+    "text": "3de divisie"
+  },
+  {
+    "index": 38,
+    "metadata": 0,
+    "text": "4de divisie"
+  },
+  {
+    "index": 39,
+    "metadata": 0,
+    "text": "Team kiezen"
+  },
+  {
+    "index": 40,
+    "metadata": 0,
+    "text": "Volgende team kiesen"
+  },
+  {
+    "index": 41,
+    "metadata": 0,
+    "text": "begin spelen >>>"
+  },
+  {
+    "index": 42,
+    "metadata": 0,
+    "text": "Team is al gekozen"
+  },
+  {
+    "index": 43,
+    "metadata": 0,
+    "text": "Dit is een ongeregitreerde kopie van CyberFoot"
+  },
+  {
+    "index": 44,
+    "metadata": 0,
+    "text": "In de ongeregistreerde versie kun je alleen maar een team vanuit de bodem divise kiezen."
+  },
+  {
+    "index": 45,
+    "metadata": 0,
+    "text": "Met de geregistreerde versie kun je een team uit elke divisie kiezen"
+  },
+  {
+    "index": 46,
+    "metadata": 0,
+    "text": "Spel beginnen"
+  },
+  {
+    "index": 47,
+    "metadata": 0,
+    "text": "Management beoordeling"
+  },
+  {
+    "index": 48,
+    "metadata": 0,
+    "text": "Fans beoordeling"
+  },
+  {
+    "index": 49,
+    "metadata": 0,
+    "text": "Vaardigheid"
+  },
+  {
+    "index": 50,
+    "metadata": 0,
+    "text": "Leeftijd"
+  },
+  {
+    "index": 51,
+    "metadata": 0,
+    "text": "Waarde"
+  },
+  {
+    "index": 52,
+    "metadata": 0,
+    "text": "Salaris"
+  },
+  {
+    "index": 53,
+    "metadata": 0,
+    "text": "Wedstrijden gespeeld"
+  },
+  {
+    "index": 54,
+    "metadata": 0,
+    "text": "Eigenschappen"
+  },
+  {
+    "index": 55,
+    "metadata": 0,
+    "text": "Contract verstrijkt op"
+  },
+  {
+    "index": 56,
+    "metadata": 0,
+    "text": "Verlopende contract"
+  },
+  {
+    "index": 57,
+    "metadata": 0,
+    "text": "Lening en datum"
+  },
+  {
+    "index": 58,
+    "metadata": 0,
+    "text": "Speler beschikbaar alleen in de volgende wedstrijd"
+  },
+  {
+    "index": 59,
+    "metadata": 0,
+    "text": "Geschorst voor een wedstrijd: 3 gele kaartjes"
+  },
+  {
+    "index": 60,
+    "metadata": 0,
+    "text": "geschorst voor"
+  },
+  {
+    "index": 61,
+    "metadata": 0,
+    "text": "Wedstrijd(en)"
+  },
+  {
+    "index": 62,
+    "metadata": 0,
+    "text": "Geblesseerd tot"
+  },
+  {
+    "index": 63,
+    "metadata": 0,
+    "text": "Verkoop"
+  },
+  {
+    "index": 64,
+    "metadata": 0,
+    "text": "Contract"
+  },
+  {
+    "index": 65,
+    "metadata": 0,
+    "text": "Met pensioen"
+  },
+  {
+    "index": 66,
+    "metadata": 0,
+    "text": "Vanaf overdracht lijst terugtrekken"
+  },
+  {
+    "index": 67,
+    "metadata": 0,
+    "text": "Volgende wedstrijd"
+  },
+  {
+    "index": 68,
+    "metadata": 0,
+    "text": "Samenstelling"
+  },
+  {
+    "index": 69,
+    "metadata": 0,
+    "text": "Teams kleuren"
+  },
+  {
+    "index": 70,
+    "metadata": 0,
+    "text": "Een ongelezen bericht"
+  },
+  {
+    "index": 71,
+    "metadata": 0,
+    "text": "ongelezen berichten"
+  },
+  {
+    "index": 72,
+    "metadata": 0,
+    "text": "Geen nieuwe berichten"
+  },
+  {
+    "index": 73,
+    "metadata": 0,
+    "text": "spelers"
+  },
+  {
+    "index": 74,
+    "metadata": 0,
+    "text": "Vorige wedstrijden"
+  },
+  {
+    "index": 75,
+    "metadata": 0,
+    "text": "wedstrijd"
+  },
+  {
+    "index": 76,
+    "metadata": 0,
+    "text": "wedstrijden"
+  },
+  {
+    "index": 77,
+    "metadata": 0,
+    "text": "trekken"
+  },
+  {
+    "index": 78,
+    "metadata": 0,
+    "text": "getrokken"
+  },
+  {
+    "index": 79,
+    "metadata": 0,
+    "text": "W"
+  },
+  {
+    "index": 80,
+    "metadata": 0,
+    "text": "G"
+  },
+  {
+    "index": 81,
+    "metadata": 0,
+    "text": "V"
+  },
+  {
+    "index": 82,
+    "metadata": 0,
+    "text": "GV"
+  },
+  {
+    "index": 83,
+    "metadata": 0,
+    "text": "GT"
+  },
+  {
+    "index": 84,
+    "metadata": 0,
+    "text": "WG"
+  },
+  {
+    "index": 85,
+    "metadata": 0,
+    "text": "GV"
+  },
+  {
+    "index": 86,
+    "metadata": 0,
+    "text": "Pnt"
+  },
+  {
+    "index": 87,
+    "metadata": 0,
+    "text": "RP"
+  },
+  {
+    "index": 88,
+    "metadata": 0,
+    "text": "TE"
+  },
+  {
+    "index": 89,
+    "metadata": 0,
+    "text": "Laatste wedstrijd"
+  },
+  {
+    "index": 90,
+    "metadata": 0,
+    "text": "alle wedstrijden"
+  },
+  {
+    "index": 91,
+    "metadata": 0,
+    "text": "Eerste wedstrijd tussen deze teams"
+  },
+  {
+    "index": 92,
+    "metadata": 0,
+    "text": "Vorige seizoens geschidenis"
+  },
+  {
+    "index": 93,
+    "metadata": 0,
+    "text": "Spel opslaan"
+  },
+  {
+    "index": 94,
+    "metadata": 0,
+    "text": "Instellingen"
+  },
+  {
+    "index": 95,
+    "metadata": 0,
+    "text": "Aftreden"
+  },
+  {
+    "index": 96,
+    "metadata": 0,
+    "text": "Het spel uitgaan"
+  },
+  {
+    "index": 97,
+    "metadata": 0,
+    "text": "Over het spel"
+  },
+  {
+    "index": 98,
+    "metadata": 0,
+    "text": "Coach beoordeling"
+  },
+  {
+    "index": 99,
+    "metadata": 0,
+    "text": "coach toevoegen/verwijderen"
+  },
+  {
+    "index": 100,
+    "metadata": 0,
+    "text": "Laatste coach overdrachten"
+  },
+  {
+    "index": 101,
+    "metadata": 0,
+    "text": "Clubs beoordeling"
+  },
+  {
+    "index": 102,
+    "metadata": 0,
+    "text": "Spelers overdrachten"
+  },
+  {
+    "index": 103,
+    "metadata": 0,
+    "text": "Geschidenis van allle wedstrijden"
+  },
+  {
+    "index": 104,
+    "metadata": 0,
+    "text": "Jou Accessoire"
+  },
+  {
+    "index": 105,
+    "metadata": 0,
+    "text": "Accesoire"
+  },
+  {
+    "index": 106,
+    "metadata": 0,
+    "text": "Bekers accesoire"
+  },
+  {
+    "index": 107,
+    "metadata": 0,
+    "text": "Internatinale Beker Playoffs"
+  },
+  {
+    "index": 108,
+    "metadata": 0,
+    "text": "Vriendschappelijk wedstrijden"
+  },
+  {
+    "index": 109,
+    "metadata": 0,
+    "text": "Financiën"
+  },
+  {
+    "index": 110,
+    "metadata": 0,
+    "text": "Bank Lening"
+  },
+  {
+    "index": 111,
+    "metadata": 0,
+    "text": "Contract zetten"
+  },
+  {
+    "index": 112,
+    "metadata": 0,
+    "text": "Speler verkopen"
+  },
+  {
+    "index": 113,
+    "metadata": 0,
+    "text": "Speler vrijlaten"
+  },
+  {
+    "index": 114,
+    "metadata": 0,
+    "text": "Nummer zetten"
+  },
+  {
+    "index": 115,
+    "metadata": 0,
+    "text": "Wedstrijden geschidenis"
+  },
+  {
+    "index": 116,
+    "metadata": 0,
+    "text": "Lening annuleren"
+  },
+  {
+    "index": 117,
+    "metadata": 0,
+    "text": "Speler kopen"
+  },
+  {
+    "index": 118,
+    "metadata": 0,
+    "text": "Op lenings lijst zetten"
+  },
+  {
+    "index": 119,
+    "metadata": 0,
+    "text": "Vanaf lenings lijst terugtrekken"
+  },
+  {
+    "index": 120,
+    "metadata": 0,
+    "text": "Standen"
+  },
+  {
+    "index": 121,
+    "metadata": 0,
+    "text": "Stadion"
+  },
+  {
+    "index": 122,
+    "metadata": 0,
+    "text": "Alle clubs weergeven"
+  },
+  {
+    "index": 123,
+    "metadata": 0,
+    "text": "Speler zoeken"
+  },
+  {
+    "index": 124,
+    "metadata": 0,
+    "text": "Coach Info"
+  },
+  {
+    "index": 125,
+    "metadata": 0,
+    "text": "Kampioenen lijst"
+  },
+  {
+    "index": 126,
+    "metadata": 0,
+    "text": "Top pscorer"
+  },
+  {
+    "index": 127,
+    "metadata": 0,
+    "text": "Clubs beoordeling"
+  },
+  {
+    "index": 128,
+    "metadata": 0,
+    "text": "p"
+  },
+  {
+    "index": 129,
+    "metadata": 0,
+    "text": "N"
+  },
+  {
+    "index": 130,
+    "metadata": 0,
+    "text": "K"
+  },
+  {
+    "index": 131,
+    "metadata": 0,
+    "text": "V"
+  },
+  {
+    "index": 132,
+    "metadata": 0,
+    "text": "Uithoudingsvermogen"
+  },
+  {
+    "index": 133,
+    "metadata": 0,
+    "text": "Salaris"
+  },
+  {
+    "index": 134,
+    "metadata": 0,
+    "text": "Waarde"
+  },
+  {
+    "index": 135,
+    "metadata": 0,
+    "text": "G"
+  },
+  {
+    "index": 136,
+    "metadata": 0,
+    "text": "Eigens."
+  },
+  {
+    "index": 137,
+    "metadata": 0,
+    "text": "L"
+  },
+  {
+    "index": 138,
+    "metadata": 0,
+    "text": "M"
+  },
+  {
+    "index": 139,
+    "metadata": 0,
+    "text": "Contract verstrijkt binnen 1 week"
+  },
+  {
+    "index": 140,
+    "metadata": 0,
+    "text": "Contract verstrijkt spoedig"
+  },
+  {
+    "index": 141,
+    "metadata": 0,
+    "text": "Om bij Cyberfoor te registreren klik hier!"
+  },
+  {
+    "index": 142,
+    "metadata": 0,
+    "text": "doelman"
+  },
+  {
+    "index": 143,
+    "metadata": 0,
+    "text": "GK"
+  },
+  {
+    "index": 144,
+    "metadata": 0,
+    "text": "Centrale Verdediger"
+  },
+  {
+    "index": 145,
+    "metadata": 0,
+    "text": "CD"
+  },
+  {
+    "index": 146,
+    "metadata": 0,
+    "text": "Achtervleugel"
+  },
+  {
+    "index": 147,
+    "metadata": 0,
+    "text": "AV"
+  },
+  {
+    "index": 148,
+    "metadata": 0,
+    "text": "Midveld"
+  },
+  {
+    "index": 149,
+    "metadata": 0,
+    "text": "M"
+  },
+  {
+    "index": 150,
+    "metadata": 0,
+    "text": "Vooruit"
+  },
+  {
+    "index": 151,
+    "metadata": 0,
+    "text": "V"
+  },
+  {
+    "index": 152,
+    "metadata": 0,
+    "text": "Recht"
+  },
+  {
+    "index": 153,
+    "metadata": 0,
+    "text": "R"
+  },
+  {
+    "index": 154,
+    "metadata": 0,
+    "text": "Links"
+  },
+  {
+    "index": 155,
+    "metadata": 0,
+    "text": "L"
+  },
+  {
+    "index": 156,
+    "metadata": 0,
+    "text": "Positionering"
+  },
+  {
+    "index": 157,
+    "metadata": 0,
+    "text": "Pos"
+  },
+  {
+    "index": 158,
+    "metadata": 0,
+    "text": "Strafschop verdediger"
+  },
+  {
+    "index": 159,
+    "metadata": 0,
+    "text": "Str"
+  },
+  {
+    "index": 160,
+    "metadata": 0,
+    "text": "Pas"
+  },
+  {
+    "index": 161,
+    "metadata": 0,
+    "text": "Pas"
+  },
+  {
+    "index": 162,
+    "metadata": 0,
+    "text": "Aerial control"
+  },
+  {
+    "index": 163,
+    "metadata": 0,
+    "text": "Aer"
+  },
+  {
+    "index": 164,
+    "metadata": 0,
+    "text": "Spelmaken"
+  },
+  {
+    "index": 165,
+    "metadata": 0,
+    "text": "Smk"
+  },
+  {
+    "index": 166,
+    "metadata": 0,
+    "text": "leidend"
+  },
+  {
+    "index": 167,
+    "metadata": 0,
+    "text": "Lei"
+  },
+  {
+    "index": 168,
+    "metadata": 0,
+    "text": "kruising"
+  },
+  {
+    "index": 169,
+    "metadata": 0,
+    "text": "Kru"
+  },
+  {
+    "index": 170,
+    "metadata": 0,
+    "text": "Tackle"
+  },
+  {
+    "index": 171,
+    "metadata": 0,
+    "text": "Tac"
+  },
+  {
+    "index": 172,
+    "metadata": 0,
+    "text": "Dribbelen"
+  },
+  {
+    "index": 173,
+    "metadata": 0,
+    "text": "Dri"
+  },
+  {
+    "index": 174,
+    "metadata": 0,
+    "text": "schieten"
+  },
+  {
+    "index": 175,
+    "metadata": 0,
+    "text": "Sch"
+  },
+  {
+    "index": 176,
+    "metadata": 0,
+    "text": "Merken"
+  },
+  {
+    "index": 177,
+    "metadata": 0,
+    "text": "Mer"
+  },
+  {
+    "index": 178,
+    "metadata": 0,
+    "text": "Passeren"
+  },
+  {
+    "index": 179,
+    "metadata": 0,
+    "text": "Pas"
+  },
+  {
+    "index": 180,
+    "metadata": 0,
+    "text": "Kracht"
+  },
+  {
+    "index": 181,
+    "metadata": 0,
+    "text": "Kra"
+  },
+  {
+    "index": 182,
+    "metadata": 0,
+    "text": "Pas"
+  },
+  {
+    "index": 183,
+    "metadata": 0,
+    "text": "Pas"
+  },
+  {
+    "index": 184,
+    "metadata": 0,
+    "text": "1ste"
+  },
+  {
+    "index": 185,
+    "metadata": 0,
+    "text": "2de"
+  },
+  {
+    "index": 186,
+    "metadata": 0,
+    "text": "3de"
+  },
+  {
+    "index": 187,
+    "metadata": 0,
+    "text": "4de"
+  },
+  {
+    "index": 188,
+    "metadata": 0,
+    "text": "5de"
+  },
+  {
+    "index": 189,
+    "metadata": 0,
+    "text": "6de"
+  },
+  {
+    "index": 190,
+    "metadata": 0,
+    "text": "7de"
+  },
+  {
+    "index": 191,
+    "metadata": 0,
+    "text": "8ste"
+  },
+  {
+    "index": 192,
+    "metadata": 0,
+    "text": "9de"
+  },
+  {
+    "index": 193,
+    "metadata": 0,
+    "text": "10de"
+  },
+  {
+    "index": 194,
+    "metadata": 0,
+    "text": "11ste"
+  },
+  {
+    "index": 195,
+    "metadata": 0,
+    "text": "12de"
+  },
+  {
+    "index": 196,
+    "metadata": 0,
+    "text": "13de"
+  },
+  {
+    "index": 197,
+    "metadata": 0,
+    "text": "14de"
+  },
+  {
+    "index": 198,
+    "metadata": 0,
+    "text": "15de"
+  },
+  {
+    "index": 199,
+    "metadata": 0,
+    "text": "16de"
+  },
+  {
+    "index": 200,
+    "metadata": 0,
+    "text": "17de"
+  },
+  {
+    "index": 201,
+    "metadata": 0,
+    "text": "18de"
+  },
+  {
+    "index": 202,
+    "metadata": 0,
+    "text": "19de"
+  },
+  {
+    "index": 203,
+    "metadata": 0,
+    "text": "20ste"
+  },
+  {
+    "index": 204,
+    "metadata": 0,
+    "text": "Plaats"
+  },
+  {
+    "index": 205,
+    "metadata": 0,
+    "text": "Huis"
+  },
+  {
+    "index": 206,
+    "metadata": 0,
+    "text": "H"
+  },
+  {
+    "index": 207,
+    "metadata": 0,
+    "text": "Weg"
+  },
+  {
+    "index": 208,
+    "metadata": 0,
+    "text": "W"
+  },
+  {
+    "index": 209,
+    "metadata": 0,
+    "text": "rond"
+  },
+  {
+    "index": 210,
+    "metadata": 0,
+    "text": "Scheidsrechter"
+  },
+  {
+    "index": 211,
+    "metadata": 0,
+    "text": " international vriendschappelijk"
+  },
+  {
+    "index": 212,
+    "metadata": 0,
+    "text": "Vriendschappelijk"
+  },
+  {
+    "index": 213,
+    "metadata": 0,
+    "text": "1ste rond"
+  },
+  {
+    "index": 214,
+    "metadata": 0,
+    "text": "2de rond"
+  },
+  {
+    "index": 215,
+    "metadata": 0,
+    "text": "Kwart-Final"
+  },
+  {
+    "index": 216,
+    "metadata": 0,
+    "text": "Semi-final"
+  },
+  {
+    "index": 217,
+    "metadata": 0,
+    "text": "Final"
+  },
+  {
+    "index": 218,
+    "metadata": 0,
+    "text": "1ste been"
+  },
+  {
+    "index": 219,
+    "metadata": 0,
+    "text": "2de been"
+  },
+  {
+    "index": 220,
+    "metadata": 0,
+    "text": "Kampioenen league"
+  },
+  {
+    "index": 221,
+    "metadata": 0,
+    "text": "UEFA Europa League"
+  },
+  {
+    "index": 222,
+    "metadata": 0,
+    "text": "Copa Libertadores beker"
+  },
+  {
+    "index": 223,
+    "metadata": 0,
+    "text": "Sul-Americana beker"
+  },
+  {
+    "index": 224,
+    "metadata": 0,
+    "text": "FIFA Club Wereld beker"
+  },
+  {
+    "index": 225,
+    "metadata": 0,
+    "text": "Duitse Competitie"
+  },
+  {
+    "index": 226,
+    "metadata": 0,
+    "text": "Duitse beker"
+  },
+  {
+    "index": 227,
+    "metadata": 0,
+    "text": "Italiaanse Competitie"
+  },
+  {
+    "index": 228,
+    "metadata": 0,
+    "text": "Italiaanse beker"
+  },
+  {
+    "index": 229,
+    "metadata": 0,
+    "text": "Spaanse Competitie"
+  },
+  {
+    "index": 230,
+    "metadata": 0,
+    "text": "Spaans beker"
+  },
+  {
+    "index": 231,
+    "metadata": 0,
+    "text": "Engelse Competitie"
+  },
+  {
+    "index": 232,
+    "metadata": 0,
+    "text": "Engelse beker"
+  },
+  {
+    "index": 233,
+    "metadata": 0,
+    "text": "Franse Competitie"
+  },
+  {
+    "index": 234,
+    "metadata": 0,
+    "text": "Franse beker"
+  },
+  {
+    "index": 235,
+    "metadata": 0,
+    "text": "Belgische Competitie"
+  },
+  {
+    "index": 236,
+    "metadata": 0,
+    "text": "Belgische beker"
+  },
+  {
+    "index": 237,
+    "metadata": 0,
+    "text": "Griekse Competitie"
+  },
+  {
+    "index": 238,
+    "metadata": 0,
+    "text": "Griekse beker"
+  },
+  {
+    "index": 239,
+    "metadata": 0,
+    "text": "Nederlandse Competitie"
+  },
+  {
+    "index": 240,
+    "metadata": 0,
+    "text": "Nederlandse beker"
+  },
+  {
+    "index": 241,
+    "metadata": 0,
+    "text": "Portugese Competitie"
+  },
+  {
+    "index": 242,
+    "metadata": 0,
+    "text": "Portugese beker"
+  },
+  {
+    "index": 243,
+    "metadata": 0,
+    "text": "Braziliaanse Competitie"
+  },
+  {
+    "index": 244,
+    "metadata": 0,
+    "text": "Braziliaanse beker"
+  },
+  {
+    "index": 245,
+    "metadata": 0,
+    "text": "Argentijnse Competitie"
+  },
+  {
+    "index": 246,
+    "metadata": 0,
+    "text": "Argentijnse beker"
+  },
+  {
+    "index": 247,
+    "metadata": 0,
+    "text": "Schotse Competitie"
+  },
+  {
+    "index": 248,
+    "metadata": 0,
+    "text": "Schotse beker"
+  },
+  {
+    "index": 249,
+    "metadata": 0,
+    "text": "Mexicaanse Competitie"
+  },
+  {
+    "index": 250,
+    "metadata": 0,
+    "text": "Mexicaansae beker"
+  },
+  {
+    "index": 251,
+    "metadata": 0,
+    "text": "Zwitserse Competitie"
+  },
+  {
+    "index": 252,
+    "metadata": 0,
+    "text": "Zwitserse beker"
+  },
+  {
+    "index": 253,
+    "metadata": 0,
+    "text": "Turks Competitie"
+  },
+  {
+    "index": 254,
+    "metadata": 0,
+    "text": "Turkse beker"
+  },
+  {
+    "index": 255,
+    "metadata": 0,
+    "text": "Chileense Competitie"
+  },
+  {
+    "index": 256,
+    "metadata": 0,
+    "text": "Chileense beker"
+  },
+  {
+    "index": 257,
+    "metadata": 0,
+    "text": "Paraguayaanse Competitie"
+  },
+  {
+    "index": 258,
+    "metadata": 0,
+    "text": "Paraguayaanse beker"
+  },
+  {
+    "index": 259,
+    "metadata": 0,
+    "text": "Colombiaanse Competitie"
+  },
+  {
+    "index": 260,
+    "metadata": 0,
+    "text": "Colombiaanse beker"
+  },
+  {
+    "index": 261,
+    "metadata": 0,
+    "text": "Russische Competitie"
+  },
+  {
+    "index": 262,
+    "metadata": 0,
+    "text": "Russisch beker"
+  },
+  {
+    "index": 263,
+    "metadata": 0,
+    "text": "Zweedse Competitie"
+  },
+  {
+    "index": 264,
+    "metadata": 0,
+    "text": "Zweedse beker"
+  },
+  {
+    "index": 265,
+    "metadata": 0,
+    "text": "Oekraïense Competitie"
+  },
+  {
+    "index": 266,
+    "metadata": 0,
+    "text": "Oekraïense beker"
+  },
+  {
+    "index": 267,
+    "metadata": 0,
+    "text": "Uruguayaanse Competitie"
+  },
+  {
+    "index": 268,
+    "metadata": 0,
+    "text": "Uruguayaanse beker"
+  },
+  {
+    "index": 269,
+    "metadata": 0,
+    "text": "Servische Competitie"
+  },
+  {
+    "index": 270,
+    "metadata": 0,
+    "text": "Servische beker"
+  },
+  {
+    "index": 271,
+    "metadata": 0,
+    "text": "poolse Competitie"
+  },
+  {
+    "index": 272,
+    "metadata": 0,
+    "text": "Poolse beker"
+  },
+  {
+    "index": 273,
+    "metadata": 0,
+    "text": "Indonesisch Competitie"
+  },
+  {
+    "index": 274,
+    "metadata": 0,
+    "text": "Indonesisch beker"
+  },
+  {
+    "index": 275,
+    "metadata": 0,
+    "text": "VS Competitie"
+  },
+  {
+    "index": 276,
+    "metadata": 0,
+    "text": "VS beker"
+  },
+  {
+    "index": 277,
+    "metadata": 0,
+    "text": "Bulgaarse Competitie"
+  },
+  {
+    "index": 278,
+    "metadata": 0,
+    "text": "Bulgaarse beker"
+  },
+  {
+    "index": 279,
+    "metadata": 0,
+    "text": "De Competitie van"
+  },
+  {
+    "index": 280,
+    "metadata": 0,
+    "text": "Beker van"
+  },
+  {
+    "index": 281,
+    "metadata": 0,
+    "text": "Line-up onthouden"
+  },
+  {
+    "index": 282,
+    "metadata": 0,
+    "text": "automatisch samenstelling selecteren"
+  },
+  {
+    "index": 283,
+    "metadata": 0,
+    "text": "Teams houding"
+  },
+  {
+    "index": 284,
+    "metadata": 0,
+    "text": "Verdediging druk"
+  },
+  {
+    "index": 285,
+    "metadata": 0,
+    "text": "Meer aanvallen op"
+  },
+  {
+    "index": 286,
+    "metadata": 0,
+    "text": " Stukken zetten"
+  },
+  {
+    "index": 287,
+    "metadata": 0,
+    "text": "Team-captain"
+  },
+  {
+    "index": 288,
+    "metadata": 0,
+    "text": "Automatisch samenstelling selecteren"
+  },
+  {
+    "index": 289,
+    "metadata": 0,
+    "text": " Teams houding"
+  },
+  {
+    "index": 290,
+    "metadata": 0,
+    "text": "Evenwichtig"
+  },
+  {
+    "index": 291,
+    "metadata": 0,
+    "text": "alles aanvallen"
+  },
+  {
+    "index": 292,
+    "metadata": 0,
+    "text": "Verdediging"
+  },
+  {
+    "index": 293,
+    "metadata": 0,
+    "text": "Zacht"
+  },
+  {
+    "index": 294,
+    "metadata": 0,
+    "text": "Zwaar"
+  },
+  {
+    "index": 295,
+    "metadata": 0,
+    "text": "Super zwaar"
+  },
+  {
+    "index": 296,
+    "metadata": 0,
+    "text": "Midden"
+  },
+  {
+    "index": 297,
+    "metadata": 0,
+    "text": "Vleugels"
+  },
+  {
+    "index": 298,
+    "metadata": 0,
+    "text": "<< terug"
+  },
+  {
+    "index": 299,
+    "metadata": 0,
+    "text": "Wedstrijd beginnen >>"
+  },
+  {
+    "index": 300,
+    "metadata": 0,
+    "text": "Speelt als"
+  },
+  {
+    "index": 301,
+    "metadata": 0,
+    "text": "Selecteer tenminste 11 spelers om met de wedstrijd te beginnen"
+  },
+  {
+    "index": 302,
+    "metadata": 0,
+    "text": "Kies een team"
+  },
+  {
+    "index": 303,
+    "metadata": 0,
+    "text": "Geschidenis"
+  },
+  {
+    "index": 304,
+    "metadata": 0,
+    "text": "Accessoires"
+  },
+  {
+    "index": 305,
+    "metadata": 0,
+    "text": "overdrachten"
+  },
+  {
+    "index": 306,
+    "metadata": 0,
+    "text": "Trofeeën "
+  },
+  {
+    "index": 307,
+    "metadata": 0,
+    "text": "Je geld:"
+  },
+  {
+    "index": 308,
+    "metadata": 0,
+    "text": "Je hebt een beperking van 28 spelers in je team"
+  },
+  {
+    "index": 309,
+    "metadata": 0,
+    "text": "wil niet naar je team overdrachten"
+  },
+  {
+    "index": 310,
+    "metadata": 0,
+    "text": "overdracht gelukt"
+  },
+  {
+    "index": 311,
+    "metadata": 0,
+    "text": "overdracht in lijst gezet"
+  },
+  {
+    "index": 312,
+    "metadata": 0,
+    "text": "lening mogelijk"
+  },
+  {
+    "index": 313,
+    "metadata": 0,
+    "text": "OL"
+  },
+  {
+    "index": 314,
+    "metadata": 0,
+    "text": "LM"
+  },
+  {
+    "index": 315,
+    "metadata": 0,
+    "text": "Lening-speler"
+  },
+  {
+    "index": 316,
+    "metadata": 0,
+    "text": "Je kunt alleen maar 2 lening-spelers in je team hebben"
+  },
+  {
+    "index": 317,
+    "metadata": 0,
+    "text": "Koop speler"
+  },
+  {
+    "index": 318,
+    "metadata": 0,
+    "text": "Maak een bieding"
+  },
+  {
+    "index": 319,
+    "metadata": 0,
+    "text": "Volledige Geschidenis"
+  },
+  {
+    "index": 320,
+    "metadata": 0,
+    "text": "Jaar"
+  },
+  {
+    "index": 321,
+    "metadata": 0,
+    "text": "Team"
+  },
+  {
+    "index": 322,
+    "metadata": 0,
+    "text": "Carrière totaal"
+  },
+  {
+    "index": 323,
+    "metadata": 0,
+    "text": "Regionale teams"
+  },
+  {
+    "index": 324,
+    "metadata": 0,
+    "text": "Internationaal"
+  },
+  {
+    "index": 325,
+    "metadata": 0,
+    "text": "Lijst-wedstrijden"
+  },
+  {
+    "index": 326,
+    "metadata": 0,
+    "text": "Wereldbeker"
+  },
+  {
+    "index": 327,
+    "metadata": 0,
+    "text": "Amerika beker"
+  },
+  {
+    "index": 328,
+    "metadata": 0,
+    "text": "Europa beker"
+  },
+  {
+    "index": 329,
+    "metadata": 0,
+    "text": "Tonen"
+  },
+  {
+    "index": 330,
+    "metadata": 0,
+    "text": "Alle wedstrijden"
+  },
+  {
+    "index": 331,
+    "metadata": 0,
+    "text": "Zo"
+  },
+  {
+    "index": 332,
+    "metadata": 0,
+    "text": "Ma"
+  },
+  {
+    "index": 333,
+    "metadata": 0,
+    "text": "Di"
+  },
+  {
+    "index": 334,
+    "metadata": 0,
+    "text": "Wo"
+  },
+  {
+    "index": 335,
+    "metadata": 0,
+    "text": "Do"
+  },
+  {
+    "index": 336,
+    "metadata": 0,
+    "text": "Vr"
+  },
+  {
+    "index": 337,
+    "metadata": 0,
+    "text": "Za"
+  },
+  {
+    "index": 338,
+    "metadata": 0,
+    "text": "Speler"
+  },
+  {
+    "index": 339,
+    "metadata": 0,
+    "text": "Goals"
+  },
+  {
+    "index": 340,
+    "metadata": 0,
+    "text": "Wedstrijden"
+  },
+  {
+    "index": 341,
+    "metadata": 0,
+    "text": "Competitie"
+  },
+  {
+    "index": 342,
+    "metadata": 0,
+    "text": "Beker"
+  },
+  {
+    "index": 343,
+    "metadata": 0,
+    "text": "Allerbeste ooit"
+  },
+  {
+    "index": 344,
+    "metadata": 0,
+    "text": "Lijst van eerste 100 spelers, klik hier om alles te weergeven"
+  },
+  {
+    "index": 345,
+    "metadata": 0,
+    "text": "Laad"
+  },
+  {
+    "index": 346,
+    "metadata": 0,
+    "text": "Annuleren"
+  },
+  {
+    "index": 347,
+    "metadata": 0,
+    "text": "Verwijderen"
+  },
+  {
+    "index": 348,
+    "metadata": 0,
+    "text": "Coach:"
+  },
+  {
+    "index": 349,
+    "metadata": 0,
+    "text": "Volgende Wedstrijd:"
+  },
+  {
+    "index": 350,
+    "metadata": 0,
+    "text": "Inkomst"
+  },
+  {
+    "index": 351,
+    "metadata": 0,
+    "text": "Uitkomst"
+  },
+  {
+    "index": 352,
+    "metadata": 0,
+    "text": "Spelers verkocht:"
+  },
+  {
+    "index": 353,
+    "metadata": 0,
+    "text": "Tickets"
+  },
+  {
+    "index": 354,
+    "metadata": 0,
+    "text": "Prijzen"
+  },
+  {
+    "index": 355,
+    "metadata": 0,
+    "text": "Bank lening"
+  },
+  {
+    "index": 356,
+    "metadata": 0,
+    "text": "Sponsoring"
+  },
+  {
+    "index": 357,
+    "metadata": 0,
+    "text": "Totaal"
+  },
+  {
+    "index": 358,
+    "metadata": 0,
+    "text": "Spelers verkocht:"
+  },
+  {
+    "index": 359,
+    "metadata": 0,
+    "text": "Staion"
+  },
+  {
+    "index": 360,
+    "metadata": 0,
+    "text": "Salaris"
+  },
+  {
+    "index": 361,
+    "metadata": 0,
+    "text": "Belang lening"
+  },
+  {
+    "index": 362,
+    "metadata": 0,
+    "text": "Overdrachten honorarium:"
+  },
+  {
+    "index": 363,
+    "metadata": 0,
+    "text": "Diversen"
+  },
+  {
+    "index": 364,
+    "metadata": 0,
+    "text": "Saldo"
+  },
+  {
+    "index": 365,
+    "metadata": 0,
+    "text": "Belang per week:"
+  },
+  {
+    "index": 366,
+    "metadata": 0,
+    "text": "Salaris betaald iedere week:"
+  },
+  {
+    "index": 367,
+    "metadata": 0,
+    "text": "Beschikbare contant:"
+  },
+  {
+    "index": 368,
+    "metadata": 0,
+    "text": "Speler te koop in veiling"
+  },
+  {
+    "index": 369,
+    "metadata": 0,
+    "text": "begin-prijs:"
+  },
+  {
+    "index": 370,
+    "metadata": 0,
+    "text": "verkoopt de speler:"
+  },
+  {
+    "index": 371,
+    "metadata": 0,
+    "text": "Maak je bod in duizenden, d.w.z.: 300 = 300 duizenden"
+  },
+  {
+    "index": 372,
+    "metadata": 0,
+    "text": "Geen kopers"
+  },
+  {
+    "index": 373,
+    "metadata": 0,
+    "text": "Verkocht aan"
+  },
+  {
+    "index": 374,
+    "metadata": 0,
+    "text": "Jou bod:"
+  },
+  {
+    "index": 375,
+    "metadata": 0,
+    "text": "Bod"
+  },
+  {
+    "index": 376,
+    "metadata": 0,
+    "text": "Hoger dan je beschikbare contant:"
+  },
+  {
+    "index": 377,
+    "metadata": 0,
+    "text": "Je hebt niet voldoende geld."
+  },
+  {
+    "index": 378,
+    "metadata": 0,
+    "text": "Contract"
+  },
+  {
+    "index": 379,
+    "metadata": 0,
+    "text": "Nieuwe Salaris:"
+  },
+  {
+    "index": 380,
+    "metadata": 0,
+    "text": "Contract lengte:"
+  },
+  {
+    "index": 381,
+    "metadata": 0,
+    "text": "6 maanden"
+  },
+  {
+    "index": 382,
+    "metadata": 0,
+    "text": "1 jaar"
+  },
+  {
+    "index": 383,
+    "metadata": 0,
+    "text": "2 jaar"
+  },
+  {
+    "index": 384,
+    "metadata": 0,
+    "text": "Aanbod"
+  },
+  {
+    "index": 385,
+    "metadata": 0,
+    "text": "Annuleren"
+  },
+  {
+    "index": 386,
+    "metadata": 0,
+    "text": "je aanbod was was geweigerd, hij wilt:"
+  },
+  {
+    "index": 387,
+    "metadata": 0,
+    "text": "Akkoord"
+  },
+  {
+    "index": 388,
+    "metadata": 0,
+    "text": "Weiger"
+  },
+  {
+    "index": 389,
+    "metadata": 0,
+    "text": "Deze speler heeft een salaris beperking van"
+  },
+  {
+    "index": 390,
+    "metadata": 0,
+    "text": "Kampioenen"
+  },
+  {
+    "index": 391,
+    "metadata": 0,
+    "text": "voortgaan >>>"
+  },
+  {
+    "index": 392,
+    "metadata": 0,
+    "text": "goals"
+  },
+  {
+    "index": 393,
+    "metadata": 0,
+    "text": "Zoek"
+  },
+  {
+    "index": 394,
+    "metadata": 0,
+    "text": "Positie"
+  },
+  {
+    "index": 395,
+    "metadata": 0,
+    "text": "Nationaliteit:"
+  },
+  {
+    "index": 396,
+    "metadata": 0,
+    "text": "Alleen overdrachten op lijst weergeven"
+  },
+  {
+    "index": 397,
+    "metadata": 0,
+    "text": "Alleen spelers weergeven die spelen voor"
+  },
+  {
+    "index": 398,
+    "metadata": 0,
+    "text": "alleen ster-spelerd weergeven"
+  },
+  {
+    "index": 399,
+    "metadata": 0,
+    "text": "Alleen weergeven diegene die beschikbaar voor lening zijn"
+  },
+  {
+    "index": 400,
+    "metadata": 0,
+    "text": "alle waarden"
+  },
+  {
+    "index": 401,
+    "metadata": 0,
+    "text": "spelers gevonden"
+  },
+  {
+    "index": 402,
+    "metadata": 0,
+    "text": "Zit al op lening:"
+  },
+  {
+    "index": 403,
+    "metadata": 0,
+    "text": "Belang per spel:"
+  },
+  {
+    "index": 404,
+    "metadata": 0,
+    "text": "Krijg nog $ 500 000"
+  },
+  {
+    "index": 405,
+    "metadata": 0,
+    "text": "Betaal $ 500 000"
+  },
+  {
+    "index": 406,
+    "metadata": 0,
+    "text": "Jaat"
+  },
+  {
+    "index": 407,
+    "metadata": 0,
+    "text": "Kampioen"
+  },
+  {
+    "index": 408,
+    "metadata": 0,
+    "text": "Tweede in de wedstrijd"
+  },
+  {
+    "index": 409,
+    "metadata": 0,
+    "text": "Top Scorer"
+  },
+  {
+    "index": 410,
+    "metadata": 0,
+    "text": "Kampioenscoach"
+  },
+  {
+    "index": 411,
+    "metadata": 0,
+    "text": "Coach uitnodiging"
+  },
+  {
+    "index": 412,
+    "metadata": 0,
+    "text": "De team hieronder wilt je te huren, wil je deze team leiden?"
+  },
+  {
+    "index": 413,
+    "metadata": 0,
+    "text": "Akkoord"
+  },
+  {
+    "index": 414,
+    "metadata": 0,
+    "text": "Alles verwerpen"
+  },
+  {
+    "index": 415,
+    "metadata": 0,
+    "text": "ontslaat je omdat:"
+  },
+  {
+    "index": 416,
+    "metadata": 0,
+    "text": "De fans hebben de manager zo hard gedrukt vanwege jou slechte resultaten."
+  },
+  {
+    "index": 417,
+    "metadata": 0,
+    "text": "leidden onze club tot financiële problemen."
+  },
+  {
+    "index": 418,
+    "metadata": 0,
+    "text": "hebben zoveel slechte resultaten."
+  },
+  {
+    "index": 419,
+    "metadata": 0,
+    "text": "we waren gedegradeerd uit de 4de divisie..."
+  },
+  {
+    "index": 420,
+    "metadata": 0,
+    "text": "je hebt voor gevraagd. succes met je volgende team."
+  },
+  {
+    "index": 421,
+    "metadata": 0,
+    "text": "De nieuwe coach om je te vervangen is:"
+  },
+  {
+    "index": 422,
+    "metadata": 0,
+    "text": "Nu wacht voor een nieuwe club..."
+  },
+  {
+    "index": 423,
+    "metadata": 0,
+    "text": "Ontslagen!"
+  },
+  {
+    "index": 424,
+    "metadata": 0,
+    "text": "Spel instellingen"
+  },
+  {
+    "index": 425,
+    "metadata": 0,
+    "text": "Cmpetities weergeven"
+  },
+  {
+    "index": 426,
+    "metadata": 0,
+    "text": "Automatisch opalssn:"
+  },
+  {
+    "index": 427,
+    "metadata": 0,
+    "text": "Spel snelheid:"
+  },
+  {
+    "index": 428,
+    "metadata": 0,
+    "text": "Snelheid zonder human spelers:"
+  },
+  {
+    "index": 429,
+    "metadata": 0,
+    "text": "Strafschoppen besluiten w/o mensen:"
+  },
+  {
+    "index": 430,
+    "metadata": 0,
+    "text": "Coach overdrachten weergeven:"
+  },
+  {
+    "index": 431,
+    "metadata": 0,
+    "text": "Wedstrijd info op half-tijd openen:"
+  },
+  {
+    "index": 432,
+    "metadata": 0,
+    "text": "Verstreken contract waarschuwen ontvangen:"
+  },
+  {
+    "index": 433,
+    "metadata": 0,
+    "text": "Automatisch vernieuwen van verstreken contracts:"
+  },
+  {
+    "index": 434,
+    "metadata": 0,
+    "text": "Kleur en geluiden"
+  },
+  {
+    "index": 435,
+    "metadata": 0,
+    "text": "Geluidens evenementen in staat stellen"
+  },
+  {
+    "index": 436,
+    "metadata": 0,
+    "text": "Huis team evenements markeren"
+  },
+  {
+    "index": 437,
+    "metadata": 0,
+    "text": "Gebruik kleuren in spelers lijst"
+  },
+  {
+    "index": 438,
+    "metadata": 0,
+    "text": "niet  automatisch opslaan"
+  },
+  {
+    "index": 439,
+    "metadata": 0,
+    "text": "Elke 3 reizen"
+  },
+  {
+    "index": 440,
+    "metadata": 0,
+    "text": "Na elke wedstrijd"
+  },
+  {
+    "index": 441,
+    "metadata": 0,
+    "text": "Begin van seizoen"
+  },
+  {
+    "index": 442,
+    "metadata": 0,
+    "text": "Langzaam"
+  },
+  {
+    "index": 443,
+    "metadata": 0,
+    "text": "Normaal"
+  },
+  {
+    "index": 444,
+    "metadata": 0,
+    "text": "Snel"
+  },
+  {
+    "index": 445,
+    "metadata": 0,
+    "text": "Heel Snel"
+  },
+  {
+    "index": 446,
+    "metadata": 0,
+    "text": "Super Snel"
+  },
+  {
+    "index": 447,
+    "metadata": 0,
+    "text": "Ultra Snel"
+  },
+  {
+    "index": 448,
+    "metadata": 0,
+    "text": "Hyper Snel"
+  },
+  {
+    "index": 449,
+    "metadata": 0,
+    "text": "Nee"
+  },
+  {
+    "index": 450,
+    "metadata": 0,
+    "text": "Ja"
+  },
+  {
+    "index": 451,
+    "metadata": 0,
+    "text": "Alleen verstreken"
+  },
+  {
+    "index": 452,
+    "metadata": 0,
+    "text": "Alleed gauw verstreken"
+  },
+  {
+    "index": 453,
+    "metadata": 0,
+    "text": "Minuten in europese stijl weergeven (bijvoorbeeld: 60' inplaats van 15' 2de helft)"
+  },
+  {
+    "index": 454,
+    "metadata": 0,
+    "text": "Wedstrijden of competities zonder mensen weergeven:"
+  },
+  {
+    "index": 455,
+    "metadata": 0,
+    "text": "Gebruik een diferent kleur in de menselijke score"
+  },
+  {
+    "index": 456,
+    "metadata": 0,
+    "text": "Kleuren van spelers lijst"
+  },
+  {
+    "index": 457,
+    "metadata": 0,
+    "text": "reset met verzuim"
+  },
+  {
+    "index": 458,
+    "metadata": 0,
+    "text": "Strafschop"
+  },
+  {
+    "index": 459,
+    "metadata": 0,
+    "text": "Schopper kiezen"
+  },
+  {
+    "index": 460,
+    "metadata": 0,
+    "text": "Schop"
+  },
+  {
+    "index": 461,
+    "metadata": 0,
+    "text": "Maak zich klaar om te schoppen..."
+  },
+  {
+    "index": 462,
+    "metadata": 0,
+    "text": "Schopt de bal en..."
+  },
+  {
+    "index": 463,
+    "metadata": 0,
+    "text": "Dat was een goeie schop! Goal!!!"
+  },
+  {
+    "index": 464,
+    "metadata": 0,
+    "text": "Daar is het, goal!!!"
+  },
+  {
+    "index": 465,
+    "metadata": 0,
+    "text": "Wat een top goal!"
+  },
+  {
+    "index": 466,
+    "metadata": 0,
+    "text": "De Goalkeeper verdedigt!"
+  },
+  {
+    "index": 467,
+    "metadata": 0,
+    "text": "Hit de pal!!!"
+  },
+  {
+    "index": 468,
+    "metadata": 0,
+    "text": "Spatte tegen de dwarsbalk!!!"
+  },
+  {
+    "index": 469,
+    "metadata": 0,
+    "text": "Punten"
+  },
+  {
+    "index": 470,
+    "metadata": 0,
+    "text": "Wedstrijden Gespeeld"
+  },
+  {
+    "index": 471,
+    "metadata": 0,
+    "text": "Overwinningen"
+  },
+  {
+    "index": 472,
+    "metadata": 0,
+    "text": "Gelijks"
+  },
+  {
+    "index": 473,
+    "metadata": 0,
+    "text": "Verliezen"
+  },
+  {
+    "index": 474,
+    "metadata": 0,
+    "text": "Goals Voor"
+  },
+  {
+    "index": 475,
+    "metadata": 0,
+    "text": "Goals Tegen"
+  },
+  {
+    "index": 476,
+    "metadata": 0,
+    "text": "Goals Verschil"
+  },
+  {
+    "index": 477,
+    "metadata": 0,
+    "text": "Groep"
+  },
+  {
+    "index": 478,
+    "metadata": 0,
+    "text": "Nog niet gepland"
+  },
+  {
+    "index": 479,
+    "metadata": 0,
+    "text": "Strafschoppen besluit"
+  },
+  {
+    "index": 480,
+    "metadata": 0,
+    "text": "Strafschoppen besluit - Kies de schoppers"
+  },
+  {
+    "index": 481,
+    "metadata": 0,
+    "text": "Beschikbare spelers:"
+  },
+  {
+    "index": 482,
+    "metadata": 0,
+    "text": "Gekozen schoppers:"
+  },
+  {
+    "index": 483,
+    "metadata": 0,
+    "text": "Automatisch kiezen"
+  },
+  {
+    "index": 484,
+    "metadata": 0,
+    "text": "Voortgaan >>>"
+  },
+  {
+    "index": 485,
+    "metadata": 0,
+    "text": "Goal"
+  },
+  {
+    "index": 486,
+    "metadata": 0,
+    "text": "Gemist"
+  },
+  {
+    "index": 487,
+    "metadata": 0,
+    "text": "Gewonnen"
+  },
+  {
+    "index": 488,
+    "metadata": 0,
+    "text": "Typ een bestandsnaam hieronder om het spel op te slaan:"
+  },
+  {
+    "index": 489,
+    "metadata": 0,
+    "text": "Opslaan"
+  },
+  {
+    "index": 490,
+    "metadata": 0,
+    "text": "Bestandsnaam is al in gebruik, wil je vervangen?"
+  },
+  {
+    "index": 491,
+    "metadata": 0,
+    "text": "Ja"
+  },
+  {
+    "index": 492,
+    "metadata": 0,
+    "text": "Nee"
+  },
+  {
+    "index": 493,
+    "metadata": 0,
+    "text": "Speler Overdrachten"
+  },
+  {
+    "index": 494,
+    "metadata": 0,
+    "text": "Veiling Overdracht"
+  },
+  {
+    "index": 495,
+    "metadata": 0,
+    "text": "Initiale waarde:"
+  },
+  {
+    "index": 496,
+    "metadata": 0,
+    "text": "(in duizenden van $)"
+  },
+  {
+    "index": 497,
+    "metadata": 0,
+    "text": "Zet op Overdrachtslijst"
+  },
+  {
+    "index": 498,
+    "metadata": 0,
+    "text": "Veilingi beginnen"
+  },
+  {
+    "index": 499,
+    "metadata": 0,
+    "text": "Annuleren"
+  },
+  {
+    "index": 500,
+    "metadata": 0,
+    "text": "Overdrachtslijst"
+  },
+  {
+    "index": 501,
+    "metadata": 0,
+    "text": "(Je moet een overdrachts honorarium volgens de tijd om het spelers contract te verstrijken)"
+  },
+  {
+    "index": 502,
+    "metadata": 0,
+    "text": "Geraamde overdracht honorarium voor deze speler:"
+  },
+  {
+    "index": 503,
+    "metadata": 0,
+    "text": "vastgesteldastgesteld waarde:"
+  },
+  {
+    "index": 504,
+    "metadata": 0,
+    "text": "1ste helft"
+  },
+  {
+    "index": 505,
+    "metadata": 0,
+    "text": "2de helft"
+  },
+  {
+    "index": 506,
+    "metadata": 0,
+    "text": "Helft"
+  },
+  {
+    "index": 507,
+    "metadata": 0,
+    "text": "Extra Tijd"
+  },
+  {
+    "index": 508,
+    "metadata": 0,
+    "text": "Full Time"
+  },
+  {
+    "index": 509,
+    "metadata": 0,
+    "text": "3de plaats wedstrijd"
+  },
+  {
+    "index": 510,
+    "metadata": 0,
+    "text": "(eigen goal)"
+  },
+  {
+    "index": 511,
+    "metadata": 0,
+    "text": "(strafschop)"
+  },
+  {
+    "index": 512,
+    "metadata": 0,
+    "text": "(vrije schop)"
+  },
+  {
+    "index": 513,
+    "metadata": 0,
+    "text": "(strafschop gemist)"
+  },
+  {
+    "index": 514,
+    "metadata": 0,
+    "text": "Coach"
+  },
+  {
+    "index": 515,
+    "metadata": 0,
+    "text": "Huidige Team"
+  },
+  {
+    "index": 516,
+    "metadata": 0,
+    "text": "Punten"
+  },
+  {
+    "index": 517,
+    "metadata": 0,
+    "text": "Wereld Beoordeling"
+  },
+  {
+    "index": 518,
+    "metadata": 0,
+    "text": "eers"
+  },
+  {
+    "index": 519,
+    "metadata": 0,
+    "text": "Speler ontslaan"
+  },
+  {
+    "index": 520,
+    "metadata": 0,
+    "text": "Ontslagen speler kan vervangen worden door een speler bevorderd van jou jeugd kader."
+  },
+  {
+    "index": 521,
+    "metadata": 0,
+    "text": "De jongeling bevorderd gaat vaardigheden niveau tussen 1 en 20 hebben. Zijn leeftijd gaat tussen 17 en 20 zijn."
+  },
+  {
+    "index": 522,
+    "metadata": 0,
+    "text": "Je kunt een nieuwe naam voor de nieuwe speler invoerenof gewoon hetzelfde naam aan geven zoals de geslagen speler."
+  },
+  {
+    "index": 523,
+    "metadata": 0,
+    "text": "Naam van de nieuwe speler"
+  },
+  {
+    "index": 524,
+    "metadata": 0,
+    "text": "Positie"
+  },
+  {
+    "index": 525,
+    "metadata": 0,
+    "text": "Ontslaan"
+  },
+  {
+    "index": 526,
+    "metadata": 0,
+    "text": "Annuleren"
+  },
+  {
+    "index": 527,
+    "metadata": 0,
+    "text": "Spelers bod"
+  },
+  {
+    "index": 528,
+    "metadata": 0,
+    "text": "Wilt de speler"
+  },
+  {
+    "index": 529,
+    "metadata": 0,
+    "text": "het aanbod accepteren?"
+  },
+  {
+    "index": 530,
+    "metadata": 0,
+    "text": "Menselijke coaches"
+  },
+  {
+    "index": 531,
+    "metadata": 0,
+    "text": "Verwijder"
+  },
+  {
+    "index": 532,
+    "metadata": 0,
+    "text": "Nieuw toevoegen"
+  },
+  {
+    "index": 533,
+    "metadata": 0,
+    "text": "Om te verwijderen, moet een coach eerst van zijn huidige job aftreden"
+  },
+  {
+    "index": 534,
+    "metadata": 0,
+    "text": "Nieuwe coachs naam"
+  },
+  {
+    "index": 535,
+    "metadata": 0,
+    "text": "Geblesuurde speler"
+  },
+  {
+    "index": 536,
+    "metadata": 0,
+    "text": "Een speler selecteren om te vervangen"
+  },
+  {
+    "index": 537,
+    "metadata": 0,
+    "text": "Strafschop"
+  },
+  {
+    "index": 538,
+    "metadata": 0,
+    "text": "Seizoens geschidenis"
+  },
+  {
+    "index": 539,
+    "metadata": 0,
+    "text": "Toernooi"
+  },
+  {
+    "index": 540,
+    "metadata": 0,
+    "text": "Positie"
+  },
+  {
+    "index": 541,
+    "metadata": 0,
+    "text": "Coaches"
+  },
+  {
+    "index": 542,
+    "metadata": 0,
+    "text": "3d plaats"
+  },
+  {
+    "index": 543,
+    "metadata": 0,
+    "text": "4de plaats"
+  },
+  {
+    "index": 544,
+    "metadata": 0,
+    "text": "Coach ontslagen"
+  },
+  {
+    "index": 545,
+    "metadata": 0,
+    "text": "Coaches veranderen"
+  },
+  {
+    "index": 546,
+    "metadata": 0,
+    "text": "ontslagen uit"
+  },
+  {
+    "index": 547,
+    "metadata": 0,
+    "text": "Nieuwe coach:"
+  },
+  {
+    "index": 548,
+    "metadata": 0,
+    "text": "gaat naar"
+  },
+  {
+    "index": 549,
+    "metadata": 0,
+    "text": "Laatste overdrachten"
+  },
+  {
+    "index": 550,
+    "metadata": 0,
+    "text": "Spelers"
+  },
+  {
+    "index": 551,
+    "metadata": 0,
+    "text": "Van"
+  },
+  {
+    "index": 552,
+    "metadata": 0,
+    "text": "Naar"
+  },
+  {
+    "index": 553,
+    "metadata": 0,
+    "text": "Spelers"
+  },
+  {
+    "index": 554,
+    "metadata": 0,
+    "text": "Coaches"
+  },
+  {
+    "index": 555,
+    "metadata": 0,
+    "text": "Alle spelers"
+  },
+  {
+    "index": 556,
+    "metadata": 0,
+    "text": "Maak een Aanbod"
+  },
+  {
+    "index": 557,
+    "metadata": 0,
+    "text": "Spelers waarde:"
+  },
+  {
+    "index": 558,
+    "metadata": 0,
+    "text": "Jou aanbod:"
+  },
+  {
+    "index": 559,
+    "metadata": 0,
+    "text": "Aanbod"
+  },
+  {
+    "index": 560,
+    "metadata": 0,
+    "text": "wilt niet in je team te spelen"
+  },
+  {
+    "index": 561,
+    "metadata": 0,
+    "text": "Je aanbod was niet geaccepteerd"
+  },
+  {
+    "index": 562,
+    "metadata": 0,
+    "text": "Om in je club te spelen"
+  },
+  {
+    "index": 563,
+    "metadata": 0,
+    "text": "Wilt een salaris verhoging."
+  },
+  {
+    "index": 564,
+    "metadata": 0,
+    "text": "Accepteren"
+  },
+  {
+    "index": 565,
+    "metadata": 0,
+    "text": "Weigeren"
+  },
+  {
+    "index": 566,
+    "metadata": 0,
+    "text": "E-Mail Box"
+  },
+  {
+    "index": 567,
+    "metadata": 0,
+    "text": "Wil je een boete aan de speler geven?"
+  },
+  {
+    "index": 568,
+    "metadata": 0,
+    "text": "Management"
+  },
+  {
+    "index": 569,
+    "metadata": 0,
+    "text": "Fans"
+  },
+  {
+    "index": 570,
+    "metadata": 0,
+    "text": "Speler"
+  },
+  {
+    "index": 571,
+    "metadata": 0,
+    "text": "Pers"
+  },
+  {
+    "index": 572,
+    "metadata": 0,
+    "text": "Medische centrum"
+  },
+  {
+    "index": 573,
+    "metadata": 0,
+    "text": "Welkom bij"
+  },
+  {
+    "index": 574,
+    "metadata": 0,
+    "text": "weg gestuurd"
+  },
+  {
+    "index": 575,
+    "metadata": 0,
+    "text": "I vind het niet leuk"
+  },
+  {
+    "index": 576,
+    "metadata": 0,
+    "text": "nederlands - dutch version."
+  },
+  {
+    "index": 577,
+    "metadata": 0,
+    "text": "Dit zullen we niet toestaan"
+  },
+  {
+    "index": 578,
+    "metadata": 0,
+    "text": "Dit zullen we niet toestaan"
+  },
+  {
+    "index": 579,
+    "metadata": 0,
+    "text": "gaat naar"
+  },
+  {
+    "index": 580,
+    "metadata": 0,
+    "text": "scheuren in de gips veroorzaakt door"
+  },
+  {
+    "index": 581,
+    "metadata": 0,
+    "text": "Bednkt"
+  },
+  {
+    "index": 582,
+    "metadata": 0,
+    "text": "Klacht"
+  },
+  {
+    "index": 583,
+    "metadata": 0,
+    "text": "Mijn contract is verstreken"
+  },
+  {
+    "index": 584,
+    "metadata": 0,
+    "text": "Gevecht tussen"
+  },
+  {
+    "index": 585,
+    "metadata": 0,
+    "text": "Fansgevecht"
+  },
+  {
+    "index": 586,
+    "metadata": 0,
+    "text": "Overdrachten naar"
+  },
+  {
+    "index": 587,
+    "metadata": 0,
+    "text": "Nationale team uitnodigind"
+  },
+  {
+    "index": 588,
+    "metadata": 0,
+    "text": "Contract verstrijkt gauw"
+  },
+  {
+    "index": 589,
+    "metadata": 0,
+    "text": "Verstreken contract"
+  },
+  {
+    "index": 590,
+    "metadata": 0,
+    "text": "Geen ruimte voor de  speler"
+  },
+  {
+    "index": 591,
+    "metadata": 0,
+    "text": "Hij krijgt 10 spellen schorsing omdat hij tegen de gezicht van de scheidsrechter gespit heeft"
+  },
+  {
+    "index": 592,
+    "metadata": 0,
+    "text": "Hij krijgt 10 spellen schorsing omdat hij de scheidsrechter heeft gevloekt"
+  },
+  {
+    "index": 593,
+    "metadata": 0,
+    "text": "Hij krijgt 5 spellen schorsing omdat hij heeft een gevaarlijke glijd-tackle heeft gedaan van de achtere kant van een tegenstander"
+  },
+  {
+    "index": 594,
+    "metadata": 0,
+    "text": "Hij krijgt 5 spellen schorsing omdat hij de tegenstander heeft beledigd. we vinden het een oneerlijke straf"
+  },
+  {
+    "index": 595,
+    "metadata": 0,
+    "text": "Hij schopt de tegenstander en krijgt 5 spellen schorsing. We vinden het een oneerlijke straf"
+  },
+  {
+    "index": 596,
+    "metadata": 0,
+    "text": "Hij heeft een glijd-tackle vanachter gedaan, en krijgt 3 spellen schorsing"
+  },
+  {
+    "index": 597,
+    "metadata": 0,
+    "text": "Hij heeft een prod tegen de neus van de tegenstander gedaan en krijgt daavoor 3 spellen schorsing"
+  },
+  {
+    "index": 598,
+    "metadata": 0,
+    "text": "Hij maakt een foul tegen een tegenstander om een duidelijke goal scoring gelegenheid te voorkomenmet extreme geweld. 3 spellen schorsing"
+  },
+  {
+    "index": 599,
+    "metadata": 0,
+    "text": "Hij slaat de tegenstander in zijn gezicht. 3 spellen schorsing"
+  },
+  {
+    "index": 600,
+    "metadata": 0,
+    "text": "Een extreme gewelddadige foul. 2 spellen schorsing"
+  },
+  {
+    "index": 601,
+    "metadata": 0,
+    "text": "Hij schopt de tegenstander. Denkt de speller dat voetbal een gevecht spel is? 2 spellen schorsing"
+  },
+  {
+    "index": 602,
+    "metadata": 0,
+    "text": "Hij maakt een gewelddadige foul. 2 spellen schorsing"
+  },
+  {
+    "index": 603,
+    "metadata": 0,
+    "text": "De speler heeft een spierspanning. Rond een week geblessurd"
+  },
+  {
+    "index": 604,
+    "metadata": 0,
+    "text": "De speler heeft een gewrichtsbands verstuiking"
+  },
+  {
+    "index": 605,
+    "metadata": 0,
+    "text": "Hij heeft een lies blessuring. Rond twee weken geblessurd"
+  },
+  {
+    "index": 606,
+    "metadata": 0,
+    "text": "gekneusd dij. Geblessurd voor enkele wedstrijden."
+  },
+  {
+    "index": 607,
+    "metadata": 0,
+    "text": "Hij heeft een lies blessuring. rond twee weken geblessurd"
+  },
+  {
+    "index": 608,
+    "metadata": 0,
+    "text": "De speler heeft een spiespanning. Rond een week geblessurd."
+  },
+  {
+    "index": 609,
+    "metadata": 0,
+    "text": "Een zachte ankel verstuikingen. Rond twee weken geblessurd."
+  },
+  {
+    "index": 610,
+    "metadata": 0,
+    "text": "Getrokken kniepees. Verwachtend af te zijn voor veel wedstrijden."
+  },
+  {
+    "index": 611,
+    "metadata": 0,
+    "text": "Krijgt behandelijng voor een beschadigde hiel. Enkele dagen uit"
+  },
+  {
+    "index": 612,
+    "metadata": 0,
+    "text": "Stootte teen. Enkele dagen uit."
+  },
+  {
+    "index": 613,
+    "metadata": 0,
+    "text": "Gedraaide knie. Enkele dagen uit."
+  },
+  {
+    "index": 614,
+    "metadata": 0,
+    "text": "Hij heeft een gebroken teen. Veel weken uit."
+  },
+  {
+    "index": 615,
+    "metadata": 0,
+    "text": "Hij heeft een gebroken pols. Veel weken uit."
+  },
+  {
+    "index": 616,
+    "metadata": 0,
+    "text": "Een spierspanning  van de dij. Veel weken geblessurd"
+  },
+  {
+    "index": 617,
+    "metadata": 0,
+    "text": "Heeft een jaap in de been. Veel lweken uit."
+  },
+  {
+    "index": 618,
+    "metadata": 0,
+    "text": "Hij krijgt een zware ankel verstuiken. Veel weken geblessurd"
+  },
+  {
+    "index": 619,
+    "metadata": 0,
+    "text": "De speler lijdt aan een hartaanval. Misschien is het tijd voor ontslaan."
+  },
+  {
+    "index": 620,
+    "metadata": 0,
+    "text": "Hij heeft een scheenbeens breuk. Veel weken geblessurd."
+  },
+  {
+    "index": 621,
+    "metadata": 0,
+    "text": "Beschadigd kruisvormige gewrichtsband. Veel maanded uit."
+  },
+  {
+    "index": 622,
+    "metadata": 0,
+    "text": "Gebroken been. Veel maander uit."
+  },
+  {
+    "index": 623,
+    "metadata": 0,
+    "text": "Gespannen knie gewrichtsband. Is dat het einde van hun carrière?"
+  },
+  {
+    "index": 624,
+    "metadata": 0,
+    "text": "Welkom bij onze club. In deze terrein zul je enkele notities en waarschuwingen krijgen."
+  },
+  {
+    "index": 625,
+    "metadata": 0,
+    "text": "Onze club kan niet zo vernederd worden! dat soort dingen gaan we niet accepteren. Let op!"
+  },
+  {
+    "index": 626,
+    "metadata": 0,
+    "text": "Je kan met zo een hoge score zoals in deze spel niet verliezen. Als het voortgaat zullen we de management vragen om ju te ontslaan!"
+  },
+  {
+    "index": 627,
+    "metadata": 0,
+    "text": "We zullen verloren spellen met zo'n hoge score niet tolereren. Als het voortgaat zullen we de management vragen om jou te ontslaan"
+  },
+  {
+    "index": 628,
+    "metadata": 0,
+    "text": "Bedanktk voor het verhogen van mijn salaris. I zal mijn dankbaarheid op het veld demonstreren!"
+  },
+  {
+    "index": 629,
+    "metadata": 0,
+    "text": "De speler dat te koop waren zijn verkocht aan"
+  },
+  {
+    "index": 630,
+    "metadata": 0,
+    "text": "We hebben enkele aankondigingen over je uitnodiging naar de nationale team gehoord. Wacht in de volgende week voor een officiele uitnodiging"
+  },
+  {
+    "index": 631,
+    "metadata": 0,
+    "text": "De spelers contract verstrijkt binnen ongeveer 3 weken"
+  },
+  {
+    "index": 632,
+    "metadata": 0,
+    "text": "De spelers contract heeft vandaag verstreken"
+  },
+  {
+    "index": 633,
+    "metadata": 0,
+    "text": "De spelers lening is afgelopen. Maar hij zul naar je club terug gaan alleen als je minder dan 28 spelers hebt."
+  },
+  {
+    "index": 634,
+    "metadata": 0,
+    "text": "Een belangrijke overdracht heeft deze week voorgedaan. De speler is al in het nieuwe team."
+  },
+  {
+    "index": 635,
+    "metadata": 0,
+    "text": "De speler geeft een conferentie pers vandaag om over zijni belangrijke overdracht te spreken."
+  },
+  {
+    "index": 636,
+    "metadata": 0,
+    "text": "Ben je gek? Je kan me geen boete geven!"
+  },
+  {
+    "index": 637,
+    "metadata": 0,
+    "text": "Ik vond het niet leuk. Het wegsturen was mijn fout niet."
+  },
+  {
+    "index": 638,
+    "metadata": 0,
+    "text": "De nieuwe speler was niet verwelkomd. Misschien zijn er te veel ster speleres in je kader."
+  },
+  {
+    "index": 639,
+    "metadata": 0,
+    "text": "De speler is niet tevreden omdat hij speelt in geen wedstrijd. Hij wilt naar een andere club te gaan."
+  },
+  {
+    "index": 640,
+    "metadata": 0,
+    "text": "Min contract is verstreken. Vernieuw mijn contract of laat  me naar een andere club gaan aub."
+  },
+  {
+    "index": 641,
+    "metadata": 0,
+    "text": "Een gevecht heeft uitgebarst op het voetbal veld tussen deze spelers."
+  },
+  {
+    "index": 642,
+    "metadata": 0,
+    "text": "Spelers en fans vechten vandaag, Ik denk dat onze slechte resultaten zijn de motief is deze storm."
+  },
+  {
+    "index": 643,
+    "metadata": 0,
+    "text": "Ik ben ontevreden met mijn overbelasting van wedstrijden. Ik heb wat tijd nodig om te rusten."
+  },
+  {
+    "index": 644,
+    "metadata": 0,
+    "text": "(leeg)"
+  },
+  {
+    "index": 645,
+    "metadata": 0,
+    "text": "(leeg)"
+  },
+  {
+    "index": 646,
+    "metadata": 0,
+    "text": "(leeg)"
+  },
+  {
+    "index": 647,
+    "metadata": 0,
+    "text": "(leeg)"
+  },
+  {
+    "index": 648,
+    "metadata": 0,
+    "text": "(leeg)"
+  },
+  {
+    "index": 649,
+    "metadata": 0,
+    "text": "(leeg)"
+  },
+  {
+    "index": 650,
+    "metadata": 0,
+    "text": "Accesoires"
+  },
+  {
+    "index": 651,
+    "metadata": 0,
+    "text": "menigte"
+  },
+  {
+    "index": 652,
+    "metadata": 0,
+    "text": "inkomst"
+  },
+  {
+    "index": 653,
+    "metadata": 0,
+    "text": "Bevestigen"
+  },
+  {
+    "index": 654,
+    "metadata": 0,
+    "text": "Wil je aftreden?"
+  },
+  {
+    "index": 655,
+    "metadata": 0,
+    "text": "Goals"
+  },
+  {
+    "index": 656,
+    "metadata": 0,
+    "text": "Competitie tabel"
+  },
+  {
+    "index": 657,
+    "metadata": 0,
+    "text": "Bal bezitten"
+  },
+  {
+    "index": 658,
+    "metadata": 0,
+    "text": "Schoten"
+  },
+  {
+    "index": 659,
+    "metadata": 0,
+    "text": "tackles"
+  },
+  {
+    "index": 660,
+    "metadata": 0,
+    "text": "verkeerde pas"
+  },
+  {
+    "index": 661,
+    "metadata": 0,
+    "text": "fouls gepleegs"
+  },
+  {
+    "index": 662,
+    "metadata": 0,
+    "text": "Overdrachts Aanbod"
+  },
+  {
+    "index": 663,
+    "metadata": 0,
+    "text": "Wilt de speler:"
+  },
+  {
+    "index": 664,
+    "metadata": 0,
+    "text": "Aanbod waarde:"
+  },
+  {
+    "index": 665,
+    "metadata": 0,
+    "text": "Aakoord gaan met overdracht van de speler?"
+  },
+  {
+    "index": 666,
+    "metadata": 0,
+    "text": "Beoordeling qua eind-positie"
+  },
+  {
+    "index": 667,
+    "metadata": 0,
+    "text": "Beoordeling qua punten"
+  },
+  {
+    "index": 668,
+    "metadata": 0,
+    "text": "Formaat: (pnt/GV/GT)"
+  },
+  {
+    "index": 669,
+    "metadata": 0,
+    "text": "Wereld beoordeling"
+  },
+  {
+    "index": 670,
+    "metadata": 0,
+    "text": "Punten"
+  },
+  {
+    "index": 671,
+    "metadata": 0,
+    "text": "Pnt."
+  },
+  {
+    "index": 672,
+    "metadata": 0,
+    "text": "Speler dood"
+  },
+  {
+    "index": 673,
+    "metadata": 0,
+    "text": "De speler ging doad vandaag tijdens het training. Waarschijnlijk door zijn vergevorderde leeftijd."
+  },
+  {
+    "index": 674,
+    "metadata": 0,
+    "text": "Daarom heeft je team 5 punten in de competitie eraf"
+  },
+  {
+    "index": 675,
+    "metadata": 0,
+    "text": "Een nationale team kiezen om te trainen"
+  },
+  {
+    "index": 676,
+    "metadata": 0,
+    "text": "Sommige Nationale teams willen jou als hun coach, kies hieronder de NT dat je wilt trainen:"
+  },
+  {
+    "index": 677,
+    "metadata": 0,
+    "text": "Spelers zoeken om naar de Nationale Team te uitnodigen"
+  },
+  {
+    "index": 678,
+    "metadata": 0,
+    "text": "Kies de speler, dan klik in >> om toe te voegen."
+  },
+  {
+    "index": 679,
+    "metadata": 0,
+    "text": "Winnaars wedstrijd"
+  },
+  {
+    "index": 680,
+    "metadata": 0,
+    "text": "Verliezers wedstrijd"
+  },
+  {
+    "index": 681,
+    "metadata": 0,
+    "text": "beste 3de plaats"
+  },
+  {
+    "index": 682,
+    "metadata": 0,
+    "text": "Technisch:"
+  },
+  {
+    "index": 683,
+    "metadata": 0,
+    "text": "Discipline foul:"
+  },
+  {
+    "index": 684,
+    "metadata": 0,
+    "text": "Vreindelijk Dienstregeling"
+  },
+  {
+    "index": 685,
+    "metadata": 0,
+    "text": "Pre-season vriendelijk dienstregeling"
+  },
+  {
+    "index": 686,
+    "metadata": 0,
+    "text": "Competitie begint op:"
+  },
+  {
+    "index": 687,
+    "metadata": 0,
+    "text": "Beschibare datums:"
+  },
+  {
+    "index": 688,
+    "metadata": 0,
+    "text": "Kies tegenstander:"
+  },
+  {
+    "index": 689,
+    "metadata": 0,
+    "text": "Wedstrijds plaats:"
+  },
+  {
+    "index": 690,
+    "metadata": 0,
+    "text": "Thuis"
+  },
+  {
+    "index": 691,
+    "metadata": 0,
+    "text": "Weg"
+  },
+  {
+    "index": 692,
+    "metadata": 0,
+    "text": "Boek vriendelijk"
+  },
+  {
+    "index": 693,
+    "metadata": 0,
+    "text": "Er is al een vriendelijk op deze datum"
+  },
+  {
+    "index": 694,
+    "metadata": 0,
+    "text": "Vriendelijk verworpen"
+  },
+  {
+    "index": 695,
+    "metadata": 0,
+    "text": "Geen genoeg geld om te vriendelijks vergoedingen te betalen"
+  },
+  {
+    "index": 696,
+    "metadata": 0,
+    "text": "Vriendelijk gepland"
+  },
+  {
+    "index": 697,
+    "metadata": 0,
+    "text": "Vriendelijk bevestiging"
+  },
+  {
+    "index": 698,
+    "metadata": 0,
+    "text": "Wilt voor deze vriendelijk:"
+  },
+  {
+    "index": 699,
+    "metadata": 0,
+    "text": "Je moet voor deze vriendelijk echt nu betalen, vriendelijk bevestigen?"
+  },
+  {
+    "index": 700,
+    "metadata": 0,
+    "text": "Om de vriendelijk tussen die twee menselijk clubs te bevestigen, klik ja."
+  },
+  {
+    "index": 701,
+    "metadata": 0,
+    "text": "Een nummer kiezen"
+  },
+  {
+    "index": 702,
+    "metadata": 0,
+    "text": "Geen nummer"
+  },
+  {
+    "index": 703,
+    "metadata": 0,
+    "text": "Wilt een pre-seasons vriendelijks plannen?"
+  },
+  {
+    "index": 704,
+    "metadata": 0,
+    "text": "Lenings Aanbod"
+  },
+  {
+    "index": 705,
+    "metadata": 0,
+    "text": "Wil je deze speler lenen?"
+  },
+  {
+    "index": 706,
+    "metadata": 0,
+    "text": "Trofeeëns galerie is leeg"
+  },
+  {
+    "index": 707,
+    "metadata": 0,
+    "text": "Teams kleuren"
+  },
+  {
+    "index": 708,
+    "metadata": 0,
+    "text": "Hoofd kleur:"
+  },
+  {
+    "index": 709,
+    "metadata": 0,
+    "text": "Secundaire kleur:"
+  },
+  {
+    "index": 710,
+    "metadata": 0,
+    "text": "Wedsrijds resumeren"
+  },
+  {
+    "index": 711,
+    "metadata": 0,
+    "text": "Wedstrijds stats"
+  },
+  {
+    "index": 712,
+    "metadata": 0,
+    "text": "Eerste been"
+  },
+  {
+    "index": 713,
+    "metadata": 0,
+    "text": "carrière stats"
+  },
+  {
+    "index": 714,
+    "metadata": 0,
+    "text": "Huidige seizoens wedstrijden"
+  },
+  {
+    "index": 715,
+    "metadata": 0,
+    "text": "Datum"
+  },
+  {
+    "index": 716,
+    "metadata": 0,
+    "text": "Wedstrijd"
+  },
+  {
+    "index": 717,
+    "metadata": 0,
+    "text": "Beoordeling"
+  },
+  {
+    "index": 718,
+    "metadata": 0,
+    "text": "Huidige bekwaamheid"
+  },
+  {
+    "index": 719,
+    "metadata": 0,
+    "text": "Terrassen"
+  },
+  {
+    "index": 720,
+    "metadata": 0,
+    "text": "Normale zitplaatsen:"
+  },
+  {
+    "index": 721,
+    "metadata": 0,
+    "text": "Gedekte zitplaatsen"
+  },
+  {
+    "index": 722,
+    "metadata": 0,
+    "text": "VIP cabines:"
+  },
+  {
+    "index": 723,
+    "metadata": 0,
+    "text": "Tickets prijs"
+  },
+  {
+    "index": 724,
+    "metadata": 0,
+    "text": "Aangeboden prijs voor deze divisie:"
+  },
+  {
+    "index": 725,
+    "metadata": 0,
+    "text": "zitplaatsen"
+  },
+  {
+    "index": 726,
+    "metadata": 0,
+    "text": "Stadion uitbreiden"
+  },
+  {
+    "index": 727,
+    "metadata": 0,
+    "text": "Huidige uitbreiding beeindigd op"
+  },
+  {
+    "index": 728,
+    "metadata": 0,
+    "text": "Maximum"
+  },
+  {
+    "index": 729,
+    "metadata": 0,
+    "text": "Nieuwe zitplaatsen"
+  },
+  {
+    "index": 730,
+    "metadata": 0,
+    "text": "Een prijs raming verzoeken"
+  },
+  {
+    "index": 731,
+    "metadata": 0,
+    "text": "Begin met uitbreiding"
+  },
+  {
+    "index": 732,
+    "metadata": 0,
+    "text": "Geraamde uitbreidind kosten inclusief project uitvoering"
+  },
+  {
+    "index": 733,
+    "metadata": 0,
+    "text": "Het project is verwacht beeindigd te worden op"
+  },
+  {
+    "index": 734,
+    "metadata": 0,
+    "text": "Op dit moment er is geen technologie om het stadion met de gewenste antaal zitplaatsen uit te breiden"
+  },
+  {
+    "index": 735,
+    "metadata": 0,
+    "text": "Geen voldoende geld om met de uitbreiding te beginnen"
+  },
+  {
+    "index": 736,
+    "metadata": 0,
+    "text": "Teams bewerker"
+  },
+  {
+    "index": 737,
+    "metadata": 0,
+    "text": "Teams worden geladen..."
+  },
+  {
+    "index": 738,
+    "metadata": 0,
+    "text": "Teams totaal:"
+  },
+  {
+    "index": 739,
+    "metadata": 0,
+    "text": "Teams"
+  },
+  {
+    "index": 740,
+    "metadata": 0,
+    "text": "Nationale Teams:"
+  },
+  {
+    "index": 741,
+    "metadata": 0,
+    "text": "Een team toevoegen"
+  },
+  {
+    "index": 742,
+    "metadata": 0,
+    "text": "Een team bewerken"
+  },
+  {
+    "index": 743,
+    "metadata": 0,
+    "text": "Een team verwijderen"
+  },
+  {
+    "index": 744,
+    "metadata": 0,
+    "text": "Land"
+  },
+  {
+    "index": 745,
+    "metadata": 0,
+    "text": "Niveau"
+  },
+  {
+    "index": 746,
+    "metadata": 0,
+    "text": "hoodf Menu"
+  },
+  {
+    "index": 747,
+    "metadata": 0,
+    "text": "Uit"
+  },
+  {
+    "index": 748,
+    "metadata": 0,
+    "text": "Leeftijd"
+  },
+  {
+    "index": 749,
+    "metadata": 0,
+    "text": "coach"
+  },
+  {
+    "index": 750,
+    "metadata": 0,
+    "text": "stadion"
+  },
+  {
+    "index": 751,
+    "metadata": 0,
+    "text": "Spelers"
+  },
+  {
+    "index": 752,
+    "metadata": 0,
+    "text": "Speler toevoegen"
+  },
+  {
+    "index": 753,
+    "metadata": 0,
+    "text": "Speler bewerken"
+  },
+  {
+    "index": 754,
+    "metadata": 0,
+    "text": "Speler verwijderen"
+  },
+  {
+    "index": 755,
+    "metadata": 0,
+    "text": "Je hebt een limiet van 25 spelers"
+  },
+  {
+    "index": 756,
+    "metadata": 0,
+    "text": "Wil je de geselecteerde team verwijderen?"
+  },
+  {
+    "index": 757,
+    "metadata": 0,
+    "text": "Volledige naam"
+  },
+  {
+    "index": 758,
+    "metadata": 0,
+    "text": "Korte Naam"
+  },
+  {
+    "index": 759,
+    "metadata": 0,
+    "text": "Hoofd Kleur"
+  },
+  {
+    "index": 760,
+    "metadata": 0,
+    "text": "Secundaire kleur"
+  },
+  {
+    "index": 761,
+    "metadata": 0,
+    "text": "Ster Speler"
+  },
+  {
+    "index": 762,
+    "metadata": 0,
+    "text": "Eigenschap"
+  },
+  {
+    "index": 763,
+    "metadata": 0,
+    "text": "Positie"
+  },
+  {
+    "index": 764,
+    "metadata": 0,
+    "text": "Klik om logo te kiezen"
+  },
+  {
+    "index": 765,
+    "metadata": 0,
+    "text": "Bestandsnaam"
+  },
+  {
+    "index": 766,
+    "metadata": 0,
+    "text": "Bestand bestaat al, kies een andere"
+  },
+  {
+    "index": 767,
+    "metadata": 0,
+    "text": "Je gebruiker inschrijving zal toekomstige versies, nieuwe functies en bug vaststellen ondersteunen, en zal je voorzien van technische ondersteuning via e-mail"
+  },
+  {
+    "index": 768,
+    "metadata": 0,
+    "text": "Met de geregistreerde versie, kun je:"
+  },
+  {
+    "index": 769,
+    "metadata": 0,
+    "text": "Krijg toegang tot het downloaden van nieuwe competities, logos, etc;"
+  },
+  {
+    "index": 770,
+    "metadata": 0,
+    "text": "Begin spelen met een team uit elke divisie"
+  },
+  {
+    "index": 771,
+    "metadata": 0,
+    "text": "spel met meer dan een menselijke team"
+  },
+  {
+    "index": 772,
+    "metadata": 0,
+    "text": "Spel nationale teams concurrentie (Wereldbeker, Europa-beker, Copa-Amerika)"
+  },
+  {
+    "index": 773,
+    "metadata": 0,
+    "text": "Maak aanbod voor iedere speler, ook mocht hij niet op overdrachts lijst zijn, en leen spelers."
+  },
+  {
+    "index": 774,
+    "metadata": 0,
+    "text": "De wedstrijden met snellere snelheid opties spelen"
+  },
+  {
+    "index": 775,
+    "metadata": 0,
+    "text": "Om bij het spel in te schrijven, ga naar de website:"
+  },
+  {
+    "index": 776,
+    "metadata": 0,
+    "text": "De prijs is alleen maar 12€. Je kunt betalen met Credit card (Visa, MasterCard, American Express, Discover), cheque, geld, postwissel, PayPal, Wester Union, Moneybookers of Internationale Postwissel."
+  },
+  {
+    "index": 777,
+    "metadata": 0,
+    "text": "Zodra we zullen geinformeerd worden dat je bestel verwerkte is (meestal binnen een werkdag), zullen we jou van de registratie bewijsnummer voorzien, daarna moet je die hieronder typen:"
+  },
+  {
+    "index": 778,
+    "metadata": 0,
+    "text": "Naam"
+  },
+  {
+    "index": 779,
+    "metadata": 0,
+    "text": "Code"
+  },
+  {
+    "index": 780,
+    "metadata": 0,
+    "text": "Code invoeren"
+  },
+  {
+    "index": 781,
+    "metadata": 0,
+    "text": "Cyberfoot is een gratis voetbal manager spel."
+  },
+  {
+    "index": 782,
+    "metadata": 0,
+    "text": "Downloaden op www.cyberfoot.org"
+  },
+  {
+    "index": 783,
+    "metadata": 0,
+    "text": "Alleen met de geregeistreerde versie kun je aanboden maken voor een speler die bestaat niet op de overdrachts lijst. registreer je spel op www.cyberfoot.org"
+  },
+  {
+    "index": 784,
+    "metadata": 0,
+    "text": "Alleen met de geregistreerde versie kun je spelers beschibaar voor lening krijgen. Registreer je spel op www.cyberfoot.org"
+  },
+  {
+    "index": 785,
+    "metadata": 0,
+    "text": "Landen Lijst"
+  },
+  {
+    "index": 786,
+    "metadata": 0,
+    "text": "Afghanistan"
+  },
+  {
+    "index": 787,
+    "metadata": 0,
+    "text": "Zuid-Afrika"
+  },
+  {
+    "index": 788,
+    "metadata": 0,
+    "text": "Albanie"
+  },
+  {
+    "index": 789,
+    "metadata": 0,
+    "text": "Duitsland"
+  },
+  {
+    "index": 790,
+    "metadata": 0,
+    "text": "Andorra"
+  },
+  {
+    "index": 791,
+    "metadata": 0,
+    "text": "Angola"
+  },
+  {
+    "index": 792,
+    "metadata": 0,
+    "text": "Anquilla"
+  },
+  {
+    "index": 793,
+    "metadata": 0,
+    "text": "Antigua"
+  },
+  {
+    "index": 794,
+    "metadata": 0,
+    "text": "Nederlandse Antillen"
+  },
+  {
+    "index": 795,
+    "metadata": 0,
+    "text": "Saudi-Arabie"
+  },
+  {
+    "index": 796,
+    "metadata": 0,
+    "text": "Algerije"
+  },
+  {
+    "index": 797,
+    "metadata": 0,
+    "text": "Argentinië"
+  },
+  {
+    "index": 798,
+    "metadata": 0,
+    "text": "Armenië"
+  },
+  {
+    "index": 799,
+    "metadata": 0,
+    "text": "Aruba"
+  },
+  {
+    "index": 800,
+    "metadata": 0,
+    "text": "Australië"
+  },
+  {
+    "index": 801,
+    "metadata": 0,
+    "text": "Oostenrijk"
+  },
+  {
+    "index": 802,
+    "metadata": 0,
+    "text": "Azerbeidzjan"
+  },
+  {
+    "index": 803,
+    "metadata": 0,
+    "text": "Bahamas"
+  },
+  {
+    "index": 804,
+    "metadata": 0,
+    "text": "Bahrein"
+  },
+  {
+    "index": 805,
+    "metadata": 0,
+    "text": "Bangladesch"
+  },
+  {
+    "index": 806,
+    "metadata": 0,
+    "text": "Barbados"
+  },
+  {
+    "index": 807,
+    "metadata": 0,
+    "text": "België"
+  },
+  {
+    "index": 808,
+    "metadata": 0,
+    "text": "Belize"
+  },
+  {
+    "index": 809,
+    "metadata": 0,
+    "text": "Benin"
+  },
+  {
+    "index": 810,
+    "metadata": 0,
+    "text": "Bermuda"
+  },
+  {
+    "index": 811,
+    "metadata": 0,
+    "text": "Wit-Rusland"
+  },
+  {
+    "index": 812,
+    "metadata": 0,
+    "text": "Bolivia"
+  },
+  {
+    "index": 813,
+    "metadata": 0,
+    "text": "Bosnië"
+  },
+  {
+    "index": 814,
+    "metadata": 0,
+    "text": "Botswana"
+  },
+  {
+    "index": 815,
+    "metadata": 0,
+    "text": "Brazilië"
+  },
+  {
+    "index": 816,
+    "metadata": 0,
+    "text": "Brunei"
+  },
+  {
+    "index": 817,
+    "metadata": 0,
+    "text": "Bulgarije"
+  },
+  {
+    "index": 818,
+    "metadata": 0,
+    "text": "Burkina Faso"
+  },
+  {
+    "index": 819,
+    "metadata": 0,
+    "text": "Boeroendi"
+  },
+  {
+    "index": 820,
+    "metadata": 0,
+    "text": "Bhutan"
+  },
+  {
+    "index": 821,
+    "metadata": 0,
+    "text": "Kaapverdië"
+  },
+  {
+    "index": 822,
+    "metadata": 0,
+    "text": "Kameroen"
+  },
+  {
+    "index": 823,
+    "metadata": 0,
+    "text": "Cambodja"
+  },
+  {
+    "index": 824,
+    "metadata": 0,
+    "text": "Canada"
+  },
+  {
+    "index": 825,
+    "metadata": 0,
+    "text": "Katar"
+  },
+  {
+    "index": 826,
+    "metadata": 0,
+    "text": "Kazachstan"
+  },
+  {
+    "index": 827,
+    "metadata": 0,
+    "text": "Tsjaad"
+  },
+  {
+    "index": 828,
+    "metadata": 0,
+    "text": "Chili"
+  },
+  {
+    "index": 829,
+    "metadata": 0,
+    "text": "China"
+  },
+  {
+    "index": 830,
+    "metadata": 0,
+    "text": "Cyprus"
+  },
+  {
+    "index": 831,
+    "metadata": 0,
+    "text": "Singapore"
+  },
+  {
+    "index": 832,
+    "metadata": 0,
+    "text": "Colombia"
+  },
+  {
+    "index": 833,
+    "metadata": 0,
+    "text": "Congo"
+  },
+  {
+    "index": 834,
+    "metadata": 0,
+    "text": "Noord Korea"
+  },
+  {
+    "index": 835,
+    "metadata": 0,
+    "text": "Zuid Korea"
+  },
+  {
+    "index": 836,
+    "metadata": 0,
+    "text": "Ivoorkust"
+  },
+  {
+    "index": 837,
+    "metadata": 0,
+    "text": "Costa Rica"
+  },
+  {
+    "index": 838,
+    "metadata": 0,
+    "text": "Kroatië"
+  },
+  {
+    "index": 839,
+    "metadata": 0,
+    "text": "Cuba"
+  },
+  {
+    "index": 840,
+    "metadata": 0,
+    "text": "Denemarken"
+  },
+  {
+    "index": 841,
+    "metadata": 0,
+    "text": "Djibouti"
+  },
+  {
+    "index": 842,
+    "metadata": 0,
+    "text": "Dominica"
+  },
+  {
+    "index": 843,
+    "metadata": 0,
+    "text": "Egypte"
+  },
+  {
+    "index": 844,
+    "metadata": 0,
+    "text": "El Salvador"
+  },
+  {
+    "index": 845,
+    "metadata": 0,
+    "text": "Verenigde Arabische Emiraten"
+  },
+  {
+    "index": 846,
+    "metadata": 0,
+    "text": "Ecuador"
+  },
+  {
+    "index": 847,
+    "metadata": 0,
+    "text": "Eritrea"
+  },
+  {
+    "index": 848,
+    "metadata": 0,
+    "text": "Schotland"
+  },
+  {
+    "index": 849,
+    "metadata": 0,
+    "text": "Slowakije"
+  },
+  {
+    "index": 850,
+    "metadata": 0,
+    "text": "Slovein"
+  },
+  {
+    "index": 851,
+    "metadata": 0,
+    "text": "Spanje"
+  },
+  {
+    "index": 852,
+    "metadata": 0,
+    "text": "Estland"
+  },
+  {
+    "index": 853,
+    "metadata": 0,
+    "text": "Ethiopië"
+  },
+  {
+    "index": 854,
+    "metadata": 0,
+    "text": "VS"
+  },
+  {
+    "index": 855,
+    "metadata": 0,
+    "text": "Fiji"
+  },
+  {
+    "index": 856,
+    "metadata": 0,
+    "text": "Finland"
+  },
+  {
+    "index": 857,
+    "metadata": 0,
+    "text": "Filippijnen"
+  },
+  {
+    "index": 858,
+    "metadata": 0,
+    "text": "Frankrijk"
+  },
+  {
+    "index": 859,
+    "metadata": 0,
+    "text": "Gabon"
+  },
+  {
+    "index": 860,
+    "metadata": 0,
+    "text": "Gambia"
+  },
+  {
+    "index": 861,
+    "metadata": 0,
+    "text": "Ghana"
+  },
+  {
+    "index": 862,
+    "metadata": 0,
+    "text": "Georgië"
+  },
+  {
+    "index": 863,
+    "metadata": 0,
+    "text": "Grenada"
+  },
+  {
+    "index": 864,
+    "metadata": 0,
+    "text": "Griekenland"
+  },
+  {
+    "index": 865,
+    "metadata": 0,
+    "text": "Guatemala"
+  },
+  {
+    "index": 866,
+    "metadata": 0,
+    "text": "Guyana"
+  },
+  {
+    "index": 867,
+    "metadata": 0,
+    "text": "Guinea"
+  },
+  {
+    "index": 868,
+    "metadata": 0,
+    "text": "Guinee-Bissau"
+  },
+  {
+    "index": 869,
+    "metadata": 0,
+    "text": "Equatoriaal-Guinea"
+  },
+  {
+    "index": 870,
+    "metadata": 0,
+    "text": "Haïti"
+  },
+  {
+    "index": 871,
+    "metadata": 0,
+    "text": "Nederland"
+  },
+  {
+    "index": 872,
+    "metadata": 0,
+    "text": "Honduras"
+  },
+  {
+    "index": 873,
+    "metadata": 0,
+    "text": "Hong kong"
+  },
+  {
+    "index": 874,
+    "metadata": 0,
+    "text": "Hongarije"
+  },
+  {
+    "index": 875,
+    "metadata": 0,
+    "text": "Jemen"
+  },
+  {
+    "index": 876,
+    "metadata": 0,
+    "text": "Kaaimaneilanden"
+  },
+  {
+    "index": 877,
+    "metadata": 0,
+    "text": "Cook Eilanden"
+  },
+  {
+    "index": 878,
+    "metadata": 0,
+    "text": "Faeröer"
+  },
+  {
+    "index": 879,
+    "metadata": 0,
+    "text": "Salomonseilanden"
+  },
+  {
+    "index": 880,
+    "metadata": 0,
+    "text": "Britse Maagdeneilanden"
+  },
+  {
+    "index": 881,
+    "metadata": 0,
+    "text": "Indië"
+  },
+  {
+    "index": 882,
+    "metadata": 0,
+    "text": "Indonesië"
+  },
+  {
+    "index": 883,
+    "metadata": 0,
+    "text": "Engeland"
+  },
+  {
+    "index": 884,
+    "metadata": 0,
+    "text": "Iran"
+  },
+  {
+    "index": 885,
+    "metadata": 0,
+    "text": "Irak"
+  },
+  {
+    "index": 886,
+    "metadata": 0,
+    "text": "Ierland"
+  },
+  {
+    "index": 887,
+    "metadata": 0,
+    "text": "Noord-Ierland"
+  },
+  {
+    "index": 888,
+    "metadata": 0,
+    "text": "Ijsland"
+  },
+  {
+    "index": 889,
+    "metadata": 0,
+    "text": "Israël"
+  },
+  {
+    "index": 890,
+    "metadata": 0,
+    "text": "Italië"
+  },
+  {
+    "index": 891,
+    "metadata": 0,
+    "text": "Montenegro"
+  },
+  {
+    "index": 892,
+    "metadata": 0,
+    "text": "Jamaica"
+  },
+  {
+    "index": 893,
+    "metadata": 0,
+    "text": "japan"
+  },
+  {
+    "index": 894,
+    "metadata": 0,
+    "text": "Jordanië"
+  },
+  {
+    "index": 895,
+    "metadata": 0,
+    "text": "Kenia"
+  },
+  {
+    "index": 896,
+    "metadata": 0,
+    "text": "Kosovo"
+  },
+  {
+    "index": 897,
+    "metadata": 0,
+    "text": "kwait"
+  },
+  {
+    "index": 898,
+    "metadata": 0,
+    "text": "Laos"
+  },
+  {
+    "index": 899,
+    "metadata": 0,
+    "text": "Lesotho"
+  },
+  {
+    "index": 900,
+    "metadata": 0,
+    "text": "Letland"
+  },
+  {
+    "index": 901,
+    "metadata": 0,
+    "text": "Libanon"
+  },
+  {
+    "index": 902,
+    "metadata": 0,
+    "text": "Libië"
+  },
+  {
+    "index": 903,
+    "metadata": 0,
+    "text": "Liberia"
+  },
+  {
+    "index": 904,
+    "metadata": 0,
+    "text": "Liechtenstein"
+  },
+  {
+    "index": 905,
+    "metadata": 0,
+    "text": "Litauen"
+  },
+  {
+    "index": 906,
+    "metadata": 0,
+    "text": "luxembourg"
+  },
+  {
+    "index": 907,
+    "metadata": 0,
+    "text": "Macau"
+  },
+  {
+    "index": 908,
+    "metadata": 0,
+    "text": "Macedonië"
+  },
+  {
+    "index": 909,
+    "metadata": 0,
+    "text": "Madagascar"
+  },
+  {
+    "index": 910,
+    "metadata": 0,
+    "text": "Maleisië"
+  },
+  {
+    "index": 911,
+    "metadata": 0,
+    "text": "Malawi"
+  },
+  {
+    "index": 912,
+    "metadata": 0,
+    "text": "maldivas eilanden"
+  },
+  {
+    "index": 913,
+    "metadata": 0,
+    "text": "Mali"
+  },
+  {
+    "index": 914,
+    "metadata": 0,
+    "text": "Malta"
+  },
+  {
+    "index": 915,
+    "metadata": 0,
+    "text": "Marokko"
+  },
+  {
+    "index": 916,
+    "metadata": 0,
+    "text": "Mauritanië"
+  },
+  {
+    "index": 917,
+    "metadata": 0,
+    "text": "Mexico"
+  },
+  {
+    "index": 918,
+    "metadata": 0,
+    "text": "Mianmar"
+  },
+  {
+    "index": 919,
+    "metadata": 0,
+    "text": "Mozambique"
+  },
+  {
+    "index": 920,
+    "metadata": 0,
+    "text": "Moldava"
+  },
+  {
+    "index": 921,
+    "metadata": 0,
+    "text": "Monaco"
+  },
+  {
+    "index": 922,
+    "metadata": 0,
+    "text": "Mongolië"
+  },
+  {
+    "index": 923,
+    "metadata": 0,
+    "text": "Namibië"
+  },
+  {
+    "index": 924,
+    "metadata": 0,
+    "text": "Nepal"
+  },
+  {
+    "index": 925,
+    "metadata": 0,
+    "text": "Nicaragua"
+  },
+  {
+    "index": 926,
+    "metadata": 0,
+    "text": "Niger"
+  },
+  {
+    "index": 927,
+    "metadata": 0,
+    "text": "Nigeria"
+  },
+  {
+    "index": 928,
+    "metadata": 0,
+    "text": "Noorwegen"
+  },
+  {
+    "index": 929,
+    "metadata": 0,
+    "text": "Nieuw-Zeeland"
+  },
+  {
+    "index": 930,
+    "metadata": 0,
+    "text": "Oman"
+  },
+  {
+    "index": 931,
+    "metadata": 0,
+    "text": "Wales"
+  },
+  {
+    "index": 932,
+    "metadata": 0,
+    "text": "Palestijns"
+  },
+  {
+    "index": 933,
+    "metadata": 0,
+    "text": "Panama"
+  },
+  {
+    "index": 934,
+    "metadata": 0,
+    "text": "Papoea-Nieuw-Guinea"
+  },
+  {
+    "index": 935,
+    "metadata": 0,
+    "text": "Pakistan"
+  },
+  {
+    "index": 936,
+    "metadata": 0,
+    "text": "Paraguay"
+  },
+  {
+    "index": 937,
+    "metadata": 0,
+    "text": "Peru"
+  },
+  {
+    "index": 938,
+    "metadata": 0,
+    "text": "Polen"
+  },
+  {
+    "index": 939,
+    "metadata": 0,
+    "text": "Porto Rico"
+  },
+  {
+    "index": 940,
+    "metadata": 0,
+    "text": "Portugal"
+  },
+  {
+    "index": 941,
+    "metadata": 0,
+    "text": "Kirgizië"
+  },
+  {
+    "index": 942,
+    "metadata": 0,
+    "text": "Centraal-Afrikaanse Republiek"
+  },
+  {
+    "index": 943,
+    "metadata": 0,
+    "text": "congo dem. republiek"
+  },
+  {
+    "index": 944,
+    "metadata": 0,
+    "text": "Dominicaanse Republiek"
+  },
+  {
+    "index": 945,
+    "metadata": 0,
+    "text": "Tsjechische Republiek"
+  },
+  {
+    "index": 946,
+    "metadata": 0,
+    "text": "Roemenië"
+  },
+  {
+    "index": 947,
+    "metadata": 0,
+    "text": "Rwanda"
+  },
+  {
+    "index": 948,
+    "metadata": 0,
+    "text": "Rusland"
+  },
+  {
+    "index": 949,
+    "metadata": 0,
+    "text": "Samoa"
+  },
+  {
+    "index": 950,
+    "metadata": 0,
+    "text": "San Marino"
+  },
+  {
+    "index": 951,
+    "metadata": 0,
+    "text": "St Lucia"
+  },
+  {
+    "index": 952,
+    "metadata": 0,
+    "text": "St Kitts en Nevis"
+  },
+  {
+    "index": 953,
+    "metadata": 0,
+    "text": "Sao Tome en Principe"
+  },
+  {
+    "index": 954,
+    "metadata": 0,
+    "text": "St Vincent degrenadines"
+  },
+  {
+    "index": 955,
+    "metadata": 0,
+    "text": "Senegal"
+  },
+  {
+    "index": 956,
+    "metadata": 0,
+    "text": "Sierra Leone"
+  },
+  {
+    "index": 957,
+    "metadata": 0,
+    "text": "Servië"
+  },
+  {
+    "index": 958,
+    "metadata": 0,
+    "text": "Seychellen"
+  },
+  {
+    "index": 959,
+    "metadata": 0,
+    "text": "Singapore"
+  },
+  {
+    "index": 960,
+    "metadata": 0,
+    "text": "Syrië"
+  },
+  {
+    "index": 961,
+    "metadata": 0,
+    "text": "Somalië"
+  },
+  {
+    "index": 962,
+    "metadata": 0,
+    "text": "Sri Lanka"
+  },
+  {
+    "index": 963,
+    "metadata": 0,
+    "text": "Swaziland"
+  },
+  {
+    "index": 964,
+    "metadata": 0,
+    "text": "Soedan"
+  },
+  {
+    "index": 965,
+    "metadata": 0,
+    "text": "Zweden"
+  },
+  {
+    "index": 966,
+    "metadata": 0,
+    "text": "Zwitserland"
+  },
+  {
+    "index": 967,
+    "metadata": 0,
+    "text": "Suriname"
+  },
+  {
+    "index": 968,
+    "metadata": 0,
+    "text": "Tadzjikistan"
+  },
+  {
+    "index": 969,
+    "metadata": 0,
+    "text": "Thailand"
+  },
+  {
+    "index": 970,
+    "metadata": 0,
+    "text": "Taiti"
+  },
+  {
+    "index": 971,
+    "metadata": 0,
+    "text": "Taiwan"
+  },
+  {
+    "index": 972,
+    "metadata": 0,
+    "text": "Tanzania"
+  },
+  {
+    "index": 973,
+    "metadata": 0,
+    "text": "Togo"
+  },
+  {
+    "index": 974,
+    "metadata": 0,
+    "text": "Tonga"
+  },
+  {
+    "index": 975,
+    "metadata": 0,
+    "text": "Trinidad en Tobago"
+  },
+  {
+    "index": 976,
+    "metadata": 0,
+    "text": "Tunesië"
+  },
+  {
+    "index": 977,
+    "metadata": 0,
+    "text": "Turkmenistan"
+  },
+  {
+    "index": 978,
+    "metadata": 0,
+    "text": "Turkije"
+  },
+  {
+    "index": 979,
+    "metadata": 0,
+    "text": "Oekraïne"
+  },
+  {
+    "index": 980,
+    "metadata": 0,
+    "text": "Oeganda"
+  },
+  {
+    "index": 981,
+    "metadata": 0,
+    "text": "Uruguay"
+  },
+  {
+    "index": 982,
+    "metadata": 0,
+    "text": "Oezbekistan"
+  },
+  {
+    "index": 983,
+    "metadata": 0,
+    "text": "Vanuatu"
+  },
+  {
+    "index": 984,
+    "metadata": 0,
+    "text": "Venezuela"
+  },
+  {
+    "index": 985,
+    "metadata": 0,
+    "text": "Vietnam"
+  },
+  {
+    "index": 986,
+    "metadata": 0,
+    "text": "Zambia"
+  },
+  {
+    "index": 987,
+    "metadata": 0,
+    "text": "Zimbabwe"
+  },
+  {
+    "index": 988,
+    "metadata": 0,
+    "text": "Selecteer ten minste één competitie van 42 teams"
+  },
+  {
+    "index": 989,
+    "metadata": 0,
+    "text": "Sul-Americana Cup"
+  },
+  {
+    "index": 990,
+    "metadata": 0,
+    "text": "Gouden Bal"
+  },
+  {
+    "index": 991,
+    "metadata": 0,
+    "text": "Team van de week"
+  },
+  {
+    "index": 992,
+    "metadata": 0,
+    "text": "Team van het jaar"
+  },
+  {
+    "index": 993,
+    "metadata": 0,
+    "text": " Jeugdopleiding"
+  },
+  {
+    "index": 994,
+    "metadata": 0,
+    "text": "African Ch. League"
+  },
+  {
+    "index": 995,
+    "metadata": 0,
+    "text": "Asian Ch. League"
+  },
+  {
+    "index": 996,
+    "metadata": 0,
+    "text": "UEFA Super Cup"
+  },
+  {
+    "index": 997,
+    "metadata": 0,
+    "text": "Recopa Sul-Americana"
+  },
+  {
+    "index": 998,
+    "metadata": 0,
+    "text": "Saved formations"
+  },
+  {
+    "index": 999,
+    "metadata": 0,
+    "text": "Save current formation"
+  },
+  {
+    "index": 1000,
+    "metadata": 0,
+    "text": "Select a name:"
+  },
+  {
+    "index": 1001,
+    "metadata": 0,
+    "text": "Save"
+  },
+  {
+    "index": 1002,
+    "metadata": 0,
+    "text": "Select at least 11 players"
+  },
+  {
+    "index": 1003,
+    "metadata": 0,
+    "text": "Back"
+  },
+  {
+    "index": 1004,
+    "metadata": 0,
+    "text": "Load"
+  },
+  {
+    "index": 1005,
+    "metadata": 0,
+    "text": "Delete"
+  },
+  {
+    "index": 1006,
+    "metadata": 0,
+    "text": "Overhemd"
+  },
+  {
+    "index": 1007,
+    "metadata": 0,
+    "text": "promoted from youth squad in"
+  },
+  {
+    "index": 1008,
+    "metadata": 0,
+    "text": "Local"
+  },
+  {
+    "index": 1009,
+    "metadata": 0,
+    "text": "Provincial"
+  },
+  {
+    "index": 1010,
+    "metadata": 0,
+    "text": "Regionaal"
+  },
+  {
+    "index": 1011,
+    "metadata": 0,
+    "text": "Nationaal"
+  },
+  {
+    "index": 1012,
+    "metadata": 0,
+    "text": "Continentaal"
+  },
+  {
+    "index": 1013,
+    "metadata": 0,
+    "text": "Wereldwijd"
+  },
+  {
+    "index": 1014,
+    "metadata": 0,
+    "text": "Reputatie"
+  },
+  {
+    "index": 1015,
+    "metadata": 0,
+    "text": "3 jaar"
+  },
+  {
+    "index": 1016,
+    "metadata": 0,
+    "text": "kijken spelletjes"
+  },
+  {
+    "index": 1017,
+    "metadata": 0,
+    "text": "alleen resultaten"
+  },
+  {
+    "index": 1018,
+    "metadata": 0,
+    "text": "LEAGUE"
+  },
+  {
+    "index": 1019,
+    "metadata": 0,
+    "text": "CHAMPIONS L."
+  },
+  {
+    "index": 1020,
+    "metadata": 0,
+    "text": "LIBERTADORES"
+  },
+  {
+    "index": 1021,
+    "metadata": 0,
+    "text": "UEFA LEAGUE"
+  },
+  {
+    "index": 1022,
+    "metadata": 0,
+    "text": "AFRICAN CH."
+  },
+  {
+    "index": 1023,
+    "metadata": 0,
+    "text": "ASIAN CH."
+  },
+  {
+    "index": 1024,
+    "metadata": 0,
+    "text": "reden"
+  },
+  {
+    "index": 1025,
+    "metadata": 0,
+    "text": "bad results"
+  },
+  {
+    "index": 1026,
+    "metadata": 0,
+    "text": "financial crisis"
+  },
+  {
+    "index": 1027,
+    "metadata": 0,
+    "text": "unhappy supporters"
+  },
+  {
+    "index": 1028,
+    "metadata": 0,
+    "text": "Accepteren"
+  },
+  {
+    "index": 1029,
+    "metadata": 0,
+    "text": "Dalen"
+  },
+  {
+    "index": 1030,
+    "metadata": 0,
+    "text": "use"
+  },
+  {
+    "index": 1031,
+    "metadata": 0,
+    "text": "Jeugdteam"
+  },
+  {
+    "index": 1032,
+    "metadata": 0,
+    "text": "Eerste team"
+  },
+  {
+    "index": 1033,
+    "metadata": 0,
+    "text": "club zoeken"
+  },
+  {
+    "index": 1034,
+    "metadata": 0,
+    "text": "speler zoeken"
+  },
+  {
+    "index": 1035,
+    "metadata": 0,
+    "text": "Zoeken"
+  },
+  {
+    "index": 1036,
+    "metadata": 0,
+    "text": "Ontwikkeling"
+  },
+  {
+    "index": 1037,
+    "metadata": 0,
+    "text": "Talent"
+  },
+  {
+    "index": 1038,
+    "metadata": 0,
+    "text": "Bevorderen"
+  },
+  {
+    "index": 1039,
+    "metadata": 0,
+    "text": "Afwijzen"
+  },
+  {
+    "index": 1040,
+    "metadata": 0,
+    "text": "You already have 30 players"
+  },
+  {
+    "index": 1041,
+    "metadata": 0,
+    "text": "Bekrachtiging"
+  },
+  {
+    "index": 1042,
+    "metadata": 0,
+    "text": "The is no places for youth players"
+  },
+  {
+    "index": 1043,
+    "metadata": 0,
+    "text": "Sturen"
+  },
+  {
+    "index": 1044,
+    "metadata": 0,
+    "text": "Annuleren"
+  },
+  {
+    "index": 1045,
+    "metadata": 0,
+    "text": "confirmed transfer"
+  },
+  {
+    "index": 1046,
+    "metadata": 0,
+    "text": "Confirme the transfer os this youth"
+  },
+  {
+    "index": 1047,
+    "metadata": 0,
+    "text": "Bekrachtiging afwijzen"
+  },
+  {
+    "index": 1048,
+    "metadata": 0,
+    "text": "International competition settings"
+  },
+  {
+    "index": 1049,
+    "metadata": 0,
+    "text": "Spelen in het eerste seizoen"
+  },
+  {
+    "index": 1050,
+    "metadata": 0,
+    "text": "Gebruik echte groepen in het eerste seizoen:"
+  },
+  {
+    "index": 1051,
+    "metadata": 0,
+    "text": "Zonder mensen kijken naar de wedstrijden"
+  },
+  {
+    "index": 1052,
+    "metadata": 0,
+    "text": "Waarde team"
+  },
+  {
+    "index": 1053,
+    "metadata": 0,
+    "text": "Nationaliteit"
+  },
+  {
+    "index": 1054,
+    "metadata": 0,
+    "text": "gemiddelde"
+  },
+  {
+    "index": 1055,
+    "metadata": 0,
+    "text": "Verdedigende Middenvelder"
+  },
+  {
+    "index": 1056,
+    "metadata": 0,
+    "text": "Aanvallende Middenvelder"
+  },
+  {
+    "index": 1057,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1058,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1059,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1060,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1061,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1062,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1063,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1064,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1065,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1066,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1067,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1068,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1069,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1070,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1071,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1072,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1073,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1074,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1075,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1076,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1077,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1078,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1079,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1080,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1081,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1082,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1083,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1084,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1085,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1086,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1087,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1088,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1089,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1090,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1091,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1092,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1093,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1094,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1095,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1096,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1097,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1098,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1099,
+    "metadata": 0,
+    "text": ""
+  }
+]

@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import {readSave,writeSave,record} from '../save-format.mjs';import {selectEmployedManagerOffer,selectUnemployedManagerOffers} from '../manager-job-offers.mjs';import {OriginalRandom} from '../match-core.mjs';
+const save=readSave(fs.readFileSync(new URL('./original-career.s15',import.meta.url))),view=b=>new DataView(b.buffer,b.byteOffset,b.byteLength),c=view(save.career),club=view(record(save,'clubs',11)),managerId=club.getInt32(0x44,true),manager=view(record(save,'records_0066b718',managerId)),rng=new OriginalRandom(6556),runtime={};
+club.setInt32(0x50,100,true);club.setInt32(0x1a8,0,true);c.setInt32(0x10,managerId,true);c.setInt32(0x88,1,true);let before=writeSave(save),employedOffers=0;
+for(let i=0;i<30;i++){selectEmployedManagerOffer(save,11,{rng,runtime});assert.equal(runtime.managerJobOffers.length,4);assert.deepEqual(runtime.managerJobOffers.slice(1),[-1,-1,-1]);if(runtime.managerJobOffers[0]>=0){employedOffers++;assert.equal(view(record(save,'clubs',runtime.managerJobOffers[0])).getUint8(0x39),0);}}
+assert.ok(employedOffers>0);assert.deepEqual(writeSave(save),before);
+// Use the saved manager's country and prior club to exercise genuine league tables.
+manager.setInt32(0x1c,-1,true);manager.setInt32(0x20,11,true);manager.setInt32(0x24,4,true);before=writeSave(save);let unemployedOffers=0;
+for(let i=0;i<30;i++){selectUnemployedManagerOffers(save,manager.getInt32(0x3c,true),managerId,{rng,runtime});const offers=runtime.managerJobOffers.filter(id=>id>=0);assert.ok(offers.length>0);assert.equal(new Set(offers).size,offers.length);for(const id of offers){assert.notEqual(id,11);assert.equal(view(record(save,'clubs',id)).getUint8(0x39),0);}unemployedOffers+=offers.length;}
+assert.deepEqual(writeSave(save),before);assert.deepEqual(writeSave(readSave(before)),before);
+console.log(`Original career: ${employedOffers} employed offers and ${unemployedOffers} unemployed offers across 30 passes each; human/previous clubs excluded, no duplicate unemployed offers or save mutation.`);

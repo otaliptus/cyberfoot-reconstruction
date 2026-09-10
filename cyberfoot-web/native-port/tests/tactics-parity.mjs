@@ -1,0 +1,2 @@
+import {readFileSync} from 'node:fs';import assert from 'node:assert/strict';import {verifyTactics,verifyTacticsSave} from './tactics-proof.mjs';
+const result=verifyTactics(JSON.parse(readFileSync(new URL('./tactics-vectors.json',import.meta.url))));assert.deepEqual(result.failures,[]);verifyTacticsSave(readFileSync(new URL('./original-career.s15',import.meta.url)));console.log(`Original tactical choices: ${result.cases} passed; controls survive save/reload.`);

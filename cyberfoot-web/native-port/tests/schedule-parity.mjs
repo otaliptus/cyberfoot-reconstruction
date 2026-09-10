@@ -1,0 +1,2 @@
+import {readFile} from 'node:fs/promises';import assert from 'node:assert/strict';import {assignCompetitionSchedule} from '../schedule.mjs';import {baseCalendar} from '../calendar.mjs';
+const cases=JSON.parse(await readFile(new URL('./schedule-vectors.json',import.meta.url)));for(const [i,c] of cases.entries())assert.deepEqual(assignCompetitionSchedule(baseCalendar(c.season),c).map(r=>r.competition),c.expected,`Original calendar ${i}`);console.log(`Original full calendar assignment: ${cases.length} passed`);

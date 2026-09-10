@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {checkNationalFinalSave} from './national-final-save-integration.mjs';console.log(await checkNationalFinalSave(readFileSync(new URL('./original-career.s15',import.meta.url))));

@@ -1,0 +1,5502 @@
+[
+  {
+    "index": 0,
+    "metadata": 0,
+    "text": "Türkçe"
+  },
+  {
+    "index": 1,
+    "metadata": 0,
+    "text": "Yeni Oyun"
+  },
+  {
+    "index": 2,
+    "metadata": 0,
+    "text": "Kaydedilmiş Oyunu Yükle"
+  },
+  {
+    "index": 3,
+    "metadata": 0,
+    "text": "Kulüp Yardımcısı"
+  },
+  {
+    "index": 4,
+    "metadata": 0,
+    "text": "Oyuna Kaydol"
+  },
+  {
+    "index": 5,
+    "metadata": 0,
+    "text": "Kaydolunmamış Versiyon"
+  },
+  {
+    "index": 6,
+    "metadata": 0,
+    "text": "Kaydolunmuş Versiyon"
+  },
+  {
+    "index": 7,
+    "metadata": 0,
+    "text": "ÇIK"
+  },
+  {
+    "index": 8,
+    "metadata": 0,
+    "text": "Dilinizi Seçiniz"
+  },
+  {
+    "index": 9,
+    "metadata": 0,
+    "text": "Oyunu Yüklüyor..."
+  },
+  {
+    "index": 10,
+    "metadata": 0,
+    "text": "Oyun Seçenekleri"
+  },
+  {
+    "index": 11,
+    "metadata": 0,
+    "text": "Kulüp Turnuvaları"
+  },
+  {
+    "index": 12,
+    "metadata": 0,
+    "text": "Lig serisi sistemleri?"
+  },
+  {
+    "index": 13,
+    "metadata": 0,
+    "text": "10'ar takımlık 4 küme"
+  },
+  {
+    "index": 14,
+    "metadata": 0,
+    "text": "20'şer takımlık 2 küme"
+  },
+  {
+    "index": 15,
+    "metadata": 0,
+    "text": "Ulusal liglerde oyna"
+  },
+  {
+    "index": 16,
+    "metadata": 0,
+    "text": "Şampiyonlar Ligi/Libertadores Oyna"
+  },
+  {
+    "index": 17,
+    "metadata": 0,
+    "text": "UEFA Ligi/Sul-Amerikana Kupası Oyna"
+  },
+  {
+    "index": 18,
+    "metadata": 0,
+    "text": "Milli takımlar turnuvası"
+  },
+  {
+    "index": 19,
+    "metadata": 0,
+    "text": "Dünya Kupası Oyna"
+  },
+  {
+    "index": 20,
+    "metadata": 0,
+    "text": "2010 Dünya Kupası Gerçek Kümeleri"
+  },
+  {
+    "index": 21,
+    "metadata": 0,
+    "text": "Avrupa Kupası Oyna"
+  },
+  {
+    "index": 22,
+    "metadata": 0,
+    "text": "Amerika Kupası Oyna"
+  },
+  {
+    "index": 23,
+    "metadata": 0,
+    "text": "Şu Ulusal Liglerde Oyna"
+  },
+  {
+    "index": 24,
+    "metadata": 0,
+    "text": "Hepsini seç"
+  },
+  {
+    "index": 25,
+    "metadata": 0,
+    "text": "takımlar"
+  },
+  {
+    "index": 26,
+    "metadata": 0,
+    "text": "www.cbberfoot.org Üye Alanından daha fazla lig ekleyebilirsiniz. "
+  },
+  {
+    "index": 27,
+    "metadata": 0,
+    "text": "Bilgisayar tarafından kontrol edilmeyen takım sayısı:"
+  },
+  {
+    "index": 28,
+    "metadata": 0,
+    "text": "Bazı seçenekler sadece kayırlı versiyonda bulunmaktadır: Milli Takım Turnuvaları oynama, daha fazla bilgisayar tarafından kontrol edilmeyen takımı ekleme gibi. "
+  },
+  {
+    "index": 29,
+    "metadata": 0,
+    "text": "İlerii >>"
+  },
+  {
+    "index": 30,
+    "metadata": 0,
+    "text": "<< Geri"
+  },
+  {
+    "index": 31,
+    "metadata": 0,
+    "text": "En az bir lig seç"
+  },
+  {
+    "index": 32,
+    "metadata": 0,
+    "text": "Kendi takımını seç"
+  },
+  {
+    "index": 33,
+    "metadata": 0,
+    "text": "Ülke takımları:"
+  },
+  {
+    "index": 34,
+    "metadata": 0,
+    "text": "Adınız:"
+  },
+  {
+    "index": 35,
+    "metadata": 0,
+    "text": "1. Lig"
+  },
+  {
+    "index": 36,
+    "metadata": 0,
+    "text": "2. Lig"
+  },
+  {
+    "index": 37,
+    "metadata": 0,
+    "text": "3. Lig"
+  },
+  {
+    "index": 38,
+    "metadata": 0,
+    "text": "4. Lig"
+  },
+  {
+    "index": 39,
+    "metadata": 0,
+    "text": "Takım seçme:"
+  },
+  {
+    "index": 40,
+    "metadata": 0,
+    "text": "Bir sonraki takımı seç"
+  },
+  {
+    "index": 41,
+    "metadata": 0,
+    "text": "Oyunu başlat >>>"
+  },
+  {
+    "index": 42,
+    "metadata": 0,
+    "text": "Takım seçildi"
+  },
+  {
+    "index": 43,
+    "metadata": 0,
+    "text": "Bu CyberFoot'un kaydedilmemiş bir versiyonudur"
+  },
+  {
+    "index": 44,
+    "metadata": 0,
+    "text": "Kaydedilmemiş versiyonda sadece en alt kümedeki takımlardan birini seçebilirsiniz"
+  },
+  {
+    "index": 45,
+    "metadata": 0,
+    "text": "Kayıtlı versiyonda istediğiniz kümeden takım seçebilirsiniz"
+  },
+  {
+    "index": 46,
+    "metadata": 0,
+    "text": "Oyunu başlatıyor... "
+  },
+  {
+    "index": 47,
+    "metadata": 0,
+    "text": "Yöneticilik notu:"
+  },
+  {
+    "index": 48,
+    "metadata": 0,
+    "text": "Taraftar notu:"
+  },
+  {
+    "index": 49,
+    "metadata": 0,
+    "text": "Yetenek"
+  },
+  {
+    "index": 50,
+    "metadata": 0,
+    "text": "Yaş"
+  },
+  {
+    "index": 51,
+    "metadata": 0,
+    "text": "Fiyat"
+  },
+  {
+    "index": 52,
+    "metadata": 0,
+    "text": "Maaş"
+  },
+  {
+    "index": 53,
+    "metadata": 0,
+    "text": "Oynanmış maçlar"
+  },
+  {
+    "index": 54,
+    "metadata": 0,
+    "text": "Özellikler"
+  },
+  {
+    "index": 55,
+    "metadata": 0,
+    "text": "Sözleşme şu tarihte son bulmaktadır"
+  },
+  {
+    "index": 56,
+    "metadata": 0,
+    "text": "Sözleşme süresi bitmiştir "
+  },
+  {
+    "index": 57,
+    "metadata": 0,
+    "text": "Kira bitiş tarihi"
+  },
+  {
+    "index": 58,
+    "metadata": 0,
+    "text": "Oyuncu ancak gelecek maç için müsait"
+  },
+  {
+    "index": 59,
+    "metadata": 0,
+    "text": "1 maç cezalı: 3 sarı kart"
+  },
+  {
+    "index": 60,
+    "metadata": 0,
+    "text": "Ceza nedeni:"
+  },
+  {
+    "index": 61,
+    "metadata": 0,
+    "text": "Maç(lar)"
+  },
+  {
+    "index": 62,
+    "metadata": 0,
+    "text": "Şu tarihe kadar sakat:"
+  },
+  {
+    "index": 63,
+    "metadata": 0,
+    "text": "Sat"
+  },
+  {
+    "index": 64,
+    "metadata": 0,
+    "text": "Sözleşme Yap"
+  },
+  {
+    "index": 65,
+    "metadata": 0,
+    "text": "Emekliye ayır"
+  },
+  {
+    "index": 66,
+    "metadata": 0,
+    "text": "Transfer listesinden al"
+  },
+  {
+    "index": 67,
+    "metadata": 0,
+    "text": "Gelecek maç"
+  },
+  {
+    "index": 68,
+    "metadata": 0,
+    "text": "Maç Kadrosu"
+  },
+  {
+    "index": 69,
+    "metadata": 0,
+    "text": "Takım renkleri"
+  },
+  {
+    "index": 70,
+    "metadata": 0,
+    "text": "Bir okunmamış mesaj"
+  },
+  {
+    "index": 71,
+    "metadata": 0,
+    "text": "Okunmamış mesajlar"
+  },
+  {
+    "index": 72,
+    "metadata": 0,
+    "text": "Hiç yeni mesaj yok"
+  },
+  {
+    "index": 73,
+    "metadata": 0,
+    "text": "oyuncular"
+  },
+  {
+    "index": 74,
+    "metadata": 0,
+    "text": "Önceki maçlar"
+  },
+  {
+    "index": 75,
+    "metadata": 0,
+    "text": "maç"
+  },
+  {
+    "index": 76,
+    "metadata": 0,
+    "text": "maçlar"
+  },
+  {
+    "index": 77,
+    "metadata": 0,
+    "text": "berabere"
+  },
+  {
+    "index": 78,
+    "metadata": 0,
+    "text": "beraberlikler"
+  },
+  {
+    "index": 79,
+    "metadata": 0,
+    "text": "Kzn"
+  },
+  {
+    "index": 80,
+    "metadata": 0,
+    "text": "B"
+  },
+  {
+    "index": 81,
+    "metadata": 0,
+    "text": "Kyb"
+  },
+  {
+    "index": 82,
+    "metadata": 0,
+    "text": "AG"
+  },
+  {
+    "index": 83,
+    "metadata": 0,
+    "text": "YG"
+  },
+  {
+    "index": 84,
+    "metadata": 0,
+    "text": "O"
+  },
+  {
+    "index": 85,
+    "metadata": 0,
+    "text": "AV"
+  },
+  {
+    "index": 86,
+    "metadata": 0,
+    "text": "P"
+  },
+  {
+    "index": 87,
+    "metadata": 0,
+    "text": "RP"
+  },
+  {
+    "index": 88,
+    "metadata": 0,
+    "text": "TH"
+  },
+  {
+    "index": 89,
+    "metadata": 0,
+    "text": "En son maç"
+  },
+  {
+    "index": 90,
+    "metadata": 0,
+    "text": "bütün maçlar"
+  },
+  {
+    "index": 91,
+    "metadata": 0,
+    "text": "Bu takımlar arasındaki ilk maç"
+  },
+  {
+    "index": 92,
+    "metadata": 0,
+    "text": "Önceki sezonun tarihi"
+  },
+  {
+    "index": 93,
+    "metadata": 0,
+    "text": "Oyunu kaydet"
+  },
+  {
+    "index": 94,
+    "metadata": 0,
+    "text": "Seçenekler"
+  },
+  {
+    "index": 95,
+    "metadata": 0,
+    "text": "Çekil"
+  },
+  {
+    "index": 96,
+    "metadata": 0,
+    "text": "Oyunu terk et"
+  },
+  {
+    "index": 97,
+    "metadata": 0,
+    "text": "Oyun Hakkında"
+  },
+  {
+    "index": 98,
+    "metadata": 0,
+    "text": "Teknik Direktör Notu"
+  },
+  {
+    "index": 99,
+    "metadata": 0,
+    "text": "Teknik Direktör Ekle/Kaldır"
+  },
+  {
+    "index": 100,
+    "metadata": 0,
+    "text": "En son teknik direktör transferleri"
+  },
+  {
+    "index": 101,
+    "metadata": 0,
+    "text": "Kulüp Derecesi"
+  },
+  {
+    "index": 102,
+    "metadata": 0,
+    "text": "Oyuncu transferleri"
+  },
+  {
+    "index": 103,
+    "metadata": 0,
+    "text": "Bütün maç geçmişleri"
+  },
+  {
+    "index": 104,
+    "metadata": 0,
+    "text": "Fikstürleriniz"
+  },
+  {
+    "index": 105,
+    "metadata": 0,
+    "text": "Fikstürler"
+  },
+  {
+    "index": 106,
+    "metadata": 0,
+    "text": "Kupa Fikstürleri"
+  },
+  {
+    "index": 107,
+    "metadata": 0,
+    "text": "Uluslararası Kupa Playofları"
+  },
+  {
+    "index": 108,
+    "metadata": 0,
+    "text": "Dostluk maçları"
+  },
+  {
+    "index": 109,
+    "metadata": 0,
+    "text": "Fınansman"
+  },
+  {
+    "index": 110,
+    "metadata": 0,
+    "text": "Banka Kredisi"
+  },
+  {
+    "index": 111,
+    "metadata": 0,
+    "text": "Sözleşme Hazırla"
+  },
+  {
+    "index": 112,
+    "metadata": 0,
+    "text": "Oyuncu Sat"
+  },
+  {
+    "index": 113,
+    "metadata": 0,
+    "text": "Oyuncuyu Emekliye Ayır"
+  },
+  {
+    "index": 114,
+    "metadata": 0,
+    "text": "Sayı Belirle"
+  },
+  {
+    "index": 115,
+    "metadata": 0,
+    "text": "Maç Geçmişleri"
+  },
+  {
+    "index": 116,
+    "metadata": 0,
+    "text": "Krediyi İptal Et"
+  },
+  {
+    "index": 117,
+    "metadata": 0,
+    "text": "Oyuncu Satın Al"
+  },
+  {
+    "index": 118,
+    "metadata": 0,
+    "text": "Kira Listesine Koy"
+  },
+  {
+    "index": 119,
+    "metadata": 0,
+    "text": "Kredi Listesinden Çıkar"
+  },
+  {
+    "index": 120,
+    "metadata": 0,
+    "text": "Konumlar"
+  },
+  {
+    "index": 121,
+    "metadata": 0,
+    "text": "Stadyum"
+  },
+  {
+    "index": 122,
+    "metadata": 0,
+    "text": "Bütün Kulüpleri Göster"
+  },
+  {
+    "index": 123,
+    "metadata": 0,
+    "text": "Oyuncu Ara"
+  },
+  {
+    "index": 124,
+    "metadata": 0,
+    "text": "Antrenör Bilgisi"
+  },
+  {
+    "index": 125,
+    "metadata": 0,
+    "text": "Şampiyonların Listesi"
+  },
+  {
+    "index": 126,
+    "metadata": 0,
+    "text": "En İyi Skorer"
+  },
+  {
+    "index": 127,
+    "metadata": 0,
+    "text": "Kulüp Sıralamaları"
+  },
+  {
+    "index": 128,
+    "metadata": 0,
+    "text": "P"
+  },
+  {
+    "index": 129,
+    "metadata": 0,
+    "text": "Ad"
+  },
+  {
+    "index": 130,
+    "metadata": 0,
+    "text": "Taraf"
+  },
+  {
+    "index": 131,
+    "metadata": 0,
+    "text": "T"
+  },
+  {
+    "index": 132,
+    "metadata": 0,
+    "text": "Dayanıklılık"
+  },
+  {
+    "index": 133,
+    "metadata": 0,
+    "text": "Maaş"
+  },
+  {
+    "index": 134,
+    "metadata": 0,
+    "text": "Fiyat"
+  },
+  {
+    "index": 135,
+    "metadata": 0,
+    "text": "G"
+  },
+  {
+    "index": 136,
+    "metadata": 0,
+    "text": "Özellikler"
+  },
+  {
+    "index": 137,
+    "metadata": 0,
+    "text": "A"
+  },
+  {
+    "index": 138,
+    "metadata": 0,
+    "text": "M"
+  },
+  {
+    "index": 139,
+    "metadata": 0,
+    "text": "Sözleşme bir hafta sonra sona ermektedir"
+  },
+  {
+    "index": 140,
+    "metadata": 0,
+    "text": "Sözleşme kısa süre sonra sona erecektir"
+  },
+  {
+    "index": 141,
+    "metadata": 0,
+    "text": "CyberFoot'a kaydolmak için buraya tıklayınız!"
+  },
+  {
+    "index": 142,
+    "metadata": 0,
+    "text": "Kaleci"
+  },
+  {
+    "index": 143,
+    "metadata": 0,
+    "text": "K"
+  },
+  {
+    "index": 144,
+    "metadata": 0,
+    "text": "Göbek Defans"
+  },
+  {
+    "index": 145,
+    "metadata": 0,
+    "text": "GD"
+  },
+  {
+    "index": 146,
+    "metadata": 0,
+    "text": "Bek"
+  },
+  {
+    "index": 147,
+    "metadata": 0,
+    "text": "B"
+  },
+  {
+    "index": 148,
+    "metadata": 0,
+    "text": "Orta Saha"
+  },
+  {
+    "index": 149,
+    "metadata": 0,
+    "text": "O"
+  },
+  {
+    "index": 150,
+    "metadata": 0,
+    "text": "Forvet"
+  },
+  {
+    "index": 151,
+    "metadata": 0,
+    "text": "F"
+  },
+  {
+    "index": 152,
+    "metadata": 0,
+    "text": "Sağ"
+  },
+  {
+    "index": 153,
+    "metadata": 0,
+    "text": "Sğ"
+  },
+  {
+    "index": 154,
+    "metadata": 0,
+    "text": "Sol"
+  },
+  {
+    "index": 155,
+    "metadata": 0,
+    "text": "Sl"
+  },
+  {
+    "index": 156,
+    "metadata": 0,
+    "text": "Konum"
+  },
+  {
+    "index": 157,
+    "metadata": 0,
+    "text": "Kon"
+  },
+  {
+    "index": 158,
+    "metadata": 0,
+    "text": "Penaltıcı"
+  },
+  {
+    "index": 159,
+    "metadata": 0,
+    "text": "Pen"
+  },
+  {
+    "index": 160,
+    "metadata": 0,
+    "text": "Sıralama"
+  },
+  {
+    "index": 161,
+    "metadata": 0,
+    "text": "Srl"
+  },
+  {
+    "index": 162,
+    "metadata": 0,
+    "text": "Hava Topu Kontrol"
+  },
+  {
+    "index": 163,
+    "metadata": 0,
+    "text": "HTK"
+  },
+  {
+    "index": 164,
+    "metadata": 0,
+    "text": "Oyun Kurma"
+  },
+  {
+    "index": 165,
+    "metadata": 0,
+    "text": "Oyk"
+  },
+  {
+    "index": 166,
+    "metadata": 0,
+    "text": "Kafa Vurma"
+  },
+  {
+    "index": 167,
+    "metadata": 0,
+    "text": "Kaf"
+  },
+  {
+    "index": 168,
+    "metadata": 0,
+    "text": "Taç"
+  },
+  {
+    "index": 169,
+    "metadata": 0,
+    "text": "Tç"
+  },
+  {
+    "index": 170,
+    "metadata": 0,
+    "text": "Çalım"
+  },
+  {
+    "index": 171,
+    "metadata": 0,
+    "text": "Çlm"
+  },
+  {
+    "index": 172,
+    "metadata": 0,
+    "text": "Top Sürme"
+  },
+  {
+    "index": 173,
+    "metadata": 0,
+    "text": "ToS "
+  },
+  {
+    "index": 174,
+    "metadata": 0,
+    "text": "Şut"
+  },
+  {
+    "index": 175,
+    "metadata": 0,
+    "text": "Şt"
+  },
+  {
+    "index": 176,
+    "metadata": 0,
+    "text": "İşaret"
+  },
+  {
+    "index": 177,
+    "metadata": 0,
+    "text": "İş"
+  },
+  {
+    "index": 178,
+    "metadata": 0,
+    "text": "Pas verme"
+  },
+  {
+    "index": 179,
+    "metadata": 0,
+    "text": "Pas"
+  },
+  {
+    "index": 180,
+    "metadata": 0,
+    "text": "Güç"
+  },
+  {
+    "index": 181,
+    "metadata": 0,
+    "text": "Gç"
+  },
+  {
+    "index": 182,
+    "metadata": 0,
+    "text": "Hiz"
+  },
+  {
+    "index": 183,
+    "metadata": 0,
+    "text": "Hiz"
+  },
+  {
+    "index": 184,
+    "metadata": 0,
+    "text": "1. "
+  },
+  {
+    "index": 185,
+    "metadata": 0,
+    "text": "2."
+  },
+  {
+    "index": 186,
+    "metadata": 0,
+    "text": "3."
+  },
+  {
+    "index": 187,
+    "metadata": 0,
+    "text": "4."
+  },
+  {
+    "index": 188,
+    "metadata": 0,
+    "text": "5."
+  },
+  {
+    "index": 189,
+    "metadata": 0,
+    "text": "6."
+  },
+  {
+    "index": 190,
+    "metadata": 0,
+    "text": "7."
+  },
+  {
+    "index": 191,
+    "metadata": 0,
+    "text": "8."
+  },
+  {
+    "index": 192,
+    "metadata": 0,
+    "text": "9."
+  },
+  {
+    "index": 193,
+    "metadata": 0,
+    "text": "10."
+  },
+  {
+    "index": 194,
+    "metadata": 0,
+    "text": "11."
+  },
+  {
+    "index": 195,
+    "metadata": 0,
+    "text": "12."
+  },
+  {
+    "index": 196,
+    "metadata": 0,
+    "text": "13."
+  },
+  {
+    "index": 197,
+    "metadata": 0,
+    "text": "14."
+  },
+  {
+    "index": 198,
+    "metadata": 0,
+    "text": "15."
+  },
+  {
+    "index": 199,
+    "metadata": 0,
+    "text": "16."
+  },
+  {
+    "index": 200,
+    "metadata": 0,
+    "text": "17."
+  },
+  {
+    "index": 201,
+    "metadata": 0,
+    "text": "18."
+  },
+  {
+    "index": 202,
+    "metadata": 0,
+    "text": "19."
+  },
+  {
+    "index": 203,
+    "metadata": 0,
+    "text": "20."
+  },
+  {
+    "index": 204,
+    "metadata": 0,
+    "text": "yer"
+  },
+  {
+    "index": 205,
+    "metadata": 0,
+    "text": "Ev"
+  },
+  {
+    "index": 206,
+    "metadata": 0,
+    "text": "E"
+  },
+  {
+    "index": 207,
+    "metadata": 0,
+    "text": "Deplasman"
+  },
+  {
+    "index": 208,
+    "metadata": 0,
+    "text": "D"
+  },
+  {
+    "index": 209,
+    "metadata": 0,
+    "text": "tur"
+  },
+  {
+    "index": 210,
+    "metadata": 0,
+    "text": "Hakem"
+  },
+  {
+    "index": 211,
+    "metadata": 0,
+    "text": "Uluslararası Dostluk Maçı"
+  },
+  {
+    "index": 212,
+    "metadata": 0,
+    "text": "Dostluk Maçı"
+  },
+  {
+    "index": 213,
+    "metadata": 0,
+    "text": "1. Tur"
+  },
+  {
+    "index": 214,
+    "metadata": 0,
+    "text": "2. Tur"
+  },
+  {
+    "index": 215,
+    "metadata": 0,
+    "text": "Çeyrek Final"
+  },
+  {
+    "index": 216,
+    "metadata": 0,
+    "text": "Yarı Final"
+  },
+  {
+    "index": 217,
+    "metadata": 0,
+    "text": "Final"
+  },
+  {
+    "index": 218,
+    "metadata": 0,
+    "text": "1. ayak"
+  },
+  {
+    "index": 219,
+    "metadata": 0,
+    "text": "2. ayak"
+  },
+  {
+    "index": 220,
+    "metadata": 0,
+    "text": "Şampiyonlar Ligi"
+  },
+  {
+    "index": 221,
+    "metadata": 0,
+    "text": "UEFA Avrupa Ligi"
+  },
+  {
+    "index": 222,
+    "metadata": 0,
+    "text": "Libertadores Kupası"
+  },
+  {
+    "index": 223,
+    "metadata": 0,
+    "text": "Sul-Amerikana Kupası"
+  },
+  {
+    "index": 224,
+    "metadata": 0,
+    "text": "FİFA Dünya Klüplar Kupası"
+  },
+  {
+    "index": 225,
+    "metadata": 0,
+    "text": "Almanya Ligi"
+  },
+  {
+    "index": 226,
+    "metadata": 0,
+    "text": "almanya Kupası"
+  },
+  {
+    "index": 227,
+    "metadata": 0,
+    "text": "İtalyan Ligi"
+  },
+  {
+    "index": 228,
+    "metadata": 0,
+    "text": "İtalya Kupası"
+  },
+  {
+    "index": 229,
+    "metadata": 0,
+    "text": "İspanya Ligi"
+  },
+  {
+    "index": 230,
+    "metadata": 0,
+    "text": "İspanya Kupası"
+  },
+  {
+    "index": 231,
+    "metadata": 0,
+    "text": "İngiltere Ligi"
+  },
+  {
+    "index": 232,
+    "metadata": 0,
+    "text": "İngiltere Kupası"
+  },
+  {
+    "index": 233,
+    "metadata": 0,
+    "text": "Fransa Ligi"
+  },
+  {
+    "index": 234,
+    "metadata": 0,
+    "text": "Fransa Kupası"
+  },
+  {
+    "index": 235,
+    "metadata": 0,
+    "text": "Belçika Ligi"
+  },
+  {
+    "index": 236,
+    "metadata": 0,
+    "text": "Belçika Kupası"
+  },
+  {
+    "index": 237,
+    "metadata": 0,
+    "text": "Yunanistan Ligi"
+  },
+  {
+    "index": 238,
+    "metadata": 0,
+    "text": "Yunanistan Kupası"
+  },
+  {
+    "index": 239,
+    "metadata": 0,
+    "text": "Hollanda Ligi"
+  },
+  {
+    "index": 240,
+    "metadata": 0,
+    "text": "Hollanda Kupası"
+  },
+  {
+    "index": 241,
+    "metadata": 0,
+    "text": "Portekiz Ligi"
+  },
+  {
+    "index": 242,
+    "metadata": 0,
+    "text": "Portekiz Kupası"
+  },
+  {
+    "index": 243,
+    "metadata": 0,
+    "text": "Brezilya Ligi"
+  },
+  {
+    "index": 244,
+    "metadata": 0,
+    "text": "Brezilya Kupası"
+  },
+  {
+    "index": 245,
+    "metadata": 0,
+    "text": "Arjantin Ligi"
+  },
+  {
+    "index": 246,
+    "metadata": 0,
+    "text": "Arjantin Kupası"
+  },
+  {
+    "index": 247,
+    "metadata": 0,
+    "text": "İskoçya Ligi"
+  },
+  {
+    "index": 248,
+    "metadata": 0,
+    "text": "İskoçya Kupası"
+  },
+  {
+    "index": 249,
+    "metadata": 0,
+    "text": "Meksika Ligi"
+  },
+  {
+    "index": 250,
+    "metadata": 0,
+    "text": "Meksika Kupası"
+  },
+  {
+    "index": 251,
+    "metadata": 0,
+    "text": "İsviçre Ligi"
+  },
+  {
+    "index": 252,
+    "metadata": 0,
+    "text": "İsviçre Kupası"
+  },
+  {
+    "index": 253,
+    "metadata": 0,
+    "text": "Türkiye Ligi"
+  },
+  {
+    "index": 254,
+    "metadata": 0,
+    "text": "Türkiye Kupası"
+  },
+  {
+    "index": 255,
+    "metadata": 0,
+    "text": "Şili Ligi"
+  },
+  {
+    "index": 256,
+    "metadata": 0,
+    "text": "Şili Kupası"
+  },
+  {
+    "index": 257,
+    "metadata": 0,
+    "text": "Paraguay Ligi"
+  },
+  {
+    "index": 258,
+    "metadata": 0,
+    "text": "Paraguay Kupası"
+  },
+  {
+    "index": 259,
+    "metadata": 0,
+    "text": "Kolombiya Ligi"
+  },
+  {
+    "index": 260,
+    "metadata": 0,
+    "text": "Kolombiya Kupası"
+  },
+  {
+    "index": 261,
+    "metadata": 0,
+    "text": "Rusya Ligi"
+  },
+  {
+    "index": 262,
+    "metadata": 0,
+    "text": "Rusya Kupası"
+  },
+  {
+    "index": 263,
+    "metadata": 0,
+    "text": "İsveç Ligi"
+  },
+  {
+    "index": 264,
+    "metadata": 0,
+    "text": "İsveç Kupası"
+  },
+  {
+    "index": 265,
+    "metadata": 0,
+    "text": "Ukrayna Ligi"
+  },
+  {
+    "index": 266,
+    "metadata": 0,
+    "text": "Ukrayna Kupası"
+  },
+  {
+    "index": 267,
+    "metadata": 0,
+    "text": "Uruguay Ligi"
+  },
+  {
+    "index": 268,
+    "metadata": 0,
+    "text": "Uruguay Kupası"
+  },
+  {
+    "index": 269,
+    "metadata": 0,
+    "text": "sırbistan Ligi"
+  },
+  {
+    "index": 270,
+    "metadata": 0,
+    "text": "Sırbistan Kupası"
+  },
+  {
+    "index": 271,
+    "metadata": 0,
+    "text": "Polonya Ligi"
+  },
+  {
+    "index": 272,
+    "metadata": 0,
+    "text": "Polonya Kupası"
+  },
+  {
+    "index": 273,
+    "metadata": 0,
+    "text": "Endonezya Ligi"
+  },
+  {
+    "index": 274,
+    "metadata": 0,
+    "text": "Endonezya Kupası"
+  },
+  {
+    "index": 275,
+    "metadata": 0,
+    "text": "ADB Ligi"
+  },
+  {
+    "index": 276,
+    "metadata": 0,
+    "text": "ABD Kupası"
+  },
+  {
+    "index": 277,
+    "metadata": 0,
+    "text": "Bulgaristan Ligi"
+  },
+  {
+    "index": 278,
+    "metadata": 0,
+    "text": "Bulgaristan Kupası"
+  },
+  {
+    "index": 279,
+    "metadata": 0,
+    "text": "Ligi"
+  },
+  {
+    "index": 280,
+    "metadata": 0,
+    "text": "Kupası"
+  },
+  {
+    "index": 281,
+    "metadata": 0,
+    "text": "Formasyonu kaydet"
+  },
+  {
+    "index": 282,
+    "metadata": 0,
+    "text": "Seçin Formasyonu"
+  },
+  {
+    "index": 283,
+    "metadata": 0,
+    "text": "Oyun Şekli"
+  },
+  {
+    "index": 284,
+    "metadata": 0,
+    "text": "Defans basksı"
+  },
+  {
+    "index": 285,
+    "metadata": 0,
+    "text": "Şu tarafa daha fazla baskı:"
+  },
+  {
+    "index": 286,
+    "metadata": 0,
+    "text": "Parçaları Düzenle"
+  },
+  {
+    "index": 287,
+    "metadata": 0,
+    "text": "Takım Kaptanı"
+  },
+  {
+    "index": 288,
+    "metadata": 0,
+    "text": "Formasyonu otomatik olarak seç"
+  },
+  {
+    "index": 289,
+    "metadata": 0,
+    "text": "Oynama Şekli"
+  },
+  {
+    "index": 290,
+    "metadata": 0,
+    "text": "Dengeli"
+  },
+  {
+    "index": 291,
+    "metadata": 0,
+    "text": "Tüm ileri"
+  },
+  {
+    "index": 292,
+    "metadata": 0,
+    "text": "Defansif"
+  },
+  {
+    "index": 293,
+    "metadata": 0,
+    "text": "Hafif"
+  },
+  {
+    "index": 294,
+    "metadata": 0,
+    "text": "Ağır"
+  },
+  {
+    "index": 295,
+    "metadata": 0,
+    "text": "Çok ağır"
+  },
+  {
+    "index": 296,
+    "metadata": 0,
+    "text": "Orta"
+  },
+  {
+    "index": 297,
+    "metadata": 0,
+    "text": "Kanatlar"
+  },
+  {
+    "index": 298,
+    "metadata": 0,
+    "text": "<< Geri"
+  },
+  {
+    "index": 299,
+    "metadata": 0,
+    "text": "Maçı Başlat >>"
+  },
+  {
+    "index": 300,
+    "metadata": 0,
+    "text": "Oynanan şekil: "
+  },
+  {
+    "index": 301,
+    "metadata": 0,
+    "text": "Maçı başlatmak için en az 11 oyuncu seç"
+  },
+  {
+    "index": 302,
+    "metadata": 0,
+    "text": "Bir takım seç:"
+  },
+  {
+    "index": 303,
+    "metadata": 0,
+    "text": "Kayıtlar"
+  },
+  {
+    "index": 304,
+    "metadata": 0,
+    "text": "Fikstürler"
+  },
+  {
+    "index": 305,
+    "metadata": 0,
+    "text": "Transferler"
+  },
+  {
+    "index": 306,
+    "metadata": 0,
+    "text": "Kupalar ve madalyalar"
+  },
+  {
+    "index": 307,
+    "metadata": 0,
+    "text": "Bütçeniz:"
+  },
+  {
+    "index": 308,
+    "metadata": 0,
+    "text": "Takımınıza en fazla 28 oyuncu alabilirsiniz"
+  },
+  {
+    "index": 309,
+    "metadata": 0,
+    "text": "Sizin takımınıza transfer olmak istemiyor"
+  },
+  {
+    "index": 310,
+    "metadata": 0,
+    "text": "Transfer başarılı"
+  },
+  {
+    "index": 311,
+    "metadata": 0,
+    "text": "Seçilenleri transfer et"
+  },
+  {
+    "index": 312,
+    "metadata": 0,
+    "text": "Kiralama Mümkün"
+  },
+  {
+    "index": 313,
+    "metadata": 0,
+    "text": "ST"
+  },
+  {
+    "index": 314,
+    "metadata": 0,
+    "text": "KM"
+  },
+  {
+    "index": 315,
+    "metadata": 0,
+    "text": "Oyuncuyu Kirala"
+  },
+  {
+    "index": 316,
+    "metadata": 0,
+    "text": "Takımınızda en fazla 2 kiralık oyuncu bulundurabilirsiniz "
+  },
+  {
+    "index": 317,
+    "metadata": 0,
+    "text": "Oyuncu Satın Al"
+  },
+  {
+    "index": 318,
+    "metadata": 0,
+    "text": "Teklif Yap"
+  },
+  {
+    "index": 319,
+    "metadata": 0,
+    "text": "Bütün Kayıtlar"
+  },
+  {
+    "index": 320,
+    "metadata": 0,
+    "text": "Yıl"
+  },
+  {
+    "index": 321,
+    "metadata": 0,
+    "text": "Takım"
+  },
+  {
+    "index": 322,
+    "metadata": 0,
+    "text": "Toplam kariyer"
+  },
+  {
+    "index": 323,
+    "metadata": 0,
+    "text": "Bölgesel takımlar"
+  },
+  {
+    "index": 324,
+    "metadata": 0,
+    "text": "Uluslararası"
+  },
+  {
+    "index": 325,
+    "metadata": 0,
+    "text": "Maçları sırala"
+  },
+  {
+    "index": 326,
+    "metadata": 0,
+    "text": "Dünya Kupası"
+  },
+  {
+    "index": 327,
+    "metadata": 0,
+    "text": "Amerika Kupası"
+  },
+  {
+    "index": 328,
+    "metadata": 0,
+    "text": "Avrupa Kupası"
+  },
+  {
+    "index": 329,
+    "metadata": 0,
+    "text": "Göster:"
+  },
+  {
+    "index": 330,
+    "metadata": 0,
+    "text": "Bütün maçlar:"
+  },
+  {
+    "index": 331,
+    "metadata": 0,
+    "text": "pazar"
+  },
+  {
+    "index": 332,
+    "metadata": 0,
+    "text": "p.tesi"
+  },
+  {
+    "index": 333,
+    "metadata": 0,
+    "text": "Sal"
+  },
+  {
+    "index": 334,
+    "metadata": 0,
+    "text": "Çar"
+  },
+  {
+    "index": 335,
+    "metadata": 0,
+    "text": "Per"
+  },
+  {
+    "index": 336,
+    "metadata": 0,
+    "text": "Cum"
+  },
+  {
+    "index": 337,
+    "metadata": 0,
+    "text": "C.tesi"
+  },
+  {
+    "index": 338,
+    "metadata": 0,
+    "text": "Oyuncu"
+  },
+  {
+    "index": 339,
+    "metadata": 0,
+    "text": "Goller"
+  },
+  {
+    "index": 340,
+    "metadata": 0,
+    "text": "Maçlar"
+  },
+  {
+    "index": 341,
+    "metadata": 0,
+    "text": "Lig"
+  },
+  {
+    "index": 342,
+    "metadata": 0,
+    "text": "Kupa"
+  },
+  {
+    "index": 343,
+    "metadata": 0,
+    "text": "Tüm Zamanların En İyisi"
+  },
+  {
+    "index": 344,
+    "metadata": 0,
+    "text": "İlk 100 oyuncu gösteriliyor, tüm ouncları görmek için tıklayınız"
+  },
+  {
+    "index": 345,
+    "metadata": 0,
+    "text": "Yükle"
+  },
+  {
+    "index": 346,
+    "metadata": 0,
+    "text": "İptal et"
+  },
+  {
+    "index": 347,
+    "metadata": 0,
+    "text": "İptal et"
+  },
+  {
+    "index": 348,
+    "metadata": 0,
+    "text": "Teknik Direktör:"
+  },
+  {
+    "index": 349,
+    "metadata": 0,
+    "text": "Bir Sonraki Maç:"
+  },
+  {
+    "index": 350,
+    "metadata": 0,
+    "text": "Gelir"
+  },
+  {
+    "index": 351,
+    "metadata": 0,
+    "text": "Harcamalar"
+  },
+  {
+    "index": 352,
+    "metadata": 0,
+    "text": "Satılan Oyuncular:"
+  },
+  {
+    "index": 353,
+    "metadata": 0,
+    "text": "Biletler:"
+  },
+  {
+    "index": 354,
+    "metadata": 0,
+    "text": "Ücretler:"
+  },
+  {
+    "index": 355,
+    "metadata": 0,
+    "text": "Banka kredisi:"
+  },
+  {
+    "index": 356,
+    "metadata": 0,
+    "text": "Sponsorluk:"
+  },
+  {
+    "index": 357,
+    "metadata": 0,
+    "text": "Toplam:"
+  },
+  {
+    "index": 358,
+    "metadata": 0,
+    "text": "Satın alınan oyuncular:"
+  },
+  {
+    "index": 359,
+    "metadata": 0,
+    "text": "Stadyum"
+  },
+  {
+    "index": 360,
+    "metadata": 0,
+    "text": "Maaş:"
+  },
+  {
+    "index": 361,
+    "metadata": 0,
+    "text": "Faizli kredi"
+  },
+  {
+    "index": 362,
+    "metadata": 0,
+    "text": "Transfer ücreti"
+  },
+  {
+    "index": 363,
+    "metadata": 0,
+    "text": "Diğer harcamalar:"
+  },
+  {
+    "index": 364,
+    "metadata": 0,
+    "text": "Bakiye:"
+  },
+  {
+    "index": 365,
+    "metadata": 0,
+    "text": "Haftalık faiz:"
+  },
+  {
+    "index": 366,
+    "metadata": 0,
+    "text": "Her hafta ödenen maaş:"
+  },
+  {
+    "index": 367,
+    "metadata": 0,
+    "text": "Mevcut nakit:"
+  },
+  {
+    "index": 368,
+    "metadata": 0,
+    "text": "Açık artırmayla satılacak oyuncu"
+  },
+  {
+    "index": 369,
+    "metadata": 0,
+    "text": "Başlangıç fiyatı:"
+  },
+  {
+    "index": 370,
+    "metadata": 0,
+    "text": "oyuncuyu satıyor"
+  },
+  {
+    "index": 371,
+    "metadata": 0,
+    "text": "Teklifinizi binerli yapın, yani 300 = 300 bin"
+  },
+  {
+    "index": 372,
+    "metadata": 0,
+    "text": "Alıcı yok"
+  },
+  {
+    "index": 373,
+    "metadata": 0,
+    "text": "satıldığı takım:"
+  },
+  {
+    "index": 374,
+    "metadata": 0,
+    "text": "Teklifiniz:"
+  },
+  {
+    "index": 375,
+    "metadata": 0,
+    "text": "Teklif Yap"
+  },
+  {
+    "index": 376,
+    "metadata": 0,
+    "text": "mevcut nakitinizden daha fazla"
+  },
+  {
+    "index": 377,
+    "metadata": 0,
+    "text": "Yeterli paranız yok"
+  },
+  {
+    "index": 378,
+    "metadata": 0,
+    "text": "Sözleşme yap"
+  },
+  {
+    "index": 379,
+    "metadata": 0,
+    "text": "Yeni maaş"
+  },
+  {
+    "index": 380,
+    "metadata": 0,
+    "text": "Sözleşme süresi:"
+  },
+  {
+    "index": 381,
+    "metadata": 0,
+    "text": "6 ay"
+  },
+  {
+    "index": 382,
+    "metadata": 0,
+    "text": "1 yıl"
+  },
+  {
+    "index": 383,
+    "metadata": 0,
+    "text": "2 yıl"
+  },
+  {
+    "index": 384,
+    "metadata": 0,
+    "text": "Teklif Et"
+  },
+  {
+    "index": 385,
+    "metadata": 0,
+    "text": "İptal"
+  },
+  {
+    "index": 386,
+    "metadata": 0,
+    "text": "Teklifiniz reddedildi, istediği teklif:"
+  },
+  {
+    "index": 387,
+    "metadata": 0,
+    "text": "Kabul et"
+  },
+  {
+    "index": 388,
+    "metadata": 0,
+    "text": "Reddet"
+  },
+  {
+    "index": 389,
+    "metadata": 0,
+    "text": "Oyuncunun maaş limiti"
+  },
+  {
+    "index": 390,
+    "metadata": 0,
+    "text": "Şampiyonlar"
+  },
+  {
+    "index": 391,
+    "metadata": 0,
+    "text": "Devam et >>>"
+  },
+  {
+    "index": 392,
+    "metadata": 0,
+    "text": "goller"
+  },
+  {
+    "index": 393,
+    "metadata": 0,
+    "text": "Ara"
+  },
+  {
+    "index": 394,
+    "metadata": 0,
+    "text": "Pozisyon:"
+  },
+  {
+    "index": 395,
+    "metadata": 0,
+    "text": "Vatandaşlık:"
+  },
+  {
+    "index": 396,
+    "metadata": 0,
+    "text": "Sadece listedeki transferleri göster "
+  },
+  {
+    "index": 397,
+    "metadata": 0,
+    "text": "Sadece şurada oynayan oyuncuları göster "
+  },
+  {
+    "index": 398,
+    "metadata": 0,
+    "text": "Sadece bu yerdeki yıldız oyuncuları göster"
+  },
+  {
+    "index": 399,
+    "metadata": 0,
+    "text": "Sadece kiralanabilecek oyuncuları göster"
+  },
+  {
+    "index": 400,
+    "metadata": 0,
+    "text": "Herhangi bir fiyat"
+  },
+  {
+    "index": 401,
+    "metadata": 0,
+    "text": "bulunan oyunucular"
+  },
+  {
+    "index": 402,
+    "metadata": 0,
+    "text": "Başkası tarafından kiralanmış:"
+  },
+  {
+    "index": 403,
+    "metadata": 0,
+    "text": "Oyun başı faiz:"
+  },
+  {
+    "index": 404,
+    "metadata": 0,
+    "text": "$ 500 000 daha temin et"
+  },
+  {
+    "index": 405,
+    "metadata": 0,
+    "text": "$500 000 öde"
+  },
+  {
+    "index": 406,
+    "metadata": 0,
+    "text": "Yıl"
+  },
+  {
+    "index": 407,
+    "metadata": 0,
+    "text": "Şampiyon"
+  },
+  {
+    "index": 408,
+    "metadata": 0,
+    "text": "İkinci"
+  },
+  {
+    "index": 409,
+    "metadata": 0,
+    "text": "En çok puan alan"
+  },
+  {
+    "index": 410,
+    "metadata": 0,
+    "text": "Şampiyon antrenör"
+  },
+  {
+    "index": 411,
+    "metadata": 0,
+    "text": "Antrenör daveti"
+  },
+  {
+    "index": 412,
+    "metadata": 0,
+    "text": "Aşağıdaki takım sizi kiralamak istiyor, bu takıma teknik direktör olmak istiyor musunuz?"
+  },
+  {
+    "index": 413,
+    "metadata": 0,
+    "text": "Kabul et"
+  },
+  {
+    "index": 414,
+    "metadata": 0,
+    "text": "Hepsini reddet"
+  },
+  {
+    "index": 415,
+    "metadata": 0,
+    "text": "sizi işten çıkardı çünkü:"
+  },
+  {
+    "index": 416,
+    "metadata": 0,
+    "text": "taraftarla alınan kötü sonuçlardan dolayı yönetime çok baskı yapıyordu. "
+  },
+  {
+    "index": 417,
+    "metadata": 0,
+    "text": "kulübümüzü finansal krize sokuyordunuz."
+  },
+  {
+    "index": 418,
+    "metadata": 0,
+    "text": "çok fazla çok kötü sonuçlar alıyordunuz."
+  },
+  {
+    "index": 419,
+    "metadata": 0,
+    "text": "biz dördüncü kümeden düşürüldük..."
+  },
+  {
+    "index": 420,
+    "metadata": 0,
+    "text": "karşı takıma iyi şanslar diledin."
+  },
+  {
+    "index": 421,
+    "metadata": 0,
+    "text": "Yerinize geçecek yeni teknik direktör:"
+  },
+  {
+    "index": 422,
+    "metadata": 0,
+    "text": "Şimdi yeni bir kulübe gitmek için bekle..."
+  },
+  {
+    "index": 423,
+    "metadata": 0,
+    "text": "Atıldınız!"
+  },
+  {
+    "index": 424,
+    "metadata": 0,
+    "text": "Oyun Seçenekleri"
+  },
+  {
+    "index": 425,
+    "metadata": 0,
+    "text": "Ligleri göster"
+  },
+  {
+    "index": 426,
+    "metadata": 0,
+    "text": "Otomatik olarak kaydet:"
+  },
+  {
+    "index": 427,
+    "metadata": 0,
+    "text": "Oyun hızı:"
+  },
+  {
+    "index": 428,
+    "metadata": 0,
+    "text": "İnsan oyuncular olmadan hız:"
+  },
+  {
+    "index": 429,
+    "metadata": 0,
+    "text": "Penaltı kararlarırını göster:"
+  },
+  {
+    "index": 430,
+    "metadata": 0,
+    "text": "Atrenör transferlerini göster:"
+  },
+  {
+    "index": 431,
+    "metadata": 0,
+    "text": "İlk yarı maç bilgilerini aç:"
+  },
+  {
+    "index": 432,
+    "metadata": 0,
+    "text": "Süresi geçmi sözleşme bilgilerini gözden geçir:"
+  },
+  {
+    "index": 433,
+    "metadata": 0,
+    "text": "Süresi bitmiş sözleşmeleri otomatik olarak yenile"
+  },
+  {
+    "index": 434,
+    "metadata": 0,
+    "text": "Renkler ve sesler "
+  },
+  {
+    "index": 435,
+    "metadata": 0,
+    "text": "Ses olaylarını aktif hale getir"
+  },
+  {
+    "index": 436,
+    "metadata": 0,
+    "text": "Çarpıcı ev sahibi takım olayları"
+  },
+  {
+    "index": 437,
+    "metadata": 0,
+    "text": "Oyuncu listelerinde renkleri kullan"
+  },
+  {
+    "index": 438,
+    "metadata": 0,
+    "text": "Otomatik kaydetme iptal"
+  },
+  {
+    "index": 439,
+    "metadata": 0,
+    "text": "Her 3 seyahat"
+  },
+  {
+    "index": 440,
+    "metadata": 0,
+    "text": "Her maçtan sonra"
+  },
+  {
+    "index": 441,
+    "metadata": 0,
+    "text": "Sezon başı"
+  },
+  {
+    "index": 442,
+    "metadata": 0,
+    "text": "Yavaş"
+  },
+  {
+    "index": 443,
+    "metadata": 0,
+    "text": "Normal "
+  },
+  {
+    "index": 444,
+    "metadata": 0,
+    "text": "Hızlı"
+  },
+  {
+    "index": 445,
+    "metadata": 0,
+    "text": "Çok Hızlı"
+  },
+  {
+    "index": 446,
+    "metadata": 0,
+    "text": "Süper hızlı"
+  },
+  {
+    "index": 447,
+    "metadata": 0,
+    "text": "Ultra Süper Hızlı"
+  },
+  {
+    "index": 448,
+    "metadata": 0,
+    "text": "En Hızlı"
+  },
+  {
+    "index": 449,
+    "metadata": 0,
+    "text": "Hayır"
+  },
+  {
+    "index": 450,
+    "metadata": 0,
+    "text": "Evet"
+  },
+  {
+    "index": 451,
+    "metadata": 0,
+    "text": "Sadece süresi bitenler"
+  },
+  {
+    "index": 452,
+    "metadata": 0,
+    "text": "Sadece süresi yahında bitecek olanlar"
+  },
+  {
+    "index": 453,
+    "metadata": 0,
+    "text": "Dakikaları Avrupa usulü göster"
+  },
+  {
+    "index": 454,
+    "metadata": 0,
+    "text": "Bilgisayar kontrolünde olan lig maçlarını göster"
+  },
+  {
+    "index": 455,
+    "metadata": 0,
+    "text": "İnsan maçlar puan farklı renk kullanma"
+  },
+  {
+    "index": 456,
+    "metadata": 0,
+    "text": "Oyuncu listelerinin renkleri"
+  },
+  {
+    "index": 457,
+    "metadata": 0,
+    "text": "İlk oyun seçeneklerine dön"
+  },
+  {
+    "index": 458,
+    "metadata": 0,
+    "text": "Penaltı"
+  },
+  {
+    "index": 459,
+    "metadata": 0,
+    "text": "Penaltı kullanıcıyı seç"
+  },
+  {
+    "index": 460,
+    "metadata": 0,
+    "text": "Şut"
+  },
+  {
+    "index": 461,
+    "metadata": 0,
+    "text": "şut çekmeye hazırlanıyor..."
+  },
+  {
+    "index": 462,
+    "metadata": 0,
+    "text": "Şutu çekti ve..."
+  },
+  {
+    "index": 463,
+    "metadata": 0,
+    "text": "Güzel bir şuttu! Gol!!!"
+  },
+  {
+    "index": 464,
+    "metadata": 0,
+    "text": "Ve gol!!!"
+  },
+  {
+    "index": 465,
+    "metadata": 0,
+    "text": "Çok iyi bir gol attı!!!"
+  },
+  {
+    "index": 466,
+    "metadata": 0,
+    "text": "Kaleci yakalıyor!"
+  },
+  {
+    "index": 467,
+    "metadata": 0,
+    "text": "Top dışarı gitti!!!"
+  },
+  {
+    "index": 468,
+    "metadata": 0,
+    "text": "Top direğe çarpıyor!!!"
+  },
+  {
+    "index": 469,
+    "metadata": 0,
+    "text": "Puanlar"
+  },
+  {
+    "index": 470,
+    "metadata": 0,
+    "text": "Oynanan maçlar"
+  },
+  {
+    "index": 471,
+    "metadata": 0,
+    "text": "Kazanılanlar"
+  },
+  {
+    "index": 472,
+    "metadata": 0,
+    "text": "Beraberlikler"
+  },
+  {
+    "index": 473,
+    "metadata": 0,
+    "text": "Kaybedilenler"
+  },
+  {
+    "index": 474,
+    "metadata": 0,
+    "text": "Atılan Goller"
+  },
+  {
+    "index": 475,
+    "metadata": 0,
+    "text": "Yenilen Goller"
+  },
+  {
+    "index": 476,
+    "metadata": 0,
+    "text": "Gol Averagi"
+  },
+  {
+    "index": 477,
+    "metadata": 0,
+    "text": "Grup"
+  },
+  {
+    "index": 478,
+    "metadata": 0,
+    "text": "Henüz maç zamanı belirlenmedi"
+  },
+  {
+    "index": 479,
+    "metadata": 0,
+    "text": "Penaltı kararı"
+  },
+  {
+    "index": 480,
+    "metadata": 0,
+    "text": "Penaltı kararı - Kullanacak oyuncuyu seç"
+  },
+  {
+    "index": 481,
+    "metadata": 0,
+    "text": "Eldeki oyuncular:  "
+  },
+  {
+    "index": 482,
+    "metadata": 0,
+    "text": "Seçilen penaltı kullanıcı:"
+  },
+  {
+    "index": 483,
+    "metadata": 0,
+    "text": "Otomatik olarak seç:"
+  },
+  {
+    "index": 484,
+    "metadata": 0,
+    "text": "Devam et >>>"
+  },
+  {
+    "index": 485,
+    "metadata": 0,
+    "text": "Gol"
+  },
+  {
+    "index": 486,
+    "metadata": 0,
+    "text": "Kaçırıldı"
+  },
+  {
+    "index": 487,
+    "metadata": 0,
+    "text": "Kazanıldı"
+  },
+  {
+    "index": 488,
+    "metadata": 0,
+    "text": "Oyunu kaydetmek için aşağıya bir dosya adı yazınız:"
+  },
+  {
+    "index": 489,
+    "metadata": 0,
+    "text": "Kaydet"
+  },
+  {
+    "index": 490,
+    "metadata": 0,
+    "text": "Bu dosya adı var, başka bir ad seçmek ister misiniz?"
+  },
+  {
+    "index": 491,
+    "metadata": 0,
+    "text": "Evet"
+  },
+  {
+    "index": 492,
+    "metadata": 0,
+    "text": "Hayır"
+  },
+  {
+    "index": 493,
+    "metadata": 0,
+    "text": "Oyuncu transfer et"
+  },
+  {
+    "index": 494,
+    "metadata": 0,
+    "text": "Oyuncu için ihale aç"
+  },
+  {
+    "index": 495,
+    "metadata": 0,
+    "text": "İlk fiyat:"
+  },
+  {
+    "index": 496,
+    "metadata": 0,
+    "text": "(bin $ olarak)"
+  },
+  {
+    "index": 497,
+    "metadata": 0,
+    "text": "Transfer Listesine Koy"
+  },
+  {
+    "index": 498,
+    "metadata": 0,
+    "text": "İhaleyi Başlat"
+  },
+  {
+    "index": 499,
+    "metadata": 0,
+    "text": "İptal Et"
+  },
+  {
+    "index": 500,
+    "metadata": 0,
+    "text": "Transfer Listesi"
+  },
+  {
+    "index": 501,
+    "metadata": 0,
+    "text": "(Oyuncunun sözleşme bitiş tarihine göre bir transfer ücreti ödemeniz gerekmektedir)"
+  },
+  {
+    "index": 502,
+    "metadata": 0,
+    "text": "Bu oyuncu için tahmini transfer ücreti:"
+  },
+  {
+    "index": 503,
+    "metadata": 0,
+    "text": "Sabit fiyat:"
+  },
+  {
+    "index": 504,
+    "metadata": 0,
+    "text": "Birinci yarı"
+  },
+  {
+    "index": 505,
+    "metadata": 0,
+    "text": "İkinci yarı"
+  },
+  {
+    "index": 506,
+    "metadata": 0,
+    "text": "Devre Arası"
+  },
+  {
+    "index": 507,
+    "metadata": 0,
+    "text": "Ek Süre"
+  },
+  {
+    "index": 508,
+    "metadata": 0,
+    "text": "90 Dakika"
+  },
+  {
+    "index": 509,
+    "metadata": 0,
+    "text": "Üçüncülük maçı"
+  },
+  {
+    "index": 510,
+    "metadata": 0,
+    "text": "(atılan gol)"
+  },
+  {
+    "index": 511,
+    "metadata": 0,
+    "text": "(penaltı)"
+  },
+  {
+    "index": 512,
+    "metadata": 0,
+    "text": "(serbest vuruş)"
+  },
+  {
+    "index": 513,
+    "metadata": 0,
+    "text": "(kaçırılan penaltı)"
+  },
+  {
+    "index": 514,
+    "metadata": 0,
+    "text": "Teknik Direktör"
+  },
+  {
+    "index": 515,
+    "metadata": 0,
+    "text": "Mevcut Takım"
+  },
+  {
+    "index": 516,
+    "metadata": 0,
+    "text": "Puanlar"
+  },
+  {
+    "index": 517,
+    "metadata": 0,
+    "text": "Dünya Sıralaması"
+  },
+  {
+    "index": 518,
+    "metadata": 0,
+    "text": "Alınan Dereceler"
+  },
+  {
+    "index": 519,
+    "metadata": 0,
+    "text": "Oyuncuyu emekliye ayır"
+  },
+  {
+    "index": 520,
+    "metadata": 0,
+    "text": "Emekliye ayrılan oyuncular ancak takımın genç tabanından gelen oyunculardan biriyle değiştirilebilir. "
+  },
+  {
+    "index": 521,
+    "metadata": 0,
+    "text": "Alınan genç oyuncunun kabiliyet derecesi 1 ve 20 arasında olmalıdır. Yaşları 17 ile 20 arasında olmalıdır. "
+  },
+  {
+    "index": 522,
+    "metadata": 0,
+    "text": "Yeni oyuncu için yeni bir isim seçeilir veya eski oyuncunun adını verebilirsiniz. "
+  },
+  {
+    "index": 523,
+    "metadata": 0,
+    "text": "Yeni oyuncunun adı"
+  },
+  {
+    "index": 524,
+    "metadata": 0,
+    "text": "Oynayacağı yer"
+  },
+  {
+    "index": 525,
+    "metadata": 0,
+    "text": "Emekliye ayır"
+  },
+  {
+    "index": 526,
+    "metadata": 0,
+    "text": "İptal et"
+  },
+  {
+    "index": 527,
+    "metadata": 0,
+    "text": "Oyuncu Fiyat Teklifi"
+  },
+  {
+    "index": 528,
+    "metadata": 0,
+    "text": "Oyuncuyu İstiyor"
+  },
+  {
+    "index": 529,
+    "metadata": 0,
+    "text": "Teklifi Kabul Et?"
+  },
+  {
+    "index": 530,
+    "metadata": 0,
+    "text": "İnsan Antrenörler"
+  },
+  {
+    "index": 531,
+    "metadata": 0,
+    "text": "İptal Et"
+  },
+  {
+    "index": 532,
+    "metadata": 0,
+    "text": "Yeni Ekle"
+  },
+  {
+    "index": 533,
+    "metadata": 0,
+    "text": "Bir antrenörü göndermek için önce onu şu anki görevinden alın."
+  },
+  {
+    "index": 534,
+    "metadata": 0,
+    "text": "Yeni antrenör adı"
+  },
+  {
+    "index": 535,
+    "metadata": 0,
+    "text": "Sakat oyuncu"
+  },
+  {
+    "index": 536,
+    "metadata": 0,
+    "text": "Değiştirmek için oyuncu seçin"
+  },
+  {
+    "index": 537,
+    "metadata": 0,
+    "text": "Penaltı"
+  },
+  {
+    "index": 538,
+    "metadata": 0,
+    "text": "Sezon Kayıtları"
+  },
+  {
+    "index": 539,
+    "metadata": 0,
+    "text": "Turnuva"
+  },
+  {
+    "index": 540,
+    "metadata": 0,
+    "text": "Oynayacağı Yer"
+  },
+  {
+    "index": 541,
+    "metadata": 0,
+    "text": "Antrenörler"
+  },
+  {
+    "index": 542,
+    "metadata": 0,
+    "text": "3. "
+  },
+  {
+    "index": 543,
+    "metadata": 0,
+    "text": "4. "
+  },
+  {
+    "index": 544,
+    "metadata": 0,
+    "text": "Antrenör Atıldı"
+  },
+  {
+    "index": 545,
+    "metadata": 0,
+    "text": "Antrenör değişiklikleri"
+  },
+  {
+    "index": 546,
+    "metadata": 0,
+    "text": "İşten atan takım"
+  },
+  {
+    "index": 547,
+    "metadata": 0,
+    "text": "Yeni antrenör"
+  },
+  {
+    "index": 548,
+    "metadata": 0,
+    "text": "gittiği yer"
+  },
+  {
+    "index": 549,
+    "metadata": 0,
+    "text": "En Son Transferler"
+  },
+  {
+    "index": 550,
+    "metadata": 0,
+    "text": "Oyuncular"
+  },
+  {
+    "index": 551,
+    "metadata": 0,
+    "text": "Geldiği Yer"
+  },
+  {
+    "index": 552,
+    "metadata": 0,
+    "text": "Gittiği Yer"
+  },
+  {
+    "index": 553,
+    "metadata": 0,
+    "text": "Oyuncu"
+  },
+  {
+    "index": 554,
+    "metadata": 0,
+    "text": "Antrenör"
+  },
+  {
+    "index": 555,
+    "metadata": 0,
+    "text": "Bütün Oyuncular"
+  },
+  {
+    "index": 556,
+    "metadata": 0,
+    "text": "Teklif Yap"
+  },
+  {
+    "index": 557,
+    "metadata": 0,
+    "text": "Oyuncu Ücreti:"
+  },
+  {
+    "index": 558,
+    "metadata": 0,
+    "text": "Sizin Teklifiniz: "
+  },
+  {
+    "index": 559,
+    "metadata": 0,
+    "text": "Teklif Et"
+  },
+  {
+    "index": 560,
+    "metadata": 0,
+    "text": "Sizin takımınızda oynamak istemiyor"
+  },
+  {
+    "index": 561,
+    "metadata": 0,
+    "text": "Teklifiniz kabul edilmedi"
+  },
+  {
+    "index": 562,
+    "metadata": 0,
+    "text": "Sizin kulübünüzde oynamak için"
+  },
+  {
+    "index": 563,
+    "metadata": 0,
+    "text": "daha iyi bir maaş istiyor."
+  },
+  {
+    "index": 564,
+    "metadata": 0,
+    "text": "Kabul Et"
+  },
+  {
+    "index": 565,
+    "metadata": 0,
+    "text": "Reddet"
+  },
+  {
+    "index": 566,
+    "metadata": 0,
+    "text": "E-Mail Kutusu"
+  },
+  {
+    "index": 567,
+    "metadata": 0,
+    "text": "Oyuncuyu atmak istiyor musunuz?"
+  },
+  {
+    "index": 568,
+    "metadata": 0,
+    "text": "Yönetim"
+  },
+  {
+    "index": 569,
+    "metadata": 0,
+    "text": "Taraftarlar"
+  },
+  {
+    "index": 570,
+    "metadata": 0,
+    "text": "Oyuncu"
+  },
+  {
+    "index": 571,
+    "metadata": 0,
+    "text": "Basın"
+  },
+  {
+    "index": 572,
+    "metadata": 0,
+    "text": "Sağlıl merkezi"
+  },
+  {
+    "index": 573,
+    "metadata": 0,
+    "text": "Hoşgeldiniz"
+  },
+  {
+    "index": 574,
+    "metadata": 0,
+    "text": "oyundan atıldı"
+  },
+  {
+    "index": 575,
+    "metadata": 0,
+    "text": "Bunu pek sevmem"
+  },
+  {
+    "index": 576,
+    "metadata": 0,
+    "text": "sakat"
+  },
+  {
+    "index": 577,
+    "metadata": 0,
+    "text": "Buna müsade etmeyiz"
+  },
+  {
+    "index": 578,
+    "metadata": 0,
+    "text": "Buna müsade etmeyiz"
+  },
+  {
+    "index": 579,
+    "metadata": 0,
+    "text": "gideceği yer"
+  },
+  {
+    "index": 580,
+    "metadata": 0,
+    "text": "Racha no elenco causado por"
+  },
+  {
+    "index": 581,
+    "metadata": 0,
+    "text": "Teşekkürler"
+  },
+  {
+    "index": 582,
+    "metadata": 0,
+    "text": "Şikayet"
+  },
+  {
+    "index": 583,
+    "metadata": 0,
+    "text": "Sözleşmem sona erdi"
+  },
+  {
+    "index": 584,
+    "metadata": 0,
+    "text": "Şunlar arasunda arbede:"
+  },
+  {
+    "index": 585,
+    "metadata": 0,
+    "text": "Taraftarlar arasında arbede"
+  },
+  {
+    "index": 586,
+    "metadata": 0,
+    "text": "transfer olduğu takım"
+  },
+  {
+    "index": 587,
+    "metadata": 0,
+    "text": "Milli takım davetleri"
+  },
+  {
+    "index": 588,
+    "metadata": 0,
+    "text": "Sözleşme kısa süre sonra sona erecek"
+  },
+  {
+    "index": 589,
+    "metadata": 0,
+    "text": "Sözleşmesi bitti"
+  },
+  {
+    "index": 590,
+    "metadata": 0,
+    "text": "oyuncu için yer yok"
+  },
+  {
+    "index": 591,
+    "metadata": 0,
+    "text": "Hakemin yüzüne tükürdükten sonra 10 maç ceza aldı"
+  },
+  {
+    "index": 592,
+    "metadata": 0,
+    "text": "Hakeme küfrettiği için 10 maç ceza aldı"
+  },
+  {
+    "index": 593,
+    "metadata": 0,
+    "text": "Rakip oyuncudan tehlikeli bir şekilde arkadan kayarak top almaya çalıştığı için 5 maç ceza aldı."
+  },
+  {
+    "index": 594,
+    "metadata": 0,
+    "text": "Rakip oyunculardan birine hakaret ettiği için 5 maç ceza aldı. Bizce bu adil bir karar değil."
+  },
+  {
+    "index": 595,
+    "metadata": 0,
+    "text": "Rakibine tekme vurdu ve 5 maç ceza aldı. Bizce bu aidl bir karar değil."
+  },
+  {
+    "index": 596,
+    "metadata": 0,
+    "text": "Arkadan kayarak top almaya çalıştı ve 3 3 maç ceza aldı."
+  },
+  {
+    "index": 597,
+    "metadata": 0,
+    "text": "Rakibinin burnuna vurdu ve 3 maç ceza aldı"
+  },
+  {
+    "index": 598,
+    "metadata": 0,
+    "text": "Mutlak gol pozisyonunda rakibine faul yaptı ve 3 maç ceza aldı"
+  },
+  {
+    "index": 599,
+    "metadata": 0,
+    "text": "Rakibinin yüzüne vurdu ve 3 maç ceza aldı"
+  },
+  {
+    "index": 600,
+    "metadata": 0,
+    "text": "Çok yaralayıcı bir faul yaptı ve 3 maç ceza aldı."
+  },
+  {
+    "index": 601,
+    "metadata": 0,
+    "text": "Rakibine tekme vurdu. Oyuncu futbolun bir dövüş sporu olduğunu mu sanıyor? 2 oyun cezalı."
+  },
+  {
+    "index": 602,
+    "metadata": 0,
+    "text": "Çok yaralayıcı bir faul yaptı. 2 oyun cezalı"
+  },
+  {
+    "index": 603,
+    "metadata": 0,
+    "text": "Oyuncu kas spazmı geçirdi. Bir hafta sakat"
+  },
+  {
+    "index": 604,
+    "metadata": 0,
+    "text": "Oyuncunun lifi koptu. Bir kaç hafta oynamayacak"
+  },
+  {
+    "index": 605,
+    "metadata": 0,
+    "text": "Oyuncu kasığından sakatlandı. Yaklaşık iki hafta sakat"
+  },
+  {
+    "index": 606,
+    "metadata": 0,
+    "text": "Kalçası zedelendi. Birkaç hafta sakat"
+  },
+  {
+    "index": 607,
+    "metadata": 0,
+    "text": "Oyuncu kasığından sakatlandı. Yaklaşık iki hafta sakat"
+  },
+  {
+    "index": 608,
+    "metadata": 0,
+    "text": "Oyuncu kas spazmı geçirdi. Yaklaşık iki hafta sakat"
+  },
+  {
+    "index": 609,
+    "metadata": 0,
+    "text": "Yumuşak doku zedenelmesi. Yaklaşık iki hafta sakat."
+  },
+  {
+    "index": 610,
+    "metadata": 0,
+    "text": "Diz arkasındaki kiriş çekti. Önümüzdeki maçların çoğunda oynaması beklenmiyor. "
+  },
+  {
+    "index": 611,
+    "metadata": 0,
+    "text": "sakatlanmış bir topuğu nedeniyle tedavi görüyor. Bir kaç gün oynayamayacak."
+  },
+  {
+    "index": 612,
+    "metadata": 0,
+    "text": "Ayak baş parmağından yaralı. Birkaç gün oynayamayacak."
+  },
+  {
+    "index": 613,
+    "metadata": 0,
+    "text": "Dizi burkulmuş. Birkaç gün oynayamayacak. "
+  },
+  {
+    "index": 614,
+    "metadata": 0,
+    "text": "Ayak başparmağı kırılmış. Uzun bir süre oynayamayacak. "
+  },
+  {
+    "index": 615,
+    "metadata": 0,
+    "text": "Kolu kırık. Uzun bir süre oynayamayacak"
+  },
+  {
+    "index": 616,
+    "metadata": 0,
+    "text": "Kalça kası zedelenmiş. Uzun bir süre oynayamayacak."
+  },
+  {
+    "index": 617,
+    "metadata": 0,
+    "text": "Baldırından yaralı. Uzun bir süre oynayamayacak."
+  },
+  {
+    "index": 618,
+    "metadata": 0,
+    "text": "Çok ağır bir eklem burkulması geçirdi. Uzun süre oynayamacak. "
+  },
+  {
+    "index": 619,
+    "metadata": 0,
+    "text": "Oyuncu kalp krizi geçirdi. Belki de artık emekliye ayrılması gerek."
+  },
+  {
+    "index": 620,
+    "metadata": 0,
+    "text": "Kaval kemiği çatlamış. Uzun bir süre oynayamayacak. "
+  },
+  {
+    "index": 621,
+    "metadata": 0,
+    "text": "Çapraz bağları zarar görmüş. Dört beş ay oynayamayacak. "
+  },
+  {
+    "index": 622,
+    "metadata": 0,
+    "text": "Ayağı kırılmış. Dört beş ay oynayamayacak.   "
+  },
+  {
+    "index": 623,
+    "metadata": 0,
+    "text": "Diz bağları zedelenmiş. Yoksa bu kariyerinin sonu mu? ."
+  },
+  {
+    "index": 624,
+    "metadata": 0,
+    "text": "Kulbümüze hoş geldiniz. Burada bazı öneriler ve uyarılar lacaksınız. "
+  },
+  {
+    "index": 625,
+    "metadata": 0,
+    "text": "Kulübümüz bu şekilde aşağılanamaz. Bu tür şeyleri kabul edemeyiz. Lütfen daha dikkatli olun. "
+  },
+  {
+    "index": 626,
+    "metadata": 0,
+    "text": "Bu derece bir farklı malubiyetle maç kaybedemeyiz. Eğer böyle devam ederse yönetimin sizi atmasını isteyeceğiz!  "
+  },
+  {
+    "index": 627,
+    "metadata": 0,
+    "text": "Bu şekilde farklı malubiyetlere göz yumamayız. eğer böyle devam ederse yönetimin sizi atmasını isteyeceğiz. "
+  },
+  {
+    "index": 628,
+    "metadata": 0,
+    "text": "Maaşımı yükselttiğiniz için teşekkürler. Bunun karşılığını sahada vermeye çalışacağım. "
+  },
+  {
+    "index": 629,
+    "metadata": 0,
+    "text": "Satılık olan oyuncu şu fiyata satıldı: "
+  },
+  {
+    "index": 630,
+    "metadata": 0,
+    "text": "Milli takıma davet edildiğinize dair bazı haber aldık. Gelecek hafta resmi bir davet mektubu alacaksın.  "
+  },
+  {
+    "index": 631,
+    "metadata": 0,
+    "text": "Oyuncunun kontratı 3 hafta sonra sona erecek. "
+  },
+  {
+    "index": 632,
+    "metadata": 0,
+    "text": "Oyuncunun kontratı bugün sona erdi. "
+  },
+  {
+    "index": 633,
+    "metadata": 0,
+    "text": "Oyuncunun kiralama süresi sona erdi. Fakat sizin kulübe ancak 28 oyuncudan daha az oyuncuya sahip olduğunuzda dönecek. "
+  },
+  {
+    "index": 634,
+    "metadata": 0,
+    "text": "Bu hafta müthiş bir transfer gerçekleşti. Oyuncu yeni maçta oynuyor. "
+  },
+  {
+    "index": 635,
+    "metadata": 0,
+    "text": "Oyuncu bugün gerçekleşen sürpriz transfer konusunda bir basın toplantısı düzenledi. "
+  },
+  {
+    "index": 636,
+    "metadata": 0,
+    "text": "Sen delirdinmi dostum? Bana ceza veremezsin."
+  },
+  {
+    "index": 637,
+    "metadata": 0,
+    "text": "Bu hoşuma gitmedi. Atılma benim suçum değildi."
+  },
+  {
+    "index": 638,
+    "metadata": 0,
+    "text": "Anşalması yeni imzalanan oyuncu maçta yok. Belki de takımınızda çok fazla yıldız oyuncu var. "
+  },
+  {
+    "index": 639,
+    "metadata": 0,
+    "text": "Oyuncu hiçbir maçta oynayamamasından dolayı hoşnutsuz. Başka bir kulübe geçmek istiyor. "
+  },
+  {
+    "index": 640,
+    "metadata": 0,
+    "text": "Kontratım sona erdi. Lütfen kontratımı yenileyin veya beni başka bir kulübe gönderin. "
+  },
+  {
+    "index": 641,
+    "metadata": 0,
+    "text": "Şu oyuncular arasında sahada bir arbede çıktı."
+  },
+  {
+    "index": 642,
+    "metadata": 0,
+    "text": "Bugün oyuncular ve taraftarlar kavga ediyor. Sanırım bunun sebebi aldığımız kötü sonuç. "
+  },
+  {
+    "index": 643,
+    "metadata": 0,
+    "text": "Bütün maçlarda oynamaktan yorgun düştüm. Bir süre dinlenmeliyim. "
+  },
+  {
+    "index": 644,
+    "metadata": 0,
+    "text": "(boş)"
+  },
+  {
+    "index": 645,
+    "metadata": 0,
+    "text": "(boş)"
+  },
+  {
+    "index": 646,
+    "metadata": 0,
+    "text": "(boş)"
+  },
+  {
+    "index": 647,
+    "metadata": 0,
+    "text": "(boş)"
+  },
+  {
+    "index": 648,
+    "metadata": 0,
+    "text": "(boş)"
+  },
+  {
+    "index": 649,
+    "metadata": 0,
+    "text": "Limit 3 değişikliğini ortaya"
+  },
+  {
+    "index": 650,
+    "metadata": 0,
+    "text": "Fikstürer"
+  },
+  {
+    "index": 651,
+    "metadata": 0,
+    "text": "kalabalık"
+  },
+  {
+    "index": 652,
+    "metadata": 0,
+    "text": "gelir"
+  },
+  {
+    "index": 653,
+    "metadata": 0,
+    "text": "Onayla"
+  },
+  {
+    "index": 654,
+    "metadata": 0,
+    "text": "İstifa etmek istiyor musunuz? "
+  },
+  {
+    "index": 655,
+    "metadata": 0,
+    "text": "Goller"
+  },
+  {
+    "index": 656,
+    "metadata": 0,
+    "text": "Lig tablosu"
+  },
+  {
+    "index": 657,
+    "metadata": 0,
+    "text": "top kontrolü"
+  },
+  {
+    "index": 658,
+    "metadata": 0,
+    "text": "şutlar"
+  },
+  {
+    "index": 659,
+    "metadata": 0,
+    "text": "çalımlar"
+  },
+  {
+    "index": 660,
+    "metadata": 0,
+    "text": "hatalı paslar"
+  },
+  {
+    "index": 661,
+    "metadata": 0,
+    "text": "faüller"
+  },
+  {
+    "index": 662,
+    "metadata": 0,
+    "text": "Transfer Teklifi"
+  },
+  {
+    "index": 663,
+    "metadata": 0,
+    "text": "Şu oyuncuyu istiyor: "
+  },
+  {
+    "index": 664,
+    "metadata": 0,
+    "text": "Teklif ücreti:"
+  },
+  {
+    "index": 665,
+    "metadata": 0,
+    "text": "Kabul et ve oyuncuyu transfer et?"
+  },
+  {
+    "index": 666,
+    "metadata": 0,
+    "text": "Son durum itibariyle sıralama"
+  },
+  {
+    "index": 667,
+    "metadata": 0,
+    "text": "alınan puanlara göre sıralama"
+  },
+  {
+    "index": 668,
+    "metadata": 0,
+    "text": "Format:(P/AG/YG)"
+  },
+  {
+    "index": 669,
+    "metadata": 0,
+    "text": "Dünya Sıralaması"
+  },
+  {
+    "index": 670,
+    "metadata": 0,
+    "text": "Puanlar"
+  },
+  {
+    "index": 671,
+    "metadata": 0,
+    "text": "P."
+  },
+  {
+    "index": 672,
+    "metadata": 0,
+    "text": "Oyuncu ölümü"
+  },
+  {
+    "index": 673,
+    "metadata": 0,
+    "text": "Oyuncu bugün antraman sırasında öldü. Büyük ihtimal ileri yaşından."
+  },
+  {
+    "index": 674,
+    "metadata": 0,
+    "text": "Bu nedenle takımızız ligde 5 maç kaybetti. "
+  },
+  {
+    "index": 675,
+    "metadata": 0,
+    "text": "Bir Milli Takım antrenörü seç"
+  },
+  {
+    "index": 676,
+    "metadata": 0,
+    "text": "Bazı milli takımlar sizin kendi takımlarında oynamanızı istiyor. Aşağıda çalışmak istediğiniz milli takımı seçin. "
+  },
+  {
+    "index": 677,
+    "metadata": 0,
+    "text": "Milli Takıma davet etmek için oyuncuları araştırın"
+  },
+  {
+    "index": 678,
+    "metadata": 0,
+    "text": "Oyuncuları seçin ve daha sonra eklemek için \">>\" işareti üzerine tıklayın. En fazla 20 oyuncu ve 3 kaleci seçebilirsiniz. "
+  },
+  {
+    "index": 679,
+    "metadata": 0,
+    "text": "Maçı Kazanan"
+  },
+  {
+    "index": 680,
+    "metadata": 0,
+    "text": "Maçı Kaybeden"
+  },
+  {
+    "index": 681,
+    "metadata": 0,
+    "text": "En iyi üçüncü"
+  },
+  {
+    "index": 682,
+    "metadata": 0,
+    "text": "Teknik olarak:"
+  },
+  {
+    "index": 683,
+    "metadata": 0,
+    "text": "Disiplin:"
+  },
+  {
+    "index": 684,
+    "metadata": 0,
+    "text": "Dostluk Maçı Programı"
+  },
+  {
+    "index": 685,
+    "metadata": 0,
+    "text": "Sezon Öncesi Dostluk Maçı Programı"
+  },
+  {
+    "index": 686,
+    "metadata": 0,
+    "text": "Lig Başlama Tarihi:"
+  },
+  {
+    "index": 687,
+    "metadata": 0,
+    "text": "Uygun tarihler:"
+  },
+  {
+    "index": 688,
+    "metadata": 0,
+    "text": "Rakibi Seç:"
+  },
+  {
+    "index": 689,
+    "metadata": 0,
+    "text": "Maç Yeri:"
+  },
+  {
+    "index": 690,
+    "metadata": 0,
+    "text": "Ev"
+  },
+  {
+    "index": 691,
+    "metadata": 0,
+    "text": "Deplasman"
+  },
+  {
+    "index": 692,
+    "metadata": 0,
+    "text": "Dostluk Maçı için Rezervasyon Yap"
+  },
+  {
+    "index": 693,
+    "metadata": 0,
+    "text": "o tarihte başka bir dostluk maçımız var"
+  },
+  {
+    "index": 694,
+    "metadata": 0,
+    "text": "dostluk maçı teklifi reddedildi"
+  },
+  {
+    "index": 695,
+    "metadata": 0,
+    "text": "dostluk maçı ücretini ödeyecek para yok"
+  },
+  {
+    "index": 696,
+    "metadata": 0,
+    "text": "Dostluk maçı ayarlandı"
+  },
+  {
+    "index": 697,
+    "metadata": 0,
+    "text": "Dostluk maçı onayı"
+  },
+  {
+    "index": 698,
+    "metadata": 0,
+    "text": "bu dostluk maçı için istekler:"
+  },
+  {
+    "index": 699,
+    "metadata": 0,
+    "text": "Bu dostluk maçı için ödemeyi şimdi yapmalısınız, dostluk maçını onaylamak istiyor musunuz? "
+  },
+  {
+    "index": 700,
+    "metadata": 0,
+    "text": "Bu iki insan takımı arasındaki dostluk maçını onaylamak istiyorsanız evet üzerine kliyleyiniz. "
+  },
+  {
+    "index": 701,
+    "metadata": 0,
+    "text": "Numara Seç"
+  },
+  {
+    "index": 702,
+    "metadata": 0,
+    "text": "Numara yok"
+  },
+  {
+    "index": 703,
+    "metadata": 0,
+    "text": "Sezon öncesi dostluk maçları ayarlamak ister misiniz?"
+  },
+  {
+    "index": 704,
+    "metadata": 0,
+    "text": "Kira Teklifi"
+  },
+  {
+    "index": 705,
+    "metadata": 0,
+    "text": "Bu oyuncuyu kiralamak ister misiniz?"
+  },
+  {
+    "index": 706,
+    "metadata": 0,
+    "text": "Kupa galerisi boş"
+  },
+  {
+    "index": 707,
+    "metadata": 0,
+    "text": "Takım renkleri"
+  },
+  {
+    "index": 708,
+    "metadata": 0,
+    "text": "Ana renk:"
+  },
+  {
+    "index": 709,
+    "metadata": 0,
+    "text": "İkinci renk:"
+  },
+  {
+    "index": 710,
+    "metadata": 0,
+    "text": "Maça devam et"
+  },
+  {
+    "index": 711,
+    "metadata": 0,
+    "text": "Maç istatistikleri"
+  },
+  {
+    "index": 712,
+    "metadata": 0,
+    "text": "Birinci ayak"
+  },
+  {
+    "index": 713,
+    "metadata": 0,
+    "text": "Kariyer istatistikleri"
+  },
+  {
+    "index": 714,
+    "metadata": 0,
+    "text": "Bu sezon maçları"
+  },
+  {
+    "index": 715,
+    "metadata": 0,
+    "text": "Tarih"
+  },
+  {
+    "index": 716,
+    "metadata": 0,
+    "text": "Maç"
+  },
+  {
+    "index": 717,
+    "metadata": 0,
+    "text": "Sıralama"
+  },
+  {
+    "index": 718,
+    "metadata": 0,
+    "text": "Mevcut kapasite"
+  },
+  {
+    "index": 719,
+    "metadata": 0,
+    "text": "Tribünler"
+  },
+  {
+    "index": 720,
+    "metadata": 0,
+    "text": "Normal tribün:"
+  },
+  {
+    "index": 721,
+    "metadata": 0,
+    "text": "Kapalı tribün:"
+  },
+  {
+    "index": 722,
+    "metadata": 0,
+    "text": "VİP tribünü:"
+  },
+  {
+    "index": 723,
+    "metadata": 0,
+    "text": "Bilet Ücretleri"
+  },
+  {
+    "index": 724,
+    "metadata": 0,
+    "text": "Bu yer için tavsiye edilen fiyatlar:"
+  },
+  {
+    "index": 725,
+    "metadata": 0,
+    "text": "koltuklar"
+  },
+  {
+    "index": 726,
+    "metadata": 0,
+    "text": "Stadyumu genişlet"
+  },
+  {
+    "index": 727,
+    "metadata": 0,
+    "text": "Mevcut genişletme çalışması bitişi:"
+  },
+  {
+    "index": 728,
+    "metadata": 0,
+    "text": "Maksimum"
+  },
+  {
+    "index": 729,
+    "metadata": 0,
+    "text": "Yeni koltuklar:"
+  },
+  {
+    "index": 730,
+    "metadata": 0,
+    "text": "Tahmini bir ücret rica et"
+  },
+  {
+    "index": 731,
+    "metadata": 0,
+    "text": "Genişletmeyi başlat"
+  },
+  {
+    "index": 732,
+    "metadata": 0,
+    "text": "Proje idaresi de dahil tahmini genişletme masrafı"
+  },
+  {
+    "index": 733,
+    "metadata": 0,
+    "text": "Tahmini proje bitiş tarihi:"
+  },
+  {
+    "index": 734,
+    "metadata": 0,
+    "text": "Şu an stadyumu istenen koltuklarla genişletebilecek teknolojik imkan yok."
+  },
+  {
+    "index": 735,
+    "metadata": 0,
+    "text": "Genişletme projesini başlatacak yeterli para yok."
+  },
+  {
+    "index": 736,
+    "metadata": 0,
+    "text": "Takım Kurma Yardımcısı"
+  },
+  {
+    "index": 737,
+    "metadata": 0,
+    "text": "Takımları yüklüyor..."
+  },
+  {
+    "index": 738,
+    "metadata": 0,
+    "text": "Toplam takımlar:"
+  },
+  {
+    "index": 739,
+    "metadata": 0,
+    "text": "Takım:"
+  },
+  {
+    "index": 740,
+    "metadata": 0,
+    "text": "Milli Takımlar"
+  },
+  {
+    "index": 741,
+    "metadata": 0,
+    "text": "Takım Ekle"
+  },
+  {
+    "index": 742,
+    "metadata": 0,
+    "text": "Takımda Değişiklik Yap"
+  },
+  {
+    "index": 743,
+    "metadata": 0,
+    "text": "Takımı İptal Et"
+  },
+  {
+    "index": 744,
+    "metadata": 0,
+    "text": "Ülke"
+  },
+  {
+    "index": 745,
+    "metadata": 0,
+    "text": "Düzey"
+  },
+  {
+    "index": 746,
+    "metadata": 0,
+    "text": "Ana Menü"
+  },
+  {
+    "index": 747,
+    "metadata": 0,
+    "text": "Oyundan Çık"
+  },
+  {
+    "index": 748,
+    "metadata": 0,
+    "text": "Yaş"
+  },
+  {
+    "index": 749,
+    "metadata": 0,
+    "text": "Antrenör"
+  },
+  {
+    "index": 750,
+    "metadata": 0,
+    "text": "Stadyum"
+  },
+  {
+    "index": 751,
+    "metadata": 0,
+    "text": "oyuncular"
+  },
+  {
+    "index": 752,
+    "metadata": 0,
+    "text": "Oyuncu Ekle"
+  },
+  {
+    "index": 753,
+    "metadata": 0,
+    "text": "Oyuncuda Değişiklik Yap"
+  },
+  {
+    "index": 754,
+    "metadata": 0,
+    "text": "Oyuncuyu İptal Et"
+  },
+  {
+    "index": 755,
+    "metadata": 0,
+    "text": "25 kişilik bir oyuncu limitiniz var"
+  },
+  {
+    "index": 756,
+    "metadata": 0,
+    "text": "Seçilen takımı iptal etmek ister misiniz? "
+  },
+  {
+    "index": 757,
+    "metadata": 0,
+    "text": "Ad ve Soyad"
+  },
+  {
+    "index": 758,
+    "metadata": 0,
+    "text": "Kısa Ad"
+  },
+  {
+    "index": 759,
+    "metadata": 0,
+    "text": "Ana Renk"
+  },
+  {
+    "index": 760,
+    "metadata": 0,
+    "text": "İkinci Renk"
+  },
+  {
+    "index": 761,
+    "metadata": 0,
+    "text": "Yıldız Oyuncu"
+  },
+  {
+    "index": 762,
+    "metadata": 0,
+    "text": "Özelliler"
+  },
+  {
+    "index": 763,
+    "metadata": 0,
+    "text": "Oynadığı Yer"
+  },
+  {
+    "index": 764,
+    "metadata": 0,
+    "text": "Logo seçmek için tıklayınız"
+  },
+  {
+    "index": 765,
+    "metadata": 0,
+    "text": "Dosya adı"
+  },
+  {
+    "index": 766,
+    "metadata": 0,
+    "text": "Bu dosya adı var, başka bir ad seçiniz"
+  },
+  {
+    "index": 767,
+    "metadata": 0,
+    "text": "Kullanıcı kaydınız yeni versiyonların, yeni özelliklerin ve hata çözücülerin çalışmasını kolaylaştıracak ve size e-mail yoluyla teknik destek sağlanmasına imkan tanıyacaktır."
+  },
+  {
+    "index": 768,
+    "metadata": 0,
+    "text": "Kayıtlı versiyonla şunları yapabilirsiniz:  "
+  },
+  {
+    "index": 769,
+    "metadata": 0,
+    "text": "Yeni Ligler, Logolar vs. yüklemek için Üye Alanına giriş;"
+  },
+  {
+    "index": 770,
+    "metadata": 0,
+    "text": "Oyunu her hangi bir küme içinden oynama"
+  },
+  {
+    "index": 771,
+    "metadata": 0,
+    "text": "Birden çok insan takımıyla oynama"
+  },
+  {
+    "index": 772,
+    "metadata": 0,
+    "text": "Milli Takımlar Turnuvalarında Oynama (Dünya Kupası, Avrupa Kupası, Afrika Kupası)"
+  },
+  {
+    "index": 773,
+    "metadata": 0,
+    "text": "Her oyuncu için teklif yapabilme, transfer listesinde olmasa bile, ve oyuncu kiralama."
+  },
+  {
+    "index": 774,
+    "metadata": 0,
+    "text": "Maçları daha hızlı maç seçeneğiyle oynama"
+  },
+  {
+    "index": 775,
+    "metadata": 0,
+    "text": "Oyuna kaydolmak için şu internet adresine gidiniz:"
+  },
+  {
+    "index": 776,
+    "metadata": 0,
+    "text": "Fiyat sadece 12 EURO. Ödemeyi Kredi Kartı (Visa, MasterCard, American Express, Discover), çek, havale, PayPal, Western Union, Money Brookers veya Uluslararası Para Havalesi aracılığıyla yapabilirsiniz. "
+  },
+  {
+    "index": 777,
+    "metadata": 0,
+    "text": "Siparişinizin işleme alındığı haberini alır almaz (genellikle bir günde gerçekleşir), size kayıt lisans numaranızı vereceğiz, ondan sonra aşağıya yazabilirsiniz."
+  },
+  {
+    "index": 778,
+    "metadata": 0,
+    "text": "Ad"
+  },
+  {
+    "index": 779,
+    "metadata": 0,
+    "text": "Kod"
+  },
+  {
+    "index": 780,
+    "metadata": 0,
+    "text": "Kodu Girin"
+  },
+  {
+    "index": 781,
+    "metadata": 0,
+    "text": "CyberFoot ücretsiz bir futbol idaresi oyunudur. "
+  },
+  {
+    "index": 782,
+    "metadata": 0,
+    "text": "Oyunu www.cyberfoot.org adresinden yükleyin"
+  },
+  {
+    "index": 783,
+    "metadata": 0,
+    "text": "Sadece kayıtlı versiyonda transfer listesinde olmayan oyunculara teklifte bulunabilirsiniz. Oyununuzu www.cyberfoot.org adresinden kaydettirin. "
+  },
+  {
+    "index": 784,
+    "metadata": 0,
+    "text": "Sadece kayıtlı versiyonda oyuncu kiralayabilirsiniz. Oyununuzu www.cyberfoot.org adresinden kaydettirin.  "
+  },
+  {
+    "index": 785,
+    "metadata": 0,
+    "text": "Ülke Listesi"
+  },
+  {
+    "index": 786,
+    "metadata": 0,
+    "text": "Afganistan"
+  },
+  {
+    "index": 787,
+    "metadata": 0,
+    "text": "Güney Afrika"
+  },
+  {
+    "index": 788,
+    "metadata": 0,
+    "text": "Arnavutluk"
+  },
+  {
+    "index": 789,
+    "metadata": 0,
+    "text": "Almanya"
+  },
+  {
+    "index": 790,
+    "metadata": 0,
+    "text": "Andorra"
+  },
+  {
+    "index": 791,
+    "metadata": 0,
+    "text": "Angola"
+  },
+  {
+    "index": 792,
+    "metadata": 0,
+    "text": "Anguilla"
+  },
+  {
+    "index": 793,
+    "metadata": 0,
+    "text": "Antigua"
+  },
+  {
+    "index": 794,
+    "metadata": 0,
+    "text": "Hollanda Antilleri"
+  },
+  {
+    "index": 795,
+    "metadata": 0,
+    "text": "Suudi Arabistan"
+  },
+  {
+    "index": 796,
+    "metadata": 0,
+    "text": "Cezayir"
+  },
+  {
+    "index": 797,
+    "metadata": 0,
+    "text": "Arjantin"
+  },
+  {
+    "index": 798,
+    "metadata": 0,
+    "text": "Ermenistan"
+  },
+  {
+    "index": 799,
+    "metadata": 0,
+    "text": "Aruba"
+  },
+  {
+    "index": 800,
+    "metadata": 0,
+    "text": "Avustralya"
+  },
+  {
+    "index": 801,
+    "metadata": 0,
+    "text": "Avusturya"
+  },
+  {
+    "index": 802,
+    "metadata": 0,
+    "text": "Azerbaycan"
+  },
+  {
+    "index": 803,
+    "metadata": 0,
+    "text": "Bahamalar"
+  },
+  {
+    "index": 804,
+    "metadata": 0,
+    "text": "Bahreyn"
+  },
+  {
+    "index": 805,
+    "metadata": 0,
+    "text": "Bangladeş"
+  },
+  {
+    "index": 806,
+    "metadata": 0,
+    "text": "Barbados"
+  },
+  {
+    "index": 807,
+    "metadata": 0,
+    "text": "Belçika"
+  },
+  {
+    "index": 808,
+    "metadata": 0,
+    "text": "Belize"
+  },
+  {
+    "index": 809,
+    "metadata": 0,
+    "text": "Benin"
+  },
+  {
+    "index": 810,
+    "metadata": 0,
+    "text": "Bermuda"
+  },
+  {
+    "index": 811,
+    "metadata": 0,
+    "text": "Belarus"
+  },
+  {
+    "index": 812,
+    "metadata": 0,
+    "text": "Bolivya"
+  },
+  {
+    "index": 813,
+    "metadata": 0,
+    "text": "Bosna"
+  },
+  {
+    "index": 814,
+    "metadata": 0,
+    "text": "Botswana"
+  },
+  {
+    "index": 815,
+    "metadata": 0,
+    "text": "Brezilya"
+  },
+  {
+    "index": 816,
+    "metadata": 0,
+    "text": "Brunei"
+  },
+  {
+    "index": 817,
+    "metadata": 0,
+    "text": "Bulgaristan"
+  },
+  {
+    "index": 818,
+    "metadata": 0,
+    "text": "Burkina Faso"
+  },
+  {
+    "index": 819,
+    "metadata": 0,
+    "text": "Burundi"
+  },
+  {
+    "index": 820,
+    "metadata": 0,
+    "text": "Bhutan"
+  },
+  {
+    "index": 821,
+    "metadata": 0,
+    "text": "Cabo Verde"
+  },
+  {
+    "index": 822,
+    "metadata": 0,
+    "text": "Kamerun"
+  },
+  {
+    "index": 823,
+    "metadata": 0,
+    "text": "Kamboçya"
+  },
+  {
+    "index": 824,
+    "metadata": 0,
+    "text": "Kanada"
+  },
+  {
+    "index": 825,
+    "metadata": 0,
+    "text": "Katar"
+  },
+  {
+    "index": 826,
+    "metadata": 0,
+    "text": "Kazakistan"
+  },
+  {
+    "index": 827,
+    "metadata": 0,
+    "text": "Çad"
+  },
+  {
+    "index": 828,
+    "metadata": 0,
+    "text": "Şili"
+  },
+  {
+    "index": 829,
+    "metadata": 0,
+    "text": "Çin"
+  },
+  {
+    "index": 830,
+    "metadata": 0,
+    "text": "Kıbrıs Cumhuriyeti"
+  },
+  {
+    "index": 831,
+    "metadata": 0,
+    "text": "Singapur"
+  },
+  {
+    "index": 832,
+    "metadata": 0,
+    "text": "Kolombiya"
+  },
+  {
+    "index": 833,
+    "metadata": 0,
+    "text": "Kongo"
+  },
+  {
+    "index": 834,
+    "metadata": 0,
+    "text": "Kuzey Kore"
+  },
+  {
+    "index": 835,
+    "metadata": 0,
+    "text": "Güney Kore"
+  },
+  {
+    "index": 836,
+    "metadata": 0,
+    "text": "Fildişi Sahili"
+  },
+  {
+    "index": 837,
+    "metadata": 0,
+    "text": "Kosta Rika"
+  },
+  {
+    "index": 838,
+    "metadata": 0,
+    "text": "Hırvatistan"
+  },
+  {
+    "index": 839,
+    "metadata": 0,
+    "text": "Küba"
+  },
+  {
+    "index": 840,
+    "metadata": 0,
+    "text": "Danimarka"
+  },
+  {
+    "index": 841,
+    "metadata": 0,
+    "text": "Cibuti"
+  },
+  {
+    "index": 842,
+    "metadata": 0,
+    "text": "Dominik"
+  },
+  {
+    "index": 843,
+    "metadata": 0,
+    "text": "Mısır"
+  },
+  {
+    "index": 844,
+    "metadata": 0,
+    "text": "El Salvador"
+  },
+  {
+    "index": 845,
+    "metadata": 0,
+    "text": "Birleşik Arap Emirlikleri"
+  },
+  {
+    "index": 846,
+    "metadata": 0,
+    "text": "Ekvador"
+  },
+  {
+    "index": 847,
+    "metadata": 0,
+    "text": "Eritre"
+  },
+  {
+    "index": 848,
+    "metadata": 0,
+    "text": "İskoçya"
+  },
+  {
+    "index": 849,
+    "metadata": 0,
+    "text": "Slovakya"
+  },
+  {
+    "index": 850,
+    "metadata": 0,
+    "text": "Slovenya"
+  },
+  {
+    "index": 851,
+    "metadata": 0,
+    "text": "İspanya"
+  },
+  {
+    "index": 852,
+    "metadata": 0,
+    "text": "Estonya"
+  },
+  {
+    "index": 853,
+    "metadata": 0,
+    "text": "Etiyopya"
+  },
+  {
+    "index": 854,
+    "metadata": 0,
+    "text": "ABD"
+  },
+  {
+    "index": 855,
+    "metadata": 0,
+    "text": "Fiji"
+  },
+  {
+    "index": 856,
+    "metadata": 0,
+    "text": "Finlandiya"
+  },
+  {
+    "index": 857,
+    "metadata": 0,
+    "text": "Filipinler"
+  },
+  {
+    "index": 858,
+    "metadata": 0,
+    "text": "Fransa"
+  },
+  {
+    "index": 859,
+    "metadata": 0,
+    "text": "Gabon"
+  },
+  {
+    "index": 860,
+    "metadata": 0,
+    "text": "Gambiya"
+  },
+  {
+    "index": 861,
+    "metadata": 0,
+    "text": "Gana"
+  },
+  {
+    "index": 862,
+    "metadata": 0,
+    "text": "Gürcistan"
+  },
+  {
+    "index": 863,
+    "metadata": 0,
+    "text": "Grenada"
+  },
+  {
+    "index": 864,
+    "metadata": 0,
+    "text": "Yunanistan"
+  },
+  {
+    "index": 865,
+    "metadata": 0,
+    "text": "Guatemala"
+  },
+  {
+    "index": 866,
+    "metadata": 0,
+    "text": "Guyana"
+  },
+  {
+    "index": 867,
+    "metadata": 0,
+    "text": "Gine"
+  },
+  {
+    "index": 868,
+    "metadata": 0,
+    "text": "Gine-Bissau"
+  },
+  {
+    "index": 869,
+    "metadata": 0,
+    "text": "Ekvator Ginesi"
+  },
+  {
+    "index": 870,
+    "metadata": 0,
+    "text": "Haiti"
+  },
+  {
+    "index": 871,
+    "metadata": 0,
+    "text": "Hollanda"
+  },
+  {
+    "index": 872,
+    "metadata": 0,
+    "text": "Honduras"
+  },
+  {
+    "index": 873,
+    "metadata": 0,
+    "text": "Hong Kong"
+  },
+  {
+    "index": 874,
+    "metadata": 0,
+    "text": "Macaristan"
+  },
+  {
+    "index": 875,
+    "metadata": 0,
+    "text": "Yemen"
+  },
+  {
+    "index": 876,
+    "metadata": 0,
+    "text": "Cayman Adaları"
+  },
+  {
+    "index": 877,
+    "metadata": 0,
+    "text": "Cook Adaları"
+  },
+  {
+    "index": 878,
+    "metadata": 0,
+    "text": "Faroe Adaları"
+  },
+  {
+    "index": 879,
+    "metadata": 0,
+    "text": "Solomon Adaları"
+  },
+  {
+    "index": 880,
+    "metadata": 0,
+    "text": "British Virgin Adaları"
+  },
+  {
+    "index": 881,
+    "metadata": 0,
+    "text": "Hindistan"
+  },
+  {
+    "index": 882,
+    "metadata": 0,
+    "text": "Endonezya"
+  },
+  {
+    "index": 883,
+    "metadata": 0,
+    "text": "Ingiltere"
+  },
+  {
+    "index": 884,
+    "metadata": 0,
+    "text": "Iran"
+  },
+  {
+    "index": 885,
+    "metadata": 0,
+    "text": "Irak"
+  },
+  {
+    "index": 886,
+    "metadata": 0,
+    "text": "Irlanda"
+  },
+  {
+    "index": 887,
+    "metadata": 0,
+    "text": "Kuzey İrlanda"
+  },
+  {
+    "index": 888,
+    "metadata": 0,
+    "text": "İzlanda"
+  },
+  {
+    "index": 889,
+    "metadata": 0,
+    "text": "Israil"
+  },
+  {
+    "index": 890,
+    "metadata": 0,
+    "text": "İtalya"
+  },
+  {
+    "index": 891,
+    "metadata": 0,
+    "text": "Karadağ"
+  },
+  {
+    "index": 892,
+    "metadata": 0,
+    "text": "Jamaika"
+  },
+  {
+    "index": 893,
+    "metadata": 0,
+    "text": "Japonya"
+  },
+  {
+    "index": 894,
+    "metadata": 0,
+    "text": "Ürdün"
+  },
+  {
+    "index": 895,
+    "metadata": 0,
+    "text": "Kenya"
+  },
+  {
+    "index": 896,
+    "metadata": 0,
+    "text": "Kosova"
+  },
+  {
+    "index": 897,
+    "metadata": 0,
+    "text": "Kuveyt"
+  },
+  {
+    "index": 898,
+    "metadata": 0,
+    "text": "Laos"
+  },
+  {
+    "index": 899,
+    "metadata": 0,
+    "text": "Lesotho"
+  },
+  {
+    "index": 900,
+    "metadata": 0,
+    "text": "Letonya"
+  },
+  {
+    "index": 901,
+    "metadata": 0,
+    "text": "Lübnan"
+  },
+  {
+    "index": 902,
+    "metadata": 0,
+    "text": "Libya"
+  },
+  {
+    "index": 903,
+    "metadata": 0,
+    "text": "Liberya"
+  },
+  {
+    "index": 904,
+    "metadata": 0,
+    "text": "Liechenstein"
+  },
+  {
+    "index": 905,
+    "metadata": 0,
+    "text": "Litvanya"
+  },
+  {
+    "index": 906,
+    "metadata": 0,
+    "text": "Lüksemburg"
+  },
+  {
+    "index": 907,
+    "metadata": 0,
+    "text": "Makau"
+  },
+  {
+    "index": 908,
+    "metadata": 0,
+    "text": "Makedonya"
+  },
+  {
+    "index": 909,
+    "metadata": 0,
+    "text": "Madagaskar"
+  },
+  {
+    "index": 910,
+    "metadata": 0,
+    "text": "Malezya"
+  },
+  {
+    "index": 911,
+    "metadata": 0,
+    "text": "Malavi"
+  },
+  {
+    "index": 912,
+    "metadata": 0,
+    "text": "Maldivler"
+  },
+  {
+    "index": 913,
+    "metadata": 0,
+    "text": "Mali"
+  },
+  {
+    "index": 914,
+    "metadata": 0,
+    "text": "Malta"
+  },
+  {
+    "index": 915,
+    "metadata": 0,
+    "text": "Fas"
+  },
+  {
+    "index": 916,
+    "metadata": 0,
+    "text": "Moritanya"
+  },
+  {
+    "index": 917,
+    "metadata": 0,
+    "text": "Meksika"
+  },
+  {
+    "index": 918,
+    "metadata": 0,
+    "text": "Burma"
+  },
+  {
+    "index": 919,
+    "metadata": 0,
+    "text": "Mozambik"
+  },
+  {
+    "index": 920,
+    "metadata": 0,
+    "text": "Moldova"
+  },
+  {
+    "index": 921,
+    "metadata": 0,
+    "text": "Monako"
+  },
+  {
+    "index": 922,
+    "metadata": 0,
+    "text": "Moğolistan"
+  },
+  {
+    "index": 923,
+    "metadata": 0,
+    "text": "Namibya"
+  },
+  {
+    "index": 924,
+    "metadata": 0,
+    "text": "Nepal"
+  },
+  {
+    "index": 925,
+    "metadata": 0,
+    "text": "Nikaragua"
+  },
+  {
+    "index": 926,
+    "metadata": 0,
+    "text": "Nijer"
+  },
+  {
+    "index": 927,
+    "metadata": 0,
+    "text": "Nijerya"
+  },
+  {
+    "index": 928,
+    "metadata": 0,
+    "text": "Norveç"
+  },
+  {
+    "index": 929,
+    "metadata": 0,
+    "text": "Yeni Zelanda"
+  },
+  {
+    "index": 930,
+    "metadata": 0,
+    "text": "Umman"
+  },
+  {
+    "index": 931,
+    "metadata": 0,
+    "text": "Galler"
+  },
+  {
+    "index": 932,
+    "metadata": 0,
+    "text": "Filistin"
+  },
+  {
+    "index": 933,
+    "metadata": 0,
+    "text": "Panama"
+  },
+  {
+    "index": 934,
+    "metadata": 0,
+    "text": "Papua Yeni Gine"
+  },
+  {
+    "index": 935,
+    "metadata": 0,
+    "text": "Pakistan"
+  },
+  {
+    "index": 936,
+    "metadata": 0,
+    "text": "Paraguay"
+  },
+  {
+    "index": 937,
+    "metadata": 0,
+    "text": "Peru"
+  },
+  {
+    "index": 938,
+    "metadata": 0,
+    "text": "Polonya"
+  },
+  {
+    "index": 939,
+    "metadata": 0,
+    "text": "Porto Riko"
+  },
+  {
+    "index": 940,
+    "metadata": 0,
+    "text": "Portekiz"
+  },
+  {
+    "index": 941,
+    "metadata": 0,
+    "text": "Kirgizistan"
+  },
+  {
+    "index": 942,
+    "metadata": 0,
+    "text": "Orta Afrika Cumhuriyeti"
+  },
+  {
+    "index": 943,
+    "metadata": 0,
+    "text": "Komgo Dem. Cumhuriyeti"
+  },
+  {
+    "index": 944,
+    "metadata": 0,
+    "text": "Dominik Cumhuriyeti"
+  },
+  {
+    "index": 945,
+    "metadata": 0,
+    "text": "Çek Cumhuriyeti"
+  },
+  {
+    "index": 946,
+    "metadata": 0,
+    "text": "Romanya"
+  },
+  {
+    "index": 947,
+    "metadata": 0,
+    "text": "Ruanda"
+  },
+  {
+    "index": 948,
+    "metadata": 0,
+    "text": "Rusya"
+  },
+  {
+    "index": 949,
+    "metadata": 0,
+    "text": "Samoa"
+  },
+  {
+    "index": 950,
+    "metadata": 0,
+    "text": "San Marino"
+  },
+  {
+    "index": 951,
+    "metadata": 0,
+    "text": "St. Lucia"
+  },
+  {
+    "index": 952,
+    "metadata": 0,
+    "text": "St. Kitts and Nevis"
+  },
+  {
+    "index": 953,
+    "metadata": 0,
+    "text": "São Tomé and Príncipe"
+  },
+  {
+    "index": 954,
+    "metadata": 0,
+    "text": "St. Vincent and The Grenadines"
+  },
+  {
+    "index": 955,
+    "metadata": 0,
+    "text": "Senegal"
+  },
+  {
+    "index": 956,
+    "metadata": 0,
+    "text": "Sierra Leone"
+  },
+  {
+    "index": 957,
+    "metadata": 0,
+    "text": "Sırbistan"
+  },
+  {
+    "index": 958,
+    "metadata": 0,
+    "text": "Seyþeller"
+  },
+  {
+    "index": 959,
+    "metadata": 0,
+    "text": "Singapur"
+  },
+  {
+    "index": 960,
+    "metadata": 0,
+    "text": "Suriye"
+  },
+  {
+    "index": 961,
+    "metadata": 0,
+    "text": "Somali"
+  },
+  {
+    "index": 962,
+    "metadata": 0,
+    "text": "Sri Lanka"
+  },
+  {
+    "index": 963,
+    "metadata": 0,
+    "text": "Svaziland"
+  },
+  {
+    "index": 964,
+    "metadata": 0,
+    "text": "Sudan"
+  },
+  {
+    "index": 965,
+    "metadata": 0,
+    "text": "Isveç"
+  },
+  {
+    "index": 966,
+    "metadata": 0,
+    "text": "Isviçre"
+  },
+  {
+    "index": 967,
+    "metadata": 0,
+    "text": "Surinam"
+  },
+  {
+    "index": 968,
+    "metadata": 0,
+    "text": "Tacikistan"
+  },
+  {
+    "index": 969,
+    "metadata": 0,
+    "text": "Tayland"
+  },
+  {
+    "index": 970,
+    "metadata": 0,
+    "text": "Tahiti"
+  },
+  {
+    "index": 971,
+    "metadata": 0,
+    "text": "Tayvan"
+  },
+  {
+    "index": 972,
+    "metadata": 0,
+    "text": "Tanzanya"
+  },
+  {
+    "index": 973,
+    "metadata": 0,
+    "text": "Togo"
+  },
+  {
+    "index": 974,
+    "metadata": 0,
+    "text": "Tonga"
+  },
+  {
+    "index": 975,
+    "metadata": 0,
+    "text": "Trinidad-Tobago"
+  },
+  {
+    "index": 976,
+    "metadata": 0,
+    "text": "Tunus"
+  },
+  {
+    "index": 977,
+    "metadata": 0,
+    "text": "Türkmenistan"
+  },
+  {
+    "index": 978,
+    "metadata": 0,
+    "text": "Türkiye"
+  },
+  {
+    "index": 979,
+    "metadata": 0,
+    "text": "Ukrayna"
+  },
+  {
+    "index": 980,
+    "metadata": 0,
+    "text": "Uganda"
+  },
+  {
+    "index": 981,
+    "metadata": 0,
+    "text": "Uruguay"
+  },
+  {
+    "index": 982,
+    "metadata": 0,
+    "text": "Özbekistan"
+  },
+  {
+    "index": 983,
+    "metadata": 0,
+    "text": "Vanuatu"
+  },
+  {
+    "index": 984,
+    "metadata": 0,
+    "text": "Venezuela"
+  },
+  {
+    "index": 985,
+    "metadata": 0,
+    "text": "Vietnam"
+  },
+  {
+    "index": 986,
+    "metadata": 0,
+    "text": "Zambiya"
+  },
+  {
+    "index": 987,
+    "metadata": 0,
+    "text": "Zimbabve"
+  },
+  {
+    "index": 988,
+    "metadata": 0,
+    "text": "42 takımın en az bir lig seçin"
+  },
+  {
+    "index": 989,
+    "metadata": 0,
+    "text": "Copa Sudamericana Fikstürleri"
+  },
+  {
+    "index": 990,
+    "metadata": 0,
+    "text": "Ballon d'Or"
+  },
+  {
+    "index": 991,
+    "metadata": 0,
+    "text": "Haftanın Takımı"
+  },
+  {
+    "index": 992,
+    "metadata": 0,
+    "text": "Yılın Takımı"
+  },
+  {
+    "index": 993,
+    "metadata": 0,
+    "text": "Genç oyuncu okulu"
+  },
+  {
+    "index": 994,
+    "metadata": 0,
+    "text": "Afrika Ligi"
+  },
+  {
+    "index": 995,
+    "metadata": 0,
+    "text": "Asya Ligi"
+  },
+  {
+    "index": 996,
+    "metadata": 0,
+    "text": "UEFA Süper Kupası"
+  },
+  {
+    "index": 997,
+    "metadata": 0,
+    "text": "Recopa Suldamericana"
+  },
+  {
+    "index": 998,
+    "metadata": 0,
+    "text": "kaydedilen taktik"
+  },
+  {
+    "index": 999,
+    "metadata": 0,
+    "text": "Mevcut taktik kaydetmek"
+  },
+  {
+    "index": 1000,
+    "metadata": 0,
+    "text": "Bir ad seçin:"
+  },
+  {
+    "index": 1001,
+    "metadata": 0,
+    "text": "Kaydet"
+  },
+  {
+    "index": 1002,
+    "metadata": 0,
+    "text": "En az 11 oyuncu seçin"
+  },
+  {
+    "index": 1003,
+    "metadata": 0,
+    "text": "Geri"
+  },
+  {
+    "index": 1004,
+    "metadata": 0,
+    "text": "Oyunu Yükle"
+  },
+  {
+    "index": 1005,
+    "metadata": 0,
+    "text": "Sil"
+  },
+  {
+    "index": 1006,
+    "metadata": 0,
+    "text": "Bluz"
+  },
+  {
+    "index": 1007,
+    "metadata": 0,
+    "text": "gençlik kadrosuna terfi"
+  },
+  {
+    "index": 1008,
+    "metadata": 0,
+    "text": "Yerel"
+  },
+  {
+    "index": 1009,
+    "metadata": 0,
+    "text": "Il"
+  },
+  {
+    "index": 1010,
+    "metadata": 0,
+    "text": "Bölgesel"
+  },
+  {
+    "index": 1011,
+    "metadata": 0,
+    "text": "Ulusal"
+  },
+  {
+    "index": 1012,
+    "metadata": 0,
+    "text": "Kıta"
+  },
+  {
+    "index": 1013,
+    "metadata": 0,
+    "text": "Global"
+  },
+  {
+    "index": 1014,
+    "metadata": 0,
+    "text": "Itibar"
+  },
+  {
+    "index": 1015,
+    "metadata": 0,
+    "text": "3 yıl"
+  },
+  {
+    "index": 1016,
+    "metadata": 0,
+    "text": "Oyunları izlemek"
+  },
+  {
+    "index": 1017,
+    "metadata": 0,
+    "text": "Sadece sonuçlar"
+  },
+  {
+    "index": 1018,
+    "metadata": 0,
+    "text": "LIGI"
+  },
+  {
+    "index": 1019,
+    "metadata": 0,
+    "text": "ŞAMPIYONLAR L."
+  },
+  {
+    "index": 1020,
+    "metadata": 0,
+    "text": "LIBERTADORES"
+  },
+  {
+    "index": 1021,
+    "metadata": 0,
+    "text": "UEFA LIGI"
+  },
+  {
+    "index": 1022,
+    "metadata": 0,
+    "text": "AFRIKA LIGI"
+  },
+  {
+    "index": 1023,
+    "metadata": 0,
+    "text": "ASYA LIGI"
+  },
+  {
+    "index": 1024,
+    "metadata": 0,
+    "text": "Neden"
+  },
+  {
+    "index": 1025,
+    "metadata": 0,
+    "text": "kötü sonuçlar"
+  },
+  {
+    "index": 1026,
+    "metadata": 0,
+    "text": "finansal kriz"
+  },
+  {
+    "index": 1027,
+    "metadata": 0,
+    "text": "mutsuz fans"
+  },
+  {
+    "index": 1028,
+    "metadata": 0,
+    "text": "Almak"
+  },
+  {
+    "index": 1029,
+    "metadata": 0,
+    "text": "Düşüş"
+  },
+  {
+    "index": 1030,
+    "metadata": 0,
+    "text": "use"
+  },
+  {
+    "index": 1031,
+    "metadata": 0,
+    "text": "Genç takım"
+  },
+  {
+    "index": 1032,
+    "metadata": 0,
+    "text": "A Takım"
+  },
+  {
+    "index": 1033,
+    "metadata": 0,
+    "text": "takim araması"
+  },
+  {
+    "index": 1034,
+    "metadata": 0,
+    "text": "oyuncu arama"
+  },
+  {
+    "index": 1035,
+    "metadata": 0,
+    "text": "arama"
+  },
+  {
+    "index": 1036,
+    "metadata": 0,
+    "text": "Gelişme"
+  },
+  {
+    "index": 1037,
+    "metadata": 0,
+    "text": "Yetenek"
+  },
+  {
+    "index": 1038,
+    "metadata": 0,
+    "text": "Desteklemek"
+  },
+  {
+    "index": 1039,
+    "metadata": 0,
+    "text": "Reddet"
+  },
+  {
+    "index": 1040,
+    "metadata": 0,
+    "text": "Zaten 30 oyuncu var"
+  },
+  {
+    "index": 1041,
+    "metadata": 0,
+    "text": "Tanıtımına onaylayın"
+  },
+  {
+    "index": 1042,
+    "metadata": 0,
+    "text": "Zaten 18 oyuncu var"
+  },
+  {
+    "index": 1043,
+    "metadata": 0,
+    "text": "Göndermek"
+  },
+  {
+    "index": 1044,
+    "metadata": 0,
+    "text": "Iptal"
+  },
+  {
+    "index": 1045,
+    "metadata": 0,
+    "text": "teyit transferi"
+  },
+  {
+    "index": 1046,
+    "metadata": 0,
+    "text": "Transferi onaylayın?"
+  },
+  {
+    "index": 1047,
+    "metadata": 0,
+    "text": "Reddet?"
+  },
+  {
+    "index": 1048,
+    "metadata": 0,
+    "text": "Uluslararası lig/cup tercihleri"
+  },
+  {
+    "index": 1049,
+    "metadata": 0,
+    "text": "Ilk sezonunda oyna"
+  },
+  {
+    "index": 1050,
+    "metadata": 0,
+    "text": "İlk sezonunda gerçek grupları kullanın:"
+  },
+  {
+    "index": 1051,
+    "metadata": 0,
+    "text": "Insanlar oyun izlemek olmadan:"
+  },
+  {
+    "index": 1052,
+    "metadata": 0,
+    "text": "Toplam değer"
+  },
+  {
+    "index": 1053,
+    "metadata": 0,
+    "text": "Milliyet"
+  },
+  {
+    "index": 1054,
+    "metadata": 0,
+    "text": "ortalama"
+  },
+  {
+    "index": 1055,
+    "metadata": 0,
+    "text": "Defansif Orta Saha"
+  },
+  {
+    "index": 1056,
+    "metadata": 0,
+    "text": "Ofansif Orta Saha"
+  },
+  {
+    "index": 1057,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1058,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1059,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1060,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1061,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1062,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1063,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1064,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1065,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1066,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1067,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1068,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1069,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1070,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1071,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1072,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1073,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1074,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1075,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1076,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1077,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1078,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1079,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1080,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1081,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1082,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1083,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1084,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1085,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1086,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1087,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1088,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1089,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1090,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1091,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1092,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1093,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1094,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1095,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1096,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1097,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1098,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1099,
+    "metadata": 0,
+    "text": ""
+  }
+]

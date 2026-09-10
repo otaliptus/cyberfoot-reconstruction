@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {verifyBatchSelectors} from './batch-selectors-proof.mjs';const r=verifyBatchSelectors(JSON.parse(readFileSync(new URL('./batch-selectors-vectors.json',import.meta.url))));if(r.failures.length)throw Error(JSON.stringify(r.failures.slice(0,2)));console.log(`Original batch selectors: ${r.cases} cases passed.`);

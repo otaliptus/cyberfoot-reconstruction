@@ -1,0 +1,11 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+import {readSave,writeSave,record,inspectCareer} from '../save-format.mjs';
+const bytes=new Uint8Array(fs.readFileSync(new URL('./original-career.s15',import.meta.url))),save=readSave(bytes);
+assert.deepEqual(writeSave(save),bytes);
+const p=record(save,'players',1),before=p[0x78];p[0x78]^=1;
+const edited=writeSave(save),again=readSave(edited);assert.equal(record(again,'players',1)[0x78],before^1);
+assert.equal(edited.reduce((n,v,i)=>n+(v!==bytes[i]),0),1);
+for(const size of [0,3,4,100,1891,bytes.length-1])assert.throws(()=>readSave(bytes.slice(0,size)));
+const bad=bytes.slice();new DataView(bad.buffer).setInt32(1892,0x7fffffff,true);assert.throws(()=>readSave(bad));
+assert.throws(()=>readSave(new Uint8Array([...bytes,0])));
+console.log(JSON.stringify({roundTripBytes:bytes.length,changedRecordBytes:1,rejectedInvalidInputs:8,career:inspectCareer(save)}));

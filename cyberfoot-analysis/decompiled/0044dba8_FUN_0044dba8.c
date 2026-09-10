@@ -1,0 +1,9 @@
+// Address: 0044dba8
+// Machine-generated pseudocode; Delphi types and calling conventions may be inaccurate.
+
+undefined4 FUN_0044dba8(int param_1)
+
+{
+  return *(undefined4 *)(param_1 + 0x18);
+}
+

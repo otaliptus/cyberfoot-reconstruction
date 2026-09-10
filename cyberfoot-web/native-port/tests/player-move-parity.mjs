@@ -1,0 +1,8 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import {completePlayerMove,processScheduledPlayerReturns,recallLoanedPlayer,schedulePlayerReturn} from '../player-move.mjs';import {OriginalRandom} from '../match-core.mjs';
+const cases=JSON.parse(fs.readFileSync(new URL('./player-move-vectors.json',import.meta.url))),bytes=s=>Uint8Array.from(Buffer.from(s,'hex')),hex=b=>Buffer.from(b).toString('hex');let index=0;
+for(const test of cases){const save={career:bytes(test.career),sections:test.sections.map(s=>({...s,data:bytes(s.data),count:s.data.length/2/s.recordSize}))},rng=new OriginalRandom(test.seed),runtime={availableRoleCounts:[...test.available]};
+ if(test.kind==='move')completePlayerMove(save,test.player,test.destination,test.contractEnd,{rng,runtime,date:test.date});else if(test.kind==='returns')processScheduledPlayerReturns(save,test.cutoff,{rng,runtime,currentDate:test.date,maxSeniorPlayers:test.maxSeniorPlayers});else if(test.kind==='recall')recallLoanedPlayer(save,test.player,{rng,runtime,date:test.date});else schedulePlayerReturn(save,test.player,test.destination,test.contractEnd);
+ const actual={sections:Object.fromEntries(save.sections.map(s=>[s.name,hex(s.data)])),available:runtime.availableRoleCounts,seed:rng.state};
+ for(const name of Object.keys(actual.sections))assert.equal(actual.sections[name],test.expected.sections[name],`case${index} ${test.kind} ${name}`);assert.deepEqual(actual.available,test.expected.available,`case${index} roles`);assert.equal(actual.seed,test.expected.seed,`case${index} rng`);index++;
+}
+console.log(`${cases.length} original player move/return comparisons passed (allocation adapter only)`);

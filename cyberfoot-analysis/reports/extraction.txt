@@ -1,0 +1,23 @@
+
+7-Zip [64] 17.05 : Copyright (c) 1999-2021 Igor Pavlov : 2017-08-28
+p7zip Version 17.05 (locale=utf8,Utf16=on,HugeFiles=on,64 bits,12 CPUs LE)
+
+Scanning the drive for archives:
+1 file, 8792279 bytes (8587 KiB)
+
+Extracting archive: cyberfoot-analysis/extracted/cyberfoot2015.exe
+--
+Path = cyberfoot-analysis/extracted/cyberfoot2015.exe
+Type = Nsis
+Physical Size = 8792279
+Method = Deflate
+Solid = -
+Headers Size = 194962
+Embedded Stub Size = 52736
+SubType = NSIS-3 Unicode
+
+Everything is Ok
+
+Files: 1702
+Size:       13657183
+Compressed: 8792279

@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {checkPostMatchSave} from './post-match-save-integration.mjs';console.log(checkPostMatchSave(readFileSync(new URL('./original-career.s15',import.meta.url))));

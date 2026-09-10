@@ -1,0 +1,2 @@
+import {readFileSync} from 'node:fs';import assert from 'node:assert/strict';import {verifyMatchHistory} from './match-history-proof.mjs';
+const r=verifyMatchHistory(JSON.parse(readFileSync(new URL('./match-history-vectors.json',import.meta.url))));if(r.failures.length)console.log(JSON.stringify(r.failures.slice(0,2),null,2));assert.equal(r.failures.length,0);console.log(`Original detailed match-history records: ${r.cases} cases passed.`);

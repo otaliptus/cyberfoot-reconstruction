@@ -1,0 +1,5468 @@
+[
+  {
+    "path": "extracted/cyberfoot2015.exe",
+    "machine": "0x14c",
+    "timestamp": 1412656826,
+    "image_base": "0x400000",
+    "entry": "0x40322e",
+    "signature_bytes": 0,
+    "sections": [
+      {
+        "name": ".text",
+        "rva": "0x1000",
+        "size": 25088,
+        "entropy": 6.47,
+        "flags": "0x60000020"
+      },
+      {
+        "name": ".rdata",
+        "rva": "0x8000",
+        "size": 5632,
+        "entropy": 4.946,
+        "flags": "0x40000040"
+      },
+      {
+        "name": ".data",
+        "rva": "0xa000",
+        "size": 1536,
+        "entropy": 3.895,
+        "flags": "0xc0000040"
+      },
+      {
+        "name": ".ndata",
+        "rva": "0x35000",
+        "size": 0,
+        "entropy": 0.0,
+        "flags": "0xc0000080"
+      },
+      {
+        "name": ".rsrc",
+        "rva": "0x56000",
+        "size": 19456,
+        "entropy": 1.872,
+        "flags": "0x40000040"
+      }
+    ],
+    "imports": {
+      "KERNEL32.dll": [
+        {
+          "name": "CompareFileTime",
+          "address": "0x408060"
+        },
+        {
+          "name": "SearchPathW",
+          "address": "0x408064"
+        },
+        {
+          "name": "SetFileTime",
+          "address": "0x408068"
+        },
+        {
+          "name": "CloseHandle",
+          "address": "0x40806c"
+        },
+        {
+          "name": "GetShortPathNameW",
+          "address": "0x408070"
+        },
+        {
+          "name": "MoveFileW",
+          "address": "0x408074"
+        },
+        {
+          "name": "SetCurrentDirectoryW",
+          "address": "0x408078"
+        },
+        {
+          "name": "GetFileAttributesW",
+          "address": "0x40807c"
+        },
+        {
+          "name": "GetLastError",
+          "address": "0x408080"
+        },
+        {
+          "name": "GetFullPathNameW",
+          "address": "0x408084"
+        },
+        {
+          "name": "CreateDirectoryW",
+          "address": "0x408088"
+        },
+        {
+          "name": "Sleep",
+          "address": "0x40808c"
+        },
+        {
+          "name": "GetTickCount",
+          "address": "0x408090"
+        },
+        {
+          "name": "GetFileSize",
+          "address": "0x408094"
+        },
+        {
+          "name": "GetModuleFileNameW",
+          "address": "0x408098"
+        },
+        {
+          "name": "GetCurrentProcess",
+          "address": "0x40809c"
+        },
+        {
+          "name": "CopyFileW",
+          "address": "0x4080a0"
+        },
+        {
+          "name": "ExitProcess",
+          "address": "0x4080a4"
+        },
+        {
+          "name": "SetEnvironmentVariableW",
+          "address": "0x4080a8"
+        },
+        {
+          "name": "GetWindowsDirectoryW",
+          "address": "0x4080ac"
+        },
+        {
+          "name": "GetTempPathW",
+          "address": "0x4080b0"
+        },
+        {
+          "name": "SetFileAttributesW",
+          "address": "0x4080b4"
+        },
+        {
+          "name": "ExpandEnvironmentStringsW",
+          "address": "0x4080b8"
+        },
+        {
+          "name": "LoadLibraryW",
+          "address": "0x4080bc"
+        },
+        {
+          "name": "lstrlenW",
+          "address": "0x4080c0"
+        },
+        {
+          "name": "lstrcpynW",
+          "address": "0x4080c4"
+        },
+        {
+          "name": "GetDiskFreeSpaceW",
+          "address": "0x4080c8"
+        },
+        {
+          "name": "GlobalUnlock",
+          "address": "0x4080cc"
+        },
+        {
+          "name": "GlobalLock",
+          "address": "0x4080d0"
+        },
+        {
+          "name": "CreateThread",
+          "address": "0x4080d4"
+        },
+        {
+          "name": "CreateProcessW",
+          "address": "0x4080d8"
+        },
+        {
+          "name": "RemoveDirectoryW",
+          "address": "0x4080dc"
+        },
+        {
+          "name": "lstrcmpiA",
+          "address": "0x4080e0"
+        },
+        {
+          "name": "CreateFileW",
+          "address": "0x4080e4"
+        },
+        {
+          "name": "GetTempFileNameW",
+          "address": "0x4080e8"
+        },
+        {
+          "name": "lstrcpyA",
+          "address": "0x4080ec"
+        },
+        {
+          "name": "lstrcpyW",
+          "address": "0x4080f0"
+        },
+        {
+          "name": "lstrcatW",
+          "address": "0x4080f4"
+        },
+        {
+          "name": "GetSystemDirectoryW",
+          "address": "0x4080f8"
+        },
+        {
+          "name": "GetVersion",
+          "address": "0x4080fc"
+        },
+        {
+          "name": "GetProcAddress",
+          "address": "0x408100"
+        },
+        {
+          "name": "LoadLibraryA",
+          "address": "0x408104"
+        },
+        {
+          "name": "GetModuleHandleA",
+          "address": "0x408108"
+        },
+        {
+          "name": "GetModuleHandleW",
+          "address": "0x40810c"
+        },
+        {
+          "name": "lstrcmpiW",
+          "address": "0x408110"
+        },
+        {
+          "name": "lstrcmpW",
+          "address": "0x408114"
+        },
+        {
+          "name": "WaitForSingleObject",
+          "address": "0x408118"
+        },
+        {
+          "name": "GlobalFree",
+          "address": "0x40811c"
+        },
+        {
+          "name": "GlobalAlloc",
+          "address": "0x408120"
+        },
+        {
+          "name": "LoadLibraryExW",
+          "address": "0x408124"
+        },
+        {
+          "name": "GetExitCodeProcess",
+          "address": "0x408128"
+        },
+        {
+          "name": "FreeLibrary",
+          "address": "0x40812c"
+        },
+        {
+          "name": "WritePrivateProfileStringW",
+          "address": "0x408130"
+        },
+        {
+          "name": "SetErrorMode",
+          "address": "0x408134"
+        },
+        {
+          "name": "GetCommandLineW",
+          "address": "0x408138"
+        },
+        {
+          "name": "GetPrivateProfileStringW",
+          "address": "0x40813c"
+        },
+        {
+          "name": "FindFirstFileW",
+          "address": "0x408140"
+        },
+        {
+          "name": "FindNextFileW",
+          "address": "0x408144"
+        },
+        {
+          "name": "DeleteFileW",
+          "address": "0x408148"
+        },
+        {
+          "name": "SetFilePointer",
+          "address": "0x40814c"
+        },
+        {
+          "name": "ReadFile",
+          "address": "0x408150"
+        },
+        {
+          "name": "FindClose",
+          "address": "0x408154"
+        },
+        {
+          "name": "MulDiv",
+          "address": "0x408158"
+        },
+        {
+          "name": "MultiByteToWideChar",
+          "address": "0x40815c"
+        },
+        {
+          "name": "WriteFile",
+          "address": "0x408160"
+        },
+        {
+          "name": "lstrlenA",
+          "address": "0x408164"
+        },
+        {
+          "name": "WideCharToMultiByte",
+          "address": "0x408168"
+        }
+      ],
+      "USER32.dll": [
+        {
+          "name": "EndDialog",
+          "address": "0x40818c"
+        },
+        {
+          "name": "ScreenToClient",
+          "address": "0x408190"
+        },
+        {
+          "name": "GetWindowRect",
+          "address": "0x408194"
+        },
+        {
+          "name": "RegisterClassW",
+          "address": "0x408198"
+        },
+        {
+          "name": "EnableMenuItem",
+          "address": "0x40819c"
+        },
+        {
+          "name": "GetSystemMenu",
+          "address": "0x4081a0"
+        },
+        {
+          "name": "SetClassLongW",
+          "address": "0x4081a4"
+        },
+        {
+          "name": "IsWindowEnabled",
+          "address": "0x4081a8"
+        },
+        {
+          "name": "SetWindowPos",
+          "address": "0x4081ac"
+        },
+        {
+          "name": "GetSysColor",
+          "address": "0x4081b0"
+        },
+        {
+          "name": "GetWindowLongW",
+          "address": "0x4081b4"
+        },
+        {
+          "name": "SetCursor",
+          "address": "0x4081b8"
+        },
+        {
+          "name": "LoadCursorW",
+          "address": "0x4081bc"
+        },
+        {
+          "name": "CheckDlgButton",
+          "address": "0x4081c0"
+        },
+        {
+          "name": "GetMessagePos",
+          "address": "0x4081c4"
+        },
+        {
+          "name": "LoadBitmapW",
+          "address": "0x4081c8"
+        },
+        {
+          "name": "CallWindowProcW",
+          "address": "0x4081cc"
+        },
+        {
+          "name": "IsWindowVisible",
+          "address": "0x4081d0"
+        },
+        {
+          "name": "CloseClipboard",
+          "address": "0x4081d4"
+        },
+        {
+          "name": "SetClipboardData",
+          "address": "0x4081d8"
+        },
+        {
+          "name": "wsprintfW",
+          "address": "0x4081dc"
+        },
+        {
+          "name": "CreateWindowExW",
+          "address": "0x4081e0"
+        },
+        {
+          "name": "SystemParametersInfoW",
+          "address": "0x4081e4"
+        },
+        {
+          "name": "AppendMenuW",
+          "address": "0x4081e8"
+        },
+        {
+          "name": "CreatePopupMenu",
+          "address": "0x4081ec"
+        },
+        {
+          "name": "GetSystemMetrics",
+          "address": "0x4081f0"
+        },
+        {
+          "name": "SetDlgItemTextW",
+          "address": "0x4081f4"
+        },
+        {
+          "name": "GetDlgItemTextW",
+          "address": "0x4081f8"
+        },
+        {
+          "name": "MessageBoxIndirectW",
+          "address": "0x4081fc"
+        },
+        {
+          "name": "CharPrevW",
+          "address": "0x408200"
+        },
+        {
+          "name": "CharNextA",
+          "address": "0x408204"
+        },
+        {
+          "name": "wsprintfA",
+          "address": "0x408208"
+        },
+        {
+          "name": "DispatchMessageW",
+          "address": "0x40820c"
+        },
+        {
+          "name": "PeekMessageW",
+          "address": "0x408210"
+        },
+        {
+          "name": "ReleaseDC",
+          "address": "0x408214"
+        },
+        {
+          "name": "EnableWindow",
+          "address": "0x408218"
+        },
+        {
+          "name": "InvalidateRect",
+          "address": "0x40821c"
+        },
+        {
+          "name": "SendMessageW",
+          "address": "0x408220"
+        },
+        {
+          "name": "DefWindowProcW",
+          "address": "0x408224"
+        },
+        {
+          "name": "BeginPaint",
+          "address": "0x408228"
+        },
+        {
+          "name": "GetClientRect",
+          "address": "0x40822c"
+        },
+        {
+          "name": "FillRect",
+          "address": "0x408230"
+        },
+        {
+          "name": "DrawTextW",
+          "address": "0x408234"
+        },
+        {
+          "name": "GetClassInfoW",
+          "address": "0x408238"
+        },
+        {
+          "name": "DialogBoxParamW",
+          "address": "0x40823c"
+        },
+        {
+          "name": "CharNextW",
+          "address": "0x408240"
+        },
+        {
+          "name": "ExitWindowsEx",
+          "address": "0x408244"
+        },
+        {
+          "name": "DestroyWindow",
+          "address": "0x408248"
+        },
+        {
+          "name": "CreateDialogParamW",
+          "address": "0x40824c"
+        },
+        {
+          "name": "SetTimer",
+          "address": "0x408250"
+        },
+        {
+          "name": "SetWindowTextW",
+          "address": "0x408254"
+        },
+        {
+          "name": "PostQuitMessage",
+          "address": "0x408258"
+        },
+        {
+          "name": "GetDC",
+          "address": "0x40825c"
+        },
+        {
+          "name": "SetWindowLongW",
+          "address": "0x408260"
+        },
+        {
+          "name": "LoadImageW",
+          "address": "0x408264"
+        },
+        {
+          "name": "SendMessageTimeoutW",
+          "address": "0x408268"
+        },
+        {
+          "name": "FindWindowExW",
+          "address": "0x40826c"
+        },
+        {
+          "name": "EmptyClipboard",
+          "address": "0x408270"
+        },
+        {
+          "name": "OpenClipboard",
+          "address": "0x408274"
+        },
+        {
+          "name": "TrackPopupMenu",
+          "address": "0x408278"
+        },
+        {
+          "name": "EndPaint",
+          "address": "0x40827c"
+        },
+        {
+          "name": "ShowWindow",
+          "address": "0x408280"
+        },
+        {
+          "name": "GetDlgItem",
+          "address": "0x408284"
+        },
+        {
+          "name": "IsWindow",
+          "address": "0x408288"
+        },
+        {
+          "name": "SetForegroundWindow",
+          "address": "0x40828c"
+        }
+      ],
+      "GDI32.dll": [
+        {
+          "name": "SelectObject",
+          "address": "0x40803c"
+        },
+        {
+          "name": "SetBkMode",
+          "address": "0x408040"
+        },
+        {
+          "name": "CreateFontIndirectW",
+          "address": "0x408044"
+        },
+        {
+          "name": "SetTextColor",
+          "address": "0x408048"
+        },
+        {
+          "name": "DeleteObject",
+          "address": "0x40804c"
+        },
+        {
+          "name": "GetDeviceCaps",
+          "address": "0x408050"
+        },
+        {
+          "name": "CreateBrushIndirect",
+          "address": "0x408054"
+        },
+        {
+          "name": "SetBkColor",
+          "address": "0x408058"
+        }
+      ],
+      "SHELL32.dll": [
+        {
+          "name": "SHGetSpecialFolderLocation",
+          "address": "0x408170"
+        },
+        {
+          "name": "SHGetPathFromIDListW",
+          "address": "0x408174"
+        },
+        {
+          "name": "SHBrowseForFolderW",
+          "address": "0x408178"
+        },
+        {
+          "name": "SHGetFileInfoW",
+          "address": "0x40817c"
+        },
+        {
+          "name": "ShellExecuteW",
+          "address": "0x408180"
+        },
+        {
+          "name": "SHFileOperationW",
+          "address": "0x408184"
+        }
+      ],
+      "ADVAPI32.dll": [
+        {
+          "name": "RegCloseKey",
+          "address": "0x408000"
+        },
+        {
+          "name": "RegOpenKeyExW",
+          "address": "0x408004"
+        },
+        {
+          "name": "RegDeleteKeyW",
+          "address": "0x408008"
+        },
+        {
+          "name": "RegDeleteValueW",
+          "address": "0x40800c"
+        },
+        {
+          "name": "RegEnumValueW",
+          "address": "0x408010"
+        },
+        {
+          "name": "RegCreateKeyExW",
+          "address": "0x408014"
+        },
+        {
+          "name": "RegSetValueExW",
+          "address": "0x408018"
+        },
+        {
+          "name": "RegQueryValueExW",
+          "address": "0x40801c"
+        },
+        {
+          "name": "RegEnumKeyW",
+          "address": "0x408020"
+        }
+      ],
+      "COMCTL32.dll": [
+        {
+          "name": "ImageList_Create",
+          "address": "0x408028"
+        },
+        {
+          "name": "ImageList_AddMasked",
+          "address": "0x40802c"
+        },
+        {
+          "name": "ImageList_Destroy",
+          "address": "0x408030"
+        },
+        {
+          "name": "#17",
+          "address": "0x408034"
+        }
+      ],
+      "ole32.dll": [
+        {
+          "name": "CoCreateInstance",
+          "address": "0x4082a4"
+        },
+        {
+          "name": "CoTaskMemFree",
+          "address": "0x4082a8"
+        },
+        {
+          "name": "OleInitialize",
+          "address": "0x4082ac"
+        },
+        {
+          "name": "OleUninitialize",
+          "address": "0x4082b0"
+        }
+      ],
+      "VERSION.dll": [
+        {
+          "name": "GetFileVersionInfoSizeW",
+          "address": "0x408294"
+        },
+        {
+          "name": "GetFileVersionInfoW",
+          "address": "0x408298"
+        },
+        {
+          "name": "VerQueryValueW",
+          "address": "0x40829c"
+        }
+      ]
+    },
+    "resources": [
+      {
+        "path": "3/1/1033",
+        "file": "cyberfoot2015_3_1_1033.bin",
+        "size": 4264,
+        "dfm": false
+      },
+      {
+        "path": "3/2/1033",
+        "file": "cyberfoot2015_3_2_1033.bin",
+        "size": 3752,
+        "dfm": false
+      },
+      {
+        "path": "3/3/1033",
+        "file": "cyberfoot2015_3_3_1033.bin",
+        "size": 2216,
+        "dfm": false
+      },
+      {
+        "path": "3/4/1033",
+        "file": "cyberfoot2015_3_4_1033.bin",
+        "size": 1384,
+        "dfm": false
+      },
+      {
+        "path": "3/5/1033",
+        "file": "cyberfoot2015_3_5_1033.bin",
+        "size": 1128,
+        "dfm": false
+      },
+      {
+        "path": "3/6/1033",
+        "file": "cyberfoot2015_3_6_1033.bin",
+        "size": 744,
+        "dfm": false
+      },
+      {
+        "path": "3/7/1033",
+        "file": "cyberfoot2015_3_7_1033.bin",
+        "size": 296,
+        "dfm": false
+      },
+      {
+        "path": "5/103/1033",
+        "file": "cyberfoot2015_5_103_1033.bin",
+        "size": 288,
+        "dfm": false
+      },
+      {
+        "path": "5/105/1033",
+        "file": "cyberfoot2015_5_105_1033.bin",
+        "size": 514,
+        "dfm": false
+      },
+      {
+        "path": "5/106/1033",
+        "file": "cyberfoot2015_5_106_1033.bin",
+        "size": 248,
+        "dfm": false
+      },
+      {
+        "path": "5/111/1033",
+        "file": "cyberfoot2015_5_111_1033.bin",
+        "size": 238,
+        "dfm": false
+      },
+      {
+        "path": "5/203/1033",
+        "file": "cyberfoot2015_5_203_1033.bin",
+        "size": 268,
+        "dfm": false
+      },
+      {
+        "path": "5/205/1033",
+        "file": "cyberfoot2015_5_205_1033.bin",
+        "size": 494,
+        "dfm": false
+      },
+      {
+        "path": "5/206/1033",
+        "file": "cyberfoot2015_5_206_1033.bin",
+        "size": 228,
+        "dfm": false
+      },
+      {
+        "path": "5/211/1033",
+        "file": "cyberfoot2015_5_211_1033.bin",
+        "size": 218,
+        "dfm": false
+      },
+      {
+        "path": "5/303/1033",
+        "file": "cyberfoot2015_5_303_1033.bin",
+        "size": 288,
+        "dfm": false
+      },
+      {
+        "path": "5/305/1033",
+        "file": "cyberfoot2015_5_305_1033.bin",
+        "size": 514,
+        "dfm": false
+      },
+      {
+        "path": "5/306/1033",
+        "file": "cyberfoot2015_5_306_1033.bin",
+        "size": 248,
+        "dfm": false
+      },
+      {
+        "path": "5/311/1033",
+        "file": "cyberfoot2015_5_311_1033.bin",
+        "size": 238,
+        "dfm": false
+      },
+      {
+        "path": "14/103/1033",
+        "file": "cyberfoot2015_14_103_1033.bin",
+        "size": 104,
+        "dfm": false
+      },
+      {
+        "path": "24/1/1033",
+        "file": "cyberfoot2015_24_1_1033.bin",
+        "size": 530,
+        "dfm": false
+      }
+    ]
+  },
+  {
+    "path": "payload/$PLUGINSDIR/LangDLL.dll",
+    "machine": "0x14c",
+    "timestamp": 1412656787,
+    "image_base": "0x10000000",
+    "entry": "0x1000153f",
+    "signature_bytes": 0,
+    "sections": [
+      {
+        "name": ".text",
+        "rva": "0x1000",
+        "size": 2048,
+        "entropy": 4.996,
+        "flags": "0x60000020"
+      },
+      {
+        "name": ".rdata",
+        "rva": "0x2000",
+        "size": 1024,
+        "entropy": 3.405,
+        "flags": "0x40000040"
+      },
+      {
+        "name": ".data",
+        "rva": "0x3000",
+        "size": 512,
+        "entropy": 0.335,
+        "flags": "0xc0000040"
+      },
+      {
+        "name": ".rsrc",
+        "rva": "0x5000",
+        "size": 512,
+        "entropy": 1.852,
+        "flags": "0x40000040"
+      },
+      {
+        "name": ".reloc",
+        "rva": "0x6000",
+        "size": 512,
+        "entropy": 3.063,
+        "flags": "0x42000040"
+      }
+    ],
+    "imports": {
+      "KERNEL32.dll": [
+        {
+          "name": "lstrlenW",
+          "address": "0x10002010"
+        },
+        {
+          "name": "GlobalFree",
+          "address": "0x10002014"
+        },
+        {
+          "name": "lstrcpynW",
+          "address": "0x10002018"
+        },
+        {
+          "name": "lstrcmpW",
+          "address": "0x1000201c"
+        },
+        {
+          "name": "GlobalAlloc",
+          "address": "0x10002020"
+        },
+        {
+          "name": "MulDiv",
+          "address": "0x10002024"
+        },
+        {
+          "name": "GetModuleHandleW",
+          "address": "0x10002028"
+        },
+        {
+          "name": "lstrcpyW",
+          "address": "0x1000202c"
+        }
+      ],
+      "USER32.dll": [
+        {
+          "name": "DialogBoxParamW",
+          "address": "0x10002034"
+        },
+        {
+          "name": "SetDlgItemTextW",
+          "address": "0x10002038"
+        },
+        {
+          "name": "SendDlgItemMessageW",
+          "address": "0x1000203c"
+        },
+        {
+          "name": "EndDialog",
+          "address": "0x10002040"
+        },
+        {
+          "name": "SetWindowTextW",
+          "address": "0x10002044"
+        },
+        {
+          "name": "LoadIconW",
+          "address": "0x10002048"
+        },
+        {
+          "name": "ShowWindow",
+          "address": "0x1000204c"
+        },
+        {
+          "name": "SendMessageW",
+          "address": "0x10002050"
+        },
+        {
+          "name": "GetDC",
+          "address": "0x10002054"
+        }
+      ],
+      "GDI32.dll": [
+        {
+          "name": "GetDeviceCaps",
+          "address": "0x10002000"
+        },
+        {
+          "name": "CreateFontIndirectW",
+          "address": "0x10002004"
+        },
+        {
+          "name": "DeleteObject",
+          "address": "0x10002008"
+        }
+      ]
+    },
+    "resources": [
+      {
+        "path": "5/101/1033",
+        "file": "LangDLL_5_101_1033.bin",
+        "size": 252,
+        "dfm": false
+      }
+    ]
+  },
+  {
+    "path": "payload/$PLUGINSDIR/System.dll",
+    "machine": "0x14c",
+    "timestamp": 1412656791,
+    "image_base": "0x10000000",
+    "entry": "0x100027c7",
+    "signature_bytes": 0,
+    "sections": [
+      {
+        "name": ".text",
+        "rva": "0x1000",
+        "size": 8192,
+        "entropy": 6.244,
+        "flags": "0x60000020"
+      },
+      {
+        "name": ".rdata",
+        "rva": "0x3000",
+        "size": 1024,
+        "entropy": 3.881,
+        "flags": "0x40000040"
+      },
+      {
+        "name": ".data",
+        "rva": "0x4000",
+        "size": 512,
+        "entropy": 0.35,
+        "flags": "0xc0000040"
+      },
+      {
+        "name": ".reloc",
+        "rva": "0x5000",
+        "size": 1024,
+        "entropy": 3.711,
+        "flags": "0x42000040"
+      }
+    ],
+    "imports": {
+      "KERNEL32.dll": [
+        {
+          "name": "GetModuleHandleW",
+          "address": "0x10003000"
+        },
+        {
+          "name": "GlobalFree",
+          "address": "0x10003004"
+        },
+        {
+          "name": "GlobalSize",
+          "address": "0x10003008"
+        },
+        {
+          "name": "lstrcpynW",
+          "address": "0x1000300c"
+        },
+        {
+          "name": "lstrcpyW",
+          "address": "0x10003010"
+        },
+        {
+          "name": "GetProcAddress",
+          "address": "0x10003014"
+        },
+        {
+          "name": "WideCharToMultiByte",
+          "address": "0x10003018"
+        },
+        {
+          "name": "VirtualFree",
+          "address": "0x1000301c"
+        },
+        {
+          "name": "FreeLibrary",
+          "address": "0x10003020"
+        },
+        {
+          "name": "lstrlenW",
+          "address": "0x10003024"
+        },
+        {
+          "name": "LoadLibraryW",
+          "address": "0x10003028"
+        },
+        {
+          "name": "GlobalAlloc",
+          "address": "0x1000302c"
+        },
+        {
+          "name": "MultiByteToWideChar",
+          "address": "0x10003030"
+        },
+        {
+          "name": "VirtualAlloc",
+          "address": "0x10003034"
+        },
+        {
+          "name": "VirtualProtect",
+          "address": "0x10003038"
+        },
+        {
+          "name": "GetLastError",
+          "address": "0x1000303c"
+        }
+      ],
+      "USER32.dll": [
+        {
+          "name": "wsprintfW",
+          "address": "0x10003044"
+        }
+      ],
+      "ole32.dll": [
+        {
+          "name": "StringFromGUID2",
+          "address": "0x1000304c"
+        },
+        {
+          "name": "CLSIDFromString",
+          "address": "0x10003050"
+        }
+      ]
+    },
+    "resources": []
+  },
+  {
+    "path": "payload/$PLUGINSDIR/nsDialogs.dll",
+    "machine": "0x14c",
+    "timestamp": 1412656789,
+    "image_base": "0x10000000",
+    "entry": "0x10001d00",
+    "signature_bytes": 0,
+    "sections": [
+      {
+        "name": ".text",
+        "rva": "0x1000",
+        "size": 4608,
+        "entropy": 5.892,
+        "flags": "0x60000020"
+      },
+      {
+        "name": ".rdata",
+        "rva": "0x3000",
+        "size": 2048,
+        "entropy": 4.755,
+        "flags": "0x40000040"
+      },
+      {
+        "name": ".data",
+        "rva": "0x4000",
+        "size": 512,
+        "entropy": 1.868,
+        "flags": "0xc0000040"
+      },
+      {
+        "name": ".rsrc",
+        "rva": "0x7000",
+        "size": 512,
+        "entropy": 0.626,
+        "flags": "0x40000040"
+      },
+      {
+        "name": ".reloc",
+        "rva": "0x8000",
+        "size": 1024,
+        "entropy": 3.358,
+        "flags": "0x42000040"
+      }
+    ],
+    "imports": {
+      "KERNEL32.dll": [
+        {
+          "name": "GetFileAttributesW",
+          "address": "0x10003008"
+        },
+        {
+          "name": "lstrcpyW",
+          "address": "0x1000300c"
+        },
+        {
+          "name": "MulDiv",
+          "address": "0x10003010"
+        },
+        {
+          "name": "lstrlenW",
+          "address": "0x10003014"
+        },
+        {
+          "name": "HeapFree",
+          "address": "0x10003018"
+        },
+        {
+          "name": "GetCurrentDirectoryW",
+          "address": "0x1000301c"
+        },
+        {
+          "name": "lstrcmpiW",
+          "address": "0x10003020"
+        },
+        {
+          "name": "GetProcessHeap",
+          "address": "0x10003024"
+        },
+        {
+          "name": "HeapReAlloc",
+          "address": "0x10003028"
+        },
+        {
+          "name": "GlobalFree",
+          "address": "0x1000302c"
+        },
+        {
+          "name": "lstrcpynW",
+          "address": "0x10003030"
+        },
+        {
+          "name": "GlobalAlloc",
+          "address": "0x10003034"
+        },
+        {
+          "name": "SetCurrentDirectoryW",
+          "address": "0x10003038"
+        },
+        {
+          "name": "HeapAlloc",
+          "address": "0x1000303c"
+        }
+      ],
+      "USER32.dll": [
+        {
+          "name": "DestroyWindow",
+          "address": "0x10003050"
+        },
+        {
+          "name": "CallWindowProcW",
+          "address": "0x10003054"
+        },
+        {
+          "name": "SetCursor",
+          "address": "0x10003058"
+        },
+        {
+          "name": "GetPropW",
+          "address": "0x1000305c"
+        },
+        {
+          "name": "CharPrevW",
+          "address": "0x10003060"
+        },
+        {
+          "name": "MapWindowPoints",
+          "address": "0x10003064"
+        },
+        {
+          "name": "DrawFocusRect",
+          "address": "0x10003068"
+        },
+        {
+          "name": "GetWindowLongW",
+          "address": "0x1000306c"
+        },
+        {
+          "name": "GetClientRect",
+          "address": "0x10003070"
+        },
+        {
+          "name": "GetWindowTextW",
+          "address": "0x10003074"
+        },
+        {
+          "name": "GetDlgItem",
+          "address": "0x10003078"
+        },
+        {
+          "name": "SetWindowLongW",
+          "address": "0x1000307c"
+        },
+        {
+          "name": "SetWindowPos",
+          "address": "0x10003080"
+        },
+        {
+          "name": "CreateDialogParamW",
+          "address": "0x10003084"
+        },
+        {
+          "name": "MapDialogRect",
+          "address": "0x10003088"
+        },
+        {
+          "name": "GetWindowRect",
+          "address": "0x1000308c"
+        },
+        {
+          "name": "SetPropW",
+          "address": "0x10003090"
+        },
+        {
+          "name": "CreateWindowExW",
+          "address": "0x10003094"
+        },
+        {
+          "name": "IsWindow",
+          "address": "0x10003098"
+        },
+        {
+          "name": "SetTimer",
+          "address": "0x1000309c"
+        },
+        {
+          "name": "KillTimer",
+          "address": "0x100030a0"
+        },
+        {
+          "name": "DispatchMessageW",
+          "address": "0x100030a4"
+        },
+        {
+          "name": "TranslateMessage",
+          "address": "0x100030a8"
+        },
+        {
+          "name": "GetMessageW",
+          "address": "0x100030ac"
+        },
+        {
+          "name": "IsDialogMessageW",
+          "address": "0x100030b0"
+        },
+        {
+          "name": "ShowWindow",
+          "address": "0x100030b4"
+        },
+        {
+          "name": "wsprintfW",
+          "address": "0x100030b8"
+        },
+        {
+          "name": "CharNextW",
+          "address": "0x100030bc"
+        },
+        {
+          "name": "SendMessageW",
+          "address": "0x100030c0"
+        },
+        {
+          "name": "LoadCursorW",
+          "address": "0x100030c4"
+        },
+        {
+          "name": "RemovePropW",
+          "address": "0x100030c8"
+        },
+        {
+          "name": "DrawTextW",
+          "address": "0x100030cc"
+        }
+      ],
+      "GDI32.dll": [
+        {
+          "name": "SetTextColor",
+          "address": "0x10003000"
+        }
+      ],
+      "SHELL32.dll": [
+        {
+          "name": "SHBrowseForFolderW",
+          "address": "0x10003044"
+        },
+        {
+          "name": "SHGetPathFromIDListW",
+          "address": "0x10003048"
+        }
+      ],
+      "comdlg32.dll": [
+        {
+          "name": "GetSaveFileNameW",
+          "address": "0x100030d4"
+        },
+        {
+          "name": "GetOpenFileNameW",
+          "address": "0x100030d8"
+        },
+        {
+          "name": "CommDlgExtendedError",
+          "address": "0x100030dc"
+        }
+      ],
+      "ole32.dll": [
+        {
+          "name": "CoTaskMemFree",
+          "address": "0x100030e4"
+        }
+      ]
+    },
+    "resources": [
+      {
+        "path": "5/1/1033",
+        "file": "nsDialogs_5_1_1033.bin",
+        "size": 52,
+        "dfm": false
+      }
+    ]
+  },
+  {
+    "path": "payload/cf2015.exe",
+    "machine": "0x14c",
+    "timestamp": 708992537,
+    "image_base": "0x400000",
+    "entry": "0x661228",
+    "signature_bytes": 0,
+    "sections": [
+      {
+        "name": "CODE",
+        "rva": "0x1000",
+        "size": 2491392,
+        "entropy": 6.554,
+        "flags": "0x60000020"
+      },
+      {
+        "name": "DATA",
+        "rva": "0x262000",
+        "size": 38912,
+        "entropy": 5.486,
+        "flags": "0xc0000040"
+      },
+      {
+        "name": "BSS",
+        "rva": "0x26c000",
+        "size": 0,
+        "entropy": 0.0,
+        "flags": "0xc0000000"
+      },
+      {
+        "name": ".idata",
+        "rva": "0x3ca000",
+        "size": 14848,
+        "entropy": 5.06,
+        "flags": "0xc0000040"
+      },
+      {
+        "name": ".tls",
+        "rva": "0x3ce000",
+        "size": 0,
+        "entropy": 0.0,
+        "flags": "0xc0000000"
+      },
+      {
+        "name": ".rdata",
+        "rva": "0x3cf000",
+        "size": 512,
+        "entropy": 0.211,
+        "flags": "0x50000040"
+      },
+      {
+        "name": ".reloc",
+        "rva": "0x3d0000",
+        "size": 171520,
+        "entropy": 6.742,
+        "flags": "0x50000040"
+      },
+      {
+        "name": ".rsrc",
+        "rva": "0x3fa000",
+        "size": 3095040,
+        "entropy": 6.701,
+        "flags": "0x50000040"
+      }
+    ],
+    "imports": {
+      "kernel32.dll": [
+        {
+          "name": "DeleteCriticalSection",
+          "address": "0x7ca1b8"
+        },
+        {
+          "name": "LeaveCriticalSection",
+          "address": "0x7ca1bc"
+        },
+        {
+          "name": "EnterCriticalSection",
+          "address": "0x7ca1c0"
+        },
+        {
+          "name": "InitializeCriticalSection",
+          "address": "0x7ca1c4"
+        },
+        {
+          "name": "VirtualFree",
+          "address": "0x7ca1c8"
+        },
+        {
+          "name": "VirtualAlloc",
+          "address": "0x7ca1cc"
+        },
+        {
+          "name": "LocalFree",
+          "address": "0x7ca1d0"
+        },
+        {
+          "name": "LocalAlloc",
+          "address": "0x7ca1d4"
+        },
+        {
+          "name": "GetTickCount",
+          "address": "0x7ca1d8"
+        },
+        {
+          "name": "QueryPerformanceCounter",
+          "address": "0x7ca1dc"
+        },
+        {
+          "name": "GetVersion",
+          "address": "0x7ca1e0"
+        },
+        {
+          "name": "GetCurrentThreadId",
+          "address": "0x7ca1e4"
+        },
+        {
+          "name": "InterlockedDecrement",
+          "address": "0x7ca1e8"
+        },
+        {
+          "name": "InterlockedIncrement",
+          "address": "0x7ca1ec"
+        },
+        {
+          "name": "VirtualQuery",
+          "address": "0x7ca1f0"
+        },
+        {
+          "name": "WideCharToMultiByte",
+          "address": "0x7ca1f4"
+        },
+        {
+          "name": "MultiByteToWideChar",
+          "address": "0x7ca1f8"
+        },
+        {
+          "name": "lstrlenA",
+          "address": "0x7ca1fc"
+        },
+        {
+          "name": "lstrcpynA",
+          "address": "0x7ca200"
+        },
+        {
+          "name": "LoadLibraryExA",
+          "address": "0x7ca204"
+        },
+        {
+          "name": "GetThreadLocale",
+          "address": "0x7ca208"
+        },
+        {
+          "name": "GetStartupInfoA",
+          "address": "0x7ca20c"
+        },
+        {
+          "name": "GetProcAddress",
+          "address": "0x7ca210"
+        },
+        {
+          "name": "GetModuleHandleA",
+          "address": "0x7ca214"
+        },
+        {
+          "name": "GetModuleFileNameA",
+          "address": "0x7ca218"
+        },
+        {
+          "name": "GetLocaleInfoA",
+          "address": "0x7ca21c"
+        },
+        {
+          "name": "GetLastError",
+          "address": "0x7ca220"
+        },
+        {
+          "name": "GetCommandLineA",
+          "address": "0x7ca224"
+        },
+        {
+          "name": "FreeLibrary",
+          "address": "0x7ca228"
+        },
+        {
+          "name": "FindFirstFileA",
+          "address": "0x7ca22c"
+        },
+        {
+          "name": "FindClose",
+          "address": "0x7ca230"
+        },
+        {
+          "name": "ExitProcess",
+          "address": "0x7ca234"
+        },
+        {
+          "name": "ExitThread",
+          "address": "0x7ca238"
+        },
+        {
+          "name": "CreateThread",
+          "address": "0x7ca23c"
+        },
+        {
+          "name": "WriteFile",
+          "address": "0x7ca240"
+        },
+        {
+          "name": "UnhandledExceptionFilter",
+          "address": "0x7ca244"
+        },
+        {
+          "name": "SetFilePointer",
+          "address": "0x7ca248"
+        },
+        {
+          "name": "SetEndOfFile",
+          "address": "0x7ca24c"
+        },
+        {
+          "name": "RtlUnwind",
+          "address": "0x7ca250"
+        },
+        {
+          "name": "ReadFile",
+          "address": "0x7ca254"
+        },
+        {
+          "name": "RaiseException",
+          "address": "0x7ca258"
+        },
+        {
+          "name": "GetStdHandle",
+          "address": "0x7ca25c"
+        },
+        {
+          "name": "GetFileSize",
+          "address": "0x7ca260"
+        },
+        {
+          "name": "GetFileType",
+          "address": "0x7ca264"
+        },
+        {
+          "name": "CreateFileA",
+          "address": "0x7ca268"
+        },
+        {
+          "name": "CloseHandle",
+          "address": "0x7ca26c"
+        },
+        {
+          "name": "TlsSetValue",
+          "address": "0x7ca2a8"
+        },
+        {
+          "name": "TlsGetValue",
+          "address": "0x7ca2ac"
+        },
+        {
+          "name": "LocalAlloc",
+          "address": "0x7ca2b0"
+        },
+        {
+          "name": "GetModuleHandleA",
+          "address": "0x7ca2b4"
+        },
+        {
+          "name": "lstrcpyA",
+          "address": "0x7ca2d8"
+        },
+        {
+          "name": "lstrcmpA",
+          "address": "0x7ca2dc"
+        },
+        {
+          "name": "WritePrivateProfileStringA",
+          "address": "0x7ca2e0"
+        },
+        {
+          "name": "WriteFile",
+          "address": "0x7ca2e4"
+        },
+        {
+          "name": "WideCharToMultiByte",
+          "address": "0x7ca2e8"
+        },
+        {
+          "name": "WaitForSingleObject",
+          "address": "0x7ca2ec"
+        },
+        {
+          "name": "VirtualQuery",
+          "address": "0x7ca2f0"
+        },
+        {
+          "name": "VirtualProtect",
+          "address": "0x7ca2f4"
+        },
+        {
+          "name": "VirtualAlloc",
+          "address": "0x7ca2f8"
+        },
+        {
+          "name": "Sleep",
+          "address": "0x7ca2fc"
+        },
+        {
+          "name": "SizeofResource",
+          "address": "0x7ca300"
+        },
+        {
+          "name": "SetThreadPriority",
+          "address": "0x7ca304"
+        },
+        {
+          "name": "SetThreadLocale",
+          "address": "0x7ca308"
+        },
+        {
+          "name": "SetProcessWorkingSetSize",
+          "address": "0x7ca30c"
+        },
+        {
+          "name": "SetLastError",
+          "address": "0x7ca310"
+        },
+        {
+          "name": "SetFilePointer",
+          "address": "0x7ca314"
+        },
+        {
+          "name": "SetEvent",
+          "address": "0x7ca318"
+        },
+        {
+          "name": "SetErrorMode",
+          "address": "0x7ca31c"
+        },
+        {
+          "name": "SetEndOfFile",
+          "address": "0x7ca320"
+        },
+        {
+          "name": "ResumeThread",
+          "address": "0x7ca324"
+        },
+        {
+          "name": "ResetEvent",
+          "address": "0x7ca328"
+        },
+        {
+          "name": "ReadFile",
+          "address": "0x7ca32c"
+        },
+        {
+          "name": "MultiByteToWideChar",
+          "address": "0x7ca330"
+        },
+        {
+          "name": "MulDiv",
+          "address": "0x7ca334"
+        },
+        {
+          "name": "LockResource",
+          "address": "0x7ca338"
+        },
+        {
+          "name": "LoadResource",
+          "address": "0x7ca33c"
+        },
+        {
+          "name": "LoadLibraryW",
+          "address": "0x7ca340"
+        },
+        {
+          "name": "LoadLibraryA",
+          "address": "0x7ca344"
+        },
+        {
+          "name": "LeaveCriticalSection",
+          "address": "0x7ca348"
+        },
+        {
+          "name": "InitializeCriticalSection",
+          "address": "0x7ca34c"
+        },
+        {
+          "name": "GlobalUnlock",
+          "address": "0x7ca350"
+        },
+        {
+          "name": "GlobalSize",
+          "address": "0x7ca354"
+        },
+        {
+          "name": "GlobalReAlloc",
+          "address": "0x7ca358"
+        },
+        {
+          "name": "GlobalHandle",
+          "address": "0x7ca35c"
+        },
+        {
+          "name": "GlobalLock",
+          "address": "0x7ca360"
+        },
+        {
+          "name": "GlobalFree",
+          "address": "0x7ca364"
+        },
+        {
+          "name": "GlobalFindAtomA",
+          "address": "0x7ca368"
+        },
+        {
+          "name": "GlobalDeleteAtom",
+          "address": "0x7ca36c"
+        },
+        {
+          "name": "GlobalAlloc",
+          "address": "0x7ca370"
+        },
+        {
+          "name": "GlobalAddAtomA",
+          "address": "0x7ca374"
+        },
+        {
+          "name": "GetVersionExA",
+          "address": "0x7ca378"
+        },
+        {
+          "name": "GetVersion",
+          "address": "0x7ca37c"
+        },
+        {
+          "name": "GetUserDefaultLCID",
+          "address": "0x7ca380"
+        },
+        {
+          "name": "GetTickCount",
+          "address": "0x7ca384"
+        },
+        {
+          "name": "GetThreadLocale",
+          "address": "0x7ca388"
+        },
+        {
+          "name": "GetSystemInfo",
+          "address": "0x7ca38c"
+        },
+        {
+          "name": "GetSystemDirectoryA",
+          "address": "0x7ca390"
+        },
+        {
+          "name": "GetStringTypeExA",
+          "address": "0x7ca394"
+        },
+        {
+          "name": "GetStdHandle",
+          "address": "0x7ca398"
+        },
+        {
+          "name": "GetProfileStringA",
+          "address": "0x7ca39c"
+        },
+        {
+          "name": "GetProcAddress",
+          "address": "0x7ca3a0"
+        },
+        {
+          "name": "GetPrivateProfileStringA",
+          "address": "0x7ca3a4"
+        },
+        {
+          "name": "GetModuleHandleA",
+          "address": "0x7ca3a8"
+        },
+        {
+          "name": "GetModuleFileNameW",
+          "address": "0x7ca3ac"
+        },
+        {
+          "name": "GetModuleFileNameA",
+          "address": "0x7ca3b0"
+        },
+        {
+          "name": "GetLocaleInfoA",
+          "address": "0x7ca3b4"
+        },
+        {
+          "name": "GetLocalTime",
+          "address": "0x7ca3b8"
+        },
+        {
+          "name": "GetLastError",
+          "address": "0x7ca3bc"
+        },
+        {
+          "name": "GetFullPathNameW",
+          "address": "0x7ca3c0"
+        },
+        {
+          "name": "GetFullPathNameA",
+          "address": "0x7ca3c4"
+        },
+        {
+          "name": "GetFileAttributesA",
+          "address": "0x7ca3c8"
+        },
+        {
+          "name": "GetExitCodeThread",
+          "address": "0x7ca3cc"
+        },
+        {
+          "name": "GetDiskFreeSpaceA",
+          "address": "0x7ca3d0"
+        },
+        {
+          "name": "GetDateFormatA",
+          "address": "0x7ca3d4"
+        },
+        {
+          "name": "GetCurrentThreadId",
+          "address": "0x7ca3d8"
+        },
+        {
+          "name": "GetCurrentProcessId",
+          "address": "0x7ca3dc"
+        },
+        {
+          "name": "GetCurrentProcess",
+          "address": "0x7ca3e0"
+        },
+        {
+          "name": "GetComputerNameA",
+          "address": "0x7ca3e4"
+        },
+        {
+          "name": "GetCommandLineW",
+          "address": "0x7ca3e8"
+        },
+        {
+          "name": "GetCPInfo",
+          "address": "0x7ca3ec"
+        },
+        {
+          "name": "GetACP",
+          "address": "0x7ca3f0"
+        },
+        {
+          "name": "FreeResource",
+          "address": "0x7ca3f4"
+        },
+        {
+          "name": "InterlockedIncrement",
+          "address": "0x7ca3f8"
+        },
+        {
+          "name": "InterlockedExchange",
+          "address": "0x7ca3fc"
+        },
+        {
+          "name": "InterlockedDecrement",
+          "address": "0x7ca400"
+        },
+        {
+          "name": "FreeLibrary",
+          "address": "0x7ca404"
+        },
+        {
+          "name": "FormatMessageW",
+          "address": "0x7ca408"
+        },
+        {
+          "name": "FormatMessageA",
+          "address": "0x7ca40c"
+        },
+        {
+          "name": "FindResourceA",
+          "address": "0x7ca410"
+        },
+        {
+          "name": "FindNextFileA",
+          "address": "0x7ca414"
+        },
+        {
+          "name": "FindFirstFileW",
+          "address": "0x7ca418"
+        },
+        {
+          "name": "FindFirstFileA",
+          "address": "0x7ca41c"
+        },
+        {
+          "name": "FindClose",
+          "address": "0x7ca420"
+        },
+        {
+          "name": "FileTimeToLocalFileTime",
+          "address": "0x7ca424"
+        },
+        {
+          "name": "FileTimeToDosDateTime",
+          "address": "0x7ca428"
+        },
+        {
+          "name": "EnumCalendarInfoA",
+          "address": "0x7ca42c"
+        },
+        {
+          "name": "EnterCriticalSection",
+          "address": "0x7ca430"
+        },
+        {
+          "name": "DeleteFileA",
+          "address": "0x7ca434"
+        },
+        {
+          "name": "DeleteCriticalSection",
+          "address": "0x7ca438"
+        },
+        {
+          "name": "CreateThread",
+          "address": "0x7ca43c"
+        },
+        {
+          "name": "CreateFileW",
+          "address": "0x7ca440"
+        },
+        {
+          "name": "CreateFileA",
+          "address": "0x7ca444"
+        },
+        {
+          "name": "CreateEventA",
+          "address": "0x7ca448"
+        },
+        {
+          "name": "CompareStringW",
+          "address": "0x7ca44c"
+        },
+        {
+          "name": "CompareStringA",
+          "address": "0x7ca450"
+        },
+        {
+          "name": "CloseHandle",
+          "address": "0x7ca454"
+        },
+        {
+          "name": "Sleep",
+          "address": "0x7ca958"
+        }
+      ],
+      "user32.dll": [
+        {
+          "name": "GetKeyboardType",
+          "address": "0x7ca274"
+        },
+        {
+          "name": "LoadStringA",
+          "address": "0x7ca278"
+        },
+        {
+          "name": "MessageBoxA",
+          "address": "0x7ca27c"
+        },
+        {
+          "name": "CharNextA",
+          "address": "0x7ca280"
+        },
+        {
+          "name": "CreateWindowExW",
+          "address": "0x7ca600"
+        },
+        {
+          "name": "CreateWindowExA",
+          "address": "0x7ca604"
+        },
+        {
+          "name": "WindowFromPoint",
+          "address": "0x7ca608"
+        },
+        {
+          "name": "WinHelpA",
+          "address": "0x7ca60c"
+        },
+        {
+          "name": "WaitMessage",
+          "address": "0x7ca610"
+        },
+        {
+          "name": "ValidateRect",
+          "address": "0x7ca614"
+        },
+        {
+          "name": "UpdateLayeredWindow",
+          "address": "0x7ca618"
+        },
+        {
+          "name": "UpdateWindow",
+          "address": "0x7ca61c"
+        },
+        {
+          "name": "UnregisterClassW",
+          "address": "0x7ca620"
+        },
+        {
+          "name": "UnregisterClassA",
+          "address": "0x7ca624"
+        },
+        {
+          "name": "UnhookWindowsHookEx",
+          "address": "0x7ca628"
+        },
+        {
+          "name": "TranslateMessage",
+          "address": "0x7ca62c"
+        },
+        {
+          "name": "TranslateMDISysAccel",
+          "address": "0x7ca630"
+        },
+        {
+          "name": "TrackPopupMenu",
+          "address": "0x7ca634"
+        },
+        {
+          "name": "SystemParametersInfoA",
+          "address": "0x7ca638"
+        },
+        {
+          "name": "ShowWindow",
+          "address": "0x7ca63c"
+        },
+        {
+          "name": "ShowScrollBar",
+          "address": "0x7ca640"
+        },
+        {
+          "name": "ShowOwnedPopups",
+          "address": "0x7ca644"
+        },
+        {
+          "name": "ShowCursor",
+          "address": "0x7ca648"
+        },
+        {
+          "name": "SetWindowRgn",
+          "address": "0x7ca64c"
+        },
+        {
+          "name": "SetWindowsHookExW",
+          "address": "0x7ca650"
+        },
+        {
+          "name": "SetWindowsHookExA",
+          "address": "0x7ca654"
+        },
+        {
+          "name": "SetWindowTextW",
+          "address": "0x7ca658"
+        },
+        {
+          "name": "SetWindowTextA",
+          "address": "0x7ca65c"
+        },
+        {
+          "name": "SetWindowPos",
+          "address": "0x7ca660"
+        },
+        {
+          "name": "SetWindowPlacement",
+          "address": "0x7ca664"
+        },
+        {
+          "name": "SetWindowLongW",
+          "address": "0x7ca668"
+        },
+        {
+          "name": "SetWindowLongA",
+          "address": "0x7ca66c"
+        },
+        {
+          "name": "SetTimer",
+          "address": "0x7ca670"
+        },
+        {
+          "name": "SetScrollRange",
+          "address": "0x7ca674"
+        },
+        {
+          "name": "SetScrollPos",
+          "address": "0x7ca678"
+        },
+        {
+          "name": "SetScrollInfo",
+          "address": "0x7ca67c"
+        },
+        {
+          "name": "SetRectEmpty",
+          "address": "0x7ca680"
+        },
+        {
+          "name": "SetRect",
+          "address": "0x7ca684"
+        },
+        {
+          "name": "SetPropA",
+          "address": "0x7ca688"
+        },
+        {
+          "name": "SetParent",
+          "address": "0x7ca68c"
+        },
+        {
+          "name": "SetMenuItemInfoW",
+          "address": "0x7ca690"
+        },
+        {
+          "name": "SetMenuItemInfoA",
+          "address": "0x7ca694"
+        },
+        {
+          "name": "SetMenu",
+          "address": "0x7ca698"
+        },
+        {
+          "name": "SetForegroundWindow",
+          "address": "0x7ca69c"
+        },
+        {
+          "name": "SetFocus",
+          "address": "0x7ca6a0"
+        },
+        {
+          "name": "SetCursor",
+          "address": "0x7ca6a4"
+        },
+        {
+          "name": "SetClipboardData",
+          "address": "0x7ca6a8"
+        },
+        {
+          "name": "SetClassLongA",
+          "address": "0x7ca6ac"
+        },
+        {
+          "name": "SetCapture",
+          "address": "0x7ca6b0"
+        },
+        {
+          "name": "SetActiveWindow",
+          "address": "0x7ca6b4"
+        },
+        {
+          "name": "SendMessageW",
+          "address": "0x7ca6b8"
+        },
+        {
+          "name": "SendMessageA",
+          "address": "0x7ca6bc"
+        },
+        {
+          "name": "ScrollWindowEx",
+          "address": "0x7ca6c0"
+        },
+        {
+          "name": "ScrollWindow",
+          "address": "0x7ca6c4"
+        },
+        {
+          "name": "ScreenToClient",
+          "address": "0x7ca6c8"
+        },
+        {
+          "name": "RemovePropA",
+          "address": "0x7ca6cc"
+        },
+        {
+          "name": "RemoveMenu",
+          "address": "0x7ca6d0"
+        },
+        {
+          "name": "ReleaseDC",
+          "address": "0x7ca6d4"
+        },
+        {
+          "name": "ReleaseCapture",
+          "address": "0x7ca6d8"
+        },
+        {
+          "name": "RegisterWindowMessageA",
+          "address": "0x7ca6dc"
+        },
+        {
+          "name": "RegisterClipboardFormatA",
+          "address": "0x7ca6e0"
+        },
+        {
+          "name": "RegisterClassW",
+          "address": "0x7ca6e4"
+        },
+        {
+          "name": "RegisterClassA",
+          "address": "0x7ca6e8"
+        },
+        {
+          "name": "RedrawWindow",
+          "address": "0x7ca6ec"
+        },
+        {
+          "name": "PtInRect",
+          "address": "0x7ca6f0"
+        },
+        {
+          "name": "PostQuitMessage",
+          "address": "0x7ca6f4"
+        },
+        {
+          "name": "PostMessageW",
+          "address": "0x7ca6f8"
+        },
+        {
+          "name": "PostMessageA",
+          "address": "0x7ca6fc"
+        },
+        {
+          "name": "PeekMessageA",
+          "address": "0x7ca700"
+        },
+        {
+          "name": "OpenClipboard",
+          "address": "0x7ca704"
+        },
+        {
+          "name": "OffsetRect",
+          "address": "0x7ca708"
+        },
+        {
+          "name": "OemToCharA",
+          "address": "0x7ca70c"
+        },
+        {
+          "name": "MsgWaitForMultipleObjects",
+          "address": "0x7ca710"
+        },
+        {
+          "name": "MoveWindow",
+          "address": "0x7ca714"
+        },
+        {
+          "name": "MessageBoxA",
+          "address": "0x7ca718"
+        },
+        {
+          "name": "MessageBeep",
+          "address": "0x7ca71c"
+        },
+        {
+          "name": "MapWindowPoints",
+          "address": "0x7ca720"
+        },
+        {
+          "name": "MapVirtualKeyW",
+          "address": "0x7ca724"
+        },
+        {
+          "name": "MapVirtualKeyA",
+          "address": "0x7ca728"
+        },
+        {
+          "name": "LoadStringA",
+          "address": "0x7ca72c"
+        },
+        {
+          "name": "LoadKeyboardLayoutA",
+          "address": "0x7ca730"
+        },
+        {
+          "name": "LoadIconA",
+          "address": "0x7ca734"
+        },
+        {
+          "name": "LoadCursorA",
+          "address": "0x7ca738"
+        },
+        {
+          "name": "LoadBitmapA",
+          "address": "0x7ca73c"
+        },
+        {
+          "name": "KillTimer",
+          "address": "0x7ca740"
+        },
+        {
+          "name": "IsZoomed",
+          "address": "0x7ca744"
+        },
+        {
+          "name": "IsWindowVisible",
+          "address": "0x7ca748"
+        },
+        {
+          "name": "IsWindowUnicode",
+          "address": "0x7ca74c"
+        },
+        {
+          "name": "IsWindowEnabled",
+          "address": "0x7ca750"
+        },
+        {
+          "name": "IsWindow",
+          "address": "0x7ca754"
+        },
+        {
+          "name": "IsRectEmpty",
+          "address": "0x7ca758"
+        },
+        {
+          "name": "IsIconic",
+          "address": "0x7ca75c"
+        },
+        {
+          "name": "IsDialogMessageW",
+          "address": "0x7ca760"
+        },
+        {
+          "name": "IsDialogMessageA",
+          "address": "0x7ca764"
+        },
+        {
+          "name": "IsClipboardFormatAvailable",
+          "address": "0x7ca768"
+        },
+        {
+          "name": "IsChild",
+          "address": "0x7ca76c"
+        },
+        {
+          "name": "InvalidateRect",
+          "address": "0x7ca770"
+        },
+        {
+          "name": "IntersectRect",
+          "address": "0x7ca774"
+        },
+        {
+          "name": "InsertMenuItemA",
+          "address": "0x7ca778"
+        },
+        {
+          "name": "InsertMenuA",
+          "address": "0x7ca77c"
+        },
+        {
+          "name": "InflateRect",
+          "address": "0x7ca780"
+        },
+        {
+          "name": "GetWindowThreadProcessId",
+          "address": "0x7ca784"
+        },
+        {
+          "name": "GetWindowTextLengthW",
+          "address": "0x7ca788"
+        },
+        {
+          "name": "GetWindowTextW",
+          "address": "0x7ca78c"
+        },
+        {
+          "name": "GetWindowTextA",
+          "address": "0x7ca790"
+        },
+        {
+          "name": "GetWindowRect",
+          "address": "0x7ca794"
+        },
+        {
+          "name": "GetWindowPlacement",
+          "address": "0x7ca798"
+        },
+        {
+          "name": "GetWindowLongW",
+          "address": "0x7ca79c"
+        },
+        {
+          "name": "GetWindowLongA",
+          "address": "0x7ca7a0"
+        },
+        {
+          "name": "GetWindowDC",
+          "address": "0x7ca7a4"
+        },
+        {
+          "name": "GetUpdateRect",
+          "address": "0x7ca7a8"
+        },
+        {
+          "name": "GetTopWindow",
+          "address": "0x7ca7ac"
+        },
+        {
+          "name": "GetSystemMetrics",
+          "address": "0x7ca7b0"
+        },
+        {
+          "name": "GetSystemMenu",
+          "address": "0x7ca7b4"
+        },
+        {
+          "name": "GetSysColorBrush",
+          "address": "0x7ca7b8"
+        },
+        {
+          "name": "GetSysColor",
+          "address": "0x7ca7bc"
+        },
+        {
+          "name": "GetSubMenu",
+          "address": "0x7ca7c0"
+        },
+        {
+          "name": "GetScrollRange",
+          "address": "0x7ca7c4"
+        },
+        {
+          "name": "GetScrollPos",
+          "address": "0x7ca7c8"
+        },
+        {
+          "name": "GetScrollInfo",
+          "address": "0x7ca7cc"
+        },
+        {
+          "name": "GetPropA",
+          "address": "0x7ca7d0"
+        },
+        {
+          "name": "GetParent",
+          "address": "0x7ca7d4"
+        },
+        {
+          "name": "GetWindow",
+          "address": "0x7ca7d8"
+        },
+        {
+          "name": "GetMessageTime",
+          "address": "0x7ca7dc"
+        },
+        {
+          "name": "GetMessagePos",
+          "address": "0x7ca7e0"
+        },
+        {
+          "name": "GetMenuStringW",
+          "address": "0x7ca7e4"
+        },
+        {
+          "name": "GetMenuStringA",
+          "address": "0x7ca7e8"
+        },
+        {
+          "name": "GetMenuState",
+          "address": "0x7ca7ec"
+        },
+        {
+          "name": "GetMenuItemInfoW",
+          "address": "0x7ca7f0"
+        },
+        {
+          "name": "GetMenuItemInfoA",
+          "address": "0x7ca7f4"
+        },
+        {
+          "name": "GetMenuItemID",
+          "address": "0x7ca7f8"
+        },
+        {
+          "name": "GetMenuItemCount",
+          "address": "0x7ca7fc"
+        },
+        {
+          "name": "GetMenu",
+          "address": "0x7ca800"
+        },
+        {
+          "name": "GetLastActivePopup",
+          "address": "0x7ca804"
+        },
+        {
+          "name": "GetKeyboardState",
+          "address": "0x7ca808"
+        },
+        {
+          "name": "GetKeyboardLayoutList",
+          "address": "0x7ca80c"
+        },
+        {
+          "name": "GetKeyboardLayout",
+          "address": "0x7ca810"
+        },
+        {
+          "name": "GetKeyState",
+          "address": "0x7ca814"
+        },
+        {
+          "name": "GetKeyNameTextW",
+          "address": "0x7ca818"
+        },
+        {
+          "name": "GetKeyNameTextA",
+          "address": "0x7ca81c"
+        },
+        {
+          "name": "GetIconInfo",
+          "address": "0x7ca820"
+        },
+        {
+          "name": "GetForegroundWindow",
+          "address": "0x7ca824"
+        },
+        {
+          "name": "GetFocus",
+          "address": "0x7ca828"
+        },
+        {
+          "name": "GetDesktopWindow",
+          "address": "0x7ca82c"
+        },
+        {
+          "name": "GetDCEx",
+          "address": "0x7ca830"
+        },
+        {
+          "name": "GetDC",
+          "address": "0x7ca834"
+        },
+        {
+          "name": "GetCursorPos",
+          "address": "0x7ca838"
+        },
+        {
+          "name": "GetCursor",
+          "address": "0x7ca83c"
+        },
+        {
+          "name": "GetClipboardData",
+          "address": "0x7ca840"
+        },
+        {
+          "name": "GetClientRect",
+          "address": "0x7ca844"
+        },
+        {
+          "name": "GetClassNameW",
+          "address": "0x7ca848"
+        },
+        {
+          "name": "GetClassNameA",
+          "address": "0x7ca84c"
+        },
+        {
+          "name": "GetClassInfoW",
+          "address": "0x7ca850"
+        },
+        {
+          "name": "GetClassInfoA",
+          "address": "0x7ca854"
+        },
+        {
+          "name": "GetCapture",
+          "address": "0x7ca858"
+        },
+        {
+          "name": "GetActiveWindow",
+          "address": "0x7ca85c"
+        },
+        {
+          "name": "FrameRect",
+          "address": "0x7ca860"
+        },
+        {
+          "name": "FindWindowA",
+          "address": "0x7ca864"
+        },
+        {
+          "name": "FillRect",
+          "address": "0x7ca868"
+        },
+        {
+          "name": "EqualRect",
+          "address": "0x7ca86c"
+        },
+        {
+          "name": "EnumWindows",
+          "address": "0x7ca870"
+        },
+        {
+          "name": "EnumThreadWindows",
+          "address": "0x7ca874"
+        },
+        {
+          "name": "EnumClipboardFormats",
+          "address": "0x7ca878"
+        },
+        {
+          "name": "EndPaint",
+          "address": "0x7ca87c"
+        },
+        {
+          "name": "EnableWindow",
+          "address": "0x7ca880"
+        },
+        {
+          "name": "EnableScrollBar",
+          "address": "0x7ca884"
+        },
+        {
+          "name": "EnableMenuItem",
+          "address": "0x7ca888"
+        },
+        {
+          "name": "EmptyClipboard",
+          "address": "0x7ca88c"
+        },
+        {
+          "name": "DrawTextExW",
+          "address": "0x7ca890"
+        },
+        {
+          "name": "DrawTextExA",
+          "address": "0x7ca894"
+        },
+        {
+          "name": "DrawTextW",
+          "address": "0x7ca898"
+        },
+        {
+          "name": "DrawTextA",
+          "address": "0x7ca89c"
+        },
+        {
+          "name": "DrawMenuBar",
+          "address": "0x7ca8a0"
+        },
+        {
+          "name": "DrawIconEx",
+          "address": "0x7ca8a4"
+        },
+        {
+          "name": "DrawIcon",
+          "address": "0x7ca8a8"
+        },
+        {
+          "name": "DrawFrameControl",
+          "address": "0x7ca8ac"
+        },
+        {
+          "name": "DrawFocusRect",
+          "address": "0x7ca8b0"
+        },
+        {
+          "name": "DrawEdge",
+          "address": "0x7ca8b4"
+        },
+        {
+          "name": "DispatchMessageW",
+          "address": "0x7ca8b8"
+        },
+        {
+          "name": "DispatchMessageA",
+          "address": "0x7ca8bc"
+        },
+        {
+          "name": "DestroyWindow",
+          "address": "0x7ca8c0"
+        },
+        {
+          "name": "DestroyMenu",
+          "address": "0x7ca8c4"
+        },
+        {
+          "name": "DestroyIcon",
+          "address": "0x7ca8c8"
+        },
+        {
+          "name": "DestroyCursor",
+          "address": "0x7ca8cc"
+        },
+        {
+          "name": "DestroyCaret",
+          "address": "0x7ca8d0"
+        },
+        {
+          "name": "DeleteMenu",
+          "address": "0x7ca8d4"
+        },
+        {
+          "name": "DefWindowProcW",
+          "address": "0x7ca8d8"
+        },
+        {
+          "name": "DefWindowProcA",
+          "address": "0x7ca8dc"
+        },
+        {
+          "name": "DefMDIChildProcA",
+          "address": "0x7ca8e0"
+        },
+        {
+          "name": "DefFrameProcA",
+          "address": "0x7ca8e4"
+        },
+        {
+          "name": "CreatePopupMenu",
+          "address": "0x7ca8e8"
+        },
+        {
+          "name": "CreateMenu",
+          "address": "0x7ca8ec"
+        },
+        {
+          "name": "CreateIcon",
+          "address": "0x7ca8f0"
+        },
+        {
+          "name": "CopyImage",
+          "address": "0x7ca8f4"
+        },
+        {
+          "name": "CloseClipboard",
+          "address": "0x7ca8f8"
+        },
+        {
+          "name": "ClientToScreen",
+          "address": "0x7ca8fc"
+        },
+        {
+          "name": "ChildWindowFromPoint",
+          "address": "0x7ca900"
+        },
+        {
+          "name": "CheckMenuItem",
+          "address": "0x7ca904"
+        },
+        {
+          "name": "CharUpperBuffW",
+          "address": "0x7ca908"
+        },
+        {
+          "name": "CharUpperW",
+          "address": "0x7ca90c"
+        },
+        {
+          "name": "CallWindowProcW",
+          "address": "0x7ca910"
+        },
+        {
+          "name": "CallWindowProcA",
+          "address": "0x7ca914"
+        },
+        {
+          "name": "CallNextHookEx",
+          "address": "0x7ca918"
+        },
+        {
+          "name": "BeginPaint",
+          "address": "0x7ca91c"
+        },
+        {
+          "name": "CharNextA",
+          "address": "0x7ca920"
+        },
+        {
+          "name": "CharLowerBuffA",
+          "address": "0x7ca924"
+        },
+        {
+          "name": "CharLowerA",
+          "address": "0x7ca928"
+        },
+        {
+          "name": "CharUpperBuffA",
+          "address": "0x7ca92c"
+        },
+        {
+          "name": "CharUpperA",
+          "address": "0x7ca930"
+        },
+        {
+          "name": "CharToOemA",
+          "address": "0x7ca934"
+        },
+        {
+          "name": "AdjustWindowRectEx",
+          "address": "0x7ca938"
+        },
+        {
+          "name": "ActivateKeyboardLayout",
+          "address": "0x7ca93c"
+        }
+      ],
+      "advapi32.dll": [
+        {
+          "name": "RegQueryValueExA",
+          "address": "0x7ca288"
+        },
+        {
+          "name": "RegOpenKeyExA",
+          "address": "0x7ca28c"
+        },
+        {
+          "name": "RegCloseKey",
+          "address": "0x7ca290"
+        },
+        {
+          "name": "RegSetValueExA",
+          "address": "0x7ca2bc"
+        },
+        {
+          "name": "RegQueryValueExA",
+          "address": "0x7ca2c0"
+        },
+        {
+          "name": "RegOpenKeyExA",
+          "address": "0x7ca2c4"
+        },
+        {
+          "name": "RegFlushKey",
+          "address": "0x7ca2c8"
+        },
+        {
+          "name": "RegCreateKeyExA",
+          "address": "0x7ca2cc"
+        },
+        {
+          "name": "RegCloseKey",
+          "address": "0x7ca2d0"
+        }
+      ],
+      "oleaut32.dll": [
+        {
+          "name": "SysFreeString",
+          "address": "0x7ca298"
+        },
+        {
+          "name": "SysReAllocStringLen",
+          "address": "0x7ca29c"
+        },
+        {
+          "name": "SysAllocStringLen",
+          "address": "0x7ca2a0"
+        },
+        {
+          "name": "SafeArrayPtrOfIndex",
+          "address": "0x7ca960"
+        },
+        {
+          "name": "SafeArrayPutElement",
+          "address": "0x7ca964"
+        },
+        {
+          "name": "SafeArrayGetElement",
+          "address": "0x7ca968"
+        },
+        {
+          "name": "SafeArrayUnaccessData",
+          "address": "0x7ca96c"
+        },
+        {
+          "name": "SafeArrayAccessData",
+          "address": "0x7ca970"
+        },
+        {
+          "name": "SafeArrayGetUBound",
+          "address": "0x7ca974"
+        },
+        {
+          "name": "SafeArrayGetLBound",
+          "address": "0x7ca978"
+        },
+        {
+          "name": "SafeArrayCreate",
+          "address": "0x7ca97c"
+        },
+        {
+          "name": "VariantChangeType",
+          "address": "0x7ca980"
+        },
+        {
+          "name": "VariantCopyInd",
+          "address": "0x7ca984"
+        },
+        {
+          "name": "VariantCopy",
+          "address": "0x7ca988"
+        },
+        {
+          "name": "VariantClear",
+          "address": "0x7ca98c"
+        },
+        {
+          "name": "VariantInit",
+          "address": "0x7ca990"
+        },
+        {
+          "name": "GetErrorInfo",
+          "address": "0x7ca9d8"
+        },
+        {
+          "name": "GetActiveObject",
+          "address": "0x7ca9dc"
+        },
+        {
+          "name": "SysFreeString",
+          "address": "0x7ca9e0"
+        }
+      ],
+      "version.dll": [
+        {
+          "name": "VerQueryValueA",
+          "address": "0x7ca45c"
+        },
+        {
+          "name": "GetFileVersionInfoSizeA",
+          "address": "0x7ca460"
+        },
+        {
+          "name": "GetFileVersionInfoA",
+          "address": "0x7ca464"
+        }
+      ],
+      "gdi32.dll": [
+        {
+          "name": "UnrealizeObject",
+          "address": "0x7ca46c"
+        },
+        {
+          "name": "StretchDIBits",
+          "address": "0x7ca470"
+        },
+        {
+          "name": "StretchBlt",
+          "address": "0x7ca474"
+        },
+        {
+          "name": "StartPage",
+          "address": "0x7ca478"
+        },
+        {
+          "name": "StartDocA",
+          "address": "0x7ca47c"
+        },
+        {
+          "name": "SetWindowOrgEx",
+          "address": "0x7ca480"
+        },
+        {
+          "name": "SetWinMetaFileBits",
+          "address": "0x7ca484"
+        },
+        {
+          "name": "SetViewportOrgEx",
+          "address": "0x7ca488"
+        },
+        {
+          "name": "SetTextColor",
+          "address": "0x7ca48c"
+        },
+        {
+          "name": "SetStretchBltMode",
+          "address": "0x7ca490"
+        },
+        {
+          "name": "SetROP2",
+          "address": "0x7ca494"
+        },
+        {
+          "name": "SetPixel",
+          "address": "0x7ca498"
+        },
+        {
+          "name": "SetPaletteEntries",
+          "address": "0x7ca49c"
+        },
+        {
+          "name": "SetMapMode",
+          "address": "0x7ca4a0"
+        },
+        {
+          "name": "SetEnhMetaFileBits",
+          "address": "0x7ca4a4"
+        },
+        {
+          "name": "SetDIBColorTable",
+          "address": "0x7ca4a8"
+        },
+        {
+          "name": "SetBrushOrgEx",
+          "address": "0x7ca4ac"
+        },
+        {
+          "name": "SetBkMode",
+          "address": "0x7ca4b0"
+        },
+        {
+          "name": "SetBkColor",
+          "address": "0x7ca4b4"
+        },
+        {
+          "name": "SetAbortProc",
+          "address": "0x7ca4b8"
+        },
+        {
+          "name": "SelectPalette",
+          "address": "0x7ca4bc"
+        },
+        {
+          "name": "SelectObject",
+          "address": "0x7ca4c0"
+        },
+        {
+          "name": "SelectClipRgn",
+          "address": "0x7ca4c4"
+        },
+        {
+          "name": "SaveDC",
+          "address": "0x7ca4c8"
+        },
+        {
+          "name": "RoundRect",
+          "address": "0x7ca4cc"
+        },
+        {
+          "name": "RestoreDC",
+          "address": "0x7ca4d0"
+        },
+        {
+          "name": "ResizePalette",
+          "address": "0x7ca4d4"
+        },
+        {
+          "name": "Rectangle",
+          "address": "0x7ca4d8"
+        },
+        {
+          "name": "RectVisible",
+          "address": "0x7ca4dc"
+        },
+        {
+          "name": "RealizePalette",
+          "address": "0x7ca4e0"
+        },
+        {
+          "name": "Polyline",
+          "address": "0x7ca4e4"
+        },
+        {
+          "name": "Polygon",
+          "address": "0x7ca4e8"
+        },
+        {
+          "name": "PlayEnhMetaFile",
+          "address": "0x7ca4ec"
+        },
+        {
+          "name": "Pie",
+          "address": "0x7ca4f0"
+        },
+        {
+          "name": "PatBlt",
+          "address": "0x7ca4f4"
+        },
+        {
+          "name": "MoveToEx",
+          "address": "0x7ca4f8"
+        },
+        {
+          "name": "MaskBlt",
+          "address": "0x7ca4fc"
+        },
+        {
+          "name": "LineTo",
+          "address": "0x7ca500"
+        },
+        {
+          "name": "LPtoDP",
+          "address": "0x7ca504"
+        },
+        {
+          "name": "IntersectClipRect",
+          "address": "0x7ca508"
+        },
+        {
+          "name": "GetWindowOrgEx",
+          "address": "0x7ca50c"
+        },
+        {
+          "name": "GetWinMetaFileBits",
+          "address": "0x7ca510"
+        },
+        {
+          "name": "GetViewportOrgEx",
+          "address": "0x7ca514"
+        },
+        {
+          "name": "GetTextMetricsA",
+          "address": "0x7ca518"
+        },
+        {
+          "name": "GetTextExtentPointW",
+          "address": "0x7ca51c"
+        },
+        {
+          "name": "GetTextExtentPointA",
+          "address": "0x7ca520"
+        },
+        {
+          "name": "GetTextExtentPoint32W",
+          "address": "0x7ca524"
+        },
+        {
+          "name": "GetTextExtentPoint32A",
+          "address": "0x7ca528"
+        },
+        {
+          "name": "GetTextExtentExPointA",
+          "address": "0x7ca52c"
+        },
+        {
+          "name": "GetSystemPaletteEntries",
+          "address": "0x7ca530"
+        },
+        {
+          "name": "GetStockObject",
+          "address": "0x7ca534"
+        },
+        {
+          "name": "GetPixel",
+          "address": "0x7ca538"
+        },
+        {
+          "name": "GetPaletteEntries",
+          "address": "0x7ca53c"
+        },
+        {
+          "name": "GetObjectType",
+          "address": "0x7ca540"
+        },
+        {
+          "name": "GetObjectA",
+          "address": "0x7ca544"
+        },
+        {
+          "name": "GetNearestPaletteIndex",
+          "address": "0x7ca548"
+        },
+        {
+          "name": "GetEnhMetaFilePaletteEntries",
+          "address": "0x7ca54c"
+        },
+        {
+          "name": "GetEnhMetaFileHeader",
+          "address": "0x7ca550"
+        },
+        {
+          "name": "GetEnhMetaFileDescriptionA",
+          "address": "0x7ca554"
+        },
+        {
+          "name": "GetEnhMetaFileBits",
+          "address": "0x7ca558"
+        },
+        {
+          "name": "GetDeviceCaps",
+          "address": "0x7ca55c"
+        },
+        {
+          "name": "GetDIBits",
+          "address": "0x7ca560"
+        },
+        {
+          "name": "GetDIBColorTable",
+          "address": "0x7ca564"
+        },
+        {
+          "name": "GetDCOrgEx",
+          "address": "0x7ca568"
+        },
+        {
+          "name": "GetCurrentPositionEx",
+          "address": "0x7ca56c"
+        },
+        {
+          "name": "GetClipBox",
+          "address": "0x7ca570"
+        },
+        {
+          "name": "GetBrushOrgEx",
+          "address": "0x7ca574"
+        },
+        {
+          "name": "GetBitmapBits",
+          "address": "0x7ca578"
+        },
+        {
+          "name": "GdiFlush",
+          "address": "0x7ca57c"
+        },
+        {
+          "name": "ExtTextOutA",
+          "address": "0x7ca580"
+        },
+        {
+          "name": "ExcludeClipRect",
+          "address": "0x7ca584"
+        },
+        {
+          "name": "EnumFontFamiliesExA",
+          "address": "0x7ca588"
+        },
+        {
+          "name": "EndPage",
+          "address": "0x7ca58c"
+        },
+        {
+          "name": "EndDoc",
+          "address": "0x7ca590"
+        },
+        {
+          "name": "Ellipse",
+          "address": "0x7ca594"
+        },
+        {
+          "name": "DeleteObject",
+          "address": "0x7ca598"
+        },
+        {
+          "name": "DeleteEnhMetaFile",
+          "address": "0x7ca59c"
+        },
+        {
+          "name": "DeleteDC",
+          "address": "0x7ca5a0"
+        },
+        {
+          "name": "CreateSolidBrush",
+          "address": "0x7ca5a4"
+        },
+        {
+          "name": "CreateRectRgnIndirect",
+          "address": "0x7ca5a8"
+        },
+        {
+          "name": "CreateRectRgn",
+          "address": "0x7ca5ac"
+        },
+        {
+          "name": "CreatePolygonRgn",
+          "address": "0x7ca5b0"
+        },
+        {
+          "name": "CreatePenIndirect",
+          "address": "0x7ca5b4"
+        },
+        {
+          "name": "CreatePalette",
+          "address": "0x7ca5b8"
+        },
+        {
+          "name": "CreateICA",
+          "address": "0x7ca5bc"
+        },
+        {
+          "name": "CreateHalftonePalette",
+          "address": "0x7ca5c0"
+        },
+        {
+          "name": "CreateFontIndirectA",
+          "address": "0x7ca5c4"
+        },
+        {
+          "name": "CreateEnhMetaFileA",
+          "address": "0x7ca5c8"
+        },
+        {
+          "name": "CreateEllipticRgn",
+          "address": "0x7ca5cc"
+        },
+        {
+          "name": "CreateDIBitmap",
+          "address": "0x7ca5d0"
+        },
+        {
+          "name": "CreateDIBSection",
+          "address": "0x7ca5d4"
+        },
+        {
+          "name": "CreateDCA",
+          "address": "0x7ca5d8"
+        },
+        {
+          "name": "CreateCompatibleDC",
+          "address": "0x7ca5dc"
+        },
+        {
+          "name": "CreateCompatibleBitmap",
+          "address": "0x7ca5e0"
+        },
+        {
+          "name": "CreateBrushIndirect",
+          "address": "0x7ca5e4"
+        },
+        {
+          "name": "CreateBitmap",
+          "address": "0x7ca5e8"
+        },
+        {
+          "name": "CopyEnhMetaFileA",
+          "address": "0x7ca5ec"
+        },
+        {
+          "name": "CombineRgn",
+          "address": "0x7ca5f0"
+        },
+        {
+          "name": "CloseEnhMetaFile",
+          "address": "0x7ca5f4"
+        },
+        {
+          "name": "BitBlt",
+          "address": "0x7ca5f8"
+        }
+      ],
+      "ole32.dll": [
+        {
+          "name": "IsEqualGUID",
+          "address": "0x7ca944"
+        },
+        {
+          "name": "CLSIDFromString",
+          "address": "0x7ca948"
+        },
+        {
+          "name": "CoTaskMemFree",
+          "address": "0x7ca94c"
+        },
+        {
+          "name": "StringFromCLSID",
+          "address": "0x7ca950"
+        },
+        {
+          "name": "CreateStreamOnHGlobal",
+          "address": "0x7ca998"
+        },
+        {
+          "name": "IsAccelerator",
+          "address": "0x7ca99c"
+        },
+        {
+          "name": "OleDraw",
+          "address": "0x7ca9a0"
+        },
+        {
+          "name": "OleSetMenuDescriptor",
+          "address": "0x7ca9a4"
+        },
+        {
+          "name": "CoTaskMemFree",
+          "address": "0x7ca9a8"
+        },
+        {
+          "name": "CoTaskMemAlloc",
+          "address": "0x7ca9ac"
+        },
+        {
+          "name": "CoCreateGuid",
+          "address": "0x7ca9b0"
+        },
+        {
+          "name": "CLSIDFromProgID",
+          "address": "0x7ca9b4"
+        },
+        {
+          "name": "ProgIDFromCLSID",
+          "address": "0x7ca9b8"
+        },
+        {
+          "name": "StringFromCLSID",
+          "address": "0x7ca9bc"
+        },
+        {
+          "name": "CoCreateInstance",
+          "address": "0x7ca9c0"
+        },
+        {
+          "name": "CoGetClassObject",
+          "address": "0x7ca9c4"
+        },
+        {
+          "name": "CoUninitialize",
+          "address": "0x7ca9c8"
+        },
+        {
+          "name": "CoInitialize",
+          "address": "0x7ca9cc"
+        },
+        {
+          "name": "IsEqualGUID",
+          "address": "0x7ca9d0"
+        }
+      ],
+      "comctl32.dll": [
+        {
+          "name": "ImageList_SetIconSize",
+          "address": "0x7ca9e8"
+        },
+        {
+          "name": "ImageList_GetIconSize",
+          "address": "0x7ca9ec"
+        },
+        {
+          "name": "ImageList_Write",
+          "address": "0x7ca9f0"
+        },
+        {
+          "name": "ImageList_Read",
+          "address": "0x7ca9f4"
+        },
+        {
+          "name": "ImageList_GetDragImage",
+          "address": "0x7ca9f8"
+        },
+        {
+          "name": "ImageList_DragShowNolock",
+          "address": "0x7ca9fc"
+        },
+        {
+          "name": "ImageList_SetDragCursorImage",
+          "address": "0x7caa00"
+        },
+        {
+          "name": "ImageList_DragMove",
+          "address": "0x7caa04"
+        },
+        {
+          "name": "ImageList_DragLeave",
+          "address": "0x7caa08"
+        },
+        {
+          "name": "ImageList_DragEnter",
+          "address": "0x7caa0c"
+        },
+        {
+          "name": "ImageList_EndDrag",
+          "address": "0x7caa10"
+        },
+        {
+          "name": "ImageList_BeginDrag",
+          "address": "0x7caa14"
+        },
+        {
+          "name": "ImageList_Remove",
+          "address": "0x7caa18"
+        },
+        {
+          "name": "ImageList_DrawEx",
+          "address": "0x7caa1c"
+        },
+        {
+          "name": "ImageList_Replace",
+          "address": "0x7caa20"
+        },
+        {
+          "name": "ImageList_Draw",
+          "address": "0x7caa24"
+        },
+        {
+          "name": "ImageList_GetBkColor",
+          "address": "0x7caa28"
+        },
+        {
+          "name": "ImageList_SetBkColor",
+          "address": "0x7caa2c"
+        },
+        {
+          "name": "ImageList_ReplaceIcon",
+          "address": "0x7caa30"
+        },
+        {
+          "name": "ImageList_Add",
+          "address": "0x7caa34"
+        },
+        {
+          "name": "ImageList_GetImageCount",
+          "address": "0x7caa38"
+        },
+        {
+          "name": "ImageList_Destroy",
+          "address": "0x7caa3c"
+        },
+        {
+          "name": "ImageList_Create",
+          "address": "0x7caa40"
+        },
+        {
+          "name": "InitCommonControls",
+          "address": "0x7caa44"
+        }
+      ],
+      "winspool.drv": [
+        {
+          "name": "OpenPrinterA",
+          "address": "0x7caa4c"
+        },
+        {
+          "name": "EnumPrintersA",
+          "address": "0x7caa50"
+        },
+        {
+          "name": "DocumentPropertiesA",
+          "address": "0x7caa54"
+        },
+        {
+          "name": "ClosePrinter",
+          "address": "0x7caa58"
+        }
+      ],
+      "shell32.dll": [
+        {
+          "name": "ShellExecuteW",
+          "address": "0x7caa60"
+        },
+        {
+          "name": "ShellExecuteA",
+          "address": "0x7caa64"
+        },
+        {
+          "name": "SHGetFileInfoA",
+          "address": "0x7caa68"
+        }
+      ],
+      "comdlg32.dll": [
+        {
+          "name": "ChooseColorA",
+          "address": "0x7caa70"
+        }
+      ],
+      "gdiplus.dll": [
+        {
+          "name": "GdipGetImageGraphicsContext",
+          "address": "0x7caa78"
+        },
+        {
+          "name": "GdipGetImagePixelFormat",
+          "address": "0x7caa7c"
+        },
+        {
+          "name": "GdipSetPathGradientPresetBlend",
+          "address": "0x7caa80"
+        },
+        {
+          "name": "GdipSetPathGradientWrapMode",
+          "address": "0x7caa84"
+        },
+        {
+          "name": "GdipSetLineGammaCorrection",
+          "address": "0x7caa88"
+        },
+        {
+          "name": "GdipSetImageAttributesColorKeys",
+          "address": "0x7caa8c"
+        },
+        {
+          "name": "GdipDisposeImageAttributes",
+          "address": "0x7caa90"
+        },
+        {
+          "name": "GdipCreateImageAttributes",
+          "address": "0x7caa94"
+        },
+        {
+          "name": "GdipCreateTexture",
+          "address": "0x7caa98"
+        },
+        {
+          "name": "GdipResetClip",
+          "address": "0x7caa9c"
+        },
+        {
+          "name": "GdipBitmapGetPixel",
+          "address": "0x7caaa0"
+        },
+        {
+          "name": "GdipCreateHBITMAPFromBitmap",
+          "address": "0x7caaa4"
+        },
+        {
+          "name": "GdipCreateBitmapFromScan0",
+          "address": "0x7caaa8"
+        },
+        {
+          "name": "GdipCreateBitmapFromStream",
+          "address": "0x7caaac"
+        },
+        {
+          "name": "GdipCreateBitmapFromStreamICM",
+          "address": "0x7caab0"
+        },
+        {
+          "name": "GdipDeleteRegion",
+          "address": "0x7caab4"
+        },
+        {
+          "name": "GdipCreateRegionPath",
+          "address": "0x7caab8"
+        },
+        {
+          "name": "GdipCreateRegionRect",
+          "address": "0x7caabc"
+        },
+        {
+          "name": "GdipSetClipRegion",
+          "address": "0x7caac0"
+        },
+        {
+          "name": "GdipSetStringFormatHotkeyPrefix",
+          "address": "0x7caac4"
+        },
+        {
+          "name": "GdipSetPenDashStyle",
+          "address": "0x7caac8"
+        },
+        {
+          "name": "GdipGetImageHeight",
+          "address": "0x7caacc"
+        },
+        {
+          "name": "GdipGetImageWidth",
+          "address": "0x7caad0"
+        },
+        {
+          "name": "GdipDisposeImage",
+          "address": "0x7caad4"
+        },
+        {
+          "name": "GdipLoadImageFromStreamICM",
+          "address": "0x7caad8"
+        },
+        {
+          "name": "GdipLoadImageFromStream",
+          "address": "0x7caadc"
+        },
+        {
+          "name": "GdipFillPath",
+          "address": "0x7caae0"
+        },
+        {
+          "name": "GdipCreateLineBrush",
+          "address": "0x7caae4"
+        },
+        {
+          "name": "GdipDrawLine",
+          "address": "0x7caae8"
+        },
+        {
+          "name": "GdipDrawRectangle",
+          "address": "0x7caaec"
+        },
+        {
+          "name": "GdipDrawImageRectRect",
+          "address": "0x7caaf0"
+        },
+        {
+          "name": "GdipDrawImageRect",
+          "address": "0x7caaf4"
+        },
+        {
+          "name": "GdipDrawImageI",
+          "address": "0x7caaf8"
+        },
+        {
+          "name": "GdipGetImageRawFormat",
+          "address": "0x7caafc"
+        },
+        {
+          "name": "GdipSetStringFormatTrimming",
+          "address": "0x7cab00"
+        },
+        {
+          "name": "GdipSetStringFormatLineAlign",
+          "address": "0x7cab04"
+        },
+        {
+          "name": "GdipSetStringFormatAlign",
+          "address": "0x7cab08"
+        },
+        {
+          "name": "GdipDeleteStringFormat",
+          "address": "0x7cab0c"
+        },
+        {
+          "name": "GdipCreateStringFormat",
+          "address": "0x7cab10"
+        },
+        {
+          "name": "GdipMeasureString",
+          "address": "0x7cab14"
+        },
+        {
+          "name": "GdipDrawString",
+          "address": "0x7cab18"
+        },
+        {
+          "name": "GdipDeleteFont",
+          "address": "0x7cab1c"
+        },
+        {
+          "name": "GdipCreateFont",
+          "address": "0x7cab20"
+        },
+        {
+          "name": "GdipDeleteFontFamily",
+          "address": "0x7cab24"
+        },
+        {
+          "name": "GdipCreateFontFamilyFromName",
+          "address": "0x7cab28"
+        },
+        {
+          "name": "GdipGraphicsClear",
+          "address": "0x7cab2c"
+        },
+        {
+          "name": "GdipFillRectangle",
+          "address": "0x7cab30"
+        },
+        {
+          "name": "GdipDrawPath",
+          "address": "0x7cab34"
+        },
+        {
+          "name": "GdipSetTextRenderingHint",
+          "address": "0x7cab38"
+        },
+        {
+          "name": "GdipGetSmoothingMode",
+          "address": "0x7cab3c"
+        },
+        {
+          "name": "GdipSetSmoothingMode",
+          "address": "0x7cab40"
+        },
+        {
+          "name": "GdipReleaseDC",
+          "address": "0x7cab44"
+        },
+        {
+          "name": "GdipGetDC",
+          "address": "0x7cab48"
+        },
+        {
+          "name": "GdipDeleteGraphics",
+          "address": "0x7cab4c"
+        },
+        {
+          "name": "GdipCreateFromHDC",
+          "address": "0x7cab50"
+        },
+        {
+          "name": "GdipDeletePen",
+          "address": "0x7cab54"
+        },
+        {
+          "name": "GdipCreatePen1",
+          "address": "0x7cab58"
+        },
+        {
+          "name": "GdipGetPathGradientPointCount",
+          "address": "0x7cab5c"
+        },
+        {
+          "name": "GdipSetPathGradientCenterPointI",
+          "address": "0x7cab60"
+        },
+        {
+          "name": "GdipSetPathGradientCenterPoint",
+          "address": "0x7cab64"
+        },
+        {
+          "name": "GdipSetPathGradientSurroundColorsWithCount",
+          "address": "0x7cab68"
+        },
+        {
+          "name": "GdipSetPathGradientCenterColor",
+          "address": "0x7cab6c"
+        },
+        {
+          "name": "GdipCreatePathGradientFromPath",
+          "address": "0x7cab70"
+        },
+        {
+          "name": "GdipResetPath",
+          "address": "0x7cab74"
+        },
+        {
+          "name": "GdipCreateLineBrushFromRectWithAngle",
+          "address": "0x7cab78"
+        },
+        {
+          "name": "GdipCreateLineBrushFromRect",
+          "address": "0x7cab7c"
+        },
+        {
+          "name": "GdipCreateSolidFill",
+          "address": "0x7cab80"
+        },
+        {
+          "name": "GdipCreateHatchBrush",
+          "address": "0x7cab84"
+        },
+        {
+          "name": "GdipDeleteBrush",
+          "address": "0x7cab88"
+        },
+        {
+          "name": "GdipAddPathEllipse",
+          "address": "0x7cab8c"
+        },
+        {
+          "name": "GdipAddPathArc",
+          "address": "0x7cab90"
+        },
+        {
+          "name": "GdipAddPathLine",
+          "address": "0x7cab94"
+        },
+        {
+          "name": "GdipClosePathFigure",
+          "address": "0x7cab98"
+        },
+        {
+          "name": "GdipDeletePath",
+          "address": "0x7cab9c"
+        },
+        {
+          "name": "GdipCreatePath",
+          "address": "0x7caba0"
+        },
+        {
+          "name": "GdipFillEllipseI",
+          "address": "0x7caba4"
+        },
+        {
+          "name": "GdiplusShutdown",
+          "address": "0x7caba8"
+        },
+        {
+          "name": "GdiplusStartup",
+          "address": "0x7cabac"
+        },
+        {
+          "name": "GdipFree",
+          "address": "0x7cabb0"
+        },
+        {
+          "name": "GdipAlloc",
+          "address": "0x7cabb4"
+        }
+      ],
+      "winmm.dll": [
+        {
+          "name": "timeGetTime",
+          "address": "0x7cabbc"
+        },
+        {
+          "name": "mciSendStringA",
+          "address": "0x7cabc0"
+        },
+        {
+          "name": "mciGetErrorStringA",
+          "address": "0x7cabc4"
+        }
+      ]
+    },
+    "resources": [
+      {
+        "path": "JPEG/CAMPOGRANDE/1046",
+        "file": "cf2015_JPEG_CAMPOGRANDE_1046.bin",
+        "size": 75574,
+        "dfm": false
+      },
+      {
+        "path": "JPEG/CAMPOGRANDE2/1046",
+        "file": "cf2015_JPEG_CAMPOGRANDE2_1046.bin",
+        "size": 53582,
+        "dfm": false
+      },
+      {
+        "path": "JPEG/TINICIO/1046",
+        "file": "cf2015_JPEG_TINICIO_1046.bin",
+        "size": 27105,
+        "dfm": false
+      },
+      {
+        "path": "1/1/0",
+        "file": "cf2015_1_1_0.bin",
+        "size": 308,
+        "dfm": false
+      },
+      {
+        "path": "1/2/0",
+        "file": "cf2015_1_2_0.bin",
+        "size": 308,
+        "dfm": false
+      },
+      {
+        "path": "1/3/0",
+        "file": "cf2015_1_3_0.bin",
+        "size": 308,
+        "dfm": false
+      },
+      {
+        "path": "1/4/1033",
+        "file": "cf2015_1_4_1033.bin",
+        "size": 308,
+        "dfm": false
+      },
+      {
+        "path": "1/5/0",
+        "file": "cf2015_1_5_0.bin",
+        "size": 308,
+        "dfm": false
+      },
+      {
+        "path": "1/6/0",
+        "file": "cf2015_1_6_0.bin",
+        "size": 308,
+        "dfm": false
+      },
+      {
+        "path": "1/7/0",
+        "file": "cf2015_1_7_0.bin",
+        "size": 308,
+        "dfm": false
+      },
+      {
+        "path": "1/8/1046",
+        "file": "cf2015_1_8_1046.bin",
+        "size": 4268,
+        "dfm": false
+      },
+      {
+        "path": "1/9/1046",
+        "file": "cf2015_1_9_1046.bin",
+        "size": 4268,
+        "dfm": false
+      },
+      {
+        "path": "1/10/1046",
+        "file": "cf2015_1_10_1046.bin",
+        "size": 4268,
+        "dfm": false
+      },
+      {
+        "path": "1/11/1046",
+        "file": "cf2015_1_11_1046.bin",
+        "size": 4268,
+        "dfm": false
+      },
+      {
+        "path": "1/12/1046",
+        "file": "cf2015_1_12_1046.bin",
+        "size": 4268,
+        "dfm": false
+      },
+      {
+        "path": "1/13/1033",
+        "file": "cf2015_1_13_1033.bin",
+        "size": 308,
+        "dfm": false
+      },
+      {
+        "path": "1/14/1033",
+        "file": "cf2015_1_14_1033.bin",
+        "size": 308,
+        "dfm": false
+      },
+      {
+        "path": "1/15/1033",
+        "file": "cf2015_1_15_1033.bin",
+        "size": 308,
+        "dfm": false
+      },
+      {
+        "path": "1/16/1033",
+        "file": "cf2015_1_16_1033.bin",
+        "size": 308,
+        "dfm": false
+      },
+      {
+        "path": "1/17/1033",
+        "file": "cf2015_1_17_1033.bin",
+        "size": 308,
+        "dfm": false
+      },
+      {
+        "path": "1/18/1033",
+        "file": "cf2015_1_18_1033.bin",
+        "size": 308,
+        "dfm": false
+      },
+      {
+        "path": "1/19/1033",
+        "file": "cf2015_1_19_1033.bin",
+        "size": 308,
+        "dfm": false
+      },
+      {
+        "path": "1/20/0",
+        "file": "cf2015_1_20_0.bin",
+        "size": 308,
+        "dfm": false
+      },
+      {
+        "path": "2/BBABORT/0",
+        "file": "cf2015_2_BBABORT_0.bin",
+        "size": 464,
+        "dfm": false
+      },
+      {
+        "path": "2/BBALL/0",
+        "file": "cf2015_2_BBALL_0.bin",
+        "size": 484,
+        "dfm": false
+      },
+      {
+        "path": "2/BBCANCEL/0",
+        "file": "cf2015_2_BBCANCEL_0.bin",
+        "size": 464,
+        "dfm": false
+      },
+      {
+        "path": "2/BBCLOSE/0",
+        "file": "cf2015_2_BBCLOSE_0.bin",
+        "size": 464,
+        "dfm": false
+      },
+      {
+        "path": "2/BBHELP/0",
+        "file": "cf2015_2_BBHELP_0.bin",
+        "size": 464,
+        "dfm": false
+      },
+      {
+        "path": "2/BBIGNORE/0",
+        "file": "cf2015_2_BBIGNORE_0.bin",
+        "size": 464,
+        "dfm": false
+      },
+      {
+        "path": "2/BBNO/0",
+        "file": "cf2015_2_BBNO_0.bin",
+        "size": 464,
+        "dfm": false
+      },
+      {
+        "path": "2/BBOK/0",
+        "file": "cf2015_2_BBOK_0.bin",
+        "size": 464,
+        "dfm": false
+      },
+      {
+        "path": "2/BBRETRY/0",
+        "file": "cf2015_2_BBRETRY_0.bin",
+        "size": 464,
+        "dfm": false
+      },
+      {
+        "path": "2/BBYES/0",
+        "file": "cf2015_2_BBYES_0.bin",
+        "size": 464,
+        "dfm": false
+      },
+      {
+        "path": "2/CDROM/0",
+        "file": "cf2015_2_CDROM_0.bin",
+        "size": 192,
+        "dfm": false
+      },
+      {
+        "path": "2/CLOSEDFOLDER/0",
+        "file": "cf2015_2_CLOSEDFOLDER_0.bin",
+        "size": 224,
+        "dfm": false
+      },
+      {
+        "path": "2/CURRENTFOLDER/0",
+        "file": "cf2015_2_CURRENTFOLDER_0.bin",
+        "size": 224,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGCANCEL/1033",
+        "file": "cf2015_2_DBIMGCANCEL_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGCANCELD/1033",
+        "file": "cf2015_2_DBIMGCANCELD_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGDELETE/1033",
+        "file": "cf2015_2_DBIMGDELETE_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGDELETED/1033",
+        "file": "cf2015_2_DBIMGDELETED_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGEDIT/1033",
+        "file": "cf2015_2_DBIMGEDIT_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGEDITD/1033",
+        "file": "cf2015_2_DBIMGEDITD_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGFIRST/1033",
+        "file": "cf2015_2_DBIMGFIRST_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGFIRSTD/1033",
+        "file": "cf2015_2_DBIMGFIRSTD_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGINSERT/1033",
+        "file": "cf2015_2_DBIMGINSERT_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGINSERTD/1033",
+        "file": "cf2015_2_DBIMGINSERTD_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGLAST/1033",
+        "file": "cf2015_2_DBIMGLAST_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGLASTD/1033",
+        "file": "cf2015_2_DBIMGLASTD_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGNEXT/1033",
+        "file": "cf2015_2_DBIMGNEXT_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGNEXTD/1033",
+        "file": "cf2015_2_DBIMGNEXTD_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGPOST/1033",
+        "file": "cf2015_2_DBIMGPOST_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGPOSTD/1033",
+        "file": "cf2015_2_DBIMGPOSTD_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGPRIOR/1033",
+        "file": "cf2015_2_DBIMGPRIOR_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGPRIORD/1033",
+        "file": "cf2015_2_DBIMGPRIORD_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGREFRESH/1033",
+        "file": "cf2015_2_DBIMGREFRESH_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/DBIMGREFRESHD/1033",
+        "file": "cf2015_2_DBIMGREFRESHD_1033.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/EXECUTABLE/0",
+        "file": "cf2015_2_EXECUTABLE_0.bin",
+        "size": 224,
+        "dfm": false
+      },
+      {
+        "path": "2/FLOPPY/0",
+        "file": "cf2015_2_FLOPPY_0.bin",
+        "size": 192,
+        "dfm": false
+      },
+      {
+        "path": "2/HARD/0",
+        "file": "cf2015_2_HARD_0.bin",
+        "size": 192,
+        "dfm": false
+      },
+      {
+        "path": "2/HTMBCHK01/2067",
+        "file": "cf2015_2_HTMBCHK01_2067.bin",
+        "size": 344,
+        "dfm": false
+      },
+      {
+        "path": "2/HTMBCHK02/2067",
+        "file": "cf2015_2_HTMBCHK02_2067.bin",
+        "size": 344,
+        "dfm": false
+      },
+      {
+        "path": "2/HTMBCHK03/2067",
+        "file": "cf2015_2_HTMBCHK03_2067.bin",
+        "size": 344,
+        "dfm": false
+      },
+      {
+        "path": "2/HTMBCHK04/2067",
+        "file": "cf2015_2_HTMBCHK04_2067.bin",
+        "size": 344,
+        "dfm": false
+      },
+      {
+        "path": "2/HTMBCHK05/2067",
+        "file": "cf2015_2_HTMBCHK05_2067.bin",
+        "size": 1320,
+        "dfm": false
+      },
+      {
+        "path": "2/HTMBCHK06/2067",
+        "file": "cf2015_2_HTMBCHK06_2067.bin",
+        "size": 1320,
+        "dfm": false
+      },
+      {
+        "path": "2/HTMBCHK07/2067",
+        "file": "cf2015_2_HTMBCHK07_2067.bin",
+        "size": 1320,
+        "dfm": false
+      },
+      {
+        "path": "2/HTMBCHK08/2067",
+        "file": "cf2015_2_HTMBCHK08_2067.bin",
+        "size": 1320,
+        "dfm": false
+      },
+      {
+        "path": "2/HTMBRAD01/2067",
+        "file": "cf2015_2_HTMBRAD01_2067.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/HTMBRAD02/2067",
+        "file": "cf2015_2_HTMBRAD02_2067.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/HTMBRAD03/2067",
+        "file": "cf2015_2_HTMBRAD03_2067.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/HTMBRAD04/2067",
+        "file": "cf2015_2_HTMBRAD04_2067.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/HTMBRAD05/2067",
+        "file": "cf2015_2_HTMBRAD05_2067.bin",
+        "size": 1320,
+        "dfm": false
+      },
+      {
+        "path": "2/HTMBRAD06/2067",
+        "file": "cf2015_2_HTMBRAD06_2067.bin",
+        "size": 1320,
+        "dfm": false
+      },
+      {
+        "path": "2/HTMBRAD07/2067",
+        "file": "cf2015_2_HTMBRAD07_2067.bin",
+        "size": 1320,
+        "dfm": false
+      },
+      {
+        "path": "2/HTMBRAD08/2067",
+        "file": "cf2015_2_HTMBRAD08_2067.bin",
+        "size": 1320,
+        "dfm": false
+      },
+      {
+        "path": "2/KNOWNFILE/0",
+        "file": "cf2015_2_KNOWNFILE_0.bin",
+        "size": 224,
+        "dfm": false
+      },
+      {
+        "path": "2/MORECOLORSBUTTON/1033",
+        "file": "cf2015_2_MORECOLORSBUTTON_1033.bin",
+        "size": 472,
+        "dfm": false
+      },
+      {
+        "path": "2/NETWORK/0",
+        "file": "cf2015_2_NETWORK_0.bin",
+        "size": 192,
+        "dfm": false
+      },
+      {
+        "path": "2/NONECOLOR/1033",
+        "file": "cf2015_2_NONECOLOR_1033.bin",
+        "size": 436,
+        "dfm": false
+      },
+      {
+        "path": "2/OPENFOLDER/0",
+        "file": "cf2015_2_OPENFOLDER_0.bin",
+        "size": 224,
+        "dfm": false
+      },
+      {
+        "path": "2/PREVIEWGLYPH/0",
+        "file": "cf2015_2_PREVIEWGLYPH_0.bin",
+        "size": 232,
+        "dfm": false
+      },
+      {
+        "path": "2/RAM/0",
+        "file": "cf2015_2_RAM_0.bin",
+        "size": 192,
+        "dfm": false
+      },
+      {
+        "path": "2/TXIBUTTON/1033",
+        "file": "cf2015_2_TXIBUTTON_1033.bin",
+        "size": 1768,
+        "dfm": false
+      },
+      {
+        "path": "2/UNKNOWNFILE/0",
+        "file": "cf2015_2_UNKNOWNFILE_0.bin",
+        "size": 224,
+        "dfm": false
+      },
+      {
+        "path": "3/1/1046",
+        "file": "cf2015_3_1_1046.bin",
+        "size": 67624,
+        "dfm": false
+      },
+      {
+        "path": "5/DLGTEMPLATE/0",
+        "file": "cf2015_5_DLGTEMPLATE_0.bin",
+        "size": 82,
+        "dfm": false
+      },
+      {
+        "path": "6/4073/0",
+        "file": "cf2015_6_4073_0.bin",
+        "size": 740,
+        "dfm": false
+      },
+      {
+        "path": "6/4074/0",
+        "file": "cf2015_6_4074_0.bin",
+        "size": 940,
+        "dfm": false
+      },
+      {
+        "path": "6/4075/0",
+        "file": "cf2015_6_4075_0.bin",
+        "size": 1080,
+        "dfm": false
+      },
+      {
+        "path": "6/4076/0",
+        "file": "cf2015_6_4076_0.bin",
+        "size": 1392,
+        "dfm": false
+      },
+      {
+        "path": "6/4077/0",
+        "file": "cf2015_6_4077_0.bin",
+        "size": 2880,
+        "dfm": false
+      },
+      {
+        "path": "6/4078/0",
+        "file": "cf2015_6_4078_0.bin",
+        "size": 716,
+        "dfm": false
+      },
+      {
+        "path": "6/4079/0",
+        "file": "cf2015_6_4079_0.bin",
+        "size": 492,
+        "dfm": false
+      },
+      {
+        "path": "6/4080/0",
+        "file": "cf2015_6_4080_0.bin",
+        "size": 316,
+        "dfm": false
+      },
+      {
+        "path": "6/4081/0",
+        "file": "cf2015_6_4081_0.bin",
+        "size": 688,
+        "dfm": false
+      },
+      {
+        "path": "6/4082/0",
+        "file": "cf2015_6_4082_0.bin",
+        "size": 640,
+        "dfm": false
+      },
+      {
+        "path": "6/4083/0",
+        "file": "cf2015_6_4083_0.bin",
+        "size": 224,
+        "dfm": false
+      },
+      {
+        "path": "6/4084/0",
+        "file": "cf2015_6_4084_0.bin",
+        "size": 316,
+        "dfm": false
+      },
+      {
+        "path": "6/4085/0",
+        "file": "cf2015_6_4085_0.bin",
+        "size": 592,
+        "dfm": false
+      },
+      {
+        "path": "6/4086/0",
+        "file": "cf2015_6_4086_0.bin",
+        "size": 1056,
+        "dfm": false
+      },
+      {
+        "path": "6/4087/0",
+        "file": "cf2015_6_4087_0.bin",
+        "size": 848,
+        "dfm": false
+      },
+      {
+        "path": "6/4088/0",
+        "file": "cf2015_6_4088_0.bin",
+        "size": 900,
+        "dfm": false
+      },
+      {
+        "path": "6/4089/0",
+        "file": "cf2015_6_4089_0.bin",
+        "size": 952,
+        "dfm": false
+      },
+      {
+        "path": "6/4090/0",
+        "file": "cf2015_6_4090_0.bin",
+        "size": 648,
+        "dfm": false
+      },
+      {
+        "path": "6/4091/0",
+        "file": "cf2015_6_4091_0.bin",
+        "size": 228,
+        "dfm": false
+      },
+      {
+        "path": "6/4092/0",
+        "file": "cf2015_6_4092_0.bin",
+        "size": 396,
+        "dfm": false
+      },
+      {
+        "path": "6/4093/0",
+        "file": "cf2015_6_4093_0.bin",
+        "size": 1004,
+        "dfm": false
+      },
+      {
+        "path": "6/4094/0",
+        "file": "cf2015_6_4094_0.bin",
+        "size": 1012,
+        "dfm": false
+      },
+      {
+        "path": "6/4095/0",
+        "file": "cf2015_6_4095_0.bin",
+        "size": 764,
+        "dfm": false
+      },
+      {
+        "path": "6/4096/0",
+        "file": "cf2015_6_4096_0.bin",
+        "size": 852,
+        "dfm": false
+      },
+      {
+        "path": "10/BT1/1046",
+        "file": "cf2015_10_BT1_1046.bin",
+        "size": 12885,
+        "dfm": false
+      },
+      {
+        "path": "10/BT2/1046",
+        "file": "cf2015_10_BT2_1046.bin",
+        "size": 15199,
+        "dfm": false
+      },
+      {
+        "path": "10/BT3/1046",
+        "file": "cf2015_10_BT3_1046.bin",
+        "size": 14562,
+        "dfm": false
+      },
+      {
+        "path": "10/BT4/1046",
+        "file": "cf2015_10_BT4_1046.bin",
+        "size": 15947,
+        "dfm": false
+      },
+      {
+        "path": "10/BT5/1046",
+        "file": "cf2015_10_BT5_1046.bin",
+        "size": 11321,
+        "dfm": false
+      },
+      {
+        "path": "10/BT6/1046",
+        "file": "cf2015_10_BT6_1046.bin",
+        "size": 13466,
+        "dfm": false
+      },
+      {
+        "path": "10/BT7/1046",
+        "file": "cf2015_10_BT7_1046.bin",
+        "size": 12762,
+        "dfm": false
+      },
+      {
+        "path": "10/BT8/1046",
+        "file": "cf2015_10_BT8_1046.bin",
+        "size": 13974,
+        "dfm": false
+      },
+      {
+        "path": "10/BT9/1046",
+        "file": "cf2015_10_BT9_1046.bin",
+        "size": 13332,
+        "dfm": false
+      },
+      {
+        "path": "10/CAMISA0/1046",
+        "file": "cf2015_10_CAMISA0_1046.bin",
+        "size": 2169,
+        "dfm": false
+      },
+      {
+        "path": "10/CAMISA1/1046",
+        "file": "cf2015_10_CAMISA1_1046.bin",
+        "size": 2359,
+        "dfm": false
+      },
+      {
+        "path": "10/CAMISA2/1046",
+        "file": "cf2015_10_CAMISA2_1046.bin",
+        "size": 1533,
+        "dfm": false
+      },
+      {
+        "path": "10/CAMISA3/1046",
+        "file": "cf2015_10_CAMISA3_1046.bin",
+        "size": 2445,
+        "dfm": false
+      },
+      {
+        "path": "10/CAMPOALPHA/1046",
+        "file": "cf2015_10_CAMPOALPHA_1046.bin",
+        "size": 6782,
+        "dfm": false
+      },
+      {
+        "path": "10/DVCLAL/0",
+        "file": "cf2015_10_DVCLAL_0.bin",
+        "size": 16,
+        "dfm": false
+      },
+      {
+        "path": "10/I_CA/1046",
+        "file": "cf2015_10_I_CA_1046.bin",
+        "size": 587,
+        "dfm": false
+      },
+      {
+        "path": "10/I_CACV/1046",
+        "file": "cf2015_10_I_CACV_1046.bin",
+        "size": 829,
+        "dfm": false
+      },
+      {
+        "path": "10/I_CT/1046",
+        "file": "cf2015_10_I_CT_1046.bin",
+        "size": 788,
+        "dfm": false
+      },
+      {
+        "path": "10/I_CV/1046",
+        "file": "cf2015_10_I_CV_1046.bin",
+        "size": 725,
+        "dfm": false
+      },
+      {
+        "path": "10/I_GOL/1046",
+        "file": "cf2015_10_I_GOL_1046.bin",
+        "size": 1052,
+        "dfm": false
+      },
+      {
+        "path": "10/I_GOLV/1046",
+        "file": "cf2015_10_I_GOLV_1046.bin",
+        "size": 917,
+        "dfm": false
+      },
+      {
+        "path": "10/I_SUB/1046",
+        "file": "cf2015_10_I_SUB_1046.bin",
+        "size": 866,
+        "dfm": false
+      },
+      {
+        "path": "10/PACKAGEINFO/0",
+        "file": "cf2015_10_PACKAGEINFO_0.bin",
+        "size": 2844,
+        "dfm": false
+      },
+      {
+        "path": "10/TFORM1/0",
+        "file": "cf2015_10_TFORM1_0.bin",
+        "size": 84410,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM10/0",
+        "file": "cf2015_10_TFORM10_0.bin",
+        "size": 26802,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM11/0",
+        "file": "cf2015_10_TFORM11_0.bin",
+        "size": 6972,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM12/0",
+        "file": "cf2015_10_TFORM12_0.bin",
+        "size": 801,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM13/0",
+        "file": "cf2015_10_TFORM13_0.bin",
+        "size": 276486,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM14/0",
+        "file": "cf2015_10_TFORM14_0.bin",
+        "size": 80531,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM15/0",
+        "file": "cf2015_10_TFORM15_0.bin",
+        "size": 4184,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM16/0",
+        "file": "cf2015_10_TFORM16_0.bin",
+        "size": 10521,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM17/0",
+        "file": "cf2015_10_TFORM17_0.bin",
+        "size": 884,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM18/0",
+        "file": "cf2015_10_TFORM18_0.bin",
+        "size": 5640,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM19/0",
+        "file": "cf2015_10_TFORM19_0.bin",
+        "size": 13140,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM2/0",
+        "file": "cf2015_10_TFORM2_0.bin",
+        "size": 1506,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM20/0",
+        "file": "cf2015_10_TFORM20_0.bin",
+        "size": 6053,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM21/0",
+        "file": "cf2015_10_TFORM21_0.bin",
+        "size": 7229,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM22/0",
+        "file": "cf2015_10_TFORM22_0.bin",
+        "size": 6121,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM23/0",
+        "file": "cf2015_10_TFORM23_0.bin",
+        "size": 10061,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM24/0",
+        "file": "cf2015_10_TFORM24_0.bin",
+        "size": 3531,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM25/0",
+        "file": "cf2015_10_TFORM25_0.bin",
+        "size": 1471,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM26/0",
+        "file": "cf2015_10_TFORM26_0.bin",
+        "size": 30515,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM27/0",
+        "file": "cf2015_10_TFORM27_0.bin",
+        "size": 42233,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM28/0",
+        "file": "cf2015_10_TFORM28_0.bin",
+        "size": 3358,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM29/0",
+        "file": "cf2015_10_TFORM29_0.bin",
+        "size": 10482,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM3/0",
+        "file": "cf2015_10_TFORM3_0.bin",
+        "size": 54436,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM30/0",
+        "file": "cf2015_10_TFORM30_0.bin",
+        "size": 8182,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM31/0",
+        "file": "cf2015_10_TFORM31_0.bin",
+        "size": 2992,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM32/0",
+        "file": "cf2015_10_TFORM32_0.bin",
+        "size": 20824,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM33/0",
+        "file": "cf2015_10_TFORM33_0.bin",
+        "size": 453,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM34/0",
+        "file": "cf2015_10_TFORM34_0.bin",
+        "size": 159991,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM35/0",
+        "file": "cf2015_10_TFORM35_0.bin",
+        "size": 61258,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM36/0",
+        "file": "cf2015_10_TFORM36_0.bin",
+        "size": 23149,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM37/0",
+        "file": "cf2015_10_TFORM37_0.bin",
+        "size": 8967,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM38/0",
+        "file": "cf2015_10_TFORM38_0.bin",
+        "size": 3188,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM39/0",
+        "file": "cf2015_10_TFORM39_0.bin",
+        "size": 11458,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM4/0",
+        "file": "cf2015_10_TFORM4_0.bin",
+        "size": 8689,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM40/0",
+        "file": "cf2015_10_TFORM40_0.bin",
+        "size": 1255,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM41/0",
+        "file": "cf2015_10_TFORM41_0.bin",
+        "size": 978,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM42/0",
+        "file": "cf2015_10_TFORM42_0.bin",
+        "size": 8121,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM43/0",
+        "file": "cf2015_10_TFORM43_0.bin",
+        "size": 3963,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM44/0",
+        "file": "cf2015_10_TFORM44_0.bin",
+        "size": 4582,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM45/0",
+        "file": "cf2015_10_TFORM45_0.bin",
+        "size": 2583,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM46/0",
+        "file": "cf2015_10_TFORM46_0.bin",
+        "size": 29179,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM47/0",
+        "file": "cf2015_10_TFORM47_0.bin",
+        "size": 12166,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM48/0",
+        "file": "cf2015_10_TFORM48_0.bin",
+        "size": 5320,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM49/0",
+        "file": "cf2015_10_TFORM49_0.bin",
+        "size": 1731,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM5/0",
+        "file": "cf2015_10_TFORM5_0.bin",
+        "size": 8080,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM50/0",
+        "file": "cf2015_10_TFORM50_0.bin",
+        "size": 8253,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM51/0",
+        "file": "cf2015_10_TFORM51_0.bin",
+        "size": 2185,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM52/0",
+        "file": "cf2015_10_TFORM52_0.bin",
+        "size": 34389,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM53/0",
+        "file": "cf2015_10_TFORM53_0.bin",
+        "size": 160182,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM54/0",
+        "file": "cf2015_10_TFORM54_0.bin",
+        "size": 26738,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM55/0",
+        "file": "cf2015_10_TFORM55_0.bin",
+        "size": 10855,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM57/0",
+        "file": "cf2015_10_TFORM57_0.bin",
+        "size": 10086,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM58/0",
+        "file": "cf2015_10_TFORM58_0.bin",
+        "size": 4427,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM59/0",
+        "file": "cf2015_10_TFORM59_0.bin",
+        "size": 1649,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM6/0",
+        "file": "cf2015_10_TFORM6_0.bin",
+        "size": 6882,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM60/0",
+        "file": "cf2015_10_TFORM60_0.bin",
+        "size": 8683,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM61/0",
+        "file": "cf2015_10_TFORM61_0.bin",
+        "size": 1073,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM62/0",
+        "file": "cf2015_10_TFORM62_0.bin",
+        "size": 18217,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM63/0",
+        "file": "cf2015_10_TFORM63_0.bin",
+        "size": 25396,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM64/0",
+        "file": "cf2015_10_TFORM64_0.bin",
+        "size": 2599,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM65/0",
+        "file": "cf2015_10_TFORM65_0.bin",
+        "size": 1224,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM67/0",
+        "file": "cf2015_10_TFORM67_0.bin",
+        "size": 43195,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM68/0",
+        "file": "cf2015_10_TFORM68_0.bin",
+        "size": 3323,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM69/0",
+        "file": "cf2015_10_TFORM69_0.bin",
+        "size": 17911,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM7/0",
+        "file": "cf2015_10_TFORM7_0.bin",
+        "size": 9216,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM70/0",
+        "file": "cf2015_10_TFORM70_0.bin",
+        "size": 6061,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM71/0",
+        "file": "cf2015_10_TFORM71_0.bin",
+        "size": 21987,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM72/0",
+        "file": "cf2015_10_TFORM72_0.bin",
+        "size": 2955,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM73/0",
+        "file": "cf2015_10_TFORM73_0.bin",
+        "size": 6051,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM74/0",
+        "file": "cf2015_10_TFORM74_0.bin",
+        "size": 148337,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM75/0",
+        "file": "cf2015_10_TFORM75_0.bin",
+        "size": 42077,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM76/0",
+        "file": "cf2015_10_TFORM76_0.bin",
+        "size": 3941,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM77/0",
+        "file": "cf2015_10_TFORM77_0.bin",
+        "size": 28310,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM78/0",
+        "file": "cf2015_10_TFORM78_0.bin",
+        "size": 111061,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM79/0",
+        "file": "cf2015_10_TFORM79_0.bin",
+        "size": 5171,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM8/0",
+        "file": "cf2015_10_TFORM8_0.bin",
+        "size": 70647,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM80/0",
+        "file": "cf2015_10_TFORM80_0.bin",
+        "size": 3305,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM81/0",
+        "file": "cf2015_10_TFORM81_0.bin",
+        "size": 4004,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM82/0",
+        "file": "cf2015_10_TFORM82_0.bin",
+        "size": 4109,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM83/0",
+        "file": "cf2015_10_TFORM83_0.bin",
+        "size": 42463,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM84/0",
+        "file": "cf2015_10_TFORM84_0.bin",
+        "size": 1472,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM85/0",
+        "file": "cf2015_10_TFORM85_0.bin",
+        "size": 28393,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM86/0",
+        "file": "cf2015_10_TFORM86_0.bin",
+        "size": 2122,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM87/0",
+        "file": "cf2015_10_TFORM87_0.bin",
+        "size": 370422,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM88/0",
+        "file": "cf2015_10_TFORM88_0.bin",
+        "size": 68144,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM89/0",
+        "file": "cf2015_10_TFORM89_0.bin",
+        "size": 4672,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM9/0",
+        "file": "cf2015_10_TFORM9_0.bin",
+        "size": 26875,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM90/0",
+        "file": "cf2015_10_TFORM90_0.bin",
+        "size": 12501,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM91/0",
+        "file": "cf2015_10_TFORM91_0.bin",
+        "size": 133482,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM92/0",
+        "file": "cf2015_10_TFORM92_0.bin",
+        "size": 7924,
+        "dfm": true
+      },
+      {
+        "path": "10/TFORM93/0",
+        "file": "cf2015_10_TFORM93_0.bin",
+        "size": 6313,
+        "dfm": true
+      },
+      {
+        "path": "12/COLUMNNODRAG/1033",
+        "file": "cf2015_12_COLUMNNODRAG_1033.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/CURSOR0/1046",
+        "file": "cf2015_12_CURSOR0_1046.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/CURSOR1/1046",
+        "file": "cf2015_12_CURSOR1_1046.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/CURSOR2/1046",
+        "file": "cf2015_12_CURSOR2_1046.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/CURSOR3/1046",
+        "file": "cf2015_12_CURSOR3_1046.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/CURSOR5/1046",
+        "file": "cf2015_12_CURSOR5_1046.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/HORZSPLIT/1033",
+        "file": "cf2015_12_HORZSPLIT_1033.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/INDICATORSELECT/1033",
+        "file": "cf2015_12_INDICATORSELECT_1033.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/REVERSEDARROW/1033",
+        "file": "cf2015_12_REVERSEDARROW_1033.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/ROLL/1033",
+        "file": "cf2015_12_ROLL_1033.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/ROLLDOWN/1033",
+        "file": "cf2015_12_ROLLDOWN_1033.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/ROLLUP/1033",
+        "file": "cf2015_12_ROLLUP_1033.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/VERTSPLIT/1033",
+        "file": "cf2015_12_VERTSPLIT_1033.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/32761/0",
+        "file": "cf2015_12_32761_0.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/32762/0",
+        "file": "cf2015_12_32762_0.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/32763/0",
+        "file": "cf2015_12_32763_0.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/32764/0",
+        "file": "cf2015_12_32764_0.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/32765/0",
+        "file": "cf2015_12_32765_0.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/32766/0",
+        "file": "cf2015_12_32766_0.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "12/32767/0",
+        "file": "cf2015_12_32767_0.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "14/MAINICON/1046",
+        "file": "cf2015_14_MAINICON_1046.bin",
+        "size": 20,
+        "dfm": false
+      },
+      {
+        "path": "24/1/0",
+        "file": "cf2015_24_1_0.bin",
+        "size": 581,
+        "dfm": false
+      }
+    ]
+  }
+]

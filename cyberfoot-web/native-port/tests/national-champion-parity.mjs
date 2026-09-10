@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {verifyNationalChampion} from './national-champion-proof.mjs';const r=verifyNationalChampion(JSON.parse(readFileSync(new URL('./national-champion-vectors.json',import.meta.url))));if(r.failures.length)throw Error(JSON.stringify(r.failures.slice(0,2)));console.log(`Original national champion: ${r.cases} cases passed.`);

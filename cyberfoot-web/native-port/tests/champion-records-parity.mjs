@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {verifyChampionRecords} from './champion-records-proof.mjs';const r=verifyChampionRecords(JSON.parse(readFileSync(new URL('./champion-records-vectors.json',import.meta.url))));if(r.failures.length)throw Error(JSON.stringify(r.failures.slice(0,2)));console.log(`Original champion records: ${r.cases} cases passed.`);

@@ -1,0 +1,2 @@
+import {readFileSync} from 'node:fs';import assert from 'node:assert/strict';import {verifyRosterParts,checkRosterIntegration} from './roster-proof.mjs';
+const result=verifyRosterParts(...['roster-sort-vectors.json','human-roster-filter-vectors.json'].map(n=>JSON.parse(readFileSync(new URL(n,import.meta.url)))));assert.deepEqual(result.failures,[]);console.log(`Original roster sorting and filtering: ${result.cases} passed.`);console.log(checkRosterIntegration(readFileSync(new URL('./original-career.s15',import.meta.url))));

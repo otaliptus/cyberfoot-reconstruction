@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {verifyMatchPreparation} from './match-preparation-proof.mjs';const r=verifyMatchPreparation(JSON.parse(readFileSync(new URL('./match-preparation-vectors.json',import.meta.url))));if(r.failures.length)throw Error(JSON.stringify(r.failures.slice(0,2)));console.log(`Original match preparation: ${r.cases} cases passed.`);

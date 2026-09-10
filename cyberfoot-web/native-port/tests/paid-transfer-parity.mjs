@@ -1,0 +1,7 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import {completePaidTransfer} from '../paid-transfer.mjs';import {OriginalRandom} from '../match-core.mjs';
+const cases=JSON.parse(fs.readFileSync(new URL('./paid-transfer-vectors.json',import.meta.url))),bytes=s=>Uint8Array.from(Buffer.from(s,'hex')),hex=b=>Buffer.from(b).toString('hex');let index=0;
+for(const test of cases){const save={career:bytes(test.career),sections:test.sections.map(s=>({...s,data:bytes(s.data),count:s.data.length/2/s.recordSize}))},rng=new OriginalRandom(test.seed),runtime={availableRoleCounts:[...test.available],transferCompensationWaived:test.waived};completePaidTransfer(save,test.player,test.destination,test.fee,{rng,runtime,date:test.date});
+ for(const section of save.sections){const actual=hex(section.data),expected=test.expected.sections[section.name];if(actual!==expected){const at=Array.from({length:Math.max(actual.length,expected.length)/2},(_,i)=>i).find(i=>actual.slice(i*2,i*2+2)!==expected.slice(i*2,i*2+2));throw Error(`case${index} ${section.name} byte${at}: ${actual.slice(at*2,at*2+32)} expected${expected.slice(at*2,at*2+32)}`);}}
+ assert.deepEqual(runtime.availableRoleCounts,test.expected.available,`case${index} roles`);assert.equal(rng.state,test.expected.seed,`case${index} rng`);assert.equal(runtime.transferCompensationWaived,test.expected.waived,`case${index} waiver`);index++;
+}
+console.log(`${cases.length} original paid-transfer comparisons passed (allocation adapter only)`);

@@ -1,0 +1,28 @@
+import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';
+import {writeFileSync} from 'node:fs';import assert from 'node:assert/strict';
+const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1024,height:768}}),errors=[];
+page.on('pageerror',e=>errors.push(String(e)));
+await page.goto('http://127.0.0.1:8766/match-window-preview.html?tacticsIntegration=1');await page.waitForFunction(()=>window.beginTacticsCheck);
+const seed=await page.evaluate(()=>window.tacticsDevelopment.rng.state);
+await page.evaluate(()=>window.beginTacticsCheck());await page.waitForFunction(()=>window.tacticsDevelopment.renderer.frame.form==='Form88');
+assert.equal(await page.evaluate(async seed=>{const {OriginalRandom}=await import('./match-core.mjs');const r=new OriginalRandom(seed);for(let i=0;i<36;i++)r.below(100);return r.state;},seed),await page.evaluate(()=>window.tacticsDevelopment.rng.state));
+const state=()=>page.evaluate(()=>JSON.parse(window.render_game_to_text()).tactics);
+const point=slot=>page.evaluate(slot=>{const r=window.tacticsDevelopment.renderer,t=r.matchTargets.find(t=>t.slot===slot);if(!t)throw Error('No slot '+slot);return {x:r.frame.origin.x+1+t.x+27,y:r.frame.origin.y+1+t.y+27};},slot);
+async function drag(a,b){await page.mouse.move(a.x,a.y);await page.mouse.down();await page.mouse.move(b.x,b.y,{steps:8});await page.mouse.up();await page.waitForFunction(()=>!window.tacticsDevelopment.host.active.busy);}
+const before=await state();await drag(await point(1),await point(2));let after=await state();assert.equal(after.players[0],before.players[1]);assert.equal(after.players[1],before.players[0]);assert.deepEqual(after.substitutions,before.substitutions);
+const position=await page.evaluate(async()=>{const {default:coords}=await import('./lineup-screen-tables.mjs');const r=window.tacticsDevelopment.renderer;return {x:r.frame.origin.x+1+8+coords.x[19]+1,y:r.frame.origin.y+1+8+coords.y[19]+1};});
+await drag(await point(1),position);assert.equal((await state()).positions[0],20);
+const beforeSub=await state(),beforeEvents=await page.evaluate(()=>window.tacticsDevelopment.state.events.length),oldBench13=await point(13);
+await drag(await point(12),await point(1));after=await state();assert.equal(after.players[0],beforeSub.bench[0]);assert.equal(after.bench[0],-1);assert.equal(after.substitutions[0],2);assert.deepEqual(await point(13),oldBench13);
+const events=await page.evaluate(n=>window.tacticsDevelopment.state.events.slice(n),beforeEvents);assert.equal(events.length,1);assert.equal(events[0][0],19);assert.equal(events[0][2],beforeSub.players[0]);assert.equal(events[0][3],beforeSub.bench[0]);
+await page.locator('[data-original-control="Form88.comboej"]').selectOption({index:1});assert.equal(await page.evaluate(()=>{const d=window.tacticsDevelopment;return d.state.clubs[d.fixture.clubs[0]].playStyle;}),1);
+await page.screenshot({path:'/Users/talip/Documents/ChatGPT/misc/output/native-match-tactics/substitution.png'});
+await page.evaluate(()=>window.tacticsDevelopment.renderer.invoke({operation:'nometime2Click'}));assert.equal((await state()).side,2);assert.equal(await page.locator('[data-original-control="Form88.comboej"]').isVisible(),false);
+const aiBefore=await state();await drag(await point(1),await point(2));assert.deepEqual((await state()).players,aiBefore.players);
+await page.screenshot({path:'/Users/talip/Documents/ChatGPT/misc/output/native-match-tactics/opponent.png'});
+await page.evaluate(()=>window.tacticsDevelopment.renderer.invoke({operation:'nometime1Click'}));assert.equal((await state()).side,1);assert.notDeepEqual(await point(13),oldBench13);
+await page.locator('canvas').focus();await page.keyboard.press('Escape');await page.waitForFunction(()=>window.tacticsDevelopment.renderer.frame.form==='Form46');assert.equal(await state(),null);
+await page.evaluate(()=>window.advanceMatchTicks(1));const resumed=JSON.parse(await page.evaluate(()=>window.render_game_to_text()));assert.equal(resumed.tick,1);
+await page.screenshot({path:'/Users/talip/Documents/ChatGPT/misc/output/native-match-tactics/resumed.png'});
+writeFileSync('/Users/talip/Documents/ChatGPT/misc/output/native-match-tactics/interactions.json',JSON.stringify({before,beforeSub,after,events,resumedTick:resumed.tick,errors},null,2));
+await browser.close();assert.deepEqual(errors,[]);console.log('Tactics browser interactions: RNG, pitch swap, pitch move, substitution/event, stable bench gap, AI protection, tactics and resume passed.');

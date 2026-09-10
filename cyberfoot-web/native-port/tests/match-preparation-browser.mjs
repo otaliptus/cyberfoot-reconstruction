@@ -1,0 +1,5 @@
+import {checkPostMatchRecovery} from './post-match-recovery-proof.mjs';import {checkMatchFinalization} from './match-finalization-proof.mjs';
+import {checkScheduledPreparation} from './scheduled-preparation-proof.mjs';import {checkWatchedKickoff} from './watched-kickoff-proof.mjs';
+import {checkCupAttendance} from './cup-attendance-proof.mjs';
+import {checkMatchAttendance} from './match-attendance-proof.mjs';
+import {checkMatchPreparation} from './match-preparation-proof.mjs';import {checkPreparedBatchSave} from './prepared-batch-save-integration.mjs';export async function checkMatchPreparationBrowser(){const input=await fetch(new URL('./original-career.s15',import.meta.url)).then(r=>r.arrayBuffer());return {recovery:await checkPostMatchRecovery(),finalization:await checkMatchFinalization(),fullPreparation:await checkScheduledPreparation(),watchedKickoff:await checkWatchedKickoff(),cupIntegration:await checkPreparedBatchSave(input,{competitionType:2}),comparisons:await checkMatchPreparation(),attendance:await checkMatchAttendance(),cupAttendance:await checkCupAttendance(),integration:await checkPreparedBatchSave(input)};}

@@ -1,0 +1,5502 @@
+[
+  {
+    "index": 0,
+    "metadata": 0,
+    "text": "Srpski"
+  },
+  {
+    "index": 1,
+    "metadata": 0,
+    "text": "Nova Igra"
+  },
+  {
+    "index": 2,
+    "metadata": 0,
+    "text": "Nastavi staru igru"
+  },
+  {
+    "index": 3,
+    "metadata": 0,
+    "text": "Editor klubova"
+  },
+  {
+    "index": 4,
+    "metadata": 0,
+    "text": "Registracija igre"
+  },
+  {
+    "index": 5,
+    "metadata": 0,
+    "text": "Neregistrovana igra"
+  },
+  {
+    "index": 6,
+    "metadata": 0,
+    "text": "Registrovana igra"
+  },
+  {
+    "index": 7,
+    "metadata": 0,
+    "text": "Izlaz"
+  },
+  {
+    "index": 8,
+    "metadata": 0,
+    "text": "Izbor jezika:"
+  },
+  {
+    "index": 9,
+    "metadata": 0,
+    "text": "Učitavanje..."
+  },
+  {
+    "index": 10,
+    "metadata": 0,
+    "text": "Podešavanje igre"
+  },
+  {
+    "index": 11,
+    "metadata": 0,
+    "text": "Izbor klubskih turnira"
+  },
+  {
+    "index": 12,
+    "metadata": 0,
+    "text": "Tip ligaškog prvenstva:"
+  },
+  {
+    "index": 13,
+    "metadata": 0,
+    "text": "4 lige sa po 10 timova u svakoj ligi"
+  },
+  {
+    "index": 14,
+    "metadata": 0,
+    "text": "2 lige sa po 20 timova u svakoj ligi"
+  },
+  {
+    "index": 15,
+    "metadata": 0,
+    "text": "Nacionalni kup"
+  },
+  {
+    "index": 16,
+    "metadata": 0,
+    "text": "Liga Šampiona/Kup Libertadores"
+  },
+  {
+    "index": 17,
+    "metadata": 0,
+    "text": "Kup UEFA/Kup Južne Amerike"
+  },
+  {
+    "index": 18,
+    "metadata": 0,
+    "text": "Nacionalni klupski turniri"
+  },
+  {
+    "index": 19,
+    "metadata": 0,
+    "text": "Svetsko prvenstvo"
+  },
+  {
+    "index": 20,
+    "metadata": 0,
+    "text": "prave grupe na Svetskom prvenstvu 2010"
+  },
+  {
+    "index": 21,
+    "metadata": 0,
+    "text": "Evropsko prvenstvo"
+  },
+  {
+    "index": 22,
+    "metadata": 0,
+    "text": "Američki Kup"
+  },
+  {
+    "index": 23,
+    "metadata": 0,
+    "text": "Izbor nacionalnih liga:"
+  },
+  {
+    "index": 24,
+    "metadata": 0,
+    "text": "Izaberi sve"
+  },
+  {
+    "index": 25,
+    "metadata": 0,
+    "text": "timovi"
+  },
+  {
+    "index": 26,
+    "metadata": 0,
+    "text": "Nove lige su dostupne sa dela sajta www.cyberfoot.org dostupnog registrovanim korisnicima "
+  },
+  {
+    "index": 27,
+    "metadata": 0,
+    "text": "Broj timova kontrolisan od strane igrača:"
+  },
+  {
+    "index": 28,
+    "metadata": 0,
+    "text": "Neke opcije su dostupne samo u registrovanoj verziji: igranje turnira nacionalnih selekcija, veći broj timova kontrolisan od strane igrača, itd. "
+  },
+  {
+    "index": 29,
+    "metadata": 0,
+    "text": "Dalje >>"
+  },
+  {
+    "index": 30,
+    "metadata": 0,
+    "text": "<< Nazad"
+  },
+  {
+    "index": 31,
+    "metadata": 0,
+    "text": "Izaberite bar jednu ligu"
+  },
+  {
+    "index": 32,
+    "metadata": 0,
+    "text": "Izbor tima"
+  },
+  {
+    "index": 33,
+    "metadata": 0,
+    "text": "Zemlja:"
+  },
+  {
+    "index": 34,
+    "metadata": 0,
+    "text": "Vaše ime:"
+  },
+  {
+    "index": 35,
+    "metadata": 0,
+    "text": "Prva liga"
+  },
+  {
+    "index": 36,
+    "metadata": 0,
+    "text": "Druga liga"
+  },
+  {
+    "index": 37,
+    "metadata": 0,
+    "text": "Treća liga"
+  },
+  {
+    "index": 38,
+    "metadata": 0,
+    "text": "Četvrta liga"
+  },
+  {
+    "index": 39,
+    "metadata": 0,
+    "text": "Izaberite tim:"
+  },
+  {
+    "index": 40,
+    "metadata": 0,
+    "text": "Izaberite sledeći tim"
+  },
+  {
+    "index": 41,
+    "metadata": 0,
+    "text": "Start igre>>>"
+  },
+  {
+    "index": 42,
+    "metadata": 0,
+    "text": "Tim je već izabran"
+  },
+  {
+    "index": 43,
+    "metadata": 0,
+    "text": "Ovo je NEREGISTROVANA kopija CyberFoot-a"
+  },
+  {
+    "index": 44,
+    "metadata": 0,
+    "text": "U neregistrovanoj verziji, igru možete započeti samo sa timom iz Četvrte lige."
+  },
+  {
+    "index": 45,
+    "metadata": 0,
+    "text": "U registrovanoj verziji moguć je izbor tima iz bilo koje lige."
+  },
+  {
+    "index": 46,
+    "metadata": 0,
+    "text": "Startovanje igre..."
+  },
+  {
+    "index": 47,
+    "metadata": 0,
+    "text": "Podrška menadžmenta"
+  },
+  {
+    "index": 48,
+    "metadata": 0,
+    "text": "Podrška navijača"
+  },
+  {
+    "index": 49,
+    "metadata": 0,
+    "text": "Korisnost"
+  },
+  {
+    "index": 50,
+    "metadata": 0,
+    "text": "Godina"
+  },
+  {
+    "index": 51,
+    "metadata": 0,
+    "text": "Vrednost"
+  },
+  {
+    "index": 52,
+    "metadata": 0,
+    "text": "Plata"
+  },
+  {
+    "index": 53,
+    "metadata": 0,
+    "text": "Odigrao"
+  },
+  {
+    "index": 54,
+    "metadata": 0,
+    "text": "Karakteristika"
+  },
+  {
+    "index": 55,
+    "metadata": 0,
+    "text": "Ugovor ističe"
+  },
+  {
+    "index": 56,
+    "metadata": 0,
+    "text": "Ugovor je istekao"
+  },
+  {
+    "index": 57,
+    "metadata": 0,
+    "text": "Datum isteka pozajmice"
+  },
+  {
+    "index": 58,
+    "metadata": 0,
+    "text": "Igrač će biti na raspolaganju za sledaću utakmicu"
+  },
+  {
+    "index": 59,
+    "metadata": 0,
+    "text": "Suspendovan 1 meč: 3 žuta kartona"
+  },
+  {
+    "index": 60,
+    "metadata": 0,
+    "text": "Suspendovan"
+  },
+  {
+    "index": 61,
+    "metadata": 0,
+    "text": "meč(eva)"
+  },
+  {
+    "index": 62,
+    "metadata": 0,
+    "text": "Povređen"
+  },
+  {
+    "index": 63,
+    "metadata": 0,
+    "text": "Prodaj"
+  },
+  {
+    "index": 64,
+    "metadata": 0,
+    "text": "Ugovor"
+  },
+  {
+    "index": 65,
+    "metadata": 0,
+    "text": "Penzioniši"
+  },
+  {
+    "index": 66,
+    "metadata": 0,
+    "text": "Povucite igrača sa transfer liste"
+  },
+  {
+    "index": 67,
+    "metadata": 0,
+    "text": "Sledeći meč"
+  },
+  {
+    "index": 68,
+    "metadata": 0,
+    "text": "Igraj"
+  },
+  {
+    "index": 69,
+    "metadata": 0,
+    "text": "Boje tima"
+  },
+  {
+    "index": 70,
+    "metadata": 0,
+    "text": "Jedna nepročitana poruka"
+  },
+  {
+    "index": 71,
+    "metadata": 0,
+    "text": "Nepročitane poruke"
+  },
+  {
+    "index": 72,
+    "metadata": 0,
+    "text": "Nema novih poruka"
+  },
+  {
+    "index": 73,
+    "metadata": 0,
+    "text": "igrača"
+  },
+  {
+    "index": 74,
+    "metadata": 0,
+    "text": "Prethodni mečevi"
+  },
+  {
+    "index": 75,
+    "metadata": 0,
+    "text": "meč"
+  },
+  {
+    "index": 76,
+    "metadata": 0,
+    "text": "mečeva"
+  },
+  {
+    "index": 77,
+    "metadata": 0,
+    "text": "nerešeno"
+  },
+  {
+    "index": 78,
+    "metadata": 0,
+    "text": "nerešenih"
+  },
+  {
+    "index": 79,
+    "metadata": 0,
+    "text": "P"
+  },
+  {
+    "index": 80,
+    "metadata": 0,
+    "text": "N"
+  },
+  {
+    "index": 81,
+    "metadata": 0,
+    "text": "I"
+  },
+  {
+    "index": 82,
+    "metadata": 0,
+    "text": "DG"
+  },
+  {
+    "index": 83,
+    "metadata": 0,
+    "text": "PG"
+  },
+  {
+    "index": 84,
+    "metadata": 0,
+    "text": "OM"
+  },
+  {
+    "index": 85,
+    "metadata": 0,
+    "text": "GR"
+  },
+  {
+    "index": 86,
+    "metadata": 0,
+    "text": "Pts"
+  },
+  {
+    "index": 87,
+    "metadata": 0,
+    "text": "OP"
+  },
+  {
+    "index": 88,
+    "metadata": 0,
+    "text": "TP"
+  },
+  {
+    "index": 89,
+    "metadata": 0,
+    "text": "Poslednji meč"
+  },
+  {
+    "index": 90,
+    "metadata": 0,
+    "text": "svi mečevi"
+  },
+  {
+    "index": 91,
+    "metadata": 0,
+    "text": "Prvi meč između ovih timova"
+  },
+  {
+    "index": 92,
+    "metadata": 0,
+    "text": "Rezultati prethodnih sezona"
+  },
+  {
+    "index": 93,
+    "metadata": 0,
+    "text": "Sačuvajte igru"
+  },
+  {
+    "index": 94,
+    "metadata": 0,
+    "text": "Podešavanja"
+  },
+  {
+    "index": 95,
+    "metadata": 0,
+    "text": "Podnesite ostavku"
+  },
+  {
+    "index": 96,
+    "metadata": 0,
+    "text": "Izađite iz igre"
+  },
+  {
+    "index": 97,
+    "metadata": 0,
+    "text": "O igri"
+  },
+  {
+    "index": 98,
+    "metadata": 0,
+    "text": "Najbolji treneri"
+  },
+  {
+    "index": 99,
+    "metadata": 0,
+    "text": "Dodaj/Obriši trenera"
+  },
+  {
+    "index": 100,
+    "metadata": 0,
+    "text": "Poslednji transferi trenera"
+  },
+  {
+    "index": 101,
+    "metadata": 0,
+    "text": "Najbolji klubovi"
+  },
+  {
+    "index": 102,
+    "metadata": 0,
+    "text": "Transferi igrača"
+  },
+  {
+    "index": 103,
+    "metadata": 0,
+    "text": "Istorijat svih mečeva"
+  },
+  {
+    "index": 104,
+    "metadata": 0,
+    "text": "Kalendar mečeva"
+  },
+  {
+    "index": 105,
+    "metadata": 0,
+    "text": "Parovi"
+  },
+  {
+    "index": 106,
+    "metadata": 0,
+    "text": "Nacionalni kup - nokaut faza"
+  },
+  {
+    "index": 107,
+    "metadata": 0,
+    "text": "Međunarodni kupovi - nokaut faza"
+  },
+  {
+    "index": 108,
+    "metadata": 0,
+    "text": "Prijateljski mečevi"
+  },
+  {
+    "index": 109,
+    "metadata": 0,
+    "text": "Finansije"
+  },
+  {
+    "index": 110,
+    "metadata": 0,
+    "text": "Kredit"
+  },
+  {
+    "index": 111,
+    "metadata": 0,
+    "text": "Potpiši ugovor"
+  },
+  {
+    "index": 112,
+    "metadata": 0,
+    "text": "Prodaj"
+  },
+  {
+    "index": 113,
+    "metadata": 0,
+    "text": "Penzioniši"
+  },
+  {
+    "index": 114,
+    "metadata": 0,
+    "text": "Izaberi broj"
+  },
+  {
+    "index": 115,
+    "metadata": 0,
+    "text": "Istorijat mečeva"
+  },
+  {
+    "index": 116,
+    "metadata": 0,
+    "text": "Otkaži pozajmicu"
+  },
+  {
+    "index": 117,
+    "metadata": 0,
+    "text": "Kupi igrača"
+  },
+  {
+    "index": 118,
+    "metadata": 0,
+    "text": "Stavi na listu pozajmica"
+  },
+  {
+    "index": 119,
+    "metadata": 0,
+    "text": "Povuci sa liste pozajmica"
+  },
+  {
+    "index": 120,
+    "metadata": 0,
+    "text": "Tabele"
+  },
+  {
+    "index": 121,
+    "metadata": 0,
+    "text": "Stadion"
+  },
+  {
+    "index": 122,
+    "metadata": 0,
+    "text": "Pikaži sve klubove"
+  },
+  {
+    "index": 123,
+    "metadata": 0,
+    "text": "Traži igrače"
+  },
+  {
+    "index": 124,
+    "metadata": 0,
+    "text": "Informacije o treneru"
+  },
+  {
+    "index": 125,
+    "metadata": 0,
+    "text": "Šampioni"
+  },
+  {
+    "index": 126,
+    "metadata": 0,
+    "text": "Najbolji strelci"
+  },
+  {
+    "index": 127,
+    "metadata": 0,
+    "text": "Najbolji klubovi"
+  },
+  {
+    "index": 128,
+    "metadata": 0,
+    "text": "P"
+  },
+  {
+    "index": 129,
+    "metadata": 0,
+    "text": "Ime"
+  },
+  {
+    "index": 130,
+    "metadata": 0,
+    "text": "Str"
+  },
+  {
+    "index": 131,
+    "metadata": 0,
+    "text": "Kor"
+  },
+  {
+    "index": 132,
+    "metadata": 0,
+    "text": "Snaga"
+  },
+  {
+    "index": 133,
+    "metadata": 0,
+    "text": "Plata"
+  },
+  {
+    "index": 134,
+    "metadata": 0,
+    "text": "Vred."
+  },
+  {
+    "index": 135,
+    "metadata": 0,
+    "text": "Gol"
+  },
+  {
+    "index": 136,
+    "metadata": 0,
+    "text": "Karak."
+  },
+  {
+    "index": 137,
+    "metadata": 0,
+    "text": "G"
+  },
+  {
+    "index": 138,
+    "metadata": 0,
+    "text": "M"
+  },
+  {
+    "index": 139,
+    "metadata": 0,
+    "text": "Ugovor ističe za nedelju dana"
+  },
+  {
+    "index": 140,
+    "metadata": 0,
+    "text": "Ugovor uskoro ističe"
+  },
+  {
+    "index": 141,
+    "metadata": 0,
+    "text": "Registruj Cyberfoot, klikni ovde!"
+  },
+  {
+    "index": 142,
+    "metadata": 0,
+    "text": "Golman"
+  },
+  {
+    "index": 143,
+    "metadata": 0,
+    "text": "G"
+  },
+  {
+    "index": 144,
+    "metadata": 0,
+    "text": "Centralni odbrambeni"
+  },
+  {
+    "index": 145,
+    "metadata": 0,
+    "text": "CO"
+  },
+  {
+    "index": 146,
+    "metadata": 0,
+    "text": "Krilo"
+  },
+  {
+    "index": 147,
+    "metadata": 0,
+    "text": "K"
+  },
+  {
+    "index": 148,
+    "metadata": 0,
+    "text": "Srednji red"
+  },
+  {
+    "index": 149,
+    "metadata": 0,
+    "text": "S"
+  },
+  {
+    "index": 150,
+    "metadata": 0,
+    "text": "Napadač"
+  },
+  {
+    "index": 151,
+    "metadata": 0,
+    "text": "N"
+  },
+  {
+    "index": 152,
+    "metadata": 0,
+    "text": "Desno"
+  },
+  {
+    "index": 153,
+    "metadata": 0,
+    "text": "D"
+  },
+  {
+    "index": 154,
+    "metadata": 0,
+    "text": "Levo"
+  },
+  {
+    "index": 155,
+    "metadata": 0,
+    "text": "L"
+  },
+  {
+    "index": 156,
+    "metadata": 0,
+    "text": "Pozicija"
+  },
+  {
+    "index": 157,
+    "metadata": 0,
+    "text": "Poz"
+  },
+  {
+    "index": 158,
+    "metadata": 0,
+    "text": "Odbrana penala"
+  },
+  {
+    "index": 159,
+    "metadata": 0,
+    "text": "Pen"
+  },
+  {
+    "index": 160,
+    "metadata": 0,
+    "text": "Brz"
+  },
+  {
+    "index": 161,
+    "metadata": 0,
+    "text": "Brz"
+  },
+  {
+    "index": 162,
+    "metadata": 0,
+    "text": "Kontrola prostora"
+  },
+  {
+    "index": 163,
+    "metadata": 0,
+    "text": "Kon"
+  },
+  {
+    "index": 164,
+    "metadata": 0,
+    "text": "Plejmejker"
+  },
+  {
+    "index": 165,
+    "metadata": 0,
+    "text": "Plej"
+  },
+  {
+    "index": 166,
+    "metadata": 0,
+    "text": "Udarac glavom"
+  },
+  {
+    "index": 167,
+    "metadata": 0,
+    "text": "Glav"
+  },
+  {
+    "index": 168,
+    "metadata": 0,
+    "text": "Dribler"
+  },
+  {
+    "index": 169,
+    "metadata": 0,
+    "text": "Dribl"
+  },
+  {
+    "index": 170,
+    "metadata": 0,
+    "text": "Agresivan"
+  },
+  {
+    "index": 171,
+    "metadata": 0,
+    "text": "Agres."
+  },
+  {
+    "index": 172,
+    "metadata": 0,
+    "text": "Tehničar"
+  },
+  {
+    "index": 173,
+    "metadata": 0,
+    "text": "Teh"
+  },
+  {
+    "index": 174,
+    "metadata": 0,
+    "text": "Šuter"
+  },
+  {
+    "index": 175,
+    "metadata": 0,
+    "text": "Šut"
+  },
+  {
+    "index": 176,
+    "metadata": 0,
+    "text": "Marker"
+  },
+  {
+    "index": 177,
+    "metadata": 0,
+    "text": "Mar"
+  },
+  {
+    "index": 178,
+    "metadata": 0,
+    "text": "Asistent"
+  },
+  {
+    "index": 179,
+    "metadata": 0,
+    "text": "Asist"
+  },
+  {
+    "index": 180,
+    "metadata": 0,
+    "text": "Jak"
+  },
+  {
+    "index": 181,
+    "metadata": 0,
+    "text": "Jak"
+  },
+  {
+    "index": 182,
+    "metadata": 0,
+    "text": "Brz"
+  },
+  {
+    "index": 183,
+    "metadata": 0,
+    "text": "Brz"
+  },
+  {
+    "index": 184,
+    "metadata": 0,
+    "text": "1."
+  },
+  {
+    "index": 185,
+    "metadata": 0,
+    "text": "2."
+  },
+  {
+    "index": 186,
+    "metadata": 0,
+    "text": "3."
+  },
+  {
+    "index": 187,
+    "metadata": 0,
+    "text": "4."
+  },
+  {
+    "index": 188,
+    "metadata": 0,
+    "text": "5."
+  },
+  {
+    "index": 189,
+    "metadata": 0,
+    "text": "6."
+  },
+  {
+    "index": 190,
+    "metadata": 0,
+    "text": "7."
+  },
+  {
+    "index": 191,
+    "metadata": 0,
+    "text": "8."
+  },
+  {
+    "index": 192,
+    "metadata": 0,
+    "text": "9."
+  },
+  {
+    "index": 193,
+    "metadata": 0,
+    "text": "10."
+  },
+  {
+    "index": 194,
+    "metadata": 0,
+    "text": "11."
+  },
+  {
+    "index": 195,
+    "metadata": 0,
+    "text": "12."
+  },
+  {
+    "index": 196,
+    "metadata": 0,
+    "text": "13."
+  },
+  {
+    "index": 197,
+    "metadata": 0,
+    "text": "14."
+  },
+  {
+    "index": 198,
+    "metadata": 0,
+    "text": "15."
+  },
+  {
+    "index": 199,
+    "metadata": 0,
+    "text": "16."
+  },
+  {
+    "index": 200,
+    "metadata": 0,
+    "text": "17."
+  },
+  {
+    "index": 201,
+    "metadata": 0,
+    "text": "18."
+  },
+  {
+    "index": 202,
+    "metadata": 0,
+    "text": "19."
+  },
+  {
+    "index": 203,
+    "metadata": 0,
+    "text": "20."
+  },
+  {
+    "index": 204,
+    "metadata": 0,
+    "text": "mesto"
+  },
+  {
+    "index": 205,
+    "metadata": 0,
+    "text": "Domaćin"
+  },
+  {
+    "index": 206,
+    "metadata": 0,
+    "text": "D"
+  },
+  {
+    "index": 207,
+    "metadata": 0,
+    "text": "Gost"
+  },
+  {
+    "index": 208,
+    "metadata": 0,
+    "text": "G"
+  },
+  {
+    "index": 209,
+    "metadata": 0,
+    "text": "kolo"
+  },
+  {
+    "index": 210,
+    "metadata": 0,
+    "text": "Sudija"
+  },
+  {
+    "index": 211,
+    "metadata": 0,
+    "text": "Međunarodni prijateljski"
+  },
+  {
+    "index": 212,
+    "metadata": 0,
+    "text": "Prijateljski"
+  },
+  {
+    "index": 213,
+    "metadata": 0,
+    "text": "Prva faza"
+  },
+  {
+    "index": 214,
+    "metadata": 0,
+    "text": "Druga faza"
+  },
+  {
+    "index": 215,
+    "metadata": 0,
+    "text": "Četvrtfinale"
+  },
+  {
+    "index": 216,
+    "metadata": 0,
+    "text": "Polufinale"
+  },
+  {
+    "index": 217,
+    "metadata": 0,
+    "text": "Finale"
+  },
+  {
+    "index": 218,
+    "metadata": 0,
+    "text": "Prvi meč"
+  },
+  {
+    "index": 219,
+    "metadata": 0,
+    "text": "Drugi meč"
+  },
+  {
+    "index": 220,
+    "metadata": 0,
+    "text": "Liga Šampiona"
+  },
+  {
+    "index": 221,
+    "metadata": 0,
+    "text": "Liga Evrope"
+  },
+  {
+    "index": 222,
+    "metadata": 0,
+    "text": "Kup Libertadores"
+  },
+  {
+    "index": 223,
+    "metadata": 0,
+    "text": "Kup Južne Amerike"
+  },
+  {
+    "index": 224,
+    "metadata": 0,
+    "text": "FIFA Svetsko klupsko prvenstvo"
+  },
+  {
+    "index": 225,
+    "metadata": 0,
+    "text": "Nemačka liga"
+  },
+  {
+    "index": 226,
+    "metadata": 0,
+    "text": "Nemački kup"
+  },
+  {
+    "index": 227,
+    "metadata": 0,
+    "text": "Italijanska liga"
+  },
+  {
+    "index": 228,
+    "metadata": 0,
+    "text": "Italijanski kup"
+  },
+  {
+    "index": 229,
+    "metadata": 0,
+    "text": "Španska liga"
+  },
+  {
+    "index": 230,
+    "metadata": 0,
+    "text": "Španski kup"
+  },
+  {
+    "index": 231,
+    "metadata": 0,
+    "text": "Engleska liga"
+  },
+  {
+    "index": 232,
+    "metadata": 0,
+    "text": "Engleski kup"
+  },
+  {
+    "index": 233,
+    "metadata": 0,
+    "text": "Francuska liga"
+  },
+  {
+    "index": 234,
+    "metadata": 0,
+    "text": "Francuski kup"
+  },
+  {
+    "index": 235,
+    "metadata": 0,
+    "text": "Belgijska liga"
+  },
+  {
+    "index": 236,
+    "metadata": 0,
+    "text": "Belgijski kup"
+  },
+  {
+    "index": 237,
+    "metadata": 0,
+    "text": "Grčka liga"
+  },
+  {
+    "index": 238,
+    "metadata": 0,
+    "text": "Grčki kup"
+  },
+  {
+    "index": 239,
+    "metadata": 0,
+    "text": "Holandska liga"
+  },
+  {
+    "index": 240,
+    "metadata": 0,
+    "text": "Holandski kup"
+  },
+  {
+    "index": 241,
+    "metadata": 0,
+    "text": "Portugalska liga"
+  },
+  {
+    "index": 242,
+    "metadata": 0,
+    "text": "Portugalski kup"
+  },
+  {
+    "index": 243,
+    "metadata": 0,
+    "text": "Brazilska liga"
+  },
+  {
+    "index": 244,
+    "metadata": 0,
+    "text": "Brazilski kup"
+  },
+  {
+    "index": 245,
+    "metadata": 0,
+    "text": "Argentinska liga"
+  },
+  {
+    "index": 246,
+    "metadata": 0,
+    "text": "Argentinski kup"
+  },
+  {
+    "index": 247,
+    "metadata": 0,
+    "text": "Škotska liga"
+  },
+  {
+    "index": 248,
+    "metadata": 0,
+    "text": "Škotski kup"
+  },
+  {
+    "index": 249,
+    "metadata": 0,
+    "text": "Meksička liga"
+  },
+  {
+    "index": 250,
+    "metadata": 0,
+    "text": "Meksički kup"
+  },
+  {
+    "index": 251,
+    "metadata": 0,
+    "text": "Švajcarska liga"
+  },
+  {
+    "index": 252,
+    "metadata": 0,
+    "text": "Švajcarski kup"
+  },
+  {
+    "index": 253,
+    "metadata": 0,
+    "text": "Turska liga"
+  },
+  {
+    "index": 254,
+    "metadata": 0,
+    "text": "Turski kup"
+  },
+  {
+    "index": 255,
+    "metadata": 0,
+    "text": "Čileanska liga"
+  },
+  {
+    "index": 256,
+    "metadata": 0,
+    "text": "Čileanski kup"
+  },
+  {
+    "index": 257,
+    "metadata": 0,
+    "text": "Paragvajska liga"
+  },
+  {
+    "index": 258,
+    "metadata": 0,
+    "text": "Paragvajski kup"
+  },
+  {
+    "index": 259,
+    "metadata": 0,
+    "text": "Kolumbijska liga"
+  },
+  {
+    "index": 260,
+    "metadata": 0,
+    "text": "Kolumbijski kup"
+  },
+  {
+    "index": 261,
+    "metadata": 0,
+    "text": "Ruska liga"
+  },
+  {
+    "index": 262,
+    "metadata": 0,
+    "text": "Ruski kup"
+  },
+  {
+    "index": 263,
+    "metadata": 0,
+    "text": "Švedska liga"
+  },
+  {
+    "index": 264,
+    "metadata": 0,
+    "text": "Švedski kup"
+  },
+  {
+    "index": 265,
+    "metadata": 0,
+    "text": "Ukrajinska liga"
+  },
+  {
+    "index": 266,
+    "metadata": 0,
+    "text": "Ukrajinska liga"
+  },
+  {
+    "index": 267,
+    "metadata": 0,
+    "text": "Urugvajska liga"
+  },
+  {
+    "index": 268,
+    "metadata": 0,
+    "text": "Urugvajski kup"
+  },
+  {
+    "index": 269,
+    "metadata": 0,
+    "text": "Srpska liga"
+  },
+  {
+    "index": 270,
+    "metadata": 0,
+    "text": "Srpski kup"
+  },
+  {
+    "index": 271,
+    "metadata": 0,
+    "text": "Poljska liga"
+  },
+  {
+    "index": 272,
+    "metadata": 0,
+    "text": "Poljski kup"
+  },
+  {
+    "index": 273,
+    "metadata": 0,
+    "text": "Indonežanska liga"
+  },
+  {
+    "index": 274,
+    "metadata": 0,
+    "text": "Indonežanski kup"
+  },
+  {
+    "index": 275,
+    "metadata": 0,
+    "text": "SAD liga"
+  },
+  {
+    "index": 276,
+    "metadata": 0,
+    "text": "SAD kup"
+  },
+  {
+    "index": 277,
+    "metadata": 0,
+    "text": "Bugarska liga"
+  },
+  {
+    "index": 278,
+    "metadata": 0,
+    "text": "Bugarski kup"
+  },
+  {
+    "index": 279,
+    "metadata": 0,
+    "text": "Liga"
+  },
+  {
+    "index": 280,
+    "metadata": 0,
+    "text": "Kup"
+  },
+  {
+    "index": 281,
+    "metadata": 0,
+    "text": "Zapamti postavu"
+  },
+  {
+    "index": 282,
+    "metadata": 0,
+    "text": "Taktička formacija"
+  },
+  {
+    "index": 283,
+    "metadata": 0,
+    "text": "Stil igre"
+  },
+  {
+    "index": 284,
+    "metadata": 0,
+    "text": "Tip odbrane"
+  },
+  {
+    "index": 285,
+    "metadata": 0,
+    "text": "Napad"
+  },
+  {
+    "index": 286,
+    "metadata": 0,
+    "text": "Izvođač prekida"
+  },
+  {
+    "index": 287,
+    "metadata": 0,
+    "text": "Kapiten tima"
+  },
+  {
+    "index": 288,
+    "metadata": 0,
+    "text": "Taktička formacija"
+  },
+  {
+    "index": 289,
+    "metadata": 0,
+    "text": "Stil igre"
+  },
+  {
+    "index": 290,
+    "metadata": 0,
+    "text": "Normalno"
+  },
+  {
+    "index": 291,
+    "metadata": 0,
+    "text": "Totalni napad"
+  },
+  {
+    "index": 292,
+    "metadata": 0,
+    "text": "Odbrana"
+  },
+  {
+    "index": 293,
+    "metadata": 0,
+    "text": "Laka"
+  },
+  {
+    "index": 294,
+    "metadata": 0,
+    "text": "Čvrsta"
+  },
+  {
+    "index": 295,
+    "metadata": 0,
+    "text": "Na granici faula"
+  },
+  {
+    "index": 296,
+    "metadata": 0,
+    "text": "Po sredini"
+  },
+  {
+    "index": 297,
+    "metadata": 0,
+    "text": "Po krilu"
+  },
+  {
+    "index": 298,
+    "metadata": 0,
+    "text": "<< Nazad"
+  },
+  {
+    "index": 299,
+    "metadata": 0,
+    "text": "Počni meč >>"
+  },
+  {
+    "index": 300,
+    "metadata": 0,
+    "text": "igra kao"
+  },
+  {
+    "index": 301,
+    "metadata": 0,
+    "text": "Odaberite bar 11 igrača za start meča"
+  },
+  {
+    "index": 302,
+    "metadata": 0,
+    "text": "Izaberi tim:"
+  },
+  {
+    "index": 303,
+    "metadata": 0,
+    "text": "Istorijat"
+  },
+  {
+    "index": 304,
+    "metadata": 0,
+    "text": "Parovi"
+  },
+  {
+    "index": 305,
+    "metadata": 0,
+    "text": "Transferi"
+  },
+  {
+    "index": 306,
+    "metadata": 0,
+    "text": "Trofeji"
+  },
+  {
+    "index": 307,
+    "metadata": 0,
+    "text": "Vaš novac:"
+  },
+  {
+    "index": 308,
+    "metadata": 0,
+    "text": "Postoji limit od 28 igrača u timu"
+  },
+  {
+    "index": 309,
+    "metadata": 0,
+    "text": "ne želi transfer u tvoj tim"
+  },
+  {
+    "index": 310,
+    "metadata": 0,
+    "text": "uspešan transfer"
+  },
+  {
+    "index": 311,
+    "metadata": 0,
+    "text": "Na transfer listi"
+  },
+  {
+    "index": 312,
+    "metadata": 0,
+    "text": "Moguća pozajmica"
+  },
+  {
+    "index": 313,
+    "metadata": 0,
+    "text": "TL"
+  },
+  {
+    "index": 314,
+    "metadata": 0,
+    "text": "MP"
+  },
+  {
+    "index": 315,
+    "metadata": 0,
+    "text": "Pozajmi"
+  },
+  {
+    "index": 316,
+    "metadata": 0,
+    "text": "Možeš imati najviše dva pozajmljena igrača"
+  },
+  {
+    "index": 317,
+    "metadata": 0,
+    "text": "Kupi igrača"
+  },
+  {
+    "index": 318,
+    "metadata": 0,
+    "text": "Ponudi"
+  },
+  {
+    "index": 319,
+    "metadata": 0,
+    "text": "Kompletna istorija"
+  },
+  {
+    "index": 320,
+    "metadata": 0,
+    "text": "Godina"
+  },
+  {
+    "index": 321,
+    "metadata": 0,
+    "text": "Tim"
+  },
+  {
+    "index": 322,
+    "metadata": 0,
+    "text": "Ukupno u karijeri"
+  },
+  {
+    "index": 323,
+    "metadata": 0,
+    "text": "Regionalni timovi"
+  },
+  {
+    "index": 324,
+    "metadata": 0,
+    "text": "Ostale zemlje"
+  },
+  {
+    "index": 325,
+    "metadata": 0,
+    "text": "Lista mečeva"
+  },
+  {
+    "index": 326,
+    "metadata": 0,
+    "text": "Svetsko prvenstvo"
+  },
+  {
+    "index": 327,
+    "metadata": 0,
+    "text": "Američki kup"
+  },
+  {
+    "index": 328,
+    "metadata": 0,
+    "text": "Evropsko prvenstvo"
+  },
+  {
+    "index": 329,
+    "metadata": 0,
+    "text": "Prikaži:"
+  },
+  {
+    "index": 330,
+    "metadata": 0,
+    "text": "Svi mečevi"
+  },
+  {
+    "index": 331,
+    "metadata": 0,
+    "text": "ned"
+  },
+  {
+    "index": 332,
+    "metadata": 0,
+    "text": "pon"
+  },
+  {
+    "index": 333,
+    "metadata": 0,
+    "text": "uto"
+  },
+  {
+    "index": 334,
+    "metadata": 0,
+    "text": "sre"
+  },
+  {
+    "index": 335,
+    "metadata": 0,
+    "text": "čet"
+  },
+  {
+    "index": 336,
+    "metadata": 0,
+    "text": "pet"
+  },
+  {
+    "index": 337,
+    "metadata": 0,
+    "text": "sub"
+  },
+  {
+    "index": 338,
+    "metadata": 0,
+    "text": "Igrač"
+  },
+  {
+    "index": 339,
+    "metadata": 0,
+    "text": "Golova"
+  },
+  {
+    "index": 340,
+    "metadata": 0,
+    "text": "Mečeva"
+  },
+  {
+    "index": 341,
+    "metadata": 0,
+    "text": "Liga"
+  },
+  {
+    "index": 342,
+    "metadata": 0,
+    "text": "Kup"
+  },
+  {
+    "index": 343,
+    "metadata": 0,
+    "text": "Najbolji"
+  },
+  {
+    "index": 344,
+    "metadata": 0,
+    "text": "Lista prvih 100 igrača, za prikaz svih igrača kliknite ovde"
+  },
+  {
+    "index": 345,
+    "metadata": 0,
+    "text": "Učitaj"
+  },
+  {
+    "index": 346,
+    "metadata": 0,
+    "text": "Odustani"
+  },
+  {
+    "index": 347,
+    "metadata": 0,
+    "text": "Obriši"
+  },
+  {
+    "index": 348,
+    "metadata": 0,
+    "text": "Trener:"
+  },
+  {
+    "index": 349,
+    "metadata": 0,
+    "text": "Sledeći meč:"
+  },
+  {
+    "index": 350,
+    "metadata": 0,
+    "text": "Prihod"
+  },
+  {
+    "index": 351,
+    "metadata": 0,
+    "text": "Rashod"
+  },
+  {
+    "index": 352,
+    "metadata": 0,
+    "text": "Prodati igrači:"
+  },
+  {
+    "index": 353,
+    "metadata": 0,
+    "text": "Karte:"
+  },
+  {
+    "index": 354,
+    "metadata": 0,
+    "text": "Nagrade:"
+  },
+  {
+    "index": 355,
+    "metadata": 0,
+    "text": "Kredit:"
+  },
+  {
+    "index": 356,
+    "metadata": 0,
+    "text": "Sponzorstvo:"
+  },
+  {
+    "index": 357,
+    "metadata": 0,
+    "text": "Ukupno:"
+  },
+  {
+    "index": 358,
+    "metadata": 0,
+    "text": "Kupljeni igrači:"
+  },
+  {
+    "index": 359,
+    "metadata": 0,
+    "text": "Stadion:"
+  },
+  {
+    "index": 360,
+    "metadata": 0,
+    "text": "Plate:"
+  },
+  {
+    "index": 361,
+    "metadata": 0,
+    "text": "Kamata:"
+  },
+  {
+    "index": 362,
+    "metadata": 0,
+    "text": "Troškovi transfera:"
+  },
+  {
+    "index": 363,
+    "metadata": 0,
+    "text": "Ostali rashodi:"
+  },
+  {
+    "index": 364,
+    "metadata": 0,
+    "text": "Balans:"
+  },
+  {
+    "index": 365,
+    "metadata": 0,
+    "text": "Kamata svake nedelje:"
+  },
+  {
+    "index": 366,
+    "metadata": 0,
+    "text": "Plate isplaćene svake nedelje:"
+  },
+  {
+    "index": 367,
+    "metadata": 0,
+    "text": "Raspoloživ novac:"
+  },
+  {
+    "index": 368,
+    "metadata": 0,
+    "text": "Igrač za prodaju"
+  },
+  {
+    "index": 369,
+    "metadata": 0,
+    "text": "Početna cena:"
+  },
+  {
+    "index": 370,
+    "metadata": 0,
+    "text": "prodaje igrača"
+  },
+  {
+    "index": 371,
+    "metadata": 0,
+    "text": "Daj ponudu u hiljadama, npr. 300 = 300 hiljada"
+  },
+  {
+    "index": 372,
+    "metadata": 0,
+    "text": "Nema kupaca"
+  },
+  {
+    "index": 373,
+    "metadata": 0,
+    "text": "Prodat"
+  },
+  {
+    "index": 374,
+    "metadata": 0,
+    "text": "Vaša ponuda:"
+  },
+  {
+    "index": 375,
+    "metadata": 0,
+    "text": "Ponudi"
+  },
+  {
+    "index": 376,
+    "metadata": 0,
+    "text": "ponudili ste više novca nego što imate"
+  },
+  {
+    "index": 377,
+    "metadata": 0,
+    "text": "Nemate dovoljno novca."
+  },
+  {
+    "index": 378,
+    "metadata": 0,
+    "text": "Ugovor"
+  },
+  {
+    "index": 379,
+    "metadata": 0,
+    "text": "Nova plata:"
+  },
+  {
+    "index": 380,
+    "metadata": 0,
+    "text": "Dužina ugovora:"
+  },
+  {
+    "index": 381,
+    "metadata": 0,
+    "text": "6 meseci"
+  },
+  {
+    "index": 382,
+    "metadata": 0,
+    "text": "1 godina"
+  },
+  {
+    "index": 383,
+    "metadata": 0,
+    "text": "2 godine"
+  },
+  {
+    "index": 384,
+    "metadata": 0,
+    "text": "Ponudi"
+  },
+  {
+    "index": 385,
+    "metadata": 0,
+    "text": "Odustani"
+  },
+  {
+    "index": 386,
+    "metadata": 0,
+    "text": "Ponuda je odbijena, igrač traži:"
+  },
+  {
+    "index": 387,
+    "metadata": 0,
+    "text": "Prihvati"
+  },
+  {
+    "index": 388,
+    "metadata": 0,
+    "text": "Odbi"
+  },
+  {
+    "index": 389,
+    "metadata": 0,
+    "text": "Ovaj igrač ima platni limit od"
+  },
+  {
+    "index": 390,
+    "metadata": 0,
+    "text": "Šampioni"
+  },
+  {
+    "index": 391,
+    "metadata": 0,
+    "text": "Nastavi >>>"
+  },
+  {
+    "index": 392,
+    "metadata": 0,
+    "text": "golova"
+  },
+  {
+    "index": 393,
+    "metadata": 0,
+    "text": "Traži"
+  },
+  {
+    "index": 394,
+    "metadata": 0,
+    "text": "Pozicija:"
+  },
+  {
+    "index": 395,
+    "metadata": 0,
+    "text": "Nacionalnost:"
+  },
+  {
+    "index": 396,
+    "metadata": 0,
+    "text": "Pokaži samo igrače koji su na transfer listi"
+  },
+  {
+    "index": 397,
+    "metadata": 0,
+    "text": "Prikaži igrače koji igraju u "
+  },
+  {
+    "index": 398,
+    "metadata": 0,
+    "text": "Prikaži samo zvezde timova"
+  },
+  {
+    "index": 399,
+    "metadata": 0,
+    "text": "Prikaži samo igrače koji su za pozajmicu"
+  },
+  {
+    "index": 400,
+    "metadata": 0,
+    "text": "Bilo koje vrednosti"
+  },
+  {
+    "index": 401,
+    "metadata": 0,
+    "text": "nađeni igrači"
+  },
+  {
+    "index": 402,
+    "metadata": 0,
+    "text": "Kredit:"
+  },
+  {
+    "index": 403,
+    "metadata": 0,
+    "text": "Kamata po utakmici:"
+  },
+  {
+    "index": 404,
+    "metadata": 0,
+    "text": "Uzmi 500 0000 $"
+  },
+  {
+    "index": 405,
+    "metadata": 0,
+    "text": "Vrati 500 000 $"
+  },
+  {
+    "index": 406,
+    "metadata": 0,
+    "text": "God"
+  },
+  {
+    "index": 407,
+    "metadata": 0,
+    "text": "Šampion"
+  },
+  {
+    "index": 408,
+    "metadata": 0,
+    "text": "Vice-Šampion"
+  },
+  {
+    "index": 409,
+    "metadata": 0,
+    "text": "Najbolji srelac"
+  },
+  {
+    "index": 410,
+    "metadata": 0,
+    "text": "Trener šampiona"
+  },
+  {
+    "index": 411,
+    "metadata": 0,
+    "text": "Trenerski angažman"
+  },
+  {
+    "index": 412,
+    "metadata": 0,
+    "text": "Klub želi da vas angažuje, da li prihvatate?"
+  },
+  {
+    "index": 413,
+    "metadata": 0,
+    "text": "Prihvati"
+  },
+  {
+    "index": 414,
+    "metadata": 0,
+    "text": "Odbi"
+  },
+  {
+    "index": 415,
+    "metadata": 0,
+    "text": "vas je otpustio,"
+  },
+  {
+    "index": 416,
+    "metadata": 0,
+    "text": "zato što su navijači, zbog loših rezultata, izvršili pritisak na upravu."
+  },
+  {
+    "index": 417,
+    "metadata": 0,
+    "text": "zato što ste doveli klub na ivicu bankrotstva."
+  },
+  {
+    "index": 418,
+    "metadata": 0,
+    "text": "zbog loših rezultata."
+  },
+  {
+    "index": 419,
+    "metadata": 0,
+    "text": "zato što ste ispali iz četvrte lige..."
+  },
+  {
+    "index": 420,
+    "metadata": 0,
+    "text": "na vaš zahtev. Više sreće u sledaćem timu."
+  },
+  {
+    "index": 421,
+    "metadata": 0,
+    "text": "Kao zamena kontaktiran je"
+  },
+  {
+    "index": 422,
+    "metadata": 0,
+    "text": "Sačekajte novu ponudu..."
+  },
+  {
+    "index": 423,
+    "metadata": 0,
+    "text": "Otkaz!"
+  },
+  {
+    "index": 424,
+    "metadata": 0,
+    "text": "Podešavanja"
+  },
+  {
+    "index": 425,
+    "metadata": 0,
+    "text": "Prikaži lige"
+  },
+  {
+    "index": 426,
+    "metadata": 0,
+    "text": "Automatski sačuvaj:"
+  },
+  {
+    "index": 427,
+    "metadata": 0,
+    "text": "Brzina igre:"
+  },
+  {
+    "index": 428,
+    "metadata": 0,
+    "text": "Brzina bez igrača:"
+  },
+  {
+    "index": 429,
+    "metadata": 0,
+    "text": "Prikaži penale:"
+  },
+  {
+    "index": 430,
+    "metadata": 0,
+    "text": "Prikaži transfere trenera:"
+  },
+  {
+    "index": 431,
+    "metadata": 0,
+    "text": "Prikaži informacije na poluvremenu:"
+  },
+  {
+    "index": 432,
+    "metadata": 0,
+    "text": "Prikaži upozorenja vezana za ugovore:"
+  },
+  {
+    "index": 433,
+    "metadata": 0,
+    "text": "Automatski obnovi istekle ugovore"
+  },
+  {
+    "index": 434,
+    "metadata": 0,
+    "text": "Boje i zvuci"
+  },
+  {
+    "index": 435,
+    "metadata": 0,
+    "text": "Zvučni efekti"
+  },
+  {
+    "index": 436,
+    "metadata": 0,
+    "text": "Podebljaj događaje vezane za domaći tim"
+  },
+  {
+    "index": 437,
+    "metadata": 0,
+    "text": "Koristi boje u listi igrača"
+  },
+  {
+    "index": 438,
+    "metadata": 0,
+    "text": "Ne"
+  },
+  {
+    "index": 439,
+    "metadata": 0,
+    "text": "Posle svaka 3 meča"
+  },
+  {
+    "index": 440,
+    "metadata": 0,
+    "text": "Posle svakog meča"
+  },
+  {
+    "index": 441,
+    "metadata": 0,
+    "text": "Na početku sezone"
+  },
+  {
+    "index": 442,
+    "metadata": 0,
+    "text": "Sporo"
+  },
+  {
+    "index": 443,
+    "metadata": 0,
+    "text": "Normalno"
+  },
+  {
+    "index": 444,
+    "metadata": 0,
+    "text": "Brzo"
+  },
+  {
+    "index": 445,
+    "metadata": 0,
+    "text": "Veoma brzo"
+  },
+  {
+    "index": 446,
+    "metadata": 0,
+    "text": "Super brzo"
+  },
+  {
+    "index": 447,
+    "metadata": 0,
+    "text": "Ultra brzo"
+  },
+  {
+    "index": 448,
+    "metadata": 0,
+    "text": "Hiper brzo"
+  },
+  {
+    "index": 449,
+    "metadata": 0,
+    "text": "Ne"
+  },
+  {
+    "index": 450,
+    "metadata": 0,
+    "text": "Da"
+  },
+  {
+    "index": 451,
+    "metadata": 0,
+    "text": "Za istekle ugovore"
+  },
+  {
+    "index": 452,
+    "metadata": 0,
+    "text": "Za ugovore koji uskoro ističu"
+  },
+  {
+    "index": 453,
+    "metadata": 0,
+    "text": "Prikaži minute u Evropskom stilu (npr. 60' umesto 15' drugog poluvremena)"
+  },
+  {
+    "index": 454,
+    "metadata": 0,
+    "text": "Izabrite lige koje želite da pratite:"
+  },
+  {
+    "index": 455,
+    "metadata": 0,
+    "text": "Za lige koje nisu izabrane biće prikazani samo rezultati i statistike."
+  },
+  {
+    "index": 456,
+    "metadata": 0,
+    "text": "Boje u listi igrača"
+  },
+  {
+    "index": 457,
+    "metadata": 0,
+    "text": "Resetuj na početne vrednosti"
+  },
+  {
+    "index": 458,
+    "metadata": 0,
+    "text": "Penal"
+  },
+  {
+    "index": 459,
+    "metadata": 0,
+    "text": "Izaberi izvođača"
+  },
+  {
+    "index": 460,
+    "metadata": 0,
+    "text": "Udarac"
+  },
+  {
+    "index": 461,
+    "metadata": 0,
+    "text": "sprema se za udarac..."
+  },
+  {
+    "index": 462,
+    "metadata": 0,
+    "text": "Udara loptu..."
+  },
+  {
+    "index": 463,
+    "metadata": 0,
+    "text": "Lep udarac! Gol!!!"
+  },
+  {
+    "index": 464,
+    "metadata": 0,
+    "text": "Gol!!!"
+  },
+  {
+    "index": 465,
+    "metadata": 0,
+    "text": "Postiže izvanredan gol!!!"
+  },
+  {
+    "index": 466,
+    "metadata": 0,
+    "text": "Golman brani!"
+  },
+  {
+    "index": 467,
+    "metadata": 0,
+    "text": "Stativa!!!"
+  },
+  {
+    "index": 468,
+    "metadata": 0,
+    "text": "Udarac u prečku!!!"
+  },
+  {
+    "index": 469,
+    "metadata": 0,
+    "text": "Poena"
+  },
+  {
+    "index": 470,
+    "metadata": 0,
+    "text": "Odigranih mečeva"
+  },
+  {
+    "index": 471,
+    "metadata": 0,
+    "text": "Pobeda"
+  },
+  {
+    "index": 472,
+    "metadata": 0,
+    "text": "Nerešenih"
+  },
+  {
+    "index": 473,
+    "metadata": 0,
+    "text": "Izgublenih"
+  },
+  {
+    "index": 474,
+    "metadata": 0,
+    "text": "Dato golova"
+  },
+  {
+    "index": 475,
+    "metadata": 0,
+    "text": "Primljeno golova"
+  },
+  {
+    "index": 476,
+    "metadata": 0,
+    "text": "Gol razlika"
+  },
+  {
+    "index": 477,
+    "metadata": 0,
+    "text": "Grupa"
+  },
+  {
+    "index": 478,
+    "metadata": 0,
+    "text": "datum još nije određen"
+  },
+  {
+    "index": 479,
+    "metadata": 0,
+    "text": "Penali"
+  },
+  {
+    "index": 480,
+    "metadata": 0,
+    "text": "Penali - Izaberite izvođače"
+  },
+  {
+    "index": 481,
+    "metadata": 0,
+    "text": "Igrači:"
+  },
+  {
+    "index": 482,
+    "metadata": 0,
+    "text": "Izvođači:"
+  },
+  {
+    "index": 483,
+    "metadata": 0,
+    "text": "Automacki"
+  },
+  {
+    "index": 484,
+    "metadata": 0,
+    "text": "Nastavi >>>"
+  },
+  {
+    "index": 485,
+    "metadata": 0,
+    "text": "Gol"
+  },
+  {
+    "index": 486,
+    "metadata": 0,
+    "text": "Promašaj"
+  },
+  {
+    "index": 487,
+    "metadata": 0,
+    "text": "Pobeda"
+  },
+  {
+    "index": 488,
+    "metadata": 0,
+    "text": "Upišite ime fajla da biste sačuvali igru"
+  },
+  {
+    "index": 489,
+    "metadata": 0,
+    "text": "Sačuvajte"
+  },
+  {
+    "index": 490,
+    "metadata": 0,
+    "text": "Ime fajla već postoji, da li želite da ga zamenite?"
+  },
+  {
+    "index": 491,
+    "metadata": 0,
+    "text": "Da"
+  },
+  {
+    "index": 492,
+    "metadata": 0,
+    "text": "Ne"
+  },
+  {
+    "index": 493,
+    "metadata": 0,
+    "text": "Transfer igrača"
+  },
+  {
+    "index": 494,
+    "metadata": 0,
+    "text": "Prodaj na aukciji"
+  },
+  {
+    "index": 495,
+    "metadata": 0,
+    "text": "Početna vrednost:"
+  },
+  {
+    "index": 496,
+    "metadata": 0,
+    "text": "(u hiljadama $)"
+  },
+  {
+    "index": 497,
+    "metadata": 0,
+    "text": "Stavi igrača na transfer listu"
+  },
+  {
+    "index": 498,
+    "metadata": 0,
+    "text": "Počni aukciju"
+  },
+  {
+    "index": 499,
+    "metadata": 0,
+    "text": "Odustani"
+  },
+  {
+    "index": 500,
+    "metadata": 0,
+    "text": "Transfer lista"
+  },
+  {
+    "index": 501,
+    "metadata": 0,
+    "text": "(Potrebno je da platite obeštećenje u zavisnosti od vremena koje je ostalo do isteka ugovora)"
+  },
+  {
+    "index": 502,
+    "metadata": 0,
+    "text": "Procena vrednosti obeštećenja:"
+  },
+  {
+    "index": 503,
+    "metadata": 0,
+    "text": "Fiksna vrednost:"
+  },
+  {
+    "index": 504,
+    "metadata": 0,
+    "text": "Prvo poluvreme"
+  },
+  {
+    "index": 505,
+    "metadata": 0,
+    "text": "Drugo poluvreme"
+  },
+  {
+    "index": 506,
+    "metadata": 0,
+    "text": "Odmor"
+  },
+  {
+    "index": 507,
+    "metadata": 0,
+    "text": "Nadoknada vremena"
+  },
+  {
+    "index": 508,
+    "metadata": 0,
+    "text": "Kraj meča"
+  },
+  {
+    "index": 509,
+    "metadata": 0,
+    "text": "Meč za treće mesto"
+  },
+  {
+    "index": 510,
+    "metadata": 0,
+    "text": "(autogol)"
+  },
+  {
+    "index": 511,
+    "metadata": 0,
+    "text": "(penal)"
+  },
+  {
+    "index": 512,
+    "metadata": 0,
+    "text": "(slobodan udarac)"
+  },
+  {
+    "index": 513,
+    "metadata": 0,
+    "text": "(promasen penal)"
+  },
+  {
+    "index": 514,
+    "metadata": 0,
+    "text": "Trener"
+  },
+  {
+    "index": 515,
+    "metadata": 0,
+    "text": "Tim"
+  },
+  {
+    "index": 516,
+    "metadata": 0,
+    "text": "Poeni"
+  },
+  {
+    "index": 517,
+    "metadata": 0,
+    "text": "Svetska rang lista"
+  },
+  {
+    "index": 518,
+    "metadata": 0,
+    "text": "Počasti"
+  },
+  {
+    "index": 519,
+    "metadata": 0,
+    "text": "Penziniši igrača"
+  },
+  {
+    "index": 520,
+    "metadata": 0,
+    "text": "Penzionisani igrač može biti zamenjen sa igračem iz mlađih selekcija."
+  },
+  {
+    "index": 521,
+    "metadata": 0,
+    "text": "Igrač iz mlađih selekcija imaće korisnost između 1 i 20 i između 17 i 20 godina."
+  },
+  {
+    "index": 522,
+    "metadata": 0,
+    "text": "Možete da date ime novom igraču ili da žadržite ime igrača koga ste penzionisali."
+  },
+  {
+    "index": 523,
+    "metadata": 0,
+    "text": "Ime novog igrača"
+  },
+  {
+    "index": 524,
+    "metadata": 0,
+    "text": "Pozicija"
+  },
+  {
+    "index": 525,
+    "metadata": 0,
+    "text": "Penzioniši"
+  },
+  {
+    "index": 526,
+    "metadata": 0,
+    "text": "Otkaži"
+  },
+  {
+    "index": 527,
+    "metadata": 0,
+    "text": "Ponuda igrača"
+  },
+  {
+    "index": 528,
+    "metadata": 0,
+    "text": "Želi igrača"
+  },
+  {
+    "index": 529,
+    "metadata": 0,
+    "text": "Prihvati ponudu?"
+  },
+  {
+    "index": 530,
+    "metadata": 0,
+    "text": "Treneri vođeni od strane igrača"
+  },
+  {
+    "index": 531,
+    "metadata": 0,
+    "text": "Obriši"
+  },
+  {
+    "index": 532,
+    "metadata": 0,
+    "text": "Dodaj novog"
+  },
+  {
+    "index": 533,
+    "metadata": 0,
+    "text": "Da biste obrisali trenera prvo mu morate dati otkaz"
+  },
+  {
+    "index": 534,
+    "metadata": 0,
+    "text": "Novo ime trenera"
+  },
+  {
+    "index": 535,
+    "metadata": 0,
+    "text": "Povređen igrač"
+  },
+  {
+    "index": 536,
+    "metadata": 0,
+    "text": "Odaberi izmenu"
+  },
+  {
+    "index": 537,
+    "metadata": 0,
+    "text": "Penal"
+  },
+  {
+    "index": 538,
+    "metadata": 0,
+    "text": "Poslednje sezone"
+  },
+  {
+    "index": 539,
+    "metadata": 0,
+    "text": "Turniri"
+  },
+  {
+    "index": 540,
+    "metadata": 0,
+    "text": "Pozicija"
+  },
+  {
+    "index": 541,
+    "metadata": 0,
+    "text": "Treneri"
+  },
+  {
+    "index": 542,
+    "metadata": 0,
+    "text": "3.mesto"
+  },
+  {
+    "index": 543,
+    "metadata": 0,
+    "text": "4.mesto"
+  },
+  {
+    "index": 544,
+    "metadata": 0,
+    "text": "Trener otpušten"
+  },
+  {
+    "index": 545,
+    "metadata": 0,
+    "text": "Promena trenera"
+  },
+  {
+    "index": 546,
+    "metadata": 0,
+    "text": "dobio otkaz od"
+  },
+  {
+    "index": 547,
+    "metadata": 0,
+    "text": "Kao zamena doveden je:"
+  },
+  {
+    "index": 548,
+    "metadata": 0,
+    "text": "ide u"
+  },
+  {
+    "index": 549,
+    "metadata": 0,
+    "text": "Poslednji transferi"
+  },
+  {
+    "index": 550,
+    "metadata": 0,
+    "text": "Igrači"
+  },
+  {
+    "index": 551,
+    "metadata": 0,
+    "text": "Iz"
+  },
+  {
+    "index": 552,
+    "metadata": 0,
+    "text": "U"
+  },
+  {
+    "index": 553,
+    "metadata": 0,
+    "text": "Igrači"
+  },
+  {
+    "index": 554,
+    "metadata": 0,
+    "text": "Treneri"
+  },
+  {
+    "index": 555,
+    "metadata": 0,
+    "text": "Svi igrači"
+  },
+  {
+    "index": 556,
+    "metadata": 0,
+    "text": "Dajte ponudu"
+  },
+  {
+    "index": 557,
+    "metadata": 0,
+    "text": "Vrednost igrača:"
+  },
+  {
+    "index": 558,
+    "metadata": 0,
+    "text": "Vaša ponuda:"
+  },
+  {
+    "index": 559,
+    "metadata": 0,
+    "text": "Ponudi"
+  },
+  {
+    "index": 560,
+    "metadata": 0,
+    "text": "ne želi da igra u vašem klubu."
+  },
+  {
+    "index": 561,
+    "metadata": 0,
+    "text": "Vaša ponuda je odbijena"
+  },
+  {
+    "index": 562,
+    "metadata": 0,
+    "text": "Da bi igrao u vašem klubu"
+  },
+  {
+    "index": 563,
+    "metadata": 0,
+    "text": "želi povišicu plate."
+  },
+  {
+    "index": 564,
+    "metadata": 0,
+    "text": "Prihvati"
+  },
+  {
+    "index": 565,
+    "metadata": 0,
+    "text": "Odbi"
+  },
+  {
+    "index": 566,
+    "metadata": 0,
+    "text": "Poštansko sanduče"
+  },
+  {
+    "index": 567,
+    "metadata": 0,
+    "text": "Da li želite da novčano kaznite igrača?"
+  },
+  {
+    "index": 568,
+    "metadata": 0,
+    "text": "Uprava"
+  },
+  {
+    "index": 569,
+    "metadata": 0,
+    "text": "Navijači"
+  },
+  {
+    "index": 570,
+    "metadata": 0,
+    "text": "Igrač"
+  },
+  {
+    "index": 571,
+    "metadata": 0,
+    "text": "Štampa"
+  },
+  {
+    "index": 572,
+    "metadata": 0,
+    "text": "Medicinski centar"
+  },
+  {
+    "index": 573,
+    "metadata": 0,
+    "text": "Dobrodošli u"
+  },
+  {
+    "index": 574,
+    "metadata": 0,
+    "text": "izbačen"
+  },
+  {
+    "index": 575,
+    "metadata": 0,
+    "text": "Ne dopada mi se ovo"
+  },
+  {
+    "index": 576,
+    "metadata": 0,
+    "text": "povređen"
+  },
+  {
+    "index": 577,
+    "metadata": 0,
+    "text": "Ne možemo to dopustiti"
+  },
+  {
+    "index": 578,
+    "metadata": 0,
+    "text": "Ne možemo to dopustiti"
+  },
+  {
+    "index": 579,
+    "metadata": 0,
+    "text": "ide u"
+  },
+  {
+    "index": 580,
+    "metadata": 0,
+    "text": "Racha no elenco causado por"
+  },
+  {
+    "index": 581,
+    "metadata": 0,
+    "text": "Hvala"
+  },
+  {
+    "index": 582,
+    "metadata": 0,
+    "text": "Žali se na"
+  },
+  {
+    "index": 583,
+    "metadata": 0,
+    "text": "Moj ugovor je istekao"
+  },
+  {
+    "index": 584,
+    "metadata": 0,
+    "text": "Tuča između"
+  },
+  {
+    "index": 585,
+    "metadata": 0,
+    "text": "Tuča navijača"
+  },
+  {
+    "index": 586,
+    "metadata": 0,
+    "text": "odlazi u"
+  },
+  {
+    "index": 587,
+    "metadata": 0,
+    "text": "Pozivi za nacionalni zim"
+  },
+  {
+    "index": 588,
+    "metadata": 0,
+    "text": "Ugovor uskoro ističe"
+  },
+  {
+    "index": 589,
+    "metadata": 0,
+    "text": "Ugovor istekao"
+  },
+  {
+    "index": 590,
+    "metadata": 0,
+    "text": "nema mesta za igrača"
+  },
+  {
+    "index": 591,
+    "metadata": 0,
+    "text": "Dobio je 10 mečeva neigranja zbog pljuvanja sudije."
+  },
+  {
+    "index": 592,
+    "metadata": 0,
+    "text": "Dobio je 10 mečeva neigranja zbog nepoštovanja sudije."
+  },
+  {
+    "index": 593,
+    "metadata": 0,
+    "text": "Dobio je 5 mečeva neigranja zbog neopreznog starta s leđa."
+  },
+  {
+    "index": 594,
+    "metadata": 0,
+    "text": "Dobio je 5 mečeva neigranja zbog uvrede protivnika. Mislimo da je kazna prestroga."
+  },
+  {
+    "index": 595,
+    "metadata": 0,
+    "text": "Udario je protivnika i dobio 5 mečeva neigranja. Mislimo da je kazna prestroga."
+  },
+  {
+    "index": 596,
+    "metadata": 0,
+    "text": "Neoprezan start s leđa, dobio je 3 utakmice neigranja."
+  },
+  {
+    "index": 597,
+    "metadata": 0,
+    "text": "Udario je protivnika u nos i dobio 3 utakmice neigranja."
+  },
+  {
+    "index": 598,
+    "metadata": 0,
+    "text": "Faulirao je protivnika da bi sprečio siguran gol, dobio je 3 utakmice neigranja."
+  },
+  {
+    "index": 599,
+    "metadata": 0,
+    "text": "Udario je protivnika u lice. Tri utakmice neigranja."
+  },
+  {
+    "index": 600,
+    "metadata": 0,
+    "text": "Težak faul. Dve utakmice neigranja."
+  },
+  {
+    "index": 601,
+    "metadata": 0,
+    "text": "Udario je protivnika. Da li on misli da je fudbal borilačka igra? Dve utakmice neigranja."
+  },
+  {
+    "index": 602,
+    "metadata": 0,
+    "text": "Težak faul. Dve utakmice neigranja."
+  },
+  {
+    "index": 603,
+    "metadata": 0,
+    "text": "Igrač je istegao mišić. Biće odsutan sa terena oko jedne nedelje."
+  },
+  {
+    "index": 604,
+    "metadata": 0,
+    "text": "Igrač je istegao ligament. Pauziraće nekoliko utakmica."
+  },
+  {
+    "index": 605,
+    "metadata": 0,
+    "text": "Igrač je obnovio povredu. Biće odsutan sa terena oko dve nedelje."
+  },
+  {
+    "index": 606,
+    "metadata": 0,
+    "text": "Povreda butnog mišića. Igrač će biti van terena nekoliko mečeva."
+  },
+  {
+    "index": 607,
+    "metadata": 0,
+    "text": "Igrač je obnovio povredu. Biće odsutan sa terena oko dve nedelje."
+  },
+  {
+    "index": 608,
+    "metadata": 0,
+    "text": "Igrač je istegao mišić. Biće odsutan sa terena oko jedne nedelje."
+  },
+  {
+    "index": 609,
+    "metadata": 0,
+    "text": "Lako istegnuće članka. Biće odsutan sa terena oko dve nedelje."
+  },
+  {
+    "index": 610,
+    "metadata": 0,
+    "text": "Igrač je povredio tetive. Očekuje se da će biti van terena duži period."
+  },
+  {
+    "index": 611,
+    "metadata": 0,
+    "text": "Nekoliko dana će biti potrebno za oporavak od povrede pete."
+  },
+  {
+    "index": 612,
+    "metadata": 0,
+    "text": "Povreda nožnog prsta. Nekoliko dana pauze."
+  },
+  {
+    "index": 613,
+    "metadata": 0,
+    "text": "Povreda kolena. Nekoliko dana pauze."
+  },
+  {
+    "index": 614,
+    "metadata": 0,
+    "text": "Polomljen nožni prst. Više nedelja pauze."
+  },
+  {
+    "index": 615,
+    "metadata": 0,
+    "text": "Slomljen ručni zglob. Više nedelja pauze."
+  },
+  {
+    "index": 616,
+    "metadata": 0,
+    "text": "Istegnuće butnog mišića. Više nedelja pauze."
+  },
+  {
+    "index": 617,
+    "metadata": 0,
+    "text": "Višestruka povreda mišića. Igrać će biti van terena duži period."
+  },
+  {
+    "index": 618,
+    "metadata": 0,
+    "text": "Isčašenje zgloba na nozi. Igrač će biti van terena duži period."
+  },
+  {
+    "index": 619,
+    "metadata": 0,
+    "text": "Igrač je doživeo srčani udar. Možda je vreme da se penzioniše."
+  },
+  {
+    "index": 620,
+    "metadata": 0,
+    "text": "Prelom potkolenice. Igrać će biti van terena duži period."
+  },
+  {
+    "index": 621,
+    "metadata": 0,
+    "text": "Povreda ligamenata. Više meseci pauze."
+  },
+  {
+    "index": 622,
+    "metadata": 0,
+    "text": "Slomljena noga. Više meseci pauze."
+  },
+  {
+    "index": 623,
+    "metadata": 0,
+    "text": "Povreda ligamenata kolena. Da li ovo kraj njegove karijera?"
+  },
+  {
+    "index": 624,
+    "metadata": 0,
+    "text": "Dobrodošli u naš klub. Ovde će vam stizati uputstva i upozorenja."
+  },
+  {
+    "index": 625,
+    "metadata": 0,
+    "text": "Naš klub ne sme biti ovako ponižen. Nećemo to prihvatiti. Pazi se!"
+  },
+  {
+    "index": 626,
+    "metadata": 0,
+    "text": "Ne smete da izgubite sa ovoliko golova razlike. Ako nastavite ovako tražićemo od uprave da vas otpuste!"
+  },
+  {
+    "index": 627,
+    "metadata": 0,
+    "text": "Ne smete da izgubite sa ovoliko golova razlike. Ako nastavite ovako tražićemo od uprave da vas otpuste!"
+  },
+  {
+    "index": 628,
+    "metadata": 0,
+    "text": "Hvala na povišici. Dokazaću zahvalnost na terenu."
+  },
+  {
+    "index": 629,
+    "metadata": 0,
+    "text": "Igrač koji je bio na transfer listi je prodat"
+  },
+  {
+    "index": 630,
+    "metadata": 0,
+    "text": "Čuli smo neke glasine o tvom angažovanju za trenera nacionalne selekcije. Sačekaj sledeću nedelju za zvanični poziv."
+  },
+  {
+    "index": 631,
+    "metadata": 0,
+    "text": "Igračev ugovor ističe za oko tri nedelje."
+  },
+  {
+    "index": 632,
+    "metadata": 0,
+    "text": "Igračev ugovor je istekao danas."
+  },
+  {
+    "index": 633,
+    "metadata": 0,
+    "text": "Pozajmica igrača je istekla. Igrač će se vratiti u tim tek kada u njemu bude bilo manje od 28 igrača."
+  },
+  {
+    "index": 634,
+    "metadata": 0,
+    "text": "Ove nedelje se dogodio veliki transfer.Igrač je već u novom klubu."
+  },
+  {
+    "index": 635,
+    "metadata": 0,
+    "text": "Igrač će danas održati konferenciju za štampu na kojoj će govoriti o ovom velikom transferu."
+  },
+  {
+    "index": 636,
+    "metadata": 0,
+    "text": "Da li si lud? Ne možeš me novčano kazniti!"
+  },
+  {
+    "index": 637,
+    "metadata": 0,
+    "text": "Ne sviđa mi se ovo. To što sam izbačen nije moja greška."
+  },
+  {
+    "index": 638,
+    "metadata": 0,
+    "text": "Igrač koji je potpisao ugovor nije dobrodošao u tim. Možda u timu ima previše zvezda."
+  },
+  {
+    "index": 639,
+    "metadata": 0,
+    "text": "Igrač je nezadovoljan zato što nije odigrao ni jedan meč za naš tim. Želimo da ga premestimo u drugi tim."
+  },
+  {
+    "index": 640,
+    "metadata": 0,
+    "text": "Ugovor mi je istekao. Zahtevam da mi se ugovor produži ili ću otići u drugi klub."
+  },
+  {
+    "index": 641,
+    "metadata": 0,
+    "text": "Između ovih igrača je na terenu došlo do tuče."
+  },
+  {
+    "index": 642,
+    "metadata": 0,
+    "text": "Igraći i navijači su se danas potukli. Mislim da su loši rezultati motiv."
+  },
+  {
+    "index": 643,
+    "metadata": 0,
+    "text": "Umoran sam zbog prevelikog broja mečeva. Potrebno mi je neko vreme za odmor."
+  },
+  {
+    "index": 644,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 645,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 646,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 647,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 648,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 649,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 650,
+    "metadata": 0,
+    "text": "Parovi"
+  },
+  {
+    "index": 651,
+    "metadata": 0,
+    "text": "gledalaca"
+  },
+  {
+    "index": 652,
+    "metadata": 0,
+    "text": "prihod"
+  },
+  {
+    "index": 653,
+    "metadata": 0,
+    "text": "Potvrdi"
+  },
+  {
+    "index": 654,
+    "metadata": 0,
+    "text": "Da li želite da podnesete ostavku?"
+  },
+  {
+    "index": 655,
+    "metadata": 0,
+    "text": "Golovi"
+  },
+  {
+    "index": 656,
+    "metadata": 0,
+    "text": "Tabela"
+  },
+  {
+    "index": 657,
+    "metadata": 0,
+    "text": "posed lopte"
+  },
+  {
+    "index": 658,
+    "metadata": 0,
+    "text": "udaraca ka golu"
+  },
+  {
+    "index": 659,
+    "metadata": 0,
+    "text": "startova na loptu"
+  },
+  {
+    "index": 660,
+    "metadata": 0,
+    "text": "pogrešnih pasova"
+  },
+  {
+    "index": 661,
+    "metadata": 0,
+    "text": "faulova"
+  },
+  {
+    "index": 662,
+    "metadata": 0,
+    "text": "Ponuda za transfer"
+  },
+  {
+    "index": 663,
+    "metadata": 0,
+    "text": "Želi igrača:"
+  },
+  {
+    "index": 664,
+    "metadata": 0,
+    "text": "Vrednost ponude:"
+  },
+  {
+    "index": 665,
+    "metadata": 0,
+    "text": "Prihvati transfer igrača?"
+  },
+  {
+    "index": 666,
+    "metadata": 0,
+    "text": "Rang po konačnoj poziciji"
+  },
+  {
+    "index": 667,
+    "metadata": 0,
+    "text": "Rang po poenima"
+  },
+  {
+    "index": 668,
+    "metadata": 0,
+    "text": "Format:(Pts/DG/PG)"
+  },
+  {
+    "index": 669,
+    "metadata": 0,
+    "text": "Svetski rang lista"
+  },
+  {
+    "index": 670,
+    "metadata": 0,
+    "text": "Poeni"
+  },
+  {
+    "index": 671,
+    "metadata": 0,
+    "text": "pts."
+  },
+  {
+    "index": 672,
+    "metadata": 0,
+    "text": "Smrt igrača"
+  },
+  {
+    "index": 673,
+    "metadata": 0,
+    "text": "Igrač je danas preminuo za vreme treninga. Najverovatnije zbog starosti."
+  },
+  {
+    "index": 674,
+    "metadata": 0,
+    "text": "Zbog ovoga vaš klub je izgubio 5 poena."
+  },
+  {
+    "index": 675,
+    "metadata": 0,
+    "text": "Izaberite nacionalni tim koji ćete voditi na Svetsko prvenstvo"
+  },
+  {
+    "index": 676,
+    "metadata": 0,
+    "text": "Nekoliko nacionalnih timova vas želi za trenera, izaberite jedan..."
+  },
+  {
+    "index": 677,
+    "metadata": 0,
+    "text": "Tražite igrače za nacionalni tim"
+  },
+  {
+    "index": 678,
+    "metadata": 0,
+    "text": "Tražite igrača a zatim kliknite na  \">>\" da ga dodate u tim. Možete da pozovete do 20 igrača i 3 golmana."
+  },
+  {
+    "index": 679,
+    "metadata": 0,
+    "text": "Pobednik meča"
+  },
+  {
+    "index": 680,
+    "metadata": 0,
+    "text": "Meč izgubio"
+  },
+  {
+    "index": 681,
+    "metadata": 0,
+    "text": "najbolje treće mesto"
+  },
+  {
+    "index": 682,
+    "metadata": 0,
+    "text": "Iskustvo:"
+  },
+  {
+    "index": 683,
+    "metadata": 0,
+    "text": "Disciplina:"
+  },
+  {
+    "index": 684,
+    "metadata": 0,
+    "text": "Zakazivanje prijateljskih mečeva"
+  },
+  {
+    "index": 685,
+    "metadata": 0,
+    "text": "Raspored predsezonskih prijateljskih mečeva"
+  },
+  {
+    "index": 686,
+    "metadata": 0,
+    "text": "Liga počinje:"
+  },
+  {
+    "index": 687,
+    "metadata": 0,
+    "text": "Slobodni termini:"
+  },
+  {
+    "index": 688,
+    "metadata": 0,
+    "text": "Izaberite protivnika:"
+  },
+  {
+    "index": 689,
+    "metadata": 0,
+    "text": "Mesto odigravanja:"
+  },
+  {
+    "index": 690,
+    "metadata": 0,
+    "text": "Domaćin"
+  },
+  {
+    "index": 691,
+    "metadata": 0,
+    "text": "Gost"
+  },
+  {
+    "index": 692,
+    "metadata": 0,
+    "text": "Zakaži prijateljski meč"
+  },
+  {
+    "index": 693,
+    "metadata": 0,
+    "text": "već ima prijateljski meč tog datuma"
+  },
+  {
+    "index": 694,
+    "metadata": 0,
+    "text": "prijateljski meč je odbijen"
+  },
+  {
+    "index": 695,
+    "metadata": 0,
+    "text": "nemate dovoljno sredstava da platite prijateljski meč"
+  },
+  {
+    "index": 696,
+    "metadata": 0,
+    "text": "Prijateljski meč je zakazan"
+  },
+  {
+    "index": 697,
+    "metadata": 0,
+    "text": "Potvrda prijateljskog meča"
+  },
+  {
+    "index": 698,
+    "metadata": 0,
+    "text": "traži za prijateljski meč:"
+  },
+  {
+    "index": 699,
+    "metadata": 0,
+    "text": "Sumu je potrebno odmah uplatiti, potvrdi meč?"
+  },
+  {
+    "index": 700,
+    "metadata": 0,
+    "text": "Da li želite prijateljski meč između ova dva kluba?"
+  },
+  {
+    "index": 701,
+    "metadata": 0,
+    "text": "Izaberi broj"
+  },
+  {
+    "index": 702,
+    "metadata": 0,
+    "text": "Bez broja"
+  },
+  {
+    "index": 703,
+    "metadata": 0,
+    "text": "Zelite li da zakažete predsezonske prijateljske mečeve?"
+  },
+  {
+    "index": 704,
+    "metadata": 0,
+    "text": "Pozajmica"
+  },
+  {
+    "index": 705,
+    "metadata": 0,
+    "text": "Želite li da pozajmite igrača?"
+  },
+  {
+    "index": 706,
+    "metadata": 0,
+    "text": "Galerija trofeja je prazna"
+  },
+  {
+    "index": 707,
+    "metadata": 0,
+    "text": "Boje tima"
+  },
+  {
+    "index": 708,
+    "metadata": 0,
+    "text": "Boja pozadine:"
+  },
+  {
+    "index": 709,
+    "metadata": 0,
+    "text": "Boja teksta:"
+  },
+  {
+    "index": 710,
+    "metadata": 0,
+    "text": "Nastavi meč"
+  },
+  {
+    "index": 711,
+    "metadata": 0,
+    "text": "Statistika meča"
+  },
+  {
+    "index": 712,
+    "metadata": 0,
+    "text": "Prva faza"
+  },
+  {
+    "index": 713,
+    "metadata": 0,
+    "text": "Statistika karijere"
+  },
+  {
+    "index": 714,
+    "metadata": 0,
+    "text": "Utakmice u tekućoj sezoni"
+  },
+  {
+    "index": 715,
+    "metadata": 0,
+    "text": "Datum"
+  },
+  {
+    "index": 716,
+    "metadata": 0,
+    "text": "Meč"
+  },
+  {
+    "index": 717,
+    "metadata": 0,
+    "text": "Rejting"
+  },
+  {
+    "index": 718,
+    "metadata": 0,
+    "text": "Trenutni kapacitet"
+  },
+  {
+    "index": 719,
+    "metadata": 0,
+    "text": "Terasa:"
+  },
+  {
+    "index": 720,
+    "metadata": 0,
+    "text": "Osnovna mesta:"
+  },
+  {
+    "index": 721,
+    "metadata": 0,
+    "text": "Pokrivena:"
+  },
+  {
+    "index": 722,
+    "metadata": 0,
+    "text": "VIP loža:"
+  },
+  {
+    "index": 723,
+    "metadata": 0,
+    "text": "Cena karata"
+  },
+  {
+    "index": 724,
+    "metadata": 0,
+    "text": "Preporučena cena:"
+  },
+  {
+    "index": 725,
+    "metadata": 0,
+    "text": "mesta"
+  },
+  {
+    "index": 726,
+    "metadata": 0,
+    "text": "Proširi stadion"
+  },
+  {
+    "index": 727,
+    "metadata": 0,
+    "text": "Zavrsetak radova do:"
+  },
+  {
+    "index": 728,
+    "metadata": 0,
+    "text": "Maksimum"
+  },
+  {
+    "index": 729,
+    "metadata": 0,
+    "text": "Proširi:"
+  },
+  {
+    "index": 730,
+    "metadata": 0,
+    "text": "Procena troškova"
+  },
+  {
+    "index": 731,
+    "metadata": 0,
+    "text": "Započni proširenje"
+  },
+  {
+    "index": 732,
+    "metadata": 0,
+    "text": "Procenjeni troškovi proširenja:"
+  },
+  {
+    "index": 733,
+    "metadata": 0,
+    "text": "Datum završetka projekta"
+  },
+  {
+    "index": 734,
+    "metadata": 0,
+    "text": "Trenutno nema uslova da se stadion proširi za željeni broj mesta"
+  },
+  {
+    "index": 735,
+    "metadata": 0,
+    "text": "Nema dovoljno novčanih sredstava za proširenje "
+  },
+  {
+    "index": 736,
+    "metadata": 0,
+    "text": "Editor Klubova"
+  },
+  {
+    "index": 737,
+    "metadata": 0,
+    "text": "Učitavanje informacija o klubovima..."
+  },
+  {
+    "index": 738,
+    "metadata": 0,
+    "text": "Ukupno klubova:"
+  },
+  {
+    "index": 739,
+    "metadata": 0,
+    "text": "Klubovi"
+  },
+  {
+    "index": 740,
+    "metadata": 0,
+    "text": "Nacionalni timovi"
+  },
+  {
+    "index": 741,
+    "metadata": 0,
+    "text": "Dodaj tim"
+  },
+  {
+    "index": 742,
+    "metadata": 0,
+    "text": "Edituj tim"
+  },
+  {
+    "index": 743,
+    "metadata": 0,
+    "text": "Obriši tim"
+  },
+  {
+    "index": 744,
+    "metadata": 0,
+    "text": "Zemlja"
+  },
+  {
+    "index": 745,
+    "metadata": 0,
+    "text": "Nivo"
+  },
+  {
+    "index": 746,
+    "metadata": 0,
+    "text": "Glavni meni"
+  },
+  {
+    "index": 747,
+    "metadata": 0,
+    "text": "Izlazak iz igre"
+  },
+  {
+    "index": 748,
+    "metadata": 0,
+    "text": "Godina"
+  },
+  {
+    "index": 749,
+    "metadata": 0,
+    "text": "Trener"
+  },
+  {
+    "index": 750,
+    "metadata": 0,
+    "text": "Stadion"
+  },
+  {
+    "index": 751,
+    "metadata": 0,
+    "text": "igrača"
+  },
+  {
+    "index": 752,
+    "metadata": 0,
+    "text": "Dodaj igrača"
+  },
+  {
+    "index": 753,
+    "metadata": 0,
+    "text": "Edituj igrača"
+  },
+  {
+    "index": 754,
+    "metadata": 0,
+    "text": "Obriši igrača"
+  },
+  {
+    "index": 755,
+    "metadata": 0,
+    "text": "Već imate 25 igrača"
+  },
+  {
+    "index": 756,
+    "metadata": 0,
+    "text": "Da li želite da obrišete označenii tim?"
+  },
+  {
+    "index": 757,
+    "metadata": 0,
+    "text": "Puno ime kluba"
+  },
+  {
+    "index": 758,
+    "metadata": 0,
+    "text": "Skraćeno ime"
+  },
+  {
+    "index": 759,
+    "metadata": 0,
+    "text": "Boja pozadine"
+  },
+  {
+    "index": 760,
+    "metadata": 0,
+    "text": "Boja teksta"
+  },
+  {
+    "index": 761,
+    "metadata": 0,
+    "text": "Zvezda"
+  },
+  {
+    "index": 762,
+    "metadata": 0,
+    "text": "Karakteristika"
+  },
+  {
+    "index": 763,
+    "metadata": 0,
+    "text": "Pozicija"
+  },
+  {
+    "index": 764,
+    "metadata": 0,
+    "text": "Odaberi logo kluba"
+  },
+  {
+    "index": 765,
+    "metadata": 0,
+    "text": "Ime fajla"
+  },
+  {
+    "index": 766,
+    "metadata": 0,
+    "text": "Fajl već postoji"
+  },
+  {
+    "index": 767,
+    "metadata": 0,
+    "text": "Registracijom dajete podršku za razvoj budućih verzija igre, za ubacivanje novih funkcionalnostii u igru, ispravku bagova, i tehničku podršku putem e-mail-a."
+  },
+  {
+    "index": 768,
+    "metadata": 0,
+    "text": "Sa registrovanom verzijom moguće je:"
+  },
+  {
+    "index": 769,
+    "metadata": 0,
+    "text": "Pristupiti delu sajta namenjenom podršci (Members Area) i skidati nove klubove, lige, ..."
+  },
+  {
+    "index": 770,
+    "metadata": 0,
+    "text": "Početi igru sa timom iz bilo koje lige"
+  },
+  {
+    "index": 771,
+    "metadata": 0,
+    "text": "Voditi više od jednog tima"
+  },
+  {
+    "index": 772,
+    "metadata": 0,
+    "text": "Igrati takmičenja nacionalnih selekcija (Svetsko,Evropsko prvenstvo,Kup Amerike)"
+  },
+  {
+    "index": 773,
+    "metadata": 0,
+    "text": "Dati ponudu za bilo kog igrača, čak i ako nije na transfer listi, ili je pozajmljen"
+  },
+  {
+    "index": 774,
+    "metadata": 0,
+    "text": "Otključati opcije za podešavanje brzine igre."
+  },
+  {
+    "index": 775,
+    "metadata": 0,
+    "text": "Za registraciju posetite sajt:"
+  },
+  {
+    "index": 776,
+    "metadata": 0,
+    "text": "Cena igre je samo 12 eura. Plaćanje je moguće kreditnom karticom (Visa, MasterCard, American Express, Discover), čekom, PayPal-om, Wester Union-om, Moneybookers-om ili International Postal Order-om. "
+  },
+  {
+    "index": 777,
+    "metadata": 0,
+    "text": "Čim budemo obavešteni da je vaša uplata evidentirana (obično je potreban jedan radni dan), biće vam poslat registracioni kod, koji će te upisati ispod:"
+  },
+  {
+    "index": 778,
+    "metadata": 0,
+    "text": "Ime"
+  },
+  {
+    "index": 779,
+    "metadata": 0,
+    "text": "Kod"
+  },
+  {
+    "index": 780,
+    "metadata": 0,
+    "text": "Registruj"
+  },
+  {
+    "index": 781,
+    "metadata": 0,
+    "text": "Cyberfoot je besplatna menadžerska simulacija fudbala."
+  },
+  {
+    "index": 782,
+    "metadata": 0,
+    "text": "Preuzimanje igre na stranici www.cyberfoot.org"
+  },
+  {
+    "index": 783,
+    "metadata": 0,
+    "text": "Samo u registrovanoj verziji je moguće dati ponudu za igrača koji nije na transfer listi. Registruj igru na www.cyberfoot.org"
+  },
+  {
+    "index": 784,
+    "metadata": 0,
+    "text": "Samo u registrovanoj verziji je moguće pozajmiti igrača. Registruj igru na www.cyberfoot.org"
+  },
+  {
+    "index": 785,
+    "metadata": 0,
+    "text": "Lista zemalja"
+  },
+  {
+    "index": 786,
+    "metadata": 0,
+    "text": "Avganistan"
+  },
+  {
+    "index": 787,
+    "metadata": 0,
+    "text": "Južna Africa"
+  },
+  {
+    "index": 788,
+    "metadata": 0,
+    "text": "Albanija"
+  },
+  {
+    "index": 789,
+    "metadata": 0,
+    "text": "Nemačka"
+  },
+  {
+    "index": 790,
+    "metadata": 0,
+    "text": "Andora"
+  },
+  {
+    "index": 791,
+    "metadata": 0,
+    "text": "Angola"
+  },
+  {
+    "index": 792,
+    "metadata": 0,
+    "text": "Angvila"
+  },
+  {
+    "index": 793,
+    "metadata": 0,
+    "text": "Antigva"
+  },
+  {
+    "index": 794,
+    "metadata": 0,
+    "text": "Holandski Antili"
+  },
+  {
+    "index": 795,
+    "metadata": 0,
+    "text": "Saudijska Arabija"
+  },
+  {
+    "index": 796,
+    "metadata": 0,
+    "text": "Alžir"
+  },
+  {
+    "index": 797,
+    "metadata": 0,
+    "text": "Argentina"
+  },
+  {
+    "index": 798,
+    "metadata": 0,
+    "text": "Jermenija"
+  },
+  {
+    "index": 799,
+    "metadata": 0,
+    "text": "Aruba"
+  },
+  {
+    "index": 800,
+    "metadata": 0,
+    "text": "Australija"
+  },
+  {
+    "index": 801,
+    "metadata": 0,
+    "text": "Austrija"
+  },
+  {
+    "index": 802,
+    "metadata": 0,
+    "text": "Azerbejdžan"
+  },
+  {
+    "index": 803,
+    "metadata": 0,
+    "text": "Bahami"
+  },
+  {
+    "index": 804,
+    "metadata": 0,
+    "text": "Bahrein"
+  },
+  {
+    "index": 805,
+    "metadata": 0,
+    "text": "Bangladeš"
+  },
+  {
+    "index": 806,
+    "metadata": 0,
+    "text": "Barbados"
+  },
+  {
+    "index": 807,
+    "metadata": 0,
+    "text": "Belgija"
+  },
+  {
+    "index": 808,
+    "metadata": 0,
+    "text": "Belize"
+  },
+  {
+    "index": 809,
+    "metadata": 0,
+    "text": "Benin"
+  },
+  {
+    "index": 810,
+    "metadata": 0,
+    "text": "Bermuda"
+  },
+  {
+    "index": 811,
+    "metadata": 0,
+    "text": "Belorusija"
+  },
+  {
+    "index": 812,
+    "metadata": 0,
+    "text": "Bolivija"
+  },
+  {
+    "index": 813,
+    "metadata": 0,
+    "text": "Bosna"
+  },
+  {
+    "index": 814,
+    "metadata": 0,
+    "text": "Bocvana"
+  },
+  {
+    "index": 815,
+    "metadata": 0,
+    "text": "Brazil"
+  },
+  {
+    "index": 816,
+    "metadata": 0,
+    "text": "Bruneji"
+  },
+  {
+    "index": 817,
+    "metadata": 0,
+    "text": "Bugarska"
+  },
+  {
+    "index": 818,
+    "metadata": 0,
+    "text": "Burkina Faso"
+  },
+  {
+    "index": 819,
+    "metadata": 0,
+    "text": "Burundi"
+  },
+  {
+    "index": 820,
+    "metadata": 0,
+    "text": "Butan"
+  },
+  {
+    "index": 821,
+    "metadata": 0,
+    "text": "Kape Verde"
+  },
+  {
+    "index": 822,
+    "metadata": 0,
+    "text": "Kamerun"
+  },
+  {
+    "index": 823,
+    "metadata": 0,
+    "text": "Kambodža"
+  },
+  {
+    "index": 824,
+    "metadata": 0,
+    "text": "Kanada"
+  },
+  {
+    "index": 825,
+    "metadata": 0,
+    "text": "Katar"
+  },
+  {
+    "index": 826,
+    "metadata": 0,
+    "text": "Kazahstan"
+  },
+  {
+    "index": 827,
+    "metadata": 0,
+    "text": "Čad"
+  },
+  {
+    "index": 828,
+    "metadata": 0,
+    "text": "Čile"
+  },
+  {
+    "index": 829,
+    "metadata": 0,
+    "text": "Kina"
+  },
+  {
+    "index": 830,
+    "metadata": 0,
+    "text": "Kipar"
+  },
+  {
+    "index": 831,
+    "metadata": 0,
+    "text": "Singapur"
+  },
+  {
+    "index": 832,
+    "metadata": 0,
+    "text": "Kolumbija"
+  },
+  {
+    "index": 833,
+    "metadata": 0,
+    "text": "Kongo"
+  },
+  {
+    "index": 834,
+    "metadata": 0,
+    "text": "Severna Koreja"
+  },
+  {
+    "index": 835,
+    "metadata": 0,
+    "text": "Južna Koreja"
+  },
+  {
+    "index": 836,
+    "metadata": 0,
+    "text": "Obala Slonovače"
+  },
+  {
+    "index": 837,
+    "metadata": 0,
+    "text": "Kosta Rika"
+  },
+  {
+    "index": 838,
+    "metadata": 0,
+    "text": "Hrvatska"
+  },
+  {
+    "index": 839,
+    "metadata": 0,
+    "text": "Kuba"
+  },
+  {
+    "index": 840,
+    "metadata": 0,
+    "text": "Danska"
+  },
+  {
+    "index": 841,
+    "metadata": 0,
+    "text": "Džibuti"
+  },
+  {
+    "index": 842,
+    "metadata": 0,
+    "text": "Dominikanska republika"
+  },
+  {
+    "index": 843,
+    "metadata": 0,
+    "text": "Egipat"
+  },
+  {
+    "index": 844,
+    "metadata": 0,
+    "text": "Salvador"
+  },
+  {
+    "index": 845,
+    "metadata": 0,
+    "text": "Ujedinjeni Arapski Emirati"
+  },
+  {
+    "index": 846,
+    "metadata": 0,
+    "text": "Ekvador"
+  },
+  {
+    "index": 847,
+    "metadata": 0,
+    "text": "Eritreja"
+  },
+  {
+    "index": 848,
+    "metadata": 0,
+    "text": "Škotska"
+  },
+  {
+    "index": 849,
+    "metadata": 0,
+    "text": "Slovačka"
+  },
+  {
+    "index": 850,
+    "metadata": 0,
+    "text": "Slovenija"
+  },
+  {
+    "index": 851,
+    "metadata": 0,
+    "text": "Španija"
+  },
+  {
+    "index": 852,
+    "metadata": 0,
+    "text": "Estonija"
+  },
+  {
+    "index": 853,
+    "metadata": 0,
+    "text": "Etiopija"
+  },
+  {
+    "index": 854,
+    "metadata": 0,
+    "text": "USA"
+  },
+  {
+    "index": 855,
+    "metadata": 0,
+    "text": "Fidži"
+  },
+  {
+    "index": 856,
+    "metadata": 0,
+    "text": "Finska"
+  },
+  {
+    "index": 857,
+    "metadata": 0,
+    "text": "Filipini"
+  },
+  {
+    "index": 858,
+    "metadata": 0,
+    "text": "Francuska"
+  },
+  {
+    "index": 859,
+    "metadata": 0,
+    "text": "Gabon"
+  },
+  {
+    "index": 860,
+    "metadata": 0,
+    "text": "Gambija"
+  },
+  {
+    "index": 861,
+    "metadata": 0,
+    "text": "Gana"
+  },
+  {
+    "index": 862,
+    "metadata": 0,
+    "text": "Gruzija"
+  },
+  {
+    "index": 863,
+    "metadata": 0,
+    "text": "Grenada"
+  },
+  {
+    "index": 864,
+    "metadata": 0,
+    "text": "Grčka"
+  },
+  {
+    "index": 865,
+    "metadata": 0,
+    "text": "Gvatemala"
+  },
+  {
+    "index": 866,
+    "metadata": 0,
+    "text": "Gvajana"
+  },
+  {
+    "index": 867,
+    "metadata": 0,
+    "text": "Gvineja"
+  },
+  {
+    "index": 868,
+    "metadata": 0,
+    "text": "Gvineja-Bisao"
+  },
+  {
+    "index": 869,
+    "metadata": 0,
+    "text": "Ekvatorijalna Gvineja"
+  },
+  {
+    "index": 870,
+    "metadata": 0,
+    "text": "Haiti"
+  },
+  {
+    "index": 871,
+    "metadata": 0,
+    "text": "Holandija"
+  },
+  {
+    "index": 872,
+    "metadata": 0,
+    "text": "Honduras"
+  },
+  {
+    "index": 873,
+    "metadata": 0,
+    "text": "Hong Kong"
+  },
+  {
+    "index": 874,
+    "metadata": 0,
+    "text": "Mađarska"
+  },
+  {
+    "index": 875,
+    "metadata": 0,
+    "text": "Jemen"
+  },
+  {
+    "index": 876,
+    "metadata": 0,
+    "text": "Kajmanska Ostrva"
+  },
+  {
+    "index": 877,
+    "metadata": 0,
+    "text": "Kukova Ostrva"
+  },
+  {
+    "index": 878,
+    "metadata": 0,
+    "text": "Farska Ostrva"
+  },
+  {
+    "index": 879,
+    "metadata": 0,
+    "text": "Solomonva Ostrva"
+  },
+  {
+    "index": 880,
+    "metadata": 0,
+    "text": "Devičanska ostrva"
+  },
+  {
+    "index": 881,
+    "metadata": 0,
+    "text": "Indija"
+  },
+  {
+    "index": 882,
+    "metadata": 0,
+    "text": "Indonezija"
+  },
+  {
+    "index": 883,
+    "metadata": 0,
+    "text": "Engleska"
+  },
+  {
+    "index": 884,
+    "metadata": 0,
+    "text": "Iran"
+  },
+  {
+    "index": 885,
+    "metadata": 0,
+    "text": "Irak"
+  },
+  {
+    "index": 886,
+    "metadata": 0,
+    "text": "Irska"
+  },
+  {
+    "index": 887,
+    "metadata": 0,
+    "text": "Severna Irska"
+  },
+  {
+    "index": 888,
+    "metadata": 0,
+    "text": "Island"
+  },
+  {
+    "index": 889,
+    "metadata": 0,
+    "text": "Izrael"
+  },
+  {
+    "index": 890,
+    "metadata": 0,
+    "text": "Italija"
+  },
+  {
+    "index": 891,
+    "metadata": 0,
+    "text": "Crna Gora"
+  },
+  {
+    "index": 892,
+    "metadata": 0,
+    "text": "Jamajka"
+  },
+  {
+    "index": 893,
+    "metadata": 0,
+    "text": "Japan"
+  },
+  {
+    "index": 894,
+    "metadata": 0,
+    "text": "Jordan"
+  },
+  {
+    "index": 895,
+    "metadata": 0,
+    "text": "Kenija"
+  },
+  {
+    "index": 896,
+    "metadata": 0,
+    "text": "Kosovo i Metohija"
+  },
+  {
+    "index": 897,
+    "metadata": 0,
+    "text": "Kuvajt"
+  },
+  {
+    "index": 898,
+    "metadata": 0,
+    "text": "Laos"
+  },
+  {
+    "index": 899,
+    "metadata": 0,
+    "text": "Lesoto"
+  },
+  {
+    "index": 900,
+    "metadata": 0,
+    "text": "Letonija"
+  },
+  {
+    "index": 901,
+    "metadata": 0,
+    "text": "Liban"
+  },
+  {
+    "index": 902,
+    "metadata": 0,
+    "text": "Libija"
+  },
+  {
+    "index": 903,
+    "metadata": 0,
+    "text": "Liberija"
+  },
+  {
+    "index": 904,
+    "metadata": 0,
+    "text": "Lihenštajn"
+  },
+  {
+    "index": 905,
+    "metadata": 0,
+    "text": "Litvanija"
+  },
+  {
+    "index": 906,
+    "metadata": 0,
+    "text": "Luksemburg"
+  },
+  {
+    "index": 907,
+    "metadata": 0,
+    "text": "Makao"
+  },
+  {
+    "index": 908,
+    "metadata": 0,
+    "text": "Makedonija"
+  },
+  {
+    "index": 909,
+    "metadata": 0,
+    "text": "Madagaskar"
+  },
+  {
+    "index": 910,
+    "metadata": 0,
+    "text": "Malezija"
+  },
+  {
+    "index": 911,
+    "metadata": 0,
+    "text": "Malavi"
+  },
+  {
+    "index": 912,
+    "metadata": 0,
+    "text": "Maldivi"
+  },
+  {
+    "index": 913,
+    "metadata": 0,
+    "text": "Mali"
+  },
+  {
+    "index": 914,
+    "metadata": 0,
+    "text": "Malta"
+  },
+  {
+    "index": 915,
+    "metadata": 0,
+    "text": "Moroko"
+  },
+  {
+    "index": 916,
+    "metadata": 0,
+    "text": "Mauritanija"
+  },
+  {
+    "index": 917,
+    "metadata": 0,
+    "text": "Meksiko"
+  },
+  {
+    "index": 918,
+    "metadata": 0,
+    "text": "Mianmar"
+  },
+  {
+    "index": 919,
+    "metadata": 0,
+    "text": "Mozambik"
+  },
+  {
+    "index": 920,
+    "metadata": 0,
+    "text": "Moldavija"
+  },
+  {
+    "index": 921,
+    "metadata": 0,
+    "text": "Monako"
+  },
+  {
+    "index": 922,
+    "metadata": 0,
+    "text": "Mongolija"
+  },
+  {
+    "index": 923,
+    "metadata": 0,
+    "text": "Namibija"
+  },
+  {
+    "index": 924,
+    "metadata": 0,
+    "text": "Nepal"
+  },
+  {
+    "index": 925,
+    "metadata": 0,
+    "text": "Nikaragva"
+  },
+  {
+    "index": 926,
+    "metadata": 0,
+    "text": "Niger"
+  },
+  {
+    "index": 927,
+    "metadata": 0,
+    "text": "Nigerija"
+  },
+  {
+    "index": 928,
+    "metadata": 0,
+    "text": "Norveška"
+  },
+  {
+    "index": 929,
+    "metadata": 0,
+    "text": "Novi Zeland"
+  },
+  {
+    "index": 930,
+    "metadata": 0,
+    "text": "Oman"
+  },
+  {
+    "index": 931,
+    "metadata": 0,
+    "text": "Vels"
+  },
+  {
+    "index": 932,
+    "metadata": 0,
+    "text": "Palestina"
+  },
+  {
+    "index": 933,
+    "metadata": 0,
+    "text": "Panama"
+  },
+  {
+    "index": 934,
+    "metadata": 0,
+    "text": "Papua Nova Gvineja"
+  },
+  {
+    "index": 935,
+    "metadata": 0,
+    "text": "Pakistan"
+  },
+  {
+    "index": 936,
+    "metadata": 0,
+    "text": "Paragvaj"
+  },
+  {
+    "index": 937,
+    "metadata": 0,
+    "text": "Peru"
+  },
+  {
+    "index": 938,
+    "metadata": 0,
+    "text": "Poljska"
+  },
+  {
+    "index": 939,
+    "metadata": 0,
+    "text": "Porto Riko"
+  },
+  {
+    "index": 940,
+    "metadata": 0,
+    "text": "Portugalija"
+  },
+  {
+    "index": 941,
+    "metadata": 0,
+    "text": "Kirgistan"
+  },
+  {
+    "index": 942,
+    "metadata": 0,
+    "text": "Centralnoafrička Republika"
+  },
+  {
+    "index": 943,
+    "metadata": 0,
+    "text": "Demokratska Republika Kongo"
+  },
+  {
+    "index": 944,
+    "metadata": 0,
+    "text": "Dominikanska Republika"
+  },
+  {
+    "index": 945,
+    "metadata": 0,
+    "text": "Češka"
+  },
+  {
+    "index": 946,
+    "metadata": 0,
+    "text": "Rumunija"
+  },
+  {
+    "index": 947,
+    "metadata": 0,
+    "text": "Ruanda"
+  },
+  {
+    "index": 948,
+    "metadata": 0,
+    "text": "Rusija"
+  },
+  {
+    "index": 949,
+    "metadata": 0,
+    "text": "Samoa"
+  },
+  {
+    "index": 950,
+    "metadata": 0,
+    "text": "San Marino"
+  },
+  {
+    "index": 951,
+    "metadata": 0,
+    "text": "Sveta Lucija"
+  },
+  {
+    "index": 952,
+    "metadata": 0,
+    "text": "Sveti Kits i Nevis"
+  },
+  {
+    "index": 953,
+    "metadata": 0,
+    "text": "Sao Tome i Principe"
+  },
+  {
+    "index": 954,
+    "metadata": 0,
+    "text": "Sveti Vinsent i Grenadini"
+  },
+  {
+    "index": 955,
+    "metadata": 0,
+    "text": "Senegal"
+  },
+  {
+    "index": 956,
+    "metadata": 0,
+    "text": "Siera Leone"
+  },
+  {
+    "index": 957,
+    "metadata": 0,
+    "text": "Srbija"
+  },
+  {
+    "index": 958,
+    "metadata": 0,
+    "text": "Sejšeli"
+  },
+  {
+    "index": 959,
+    "metadata": 0,
+    "text": "Singapur"
+  },
+  {
+    "index": 960,
+    "metadata": 0,
+    "text": "Sirija"
+  },
+  {
+    "index": 961,
+    "metadata": 0,
+    "text": "Somalija"
+  },
+  {
+    "index": 962,
+    "metadata": 0,
+    "text": "Šri Lanka"
+  },
+  {
+    "index": 963,
+    "metadata": 0,
+    "text": "Svazilend"
+  },
+  {
+    "index": 964,
+    "metadata": 0,
+    "text": "Sudan"
+  },
+  {
+    "index": 965,
+    "metadata": 0,
+    "text": "Švedska"
+  },
+  {
+    "index": 966,
+    "metadata": 0,
+    "text": "Švajcarska"
+  },
+  {
+    "index": 967,
+    "metadata": 0,
+    "text": "Surinam"
+  },
+  {
+    "index": 968,
+    "metadata": 0,
+    "text": "Tadžikistan"
+  },
+  {
+    "index": 969,
+    "metadata": 0,
+    "text": "Tajland"
+  },
+  {
+    "index": 970,
+    "metadata": 0,
+    "text": "Tahiti"
+  },
+  {
+    "index": 971,
+    "metadata": 0,
+    "text": "Tajvan"
+  },
+  {
+    "index": 972,
+    "metadata": 0,
+    "text": "Tanzanija"
+  },
+  {
+    "index": 973,
+    "metadata": 0,
+    "text": "Togo"
+  },
+  {
+    "index": 974,
+    "metadata": 0,
+    "text": "Tonga"
+  },
+  {
+    "index": 975,
+    "metadata": 0,
+    "text": "Trinidad i Tobago"
+  },
+  {
+    "index": 976,
+    "metadata": 0,
+    "text": "Tunis"
+  },
+  {
+    "index": 977,
+    "metadata": 0,
+    "text": "Turkmenistan"
+  },
+  {
+    "index": 978,
+    "metadata": 0,
+    "text": "Turska"
+  },
+  {
+    "index": 979,
+    "metadata": 0,
+    "text": "Ukrajina"
+  },
+  {
+    "index": 980,
+    "metadata": 0,
+    "text": "Uganda"
+  },
+  {
+    "index": 981,
+    "metadata": 0,
+    "text": "Urugvaj"
+  },
+  {
+    "index": 982,
+    "metadata": 0,
+    "text": "Uzbekistan"
+  },
+  {
+    "index": 983,
+    "metadata": 0,
+    "text": "Vanuatu"
+  },
+  {
+    "index": 984,
+    "metadata": 0,
+    "text": "Venecuela"
+  },
+  {
+    "index": 985,
+    "metadata": 0,
+    "text": "Vijetnam"
+  },
+  {
+    "index": 986,
+    "metadata": 0,
+    "text": "Zambija"
+  },
+  {
+    "index": 987,
+    "metadata": 0,
+    "text": "Zimbabve"
+  },
+  {
+    "index": 988,
+    "metadata": 0,
+    "text": "Select at least one league of 42 teams"
+  },
+  {
+    "index": 989,
+    "metadata": 0,
+    "text": "Sul-Americana Cup  Fixtures"
+  },
+  {
+    "index": 990,
+    "metadata": 0,
+    "text": "Golden Ball"
+  },
+  {
+    "index": 991,
+    "metadata": 0,
+    "text": "Team of the week"
+  },
+  {
+    "index": 992,
+    "metadata": 0,
+    "text": "Team of the year"
+  },
+  {
+    "index": 993,
+    "metadata": 0,
+    "text": "Youth Academy"
+  },
+  {
+    "index": 994,
+    "metadata": 0,
+    "text": "African Ch. League"
+  },
+  {
+    "index": 995,
+    "metadata": 0,
+    "text": "Asian Ch. League"
+  },
+  {
+    "index": 996,
+    "metadata": 0,
+    "text": "UEFA Super Cup"
+  },
+  {
+    "index": 997,
+    "metadata": 0,
+    "text": "Recopa Sul-Americana"
+  },
+  {
+    "index": 998,
+    "metadata": 0,
+    "text": "Saved formations"
+  },
+  {
+    "index": 999,
+    "metadata": 0,
+    "text": "Save current formation"
+  },
+  {
+    "index": 1000,
+    "metadata": 0,
+    "text": "Select a name:"
+  },
+  {
+    "index": 1001,
+    "metadata": 0,
+    "text": "Save"
+  },
+  {
+    "index": 1002,
+    "metadata": 0,
+    "text": "Select at least 11 players"
+  },
+  {
+    "index": 1003,
+    "metadata": 0,
+    "text": "Back"
+  },
+  {
+    "index": 1004,
+    "metadata": 0,
+    "text": "Load"
+  },
+  {
+    "index": 1005,
+    "metadata": 0,
+    "text": "Delete"
+  },
+  {
+    "index": 1006,
+    "metadata": 0,
+    "text": "Shirt"
+  },
+  {
+    "index": 1007,
+    "metadata": 0,
+    "text": "promoted from youth squad in"
+  },
+  {
+    "index": 1008,
+    "metadata": 0,
+    "text": "Local"
+  },
+  {
+    "index": 1009,
+    "metadata": 0,
+    "text": "Provincial"
+  },
+  {
+    "index": 1010,
+    "metadata": 0,
+    "text": "Regional"
+  },
+  {
+    "index": 1011,
+    "metadata": 0,
+    "text": "National"
+  },
+  {
+    "index": 1012,
+    "metadata": 0,
+    "text": "Continental"
+  },
+  {
+    "index": 1013,
+    "metadata": 0,
+    "text": "World"
+  },
+  {
+    "index": 1014,
+    "metadata": 0,
+    "text": "Reputation"
+  },
+  {
+    "index": 1015,
+    "metadata": 0,
+    "text": "3 years"
+  },
+  {
+    "index": 1016,
+    "metadata": 0,
+    "text": "Show matches"
+  },
+  {
+    "index": 1017,
+    "metadata": 0,
+    "text": "Only results"
+  },
+  {
+    "index": 1018,
+    "metadata": 0,
+    "text": "LEAGUE"
+  },
+  {
+    "index": 1019,
+    "metadata": 0,
+    "text": "CHAMPIONS L."
+  },
+  {
+    "index": 1020,
+    "metadata": 0,
+    "text": "LIBERTADORES"
+  },
+  {
+    "index": 1021,
+    "metadata": 0,
+    "text": "UEFA LEAGUE"
+  },
+  {
+    "index": 1022,
+    "metadata": 0,
+    "text": "AFRICAN CH."
+  },
+  {
+    "index": 1023,
+    "metadata": 0,
+    "text": "ASIAN CH."
+  },
+  {
+    "index": 1024,
+    "metadata": 0,
+    "text": "Reason"
+  },
+  {
+    "index": 1025,
+    "metadata": 0,
+    "text": "bad results"
+  },
+  {
+    "index": 1026,
+    "metadata": 0,
+    "text": "financial crisis"
+  },
+  {
+    "index": 1027,
+    "metadata": 0,
+    "text": "unhappy supporters"
+  },
+  {
+    "index": 1028,
+    "metadata": 0,
+    "text": "Accept"
+  },
+  {
+    "index": 1029,
+    "metadata": 0,
+    "text": "Refuse all"
+  },
+  {
+    "index": 1030,
+    "metadata": 0,
+    "text": "use"
+  },
+  {
+    "index": 1031,
+    "metadata": 0,
+    "text": "youth"
+  },
+  {
+    "index": 1032,
+    "metadata": 0,
+    "text": "first"
+  },
+  {
+    "index": 1033,
+    "metadata": 0,
+    "text": "Search club"
+  },
+  {
+    "index": 1034,
+    "metadata": 0,
+    "text": "Search player"
+  },
+  {
+    "index": 1035,
+    "metadata": 0,
+    "text": "Search"
+  },
+  {
+    "index": 1036,
+    "metadata": 0,
+    "text": "Progress"
+  },
+  {
+    "index": 1037,
+    "metadata": 0,
+    "text": "Talent"
+  },
+  {
+    "index": 1038,
+    "metadata": 0,
+    "text": "Promote"
+  },
+  {
+    "index": 1039,
+    "metadata": 0,
+    "text": "Fire"
+  },
+  {
+    "index": 1040,
+    "metadata": 0,
+    "text": "You already have 30 players"
+  },
+  {
+    "index": 1041,
+    "metadata": 0,
+    "text": "Confirm the promotion of"
+  },
+  {
+    "index": 1042,
+    "metadata": 0,
+    "text": "The is no places for youth players"
+  },
+  {
+    "index": 1043,
+    "metadata": 0,
+    "text": "Send"
+  },
+  {
+    "index": 1044,
+    "metadata": 0,
+    "text": "Cancel"
+  },
+  {
+    "index": 1045,
+    "metadata": 0,
+    "text": "confirmed transfer"
+  },
+  {
+    "index": 1046,
+    "metadata": 0,
+    "text": "Confirme the transfer os this youth"
+  },
+  {
+    "index": 1047,
+    "metadata": 0,
+    "text": "Fire the player?"
+  },
+  {
+    "index": 1048,
+    "metadata": 0,
+    "text": "International competition settings"
+  },
+  {
+    "index": 1049,
+    "metadata": 0,
+    "text": "Play in the first season"
+  },
+  {
+    "index": 1050,
+    "metadata": 0,
+    "text": "Use real groups in the first season:"
+  },
+  {
+    "index": 1051,
+    "metadata": 0,
+    "text": "Without humans see the matches:"
+  },
+  {
+    "index": 1052,
+    "metadata": 0,
+    "text": "Team's value"
+  },
+  {
+    "index": 1053,
+    "metadata": 0,
+    "text": "Nationality"
+  },
+  {
+    "index": 1054,
+    "metadata": 0,
+    "text": "average"
+  },
+  {
+    "index": 1055,
+    "metadata": 0,
+    "text": "Defensive Midfielder"
+  },
+  {
+    "index": 1056,
+    "metadata": 0,
+    "text": "Ofensive Midfielder"
+  },
+  {
+    "index": 1057,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1058,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1059,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1060,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1061,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1062,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1063,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1064,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1065,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1066,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1067,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1068,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1069,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1070,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1071,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1072,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1073,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1074,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1075,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1076,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1077,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1078,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1079,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1080,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1081,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1082,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1083,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1084,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1085,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1086,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1087,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1088,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1089,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1090,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1091,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1092,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1093,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1094,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1095,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1096,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1097,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1098,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1099,
+    "metadata": 0,
+    "text": ""
+  }
+]

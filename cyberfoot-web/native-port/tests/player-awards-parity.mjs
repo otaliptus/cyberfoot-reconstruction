@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {verifyPlayerAwards} from './player-awards-proof.mjs';const r=verifyPlayerAwards(JSON.parse(readFileSync(new URL('./player-awards-vectors.json',import.meta.url))));if(r.failures.length)throw Error(JSON.stringify(r.failures.slice(0,2)));console.log(`Original player awards: ${r.cases} cases passed.`);

@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Native port development verification</title><style>html,body{margin:0;background:#3a6ea5;height:100%;font-family:Arial,sans-serif}main{height:100%;display:grid;place-items:center}canvas{width:1024px;height:768px;max-width:100vw;object-fit:contain}#language{position:absolute;width:145px;height:22px;font:11px Arial;color:#000;background:#fff;border:2px inset #ccc;box-sizing:border-box}</style></head><body><main><canvas width="1024" height="768" aria-label="Original menu rendering comparison"></canvas></main><select id="language" aria-label="Language"><option>English</option></select><script type="module">
+import {OriginalFormSurface} from './ui-surface.mjs';
+import * as native from './match-core.mjs';
+import {readSave,writeSave} from './save-format.mjs';
+import {openCareer,commitCareerStats} from './career-state.mjs';
+import {updatePlayerStats} from './career-stats.mjs';
+import {evaluate,equalValues} from './tests/evaluate.mjs';
+const [forms,language]=await Promise.all(['forms.json','language.json'].map(p=>fetch(p).then(r=>r.json())));
+const surface=new OriginalFormSurface(document.querySelector('canvas'),forms);await surface.drawMainMenu(language);
+function position(){const r=surface.canvas.getBoundingClientRect(),s=r.width/1024;const f=surface.lastFrame;const select=document.querySelector('select');select.style.left=(r.x+(f.origin.x+137)*s)+'px';select.style.top=(r.y+(f.origin.y+121)*s)+'px';select.style.width=145*s+'px';select.style.height=22*s+'px';}position();addEventListener('resize',position);
+let count=0,failures=[],suites=[];
+for(const [kind,file] of [['core','original'],['player','player'],['lineup','lineup'],['incident','incident'],['event','event'],['clock','clock'],['stats','stats'],['step','step'],['record','record']]){
+ const vectors=await fetch(`tests/${file}-vectors.json`).then(r=>r.json());
+ for(const c of vectors){if(!equalValues(evaluate(kind,c),c.expected))failures.push({kind,name:c.name,args:c.args});count++;}
+ suites.push({kind,cases:vectors.length});
+}
+const saveBytes=new Uint8Array(await fetch('tests/original-career.s15').then(r=>r.arrayBuffer()));
+const save=readSave(saveBytes),career=openCareer(save,{currentDate:42000});commitCareerStats(save,career);
+const roundTrip=writeSave(save),saveRoundTrip=saveBytes.length===roundTrip.length&&saveBytes.every((v,i)=>v===roundTrip[i]);
+const playerId=Object.keys(career.players).map(Number).find(i=>career.players[i].clubId===11),beforeGoals=career.players[playerId].seasonGoals;
+updatePlayerStats(playerId,11,123,'gol',career,new native.OriginalRandom(2015));commitCareerStats(save,career);
+const reloaded=openCareer(readSave(writeSave(save)),{currentDate:42000});
+const goalSurvivesReload=reloaded.players[playerId].seasonGoals===beforeGoals+1;
+if(!saveRoundTrip||!goalSurvivesReload)throw Error('Original career save integration failed.');
+if(failures.length)throw Error('Native/original parity failures: '+failures.length);
+window.render_game_to_text=()=>JSON.stringify({developmentProof:true,completeGame:false,form:surface.lastFrame.form,origin:surface.lastFrame.origin,coordinateSystem:'top left, x right, y down',nativeComparisons:count,suites,saveRoundTrip,goalSurvivesReload,failures});
+window.advanceTime=async()=>{};
+window.nativeProof={surface,native};
+</script></body></html>

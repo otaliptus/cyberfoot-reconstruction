@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8"><title>Original penalty dialog — development</title><style>body{margin:0;background:#3a6ea5;display:grid;place-items:center;min-height:100vh}canvas{width:1024px;max-width:100vw;height:auto}</style><canvas width="1024" height="768" aria-label="Penalty taker selection"></canvas><script type="module">
+import {PenaltyWindow} from './penalty-window.mjs';import {attackingPenaltyView} from './penalty-dialog-host.mjs';import {createAttackingPenalty} from './human-penalty.mjs';import {readSave} from './save-format.mjs';import {openCareer} from './career-state.mjs';import {OriginalRandom} from './match-core.mjs';import {generateAILineup} from './ai-lineup.mjs';import {clubCrestPath} from './club-crest.mjs';
+const [forms,language,input,assets]=await Promise.all([fetch('forms.json').then(r=>r.json()),fetch('language.json').then(r=>r.json()),fetch('tests/original-career.s15').then(r=>r.arrayBuffer()),fetch('crest-assets.json').then(r=>r.json())]);
+const save=readSave(input),state=openCareer(save),rng=new OriginalRandom(2015,()=>2015);
+for(const id of [11,12])generateAILineup(state,id,rng);
+const own=state.lineups[state.clubs[11].lineupId],opponent=state.lineups[state.clubs[12].lineupId];
+const renderer=new PenaltyWindow(document.querySelector('canvas'),forms),crest=clubCrestPath(save,11,assets);if(crest)await renderer.bitmap(crest);
+let current,answer=null;
+const view=()=>attackingPenaltyView(current,state,language,crest);
+const controller=createAttackingPenalty({own,opponent,state,rng,present:v=>{current=v;if(renderer.frame)renderer.update(view());}});
+renderer.register('Form34.gridview1SelectCell',id=>controller.select(id));renderer.register('Form34.bt1Click',()=>controller.kick());
+await renderer.show(view());controller.result.then(value=>{answer=value;renderer.close();});
+window.advanceTime=async ms=>{controller.advanceTime(ms);await Promise.resolve();};
+window.render_game_to_text=()=>JSON.stringify({developmentProof:true,completeGame:false,scope:'Standalone original attacking-penalty flow; no match integration or sound playback yet',phase:current.phase,selectedId:current.selectedId,keeperId:current.keeperId,remainingMs:controller.view.remainingMs,rows:view().rows,languageId:current.languageId,outcome:current.outcome,answer,rngState:rng.state});
+</script>

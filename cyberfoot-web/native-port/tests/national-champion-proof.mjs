@@ -1,0 +1,9 @@
+import {finalizeNationalChampion} from '../national-champion.mjs';
+const bytes=s=>Uint8Array.from(s.match(/../g)??[],x=>parseInt(x,16)),hex=b=>Array.from(b,n=>n.toString(16).padStart(2,'0')).join('');
+export function verifyNationalChampion(vectors){const failures=[];for(const [i,v] of vectors.entries()){
+ const save={career:bytes(v.career),sections:[{name:'clubs',recordSize:760,count:3,data:bytes(v.clubs.join(''))},{name:'records_0066ae98',recordSize:1384,count:3,data:bytes(v.groups)},{name:'records_0066afec',recordSize:56,count:3,data:bytes(v.ledger)},{name:'records_0066b718',recordSize:128,count:3,data:bytes(v.managers)},{name:'records_0066b560',recordSize:28,count:1,data:bytes(v.award)}]},calls=[];
+ finalizeNationalChampion(save,v.winner,1-v.winner,{groupId:v.groupId,clubHonour:(_,a)=>calls.push(['0x64c36c',[a.competition,a.clubId,a.country,a.place,a.group,a.subgroup,a.division]]),managerHonour:(_,a)=>calls.push(['0x64c4bc',[a.competition,a.clubId,a.managerId,a.country,a.place,a.division]]),playerAwards:(_,a)=>calls.push(['0x657674',[a.competition,a.country,a.division,a.group,a.subgroup]]),managerStatistic:(_,id,club,amount,kind)=>calls.push(['0x6494f8',[id,club,amount,kind]]),finishRecord:(_,id,round,competition,result)=>calls.push(['0x6490a8',[id,round,competition,result]])});
+ const actual={clubs:hex(save.sections[0].data),groups:hex(save.sections[1].data),ledger:hex(save.sections[2].data),managers:hex(save.sections[3].data),calls};
+ for(const key of Object.keys(v.expected))if(JSON.stringify(actual[key])!==JSON.stringify(v.expected[key])){failures.push({i,key,actual:actual[key],expected:v.expected[key]});break;}
+ }return {cases:vectors.length,failures};}
+export async function checkNationalChampion(){const r=verifyNationalChampion(await fetch(new URL('./national-champion-vectors.json',import.meta.url)).then(r=>r.json()));if(r.failures.length)throw Error(JSON.stringify(r.failures.slice(0,2)));return {...r,failures:0};}

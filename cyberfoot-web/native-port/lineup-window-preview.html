@@ -1,0 +1,56 @@
+<!doctype html><meta charset="utf-8"><title>Original lineup window — development</title><style>body{margin:0;background:#3a6ea5;display:grid;place-items:center;min-height:100vh}canvas{width:1024px;max-width:100vw;height:auto}</style><canvas width="1024" height="768" aria-label="Original lineup window"></canvas><script type="module">
+import {createResultsHost} from './results-host.mjs';
+import {continueDomesticCompetition} from './domestic-competition-continuation.mjs';
+import {commitHumanLineup} from './human-lineup-commit.mjs';import {prepareDomesticTeams} from './prematch-teams.mjs';import {openDomesticMatchSession} from './domestic-match-session.mjs';import {OriginalRandom} from './match-core.mjs';
+import {clubKitPath} from './club-kit.mjs';
+import {placeRosterPlayer,swapScreenPlayers,repositionScreenSlot} from './manual-lineup.mjs';import {saveScreenLineup} from './saved-lineup.mjs';
+import {LineupWindow} from './lineup-window.mjs';import {lineupView} from './lineup-view.mjs';import {buildLineupRoster} from './lineup-roster.mjs';import {autoSelectScreenLineup} from './lineup-screen.mjs';import {setTactic} from './tactics.mjs';import {readSave,writeSave} from './save-format.mjs';import {openCareer} from './career-state.mjs';import {careerAgenda} from './schedule.mjs';
+const [forms,language,bytes,kitAssets,crestAssets]=await Promise.all([fetch('forms.json').then(r=>r.json()),fetch('language.json').then(r=>r.json()),fetch('tests/original-career.s15').then(r=>r.arrayBuffer()),fetch('kit-assets.json').then(r=>r.json()),fetch('crest-assets.json').then(r=>r.json())]);
+const save=readSave(bytes),agenda=careerAgenda(save),career=new DataView(save.career.buffer,save.career.byteOffset,save.career.byteLength);
+// Development entry supplies the upcoming league day before roster selection.
+career.setInt32(0x16c,agenda.nextDay,true);career.setInt32(0x88,1,true);
+const state=openCareer(save,{currentDate:agenda.nextDate}),clubId=11,rows=buildLineupRoster(state,clubId),renderer=await new LineupWindow(document.querySelector('canvas'),forms).prepare();let formation=4,matchSession=null,starting=false,startMessage=null,nextRoute=null,resultsReady=false,resultsHost=null;let clock=2015;const rng=new OriginalRandom(2015,()=>clock+=7919);
+let slots=autoSelectScreenLineup(state,rows,formation,save,clubId).slots;
+const opponent=state.clubs[agenda.fixtures[agenda.fixtureId].clubs.find(id=>id!==clubId)].name;
+const kitPaths=[1,2,3].map(k=>clubKitPath(save,clubId,k,kitAssets)),opponentId=agenda.fixtures[agenda.fixtureId].clubs.find(id=>id!==clubId),opponentKit=clubKitPath(save,opponentId,1,kitAssets);
+await Promise.all([...new Set([...kitPaths,opponentKit,'assets/original-shirt-1.png'].filter(Boolean))].map(path=>renderer.bitmap(path)));
+let checkedKit=[2,3].includes(state.clubs[clubId].selectedKit)&&kitPaths[state.clubs[clubId].selectedKit-1]?state.clubs[clubId].selectedKit:1,shirtImage=kitPaths[checkedKit-1]?renderer.images.get(kitPaths[checkedKit-1]):null;
+const view=()=>{const result=lineupView(state,rows,slots,formation,clubId,language,{remember:!!career.getUint8(0xde),opponent});result.shirtImage=shirtImage;result.kitImagePaths={Image13:opponentKit,Image2:kitPaths[0]??'assets/original-shirt-1.png',Image4:kitPaths[1],Image5:kitPaths[2]};for(const k of [1,2,3])result.properties['rd'+k]={Visible:k===1||!!kitPaths[k-1],Checked:checkedKit===k};return result;};
+for(const k of [1,2,3])renderer.register('Form87.rd'+k+'Click',()=>{checkedKit=k;if(kitPaths[k-1]){state.clubs[clubId].selectedKit=k;shirtImage=renderer.images.get(kitPaths[k-1]);}renderer.update(view());});
+renderer.register('Form87.combtatClick',index=>{formation=index+1;slots=autoSelectScreenLineup(state,rows,formation,save,clubId).slots;renderer.update(view());});
+for(const [control,operation] of [['comboej','comboejClick'],['combomarc','combomarcChange'],['combo_cataq','combo_cataqChange']])renderer.register('Form87.'+operation,index=>{setTactic(state.clubs[clubId],control,index);renderer.update(view());});
+renderer.register('Form87.combo1Change',index=>{state.clubs[clubId].captain=rows[index].playerId;renderer.update(view());});renderer.register('Form87.combo2Change',index=>{state.clubs[clubId].setPiecePlayer=rows[index].playerId;renderer.update(view());});
+renderer.register('Form87.ckescalacaoClick',checked=>{career.setUint8(0xde,checked?1:0);renderer.update(view());});
+renderer.register('Form87.bt_voltarClick',()=>{if(career.getUint8(0xde))saveScreenLineup(save,clubId,slots);renderer.close();});
+renderer.register('Form87.bt_irprojogoClick',async()=>{
+ if(starting||matchSession)return;starting=true;
+ try{
+  // The development entry point supplies the saved career's next league day.
+  // Full manager/day routing is still outside this preview.
+  const committed=commitHumanLineup(save,state,rows,slots,{clubId,remember:!!career.getUint8(0xde),rng});
+  if(!committed.accepted){startMessage=language[committed.messageId].text;return;}
+  prepareDomesticTeams(save,state,rng);
+  const scheduled=save.sections.find(s=>s.name==='records_0066afa0'),data=new DataView(scheduled.data.buffer,scheduled.data.byteOffset,scheduled.data.byteLength),subgroup=data.getInt32(agenda.fixtureId*72+0x38,true);
+  matchSession=await openDomesticMatchSession(renderer,{save,state,rng,context:{competitionType:1,subgroup,currentDate:agenda.nextDate},language,crestAssets,kitAssets,continueCompetition:async(route,runtime)=>{nextRoute=route;if(route==='batch')await continueDomesticCompetition(save,runtime,{close:async()=>{resultsReady=true;if(new URLSearchParams(location.search).has('resultsIntegration')){resultsHost=createResultsHost(renderer,{save,state,language,crestAssets});await resultsHost.open({subgroup,caption:language[225].text});}}});}});
+ }finally{starting=false;}
+});
+renderer.onLineupDrop=({source,targetSlot,x,y})=>{if(targetSlot){if(source.playerId!==undefined)placeRosterPlayer(slots,rows,source.playerId,targetSlot);else swapScreenPlayers(slots,rows,source.slot,targetSlot);}else if(source.slot)repositionScreenSlot(slots,source.slot,x,y);renderer.update(view());};
+await renderer.show(view());
+const manualChecks=new URLSearchParams(location.search).get('check')==='manual'?await(await import('./tests/manual-lineup-proof.mjs')).checkManualLookup():null;
+const commitChecks=new URLSearchParams(location.search).get('check')==='commit'?await(await import('./tests/human-commit-proof.mjs')).checkHumanCommit():null;
+const scoreChecks=new URLSearchParams(location.search).get('check')==='score'?await(await import('./tests/score-plan-proof.mjs')).checkScorePlan():null;
+const resultChecks=new URLSearchParams(location.search).get('check')==='result'?await(await import('./tests/competition-result-proof.mjs')).checkCompetitionResult():null;
+const ratingChecks=new URLSearchParams(location.search).get('check')==='ratings'?await(await import('./tests/player-rating-proof.mjs')).checkPlayerRatings():null;
+const historyChecks=new URLSearchParams(location.search).get('check')==='history'?await(await import('./tests/player-history-proof.mjs')).checkPlayerHistory():null;
+const weeklyChecks=new URLSearchParams(location.search).get('check')==='weekly'?await(await import('./tests/weekly-team-proof.mjs')).checkWeeklyTeam():null;
+const knockoutChecks=new URLSearchParams(location.search).get('check')==='knockout'?{outcomes:await(await import('./tests/knockout-progress-proof.mjs')).checkKnockoutProgress(),rounds:await(await import('./tests/knockout-round-proof.mjs')).checkKnockoutRounds()}:null;
+const championChecks=new URLSearchParams(location.search).get('check')==='champion'?await(await import('./tests/champion-browser-proof.mjs')).checkChampionBrowser():null;
+const nationalChecks=new URLSearchParams(location.search).get('check')==='national'?await(await import('./tests/national-knockout-proof.mjs')).checkNationalKnockout():null;
+const nationalChampionChecks=new URLSearchParams(location.search).get('check')==='national-champion'?await(await import('./tests/national-champion-browser.mjs')).checkNationalChampionBrowser():null;
+const batchChecks=new URLSearchParams(location.search).get('check')==='batch'?await(await import('./tests/competition-batch-browser.mjs')).checkCompetitionBatchBrowser():null;
+const automaticChecks=new URLSearchParams(location.search).get('check')==='automatic'?await(await import('./tests/automatic-browser-proof.mjs')).checkAutomaticBrowser():null;
+const preparationChecks=new URLSearchParams(location.search).get('check')==='preparation'?await(await import('./tests/match-preparation-browser.mjs')).checkMatchPreparationBrowser():null;
+window.render_game_to_text=()=>JSON.stringify({developmentProof:true,completeGame:false,manualChecks,commitChecks,scoreChecks,resultChecks,ratingChecks,historyChecks,weeklyChecks,knockoutChecks,championChecks,nationalChecks,nationalChampionChecks,batchChecks,automaticChecks,preparationChecks,form:renderer.frame?.form,scope:'native lineup-to-league match integration; full career routing pending',starting,startMessage,resultsReady,results:resultsHost?.snapshot(),round:career.getInt32(0x4c,true),leg:career.getInt32(0x50,true),match:matchSession?.snapshot(),nextRoute,formation,checkedKit,selectedKit:state.clubs[clubId].selectedKit,kitPaths,club:state.clubs[clubId].name,roster:rows.map(r=>({playerId:r.playerId,name:state.players[r.playerId].name,status:r.status})),slots,tactics:{playStyle:state.clubs[clubId].playStyle,marking:state.clubs[clubId].marking,attackFocus:state.clubs[clubId].attackFocus},captain:state.clubs[clubId].captain,setPiecePlayer:state.clubs[clubId].setPiecePlayer,remember:!!career.getUint8(0xde),selectedPlayerId:renderer.selectedPlayerId});
+window.advanceTime=async ms=>matchSession?.advanceTime(ms);window.lineupDevelopment={save:()=>writeSave(save),renderer,state,get match(){return matchSession;},get results(){return resultsHost;}};
+if(!new URLSearchParams(location.search).has('manualClock')){let last=performance.now();const animate=now=>{const delta=now-last;last=now;matchSession?.advanceTime(delta);requestAnimationFrame(animate);};requestAnimationFrame(animate);}
+</script>

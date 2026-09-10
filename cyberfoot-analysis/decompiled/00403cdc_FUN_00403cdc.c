@@ -1,0 +1,9 @@
+// Address: 00403cdc
+// Machine-generated pseudocode; Delphi types and calling conventions may be inaccurate.
+
+void FUN_00403cdc(void)
+
+{
+  return;
+}
+

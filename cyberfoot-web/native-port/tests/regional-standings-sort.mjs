@@ -1,0 +1,2 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import {gunzipSync} from 'node:zlib';import {sortRegionalCandidates} from '../regional-standings-data.mjs';
+const cases=JSON.parse(gunzipSync(fs.readFileSync(new URL('./regional-standings-sort-vectors.json.gz',import.meta.url))));for(const {rows,expected} of cases){sortRegionalCandidates(rows);assert.deepEqual(rows,expected);}console.log(cases.length+' whole original regional sort comparisons passed.');

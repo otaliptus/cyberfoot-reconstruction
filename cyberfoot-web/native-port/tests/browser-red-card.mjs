@@ -1,0 +1,15 @@
+import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';import assert from 'node:assert/strict';import {writeFileSync} from 'node:fs';
+const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1024,height:768}}),errors=[];page.on('pageerror',e=>errors.push(String(e)));
+await page.goto('http://127.0.0.1:8766/match-window-preview.html?redCardIntegration=1');await page.waitForFunction(()=>window.beginRedCardCheck);await page.evaluate(()=>window.beginRedCardCheck());
+await page.waitForFunction(()=>window.tacticsDevelopment.renderer.frame.form==='Form88');
+const pending=await page.evaluate(()=>({check:window.redCardCheck,text:JSON.parse(window.render_game_to_text()),events:window.tacticsDevelopment.state.events}));
+assert.equal(pending.check.pending,true);assert.equal(pending.text.timerEnabled,false);assert.equal(pending.text.tick,2);
+const event=pending.events.find(e=>e[0]===13&&e[3]>1);assert.ok(event);assert.equal(await page.evaluate(id=>window.tacticsDevelopment.state.players[id].active,event[2]),false);
+const count=await page.evaluate(()=>window.tacticsDevelopment.renderer.matchTargets.filter(t=>t.slot<12).length);assert.equal(count,10);
+await page.evaluate(()=>window.advanceTime(5000));assert.equal(JSON.parse(await page.evaluate(()=>window.render_game_to_text())).tick,2);
+await page.screenshot({path:'/Users/talip/Documents/ChatGPT/misc/output/native-match-tactics/red-card.png'});
+await page.locator('[data-original-control="Form88.bt_irprojogo"]').click();await page.waitForFunction(()=>window.redCardCheck.pending===false);await page.evaluate(()=>window.redCardAdvance);
+const result=await page.evaluate(()=>window.redCardCheck);assert.equal(result.tick,2);assert.equal(result.timerEnabled,true);assert.equal(result.events.filter(e=>e[0]===13&&e[2]===event[2]).length,1);
+await page.evaluate(()=>window.advanceMatchTicks(1));assert.equal(JSON.parse(await page.evaluate(()=>window.render_game_to_text())).tick,3);
+await page.screenshot({path:'/Users/talip/Documents/ChatGPT/misc/output/native-match-tactics/red-card-resumed.png'});
+writeFileSync('/Users/talip/Documents/ChatGPT/misc/output/native-match-tactics/red-card.json',JSON.stringify({pending,result,errors},null,2));await browser.close();assert.deepEqual(errors,[]);console.log('Red-card integration: real event, inactive player hidden, clock paused at tick2, exactly-once record, resume through tick3.');

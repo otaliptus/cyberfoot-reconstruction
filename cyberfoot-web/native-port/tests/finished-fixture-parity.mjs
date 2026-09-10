@@ -1,0 +1,2 @@
+import {readFileSync} from 'node:fs';import assert from 'node:assert/strict';import {verifyFinishedFixture} from './finished-fixture-proof.mjs';
+const r=verifyFinishedFixture(JSON.parse(readFileSync(new URL('./finished-fixture-vectors.json',import.meta.url))));if(r.failures.length)console.log(JSON.stringify(r.failures.slice(0,2),null,2));assert.equal(r.failures.length,0);console.log(`Original connected fixture settlement: ${r.cases} cases passed.`);

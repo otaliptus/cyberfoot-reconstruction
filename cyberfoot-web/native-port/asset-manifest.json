@@ -1,0 +1,1902 @@
+[
+  {
+    "form": "Form10",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "1c5d0be9beb3dc08e79b36e236aa58066c21ce35cf4ef2201090328574f5b91a",
+    "size": 20674,
+    "path": "assets/Form10-Image1-Picture-Data.png",
+    "width": 544,
+    "height": 356
+  },
+  {
+    "form": "Form13",
+    "control": "nova_barra",
+    "property": "Picture.Data",
+    "sha256": "8d866957d4aba52b6af2b0973c4b4102f6b57e72c759eb1ba4f2196effff8f40",
+    "size": 95817,
+    "path": "assets/Form13-nova_barra-Picture-Data.png",
+    "width": 1280,
+    "height": 57
+  },
+  {
+    "form": "Form13",
+    "control": "Image12",
+    "property": "Picture.Data",
+    "sha256": "18395a1e09bd16cd82976488b73ca0842aeb0ebb8ece8f058fa04416c7b41729",
+    "size": 2602,
+    "path": "assets/Form13-Image12-Picture-Data.png",
+    "width": 359,
+    "height": 45
+  },
+  {
+    "form": "Form13",
+    "control": "imgj",
+    "property": "Picture.Data",
+    "sha256": "840379d1f564cb01a8624ed363aa0ce9cb1c607866f7f2f1309cf825a182ab3a",
+    "size": 2345,
+    "path": "assets/Form13-imgj-Picture-Data.png",
+    "width": 27,
+    "height": 30
+  },
+  {
+    "form": "Form13",
+    "control": "Image9",
+    "property": "Picture.Data",
+    "sha256": "86aec24ee94cf2a5476eb517c20a5c1f90ef868a58cd67412c6503657ccab5bc",
+    "size": 1795,
+    "path": "assets/Form13-Image9-Picture-Data.png",
+    "width": 32,
+    "height": 32
+  },
+  {
+    "form": "Form13",
+    "control": "Image10",
+    "property": "Picture.Data",
+    "sha256": "4017b75b1f2f2262dfb29d382ca9e1c62bc4dd50868b7a9754ffa3440ffece13",
+    "size": 2323,
+    "path": "assets/Form13-Image10-Picture-Data.png",
+    "width": 30,
+    "height": 30
+  },
+  {
+    "form": "Form13",
+    "control": "Image5",
+    "property": "Picture.Data",
+    "sha256": "4ff1b1fe3d1c72c476a43996bca09d65f82d3d005085d99228584e66d2c754f2",
+    "size": 3922,
+    "path": "assets/Form13-Image5-Picture-Data.png",
+    "width": 49,
+    "height": 38
+  },
+  {
+    "form": "Form13",
+    "control": "m2",
+    "property": "Picture.Data",
+    "sha256": "4dfdf80f22d4c33706528c0f32a886f525ed286040f5953b1491cb3b15fee416",
+    "size": 1278,
+    "path": "assets/Form13-m2-Picture-Data.png",
+    "width": 18,
+    "height": 18
+  },
+  {
+    "form": "Form13",
+    "control": "m3",
+    "property": "Picture.Data",
+    "sha256": "8bc9d63b0f967dc15a6a259514f882d260b42f1c9d04413f9571b99b9f7c12bf",
+    "size": 1292,
+    "path": "assets/Form13-m3-Picture-Data.png",
+    "width": 18,
+    "height": 18
+  },
+  {
+    "form": "Form13",
+    "control": "m1",
+    "property": "Picture.Data",
+    "sha256": "b7cfa17e0f418246e5ec04c5826767dd1b8d46aceb3961e823d028862b1beee3",
+    "size": 1256,
+    "path": "assets/Form13-m1-Picture-Data.png",
+    "width": 18,
+    "height": 18
+  },
+  {
+    "form": "Form13",
+    "control": "Image13",
+    "property": "Picture.Data",
+    "sha256": "3153eeb5f9551a6722e6624373ce45ebab65f5524700088239c6c511d6b518d7",
+    "size": 3223,
+    "path": "assets/Form13-Image13-Picture-Data.png",
+    "width": 33,
+    "height": 33
+  },
+  {
+    "form": "Form13",
+    "control": "icon_arbitro",
+    "property": "Picture.Data",
+    "sha256": "5a706ca23e461ba39c7b418ee9835469d458b4ba15945a885b83c90f6c2ee5c7",
+    "size": 3343,
+    "path": "assets/Form13-icon_arbitro-Picture-Data.png",
+    "width": 38,
+    "height": 35
+  },
+  {
+    "form": "Form13",
+    "control": "Image4",
+    "property": "Picture.Data",
+    "sha256": "80bbf6dd9dea90a7a52411b9cd2aba2f0b841ebde70975e822421a3429bc11ec",
+    "size": 2035,
+    "path": "assets/Form13-Image4-Picture-Data.png",
+    "width": 26,
+    "height": 26
+  },
+  {
+    "form": "Form13",
+    "control": "btjogar",
+    "property": "Glyph.Data",
+    "sha256": "c5b3eff5b7b0c8a705a7bd445ea9286bafb6328d6372215a842f201a9a026fd4",
+    "size": 2058,
+    "path": "assets/Form13-btjogar-Glyph-Data.png",
+    "width": 26,
+    "height": 25
+  },
+  {
+    "form": "Form13",
+    "control": "imgjornal",
+    "property": "Bitmap",
+    "sha256": "642bcab66f4ce395f58be05253cc18a285821d7a816e251729c0aa8c8a273626",
+    "size": 10566,
+    "path": "assets/Form13-imgjornal-Bitmap.png",
+    "width": 100,
+    "height": 25
+  },
+  {
+    "form": "Form13",
+    "control": "ImageList1",
+    "property": "Bitmap",
+    "sha256": "bf11fbedb634ff846a7d0b4812824513896da9ba4a1755b97795a76ec203bc38",
+    "size": 17062,
+    "path": "assets/Form13-ImageList1-Bitmap.png",
+    "width": 64,
+    "height": 64
+  },
+  {
+    "form": "Form13",
+    "control": "ImageList2",
+    "property": "Bitmap",
+    "sha256": "2d5b96fbd78fb14ad8f15fe30146da77104476117ebfef042750d2d42830a852",
+    "size": 26726,
+    "path": "assets/Form13-ImageList2-Bitmap.png",
+    "width": 80,
+    "height": 80
+  },
+  {
+    "form": "Form13",
+    "control": "ImageList3",
+    "property": "Bitmap",
+    "sha256": "9eae1785d043164f34d691c7148f9dfff6c71040d82a0b9ef360f96b777cbc06",
+    "size": 4390,
+    "path": "assets/Form13-ImageList3-Bitmap.png",
+    "width": 64,
+    "height": 16
+  },
+  {
+    "form": "Form13",
+    "control": "ImageList5",
+    "property": "Bitmap",
+    "sha256": "3629b77640646b54c1c89805d0640e8d188867e0fd92873e702653e336e82cdc",
+    "size": 64318,
+    "path": "assets/Form13-ImageList5-Bitmap.png",
+    "width": 96,
+    "height": 162
+  },
+  {
+    "form": "Form14",
+    "control": "Image9",
+    "property": "Picture.Data",
+    "sha256": "86aec24ee94cf2a5476eb517c20a5c1f90ef868a58cd67412c6503657ccab5bc",
+    "size": 1795,
+    "path": "assets/Form14-Image9-Picture-Data.png",
+    "width": 32,
+    "height": 32
+  },
+  {
+    "form": "Form14",
+    "control": "Image8",
+    "property": "Picture.Data",
+    "sha256": "0c02c0cf7c4392eb4ee03729102fcb1c250b4a37e2cc79661ebae3223434618f",
+    "size": 8551,
+    "path": "assets/Form14-Image8-Picture-Data.png",
+    "width": 250,
+    "height": 40
+  },
+  {
+    "form": "Form14",
+    "control": "Image2",
+    "property": "Picture.Data",
+    "sha256": "2530dc0a8de485dde80b59fb453a41d9e118c48add4b28cb8dd6e76eb0dfc0d0",
+    "size": 2072,
+    "path": "assets/Form14-Image2-Picture-Data.png",
+    "width": 57,
+    "height": 49
+  },
+  {
+    "form": "Form14",
+    "control": "Image13",
+    "property": "Picture.Data",
+    "sha256": "0f21e04496670e8f75426f3f55396bb410b7505142615cf93d64ec19fc231cb1",
+    "size": 2867,
+    "path": "assets/Form14-Image13-Picture-Data.png",
+    "width": 33,
+    "height": 35
+  },
+  {
+    "form": "Form14",
+    "control": "Image4",
+    "property": "Picture.Data",
+    "sha256": "e1d5c6cc73a3b906088b5d83b4f158752be687ea919b7c0a8cb1c8dcdaedb8f5",
+    "size": 1066,
+    "path": "assets/Form14-Image4-Picture-Data.png",
+    "width": 18,
+    "height": 18
+  },
+  {
+    "form": "Form14",
+    "control": "NormalImageList",
+    "property": "Bitmap",
+    "sha256": "d0731a5de910b2be4408557aaaef83bb1a5f6a715e3539e7347035f89556ba25",
+    "size": 4390,
+    "path": "assets/Form14-NormalImageList-Bitmap.png",
+    "width": 64,
+    "height": 16
+  },
+  {
+    "form": "Form14",
+    "control": "ImageList1",
+    "property": "Bitmap",
+    "sha256": "dc3c6c2d9928711334fe59db24544ece13ba8c5acc067fce7cf58813db60cac5",
+    "size": 26726,
+    "path": "assets/Form14-ImageList1-Bitmap.png",
+    "width": 80,
+    "height": 80
+  },
+  {
+    "form": "Form14",
+    "control": "MaskImageList",
+    "property": "Bitmap",
+    "sha256": "e9fed173ca75d7797d6314fd8797f2014ca3edcf59ac8fb5f2234b79397c00ed",
+    "size": 4390,
+    "path": "assets/Form14-MaskImageList-Bitmap.png",
+    "width": 64,
+    "height": 16
+  },
+  {
+    "form": "Form14",
+    "control": "ImageList2",
+    "property": "Bitmap",
+    "sha256": "0dacee6aa9bd9cb072b1cafe7c3e501642f7adedd66f8223ff4e8a3457595ca6",
+    "size": 4390,
+    "path": "assets/Form14-ImageList2-Bitmap.png",
+    "width": 64,
+    "height": 16
+  },
+  {
+    "form": "Form14",
+    "control": "vendej",
+    "property": "Fill.Picture.Data",
+    "sha256": "1951fd0fa727b4074890eee3aeda6c3b00e895936cdfcb60536f92b3c63ace92",
+    "size": 2601,
+    "path": "assets/Form14-vendej-Fill-Picture-Data.png",
+    "width": 32,
+    "height": 32
+  },
+  {
+    "form": "Form19",
+    "control": "Image2",
+    "property": "Picture.Data",
+    "sha256": "ce909740e80b07cf940a35a00bb3c263a27bdbc6780632d50207a8d88eff16e2",
+    "size": 4576,
+    "path": "assets/Form19-Image2-Picture-Data.png",
+    "width": 40,
+    "height": 57
+  },
+  {
+    "form": "Form19",
+    "control": "ImageList1",
+    "property": "Bitmap",
+    "sha256": "1ab89c8d7d8f90b4215899446686972539da1336ccef9060fd4bfa79012541c2",
+    "size": 5566,
+    "path": "assets/Form19-ImageList1-Bitmap.png",
+    "width": 72,
+    "height": 18
+  },
+  {
+    "form": "Form1",
+    "control": "Image2",
+    "property": "Picture.Data",
+    "sha256": "a8ad344d8fe4ec4f12ec495469ca6c00da144b698903811c7f499d14236bb624",
+    "size": 43877,
+    "path": "assets/Form1-Image2-Picture-Data.png",
+    "width": 529,
+    "height": 301
+  },
+  {
+    "form": "Form1",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "25135cda791beea6b3c10933135f769733e90575f29ba47b8bcda43a39a8f519",
+    "size": 890,
+    "path": "assets/Form1-Image1-Picture-Data.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "form": "Form1",
+    "control": "estados",
+    "property": "Bitmap",
+    "sha256": "bb73f2aff51a5a9a03acf4c8fbe2316afd8514c9630003c45fe598aa75eaf93f",
+    "size": 37350,
+    "path": "assets/Form1-estados-Bitmap.png",
+    "width": 80,
+    "height": 112
+  },
+  {
+    "form": "Form21",
+    "control": "BitBtn3",
+    "property": "Glyph.Data",
+    "sha256": "302734a4fb8c6878209c865ef652bde37cf361eca1766d659de0f749e63b7e1a",
+    "size": 1082,
+    "path": "assets/Form21-BitBtn3-Glyph-Data.png",
+    "width": 16,
+    "height": 16
+  },
+  {
+    "form": "Form21",
+    "control": "BitBtn2",
+    "property": "Glyph.Data",
+    "sha256": "8ea64f52a1b12ed2f318700b6364fba4a8e37318cb821a408b3252160f53694b",
+    "size": 1370,
+    "path": "assets/Form21-BitBtn2-Glyph-Data.png",
+    "width": 15,
+    "height": 18
+  },
+  {
+    "form": "Form21",
+    "control": "BitBtn1",
+    "property": "Glyph.Data",
+    "sha256": "c06c93b130f018dc5577b917074965b30f70da08cbf1c756ff802d536c13e8e1",
+    "size": 1422,
+    "path": "assets/Form21-BitBtn1-Glyph-Data.png",
+    "width": 18,
+    "height": 17
+  },
+  {
+    "form": "Form23",
+    "control": "Image2",
+    "property": "Picture.Data",
+    "sha256": "d1a4647d5cf45e9807234e6ce9175c317e325d007914cfe89cda74c629c00dee",
+    "size": 834,
+    "path": "assets/Form23-Image2-Picture-Data.png",
+    "width": 16,
+    "height": 16
+  },
+  {
+    "form": "Form23",
+    "control": "Image3",
+    "property": "Picture.Data",
+    "sha256": "a9c9412c52336ce9848a268f118b2eb75e58aaeefcd82d8c177e14947904c45d",
+    "size": 906,
+    "path": "assets/Form23-Image3-Picture-Data.png",
+    "width": 20,
+    "height": 14
+  },
+  {
+    "form": "Form26",
+    "control": "TntBitBtn1",
+    "property": "Glyph.Data",
+    "sha256": "2faa7f19a6577a35007d7b4aa0d223e88a87939420bc1c46c58f6ff7bab16f88",
+    "size": 1738,
+    "path": "assets/Form26-TntBitBtn1-Glyph-Data.png",
+    "width": 26,
+    "height": 21
+  },
+  {
+    "form": "Form26",
+    "control": "ImageList1",
+    "property": "Bitmap",
+    "sha256": "a33ebe24a4def0d793f24ca681d93896463486d8e4e9ceff817c9fc960a8a211",
+    "size": 19966,
+    "path": "assets/Form26-ImageList1-Bitmap.png",
+    "width": 72,
+    "height": 66
+  },
+  {
+    "form": "Form26",
+    "control": "ImageList2",
+    "property": "Bitmap",
+    "sha256": "b526ccc21f5fd6149772f6661098ace3081c95c6315dd0a2a9111d51a24b0be0",
+    "size": 5566,
+    "path": "assets/Form26-ImageList2-Bitmap.png",
+    "width": 72,
+    "height": 18
+  },
+  {
+    "form": "Form27",
+    "control": "Image4",
+    "property": "Picture.Data",
+    "sha256": "937c013d754ef330346f62705f30f4f355c3d80d15b8c505b080ed9f33385b25",
+    "size": 1960,
+    "path": "assets/Form27-Image4-Picture-Data.png",
+    "width": 92,
+    "height": 35
+  },
+  {
+    "form": "Form27",
+    "control": "MaskImageList",
+    "property": "Bitmap",
+    "sha256": "c5672fc942aff0fef5677918ff3fd2de4ddd4edb6fadf9a21ccf02cb65b2c4ce",
+    "size": 12838,
+    "path": "assets/Form27-MaskImageList-Bitmap.png",
+    "width": 64,
+    "height": 48
+  },
+  {
+    "form": "Form27",
+    "control": "NormalImageList",
+    "property": "Bitmap",
+    "sha256": "409645e555b30861c564e7120d9382d75c1dbaddfbeff5a6164b4b96b38ce5da",
+    "size": 12838,
+    "path": "assets/Form27-NormalImageList-Bitmap.png",
+    "width": 64,
+    "height": 48
+  },
+  {
+    "form": "Form29",
+    "control": "ImageList1",
+    "property": "Bitmap",
+    "sha256": "a56fe8d5c55ed1789bd5d54467e87f1709139a389fce09478283544c46618667",
+    "size": 5566,
+    "path": "assets/Form29-ImageList1-Bitmap.png",
+    "width": 72,
+    "height": 18
+  },
+  {
+    "form": "Form30",
+    "control": "ImageList1",
+    "property": "Bitmap",
+    "sha256": "e603515cb4c9e66cacee40720b25ae378d1221d7e852574268c6a8c002e73a66",
+    "size": 4390,
+    "path": "assets/Form30-ImageList1-Bitmap.png",
+    "width": 64,
+    "height": 16
+  },
+  {
+    "form": "Form32",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "ba4e858e3cde333302af213a39656fd82fd7e5a1797f2e785070d5b59baee92a",
+    "size": 825,
+    "path": "assets/Form32-Image1-Picture-Data.png",
+    "width": 21,
+    "height": 21
+  },
+  {
+    "form": "Form32",
+    "control": "Image2",
+    "property": "Picture.Data",
+    "sha256": "937c013d754ef330346f62705f30f4f355c3d80d15b8c505b080ed9f33385b25",
+    "size": 1960,
+    "path": "assets/Form32-Image2-Picture-Data.png",
+    "width": 92,
+    "height": 35
+  },
+  {
+    "form": "Form32",
+    "control": "ImageList2",
+    "property": "Bitmap",
+    "sha256": "e2a8531c3c2642bba1b2d1b0a7d1b7f72509ed4b49e179e040c6eb7437282057",
+    "size": 4390,
+    "path": "assets/Form32-ImageList2-Bitmap.png",
+    "width": 64,
+    "height": 16
+  },
+  {
+    "form": "Form34",
+    "control": "Image2",
+    "property": "Picture.Data",
+    "sha256": "c765ccb017db9ebabd214737bbbc907907b0a65d9b14bafd2e09b4910b4d0994",
+    "size": 149923,
+    "path": "assets/Form34-Image2-Picture-Data.png",
+    "width": 343,
+    "height": 394
+  },
+  {
+    "form": "Form34",
+    "control": "ImageList1",
+    "property": "Bitmap",
+    "sha256": "45a9f77aa06bac1e38018de2277ea19880fbc169ee7e5c393b9d1040cc232923",
+    "size": 5478,
+    "path": "assets/Form34-ImageList1-Bitmap.png",
+    "width": 80,
+    "height": 16
+  },
+  {
+    "form": "Form35",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "24623f8a9dbadcd23ad51a14bd9d7400cfd8be1a0285db8547b39b808f11354d",
+    "size": 2097,
+    "path": "assets/Form35-Image1-Picture-Data.png",
+    "width": 23,
+    "height": 22
+  },
+  {
+    "form": "Form36",
+    "control": "Image8",
+    "property": "Picture.Data",
+    "sha256": "937c013d754ef330346f62705f30f4f355c3d80d15b8c505b080ed9f33385b25",
+    "size": 1960,
+    "path": "assets/Form36-Image8-Picture-Data.png",
+    "width": 92,
+    "height": 35
+  },
+  {
+    "form": "Form36",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "6b7689efbf3914a00f97e201296f4041b7a0bbaf12aa92f12e4b1ae543ff502f",
+    "size": 1100,
+    "path": "assets/Form36-Image1-Picture-Data.png",
+    "width": 104,
+    "height": 44
+  },
+  {
+    "form": "Form36",
+    "control": "Image2",
+    "property": "Picture.Data",
+    "sha256": "6b7689efbf3914a00f97e201296f4041b7a0bbaf12aa92f12e4b1ae543ff502f",
+    "size": 1100,
+    "path": "assets/Form36-Image2-Picture-Data.png",
+    "width": 104,
+    "height": 44
+  },
+  {
+    "form": "Form36",
+    "control": "Image3",
+    "property": "Picture.Data",
+    "sha256": "6b7689efbf3914a00f97e201296f4041b7a0bbaf12aa92f12e4b1ae543ff502f",
+    "size": 1100,
+    "path": "assets/Form36-Image3-Picture-Data.png",
+    "width": 104,
+    "height": 44
+  },
+  {
+    "form": "Form36",
+    "control": "Image4",
+    "property": "Picture.Data",
+    "sha256": "6b7689efbf3914a00f97e201296f4041b7a0bbaf12aa92f12e4b1ae543ff502f",
+    "size": 1100,
+    "path": "assets/Form36-Image4-Picture-Data.png",
+    "width": 104,
+    "height": 44
+  },
+  {
+    "form": "Form36",
+    "control": "Image6",
+    "property": "Picture.Data",
+    "sha256": "6b7689efbf3914a00f97e201296f4041b7a0bbaf12aa92f12e4b1ae543ff502f",
+    "size": 1100,
+    "path": "assets/Form36-Image6-Picture-Data.png",
+    "width": 104,
+    "height": 44
+  },
+  {
+    "form": "Form36",
+    "control": "Image7",
+    "property": "Picture.Data",
+    "sha256": "6b7689efbf3914a00f97e201296f4041b7a0bbaf12aa92f12e4b1ae543ff502f",
+    "size": 1100,
+    "path": "assets/Form36-Image7-Picture-Data.png",
+    "width": 104,
+    "height": 44
+  },
+  {
+    "form": "Form36",
+    "control": "Image5",
+    "property": "Picture.Data",
+    "sha256": "6b7689efbf3914a00f97e201296f4041b7a0bbaf12aa92f12e4b1ae543ff502f",
+    "size": 1100,
+    "path": "assets/Form36-Image5-Picture-Data.png",
+    "width": 104,
+    "height": 44
+  },
+  {
+    "form": "Form36",
+    "control": "barra",
+    "property": "Picture.Data",
+    "sha256": "e4a1d3fba5ff9fd06da813594023e8ccc7aff0f9ce4228510134df6a08a85ec9",
+    "size": 964,
+    "path": "assets/Form36-barra-Picture-Data.png",
+    "width": 122,
+    "height": 8
+  },
+  {
+    "form": "Form36",
+    "control": "Image9",
+    "property": "Picture.Data",
+    "sha256": "c199a88acf51d39c066bc205e8e5f9d25100e50d8e260575f1b473cf777c61f0",
+    "size": 1038,
+    "path": "assets/Form36-Image9-Picture-Data.png",
+    "width": 65,
+    "height": 19
+  },
+  {
+    "form": "Form36",
+    "control": "Image10",
+    "property": "Picture.Data",
+    "sha256": "c199a88acf51d39c066bc205e8e5f9d25100e50d8e260575f1b473cf777c61f0",
+    "size": 1038,
+    "path": "assets/Form36-Image10-Picture-Data.png",
+    "width": 65,
+    "height": 19
+  },
+  {
+    "form": "Form36",
+    "control": "Image11",
+    "property": "Picture.Data",
+    "sha256": "c199a88acf51d39c066bc205e8e5f9d25100e50d8e260575f1b473cf777c61f0",
+    "size": 1038,
+    "path": "assets/Form36-Image11-Picture-Data.png",
+    "width": 65,
+    "height": 19
+  },
+  {
+    "form": "Form36",
+    "control": "barra2",
+    "property": "Picture.Data",
+    "sha256": "63e872df058efd747c04f20ded8762db4f2a049593b05d1bafa9b205243aa637",
+    "size": 943,
+    "path": "assets/Form36-barra2-Picture-Data.png",
+    "width": 64,
+    "height": 5
+  },
+  {
+    "form": "Form36",
+    "control": "Image12",
+    "property": "Picture.Data",
+    "sha256": "7f6d80a830e34e5746a7dba7aa1e0c966d46b710440e368b77cb62cf2525df26",
+    "size": 1979,
+    "path": "assets/Form36-Image12-Picture-Data.png",
+    "width": 101,
+    "height": 18
+  },
+  {
+    "form": "Form37",
+    "control": "ImageList1",
+    "property": "Bitmap",
+    "sha256": "9d60de278cd4c8b77ae7fc84c914bcaa7ce6b550511f2935b0d73c643a3ea88c",
+    "size": 5478,
+    "path": "assets/Form37-ImageList1-Bitmap.png",
+    "width": 80,
+    "height": 16
+  },
+  {
+    "form": "Form39",
+    "control": "ImageList2",
+    "property": "Bitmap",
+    "sha256": "e2a8531c3c2642bba1b2d1b0a7d1b7f72509ed4b49e179e040c6eb7437282057",
+    "size": 4390,
+    "path": "assets/Form39-ImageList2-Bitmap.png",
+    "width": 64,
+    "height": 16
+  },
+  {
+    "form": "Form3",
+    "control": "Image4",
+    "property": "Picture.Data",
+    "sha256": "b7de5142677225b2a4784ec91e5fc7fb64333a8cd27c7fb4ff7aedf423b7430d",
+    "size": 170,
+    "path": "assets/Form3-Image4-Picture-Data.png",
+    "width": 20,
+    "height": 16
+  },
+  {
+    "form": "Form3",
+    "control": "IMGP",
+    "property": "Picture.Data",
+    "sha256": "6b7689efbf3914a00f97e201296f4041b7a0bbaf12aa92f12e4b1ae543ff502f",
+    "size": 1100,
+    "path": "assets/Form3-IMGP-Picture-Data.png",
+    "width": 104,
+    "height": 44
+  },
+  {
+    "form": "Form3",
+    "control": "IMGJ",
+    "property": "Picture.Data",
+    "sha256": "6b7689efbf3914a00f97e201296f4041b7a0bbaf12aa92f12e4b1ae543ff502f",
+    "size": 1100,
+    "path": "assets/Form3-IMGJ-Picture-Data.png",
+    "width": 104,
+    "height": 44
+  },
+  {
+    "form": "Form3",
+    "control": "barra",
+    "property": "Picture.Data",
+    "sha256": "e4a1d3fba5ff9fd06da813594023e8ccc7aff0f9ce4228510134df6a08a85ec9",
+    "size": 964,
+    "path": "assets/Form3-barra-Picture-Data.png",
+    "width": 122,
+    "height": 8
+  },
+  {
+    "form": "Form3",
+    "control": "bt1",
+    "property": "Picture.Data",
+    "sha256": "98e088b84f48291aecbb60705fb44e281790e0a07f8449d83488917144e7b7e6",
+    "size": 1557,
+    "path": "assets/Form3-bt1-Picture-Data.png",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "form": "Form3",
+    "control": "AdvGlowButton1",
+    "property": "Picture.Data",
+    "sha256": "78fb7352e84e84370ede1ae50b8a93c72b4c94a30a71fd7d62777a5099737ee7",
+    "size": 1775,
+    "path": "assets/Form3-AdvGlowButton1-Picture-Data.png",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "form": "Form3",
+    "control": "AdvGlowButton2",
+    "property": "Picture.Data",
+    "sha256": "b0fafc01804870034f8c3d530651dbe697748ee71ebf11dac9718e3f62910381",
+    "size": 1881,
+    "path": "assets/Form3-AdvGlowButton2-Picture-Data.png",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "form": "Form3",
+    "control": "AdvGlowButton3",
+    "property": "Picture.Data",
+    "sha256": "dcf5549092bb51b35d72709c740f7f291e4bedf7ebf7c5ba5b005cc3cecdea78",
+    "size": 1779,
+    "path": "assets/Form3-AdvGlowButton3-Picture-Data.png",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "form": "Form3",
+    "control": "AdvGlowButton4",
+    "property": "Picture.Data",
+    "sha256": "481f6a4ca74ba1fd5d8016e51a4d92def6ee3138a51b0cab5c4dcc769e1fe225",
+    "size": 1901,
+    "path": "assets/Form3-AdvGlowButton4-Picture-Data.png",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "form": "Form3",
+    "control": "AdvGlowButton5",
+    "property": "Picture.Data",
+    "sha256": "69f6ad63e54da0b579e26ba117e4a07413f50faa9dd11ba906465a9cd152b1e7",
+    "size": 1809,
+    "path": "assets/Form3-AdvGlowButton5-Picture-Data.png",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "form": "Form3",
+    "control": "btpj",
+    "property": "Picture.Data",
+    "sha256": "463b6e89c0119a45d18abbae0a9b56e9f535c6b1c1bbf9adee16b52f911f976f",
+    "size": 861,
+    "path": "assets/Form3-btpj-Picture-Data.png",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "form": "Form3",
+    "control": "btpt",
+    "property": "Picture.Data",
+    "sha256": "463b6e89c0119a45d18abbae0a9b56e9f535c6b1c1bbf9adee16b52f911f976f",
+    "size": 861,
+    "path": "assets/Form3-btpt-Picture-Data.png",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "form": "Form3",
+    "control": "ImageList1",
+    "property": "Bitmap",
+    "sha256": "036cd546c3b896387528af885a334126b3960689becbb69be54c53e66aab0aad",
+    "size": 16102,
+    "path": "assets/Form3-ImageList1-Bitmap.png",
+    "width": 80,
+    "height": 48
+  },
+  {
+    "form": "Form42",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "2530dc0a8de485dde80b59fb453a41d9e118c48add4b28cb8dd6e76eb0dfc0d0",
+    "size": 2072,
+    "path": "assets/Form42-Image1-Picture-Data.png",
+    "width": 57,
+    "height": 49
+  },
+  {
+    "form": "form43",
+    "control": "BitBtn2",
+    "property": "Glyph.Data",
+    "sha256": "8ea64f52a1b12ed2f318700b6364fba4a8e37318cb821a408b3252160f53694b",
+    "size": 1370,
+    "path": "assets/form43-BitBtn2-Glyph-Data.png",
+    "width": 15,
+    "height": 18
+  },
+  {
+    "form": "form43",
+    "control": "BitBtn1",
+    "property": "Glyph.Data",
+    "sha256": "c06c93b130f018dc5577b917074965b30f70da08cbf1c756ff802d536c13e8e1",
+    "size": 1422,
+    "path": "assets/form43-BitBtn1-Glyph-Data.png",
+    "width": 18,
+    "height": 17
+  },
+  {
+    "form": "Form46",
+    "control": "ImageList1",
+    "property": "Bitmap",
+    "sha256": "c3908118ae4731003f6d1dcb176d7a2476467ff69963979313009014e15f7df6",
+    "size": 21414,
+    "path": "assets/Form46-ImageList1-Bitmap.png",
+    "width": 80,
+    "height": 64
+  },
+  {
+    "form": "Form47",
+    "control": "Image2",
+    "property": "Picture.Data",
+    "sha256": "937c013d754ef330346f62705f30f4f355c3d80d15b8c505b080ed9f33385b25",
+    "size": 1960,
+    "path": "assets/Form47-Image2-Picture-Data.png",
+    "width": 92,
+    "height": 35
+  },
+  {
+    "form": "Form48",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "937c013d754ef330346f62705f30f4f355c3d80d15b8c505b080ed9f33385b25",
+    "size": 1960,
+    "path": "assets/Form48-Image1-Picture-Data.png",
+    "width": 92,
+    "height": 35
+  },
+  {
+    "form": "Form4",
+    "control": "BitBtn1",
+    "property": "Glyph.Data",
+    "sha256": "c06c93b130f018dc5577b917074965b30f70da08cbf1c756ff802d536c13e8e1",
+    "size": 1422,
+    "path": "assets/Form4-BitBtn1-Glyph-Data.png",
+    "width": 18,
+    "height": 17
+  },
+  {
+    "form": "Form4",
+    "control": "BitBtn2",
+    "property": "Glyph.Data",
+    "sha256": "8ea64f52a1b12ed2f318700b6364fba4a8e37318cb821a408b3252160f53694b",
+    "size": 1370,
+    "path": "assets/Form4-BitBtn2-Glyph-Data.png",
+    "width": 15,
+    "height": 18
+  },
+  {
+    "form": "Form50",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "ff1cd81e04dfbad0f99d8b74f58ff354d17484ca70e40187a5eebbd98f03a03c",
+    "size": 3905,
+    "path": "assets/Form50-Image1-Picture-Data.png",
+    "width": 178,
+    "height": 35
+  },
+  {
+    "form": "Form50",
+    "control": "Image2",
+    "property": "Picture.Data",
+    "sha256": "937c013d754ef330346f62705f30f4f355c3d80d15b8c505b080ed9f33385b25",
+    "size": 1960,
+    "path": "assets/Form50-Image2-Picture-Data.png",
+    "width": 92,
+    "height": 35
+  },
+  {
+    "form": "Form52",
+    "control": "Image2",
+    "property": "Picture.Data",
+    "sha256": "108accffd32c893baf26410353404bf6fe1712b0a23f3308631218c2f0deaddb",
+    "size": 8013,
+    "path": "assets/Form52-Image2-Picture-Data.png",
+    "width": 300,
+    "height": 300
+  },
+  {
+    "form": "Form52",
+    "control": "Image4",
+    "property": "Picture.Data",
+    "sha256": "e61e25aef95414e742d6debe0047f9d9207ac1f959eb1a919edc7be78fd98eea",
+    "size": 1532,
+    "path": "assets/Form52-Image4-Picture-Data.png",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "form": "Form52",
+    "control": "dlg_info1",
+    "property": "Fill.Picture.Data",
+    "sha256": "1f2b69ff85df98cb31291821323d7efe4f03de2c269dea3047b35a4ced041ace",
+    "size": 4123,
+    "path": "assets/Form52-dlg_info1-Fill-Picture-Data.png",
+    "width": 44,
+    "height": 46
+  },
+  {
+    "form": "Form53",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "c765ccb017db9ebabd214737bbbc907907b0a65d9b14bafd2e09b4910b4d0994",
+    "size": 149923,
+    "path": "assets/Form53-Image1-Picture-Data.png",
+    "width": 343,
+    "height": 394
+  },
+  {
+    "form": "Form53",
+    "control": "ImageList1",
+    "property": "Bitmap",
+    "sha256": "45a9f77aa06bac1e38018de2277ea19880fbc169ee7e5c393b9d1040cc232923",
+    "size": 5478,
+    "path": "assets/Form53-ImageList1-Bitmap.png",
+    "width": 80,
+    "height": 16
+  },
+  {
+    "form": "Form54",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "38f6da3f635ff018cbba9da299736f42337254f2a5e3b26cce0688d585b6bf19",
+    "size": 25339,
+    "path": "assets/Form54-Image1-Picture-Data.png",
+    "width": 341,
+    "height": 169
+  },
+  {
+    "form": "Form55",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "da8bacc723c4ca545b0a745b32834225dfc275070e1ca233f839796db5300081",
+    "size": 3679,
+    "path": "assets/Form55-Image1-Picture-Data.png",
+    "width": 178,
+    "height": 35
+  },
+  {
+    "form": "Form55",
+    "control": "Image2",
+    "property": "Picture.Data",
+    "sha256": "937c013d754ef330346f62705f30f4f355c3d80d15b8c505b080ed9f33385b25",
+    "size": 1960,
+    "path": "assets/Form55-Image2-Picture-Data.png",
+    "width": 92,
+    "height": 35
+  },
+  {
+    "form": "Form57",
+    "control": "ImageList1",
+    "property": "Bitmap",
+    "sha256": "a56fe8d5c55ed1789bd5d54467e87f1709139a389fce09478283544c46618667",
+    "size": 5566,
+    "path": "assets/Form57-ImageList1-Bitmap.png",
+    "width": 72,
+    "height": 18
+  },
+  {
+    "form": "Form5",
+    "control": "BitBtn1",
+    "property": "Glyph.Data",
+    "sha256": "c06c93b130f018dc5577b917074965b30f70da08cbf1c756ff802d536c13e8e1",
+    "size": 1422,
+    "path": "assets/Form5-BitBtn1-Glyph-Data.png",
+    "width": 18,
+    "height": 17
+  },
+  {
+    "form": "Form5",
+    "control": "BitBtn2",
+    "property": "Glyph.Data",
+    "sha256": "8ea64f52a1b12ed2f318700b6364fba4a8e37318cb821a408b3252160f53694b",
+    "size": 1370,
+    "path": "assets/Form5-BitBtn2-Glyph-Data.png",
+    "width": 15,
+    "height": 18
+  },
+  {
+    "form": "Form60",
+    "control": "info1",
+    "property": "Fill.Picture.Data",
+    "sha256": "1951fd0fa727b4074890eee3aeda6c3b00e895936cdfcb60536f92b3c63ace92",
+    "size": 2601,
+    "path": "assets/Form60-info1-Fill-Picture-Data.png",
+    "width": 32,
+    "height": 32
+  },
+  {
+    "form": "Form62",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "03a702f393319ccead2d95799316417ab81a90a802939959368dd04b5b38017c",
+    "size": 9282,
+    "path": "assets/Form62-Image1-Picture-Data.png",
+    "width": 48,
+    "height": 48
+  },
+  {
+    "form": "Form62",
+    "control": "imlGrid",
+    "property": "Bitmap",
+    "sha256": "39d5f379cc818a330e98e441ef7ce67d5f86d4f6f829609a7eb398aad57c2436",
+    "size": 4390,
+    "path": "assets/Form62-imlGrid-Bitmap.png",
+    "width": 64,
+    "height": 16
+  },
+  {
+    "form": "Form63",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "6b7689efbf3914a00f97e201296f4041b7a0bbaf12aa92f12e4b1ae543ff502f",
+    "size": 1100,
+    "path": "assets/Form63-Image1-Picture-Data.png",
+    "width": 104,
+    "height": 44
+  },
+  {
+    "form": "Form63",
+    "control": "Image2",
+    "property": "Picture.Data",
+    "sha256": "6b7689efbf3914a00f97e201296f4041b7a0bbaf12aa92f12e4b1ae543ff502f",
+    "size": 1100,
+    "path": "assets/Form63-Image2-Picture-Data.png",
+    "width": 104,
+    "height": 44
+  },
+  {
+    "form": "Form63",
+    "control": "Image3",
+    "property": "Picture.Data",
+    "sha256": "6b7689efbf3914a00f97e201296f4041b7a0bbaf12aa92f12e4b1ae543ff502f",
+    "size": 1100,
+    "path": "assets/Form63-Image3-Picture-Data.png",
+    "width": 104,
+    "height": 44
+  },
+  {
+    "form": "Form63",
+    "control": "Image4",
+    "property": "Picture.Data",
+    "sha256": "6b7689efbf3914a00f97e201296f4041b7a0bbaf12aa92f12e4b1ae543ff502f",
+    "size": 1100,
+    "path": "assets/Form63-Image4-Picture-Data.png",
+    "width": 104,
+    "height": 44
+  },
+  {
+    "form": "Form63",
+    "control": "Image6",
+    "property": "Picture.Data",
+    "sha256": "6b7689efbf3914a00f97e201296f4041b7a0bbaf12aa92f12e4b1ae543ff502f",
+    "size": 1100,
+    "path": "assets/Form63-Image6-Picture-Data.png",
+    "width": 104,
+    "height": 44
+  },
+  {
+    "form": "Form63",
+    "control": "Image5",
+    "property": "Picture.Data",
+    "sha256": "6b7689efbf3914a00f97e201296f4041b7a0bbaf12aa92f12e4b1ae543ff502f",
+    "size": 1100,
+    "path": "assets/Form63-Image5-Picture-Data.png",
+    "width": 104,
+    "height": 44
+  },
+  {
+    "form": "Form63",
+    "control": "imgfechar",
+    "property": "Picture.Data",
+    "sha256": "e747f13867ad21d2f5d66d6a9a44982119ba2b0ea4d9ccc1d9bbbfe6bc689654",
+    "size": 1841,
+    "path": "assets/Form63-imgfechar-Picture-Data.png",
+    "width": 42,
+    "height": 35
+  },
+  {
+    "form": "Form63",
+    "control": "Image7",
+    "property": "Picture.Data",
+    "sha256": "6b7689efbf3914a00f97e201296f4041b7a0bbaf12aa92f12e4b1ae543ff502f",
+    "size": 1100,
+    "path": "assets/Form63-Image7-Picture-Data.png",
+    "width": 104,
+    "height": 44
+  },
+  {
+    "form": "Form63",
+    "control": "image8",
+    "property": "Picture.Data",
+    "sha256": "e4a1d3fba5ff9fd06da813594023e8ccc7aff0f9ce4228510134df6a08a85ec9",
+    "size": 964,
+    "path": "assets/Form63-image8-Picture-Data.png",
+    "width": 122,
+    "height": 8
+  },
+  {
+    "form": "Form63",
+    "control": "ImageList1",
+    "property": "Bitmap",
+    "sha256": "1ab89c8d7d8f90b4215899446686972539da1336ccef9060fd4bfa79012541c2",
+    "size": 5566,
+    "path": "assets/Form63-ImageList1-Bitmap.png",
+    "width": 72,
+    "height": 18
+  },
+  {
+    "form": "Form67",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "25fb24d9912f35296231937367a5644f24a6f8df44bacb60f2ab6a63b8af1a68",
+    "size": 1918,
+    "path": "assets/Form67-Image1-Picture-Data.png",
+    "width": 165,
+    "height": 86
+  },
+  {
+    "form": "Form67",
+    "control": "Image2",
+    "property": "Picture.Data",
+    "sha256": "b5055008cd90c63936bee7f8296a318883c2f35ed8e7c37f6bd0af375ee2c389",
+    "size": 2947,
+    "path": "assets/Form67-Image2-Picture-Data.png",
+    "width": 553,
+    "height": 93
+  },
+  {
+    "form": "Form67",
+    "control": "Image7",
+    "property": "Picture.Data",
+    "sha256": "50229582c89f9c868308a0244dc528032bf00a65dc45276c4289698b1fdef203",
+    "size": 719,
+    "path": "assets/Form67-Image7-Picture-Data.png",
+    "width": 19,
+    "height": 23
+  },
+  {
+    "form": "Form67",
+    "control": "Image6",
+    "property": "Picture.Data",
+    "sha256": "8aa92670bfe346d3d2b8e9c954b9f4af7f37133078c01d273d7ebe3df686c7c8",
+    "size": 719,
+    "path": "assets/Form67-Image6-Picture-Data.png",
+    "width": 19,
+    "height": 23
+  },
+  {
+    "form": "Form67",
+    "control": "Image5",
+    "property": "Picture.Data",
+    "sha256": "66389a4eaa9e23c23bb823ae98e7e7b16b35879e3122453c76ba6c068e1ce3e4",
+    "size": 719,
+    "path": "assets/Form67-Image5-Picture-Data.png",
+    "width": 19,
+    "height": 23
+  },
+  {
+    "form": "Form67",
+    "control": "Image3",
+    "property": "Picture.Data",
+    "sha256": "1d9cd8634a17d7c222b309626e191d2c59f6a60c569c3a1390b37f49782090f2",
+    "size": 2565,
+    "path": "assets/Form67-Image3-Picture-Data.png",
+    "width": 165,
+    "height": 251
+  },
+  {
+    "form": "Form67",
+    "control": "Image4",
+    "property": "Picture.Data",
+    "sha256": "30996577915d9547e45d1e1f25785e173556f7dc259e44eb0d16fb07f086a89e",
+    "size": 1724,
+    "path": "assets/Form67-Image4-Picture-Data.png",
+    "width": 25,
+    "height": 25
+  },
+  {
+    "form": "Form67",
+    "control": "ImageList1",
+    "property": "Bitmap",
+    "sha256": "1ab89c8d7d8f90b4215899446686972539da1336ccef9060fd4bfa79012541c2",
+    "size": 5566,
+    "path": "assets/Form67-ImageList1-Bitmap.png",
+    "width": 72,
+    "height": 18
+  },
+  {
+    "form": "Form67",
+    "control": "ImageList4",
+    "property": "Bitmap",
+    "sha256": "b526ccc21f5fd6149772f6661098ace3081c95c6315dd0a2a9111d51a24b0be0",
+    "size": 5566,
+    "path": "assets/Form67-ImageList4-Bitmap.png",
+    "width": 72,
+    "height": 18
+  },
+  {
+    "form": "Form69",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "937c013d754ef330346f62705f30f4f355c3d80d15b8c505b080ed9f33385b25",
+    "size": 1960,
+    "path": "assets/Form69-Image1-Picture-Data.png",
+    "width": 92,
+    "height": 35
+  },
+  {
+    "form": "Form70",
+    "control": "bolaimg",
+    "property": "Picture.Data",
+    "sha256": "077527d94524c5b0e5c4f9abcd17706b8a5210554c4c684a52c738563f04a906",
+    "size": 2443,
+    "path": "assets/Form70-bolaimg-Picture-Data.png",
+    "width": 30,
+    "height": 29
+  },
+  {
+    "form": "Form71",
+    "control": "ImageList2",
+    "property": "Bitmap",
+    "sha256": "b526ccc21f5fd6149772f6661098ace3081c95c6315dd0a2a9111d51a24b0be0",
+    "size": 5566,
+    "path": "assets/Form71-ImageList2-Bitmap.png",
+    "width": 72,
+    "height": 18
+  },
+  {
+    "form": "Form71",
+    "control": "ImageList1",
+    "property": "Bitmap",
+    "sha256": "b526ccc21f5fd6149772f6661098ace3081c95c6315dd0a2a9111d51a24b0be0",
+    "size": 5566,
+    "path": "assets/Form71-ImageList1-Bitmap.png",
+    "width": 72,
+    "height": 18
+  },
+  {
+    "form": "Form72",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "8fe0b63ccb08df0e7ca85052927ca846f3e1cffb1114322d75d8693b2d9718f4",
+    "size": 673,
+    "path": "assets/Form72-Image1-Picture-Data.png",
+    "width": 31,
+    "height": 37
+  },
+  {
+    "form": "Form73",
+    "control": "BitBtn1",
+    "property": "Glyph.Data",
+    "sha256": "c06c93b130f018dc5577b917074965b30f70da08cbf1c756ff802d536c13e8e1",
+    "size": 1422,
+    "path": "assets/Form73-BitBtn1-Glyph-Data.png",
+    "width": 18,
+    "height": 17
+  },
+  {
+    "form": "Form73",
+    "control": "BitBtn2",
+    "property": "Glyph.Data",
+    "sha256": "8ea64f52a1b12ed2f318700b6364fba4a8e37318cb821a408b3252160f53694b",
+    "size": 1370,
+    "path": "assets/Form73-BitBtn2-Glyph-Data.png",
+    "width": 15,
+    "height": 18
+  },
+  {
+    "form": "Form74",
+    "control": "tr_lib",
+    "property": "Picture.Data",
+    "sha256": "d5a07ea0547bceae9ea39afa4b039d950e328266a85b635fc4b4dd9d24b015b2",
+    "size": 4889,
+    "path": "assets/Form74-tr_lib-Picture-Data.png",
+    "width": 57,
+    "height": 137
+  },
+  {
+    "form": "Form74",
+    "control": "tr_copabra",
+    "property": "Picture.Data",
+    "sha256": "ccd542f0dc5f7f011cc0c4535d5007efa21390605f482c18cce9a56c50e279d9",
+    "size": 11347,
+    "path": "assets/Form74-tr_copabra-Picture-Data.png",
+    "width": 44,
+    "height": 121
+  },
+  {
+    "form": "Form74",
+    "control": "tr_copaesp",
+    "property": "Picture.Data",
+    "sha256": "0a438d8aaeea19792e7a6c39489a24c41741e13a08570be703df63943ffbfe94",
+    "size": 7249,
+    "path": "assets/Form74-tr_copaesp-Picture-Data.png",
+    "width": 73,
+    "height": 121
+  },
+  {
+    "form": "Form74",
+    "control": "tr_copaita",
+    "property": "Picture.Data",
+    "sha256": "53f48c5a03c56858b7018a10f49982624240d1bc806b6e9f6c2f7f3913e9cac6",
+    "size": 5834,
+    "path": "assets/Form74-tr_copaita-Picture-Data.png",
+    "width": 69,
+    "height": 137
+  },
+  {
+    "form": "Form74",
+    "control": "tr_copaeng",
+    "property": "Picture.Data",
+    "sha256": "018d4421ed8923435bedca5cf053b215aa76031d7367f07ad4eb320068b31a86",
+    "size": 7054,
+    "path": "assets/Form74-tr_copaeng-Picture-Data.png",
+    "width": 72,
+    "height": 121
+  },
+  {
+    "form": "Form74",
+    "control": "tr_sul",
+    "property": "Picture.Data",
+    "sha256": "8e29f4ec5d5b72eae333dc652f055c94b7d8e2d520b3d140b327d30a45ebae63",
+    "size": 5949,
+    "path": "assets/Form74-tr_sul-Picture-Data.png",
+    "width": 63,
+    "height": 121
+  },
+  {
+    "form": "Form74",
+    "control": "tr_cl",
+    "property": "Picture.Data",
+    "sha256": "69f24d59655077c09493e962ab9bf7f3d8ffc39f2a34b909c5fed8b20445a913",
+    "size": 6320,
+    "path": "assets/Form74-tr_cl-Picture-Data.png",
+    "width": 86,
+    "height": 121
+  },
+  {
+    "form": "Form74",
+    "control": "tr_nacgen",
+    "property": "Picture.Data",
+    "sha256": "7aae88be41999741da14a0d705d99acd785834d2418a169803bba7632501028d",
+    "size": 6003,
+    "path": "assets/Form74-tr_nacgen-Picture-Data.png",
+    "width": 71,
+    "height": 121
+  },
+  {
+    "form": "Form74",
+    "control": "tr_uefa",
+    "property": "Picture.Data",
+    "sha256": "7966d12787ac1d383342bd46a88d44bdbb4bc51db6c317988dc899f8faf4a66f",
+    "size": 6070,
+    "path": "assets/Form74-tr_uefa-Picture-Data.png",
+    "width": 86,
+    "height": 121
+  },
+  {
+    "form": "Form74",
+    "control": "tr_copagen",
+    "property": "Picture.Data",
+    "sha256": "a23e54baca1487aa861cc3fb2abaf216e55ec73104d0a75202161a8e91c2a735",
+    "size": 5292,
+    "path": "assets/Form74-tr_copagen-Picture-Data.png",
+    "width": 86,
+    "height": 121
+  },
+  {
+    "form": "Form74",
+    "control": "tr_mundial",
+    "property": "Picture.Data",
+    "sha256": "0690cdf52904948f76fff0d8149e9630227cb930193419e0884abf208df1c584",
+    "size": 4281,
+    "path": "assets/Form74-tr_mundial-Picture-Data.png",
+    "width": 86,
+    "height": 121
+  },
+  {
+    "form": "Form74",
+    "control": "tr_nacbra",
+    "property": "Picture.Data",
+    "sha256": "6e2b8c8f0d3773217ffaf189bafa214e76bf7a6d4b6e1a7eaae0ef51eaa7aaea",
+    "size": 5347,
+    "path": "assets/Form74-tr_nacbra-Picture-Data.png",
+    "width": 86,
+    "height": 121
+  },
+  {
+    "form": "Form74",
+    "control": "tr_naceng",
+    "property": "Picture.Data",
+    "sha256": "c8e1d90782e56251f6a419a2db67aae643ac1d0d17f3b48dd7a7c0b40b44969a",
+    "size": 7351,
+    "path": "assets/Form74-tr_naceng-Picture-Data.png",
+    "width": 86,
+    "height": 121
+  },
+  {
+    "form": "Form74",
+    "control": "tr_nacita",
+    "property": "Picture.Data",
+    "sha256": "b4275f8dfb37b8d06484efba1b1426fb0d63a104c222cef8e174425629dc85a5",
+    "size": 5281,
+    "path": "assets/Form74-tr_nacita-Picture-Data.png",
+    "width": 86,
+    "height": 121
+  },
+  {
+    "form": "Form74",
+    "control": "tr_nacesp",
+    "property": "Picture.Data",
+    "sha256": "82cf51e070bd7ed7f72ffc71802521fbe06b59467843d7a389261b359c122b51",
+    "size": 7282,
+    "path": "assets/Form74-tr_nacesp-Picture-Data.png",
+    "width": 86,
+    "height": 121
+  },
+  {
+    "form": "Form74",
+    "control": "tr_estadual",
+    "property": "Picture.Data",
+    "sha256": "0f1eaf2851a6a5f86a5953e722363eb657e8c9fc43474ce04a54f4e46a009b5d",
+    "size": 4146,
+    "path": "assets/Form74-tr_estadual-Picture-Data.png",
+    "width": 65,
+    "height": 111
+  },
+  {
+    "form": "Form74",
+    "control": "tr_recopas",
+    "property": "Picture.Data",
+    "sha256": "22fc71418d386e3d0c7250bcf099cd89be55c8142f45e7c91dfee9f236e384d4",
+    "size": 11713,
+    "path": "assets/Form74-tr_recopas-Picture-Data.png",
+    "width": 67,
+    "height": 121
+  },
+  {
+    "form": "Form74",
+    "control": "tr_recopae",
+    "property": "Picture.Data",
+    "sha256": "887b48ed2e5417a166893bf9ddfb63bf06aefb24bc4c2a341914551a9dcdd6a4",
+    "size": 12198,
+    "path": "assets/Form74-tr_recopae-Picture-Data.png",
+    "width": 67,
+    "height": 121
+  },
+  {
+    "form": "Form74",
+    "control": "tr_casi",
+    "property": "Picture.Data",
+    "sha256": "8e483805b402a1f00569b88119eb6faa7a9b4a578506c95742591c618b9a1b95",
+    "size": 8139,
+    "path": "assets/Form74-tr_casi-Picture-Data.png",
+    "width": 67,
+    "height": 121
+  },
+  {
+    "form": "Form74",
+    "control": "tr_cafr",
+    "property": "Picture.Data",
+    "sha256": "d6f71ebc8df9194d4b900d1de211fd34ae4260a6bebcbfac4693744b450cd554",
+    "size": 8875,
+    "path": "assets/Form74-tr_cafr-Picture-Data.png",
+    "width": 67,
+    "height": 121
+  },
+  {
+    "form": "Form75",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "88491f5f847a175376ca5f7f024fb9fe9b2b505bca01274eef550679c18f2af0",
+    "size": 456,
+    "path": "assets/Form75-Image1-Picture-Data.png",
+    "width": 16,
+    "height": 39
+  },
+  {
+    "form": "Form75",
+    "control": "thumb2",
+    "property": "Picture.Data",
+    "sha256": "68901c89fede323803c66d3ebb0e5b7723e322dd6865071db465d41f6279734c",
+    "size": 2095,
+    "path": "assets/Form75-thumb2-Picture-Data.png",
+    "width": 31,
+    "height": 33
+  },
+  {
+    "form": "Form75",
+    "control": "thumb1",
+    "property": "Picture.Data",
+    "sha256": "e4b60411457978977f05e005c073b4ab0b63534f425e928bf197e2e0f29e5ab8",
+    "size": 2270,
+    "path": "assets/Form75-thumb1-Picture-Data.png",
+    "width": 28,
+    "height": 27
+  },
+  {
+    "form": "Form75",
+    "control": "Image9",
+    "property": "Picture.Data",
+    "sha256": "7e796ba39c34e7fe1c8642134a4f4ef7fd125473b67875dfc7f0f7ce747998ff",
+    "size": 1546,
+    "path": "assets/Form75-Image9-Picture-Data.png",
+    "width": 31,
+    "height": 41
+  },
+  {
+    "form": "Form75",
+    "control": "ImageList2",
+    "property": "Bitmap",
+    "sha256": "5bf963f6da2d734b8602a77b8743c80a5b044b3fb266c8833de69797686bfc06",
+    "size": 26726,
+    "path": "assets/Form75-ImageList2-Bitmap.png",
+    "width": 80,
+    "height": 80
+  },
+  {
+    "form": "Form77",
+    "control": "Image3",
+    "property": "Picture.Data",
+    "sha256": "b7de5142677225b2a4784ec91e5fc7fb64333a8cd27c7fb4ff7aedf423b7430d",
+    "size": 170,
+    "path": "assets/Form77-Image3-Picture-Data.png",
+    "width": 20,
+    "height": 16
+  },
+  {
+    "form": "Form77",
+    "control": "Image4",
+    "property": "Picture.Data",
+    "sha256": "fff98688266c2820a98fe3f838d835343726c5d65f196bc0bda4c3ebe33c82c2",
+    "size": 1026,
+    "path": "assets/Form77-Image4-Picture-Data.png",
+    "width": 20,
+    "height": 16
+  },
+  {
+    "form": "Form77",
+    "control": "NormalImageList",
+    "property": "Bitmap",
+    "sha256": "409645e555b30861c564e7120d9382d75c1dbaddfbeff5a6164b4b96b38ce5da",
+    "size": 12838,
+    "path": "assets/Form77-NormalImageList-Bitmap.png",
+    "width": 64,
+    "height": 48
+  },
+  {
+    "form": "Form78",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "8de2b05ad1094b49132b7d8c91d20e4485700ce915bb236b9e453b473acd050b",
+    "size": 77447,
+    "path": "assets/Form78-Image1-Picture-Data.png",
+    "width": 200,
+    "height": 200
+  },
+  {
+    "form": "Form7",
+    "control": "BitBtn1",
+    "property": "Glyph.Data",
+    "sha256": "c06c93b130f018dc5577b917074965b30f70da08cbf1c756ff802d536c13e8e1",
+    "size": 1422,
+    "path": "assets/Form7-BitBtn1-Glyph-Data.png",
+    "width": 18,
+    "height": 17
+  },
+  {
+    "form": "Form7",
+    "control": "BitBtn2",
+    "property": "Glyph.Data",
+    "sha256": "8ea64f52a1b12ed2f318700b6364fba4a8e37318cb821a408b3252160f53694b",
+    "size": 1370,
+    "path": "assets/Form7-BitBtn2-Glyph-Data.png",
+    "width": 15,
+    "height": 18
+  },
+  {
+    "form": "Form82",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "e747f13867ad21d2f5d66d6a9a44982119ba2b0ea4d9ccc1d9bbbfe6bc689654",
+    "size": 1841,
+    "path": "assets/Form82-Image1-Picture-Data.png",
+    "width": 42,
+    "height": 35
+  },
+  {
+    "form": "Form83",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "200c075c3c21883e4283326919a22cd8bddce3c813ec7844cad0ae1cff79a566",
+    "size": 26231,
+    "path": "assets/Form83-Image1-Picture-Data.png",
+    "width": 150,
+    "height": 150
+  },
+  {
+    "form": "Form85",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "7a562ce6c729d6e305809d724cac9e37836ce62fb44b01e9f4746370490765b8",
+    "size": 27075,
+    "path": "assets/Form85-Image1-Picture-Data.png",
+    "width": 357,
+    "height": 191
+  },
+  {
+    "form": "Form87",
+    "control": "AdvGlowButton1",
+    "property": "Picture.Data",
+    "sha256": "511d3fafe54a9a5f5c14f288fefb1abac3530501590868b53789ca7a2d9c3e47",
+    "size": 1650,
+    "path": "assets/Form87-AdvGlowButton1-Picture-Data.png",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "form": "Form87",
+    "control": "bt_voltar",
+    "property": "Glyph.Data",
+    "sha256": "f30bae275087e955e22c2f12ecf104c3ccd7eac3e6059239e754caae0aee91c6",
+    "size": 1906,
+    "path": "assets/Form87-bt_voltar-Glyph-Data.png",
+    "width": 28,
+    "height": 22
+  },
+  {
+    "form": "Form87",
+    "control": "bt_irprojogo",
+    "property": "Glyph.Data",
+    "sha256": "c7adad18edbb599aa3eae0884fcfd671e80a36bed9eddb0a255822b3b37e0bbb",
+    "size": 1338,
+    "path": "assets/Form87-bt_irprojogo-Glyph-Data.png",
+    "width": 20,
+    "height": 16
+  },
+  {
+    "form": "Form87",
+    "control": "ImageList5old",
+    "property": "Bitmap",
+    "sha256": "6c2cd0820c52dc0f73ee878f4c8ef9dc55f1fa5a81e51d1b87d5a4d9e3c1936a",
+    "size": 171238,
+    "path": "assets/Form87-ImageList5old-Bitmap.png",
+    "width": 96,
+    "height": 432
+  },
+  {
+    "form": "Form87",
+    "control": "ImageList5",
+    "property": "Bitmap",
+    "sha256": "2b72c05de0b0452d40b6c22c5269b989d97010d4a3aacb28c61ccb15d681dd03",
+    "size": 178366,
+    "path": "assets/Form87-ImageList5-Bitmap.png",
+    "width": 96,
+    "height": 450
+  },
+  {
+    "form": "Form88",
+    "control": "Image2",
+    "property": "Picture.Data",
+    "sha256": "108accffd32c893baf26410353404bf6fe1712b0a23f3308631218c2f0deaddb",
+    "size": 8013,
+    "path": "assets/Form88-Image2-Picture-Data.png",
+    "width": 300,
+    "height": 300
+  },
+  {
+    "form": "Form88",
+    "control": "Image4",
+    "property": "Picture.Data",
+    "sha256": "e61e25aef95414e742d6debe0047f9d9207ac1f959eb1a919edc7be78fd98eea",
+    "size": 1532,
+    "path": "assets/Form88-Image4-Picture-Data.png",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "form": "Form88",
+    "control": "ImageList1",
+    "property": "Bitmap",
+    "sha256": "586d9885e6d8710fe7e7767d7ab8bf32b5ddf51bd7d96248312cf019b568bc61",
+    "size": 26726,
+    "path": "assets/Form88-ImageList1-Bitmap.png",
+    "width": 80,
+    "height": 80
+  },
+  {
+    "form": "Form88",
+    "control": "dlg_info1",
+    "property": "Fill.Picture.Data",
+    "sha256": "1f2b69ff85df98cb31291821323d7efe4f03de2c269dea3047b35a4ced041ace",
+    "size": 4123,
+    "path": "assets/Form88-dlg_info1-Fill-Picture-Data.png",
+    "width": 44,
+    "height": 46
+  },
+  {
+    "form": "Form8",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "9fcdde00447fefc0bad30cc3e56ac2e9a27f3a455f41a3247cf07dbb2a155ed0",
+    "size": 62975,
+    "path": "assets/Form8-Image1-Picture-Data.png",
+    "width": 598,
+    "height": 328
+  },
+  {
+    "form": "Form90",
+    "control": "AdvGlowButton2",
+    "property": "Picture.Data",
+    "sha256": "b0fafc01804870034f8c3d530651dbe697748ee71ebf11dac9718e3f62910381",
+    "size": 1881,
+    "path": "assets/Form90-AdvGlowButton2-Picture-Data.png",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "form": "Form90",
+    "control": "AdvGlowButton1",
+    "property": "Picture.Data",
+    "sha256": "0c61a066b4a903562b727bb4ae511dbe3f6bcd3e88284e25a709589ab91a2ffe",
+    "size": 1660,
+    "path": "assets/Form90-AdvGlowButton1-Picture-Data.png",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "form": "Form90",
+    "control": "AdvGlowButton3",
+    "property": "Picture.Data",
+    "sha256": "98e088b84f48291aecbb60705fb44e281790e0a07f8449d83488917144e7b7e6",
+    "size": 1557,
+    "path": "assets/Form90-AdvGlowButton3-Picture-Data.png",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "form": "Form90",
+    "control": "AdvGlowButton4",
+    "property": "Picture.Data",
+    "sha256": "f3106e78c3ce75def65a471820dd1fd22ca3ed6dca9fd99fc21ddc2373db7a59",
+    "size": 1101,
+    "path": "assets/Form90-AdvGlowButton4-Picture-Data.png",
+    "width": 24,
+    "height": 24
+  },
+  {
+    "form": "Form91",
+    "control": "Image8",
+    "property": "Picture.Data",
+    "sha256": "e747f13867ad21d2f5d66d6a9a44982119ba2b0ea4d9ccc1d9bbbfe6bc689654",
+    "size": 1841,
+    "path": "assets/Form91-Image8-Picture-Data.png",
+    "width": 42,
+    "height": 35
+  },
+  {
+    "form": "Form91",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "cff6775f11c2e57165add7e400d8a8729e91bd7a6dd180fd25c62cd8a792d333",
+    "size": 3870,
+    "path": "assets/Form91-Image1-Picture-Data.png",
+    "width": 390,
+    "height": 45
+  },
+  {
+    "form": "Form91",
+    "control": "ImageList1",
+    "property": "Bitmap",
+    "sha256": "4681f950b9e29696c955a352879788febe95949bdf01c2cf6fa879759715a5d4",
+    "size": 119110,
+    "path": "assets/Form91-ImageList1-Bitmap.png",
+    "width": 400,
+    "height": 72
+  },
+  {
+    "form": "Form92",
+    "control": "Image2",
+    "property": "Picture.Data",
+    "sha256": "4c6ac4a346605cbf4317f7b84131a2d648739d4923eee73ba12acb57825f0b90",
+    "size": 2149,
+    "path": "assets/Form92-Image2-Picture-Data.png",
+    "width": 207,
+    "height": 47
+  },
+  {
+    "form": "Form92",
+    "control": "Image1",
+    "property": "Picture.Data",
+    "sha256": "eec7179937615131cae05b8542d260fff47bec969f7bbae00211868f47197c6e",
+    "size": 2916,
+    "path": "assets/Form92-Image1-Picture-Data.png",
+    "width": 393,
+    "height": 47
+  },
+  {
+    "form": "Form93",
+    "control": "Image2",
+    "property": "Picture.Data",
+    "sha256": "e747f13867ad21d2f5d66d6a9a44982119ba2b0ea4d9ccc1d9bbbfe6bc689654",
+    "size": 1841,
+    "path": "assets/Form93-Image2-Picture-Data.png",
+    "width": 42,
+    "height": 35
+  },
+  {
+    "form": "Form9",
+    "control": "AdvGlowButton2",
+    "property": "Picture.Data",
+    "sha256": "c60d7ef9b37d2e18aab786207867c24c148dbc77f95d4fcad3c566c0c5f8194a",
+    "size": 2113,
+    "path": "assets/Form9-AdvGlowButton2-Picture-Data.png",
+    "width": 22,
+    "height": 24
+  },
+  {
+    "form": "Form9",
+    "control": "AdvGlowButton3",
+    "property": "Picture.Data",
+    "sha256": "c60d7ef9b37d2e18aab786207867c24c148dbc77f95d4fcad3c566c0c5f8194a",
+    "size": 2113,
+    "path": "assets/Form9-AdvGlowButton3-Picture-Data.png",
+    "width": 22,
+    "height": 24
+  },
+  {
+    "form": "Form9",
+    "control": "AdvGlowButton1",
+    "property": "Picture.Data",
+    "sha256": "a36392355d9cc97be0177b53b62dcdaddac04a9ff53a8123ecaa51901f6258c1",
+    "size": 1250,
+    "path": "assets/Form9-AdvGlowButton1-Picture-Data.png",
+    "width": 18,
+    "height": 18
+  },
+  {
+    "form": "Form9",
+    "control": "ImageList2",
+    "property": "Bitmap",
+    "sha256": "e2a8531c3c2642bba1b2d1b0a7d1b7f72509ed4b49e179e040c6eb7437282057",
+    "size": 4390,
+    "path": "assets/Form9-ImageList2-Bitmap.png",
+    "width": 64,
+    "height": 16
+  }
+]

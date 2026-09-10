@@ -1,0 +1,2 @@
+import {readFileSync} from 'node:fs';import assert from 'node:assert/strict';import {verifyPlayerRatings} from './player-rating-proof.mjs';
+const r=verifyPlayerRatings([...JSON.parse(readFileSync(new URL('./player-rating-vectors.json',import.meta.url))),...JSON.parse(readFileSync(new URL('./rating-aggregate-vectors.json',import.meta.url))).map(v=>({...v,kind:'aggregate'}))]);if(r.failures.length)console.log(JSON.stringify(r.failures.slice(0,5),null,2));assert.equal(r.failures.length,0);console.log(`Original player ratings and event counters: ${r.cases} cases passed.`);

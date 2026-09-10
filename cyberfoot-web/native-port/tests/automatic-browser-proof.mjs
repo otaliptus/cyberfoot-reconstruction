@@ -1,0 +1,1 @@
+import {checkAutomaticMatches} from './automatic-matches-proof.mjs';import {checkAutomaticSave} from './automatic-save-integration.mjs';export async function checkAutomaticBrowser(){return {comparisons:await checkAutomaticMatches(),integration:await checkAutomaticSave(await fetch(new URL('./original-career.s15',import.meta.url)).then(r=>r.arrayBuffer()))};}

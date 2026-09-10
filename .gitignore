@@ -1,0 +1,14 @@
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+.env*
+.next/
+.vinext/
+.wrangler/
+dist/
+output/
+outputs/
+*.tsbuildinfo
+.openai/
+cyberfoot-analysis/tools/

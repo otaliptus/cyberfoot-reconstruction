@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {checkHumanMatch} from './human-match-integration.mjs';console.log(JSON.stringify(checkHumanMatch(readFileSync(new URL('./original-career.s15',import.meta.url)))));

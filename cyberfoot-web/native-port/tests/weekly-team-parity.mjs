@@ -1,0 +1,2 @@
+import {readFileSync} from 'node:fs';import assert from 'node:assert/strict';import {verifyWeeklyTeam} from './weekly-team-proof.mjs';
+const r=verifyWeeklyTeam([...JSON.parse(readFileSync(new URL('./weekly-team-vectors.json',import.meta.url))),...JSON.parse(readFileSync(new URL('./league-lookup-vectors.json',import.meta.url))).map(v=>({...v,kind:'lookup'}))]);if(r.failures.length)console.log(JSON.stringify(r.failures.slice(0,2),null,2));assert.equal(r.failures.length,0);console.log(`Original weekly team: ${r.cases} cases passed.`);

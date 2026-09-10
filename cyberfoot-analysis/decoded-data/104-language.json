@@ -1,0 +1,5502 @@
+[
+  {
+    "index": 0,
+    "metadata": 0,
+    "text": "Italiano"
+  },
+  {
+    "index": 1,
+    "metadata": 0,
+    "text": "Nuova Partita"
+  },
+  {
+    "index": 2,
+    "metadata": 0,
+    "text": "Caricare Partita Salvata"
+  },
+  {
+    "index": 3,
+    "metadata": 0,
+    "text": "Modificare club"
+  },
+  {
+    "index": 4,
+    "metadata": 0,
+    "text": "Registrare Gioco"
+  },
+  {
+    "index": 5,
+    "metadata": 0,
+    "text": "Versione non Registrata"
+  },
+  {
+    "index": 6,
+    "metadata": 0,
+    "text": "Versione Registrata"
+  },
+  {
+    "index": 7,
+    "metadata": 0,
+    "text": "USCIRE"
+  },
+  {
+    "index": 8,
+    "metadata": 0,
+    "text": "Selezionare lingua:"
+  },
+  {
+    "index": 9,
+    "metadata": 0,
+    "text": "Caricamento partita..."
+  },
+  {
+    "index": 10,
+    "metadata": 0,
+    "text": "Impostazioni di Gioco"
+  },
+  {
+    "index": 11,
+    "metadata": 0,
+    "text": "Tornei per Club"
+  },
+  {
+    "index": 12,
+    "metadata": 0,
+    "text": "Sistema serie torneo"
+  },
+  {
+    "index": 13,
+    "metadata": 0,
+    "text": "4 divisioni con 10 squadre in ogni divisione"
+  },
+  {
+    "index": 14,
+    "metadata": 0,
+    "text": "2 divisioni con 20 squadre in ogni divisione"
+  },
+  {
+    "index": 15,
+    "metadata": 0,
+    "text": "Giocare coppa nazionale"
+  },
+  {
+    "index": 16,
+    "metadata": 0,
+    "text": "Giocare Champions League/Libertadores"
+  },
+  {
+    "index": 17,
+    "metadata": 0,
+    "text": "Giocare UEFA League/Coppa Sudamericana"
+  },
+  {
+    "index": 18,
+    "metadata": 0,
+    "text": "Tornei per Nazionali "
+  },
+  {
+    "index": 19,
+    "metadata": 0,
+    "text": "Giocare Coppa del Mondo"
+  },
+  {
+    "index": 20,
+    "metadata": 0,
+    "text": "Usare i gruppi reali della Coppa del Mondo 2010"
+  },
+  {
+    "index": 21,
+    "metadata": 0,
+    "text": "Giocare Campionato Europeo"
+  },
+  {
+    "index": 22,
+    "metadata": 0,
+    "text": "Giocare Coppa America"
+  },
+  {
+    "index": 23,
+    "metadata": 0,
+    "text": "Giocare questi tornei nazionali:"
+  },
+  {
+    "index": 24,
+    "metadata": 0,
+    "text": "Selezionare tutto"
+  },
+  {
+    "index": 25,
+    "metadata": 0,
+    "text": "squadre"
+  },
+  {
+    "index": 26,
+    "metadata": 0,
+    "text": "Potete aggiungere ulteriori tornei dall'Area Membri su www.cyberfoot.org"
+  },
+  {
+    "index": 27,
+    "metadata": 0,
+    "text": "Numero di squadre controllate da umani:"
+  },
+  {
+    "index": 28,
+    "metadata": 0,
+    "text": "Alcune opzioni sono disponibili solamente nella versione registrata: giocare Tornei con Squadre Nazionali, aggiungere ulteriori squadre umane, ecc."
+  },
+  {
+    "index": 29,
+    "metadata": 0,
+    "text": "Avanti>>"
+  },
+  {
+    "index": 30,
+    "metadata": 0,
+    "text": "Indietro<<"
+  },
+  {
+    "index": 31,
+    "metadata": 0,
+    "text": "Selezionare almeno un torneo"
+  },
+  {
+    "index": 32,
+    "metadata": 0,
+    "text": "Selezionare squadra"
+  },
+  {
+    "index": 33,
+    "metadata": 0,
+    "text": "Squadre della nazione:"
+  },
+  {
+    "index": 34,
+    "metadata": 0,
+    "text": "Il vostro nome:"
+  },
+  {
+    "index": 35,
+    "metadata": 0,
+    "text": "1a divisione"
+  },
+  {
+    "index": 36,
+    "metadata": 0,
+    "text": "2a divisione"
+  },
+  {
+    "index": 37,
+    "metadata": 0,
+    "text": "3a divisione"
+  },
+  {
+    "index": 38,
+    "metadata": 0,
+    "text": "4a divisione"
+  },
+  {
+    "index": 39,
+    "metadata": 0,
+    "text": "Selezione squadra:"
+  },
+  {
+    "index": 40,
+    "metadata": 0,
+    "text": "Selezionare prossima squadra"
+  },
+  {
+    "index": 41,
+    "metadata": 0,
+    "text": "Iniziare Partita>>>"
+  },
+  {
+    "index": 42,
+    "metadata": 0,
+    "text": "Squadra già selezionata"
+  },
+  {
+    "index": 43,
+    "metadata": 0,
+    "text": "Questa è una copia Non Registrata di CyberFoot"
+  },
+  {
+    "index": 44,
+    "metadata": 0,
+    "text": "Nella versione non registrata potete solamente selezionare una squadra dell'ultima divisione."
+  },
+  {
+    "index": 45,
+    "metadata": 0,
+    "text": "Nella versione registrata potete selezionare una squadra di qualsiasi divisione."
+  },
+  {
+    "index": 46,
+    "metadata": 0,
+    "text": "Inizio Gioco..."
+  },
+  {
+    "index": 47,
+    "metadata": 0,
+    "text": "Valutazione Gestione:"
+  },
+  {
+    "index": 48,
+    "metadata": 0,
+    "text": "Valutazione Tifosi:"
+  },
+  {
+    "index": 49,
+    "metadata": 0,
+    "text": "Abilità:"
+  },
+  {
+    "index": 50,
+    "metadata": 0,
+    "text": "Età"
+  },
+  {
+    "index": 51,
+    "metadata": 0,
+    "text": "Valore"
+  },
+  {
+    "index": 52,
+    "metadata": 0,
+    "text": "Stipendio"
+  },
+  {
+    "index": 53,
+    "metadata": 0,
+    "text": "Partite Giocate"
+  },
+  {
+    "index": 54,
+    "metadata": 0,
+    "text": "Caratteristiche"
+  },
+  {
+    "index": 55,
+    "metadata": 0,
+    "text": "Il contratto scade il"
+  },
+  {
+    "index": 56,
+    "metadata": 0,
+    "text": "Contratto scaduto"
+  },
+  {
+    "index": 57,
+    "metadata": 0,
+    "text": "Data di termine prestito"
+  },
+  {
+    "index": 58,
+    "metadata": 0,
+    "text": "Giocatore disponibile solamente nella prossima partita"
+  },
+  {
+    "index": 59,
+    "metadata": 0,
+    "text": "Squalificato per un turno: 3 cartellini gialli"
+  },
+  {
+    "index": 60,
+    "metadata": 0,
+    "text": "Squalificato per"
+  },
+  {
+    "index": 61,
+    "metadata": 0,
+    "text": "Partita/e"
+  },
+  {
+    "index": 62,
+    "metadata": 0,
+    "text": "Infortunato fino"
+  },
+  {
+    "index": 63,
+    "metadata": 0,
+    "text": "Vendere"
+  },
+  {
+    "index": 64,
+    "metadata": 0,
+    "text": "Contratto"
+  },
+  {
+    "index": 65,
+    "metadata": 0,
+    "text": "Dare le dimissioni"
+  },
+  {
+    "index": 66,
+    "metadata": 0,
+    "text": "Ritirare da lista trasferimenti"
+  },
+  {
+    "index": 67,
+    "metadata": 0,
+    "text": "Prossima Partita"
+  },
+  {
+    "index": 68,
+    "metadata": 0,
+    "text": "Schieramento"
+  },
+  {
+    "index": 69,
+    "metadata": 0,
+    "text": "Colori della squadra"
+  },
+  {
+    "index": 70,
+    "metadata": 0,
+    "text": "Un messaggio non letto"
+  },
+  {
+    "index": 71,
+    "metadata": 0,
+    "text": "Messaggi non letti"
+  },
+  {
+    "index": 72,
+    "metadata": 0,
+    "text": "Nessun nuovo messaggio"
+  },
+  {
+    "index": 73,
+    "metadata": 0,
+    "text": "Giocatori"
+  },
+  {
+    "index": 74,
+    "metadata": 0,
+    "text": "Partite precedenti"
+  },
+  {
+    "index": 75,
+    "metadata": 0,
+    "text": "Partita"
+  },
+  {
+    "index": 76,
+    "metadata": 0,
+    "text": "Partite "
+  },
+  {
+    "index": 77,
+    "metadata": 0,
+    "text": "Pareggio"
+  },
+  {
+    "index": 78,
+    "metadata": 0,
+    "text": "Pareggi"
+  },
+  {
+    "index": 79,
+    "metadata": 0,
+    "text": "V"
+  },
+  {
+    "index": 80,
+    "metadata": 0,
+    "text": "P"
+  },
+  {
+    "index": 81,
+    "metadata": 0,
+    "text": "S"
+  },
+  {
+    "index": 82,
+    "metadata": 0,
+    "text": "GF"
+  },
+  {
+    "index": 83,
+    "metadata": 0,
+    "text": "GS"
+  },
+  {
+    "index": 84,
+    "metadata": 0,
+    "text": "G"
+  },
+  {
+    "index": 85,
+    "metadata": 0,
+    "text": "DR"
+  },
+  {
+    "index": 86,
+    "metadata": 0,
+    "text": "Pt"
+  },
+  {
+    "index": 87,
+    "metadata": 0,
+    "text": "RP"
+  },
+  {
+    "index": 88,
+    "metadata": 0,
+    "text": "PAL"
+  },
+  {
+    "index": 89,
+    "metadata": 0,
+    "text": "Ultima partita"
+  },
+  {
+    "index": 90,
+    "metadata": 0,
+    "text": "tutte le partite "
+  },
+  {
+    "index": 91,
+    "metadata": 0,
+    "text": "Prima partita tra queste squadre"
+  },
+  {
+    "index": 92,
+    "metadata": 0,
+    "text": "Storia stagioni precedenti"
+  },
+  {
+    "index": 93,
+    "metadata": 0,
+    "text": "Salvare partita"
+  },
+  {
+    "index": 94,
+    "metadata": 0,
+    "text": "Personalizza"
+  },
+  {
+    "index": 95,
+    "metadata": 0,
+    "text": "Dimettersi"
+  },
+  {
+    "index": 96,
+    "metadata": 0,
+    "text": "Uscire Partita"
+  },
+  {
+    "index": 97,
+    "metadata": 0,
+    "text": "Informazioni"
+  },
+  {
+    "index": 98,
+    "metadata": 0,
+    "text": "Graduatoria Allenatori"
+  },
+  {
+    "index": 99,
+    "metadata": 0,
+    "text": "Aggiungere/rimuovere allenatore"
+  },
+  {
+    "index": 100,
+    "metadata": 0,
+    "text": "Ultimi trasferimenti allenatori"
+  },
+  {
+    "index": 101,
+    "metadata": 0,
+    "text": "Classifica Club"
+  },
+  {
+    "index": 102,
+    "metadata": 0,
+    "text": "Trasferimenti giocatori"
+  },
+  {
+    "index": 103,
+    "metadata": 0,
+    "text": "Cronologia di tutte le partite"
+  },
+  {
+    "index": 104,
+    "metadata": 0,
+    "text": "I tuoi Impegni"
+  },
+  {
+    "index": 105,
+    "metadata": 0,
+    "text": "Impegni"
+  },
+  {
+    "index": 106,
+    "metadata": 0,
+    "text": "Impegni di Coppa"
+  },
+  {
+    "index": 107,
+    "metadata": 0,
+    "text": "Playoff Coppe Internazionali"
+  },
+  {
+    "index": 108,
+    "metadata": 0,
+    "text": "Amichevoli"
+  },
+  {
+    "index": 109,
+    "metadata": 0,
+    "text": "Finanze"
+  },
+  {
+    "index": 110,
+    "metadata": 0,
+    "text": "Prestito Bancario"
+  },
+  {
+    "index": 111,
+    "metadata": 0,
+    "text": "Impostare Contratto"
+  },
+  {
+    "index": 112,
+    "metadata": 0,
+    "text": "Vendere Giocatore"
+  },
+  {
+    "index": 113,
+    "metadata": 0,
+    "text": "Ritirare Giocatore"
+  },
+  {
+    "index": 114,
+    "metadata": 0,
+    "text": "Impostare Numero"
+  },
+  {
+    "index": 115,
+    "metadata": 0,
+    "text": "Cronologia Partite"
+  },
+  {
+    "index": 116,
+    "metadata": 0,
+    "text": "Cancellare Prestito"
+  },
+  {
+    "index": 117,
+    "metadata": 0,
+    "text": "Comprare Giocatore"
+  },
+  {
+    "index": 118,
+    "metadata": 0,
+    "text": "Mettere in lista prestiti"
+  },
+  {
+    "index": 119,
+    "metadata": 0,
+    "text": "Ritirare dalla lista prestiti"
+  },
+  {
+    "index": 120,
+    "metadata": 0,
+    "text": "Statistiche "
+  },
+  {
+    "index": 121,
+    "metadata": 0,
+    "text": "Stadio"
+  },
+  {
+    "index": 122,
+    "metadata": 0,
+    "text": "Mostrare tutti i club"
+  },
+  {
+    "index": 123,
+    "metadata": 0,
+    "text": "Cercare giocatori"
+  },
+  {
+    "index": 124,
+    "metadata": 0,
+    "text": "Informazioni Allenatore"
+  },
+  {
+    "index": 125,
+    "metadata": 0,
+    "text": "Lista Campioni"
+  },
+  {
+    "index": 126,
+    "metadata": 0,
+    "text": "Migliori marcatori"
+  },
+  {
+    "index": 127,
+    "metadata": 0,
+    "text": "Classifica Club"
+  },
+  {
+    "index": 128,
+    "metadata": 0,
+    "text": "P"
+  },
+  {
+    "index": 129,
+    "metadata": 0,
+    "text": "Nome"
+  },
+  {
+    "index": 130,
+    "metadata": 0,
+    "text": "Fascia"
+  },
+  {
+    "index": 131,
+    "metadata": 0,
+    "text": "A"
+  },
+  {
+    "index": 132,
+    "metadata": 0,
+    "text": "Resistenza"
+  },
+  {
+    "index": 133,
+    "metadata": 0,
+    "text": "Stipendio"
+  },
+  {
+    "index": 134,
+    "metadata": 0,
+    "text": "Valore"
+  },
+  {
+    "index": 135,
+    "metadata": 0,
+    "text": "G"
+  },
+  {
+    "index": 136,
+    "metadata": 0,
+    "text": "Caratt."
+  },
+  {
+    "index": 137,
+    "metadata": 0,
+    "text": "E"
+  },
+  {
+    "index": 138,
+    "metadata": 0,
+    "text": "M"
+  },
+  {
+    "index": 139,
+    "metadata": 0,
+    "text": "Il Contratto scade fra una settimana"
+  },
+  {
+    "index": 140,
+    "metadata": 0,
+    "text": "Il contratto scadrà fra poco"
+  },
+  {
+    "index": 141,
+    "metadata": 0,
+    "text": "Registrate Cyberfoot qui!"
+  },
+  {
+    "index": 142,
+    "metadata": 0,
+    "text": "Portiere"
+  },
+  {
+    "index": 143,
+    "metadata": 0,
+    "text": "PO"
+  },
+  {
+    "index": 144,
+    "metadata": 0,
+    "text": "Difensore Centrale"
+  },
+  {
+    "index": 145,
+    "metadata": 0,
+    "text": "DC"
+  },
+  {
+    "index": 146,
+    "metadata": 0,
+    "text": "Terzino"
+  },
+  {
+    "index": 147,
+    "metadata": 0,
+    "text": "TZ"
+  },
+  {
+    "index": 148,
+    "metadata": 0,
+    "text": "Centrocampista"
+  },
+  {
+    "index": 149,
+    "metadata": 0,
+    "text": "C"
+  },
+  {
+    "index": 150,
+    "metadata": 0,
+    "text": "Attaccante"
+  },
+  {
+    "index": 151,
+    "metadata": 0,
+    "text": "A"
+  },
+  {
+    "index": 152,
+    "metadata": 0,
+    "text": "Destra"
+  },
+  {
+    "index": 153,
+    "metadata": 0,
+    "text": "D"
+  },
+  {
+    "index": 154,
+    "metadata": 0,
+    "text": "Sinistra"
+  },
+  {
+    "index": 155,
+    "metadata": 0,
+    "text": "S"
+  },
+  {
+    "index": 156,
+    "metadata": 0,
+    "text": "Posizione"
+  },
+  {
+    "index": 157,
+    "metadata": 0,
+    "text": "Pos"
+  },
+  {
+    "index": 158,
+    "metadata": 0,
+    "text": "Difesa Rigore"
+  },
+  {
+    "index": 159,
+    "metadata": 0,
+    "text": "Rig"
+  },
+  {
+    "index": 160,
+    "metadata": 0,
+    "text": "Velocità"
+  },
+  {
+    "index": 161,
+    "metadata": 0,
+    "text": "Vel"
+  },
+  {
+    "index": 162,
+    "metadata": 0,
+    "text": "Controllo Aereo"
+  },
+  {
+    "index": 163,
+    "metadata": 0,
+    "text": "Aer"
+  },
+  {
+    "index": 164,
+    "metadata": 0,
+    "text": "Capacità d'impostazione"
+  },
+  {
+    "index": 165,
+    "metadata": 0,
+    "text": "Imp"
+  },
+  {
+    "index": 166,
+    "metadata": 0,
+    "text": "Testa"
+  },
+  {
+    "index": 167,
+    "metadata": 0,
+    "text": "Tes"
+  },
+  {
+    "index": 168,
+    "metadata": 0,
+    "text": "Cross"
+  },
+  {
+    "index": 169,
+    "metadata": 0,
+    "text": "Cro"
+  },
+  {
+    "index": 170,
+    "metadata": 0,
+    "text": "Tackle"
+  },
+  {
+    "index": 171,
+    "metadata": 0,
+    "text": "Tac"
+  },
+  {
+    "index": 172,
+    "metadata": 0,
+    "text": "Dribbling"
+  },
+  {
+    "index": 173,
+    "metadata": 0,
+    "text": "Dri"
+  },
+  {
+    "index": 174,
+    "metadata": 0,
+    "text": "Tiro"
+  },
+  {
+    "index": 175,
+    "metadata": 0,
+    "text": "Tir"
+  },
+  {
+    "index": 176,
+    "metadata": 0,
+    "text": "Marcatura"
+  },
+  {
+    "index": 177,
+    "metadata": 0,
+    "text": "Mar"
+  },
+  {
+    "index": 178,
+    "metadata": 0,
+    "text": "Passaggio"
+  },
+  {
+    "index": 179,
+    "metadata": 0,
+    "text": "Pas"
+  },
+  {
+    "index": 180,
+    "metadata": 0,
+    "text": "Potenza"
+  },
+  {
+    "index": 181,
+    "metadata": 0,
+    "text": "Pot"
+  },
+  {
+    "index": 182,
+    "metadata": 0,
+    "text": "Velocità"
+  },
+  {
+    "index": 183,
+    "metadata": 0,
+    "text": "Vel"
+  },
+  {
+    "index": 184,
+    "metadata": 0,
+    "text": "1o"
+  },
+  {
+    "index": 185,
+    "metadata": 0,
+    "text": "2o"
+  },
+  {
+    "index": 186,
+    "metadata": 0,
+    "text": "3o"
+  },
+  {
+    "index": 187,
+    "metadata": 0,
+    "text": "4o"
+  },
+  {
+    "index": 188,
+    "metadata": 0,
+    "text": "5o"
+  },
+  {
+    "index": 189,
+    "metadata": 0,
+    "text": "6o"
+  },
+  {
+    "index": 190,
+    "metadata": 0,
+    "text": "7o"
+  },
+  {
+    "index": 191,
+    "metadata": 0,
+    "text": "8o"
+  },
+  {
+    "index": 192,
+    "metadata": 0,
+    "text": "9o"
+  },
+  {
+    "index": 193,
+    "metadata": 0,
+    "text": "10o"
+  },
+  {
+    "index": 194,
+    "metadata": 0,
+    "text": "11o"
+  },
+  {
+    "index": 195,
+    "metadata": 0,
+    "text": "12o"
+  },
+  {
+    "index": 196,
+    "metadata": 0,
+    "text": "13o"
+  },
+  {
+    "index": 197,
+    "metadata": 0,
+    "text": "14o"
+  },
+  {
+    "index": 198,
+    "metadata": 0,
+    "text": "15o"
+  },
+  {
+    "index": 199,
+    "metadata": 0,
+    "text": "16o"
+  },
+  {
+    "index": 200,
+    "metadata": 0,
+    "text": "17o"
+  },
+  {
+    "index": 201,
+    "metadata": 0,
+    "text": "18o"
+  },
+  {
+    "index": 202,
+    "metadata": 0,
+    "text": "19o"
+  },
+  {
+    "index": 203,
+    "metadata": 0,
+    "text": "20"
+  },
+  {
+    "index": 204,
+    "metadata": 0,
+    "text": "posizione"
+  },
+  {
+    "index": 205,
+    "metadata": 0,
+    "text": "Casa"
+  },
+  {
+    "index": 206,
+    "metadata": 0,
+    "text": "C"
+  },
+  {
+    "index": 207,
+    "metadata": 0,
+    "text": "Trasferta"
+  },
+  {
+    "index": 208,
+    "metadata": 0,
+    "text": "T"
+  },
+  {
+    "index": 209,
+    "metadata": 0,
+    "text": "turno"
+  },
+  {
+    "index": 210,
+    "metadata": 0,
+    "text": "Arbitro"
+  },
+  {
+    "index": 211,
+    "metadata": 0,
+    "text": "Amichevole Internazionale"
+  },
+  {
+    "index": 212,
+    "metadata": 0,
+    "text": "Amichevole"
+  },
+  {
+    "index": 213,
+    "metadata": 0,
+    "text": "1o turno"
+  },
+  {
+    "index": 214,
+    "metadata": 0,
+    "text": "2o turno"
+  },
+  {
+    "index": 215,
+    "metadata": 0,
+    "text": "Quarti di Finale"
+  },
+  {
+    "index": 216,
+    "metadata": 0,
+    "text": "Semi-Finale"
+  },
+  {
+    "index": 217,
+    "metadata": 0,
+    "text": "Finale"
+  },
+  {
+    "index": 218,
+    "metadata": 0,
+    "text": "Primo Incontro"
+  },
+  {
+    "index": 219,
+    "metadata": 0,
+    "text": "Secondo Incontro"
+  },
+  {
+    "index": 220,
+    "metadata": 0,
+    "text": "Champions League"
+  },
+  {
+    "index": 221,
+    "metadata": 0,
+    "text": "UEFA Europa League"
+  },
+  {
+    "index": 222,
+    "metadata": 0,
+    "text": "Coppa Libertadores"
+  },
+  {
+    "index": 223,
+    "metadata": 0,
+    "text": "Coppa Sudamericana"
+  },
+  {
+    "index": 224,
+    "metadata": 0,
+    "text": "Coppa del Mondo FIFA"
+  },
+  {
+    "index": 225,
+    "metadata": 0,
+    "text": "Campionato Tedesco"
+  },
+  {
+    "index": 226,
+    "metadata": 0,
+    "text": "Coppa di Germania"
+  },
+  {
+    "index": 227,
+    "metadata": 0,
+    "text": "Campionato Italiano"
+  },
+  {
+    "index": 228,
+    "metadata": 0,
+    "text": "Coppa Italia"
+  },
+  {
+    "index": 229,
+    "metadata": 0,
+    "text": "Campionato Spagnolo"
+  },
+  {
+    "index": 230,
+    "metadata": 0,
+    "text": "Coppa di Spagna"
+  },
+  {
+    "index": 231,
+    "metadata": 0,
+    "text": "Campionato Inglese"
+  },
+  {
+    "index": 232,
+    "metadata": 0,
+    "text": "Coppa d'Inghilterra"
+  },
+  {
+    "index": 233,
+    "metadata": 0,
+    "text": "Campionato Francese"
+  },
+  {
+    "index": 234,
+    "metadata": 0,
+    "text": "Coppa di Francia"
+  },
+  {
+    "index": 235,
+    "metadata": 0,
+    "text": "Campionato Belga"
+  },
+  {
+    "index": 236,
+    "metadata": 0,
+    "text": "Coppa del Belgio"
+  },
+  {
+    "index": 237,
+    "metadata": 0,
+    "text": "Campionato Greco"
+  },
+  {
+    "index": 238,
+    "metadata": 0,
+    "text": "Coppa di Grecia"
+  },
+  {
+    "index": 239,
+    "metadata": 0,
+    "text": "Campionato Danese"
+  },
+  {
+    "index": 240,
+    "metadata": 0,
+    "text": "Coppa di Danimarca"
+  },
+  {
+    "index": 241,
+    "metadata": 0,
+    "text": "Campionato Portoghese"
+  },
+  {
+    "index": 242,
+    "metadata": 0,
+    "text": "Coppa del Portogallo"
+  },
+  {
+    "index": 243,
+    "metadata": 0,
+    "text": "Campionato Brasiliano"
+  },
+  {
+    "index": 244,
+    "metadata": 0,
+    "text": "Coppa del Brasile"
+  },
+  {
+    "index": 245,
+    "metadata": 0,
+    "text": "Campionato Argentino"
+  },
+  {
+    "index": 246,
+    "metadata": 0,
+    "text": "Coppa d'Argentina"
+  },
+  {
+    "index": 247,
+    "metadata": 0,
+    "text": "Campionato scozzese"
+  },
+  {
+    "index": 248,
+    "metadata": 0,
+    "text": "Coppa di Scozia"
+  },
+  {
+    "index": 249,
+    "metadata": 0,
+    "text": "Campionato Messicano"
+  },
+  {
+    "index": 250,
+    "metadata": 0,
+    "text": "Coppa del Messico"
+  },
+  {
+    "index": 251,
+    "metadata": 0,
+    "text": "Campionato Svizzero"
+  },
+  {
+    "index": 252,
+    "metadata": 0,
+    "text": "Coppa di Svizzera"
+  },
+  {
+    "index": 253,
+    "metadata": 0,
+    "text": "Campionato Turco"
+  },
+  {
+    "index": 254,
+    "metadata": 0,
+    "text": "Coppa di Turchia"
+  },
+  {
+    "index": 255,
+    "metadata": 0,
+    "text": "Campionato Cileno"
+  },
+  {
+    "index": 256,
+    "metadata": 0,
+    "text": "Coppa del Cile"
+  },
+  {
+    "index": 257,
+    "metadata": 0,
+    "text": "Campionato Paraguaiano"
+  },
+  {
+    "index": 258,
+    "metadata": 0,
+    "text": "Coppa del Paraguay"
+  },
+  {
+    "index": 259,
+    "metadata": 0,
+    "text": "Campionato Colombiano"
+  },
+  {
+    "index": 260,
+    "metadata": 0,
+    "text": "Coppa di Colombia"
+  },
+  {
+    "index": 261,
+    "metadata": 0,
+    "text": "Campionato Russo"
+  },
+  {
+    "index": 262,
+    "metadata": 0,
+    "text": "Coppa di Russia"
+  },
+  {
+    "index": 263,
+    "metadata": 0,
+    "text": "Campionato Svedese"
+  },
+  {
+    "index": 264,
+    "metadata": 0,
+    "text": "Cppa di Svezia"
+  },
+  {
+    "index": 265,
+    "metadata": 0,
+    "text": "Campionato Ucraino"
+  },
+  {
+    "index": 266,
+    "metadata": 0,
+    "text": "Coppa d'Ucraina"
+  },
+  {
+    "index": 267,
+    "metadata": 0,
+    "text": "Campionato Uruguaiano"
+  },
+  {
+    "index": 268,
+    "metadata": 0,
+    "text": "Coppa d'Uruguay"
+  },
+  {
+    "index": 269,
+    "metadata": 0,
+    "text": "Campionato Serbo"
+  },
+  {
+    "index": 270,
+    "metadata": 0,
+    "text": "Coppa di Serbia"
+  },
+  {
+    "index": 271,
+    "metadata": 0,
+    "text": "Campionato Polacco"
+  },
+  {
+    "index": 272,
+    "metadata": 0,
+    "text": "Coppa di Polonia"
+  },
+  {
+    "index": 273,
+    "metadata": 0,
+    "text": "Campionato Indonesiano"
+  },
+  {
+    "index": 274,
+    "metadata": 0,
+    "text": "Coppa d'Indonesia"
+  },
+  {
+    "index": 275,
+    "metadata": 0,
+    "text": "Campionato Statunitense"
+  },
+  {
+    "index": 276,
+    "metadata": 0,
+    "text": "Coppa degli Stati Uniti"
+  },
+  {
+    "index": 277,
+    "metadata": 0,
+    "text": "Campionato Bulgaro"
+  },
+  {
+    "index": 278,
+    "metadata": 0,
+    "text": "Coppa di Bulgaria"
+  },
+  {
+    "index": 279,
+    "metadata": 0,
+    "text": "Campionato di "
+  },
+  {
+    "index": 280,
+    "metadata": 0,
+    "text": "Coppa di"
+  },
+  {
+    "index": 281,
+    "metadata": 0,
+    "text": "Ricordare Schieramento"
+  },
+  {
+    "index": 282,
+    "metadata": 0,
+    "text": "Selezione Automatica Schieramento"
+  },
+  {
+    "index": 283,
+    "metadata": 0,
+    "text": "Atteggiamento Squadra"
+  },
+  {
+    "index": 284,
+    "metadata": 0,
+    "text": "Pressione Difesa"
+  },
+  {
+    "index": 285,
+    "metadata": 0,
+    "text": "Più attacchi in"
+  },
+  {
+    "index": 286,
+    "metadata": 0,
+    "text": "Impostare tiratori"
+  },
+  {
+    "index": 287,
+    "metadata": 0,
+    "text": "Capitano "
+  },
+  {
+    "index": 288,
+    "metadata": 0,
+    "text": "Selezione Automatica Schieramento"
+  },
+  {
+    "index": 289,
+    "metadata": 0,
+    "text": "Atteggiamento Squadra"
+  },
+  {
+    "index": 290,
+    "metadata": 0,
+    "text": "Bilanciato"
+  },
+  {
+    "index": 291,
+    "metadata": 0,
+    "text": "Tutti in attacco"
+  },
+  {
+    "index": 292,
+    "metadata": 0,
+    "text": "Difensivo"
+  },
+  {
+    "index": 293,
+    "metadata": 0,
+    "text": "Leggero"
+  },
+  {
+    "index": 294,
+    "metadata": 0,
+    "text": "Pesante"
+  },
+  {
+    "index": 295,
+    "metadata": 0,
+    "text": "Molto Pesante"
+  },
+  {
+    "index": 296,
+    "metadata": 0,
+    "text": "Centro"
+  },
+  {
+    "index": 297,
+    "metadata": 0,
+    "text": "Ali"
+  },
+  {
+    "index": 298,
+    "metadata": 0,
+    "text": "<<Indietro"
+  },
+  {
+    "index": 299,
+    "metadata": 0,
+    "text": "Iniziare Partita>>"
+  },
+  {
+    "index": 300,
+    "metadata": 0,
+    "text": "Giocare come"
+  },
+  {
+    "index": 301,
+    "metadata": 0,
+    "text": "Selezionare almeno 11 giocatori per iniziare la partita"
+  },
+  {
+    "index": 302,
+    "metadata": 0,
+    "text": "Selezionare una squadra:"
+  },
+  {
+    "index": 303,
+    "metadata": 0,
+    "text": "Cronologia"
+  },
+  {
+    "index": 304,
+    "metadata": 0,
+    "text": "Impegni"
+  },
+  {
+    "index": 305,
+    "metadata": 0,
+    "text": "Trasferimenti"
+  },
+  {
+    "index": 306,
+    "metadata": 0,
+    "text": "Trofei"
+  },
+  {
+    "index": 307,
+    "metadata": 0,
+    "text": "I vostri soldi:"
+  },
+  {
+    "index": 308,
+    "metadata": 0,
+    "text": "Avete un limite di 28 giocatori nella vostra squadra"
+  },
+  {
+    "index": 309,
+    "metadata": 0,
+    "text": "Non vuole passare alla vostra squadra"
+  },
+  {
+    "index": 310,
+    "metadata": 0,
+    "text": "trasferimento avvenuto"
+  },
+  {
+    "index": 311,
+    "metadata": 0,
+    "text": "Lista Trasferibili"
+  },
+  {
+    "index": 312,
+    "metadata": 0,
+    "text": "Prestito Disponibile"
+  },
+  {
+    "index": 313,
+    "metadata": 0,
+    "text": "LT"
+  },
+  {
+    "index": 314,
+    "metadata": 0,
+    "text": "PD"
+  },
+  {
+    "index": 315,
+    "metadata": 0,
+    "text": "Prestare Giocatore"
+  },
+  {
+    "index": 316,
+    "metadata": 0,
+    "text": "Potete avere solamente 2 giocatori in prestito nella vostra squadra"
+  },
+  {
+    "index": 317,
+    "metadata": 0,
+    "text": "Comprare Giocatore"
+  },
+  {
+    "index": 318,
+    "metadata": 0,
+    "text": "Fare un'offerta"
+  },
+  {
+    "index": 319,
+    "metadata": 0,
+    "text": "Cronologia Completa"
+  },
+  {
+    "index": 320,
+    "metadata": 0,
+    "text": "Anno"
+  },
+  {
+    "index": 321,
+    "metadata": 0,
+    "text": "Squadra"
+  },
+  {
+    "index": 322,
+    "metadata": 0,
+    "text": "Carriera Completa"
+  },
+  {
+    "index": 323,
+    "metadata": 0,
+    "text": "Squadre Regionali"
+  },
+  {
+    "index": 324,
+    "metadata": 0,
+    "text": "Internazionale"
+  },
+  {
+    "index": 325,
+    "metadata": 0,
+    "text": "Elenco partite"
+  },
+  {
+    "index": 326,
+    "metadata": 0,
+    "text": "Coppa del Mondo"
+  },
+  {
+    "index": 327,
+    "metadata": 0,
+    "text": "Coppa America"
+  },
+  {
+    "index": 328,
+    "metadata": 0,
+    "text": "Campionato Europeo"
+  },
+  {
+    "index": 329,
+    "metadata": 0,
+    "text": "Mostrare:"
+  },
+  {
+    "index": 330,
+    "metadata": 0,
+    "text": "Tutte le partite"
+  },
+  {
+    "index": 331,
+    "metadata": 0,
+    "text": "dom"
+  },
+  {
+    "index": 332,
+    "metadata": 0,
+    "text": "lun"
+  },
+  {
+    "index": 333,
+    "metadata": 0,
+    "text": "mar"
+  },
+  {
+    "index": 334,
+    "metadata": 0,
+    "text": "mer"
+  },
+  {
+    "index": 335,
+    "metadata": 0,
+    "text": "gio"
+  },
+  {
+    "index": 336,
+    "metadata": 0,
+    "text": "ven"
+  },
+  {
+    "index": 337,
+    "metadata": 0,
+    "text": "sab"
+  },
+  {
+    "index": 338,
+    "metadata": 0,
+    "text": "Giocatore"
+  },
+  {
+    "index": 339,
+    "metadata": 0,
+    "text": "Gol"
+  },
+  {
+    "index": 340,
+    "metadata": 0,
+    "text": "Partite"
+  },
+  {
+    "index": 341,
+    "metadata": 0,
+    "text": "Campionato "
+  },
+  {
+    "index": 342,
+    "metadata": 0,
+    "text": "Coppa"
+  },
+  {
+    "index": 343,
+    "metadata": 0,
+    "text": "Il Migliore di sempre"
+  },
+  {
+    "index": 344,
+    "metadata": 0,
+    "text": "Elenco primi 100 giocatori, cliccare qui per mostrarli tutti"
+  },
+  {
+    "index": 345,
+    "metadata": 0,
+    "text": "Caricare"
+  },
+  {
+    "index": 346,
+    "metadata": 0,
+    "text": "Cancellare"
+  },
+  {
+    "index": 347,
+    "metadata": 0,
+    "text": "Eliminare"
+  },
+  {
+    "index": 348,
+    "metadata": 0,
+    "text": "Allenatore:"
+  },
+  {
+    "index": 349,
+    "metadata": 0,
+    "text": "Prossima Partita:"
+  },
+  {
+    "index": 350,
+    "metadata": 0,
+    "text": "Entrate"
+  },
+  {
+    "index": 351,
+    "metadata": 0,
+    "text": "Spese"
+  },
+  {
+    "index": 352,
+    "metadata": 0,
+    "text": "Giocatori venduti:"
+  },
+  {
+    "index": 353,
+    "metadata": 0,
+    "text": "Biglietti:"
+  },
+  {
+    "index": 354,
+    "metadata": 0,
+    "text": "Trofei"
+  },
+  {
+    "index": 355,
+    "metadata": 0,
+    "text": "Prestito Bancario:"
+  },
+  {
+    "index": 356,
+    "metadata": 0,
+    "text": "Sponsorizzazione:"
+  },
+  {
+    "index": 357,
+    "metadata": 0,
+    "text": "Totale Parziale:"
+  },
+  {
+    "index": 358,
+    "metadata": 0,
+    "text": "Giocatori Comprati:"
+  },
+  {
+    "index": 359,
+    "metadata": 0,
+    "text": "Stadio:"
+  },
+  {
+    "index": 360,
+    "metadata": 0,
+    "text": "Stipendio:"
+  },
+  {
+    "index": 361,
+    "metadata": 0,
+    "text": "Conto Interessi:"
+  },
+  {
+    "index": 362,
+    "metadata": 0,
+    "text": "Costo di Trasferimento:"
+  },
+  {
+    "index": 363,
+    "metadata": 0,
+    "text": "Misto:"
+  },
+  {
+    "index": 364,
+    "metadata": 0,
+    "text": "Bilancio:"
+  },
+  {
+    "index": 365,
+    "metadata": 0,
+    "text": "Interessi ogni settimana:"
+  },
+  {
+    "index": 366,
+    "metadata": 0,
+    "text": "Stipendi pagati ogni settimana:"
+  },
+  {
+    "index": 367,
+    "metadata": 0,
+    "text": "Denaro disponibile:"
+  },
+  {
+    "index": 368,
+    "metadata": 0,
+    "text": "Giocatore in vendita all'asta"
+  },
+  {
+    "index": 369,
+    "metadata": 0,
+    "text": "Prezzo di partenza:"
+  },
+  {
+    "index": 370,
+    "metadata": 0,
+    "text": "sta vendendo il giocatore"
+  },
+  {
+    "index": 371,
+    "metadata": 0,
+    "text": "Fate la vostra offerta in migliaia, per es. 300 = 300 mila"
+  },
+  {
+    "index": 372,
+    "metadata": 0,
+    "text": "Nessun Acquirente"
+  },
+  {
+    "index": 373,
+    "metadata": 0,
+    "text": "Venduto a "
+  },
+  {
+    "index": 374,
+    "metadata": 0,
+    "text": "La vostra offerta:"
+  },
+  {
+    "index": 375,
+    "metadata": 0,
+    "text": "Offerta"
+  },
+  {
+    "index": 376,
+    "metadata": 0,
+    "text": "più alta del vostro denaro disponibile"
+  },
+  {
+    "index": 377,
+    "metadata": 0,
+    "text": "Non avete abbastanza denaro."
+  },
+  {
+    "index": 378,
+    "metadata": 0,
+    "text": "Contratto"
+  },
+  {
+    "index": 379,
+    "metadata": 0,
+    "text": "Nuovo Stipendio:"
+  },
+  {
+    "index": 380,
+    "metadata": 0,
+    "text": "Lunghezza Contratto:"
+  },
+  {
+    "index": 381,
+    "metadata": 0,
+    "text": "6 mesi"
+  },
+  {
+    "index": 382,
+    "metadata": 0,
+    "text": "1 anno"
+  },
+  {
+    "index": 383,
+    "metadata": 0,
+    "text": "2 anni"
+  },
+  {
+    "index": 384,
+    "metadata": 0,
+    "text": "Offerta"
+  },
+  {
+    "index": 385,
+    "metadata": 0,
+    "text": "Cancellare"
+  },
+  {
+    "index": 386,
+    "metadata": 0,
+    "text": "La vostra offerta è stata rifiutata, vuole:"
+  },
+  {
+    "index": 387,
+    "metadata": 0,
+    "text": "Accettare"
+  },
+  {
+    "index": 388,
+    "metadata": 0,
+    "text": "Rifiutare"
+  },
+  {
+    "index": 389,
+    "metadata": 0,
+    "text": "Questo giocatore ha un limite di stipendio di"
+  },
+  {
+    "index": 390,
+    "metadata": 0,
+    "text": "Campioni"
+  },
+  {
+    "index": 391,
+    "metadata": 0,
+    "text": "Continuare>>>"
+  },
+  {
+    "index": 392,
+    "metadata": 0,
+    "text": "gol"
+  },
+  {
+    "index": 393,
+    "metadata": 0,
+    "text": "Ricerca"
+  },
+  {
+    "index": 394,
+    "metadata": 0,
+    "text": "Posizione:"
+  },
+  {
+    "index": 395,
+    "metadata": 0,
+    "text": "Nazionalità:"
+  },
+  {
+    "index": 396,
+    "metadata": 0,
+    "text": "Mostrare solo trasferimenti elencati"
+  },
+  {
+    "index": 397,
+    "metadata": 0,
+    "text": "Mostrare solo giocatori che giocano a"
+  },
+  {
+    "index": 398,
+    "metadata": 0,
+    "text": "Mostrare solo stelle"
+  },
+  {
+    "index": 399,
+    "metadata": 0,
+    "text": "Mostrare solo disponibili in prestito"
+  },
+  {
+    "index": 400,
+    "metadata": 0,
+    "text": "Qualsiasi valore"
+  },
+  {
+    "index": 401,
+    "metadata": 0,
+    "text": "giocatori trovati"
+  },
+  {
+    "index": 402,
+    "metadata": 0,
+    "text": "Già in prestito:"
+  },
+  {
+    "index": 403,
+    "metadata": 0,
+    "text": "Interesse a partita:"
+  },
+  {
+    "index": 404,
+    "metadata": 0,
+    "text": "Ricevete ulteriori $ 500 000"
+  },
+  {
+    "index": 405,
+    "metadata": 0,
+    "text": "Pagate $ 500 000"
+  },
+  {
+    "index": 406,
+    "metadata": 0,
+    "text": "Anno"
+  },
+  {
+    "index": 407,
+    "metadata": 0,
+    "text": "Campione"
+  },
+  {
+    "index": 408,
+    "metadata": 0,
+    "text": "Seconda in Classifica"
+  },
+  {
+    "index": 409,
+    "metadata": 0,
+    "text": "Migliori Realizzatori"
+  },
+  {
+    "index": 410,
+    "metadata": 0,
+    "text": "Allenatore Campione"
+  },
+  {
+    "index": 411,
+    "metadata": 0,
+    "text": "Invito Allenatore"
+  },
+  {
+    "index": 412,
+    "metadata": 0,
+    "text": "La squadra in basso vuole ingaggiarvi, volete gestire questa squadra?"
+  },
+  {
+    "index": 413,
+    "metadata": 0,
+    "text": "Accettare"
+  },
+  {
+    "index": 414,
+    "metadata": 0,
+    "text": "Rifiutare Tutto"
+  },
+  {
+    "index": 415,
+    "metadata": 0,
+    "text": "vi esonera perchè:"
+  },
+  {
+    "index": 416,
+    "metadata": 0,
+    "text": "I tifosi stanno pressando moltissimo la società a causa dei vostri risultati negativi."
+  },
+  {
+    "index": 417,
+    "metadata": 0,
+    "text": "stavamo gettando il nostro club in problemi finanziari."
+  },
+  {
+    "index": 418,
+    "metadata": 0,
+    "text": "stavamo ottenendo molti risultati negativi."
+  },
+  {
+    "index": 419,
+    "metadata": 0,
+    "text": "siamo stati retrocessi dalla 4a divisione"
+  },
+  {
+    "index": 420,
+    "metadata": 0,
+    "text": "che avete chiesto. Buona fortuna nella vostra prossima squadra."
+  },
+  {
+    "index": 421,
+    "metadata": 0,
+    "text": "Il nuovo allenatore che vi sostituisce è:"
+  },
+  {
+    "index": 422,
+    "metadata": 0,
+    "text": "Adesso attendete un nuovo club..."
+  },
+  {
+    "index": 423,
+    "metadata": 0,
+    "text": "Esonerato!"
+  },
+  {
+    "index": 424,
+    "metadata": 0,
+    "text": "Impostazioni Gioco"
+  },
+  {
+    "index": 425,
+    "metadata": 0,
+    "text": "Mostrare campionati"
+  },
+  {
+    "index": 426,
+    "metadata": 0,
+    "text": "Salvataggio automatico:"
+  },
+  {
+    "index": 427,
+    "metadata": 0,
+    "text": "Velocità di Gioco:"
+  },
+  {
+    "index": 428,
+    "metadata": 0,
+    "text": "Velocità senza giocatori umani:"
+  },
+  {
+    "index": 429,
+    "metadata": 0,
+    "text": "Mostrare decisioni penalità senza umani:"
+  },
+  {
+    "index": 430,
+    "metadata": 0,
+    "text": "Mostrare trasferimenti allenatori:"
+  },
+  {
+    "index": 431,
+    "metadata": 0,
+    "text": "Aprire informazioni partita alla fine del primo tempo:"
+  },
+  {
+    "index": 432,
+    "metadata": 0,
+    "text": "Ricevere avvertimenti sui contratti scaduti"
+  },
+  {
+    "index": 433,
+    "metadata": 0,
+    "text": "Rinnovare automaticamente contratti scaduti"
+  },
+  {
+    "index": 434,
+    "metadata": 0,
+    "text": "Colore e suoni"
+  },
+  {
+    "index": 435,
+    "metadata": 0,
+    "text": "Abilitare suoni eventi"
+  },
+  {
+    "index": 436,
+    "metadata": 0,
+    "text": "Eventi in casa in grassetto"
+  },
+  {
+    "index": 437,
+    "metadata": 0,
+    "text": "Usare colori nella lista dei gicatori"
+  },
+  {
+    "index": 438,
+    "metadata": 0,
+    "text": "Non salvare automaticamente"
+  },
+  {
+    "index": 439,
+    "metadata": 0,
+    "text": "Ogni tre giornate"
+  },
+  {
+    "index": 440,
+    "metadata": 0,
+    "text": "Dopo ogni partita"
+  },
+  {
+    "index": 441,
+    "metadata": 0,
+    "text": "Inizio di stagione"
+  },
+  {
+    "index": 442,
+    "metadata": 0,
+    "text": "Lento"
+  },
+  {
+    "index": 443,
+    "metadata": 0,
+    "text": "Normale"
+  },
+  {
+    "index": 444,
+    "metadata": 0,
+    "text": "Veloce"
+  },
+  {
+    "index": 445,
+    "metadata": 0,
+    "text": "Molto Veloce"
+  },
+  {
+    "index": 446,
+    "metadata": 0,
+    "text": "Velocissimo"
+  },
+  {
+    "index": 447,
+    "metadata": 0,
+    "text": "Ultra Veloce"
+  },
+  {
+    "index": 448,
+    "metadata": 0,
+    "text": "Iperveloce"
+  },
+  {
+    "index": 449,
+    "metadata": 0,
+    "text": "No"
+  },
+  {
+    "index": 450,
+    "metadata": 0,
+    "text": "Sì"
+  },
+  {
+    "index": 451,
+    "metadata": 0,
+    "text": "Solo scaduti"
+  },
+  {
+    "index": 452,
+    "metadata": 0,
+    "text": "Solo in scadenza"
+  },
+  {
+    "index": 453,
+    "metadata": 0,
+    "text": "Mostrare minuti in stile europeo (esempio: 60' invece di 15' secondo tempo)"
+  },
+  {
+    "index": 454,
+    "metadata": 0,
+    "text": "Mostrare partite dei tornei senza umani:"
+  },
+  {
+    "index": 455,
+    "metadata": 0,
+    "text": "Utilizzare un colore diverso in punteggio partite umani"
+  },
+  {
+    "index": 456,
+    "metadata": 0,
+    "text": "Colori della lista giocatori"
+  },
+  {
+    "index": 457,
+    "metadata": 0,
+    "text": "Ripristinare le impostazioni di default"
+  },
+  {
+    "index": 458,
+    "metadata": 0,
+    "text": "Rigore"
+  },
+  {
+    "index": 459,
+    "metadata": 0,
+    "text": "Selezionare tiratore"
+  },
+  {
+    "index": 460,
+    "metadata": 0,
+    "text": "Calciare"
+  },
+  {
+    "index": 461,
+    "metadata": 0,
+    "text": "prepararsi a calciare..."
+  },
+  {
+    "index": 462,
+    "metadata": 0,
+    "text": "Calcia la palla e..."
+  },
+  {
+    "index": 463,
+    "metadata": 0,
+    "text": "E' stato un bel tiro! Gol!!!"
+  },
+  {
+    "index": 464,
+    "metadata": 0,
+    "text": "Eccolo, gol!!!"
+  },
+  {
+    "index": 465,
+    "metadata": 0,
+    "text": "Segna un grande gol!!!"
+  },
+  {
+    "index": 466,
+    "metadata": 0,
+    "text": "Il Portiere salva!"
+  },
+  {
+    "index": 467,
+    "metadata": 0,
+    "text": "Colpisce il palo!!!"
+  },
+  {
+    "index": 468,
+    "metadata": 0,
+    "text": "Ha colpito la traversa!!!"
+  },
+  {
+    "index": 469,
+    "metadata": 0,
+    "text": "Punti"
+  },
+  {
+    "index": 470,
+    "metadata": 0,
+    "text": "Giocate"
+  },
+  {
+    "index": 471,
+    "metadata": 0,
+    "text": "Vittories"
+  },
+  {
+    "index": 472,
+    "metadata": 0,
+    "text": "Pareggiate"
+  },
+  {
+    "index": 473,
+    "metadata": 0,
+    "text": "Sconfitte"
+  },
+  {
+    "index": 474,
+    "metadata": 0,
+    "text": "Gol Segnati"
+  },
+  {
+    "index": 475,
+    "metadata": 0,
+    "text": "Gol Subiti"
+  },
+  {
+    "index": 476,
+    "metadata": 0,
+    "text": "Differenza Reti"
+  },
+  {
+    "index": 477,
+    "metadata": 0,
+    "text": "Gruppo"
+  },
+  {
+    "index": 478,
+    "metadata": 0,
+    "text": "Non è stato ancora programmato"
+  },
+  {
+    "index": 479,
+    "metadata": 0,
+    "text": "Decisione penalità"
+  },
+  {
+    "index": 480,
+    "metadata": 0,
+    "text": "Decisione penalità - Selezionare i calciatori"
+  },
+  {
+    "index": 481,
+    "metadata": 0,
+    "text": "Giocatori disponibili:"
+  },
+  {
+    "index": 482,
+    "metadata": 0,
+    "text": "Giocatori selezionati:"
+  },
+  {
+    "index": 483,
+    "metadata": 0,
+    "text": "Selezione automatica"
+  },
+  {
+    "index": 484,
+    "metadata": 0,
+    "text": "Continuare>>>"
+  },
+  {
+    "index": 485,
+    "metadata": 0,
+    "text": "Gol"
+  },
+  {
+    "index": 486,
+    "metadata": 0,
+    "text": "Fallito"
+  },
+  {
+    "index": 487,
+    "metadata": 0,
+    "text": "Vinto"
+  },
+  {
+    "index": 488,
+    "metadata": 0,
+    "text": "Digitare un nome per il file in basso per salvare la partita:"
+  },
+  {
+    "index": 489,
+    "metadata": 0,
+    "text": "Salvare"
+  },
+  {
+    "index": 490,
+    "metadata": 0,
+    "text": "Il nome file esiste già, sostituire?"
+  },
+  {
+    "index": 491,
+    "metadata": 0,
+    "text": "Sì"
+  },
+  {
+    "index": 492,
+    "metadata": 0,
+    "text": "No"
+  },
+  {
+    "index": 493,
+    "metadata": 0,
+    "text": "Trasferire Giocatore"
+  },
+  {
+    "index": 494,
+    "metadata": 0,
+    "text": "Trasferire all'Asta"
+  },
+  {
+    "index": 495,
+    "metadata": 0,
+    "text": "Valore Iniziale:"
+  },
+  {
+    "index": 496,
+    "metadata": 0,
+    "text": "(in migliaia di $)"
+  },
+  {
+    "index": 497,
+    "metadata": 0,
+    "text": "Mettere in lista trasferimenti"
+  },
+  {
+    "index": 498,
+    "metadata": 0,
+    "text": "Iniziare Asta"
+  },
+  {
+    "index": 499,
+    "metadata": 0,
+    "text": "Cancellare"
+  },
+  {
+    "index": 500,
+    "metadata": 0,
+    "text": "Lista Trasferimenti"
+  },
+  {
+    "index": 501,
+    "metadata": 0,
+    "text": "(Dovete pagare un costo di trasferimento in base alla data di scadenza del contratto)"
+  },
+  {
+    "index": 502,
+    "metadata": 0,
+    "text": "Costo stimato di trasferimento per questo giocatore:"
+  },
+  {
+    "index": 503,
+    "metadata": 0,
+    "text": "Valora Stabilito:"
+  },
+  {
+    "index": 504,
+    "metadata": 0,
+    "text": "1o tempo"
+  },
+  {
+    "index": 505,
+    "metadata": 0,
+    "text": "2o tempo"
+  },
+  {
+    "index": 506,
+    "metadata": 0,
+    "text": "Fine Primo Tempo"
+  },
+  {
+    "index": 507,
+    "metadata": 0,
+    "text": "Tempo di Recupero"
+  },
+  {
+    "index": 508,
+    "metadata": 0,
+    "text": "Fine partita"
+  },
+  {
+    "index": 509,
+    "metadata": 0,
+    "text": "Sfida per il terzo posto"
+  },
+  {
+    "index": 510,
+    "metadata": 0,
+    "text": "(autorete)"
+  },
+  {
+    "index": 511,
+    "metadata": 0,
+    "text": "(rigore)"
+  },
+  {
+    "index": 512,
+    "metadata": 0,
+    "text": "(calcio di punizione)"
+  },
+  {
+    "index": 513,
+    "metadata": 0,
+    "text": "(rigore fallito)"
+  },
+  {
+    "index": 514,
+    "metadata": 0,
+    "text": "Allenatore"
+  },
+  {
+    "index": 515,
+    "metadata": 0,
+    "text": "Squadra Corrente"
+  },
+  {
+    "index": 516,
+    "metadata": 0,
+    "text": "Punti"
+  },
+  {
+    "index": 517,
+    "metadata": 0,
+    "text": "Classifica Mondiale"
+  },
+  {
+    "index": 518,
+    "metadata": 0,
+    "text": "Trofei"
+  },
+  {
+    "index": 519,
+    "metadata": 0,
+    "text": "Ritirare Giocatore"
+  },
+  {
+    "index": 520,
+    "metadata": 0,
+    "text": "I giocatori ritirati possono essere sostituiti da un giocatore promosso dalle vostre giovanili."
+  },
+  {
+    "index": 521,
+    "metadata": 0,
+    "text": "Se non ci sono posti vacanti nella squadra giovanile, che sarà promosso direttamente in prima squadra."
+  },
+  {
+    "index": 522,
+    "metadata": 0,
+    "text": "Potete inserire un nuovo nome per il nuovo giocatore, o lasciare che il gioco scegliere"
+  },
+  {
+    "index": 523,
+    "metadata": 0,
+    "text": "Nome del nuovo giocatore"
+  },
+  {
+    "index": 524,
+    "metadata": 0,
+    "text": "Posizione"
+  },
+  {
+    "index": 525,
+    "metadata": 0,
+    "text": "Ritirare"
+  },
+  {
+    "index": 526,
+    "metadata": 0,
+    "text": "Cancellare"
+  },
+  {
+    "index": 527,
+    "metadata": 0,
+    "text": "Offerta Giocatore"
+  },
+  {
+    "index": 528,
+    "metadata": 0,
+    "text": "Vuole il giocatore"
+  },
+  {
+    "index": 529,
+    "metadata": 0,
+    "text": "Accettare l'offerta?"
+  },
+  {
+    "index": 530,
+    "metadata": 0,
+    "text": "Allenatori umani"
+  },
+  {
+    "index": 531,
+    "metadata": 0,
+    "text": "Eliminare"
+  },
+  {
+    "index": 532,
+    "metadata": 0,
+    "text": "Aggiungere nuovo"
+  },
+  {
+    "index": 533,
+    "metadata": 0,
+    "text": "Per rimuovere un allenatore, prima ritiratelo dal suo lavoro corrente"
+  },
+  {
+    "index": 534,
+    "metadata": 0,
+    "text": "Nome del nuovo allenatore"
+  },
+  {
+    "index": 535,
+    "metadata": 0,
+    "text": "Giocatore Infortunato"
+  },
+  {
+    "index": 536,
+    "metadata": 0,
+    "text": "Selezionare un giocatore da sostituire"
+  },
+  {
+    "index": 537,
+    "metadata": 0,
+    "text": "Rigore"
+  },
+  {
+    "index": 538,
+    "metadata": 0,
+    "text": "Cronologia Stagione"
+  },
+  {
+    "index": 539,
+    "metadata": 0,
+    "text": "Torneo"
+  },
+  {
+    "index": 540,
+    "metadata": 0,
+    "text": "Posizione"
+  },
+  {
+    "index": 541,
+    "metadata": 0,
+    "text": "Allenatori"
+  },
+  {
+    "index": 542,
+    "metadata": 0,
+    "text": "3o posto"
+  },
+  {
+    "index": 543,
+    "metadata": 0,
+    "text": "4o posto"
+  },
+  {
+    "index": 544,
+    "metadata": 0,
+    "text": "Allenatore esonerato"
+  },
+  {
+    "index": 545,
+    "metadata": 0,
+    "text": "Cambio di allenatore"
+  },
+  {
+    "index": 546,
+    "metadata": 0,
+    "text": "esonerato da"
+  },
+  {
+    "index": 547,
+    "metadata": 0,
+    "text": "Nuovo allenatore:"
+  },
+  {
+    "index": 548,
+    "metadata": 0,
+    "text": "va a "
+  },
+  {
+    "index": 549,
+    "metadata": 0,
+    "text": "Ultimi Trasferimenti"
+  },
+  {
+    "index": 550,
+    "metadata": 0,
+    "text": "Giocatori"
+  },
+  {
+    "index": 551,
+    "metadata": 0,
+    "text": "Da"
+  },
+  {
+    "index": 552,
+    "metadata": 0,
+    "text": "A"
+  },
+  {
+    "index": 553,
+    "metadata": 0,
+    "text": "Giocatori"
+  },
+  {
+    "index": 554,
+    "metadata": 0,
+    "text": "Allenatori"
+  },
+  {
+    "index": 555,
+    "metadata": 0,
+    "text": "Tutti i Giocatori"
+  },
+  {
+    "index": 556,
+    "metadata": 0,
+    "text": "Fare Offerta"
+  },
+  {
+    "index": 557,
+    "metadata": 0,
+    "text": "Valore Giocatorei:"
+  },
+  {
+    "index": 558,
+    "metadata": 0,
+    "text": "La vostra offerta:"
+  },
+  {
+    "index": 559,
+    "metadata": 0,
+    "text": "Offerta"
+  },
+  {
+    "index": 560,
+    "metadata": 0,
+    "text": "non vuole giocare nella vostra squadra"
+  },
+  {
+    "index": 561,
+    "metadata": 0,
+    "text": "La vostra offerta non è stata accettata"
+  },
+  {
+    "index": 562,
+    "metadata": 0,
+    "text": "Per giocare nel vostro club"
+  },
+  {
+    "index": 563,
+    "metadata": 0,
+    "text": "vuole un aumento di stipendio."
+  },
+  {
+    "index": 564,
+    "metadata": 0,
+    "text": "Accettare"
+  },
+  {
+    "index": 565,
+    "metadata": 0,
+    "text": "Rifiutare"
+  },
+  {
+    "index": 566,
+    "metadata": 0,
+    "text": "Casella E-mail"
+  },
+  {
+    "index": 567,
+    "metadata": 0,
+    "text": "Volete multare il giocatore?"
+  },
+  {
+    "index": 568,
+    "metadata": 0,
+    "text": "Amministrazione"
+  },
+  {
+    "index": 569,
+    "metadata": 0,
+    "text": "Tifosi"
+  },
+  {
+    "index": 570,
+    "metadata": 0,
+    "text": "Giocatore"
+  },
+  {
+    "index": 571,
+    "metadata": 0,
+    "text": "Stampa"
+  },
+  {
+    "index": 572,
+    "metadata": 0,
+    "text": "Centro Medico"
+  },
+  {
+    "index": 573,
+    "metadata": 0,
+    "text": "Benvenuti a "
+  },
+  {
+    "index": 574,
+    "metadata": 0,
+    "text": "spedito"
+  },
+  {
+    "index": 575,
+    "metadata": 0,
+    "text": "Non mi piace che"
+  },
+  {
+    "index": 576,
+    "metadata": 0,
+    "text": "infortunato"
+  },
+  {
+    "index": 577,
+    "metadata": 0,
+    "text": "Non permetteremo che"
+  },
+  {
+    "index": 578,
+    "metadata": 0,
+    "text": "Non permetteremo che"
+  },
+  {
+    "index": 579,
+    "metadata": 0,
+    "text": "va a "
+  },
+  {
+    "index": 580,
+    "metadata": 0,
+    "text": "L'atmosfera nella nostra squadra non è buona a causa di"
+  },
+  {
+    "index": 581,
+    "metadata": 0,
+    "text": "Grazie"
+  },
+  {
+    "index": 582,
+    "metadata": 0,
+    "text": "Lamentela"
+  },
+  {
+    "index": 583,
+    "metadata": 0,
+    "text": "Il mio contratto è scaduto"
+  },
+  {
+    "index": 584,
+    "metadata": 0,
+    "text": "Scontri tra"
+  },
+  {
+    "index": 585,
+    "metadata": 0,
+    "text": "I tifosi si scontrano"
+  },
+  {
+    "index": 586,
+    "metadata": 0,
+    "text": "si trasferisce a "
+  },
+  {
+    "index": 587,
+    "metadata": 0,
+    "text": "Inviti squadre nazionali"
+  },
+  {
+    "index": 588,
+    "metadata": 0,
+    "text": "Contratto in scadenza"
+  },
+  {
+    "index": 589,
+    "metadata": 0,
+    "text": "Contratto scaduto"
+  },
+  {
+    "index": 590,
+    "metadata": 0,
+    "text": "non c'è posto per giocatore"
+  },
+  {
+    "index": 591,
+    "metadata": 0,
+    "text": "Ha ricevuto 10 giornate di squalifica dopo aver sputato in faccia all'arbitro"
+  },
+  {
+    "index": 592,
+    "metadata": 0,
+    "text": "Ha ricevuto 10 giornate di squalifica dopo aver detto parolacce all'arbitro"
+  },
+  {
+    "index": 593,
+    "metadata": 0,
+    "text": "Ha ricevuto 5 giornate di squalifica dopo  essere intervenuto pericolosamente in scivolata da tergo su un avversario"
+  },
+  {
+    "index": 594,
+    "metadata": 0,
+    "text": "Ha ricevuto 5 giornate di squalifica dopo aver insultato un avversario. Riteniamo che sia stata una punizione ingiusta"
+  },
+  {
+    "index": 595,
+    "metadata": 0,
+    "text": "Ha dato un calcio a un avversario e ha ricevuto 5 partite di squalifica. Riteniamo che sia stata una punizione ingiusta"
+  },
+  {
+    "index": 596,
+    "metadata": 0,
+    "text": "E' intervenuto in scivolata da tergo e ha ricevuto 3 giornate di squalifica"
+  },
+  {
+    "index": 597,
+    "metadata": 0,
+    "text": "Ha dato un pugno sul naso a un avversario e ha ricevuto 3 giornate di squalifica"
+  },
+  {
+    "index": 598,
+    "metadata": 0,
+    "text": "Ha commesso un fallo estremamente violento per evitare un gol già fatto. 3 giornate di squalifica"
+  },
+  {
+    "index": 599,
+    "metadata": 0,
+    "text": "Ha colpito al volto un avversario. 3 giornate di squalifica"
+  },
+  {
+    "index": 600,
+    "metadata": 0,
+    "text": "Un fallo estremamente violento. 2 giornate di squalifica"
+  },
+  {
+    "index": 601,
+    "metadata": 0,
+    "text": "Ha dato un calcio all'avversario. Crede che il calcio si ha un gioco di lotta? 2 giornate di squalifica"
+  },
+  {
+    "index": 602,
+    "metadata": 0,
+    "text": "Ha commesso un fallo violento. 2 giornate di squalifica"
+  },
+  {
+    "index": 603,
+    "metadata": 0,
+    "text": "Il giocatore si è stirato un muscolo. Infortunato per una settimana circa"
+  },
+  {
+    "index": 604,
+    "metadata": 0,
+    "text": "Il giocatore ha una distorsione a un legamento. Infortunato per alcune partite"
+  },
+  {
+    "index": 605,
+    "metadata": 0,
+    "text": "Ha un infortunio all'inguine. Infortunato per circa due settimane"
+  },
+  {
+    "index": 606,
+    "metadata": 0,
+    "text": "Contusione alla coscia. Infortunato per alcune partite."
+  },
+  {
+    "index": 607,
+    "metadata": 0,
+    "text": "Ha un infortunio all'inguine. Infortunato per circa due settimane."
+  },
+  {
+    "index": 608,
+    "metadata": 0,
+    "text": "Il giocatore ha uno stiramento muscolare. Infortunato per circa una settimana."
+  },
+  {
+    "index": 609,
+    "metadata": 0,
+    "text": "Una leggera distorsione della caviglia. Infortunato per circa due settimane."
+  },
+  {
+    "index": 610,
+    "metadata": 0,
+    "text": "Tendine stirato. Si prevede che sarà assente per molte partite."
+  },
+  {
+    "index": 611,
+    "metadata": 0,
+    "text": "Sta ricevendo delle cure per un tallone danneggiato. Fuori per alcuni giorni"
+  },
+  {
+    "index": 612,
+    "metadata": 0,
+    "text": "Inciampato. Fuori per alcuni giorni."
+  },
+  {
+    "index": 613,
+    "metadata": 0,
+    "text": "Distorsione al ginocchio. Fuori per alcuni giorni."
+  },
+  {
+    "index": 614,
+    "metadata": 0,
+    "text": "Ha un dito del piede rotto. Fuori per molte settimane."
+  },
+  {
+    "index": 615,
+    "metadata": 0,
+    "text": "Ha un polso rotto. Fuori per molte settimane."
+  },
+  {
+    "index": 616,
+    "metadata": 0,
+    "text": "Una distorsione muscolare della coscia. Infortunato per molte settimane."
+  },
+  {
+    "index": 617,
+    "metadata": 0,
+    "text": "Ferita alla gamba. Fuori per molte settimane."
+  },
+  {
+    "index": 618,
+    "metadata": 0,
+    "text": "Ha una forte distorsione alla caviglia. Infortunato per molte settimane."
+  },
+  {
+    "index": 619,
+    "metadata": 0,
+    "text": "Il giocatore ha subito un attacco di cuore. Forse è tempo di ritirarsi."
+  },
+  {
+    "index": 620,
+    "metadata": 0,
+    "text": "Ha una frattura alla tibia. Infortunato per molte settimane."
+  },
+  {
+    "index": 621,
+    "metadata": 0,
+    "text": "Legamento crociato danneggiato. Fuori per molti mesi."
+  },
+  {
+    "index": 622,
+    "metadata": 0,
+    "text": "Piede Rotto. Fuori per molti mesi."
+  },
+  {
+    "index": 623,
+    "metadata": 0,
+    "text": "Stiramento al legamento del ginocchio. Carriera finita?"
+  },
+  {
+    "index": 624,
+    "metadata": 0,
+    "text": "Benvenuto nel nostro club. In questa area potete ricevere della note e avvisi."
+  },
+  {
+    "index": 625,
+    "metadata": 0,
+    "text": "Il nostro club non può essere umiliato in questo modo! Non accettiamo cose del genere. Fate attenzione!"
+  },
+  {
+    "index": 626,
+    "metadata": 0,
+    "text": "Non potete perdere con un punteggio alto come questo. Se la cosa continuerà chiederemo alla società di esonerarvi!"
+  },
+  {
+    "index": 627,
+    "metadata": 0,
+    "text": "Non tollereremo altri sconfitte con punteggi così pesanti. Se la cosa continuerà chiederemo alla società di esonerarvi!"
+  },
+  {
+    "index": 628,
+    "metadata": 0,
+    "text": "Grazie per avermi aumentato lo stipendio. Dimostrerò sul campo la mia gratitudine!"
+  },
+  {
+    "index": 629,
+    "metadata": 0,
+    "text": "i giocatori che erano in vendita sono stati venduti per"
+  },
+  {
+    "index": 630,
+    "metadata": 0,
+    "text": "Abbiamo sentito voci circa una vostra chiamata in nazionale. Aspettatevi una chiamata ufficiale la prossima settimana."
+  },
+  {
+    "index": 631,
+    "metadata": 0,
+    "text": "Il contratto del giocatore scade fra circa 3 settimane"
+  },
+  {
+    "index": 632,
+    "metadata": 0,
+    "text": "Il contratto del giocatore è scaduto oggi"
+  },
+  {
+    "index": 633,
+    "metadata": 0,
+    "text": "Il prestito del giocatore è terminato. Ma tornerà al vostro club solo quando avrete meno di 28 giocatori."
+  },
+  {
+    "index": 634,
+    "metadata": 0,
+    "text": "Questa settimana c'è stato un grande trasferimento. Il giocatore è già nella nuova squadra."
+  },
+  {
+    "index": 635,
+    "metadata": 0,
+    "text": "Il giocatore terrà una conferenza stampa oggi, per parlare di questo grande trasferimento."
+  },
+  {
+    "index": 636,
+    "metadata": 0,
+    "text": "Ma è pazzo? Non può multarmi!"
+  },
+  {
+    "index": 637,
+    "metadata": 0,
+    "text": "Non mi è piaciuto. L'espulsione non è stata colpa mia."
+  },
+  {
+    "index": 638,
+    "metadata": 0,
+    "text": "Il nuovo tesserato non è stato accolto. Forse ci sono troppe stelle nella vostra squadra."
+  },
+  {
+    "index": 639,
+    "metadata": 0,
+    "text": "Il giocatore è scontento perchè non sta giocando mai. Vuole andare in un altro club."
+  },
+  {
+    "index": 640,
+    "metadata": 0,
+    "text": "Il mio contratto è scaduto. Per favore, rinnovatemelo o mandatemi in un altro club."
+  },
+  {
+    "index": 641,
+    "metadata": 0,
+    "text": "E' scoppiata una rissa fuori dal campo tra quei giocatori."
+  },
+  {
+    "index": 642,
+    "metadata": 0,
+    "text": "C'è stata una rissa oggi tra i tifosi e i giocatori, credo che il motivo siano i nostri brutti risultati."
+  },
+  {
+    "index": 643,
+    "metadata": 0,
+    "text": "Sono scontento per il mio sovraccarico di partite. Ho bisogno di tempo per riposarmi."
+  },
+  {
+    "index": 644,
+    "metadata": 0,
+    "text": "(vuoto)"
+  },
+  {
+    "index": 645,
+    "metadata": 0,
+    "text": "(vuoto)"
+  },
+  {
+    "index": 646,
+    "metadata": 0,
+    "text": "(vuoto)"
+  },
+  {
+    "index": 647,
+    "metadata": 0,
+    "text": "(vuoto)"
+  },
+  {
+    "index": 648,
+    "metadata": 0,
+    "text": "(vuoto)"
+  },
+  {
+    "index": 649,
+    "metadata": 0,
+    "text": "Limite del 3 sostituzioni"
+  },
+  {
+    "index": 650,
+    "metadata": 0,
+    "text": "Impegni "
+  },
+  {
+    "index": 651,
+    "metadata": 0,
+    "text": "folla"
+  },
+  {
+    "index": 652,
+    "metadata": 0,
+    "text": "entrate"
+  },
+  {
+    "index": 653,
+    "metadata": 0,
+    "text": "Confermare"
+  },
+  {
+    "index": 654,
+    "metadata": 0,
+    "text": "Volete dare le dimissioni?"
+  },
+  {
+    "index": 655,
+    "metadata": 0,
+    "text": "Gol"
+  },
+  {
+    "index": 656,
+    "metadata": 0,
+    "text": "Tabella campionato"
+  },
+  {
+    "index": 657,
+    "metadata": 0,
+    "text": "possesso di palla"
+  },
+  {
+    "index": 658,
+    "metadata": 0,
+    "text": "tiri"
+  },
+  {
+    "index": 659,
+    "metadata": 0,
+    "text": "tackle"
+  },
+  {
+    "index": 660,
+    "metadata": 0,
+    "text": "passaggi sbagliati"
+  },
+  {
+    "index": 661,
+    "metadata": 0,
+    "text": "falli commessi"
+  },
+  {
+    "index": 662,
+    "metadata": 0,
+    "text": "Offerta di Trasferimento"
+  },
+  {
+    "index": 663,
+    "metadata": 0,
+    "text": "Vuole il giocatore:"
+  },
+  {
+    "index": 664,
+    "metadata": 0,
+    "text": "Valore offerta:"
+  },
+  {
+    "index": 665,
+    "metadata": 0,
+    "text": "Accettare e trasferire il giocatore?"
+  },
+  {
+    "index": 666,
+    "metadata": 0,
+    "text": "Calssifica in base alla posizione finale"
+  },
+  {
+    "index": 667,
+    "metadata": 0,
+    "text": "Classifica in base ai punti"
+  },
+  {
+    "index": 668,
+    "metadata": 0,
+    "text": "Formato: (Pt/GF/GS)"
+  },
+  {
+    "index": 669,
+    "metadata": 0,
+    "text": "Classifica Mondiale"
+  },
+  {
+    "index": 670,
+    "metadata": 0,
+    "text": "Punti"
+  },
+  {
+    "index": 671,
+    "metadata": 0,
+    "text": "pt."
+  },
+  {
+    "index": 672,
+    "metadata": 0,
+    "text": "Morte Giocatore"
+  },
+  {
+    "index": 673,
+    "metadata": 0,
+    "text": "Il giocatore è morto oggi mentre si stava allenando. Probabilmente a causa della sua età avanzata."
+  },
+  {
+    "index": 674,
+    "metadata": 0,
+    "text": "Per questo motivo la vostra squadra ha perso 5 punti in campionato."
+  },
+  {
+    "index": 675,
+    "metadata": 0,
+    "text": "Selezionare Nazionale da allenare"
+  },
+  {
+    "index": 676,
+    "metadata": 0,
+    "text": "Alcune nazionali vorrebbero avervi come allenatore, selezionate in basso la nazionale che volete allenare:"
+  },
+  {
+    "index": 677,
+    "metadata": 0,
+    "text": "Cercare giocatori da chiamare in nazionale."
+  },
+  {
+    "index": 678,
+    "metadata": 0,
+    "text": "Cercate i giocatori e poi cliccate \">>\" per aggiungerli. Potete chiamare fino a 20 giocatori e tre portieri."
+  },
+  {
+    "index": 679,
+    "metadata": 0,
+    "text": "Vincitore"
+  },
+  {
+    "index": 680,
+    "metadata": 0,
+    "text": "Perdente"
+  },
+  {
+    "index": 681,
+    "metadata": 0,
+    "text": "miglior 3o posto"
+  },
+  {
+    "index": 682,
+    "metadata": 0,
+    "text": "Tecnica:"
+  },
+  {
+    "index": 683,
+    "metadata": 0,
+    "text": "Disciplina:"
+  },
+  {
+    "index": 684,
+    "metadata": 0,
+    "text": "Programma Amichevoli"
+  },
+  {
+    "index": 685,
+    "metadata": 0,
+    "text": "Programma Amichevoli per-stagione"
+  },
+  {
+    "index": 686,
+    "metadata": 0,
+    "text": "Il campionato inizia il"
+  },
+  {
+    "index": 687,
+    "metadata": 0,
+    "text": "Date disponibili:"
+  },
+  {
+    "index": 688,
+    "metadata": 0,
+    "text": "Selezionare avversario:"
+  },
+  {
+    "index": 689,
+    "metadata": 0,
+    "text": "Luogo Partita:"
+  },
+  {
+    "index": 690,
+    "metadata": 0,
+    "text": "Casa"
+  },
+  {
+    "index": 691,
+    "metadata": 0,
+    "text": "Trasferta"
+  },
+  {
+    "index": 692,
+    "metadata": 0,
+    "text": "Prenota Amichevole"
+  },
+  {
+    "index": 693,
+    "metadata": 0,
+    "text": "ha già un'amichevole in quella data"
+  },
+  {
+    "index": 694,
+    "metadata": 0,
+    "text": "amichevole rifiutata"
+  },
+  {
+    "index": 695,
+    "metadata": 0,
+    "text": "denaro non sufficiente per pagare i costi dell'amichevole"
+  },
+  {
+    "index": 696,
+    "metadata": 0,
+    "text": "Amichevole programmata"
+  },
+  {
+    "index": 697,
+    "metadata": 0,
+    "text": "Conferma amichevole"
+  },
+  {
+    "index": 698,
+    "metadata": 0,
+    "text": "vuole per questa amichevole:"
+  },
+  {
+    "index": 699,
+    "metadata": 0,
+    "text": "Dovete pagare adesso per questa amichevole, confermare amichevole?"
+  },
+  {
+    "index": 700,
+    "metadata": 0,
+    "text": "Per confermare l'amichevole tra questi due club umani cliccare sì."
+  },
+  {
+    "index": 701,
+    "metadata": 0,
+    "text": "Selezionare Numero"
+  },
+  {
+    "index": 702,
+    "metadata": 0,
+    "text": "Nessun numero"
+  },
+  {
+    "index": 703,
+    "metadata": 0,
+    "text": "Volete Programmare le amichevoli pre-stagione?"
+  },
+  {
+    "index": 704,
+    "metadata": 0,
+    "text": "Offerta di Prestito"
+  },
+  {
+    "index": 705,
+    "metadata": 0,
+    "text": "Volete Prestare questo giocatore?"
+  },
+  {
+    "index": 706,
+    "metadata": 0,
+    "text": "La galleria dei trofei è vuota"
+  },
+  {
+    "index": 707,
+    "metadata": 0,
+    "text": "Colori Squadra"
+  },
+  {
+    "index": 708,
+    "metadata": 0,
+    "text": "Colore Principale"
+  },
+  {
+    "index": 709,
+    "metadata": 0,
+    "text": "Colore Secondario:"
+  },
+  {
+    "index": 710,
+    "metadata": 0,
+    "text": "Riprendere partita"
+  },
+  {
+    "index": 711,
+    "metadata": 0,
+    "text": "Statistiche Partita"
+  },
+  {
+    "index": 712,
+    "metadata": 0,
+    "text": "Primo Tempo"
+  },
+  {
+    "index": 713,
+    "metadata": 0,
+    "text": "Statistiche Carriera"
+  },
+  {
+    "index": 714,
+    "metadata": 0,
+    "text": "Partite della stagione corrente"
+  },
+  {
+    "index": 715,
+    "metadata": 0,
+    "text": "Data"
+  },
+  {
+    "index": 716,
+    "metadata": 0,
+    "text": "Partita"
+  },
+  {
+    "index": 717,
+    "metadata": 0,
+    "text": "Valutazione"
+  },
+  {
+    "index": 718,
+    "metadata": 0,
+    "text": "Capacità corrente"
+  },
+  {
+    "index": 719,
+    "metadata": 0,
+    "text": "Gradinata"
+  },
+  {
+    "index": 720,
+    "metadata": 0,
+    "text": "Posti Base"
+  },
+  {
+    "index": 721,
+    "metadata": 0,
+    "text": "Posti Coperti"
+  },
+  {
+    "index": 722,
+    "metadata": 0,
+    "text": "Posti zona VIP"
+  },
+  {
+    "index": 723,
+    "metadata": 0,
+    "text": "Prezzi dei Biglietti"
+  },
+  {
+    "index": 724,
+    "metadata": 0,
+    "text": "Prezzi consigliati per questa divisione"
+  },
+  {
+    "index": 725,
+    "metadata": 0,
+    "text": "posti"
+  },
+  {
+    "index": 726,
+    "metadata": 0,
+    "text": "Amplia stadio"
+  },
+  {
+    "index": 727,
+    "metadata": 0,
+    "text": "L'ampliamento corrente finisce tra"
+  },
+  {
+    "index": 728,
+    "metadata": 0,
+    "text": "Massimo"
+  },
+  {
+    "index": 729,
+    "metadata": 0,
+    "text": "Nuovi Posti:"
+  },
+  {
+    "index": 730,
+    "metadata": 0,
+    "text": "Richiedere una stima del prezzo"
+  },
+  {
+    "index": 731,
+    "metadata": 0,
+    "text": "Iniziare ampliamento"
+  },
+  {
+    "index": 732,
+    "metadata": 0,
+    "text": "Costi stimati di espansione, inclusa esecuzione del progetto"
+  },
+  {
+    "index": 733,
+    "metadata": 0,
+    "text": "Completamento del progetto previsto tra"
+  },
+  {
+    "index": 734,
+    "metadata": 0,
+    "text": "Attualmente non ci sono i mezzi per ampliare lo stadio con i posti desiderati"
+  },
+  {
+    "index": 735,
+    "metadata": 0,
+    "text": "Denaro insufficiente per iniziare l'ampliamento"
+  },
+  {
+    "index": 736,
+    "metadata": 0,
+    "text": "Editor Squadre"
+  },
+  {
+    "index": 737,
+    "metadata": 0,
+    "text": "Caricamento squadre..."
+  },
+  {
+    "index": 738,
+    "metadata": 0,
+    "text": "Squadre totali:"
+  },
+  {
+    "index": 739,
+    "metadata": 0,
+    "text": "Squadre"
+  },
+  {
+    "index": 740,
+    "metadata": 0,
+    "text": "Squadre Nazionali"
+  },
+  {
+    "index": 741,
+    "metadata": 0,
+    "text": "Aggiungere Squadra"
+  },
+  {
+    "index": 742,
+    "metadata": 0,
+    "text": "Modificare Squadra"
+  },
+  {
+    "index": 743,
+    "metadata": 0,
+    "text": "Eliminare Squadra"
+  },
+  {
+    "index": 744,
+    "metadata": 0,
+    "text": "Paese"
+  },
+  {
+    "index": 745,
+    "metadata": 0,
+    "text": "Livello"
+  },
+  {
+    "index": 746,
+    "metadata": 0,
+    "text": "Menù Principale"
+  },
+  {
+    "index": 747,
+    "metadata": 0,
+    "text": "Abbandonare Gioco"
+  },
+  {
+    "index": 748,
+    "metadata": 0,
+    "text": "Età"
+  },
+  {
+    "index": 749,
+    "metadata": 0,
+    "text": "Allenatore"
+  },
+  {
+    "index": 750,
+    "metadata": 0,
+    "text": "Stadio"
+  },
+  {
+    "index": 751,
+    "metadata": 0,
+    "text": "giocatori"
+  },
+  {
+    "index": 752,
+    "metadata": 0,
+    "text": "Aggiungere giocatore"
+  },
+  {
+    "index": 753,
+    "metadata": 0,
+    "text": "Modificare giocatore"
+  },
+  {
+    "index": 754,
+    "metadata": 0,
+    "text": "Eliminare giocatore"
+  },
+  {
+    "index": 755,
+    "metadata": 0,
+    "text": "Avete un limite di 25 giocatori"
+  },
+  {
+    "index": 756,
+    "metadata": 0,
+    "text": "Volete eliminare la squadra selezionata?"
+  },
+  {
+    "index": 757,
+    "metadata": 0,
+    "text": "Nome Completo"
+  },
+  {
+    "index": 758,
+    "metadata": 0,
+    "text": "Nome in Breve"
+  },
+  {
+    "index": 759,
+    "metadata": 0,
+    "text": "Colore Principale"
+  },
+  {
+    "index": 760,
+    "metadata": 0,
+    "text": "Colore Secondario"
+  },
+  {
+    "index": 761,
+    "metadata": 0,
+    "text": "Giocatore Stella"
+  },
+  {
+    "index": 762,
+    "metadata": 0,
+    "text": "Caratteristiche"
+  },
+  {
+    "index": 763,
+    "metadata": 0,
+    "text": "Posizione"
+  },
+  {
+    "index": 764,
+    "metadata": 0,
+    "text": "Cliccare per selezionare logo"
+  },
+  {
+    "index": 765,
+    "metadata": 0,
+    "text": "Nome File"
+  },
+  {
+    "index": 766,
+    "metadata": 0,
+    "text": "Il file esiste già, sceglierne un altro"
+  },
+  {
+    "index": 767,
+    "metadata": 0,
+    "text": "La vostra registrazione supporterà il lavoro su versioni future, nuove funzioni e correzioni di bug, e vi permetterà di usufruire di supporto tecnico via email."
+  },
+  {
+    "index": 768,
+    "metadata": 0,
+    "text": "Nella versione registrata potete:"
+  },
+  {
+    "index": 769,
+    "metadata": 0,
+    "text": "Accedere all'Area Membri per scaricare nuovi campionati, loghi, ecc;"
+  },
+  {
+    "index": 770,
+    "metadata": 0,
+    "text": "Iniziare partita con una squadra di una qualsiasi divisione"
+  },
+  {
+    "index": 771,
+    "metadata": 0,
+    "text": "Giocare con più di una squadra umana"
+  },
+  {
+    "index": 772,
+    "metadata": 0,
+    "text": "Giocare Competizioni con Squadre Nazionali (Coppa del Mondo, Campionato Europeo, Coppa America)"
+  },
+  {
+    "index": 773,
+    "metadata": 0,
+    "text": "Fare offerte per qualsiasi giocatore, anche se non è nella lista trasferimenti, e prestare giocatori."
+  },
+  {
+    "index": 774,
+    "metadata": 0,
+    "text": "Giocare le partite con opzioni di velocità maggiore"
+  },
+  {
+    "index": 775,
+    "metadata": 0,
+    "text": "Per registrare il gioco andate sul sito:"
+  },
+  {
+    "index": 776,
+    "metadata": 0,
+    "text": "Il costo è solamente di €12 EUR. Potete pagare con Carta di Credito (Visa, Master Card, American Express, Discover), assegno, assegno, ordine di pagamento, PayPal, Western Union, MoneyGram o Vaglia Postale Internazionale."
+  },
+  {
+    "index": 777,
+    "metadata": 0,
+    "text": "Non appena ricevuta la notifica che il vostro ordine è stato preso in carico (di solito in un giorno lavorativo), vi forniremo il numero di registrazione, e digitatelo in basso:"
+  },
+  {
+    "index": 778,
+    "metadata": 0,
+    "text": "Nome"
+  },
+  {
+    "index": 779,
+    "metadata": 0,
+    "text": "Codice"
+  },
+  {
+    "index": 780,
+    "metadata": 0,
+    "text": "Inserire Codice"
+  },
+  {
+    "index": 781,
+    "metadata": 0,
+    "text": "Cyberfoot è gioco gratuito manageriale di calcio."
+  },
+  {
+    "index": 782,
+    "metadata": 0,
+    "text": "Scaricatelo su www.cyberfoot.org"
+  },
+  {
+    "index": 783,
+    "metadata": 0,
+    "text": "Solo nella versione registrata potete fare offerte per giocatori che non sono nella lista trasferimenti. Registrate il gioco su www.cyberfoot.org"
+  },
+  {
+    "index": 784,
+    "metadata": 0,
+    "text": "Solo nella versione registrata potete avere giocatori disponibili al prestito. Registrate il gioco su www.cyberfoot.org"
+  },
+  {
+    "index": 785,
+    "metadata": 0,
+    "text": "Lista Paesi"
+  },
+  {
+    "index": 786,
+    "metadata": 0,
+    "text": "Afghanistan"
+  },
+  {
+    "index": 787,
+    "metadata": 0,
+    "text": "Sud Africa"
+  },
+  {
+    "index": 788,
+    "metadata": 0,
+    "text": "Albania"
+  },
+  {
+    "index": 789,
+    "metadata": 0,
+    "text": "Germania"
+  },
+  {
+    "index": 790,
+    "metadata": 0,
+    "text": "Andorra"
+  },
+  {
+    "index": 791,
+    "metadata": 0,
+    "text": "Angola"
+  },
+  {
+    "index": 792,
+    "metadata": 0,
+    "text": "Anguilla"
+  },
+  {
+    "index": 793,
+    "metadata": 0,
+    "text": "Antigua"
+  },
+  {
+    "index": 794,
+    "metadata": 0,
+    "text": "Antille olandesi"
+  },
+  {
+    "index": 795,
+    "metadata": 0,
+    "text": "Arabia Saudita"
+  },
+  {
+    "index": 796,
+    "metadata": 0,
+    "text": "Algeria"
+  },
+  {
+    "index": 797,
+    "metadata": 0,
+    "text": "Argentina"
+  },
+  {
+    "index": 798,
+    "metadata": 0,
+    "text": "Armenia"
+  },
+  {
+    "index": 799,
+    "metadata": 0,
+    "text": "Aruba"
+  },
+  {
+    "index": 800,
+    "metadata": 0,
+    "text": "Australia"
+  },
+  {
+    "index": 801,
+    "metadata": 0,
+    "text": "Austria"
+  },
+  {
+    "index": 802,
+    "metadata": 0,
+    "text": "Azerbaijan"
+  },
+  {
+    "index": 803,
+    "metadata": 0,
+    "text": "Bahamas"
+  },
+  {
+    "index": 804,
+    "metadata": 0,
+    "text": "Bahrain"
+  },
+  {
+    "index": 805,
+    "metadata": 0,
+    "text": "Bangladesch"
+  },
+  {
+    "index": 806,
+    "metadata": 0,
+    "text": "Barbados"
+  },
+  {
+    "index": 807,
+    "metadata": 0,
+    "text": "Belgio"
+  },
+  {
+    "index": 808,
+    "metadata": 0,
+    "text": "Belize"
+  },
+  {
+    "index": 809,
+    "metadata": 0,
+    "text": "Benin"
+  },
+  {
+    "index": 810,
+    "metadata": 0,
+    "text": "Bermuda"
+  },
+  {
+    "index": 811,
+    "metadata": 0,
+    "text": "Bielorussia"
+  },
+  {
+    "index": 812,
+    "metadata": 0,
+    "text": "Bolivia"
+  },
+  {
+    "index": 813,
+    "metadata": 0,
+    "text": "Bosnia"
+  },
+  {
+    "index": 814,
+    "metadata": 0,
+    "text": "Botswana"
+  },
+  {
+    "index": 815,
+    "metadata": 0,
+    "text": "Brasile"
+  },
+  {
+    "index": 816,
+    "metadata": 0,
+    "text": "Brunei"
+  },
+  {
+    "index": 817,
+    "metadata": 0,
+    "text": "Bulgaria"
+  },
+  {
+    "index": 818,
+    "metadata": 0,
+    "text": "Burkina Faso"
+  },
+  {
+    "index": 819,
+    "metadata": 0,
+    "text": "Burundi"
+  },
+  {
+    "index": 820,
+    "metadata": 0,
+    "text": "Bhutan"
+  },
+  {
+    "index": 821,
+    "metadata": 0,
+    "text": "Capo Verde"
+  },
+  {
+    "index": 822,
+    "metadata": 0,
+    "text": "Cameroon"
+  },
+  {
+    "index": 823,
+    "metadata": 0,
+    "text": "Cambogia"
+  },
+  {
+    "index": 824,
+    "metadata": 0,
+    "text": "Canada"
+  },
+  {
+    "index": 825,
+    "metadata": 0,
+    "text": "Qatar"
+  },
+  {
+    "index": 826,
+    "metadata": 0,
+    "text": "Kazakhstan"
+  },
+  {
+    "index": 827,
+    "metadata": 0,
+    "text": "Chad"
+  },
+  {
+    "index": 828,
+    "metadata": 0,
+    "text": "Chile"
+  },
+  {
+    "index": 829,
+    "metadata": 0,
+    "text": "Cina"
+  },
+  {
+    "index": 830,
+    "metadata": 0,
+    "text": "Cipro"
+  },
+  {
+    "index": 831,
+    "metadata": 0,
+    "text": "Singapore"
+  },
+  {
+    "index": 832,
+    "metadata": 0,
+    "text": "Colombia"
+  },
+  {
+    "index": 833,
+    "metadata": 0,
+    "text": "Congo"
+  },
+  {
+    "index": 834,
+    "metadata": 0,
+    "text": "Corea del Nord"
+  },
+  {
+    "index": 835,
+    "metadata": 0,
+    "text": "Corea del Sud"
+  },
+  {
+    "index": 836,
+    "metadata": 0,
+    "text": "Costa d`Avorio"
+  },
+  {
+    "index": 837,
+    "metadata": 0,
+    "text": "Costa Rica"
+  },
+  {
+    "index": 838,
+    "metadata": 0,
+    "text": "Croazia"
+  },
+  {
+    "index": 839,
+    "metadata": 0,
+    "text": "Cuba"
+  },
+  {
+    "index": 840,
+    "metadata": 0,
+    "text": "Danimarka"
+  },
+  {
+    "index": 841,
+    "metadata": 0,
+    "text": "Djibouti"
+  },
+  {
+    "index": 842,
+    "metadata": 0,
+    "text": "Dominica"
+  },
+  {
+    "index": 843,
+    "metadata": 0,
+    "text": "Egitto"
+  },
+  {
+    "index": 844,
+    "metadata": 0,
+    "text": "El Salvador"
+  },
+  {
+    "index": 845,
+    "metadata": 0,
+    "text": "Emirati Arabi"
+  },
+  {
+    "index": 846,
+    "metadata": 0,
+    "text": "Equador"
+  },
+  {
+    "index": 847,
+    "metadata": 0,
+    "text": "Eritrea"
+  },
+  {
+    "index": 848,
+    "metadata": 0,
+    "text": "Scozia"
+  },
+  {
+    "index": 849,
+    "metadata": 0,
+    "text": "Slovacchia"
+  },
+  {
+    "index": 850,
+    "metadata": 0,
+    "text": "Slovenia"
+  },
+  {
+    "index": 851,
+    "metadata": 0,
+    "text": "Spagna"
+  },
+  {
+    "index": 852,
+    "metadata": 0,
+    "text": "Estonia"
+  },
+  {
+    "index": 853,
+    "metadata": 0,
+    "text": "Etiopia"
+  },
+  {
+    "index": 854,
+    "metadata": 0,
+    "text": "USA"
+  },
+  {
+    "index": 855,
+    "metadata": 0,
+    "text": "Fiji"
+  },
+  {
+    "index": 856,
+    "metadata": 0,
+    "text": "Finlandia"
+  },
+  {
+    "index": 857,
+    "metadata": 0,
+    "text": "Filippine"
+  },
+  {
+    "index": 858,
+    "metadata": 0,
+    "text": "Francia"
+  },
+  {
+    "index": 859,
+    "metadata": 0,
+    "text": "Gabon"
+  },
+  {
+    "index": 860,
+    "metadata": 0,
+    "text": "Gambia"
+  },
+  {
+    "index": 861,
+    "metadata": 0,
+    "text": "Ghana"
+  },
+  {
+    "index": 862,
+    "metadata": 0,
+    "text": "Georgia"
+  },
+  {
+    "index": 863,
+    "metadata": 0,
+    "text": "Grenada"
+  },
+  {
+    "index": 864,
+    "metadata": 0,
+    "text": "Grecia"
+  },
+  {
+    "index": 865,
+    "metadata": 0,
+    "text": "Guatemala"
+  },
+  {
+    "index": 866,
+    "metadata": 0,
+    "text": "Guyana"
+  },
+  {
+    "index": 867,
+    "metadata": 0,
+    "text": "Guinea"
+  },
+  {
+    "index": 868,
+    "metadata": 0,
+    "text": "Guinea-Bissau"
+  },
+  {
+    "index": 869,
+    "metadata": 0,
+    "text": "Guinea-Equatoriale"
+  },
+  {
+    "index": 870,
+    "metadata": 0,
+    "text": "Haiti"
+  },
+  {
+    "index": 871,
+    "metadata": 0,
+    "text": "Olanda"
+  },
+  {
+    "index": 872,
+    "metadata": 0,
+    "text": "Honduras"
+  },
+  {
+    "index": 873,
+    "metadata": 0,
+    "text": "Hong Kong"
+  },
+  {
+    "index": 874,
+    "metadata": 0,
+    "text": "Ungheria"
+  },
+  {
+    "index": 875,
+    "metadata": 0,
+    "text": "Yemen"
+  },
+  {
+    "index": 876,
+    "metadata": 0,
+    "text": "Isole Cayman"
+  },
+  {
+    "index": 877,
+    "metadata": 0,
+    "text": "Isole Cook"
+  },
+  {
+    "index": 878,
+    "metadata": 0,
+    "text": "Isole Faroe"
+  },
+  {
+    "index": 879,
+    "metadata": 0,
+    "text": "Isole Solomone"
+  },
+  {
+    "index": 880,
+    "metadata": 0,
+    "text": "Isole Vergini"
+  },
+  {
+    "index": 881,
+    "metadata": 0,
+    "text": "India"
+  },
+  {
+    "index": 882,
+    "metadata": 0,
+    "text": "Indonesia"
+  },
+  {
+    "index": 883,
+    "metadata": 0,
+    "text": "Inghilterra"
+  },
+  {
+    "index": 884,
+    "metadata": 0,
+    "text": "Iran"
+  },
+  {
+    "index": 885,
+    "metadata": 0,
+    "text": "Iraq"
+  },
+  {
+    "index": 886,
+    "metadata": 0,
+    "text": "Irlanda"
+  },
+  {
+    "index": 887,
+    "metadata": 0,
+    "text": "Irlanda del Nord"
+  },
+  {
+    "index": 888,
+    "metadata": 0,
+    "text": "Islanda"
+  },
+  {
+    "index": 889,
+    "metadata": 0,
+    "text": "Israele"
+  },
+  {
+    "index": 890,
+    "metadata": 0,
+    "text": "Italia"
+  },
+  {
+    "index": 891,
+    "metadata": 0,
+    "text": "Montenegro"
+  },
+  {
+    "index": 892,
+    "metadata": 0,
+    "text": "Jamaica"
+  },
+  {
+    "index": 893,
+    "metadata": 0,
+    "text": "Giappone"
+  },
+  {
+    "index": 894,
+    "metadata": 0,
+    "text": "Giordania"
+  },
+  {
+    "index": 895,
+    "metadata": 0,
+    "text": "Kenya"
+  },
+  {
+    "index": 896,
+    "metadata": 0,
+    "text": "Cossovo"
+  },
+  {
+    "index": 897,
+    "metadata": 0,
+    "text": "Kwait"
+  },
+  {
+    "index": 898,
+    "metadata": 0,
+    "text": "Laos"
+  },
+  {
+    "index": 899,
+    "metadata": 0,
+    "text": "Lesotho"
+  },
+  {
+    "index": 900,
+    "metadata": 0,
+    "text": "Latvia"
+  },
+  {
+    "index": 901,
+    "metadata": 0,
+    "text": "Lebanon"
+  },
+  {
+    "index": 902,
+    "metadata": 0,
+    "text": "Libia"
+  },
+  {
+    "index": 903,
+    "metadata": 0,
+    "text": "Liberia"
+  },
+  {
+    "index": 904,
+    "metadata": 0,
+    "text": "Liechenstein"
+  },
+  {
+    "index": 905,
+    "metadata": 0,
+    "text": "Lituania"
+  },
+  {
+    "index": 906,
+    "metadata": 0,
+    "text": "Lussemburgo"
+  },
+  {
+    "index": 907,
+    "metadata": 0,
+    "text": "Macau"
+  },
+  {
+    "index": 908,
+    "metadata": 0,
+    "text": "Macedonia"
+  },
+  {
+    "index": 909,
+    "metadata": 0,
+    "text": "Madagascar"
+  },
+  {
+    "index": 910,
+    "metadata": 0,
+    "text": "Malesia"
+  },
+  {
+    "index": 911,
+    "metadata": 0,
+    "text": "Malawi"
+  },
+  {
+    "index": 912,
+    "metadata": 0,
+    "text": "Maldive"
+  },
+  {
+    "index": 913,
+    "metadata": 0,
+    "text": "Mali"
+  },
+  {
+    "index": 914,
+    "metadata": 0,
+    "text": "Malta"
+  },
+  {
+    "index": 915,
+    "metadata": 0,
+    "text": "Morocco"
+  },
+  {
+    "index": 916,
+    "metadata": 0,
+    "text": "Mauritania"
+  },
+  {
+    "index": 917,
+    "metadata": 0,
+    "text": "Messico"
+  },
+  {
+    "index": 918,
+    "metadata": 0,
+    "text": "Mianmar"
+  },
+  {
+    "index": 919,
+    "metadata": 0,
+    "text": "Mozambico"
+  },
+  {
+    "index": 920,
+    "metadata": 0,
+    "text": "Moldavia"
+  },
+  {
+    "index": 921,
+    "metadata": 0,
+    "text": "Monaco"
+  },
+  {
+    "index": 922,
+    "metadata": 0,
+    "text": "Mongolia"
+  },
+  {
+    "index": 923,
+    "metadata": 0,
+    "text": "Namibia"
+  },
+  {
+    "index": 924,
+    "metadata": 0,
+    "text": "Nepal"
+  },
+  {
+    "index": 925,
+    "metadata": 0,
+    "text": "Nicaragua"
+  },
+  {
+    "index": 926,
+    "metadata": 0,
+    "text": "Niger"
+  },
+  {
+    "index": 927,
+    "metadata": 0,
+    "text": "Nigeria"
+  },
+  {
+    "index": 928,
+    "metadata": 0,
+    "text": "Norvegia"
+  },
+  {
+    "index": 929,
+    "metadata": 0,
+    "text": "Nuova Zelanda"
+  },
+  {
+    "index": 930,
+    "metadata": 0,
+    "text": "Oman"
+  },
+  {
+    "index": 931,
+    "metadata": 0,
+    "text": "Galles"
+  },
+  {
+    "index": 932,
+    "metadata": 0,
+    "text": "Palestia"
+  },
+  {
+    "index": 933,
+    "metadata": 0,
+    "text": "Panama"
+  },
+  {
+    "index": 934,
+    "metadata": 0,
+    "text": "Papua Nuova Guinea"
+  },
+  {
+    "index": 935,
+    "metadata": 0,
+    "text": "Pakistan"
+  },
+  {
+    "index": 936,
+    "metadata": 0,
+    "text": "Paraguay"
+  },
+  {
+    "index": 937,
+    "metadata": 0,
+    "text": "Perù"
+  },
+  {
+    "index": 938,
+    "metadata": 0,
+    "text": "Polonia"
+  },
+  {
+    "index": 939,
+    "metadata": 0,
+    "text": "Porto Rico"
+  },
+  {
+    "index": 940,
+    "metadata": 0,
+    "text": "Portogallo"
+  },
+  {
+    "index": 941,
+    "metadata": 0,
+    "text": "Kyrgyzstan"
+  },
+  {
+    "index": 942,
+    "metadata": 0,
+    "text": "Repubblica dell'Africa Centrale"
+  },
+  {
+    "index": 943,
+    "metadata": 0,
+    "text": "Repubblica Democratica del Congo"
+  },
+  {
+    "index": 944,
+    "metadata": 0,
+    "text": "Repubblica Dominicana"
+  },
+  {
+    "index": 945,
+    "metadata": 0,
+    "text": "Repubblica Ceca"
+  },
+  {
+    "index": 946,
+    "metadata": 0,
+    "text": "Romania"
+  },
+  {
+    "index": 947,
+    "metadata": 0,
+    "text": "Ruanda"
+  },
+  {
+    "index": 948,
+    "metadata": 0,
+    "text": "Russia"
+  },
+  {
+    "index": 949,
+    "metadata": 0,
+    "text": "Samoa"
+  },
+  {
+    "index": 950,
+    "metadata": 0,
+    "text": "San Marino"
+  },
+  {
+    "index": 951,
+    "metadata": 0,
+    "text": "St. Lucia"
+  },
+  {
+    "index": 952,
+    "metadata": 0,
+    "text": "St. Kitts e Nevis"
+  },
+  {
+    "index": 953,
+    "metadata": 0,
+    "text": "Sao Tomè e Prìncipe"
+  },
+  {
+    "index": 954,
+    "metadata": 0,
+    "text": "St. Vincent e The Grenadines"
+  },
+  {
+    "index": 955,
+    "metadata": 0,
+    "text": "Senegal"
+  },
+  {
+    "index": 956,
+    "metadata": 0,
+    "text": "Sierra Leone"
+  },
+  {
+    "index": 957,
+    "metadata": 0,
+    "text": "Serbia"
+  },
+  {
+    "index": 958,
+    "metadata": 0,
+    "text": "Seychelles"
+  },
+  {
+    "index": 959,
+    "metadata": 0,
+    "text": "Singapore"
+  },
+  {
+    "index": 960,
+    "metadata": 0,
+    "text": "Siria"
+  },
+  {
+    "index": 961,
+    "metadata": 0,
+    "text": "Somalia"
+  },
+  {
+    "index": 962,
+    "metadata": 0,
+    "text": "Sri Lanka"
+  },
+  {
+    "index": 963,
+    "metadata": 0,
+    "text": "Swaziland"
+  },
+  {
+    "index": 964,
+    "metadata": 0,
+    "text": "Sudan"
+  },
+  {
+    "index": 965,
+    "metadata": 0,
+    "text": "Svezia"
+  },
+  {
+    "index": 966,
+    "metadata": 0,
+    "text": "Svizzera"
+  },
+  {
+    "index": 967,
+    "metadata": 0,
+    "text": "Suriname"
+  },
+  {
+    "index": 968,
+    "metadata": 0,
+    "text": "Tadjquistan"
+  },
+  {
+    "index": 969,
+    "metadata": 0,
+    "text": "Tainlandia"
+  },
+  {
+    "index": 970,
+    "metadata": 0,
+    "text": "Taiti"
+  },
+  {
+    "index": 971,
+    "metadata": 0,
+    "text": "Taiwan"
+  },
+  {
+    "index": 972,
+    "metadata": 0,
+    "text": "Tanzania"
+  },
+  {
+    "index": 973,
+    "metadata": 0,
+    "text": "Togo"
+  },
+  {
+    "index": 974,
+    "metadata": 0,
+    "text": "Tonga"
+  },
+  {
+    "index": 975,
+    "metadata": 0,
+    "text": "Trinidad e Tobago"
+  },
+  {
+    "index": 976,
+    "metadata": 0,
+    "text": "Tunisia"
+  },
+  {
+    "index": 977,
+    "metadata": 0,
+    "text": "Turkmenistan"
+  },
+  {
+    "index": 978,
+    "metadata": 0,
+    "text": "Turchia"
+  },
+  {
+    "index": 979,
+    "metadata": 0,
+    "text": "Ucraina"
+  },
+  {
+    "index": 980,
+    "metadata": 0,
+    "text": "Uganda"
+  },
+  {
+    "index": 981,
+    "metadata": 0,
+    "text": "Uruguay"
+  },
+  {
+    "index": 982,
+    "metadata": 0,
+    "text": "Uzbekistan"
+  },
+  {
+    "index": 983,
+    "metadata": 0,
+    "text": "Vanuatu"
+  },
+  {
+    "index": 984,
+    "metadata": 0,
+    "text": "Venezuela"
+  },
+  {
+    "index": 985,
+    "metadata": 0,
+    "text": "Vietnam"
+  },
+  {
+    "index": 986,
+    "metadata": 0,
+    "text": "Zambia"
+  },
+  {
+    "index": 987,
+    "metadata": 0,
+    "text": "Zimbabwe"
+  },
+  {
+    "index": 988,
+    "metadata": 0,
+    "text": "Selezionare almeno un campionato di 42 squadre"
+  },
+  {
+    "index": 989,
+    "metadata": 0,
+    "text": "Calendario Sudmericana"
+  },
+  {
+    "index": 990,
+    "metadata": 0,
+    "text": "Pallone d'oro"
+  },
+  {
+    "index": 991,
+    "metadata": 0,
+    "text": "Squadra della settimana"
+  },
+  {
+    "index": 992,
+    "metadata": 0,
+    "text": "Squadra dell'Anno"
+  },
+  {
+    "index": 993,
+    "metadata": 0,
+    "text": "Scuola Giovanile"
+  },
+  {
+    "index": 994,
+    "metadata": 0,
+    "text": "Coppa Camp. d'Africa"
+  },
+  {
+    "index": 995,
+    "metadata": 0,
+    "text": "Coppa Camp. d'Asia"
+  },
+  {
+    "index": 996,
+    "metadata": 0,
+    "text": "UEFA Super Cup"
+  },
+  {
+    "index": 997,
+    "metadata": 0,
+    "text": "Recopa Sudamericana"
+  },
+  {
+    "index": 998,
+    "metadata": 0,
+    "text": "Schieramentos salvati"
+  },
+  {
+    "index": 999,
+    "metadata": 0,
+    "text": "Salva schieramento"
+  },
+  {
+    "index": 1000,
+    "metadata": 0,
+    "text": "Selezionare un nome:"
+  },
+  {
+    "index": 1001,
+    "metadata": 0,
+    "text": "Salva"
+  },
+  {
+    "index": 1002,
+    "metadata": 0,
+    "text": "Selezionare almeno 11 giocatori"
+  },
+  {
+    "index": 1003,
+    "metadata": 0,
+    "text": "<< Indietro"
+  },
+  {
+    "index": 1004,
+    "metadata": 0,
+    "text": "Carica"
+  },
+  {
+    "index": 1005,
+    "metadata": 0,
+    "text": "Elimina"
+  },
+  {
+    "index": 1006,
+    "metadata": 0,
+    "text": "Camicia"
+  },
+  {
+    "index": 1007,
+    "metadata": 0,
+    "text": "promosso dalla squadra giovanile in"
+  },
+  {
+    "index": 1008,
+    "metadata": 0,
+    "text": "Città"
+  },
+  {
+    "index": 1009,
+    "metadata": 0,
+    "text": "Provinciale"
+  },
+  {
+    "index": 1010,
+    "metadata": 0,
+    "text": "Regionale"
+  },
+  {
+    "index": 1011,
+    "metadata": 0,
+    "text": "Nazionale"
+  },
+  {
+    "index": 1012,
+    "metadata": 0,
+    "text": "Continentale"
+  },
+  {
+    "index": 1013,
+    "metadata": 0,
+    "text": "Mondiale"
+  },
+  {
+    "index": 1014,
+    "metadata": 0,
+    "text": "Reputazione"
+  },
+  {
+    "index": 1015,
+    "metadata": 0,
+    "text": "3 anni"
+  },
+  {
+    "index": 1016,
+    "metadata": 0,
+    "text": "Guardare le partite"
+  },
+  {
+    "index": 1017,
+    "metadata": 0,
+    "text": "Solo i risultati"
+  },
+  {
+    "index": 1018,
+    "metadata": 0,
+    "text": "CAMP."
+  },
+  {
+    "index": 1019,
+    "metadata": 0,
+    "text": "CHAMPIONS L."
+  },
+  {
+    "index": 1020,
+    "metadata": 0,
+    "text": "LIBERTADORES"
+  },
+  {
+    "index": 1021,
+    "metadata": 0,
+    "text": "UEFA LEAGUE"
+  },
+  {
+    "index": 1022,
+    "metadata": 0,
+    "text": "COPPA D'AFRICA"
+  },
+  {
+    "index": 1023,
+    "metadata": 0,
+    "text": "COPPA D'ASIA"
+  },
+  {
+    "index": 1024,
+    "metadata": 0,
+    "text": "Motivo"
+  },
+  {
+    "index": 1025,
+    "metadata": 0,
+    "text": "cattivi risultati"
+  },
+  {
+    "index": 1026,
+    "metadata": 0,
+    "text": "crisi finanziaria"
+  },
+  {
+    "index": 1027,
+    "metadata": 0,
+    "text": "fans infelici"
+  },
+  {
+    "index": 1028,
+    "metadata": 0,
+    "text": "Accettare"
+  },
+  {
+    "index": 1029,
+    "metadata": 0,
+    "text": "Declinare"
+  },
+  {
+    "index": 1030,
+    "metadata": 0,
+    "text": "use"
+  },
+  {
+    "index": 1031,
+    "metadata": 0,
+    "text": "giovanile"
+  },
+  {
+    "index": 1032,
+    "metadata": 0,
+    "text": "principale "
+  },
+  {
+    "index": 1033,
+    "metadata": 0,
+    "text": "Ricerca squadra"
+  },
+  {
+    "index": 1034,
+    "metadata": 0,
+    "text": "Ricerca giocatore"
+  },
+  {
+    "index": 1035,
+    "metadata": 0,
+    "text": "Ricerca"
+  },
+  {
+    "index": 1036,
+    "metadata": 0,
+    "text": "Svilupperanno"
+  },
+  {
+    "index": 1037,
+    "metadata": 0,
+    "text": "Talento"
+  },
+  {
+    "index": 1038,
+    "metadata": 0,
+    "text": "Promuovere"
+  },
+  {
+    "index": 1039,
+    "metadata": 0,
+    "text": "Mandalo via"
+  },
+  {
+    "index": 1040,
+    "metadata": 0,
+    "text": "Massimo di 30 giocatori"
+  },
+  {
+    "index": 1041,
+    "metadata": 0,
+    "text": "Confermare la promozione di"
+  },
+  {
+    "index": 1042,
+    "metadata": 0,
+    "text": "massimo18 giovani"
+  },
+  {
+    "index": 1043,
+    "metadata": 0,
+    "text": "Inviare"
+  },
+  {
+    "index": 1044,
+    "metadata": 0,
+    "text": "Cancellare"
+  },
+  {
+    "index": 1045,
+    "metadata": 0,
+    "text": "trasferimento confermata"
+  },
+  {
+    "index": 1046,
+    "metadata": 0,
+    "text": "Confermare il trasferimento"
+  },
+  {
+    "index": 1047,
+    "metadata": 0,
+    "text": "Mandalo via?"
+  },
+  {
+    "index": 1048,
+    "metadata": 0,
+    "text": "Personaliza competizioni internazionali"
+  },
+  {
+    "index": 1049,
+    "metadata": 0,
+    "text": "Gioca nella prima stagione"
+  },
+  {
+    "index": 1050,
+    "metadata": 0,
+    "text": "Usare i gruppi reali nella prima stagione"
+  },
+  {
+    "index": 1051,
+    "metadata": 0,
+    "text": "Senza l'uomo vedere le partite:"
+  },
+  {
+    "index": 1052,
+    "metadata": 0,
+    "text": "Valore totale:"
+  },
+  {
+    "index": 1053,
+    "metadata": 0,
+    "text": "Nazionalità"
+  },
+  {
+    "index": 1054,
+    "metadata": 0,
+    "text": "Media"
+  },
+  {
+    "index": 1055,
+    "metadata": 0,
+    "text": "Centrocampisti Difensivi"
+  },
+  {
+    "index": 1056,
+    "metadata": 0,
+    "text": "Centrocampisti Offensivi"
+  },
+  {
+    "index": 1057,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1058,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1059,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1060,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1061,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1062,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1063,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1064,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1065,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1066,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1067,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1068,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1069,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1070,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1071,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1072,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1073,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1074,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1075,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1076,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1077,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1078,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1079,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1080,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1081,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1082,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1083,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1084,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1085,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1086,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1087,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1088,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1089,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1090,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1091,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1092,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1093,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1094,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1095,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1096,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1097,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1098,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1099,
+    "metadata": 0,
+    "text": ""
+  }
+]

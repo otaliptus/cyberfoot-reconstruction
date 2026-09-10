@@ -1,0 +1,2 @@
+import {readFileSync} from 'node:fs';import assert from 'node:assert/strict';import {verifyHumanCommit} from './human-commit-proof.mjs';
+const result=verifyHumanCommit(JSON.parse(readFileSync(new URL('./human-commit-vectors.json',import.meta.url))));if(result.failures.length)console.log(JSON.stringify(result.failures.slice(0,2),null,2));assert.deepEqual(result.failures,[]);console.log(`Original human lineup commit:${result.cases} passed.`);

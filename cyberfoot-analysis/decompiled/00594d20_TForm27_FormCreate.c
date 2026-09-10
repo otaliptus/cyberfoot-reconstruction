@@ -1,0 +1,305 @@
+// Address: 00594d20
+// Machine-generated pseudocode; Delphi types and calling conventions may be inaccurate.
+
+void TForm27_FormCreate(int param_1)
+
+{
+  char *pcVar1;
+  wchar_t *pwVar2;
+  undefined4 unaff_EBX;
+  undefined4 unaff_ESI;
+  undefined4 *puVar3;
+  undefined4 unaff_EDI;
+  int iVar4;
+  int iVar5;
+  undefined4 *in_FS_OFFSET;
+  undefined4 local_90;
+  undefined4 local_8c;
+  undefined4 local_88;
+  undefined4 local_84;
+  undefined4 local_80;
+  undefined4 local_7c;
+  undefined4 local_78;
+  undefined4 local_74;
+  undefined4 local_70;
+  undefined4 local_6c;
+  undefined4 local_68;
+  undefined4 local_64;
+  undefined4 local_60;
+  undefined4 local_5c;
+  undefined4 local_58;
+  undefined4 local_54;
+  undefined4 local_50;
+  undefined4 local_4c;
+  undefined4 local_48;
+  undefined4 local_44;
+  undefined *local_40;
+  undefined4 local_3c;
+  char *local_38;
+  wchar_t *local_34;
+  int local_30;
+  wchar_t *local_2c;
+  undefined4 local_28;
+  undefined1 *local_24;
+  undefined1 *local_20;
+  int local_10;
+  undefined4 local_c;
+  int local_8;
+  
+  local_20 = &stack0xfffffffc;
+  local_10 = 0x11;
+  do {
+    local_8 = 0;
+    local_10 = local_10 + -1;
+  } while (local_10 != 0);
+  local_24 = &LAB_00595361;
+  local_28 = *in_FS_OFFSET;
+  *in_FS_OFFSET = &local_28;
+  local_2c = L"<shad>";
+  local_30 = 0x594d55;
+  FUN_00642c50(0x7b,&local_10);
+  local_30 = local_10;
+  local_34 = L"</shad>";
+  local_38 = (char *)0x594d6a;
+  FUN_00405330(&local_c,3);
+  local_38 = (char *)0x594d78;
+  FUN_00545088(*(undefined4 *)(param_1 + 0x3a4),local_c);
+  local_38 = (char *)0x594d85;
+  FUN_00642c50(0x80,&stack0xffffffec);
+  local_38 = (char *)0x594d96;
+  FUN_00509a64(*(undefined4 *)(*(int *)(param_1 + 0x358) + 0x60),unaff_EBX);
+  local_38 = (char *)0x594da3;
+  FUN_00642c50(0x81,&stack0xffffffe8);
+  local_38 = (char *)0x594db4;
+  FUN_00509a64(*(undefined4 *)(*(int *)(param_1 + 0x350) + 0x60),unaff_ESI);
+  local_38 = (char *)0x594dc1;
+  FUN_00642c50(0x82,&stack0xffffffe4);
+  local_38 = (char *)0x594dd2;
+  FUN_00509a64(*(undefined4 *)(*(int *)(param_1 + 0x380) + 0x60),unaff_EDI);
+  local_38 = (char *)0x594ddf;
+  FUN_00642c50(0x83,&local_20);
+  local_38 = (char *)0x594df0;
+  FUN_00509a64(*(undefined4 *)(*(int *)(param_1 + 0x35c) + 0x60),local_20);
+  local_38 = (char *)0x594dfd;
+  FUN_00642c50(0x85,&local_24);
+  local_38 = (char *)0x594e0e;
+  FUN_00509a64(*(undefined4 *)(*(int *)(param_1 + 0x364) + 0x60),local_24);
+  local_38 = (char *)0x594e1b;
+  FUN_00642c50(0x86,&local_28);
+  local_38 = (char *)0x594e2c;
+  FUN_00509a64(*(undefined4 *)(*(int *)(param_1 + 0x36c) + 0x60),local_28);
+  local_38 = (char *)0x594e39;
+  FUN_00642c50(0x88,&local_2c);
+  local_38 = (char *)0x594e4a;
+  FUN_00509a64(*(undefined4 *)(*(int *)(param_1 + 0x370) + 0x60),local_2c);
+  local_38 = (char *)0x594e57;
+  FUN_00642c50(0x89,&local_30);
+  local_38 = (char *)0x594e68;
+  FUN_00509a64(*(undefined4 *)(*(int *)(param_1 + 0x360) + 0x60),local_30);
+  local_38 = (char *)0x594e75;
+  FUN_00642c50(0x139,&local_34);
+  local_38 = (char *)0x594e86;
+  FUN_00509a64(*(undefined4 *)(*(int *)(param_1 + 0x368) + 0x60),local_34);
+  local_38 = (char *)0x594e93;
+  FUN_00642c50(0x141,&local_38);
+  pcVar1 = local_38;
+  local_38 = (char *)0x594ea4;
+  FUN_00509a64(*(undefined4 *)(*(int *)(param_1 + 0x354) + 0x60),pcVar1);
+  local_38 = (char *)0x594eb1;
+  FUN_00642c50(0x81,&local_3c);
+  local_38 = (char *)0x594ebe;
+  FUN_0040526c(&local_3c,&DAT_0059539c);
+  local_38 = (char *)0x594ecc;
+  FUN_004e1414(*(undefined4 *)(param_1 + 0x300),local_3c);
+  local_38 = (char *)0x594ed9;
+  FUN_00642c50(0x31,&local_40);
+  local_38 = (char *)0x594ee6;
+  FUN_0040526c(&local_40,&DAT_0059539c);
+  local_38 = (char *)0x594ef4;
+  FUN_004e1414(*(undefined4 *)(param_1 + 0x2fc),local_40);
+  local_38 = (char *)0x594f01;
+  FUN_00642c50(0x18a,&local_44);
+  local_38 = (char *)0x594f0f;
+  FUN_004e1414(*(undefined4 *)(param_1 + 0x310),local_44);
+  local_38 = (char *)0x594f1c;
+  FUN_00642c50(0x18b,&local_48);
+  local_38 = (char *)0x594f2a;
+  FUN_004e1414(*(undefined4 *)(param_1 + 0x314),local_48);
+  local_38 = (char *)0x594f37;
+  FUN_00642c50(0x82,&local_4c);
+  local_38 = (char *)0x594f44;
+  FUN_0040526c(&local_4c,&DAT_0059539c);
+  local_38 = (char *)0x594f52;
+  FUN_004e1414(*(undefined4 *)(param_1 + 900),local_4c);
+  local_38 = (char *)0x594f5f;
+  FUN_00642c50(0x32,&local_50);
+  local_38 = (char *)0x594f6c;
+  FUN_0040526c(&local_50,&DAT_0059539c);
+  local_38 = (char *)0x594f7a;
+  FUN_004e1414(*(undefined4 *)(param_1 + 0x31c),local_50);
+  local_38 = (char *)0x594f87;
+  FUN_00642c50(0x33,&local_54);
+  local_38 = (char *)0x594f94;
+  FUN_0040526c(&local_54,&DAT_0059539c);
+  local_38 = (char *)0x594fa2;
+  FUN_004e1414(*(undefined4 *)(param_1 + 0x2f8),local_54);
+  local_38 = (char *)0x594faf;
+  FUN_00642c50(0x36,&local_58);
+  local_38 = (char *)0x594fbc;
+  FUN_0040526c(&local_58,&DAT_0059539c);
+  local_38 = (char *)0x594fca;
+  FUN_004e1414(*(undefined4 *)(param_1 + 0x304),local_58);
+  local_38 = (char *)0x594fd7;
+  FUN_00642c50(0x36,&local_5c);
+  local_38 = (char *)0x594fe4;
+  FUN_0040526c(&local_5c,&DAT_0059539c);
+  local_38 = (char *)0x594ff2;
+  FUN_004e1414(*(undefined4 *)(param_1 + 0x318),local_5c);
+  local_38 = (char *)0x594fff;
+  FUN_00642c50(0x18c,&local_60);
+  local_38 = (char *)0x59500d;
+  FUN_004e1414(*(undefined4 *)(param_1 + 0x394),local_60);
+  local_38 = (char *)0x59501a;
+  FUN_00642c50(0x18d,&local_64);
+  local_38 = (char *)0x595027;
+  FUN_0040526c(&local_64,&DAT_0059539c);
+  local_38 = (char *)0x595035;
+  FUN_004e1414(*(undefined4 *)(param_1 + 0x398),local_64);
+  local_38 = (char *)0x595042;
+  FUN_00642c50(0x18e,&local_68);
+  local_38 = (char *)0x595050;
+  FUN_004e1414(*(undefined4 *)(param_1 + 0x39c),local_68);
+  local_38 = (char *)0x59505d;
+  FUN_00642c50(399,&local_6c);
+  local_38 = (char *)0x59506b;
+  FUN_004e1414(*(undefined4 *)(param_1 + 0x3a0),local_6c);
+  iVar4 = 0xe;
+  puVar3 = (undefined4 *)PTR_DAT_0066b3a4;
+  do {
+    local_38 = (char *)0x595083;
+    FUN_0054cd98(*(undefined4 *)(param_1 + 0x3a8),*puVar3);
+    local_38 = (char *)0x595090;
+    FUN_0054cd98(*(undefined4 *)(param_1 + 0x3ac),*puVar3);
+    puVar3 = puVar3 + 1;
+    iVar4 = iVar4 + -1;
+  } while (iVar4 != 0);
+  local_38 = (char *)0x5950a6;
+  FUN_0054cd98(*(undefined4 *)(param_1 + 0x3a8),L"------------");
+  local_38 = (char *)0x5950b6;
+  FUN_0054cd98(*(undefined4 *)(param_1 + 0x3ac),L"------------");
+  local_38 = (char *)0x5950c6;
+  FUN_0054c10c(*(undefined4 *)(param_1 + 0x3a8),0xe);
+  local_38 = (char *)0x5950d6;
+  FUN_0054c10c(*(undefined4 *)(param_1 + 0x3ac),0xe);
+  iVar4 = 5;
+  puVar3 = (undefined4 *)PTR_DAT_0066b084;
+  do {
+    local_38 = (char *)0x5950ee;
+    FUN_0054cd98(*(undefined4 *)(param_1 + 0x3b0),*puVar3);
+    puVar3 = puVar3 + 1;
+    iVar4 = iVar4 + -1;
+  } while (iVar4 != 0);
+  local_38 = (char *)0x595104;
+  FUN_0054cd98(*(undefined4 *)(param_1 + 0x3b0),L"------------");
+  local_38 = (char *)0x595114;
+  FUN_0054c10c(*(undefined4 *)(param_1 + 0x3b0),5);
+  local_38 = (char *)0x595121;
+  FUN_00642c50(0x189,&local_70);
+  local_38 = (char *)0x59512f;
+  FUN_0054dcb8(*(undefined4 *)(param_1 + 0x3b8),local_70);
+  local_38 = (char *)0x59513c;
+  FUN_00642c50(0x98,&local_74);
+  local_38 = (char *)0x59514a;
+  FUN_0054cd98(*(undefined4 *)(param_1 + 0x3c0),local_74);
+  local_38 = (char *)0x595157;
+  FUN_00642c50(0x9a,&local_78);
+  local_38 = (char *)0x595165;
+  FUN_0054cd98(*(undefined4 *)(param_1 + 0x3c0),local_78);
+  local_38 = (char *)0x595175;
+  FUN_0054cd98(*(undefined4 *)(param_1 + 0x3c0),L"------------");
+  local_38 = (char *)0x595185;
+  FUN_0054c10c(*(undefined4 *)(param_1 + 0x3c0),2);
+  if (*(int *)(PTR_DAT_0066ac78 + 0xc4) == 0xca) {
+    local_38 = (char *)0x5951a3;
+    FUN_00466128(*(undefined4 *)(param_1 + 800),0);
+    local_38 = (char *)0x5951b0;
+    FUN_00466128(*(undefined4 *)(param_1 + 0x3bc),0);
+    local_38 = (char *)0x5951c0;
+    FUN_0046599c(*(undefined4 *)(param_1 + 0x338),0xe0);
+  }
+  else {
+    local_38 = (char *)0x5951d1;
+    iVar4 = FUN_00405eec(*(undefined4 *)PTR_DAT_0066aca0);
+    if (0 < iVar4) {
+      local_38 = (char *)0x5951e5;
+      local_8 = FUN_0065208c(0x41);
+      if (-1 < iVar4 + -1) {
+        iVar5 = 0;
+        do {
+          local_38 = "<img src=\"idx:";
+          local_3c = 0x595212;
+          FUN_00409dd8(*(undefined4 *)(*(int *)PTR_DAT_0066aca0 + 0x140 + iVar5 * 0x294),&local_84);
+          local_3c = local_84;
+          local_40 = &DAT_005953e0;
+          local_44 = 0x595227;
+          FUN_00404c64(&local_80,3);
+          local_38 = (char *)0x595232;
+          FUN_004051d4(&local_7c,local_80);
+          local_38 = (char *)0x595258;
+          FUN_0040526c(&local_7c,
+                       *(undefined4 *)
+                        (PTR_DAT_0066b294 +
+                        *(int *)(*(int *)PTR_DAT_0066aca0 + 0x140 + iVar5 * 0x294) * 4));
+          local_38 = (char *)0x595266;
+          FUN_0054cd98(*(undefined4 *)(param_1 + 0x3bc),local_7c);
+          iVar5 = iVar5 + 1;
+          iVar4 = iVar4 + -1;
+        } while (iVar4 != 0);
+      }
+      if (local_8 < 0) {
+        local_38 = (char *)0x59528d;
+        FUN_0054c10c(*(undefined4 *)(param_1 + 0x3bc),0);
+      }
+      else {
+        local_38 = (char *)0x59527e;
+        FUN_0054c10c(*(undefined4 *)(param_1 + 0x3bc),local_8);
+      }
+    }
+  }
+  iVar4 = 0xca;
+  puVar3 = (undefined4 *)(PTR_DAT_0066b2bc + 4);
+  do {
+    local_38 = "<img src=\"idx:";
+    local_3c = 0x5952ad;
+    FUN_00409dd8(*puVar3,&local_90);
+    local_3c = local_90;
+    local_40 = &DAT_005953e0;
+    local_44 = 0x5952c8;
+    FUN_00404c64(&local_8c,3);
+    local_38 = (char *)0x5952d9;
+    FUN_004051d4(&local_88,local_8c);
+    local_38 = (char *)0x5952e7;
+    FUN_0040526c(&local_88,puVar3[-1]);
+    local_38 = (char *)0x5952f8;
+    FUN_0054cd98(*(undefined4 *)(param_1 + 0x3b4),local_88);
+    puVar3 = puVar3 + 2;
+    iVar4 = iVar4 + -1;
+  } while (iVar4 != 0);
+  local_38 = (char *)0x59530e;
+  FUN_0054cd98(*(undefined4 *)(param_1 + 0x3b4),L"-------");
+  local_38 = (char *)0x59531e;
+  FUN_0054c10c(*(undefined4 *)(param_1 + 0x3b4),0xca);
+  pwVar2 = local_2c;
+  *in_FS_OFFSET = local_34;
+  local_2c = L"幟譛工Ã\f";
+  local_30 = 0x59533b;
+  FUN_004048f8(&local_90,2,pwVar2);
+  local_30 = 0x595346;
+  FUN_00404ff0(&local_88);
+  local_30 = 0x595353;
+  FUN_004048f8(&local_84,2);
+  local_30 = 0x595360;
+  FUN_00405008(&local_7c,0x1d);
+  return;
+}
+

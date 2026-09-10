@@ -1,0 +1,8 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import {gunzipSync} from 'node:zlib';import {acceptManagerOffer} from '../manager-offer-actions.mjs';import {OriginalRandom} from '../match-core.mjs';
+const cases=JSON.parse(gunzipSync(fs.readFileSync(new URL('./manager-offer-acceptance-vectors.json.gz',import.meta.url)))),bytes=s=>Uint8Array.from(Buffer.from(s,'hex')),hex=b=>Buffer.from(b).toString('hex');
+for(const [index,t] of cases.entries()){
+ const save={career:bytes(t.career),sections:t.sections.map(s=>({...s,data:bytes(s.data),count:s.data.length/2/s.recordSize}))},rng=new OriginalRandom(t.seed),runtime={nationalManagerCount:10,currentLeagueConfiguration:t.initialLeague,managerJobOffers:[...t.offers]},closed=acceptManagerOffer(save,runtime,t.selected,{rng,date:t.date});
+ for(const section of [...save.sections,{name:'career',data:save.career}]){const actual=hex(section.data),expected=section.name==='career'?t.expected.career:t.expected.sections[section.name];if(actual!==expected){let at=0;while(actual.slice(at,at+2)===expected.slice(at,at+2)&&at<Math.max(actual.length,expected.length))at+=2;throw Error(`case${index} ${section.name} byte${at/2}: ${actual.slice(at,at+32)} expected${expected.slice(at,at+32)}`);}}
+ assert.equal(closed,t.expected.closed,`case${index} close`);assert.equal(rng.state,t.expected.seed,`case${index} RNG`);assert.equal(runtime.currentLeagueConfiguration,t.expected.league,`case${index} league`);assert.deepEqual(runtime.managerJobOffers,t.offers);
+}
+console.log(`${cases.length} original offer acceptance comparisons passed (allocation and input/close adapters only)`);

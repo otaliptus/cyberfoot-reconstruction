@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {verifyCompetitionBatch} from './competition-batch-proof.mjs';const r=await verifyCompetitionBatch(JSON.parse(readFileSync(new URL('./competition-batch-vectors.json',import.meta.url))));if(r.failures.length)throw Error(JSON.stringify(r.failures.slice(0,2)));console.log(`Original competition batch routing: ${r.cases} cases passed.`);

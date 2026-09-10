@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {verifyMatchFinalization} from './match-finalization-proof.mjs';const r=await verifyMatchFinalization(JSON.parse(readFileSync(new URL('./match-finalization-vectors.json',import.meta.url))));if(r.failures.length)throw Error(JSON.stringify(r.failures.slice(0,1)));console.log('Original match-finalization: '+r.cases+' cases passed.');

@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {checkRegulationFlow} from './regulation-flow-integration.mjs';console.log(await checkRegulationFlow(readFileSync(new URL('./original-career.s15',import.meta.url)),{settle:true,history:true,weekly:true}));

@@ -1,0 +1,2 @@
+import {readFileSync} from 'node:fs';import assert from 'node:assert/strict';import {verifyMatchRecords} from './match-records-proof.mjs';
+const result=verifyMatchRecords(JSON.parse(readFileSync(new URL('./match-records-vectors.json',import.meta.url))));if(result.failures.length)console.log(JSON.stringify(result.failures.slice(0,2),null,2));assert.deepEqual(result.failures,[]);console.log(`Original match persistence and manager statistics:${result.cases} passed.`);

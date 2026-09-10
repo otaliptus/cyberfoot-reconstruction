@@ -1,0 +1,69 @@
+<!doctype html><meta charset="utf-8"><title>Original match window — development</title><style>body{margin:0;background:#3a6ea5;display:grid;place-items:center;min-height:100vh}canvas{width:1024px;max-width:100vw;height:auto}</style><canvas width="1024" height="768" aria-label="Original match window"></canvas><script type="module">
+import {matchEventPresentation} from './match-event-presentation.mjs';import {checkMatchEventPresentation} from './tests/match-event-presentation-proof.mjs';
+import {selectIncidentPlayer} from './match-players.mjs';
+import {createInjuryDialogHost} from './injury-dialog-host.mjs';
+import {clubCrestPath} from './club-crest.mjs';
+import {MatchTacticsWindow} from './match-tactics-window.mjs';import {createMatchTacticsHost} from './match-tactics-host.mjs';import {createPenaltyDialogHost} from './penalty-dialog-host.mjs';import {readSave,record} from './save-format.mjs';import {openCareer} from './career-state.mjs';import {careerAgenda} from './schedule.mjs';import {prepareScheduledMatches,selectMatchFixtures,initializeWatchedKickoff} from './match-preparation.mjs';import {generateAILineup} from './ai-lineup.mjs';import {randomizeAITactics} from './tactics.mjs';import {OriginalRandom} from './match-core.mjs';import {createRegulationController} from './regulation-controller.mjs';import {recordCareerEvent} from './career-stats.mjs';import {finalizeMatchBatch} from './match-finalization.mjs';
+const [forms,language,input,crestAssets,kitAssets]=await Promise.all([fetch('forms.json').then(r=>r.json()),fetch('language.json').then(r=>r.json()),fetch('tests/original-career.s15').then(r=>r.arrayBuffer()),fetch('crest-assets.json').then(r=>r.json()),fetch('kit-assets.json').then(r=>r.json())]);
+const save=readSave(input),v=b=>new DataView(b.buffer,b.byteOffset,b.byteLength),agenda=careerAgenda(save),career=v(save.career),subgroup=v(record(save,'records_0066afa0',agenda.fixtureId)).getInt32(0x38,true),context={competitionType:1,subgroup,currentDate:agenda.nextDate};career.setInt32(0x16c,agenda.nextDay,true);career.setInt32(0x88,1,true);
+const state=openCareer(save,{currentDate:agenda.nextDate});state.competitionType=1;state.automaticInteractions=true;state.lineups=[];let clock=2015;const rng=new OriginalRandom(2015,()=>clock+=7919),initial=selectMatchFixtures(save,context);
+for(const id of new Set(initial.fixtures.flatMap(f=>f.clubs))){generateAILineup(state,id,rng);randomizeAITactics(state.clubs[id],rng);}
+const runtime={silent:true,subgroup},prepared=prepareScheduledMatches(save,context,rng,runtime),fixtures=prepared.fixtures,teamsFor=f=>f.lineupIds.map(id=>state.lineups[id]);initializeWatchedKickoff(save,fixtures,rng,runtime);
+const eventChecks=await checkMatchEventPresentation(language),latestEvents=new Map();
+const renderer=await new MatchTacticsWindow(document.querySelector('canvas'),forms).prepare();let minute=0,period=language[504].text,finished=false;
+const windowView=()=>({form:'Form46',divisionLabels:[35,36,37,38].map(i=>language[i].text),properties:{g1:{Progress:minute,MaxValue:45},HTMLabel3:{HTMLText:language[209].text+career.getInt32(0x4c,true)},labtempo:{Caption:period},Label1:{Caption:minute+"'",Visible:true}},fixtures:fixtures.map(f=>{const home=v(record(save,'clubs',f.clubs[0])),away=v(record(save,'clubs',f.clubs[1]));return {homeCrest:clubCrestPath(save,f.clubs[0],crestAssets),awayCrest:clubCrestPath(save,f.clubs[1],crestAssets),event:latestEvents.get(f.id),id:f.id,stadium:f.stadium,attendance:'| '+f.field28,home:state.clubs[f.clubs[0]].name,away:state.clubs[f.clubs[1]].name,homeScore:f.counters[0x48]??0,awayScore:f.counters[0x4c]??0,homeColor:home.getInt32(0xb0,true),awayColor:away.getInt32(0xb0,true),homeBackground:home.getInt32(0xac,true),awayBackground:away.getInt32(0xac,true)};})});
+await renderer.loadCrests(fixtures.flatMap(f=>f.clubs.map(id=>clubCrestPath(save,id,crestAssets))));
+await renderer.show(windowView());
+const penaltySounds=[],penaltyHost=createPenaltyDialogHost(renderer,{save,state,language,assets:crestAssets,playSound:name=>penaltySounds.push(name)});
+const injuryHost=createInjuryDialogHost(renderer,{state,language,playSound:name=>penaltySounds.push(name)});
+const controller=createRegulationController({fixtures,teamsFor,state,rng,decisions:{penalty:context=>penaltyHost.decide(context),injuryReplacement:context=>injuryHost.decide(context)},recordEvent:recordCareerEvent,pauseAtHalftime:false,present:async e=>{if(e.type==='event'){const event=state.events[e.index],fixture=fixtures.find(f=>f.id===event[5]);const presentation=matchEventPresentation(event,fixture,state,language,{silent:runtime.silent,sound:false,fullGameGauge:false});latestEvents.set(fixture.id,presentation);if(presentation.redCardPrompt){renderer.update(windowView());await tacticsHost.open({fixture,teams:teamsFor(fixture),side:presentation.redCardPrompt.side,minute,period:controller.flow.period});}}if(e.type==='clearFixtureEvent')latestEvents.delete(e.fixtureId);if(e.type==='minute')minute=e.minute;if(e.languageId)period=language[e.languageId].text;if(e.type==='gauge')minute=e.value;},halftime:async()=>{},finalize:async()=>{const leagueMetadataId=v(record(save,'records_0066b6ac',fixtures[0].competition)).getInt32(4,true);await finalizeMatchBatch(save,fixtures,state,rng,{runtime,teamsFor,historyContext:{competitionGroupId:0,subgroupId:subgroup,leagueMetadataId},continueCompetition:route=>{runtime.nextRoute=route;}});finished=true;}});
+const tacticsHost=createMatchTacticsHost(renderer,{save,state,language,assets:crestAssets,kitAssets,rng,recordEvent:recordCareerEvent,presentEvent:index=>{const event=state.events[index],fixture=fixtures.find(f=>f.id===event[5]);latestEvents.set(fixture.id,matchEventPresentation(event,fixture,state,language,{silent:true,sound:false,fullGameGauge:false}));}});
+let elapsed=0;window.advanceTime=async ms=>{if(tacticsHost.active)return;if(injuryHost.active||injuryHost.opening)return;if(penaltyHost.active||penaltyHost.opening){penaltyHost.advanceTime(ms);await Promise.resolve();return;}elapsed+=ms;while(elapsed>=300&&!finished){elapsed-=300;await controller.advance();}renderer.update(windowView());};
+window.advanceMatchTicks=async count=>{for(let i=0;i<count&&!finished;i++)await controller.advance();renderer.update(windowView());};
+window.render_game_to_text=()=>JSON.stringify({developmentProof:true,completeGame:false,scope:'Recovered four-division match layout with real engine; automatic test decisions, interactive match controls and human decisions pending',eventChecks,tactics:tacticsHost.active?{side:tacticsHost.active.side,shirtPath:tacticsHost.active.shirtPath,selectedKit:state.clubs[tacticsHost.active.fixture.clubs[tacticsHost.active.side-1]].selectedKit,busy:tacticsHost.active.busy,players:[...tacticsHost.active.lineup.players],positions:[...tacticsHost.active.lineup.positions],bench:[...tacticsHost.active.lineup.bench],substitutions:[...tacticsHost.active.fixture.substitutions],message:tacticsHost.active.message,statistics:tacticsHost.active.showStatistics?tacticsHost.active.statistics:null,eventLog:renderer.frame.eventLog}:null,injury:injuryHost.active?{...injuryHost.active.view}:null,penalty:penaltyHost.active?{...penaltyHost.active.view}:null,timerEnabled:controller.flow.timerEnabled,penaltySounds,form:renderer.frame?.form,tick:controller.flow.tick,minute,period,finished,fixtures:windowView().fixtures,nextRoute:runtime.nextRoute});
+if((new URLSearchParams(location.search).has('tacticsIntegration')||new URLSearchParams(location.search).has('redCardIntegration'))){
+ window.beginTacticsCheck=()=>{const f=fixtures[0];state.clubs[f.clubs[0]].human=true;window.tacticsResult=tacticsHost.open({fixture:f,teams:teamsFor(f),side:1,minute,period:1}).then(()=>renderer.update(windowView()));};
+ window.tacticsDevelopment={renderer,host:tacticsHost,fixture:fixtures[0],state,rng};
+ if(new URLSearchParams(location.search).get('tacticsIntegration')==='auto')window.beginTacticsCheck();
+}
+if(new URLSearchParams(location.search).has('redCardIntegration')){
+ window.beginRedCardCheck=async()=>{
+  if(controller.flow.tick!==0)throw Error('Red-card check requires the initial match state.');
+  await controller.advance();const f=fixtures[0];f.previousEvent=11;f.side=2;f.zone=5;
+  state.clubs[f.clubs[0]].human=true;state.automaticInteractions=false;runtime.silent=false;
+  state.yellowCards.push(...teamsFor(f)[0].players.filter(id=>id>0));
+  let seed=0;while(new OriginalRandom(seed).below(100)<=93)seed++;clock=seed-7919;
+  const before={events:state.events.length,players:[...teamsFor(f)[0].players],tick:controller.flow.tick};window.redCardCheck={before,pending:true};
+  window.redCardAdvance=controller.advance().then(()=>{state.automaticInteractions=true;runtime.silent=true;renderer.update(windowView());window.redCardCheck={before,pending:false,events:state.events.slice(before.events),tick:controller.flow.tick,timerEnabled:controller.flow.timerEnabled};});
+ };
+}
+// Development-only forced event: enter the real regulation controller at a
+// known penalty boundary, allowing the modal and event commit to be exercised.
+if(new URLSearchParams(location.search).has('penaltyIntegration')){
+ window.beginPenaltyCheck=async()=>{
+  if(controller.flow.tick!==0)throw Error('Penalty check requires the initial match state.');
+  await controller.advance();
+  const f=fixtures[0];f.previousEvent=17;f.side=1;f.zone=11;
+  const defending=new URLSearchParams(location.search).get('penaltyIntegration')==='defend';
+  state.clubs[f.clubs[0]].human=!defending;state.clubs[f.clubs[1]].human=defending;state.automaticInteractions=false;
+  let seed=0;while(new OriginalRandom(seed).below(100)<=90)seed++;rng.state=seed;
+  const before={score:f.counters[0x48]??0,events:state.events.length,tick:controller.flow.tick};
+  window.penaltyCheck={before,pending:true};
+  window.penaltyAdvance=controller.advance().then(()=>{
+   state.automaticInteractions=true;renderer.update(windowView());
+   window.penaltyCheck={before,pending:false,after:{score:f.counters[0x48]??0,events:state.events.slice(before.events),tick:controller.flow.tick},timerEnabled:controller.flow.timerEnabled};
+  });
+ };
+}
+if(new URLSearchParams(location.search).has('injuryIntegration')){
+ window.beginInjuryCheck=async()=>{
+  if(controller.flow.tick!==0)throw Error('Injury check requires the initial match state.');
+  await controller.advance();const f=fixtures[0],team=teamsFor(f)[0],injuryMode=new URLSearchParams(location.search).get('injuryIntegration');if(injuryMode==='empty')team.bench.fill(-1);f.previousEvent=12;f.side=1;f.zone=11;
+  state.clubs[f.clubs[0]].human=true;state.automaticInteractions=false;
+  for(const id of team.players)if(id>0)state.players[id].condition=10;
+  let seed=0,injured;for(;;seed++){const probe=new OriginalRandom(seed);const id=selectIncidentPlayer(team,11,state,probe);if(id>0&&(injuryMode==='keeper'?state.players[id].role===0:state.players[id].role!==0)&&probe.below(19)===1){injured=id;break;}}
+  rng.state=seed;const before={injured,players:[...team.players],bench:[...team.bench],substitutions:[...f.substitutions],events:state.events.length};window.injuryCheck={before,pending:true};
+  window.injuryAdvance=controller.advance().then(()=>{state.automaticInteractions=true;renderer.update(windowView());window.injuryCheck={before,pending:false,after:{players:[...team.players],bench:[...team.bench],substitutions:[...f.substitutions],events:state.events.slice(before.events),injuredActive:state.players[injured].active,tick:controller.flow.tick},timerEnabled:controller.flow.timerEnabled};});
+ };
+}
+</script>

@@ -1,0 +1,2 @@
+import {readFileSync} from 'node:fs';import assert from 'node:assert/strict';import {verifyMatchFinance} from './match-finance-proof.mjs';
+const result=verifyMatchFinance(JSON.parse(readFileSync(new URL('./match-finance-vectors.json',import.meta.url))));if(result.failures.length)console.log(JSON.stringify(result.failures.slice(0,2),null,2));assert.deepEqual(result.failures,[]);console.log(`Original match financial settlement:${result.cases} passed.`);

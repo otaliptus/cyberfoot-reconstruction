@@ -1,0 +1,5502 @@
+[
+  {
+    "index": 0,
+    "metadata": 0,
+    "text": "Română"
+  },
+  {
+    "index": 1,
+    "metadata": 0,
+    "text": "Joc nou"
+  },
+  {
+    "index": 2,
+    "metadata": 0,
+    "text": "Incarcati un joc salvat"
+  },
+  {
+    "index": 3,
+    "metadata": 0,
+    "text": "Editor club"
+  },
+  {
+    "index": 4,
+    "metadata": 0,
+    "text": "Inregistrati jocul"
+  },
+  {
+    "index": 5,
+    "metadata": 0,
+    "text": "Versiune neinregistrata"
+  },
+  {
+    "index": 6,
+    "metadata": 0,
+    "text": "Versiune inregistrata"
+  },
+  {
+    "index": 7,
+    "metadata": 0,
+    "text": "Iesiti"
+  },
+  {
+    "index": 8,
+    "metadata": 0,
+    "text": "Selectati limba:"
+  },
+  {
+    "index": 9,
+    "metadata": 0,
+    "text": "Jocul se incarca..."
+  },
+  {
+    "index": 10,
+    "metadata": 0,
+    "text": "Setarile jocului"
+  },
+  {
+    "index": 11,
+    "metadata": 0,
+    "text": "Turnee de club"
+  },
+  {
+    "index": 12,
+    "metadata": 0,
+    "text": "Sistemul campionatelor:"
+  },
+  {
+    "index": 13,
+    "metadata": 0,
+    "text": "4 divizii cu 10 echipe in fiecare divizie"
+  },
+  {
+    "index": 14,
+    "metadata": 0,
+    "text": "2 divizii cu 20 de echipe in fiecare divizie"
+  },
+  {
+    "index": 15,
+    "metadata": 0,
+    "text": "Jucati Cupa nationala"
+  },
+  {
+    "index": 16,
+    "metadata": 0,
+    "text": "Jucati Liga Campionilor/Libertadores"
+  },
+  {
+    "index": 17,
+    "metadata": 0,
+    "text": "Jucati Liga Europa/Cupa Sud Americana"
+  },
+  {
+    "index": 18,
+    "metadata": 0,
+    "text": "Turneele echipelor nationale"
+  },
+  {
+    "index": 19,
+    "metadata": 0,
+    "text": "Jucati Campionat Mondial"
+  },
+  {
+    "index": 20,
+    "metadata": 0,
+    "text": "Utilizati grupele reale de la Campionatul Mondial din 2010"
+  },
+  {
+    "index": 21,
+    "metadata": 0,
+    "text": "Jucati Campionatul European"
+  },
+  {
+    "index": 22,
+    "metadata": 0,
+    "text": "Jucati Cupa America"
+  },
+  {
+    "index": 23,
+    "metadata": 0,
+    "text": "Jucati aceste campionate nationale:"
+  },
+  {
+    "index": 24,
+    "metadata": 0,
+    "text": "Selectati tot"
+  },
+  {
+    "index": 25,
+    "metadata": 0,
+    "text": "echipe"
+  },
+  {
+    "index": 26,
+    "metadata": 0,
+    "text": "Puteti adauga mai multe campionate din Zona alocata membrilor de pe www.cyberfot.org"
+  },
+  {
+    "index": 27,
+    "metadata": 0,
+    "text": "Numarul de echipe controlate de jucatori umani"
+  },
+  {
+    "index": 28,
+    "metadata": 0,
+    "text": "Unele optiuni sunt disponibile numai in versiunile inregistrate: Turnee pentru echipele nationale, adaugarea mai multor echipe controlate de jucatori umani, etc"
+  },
+  {
+    "index": 29,
+    "metadata": 0,
+    "text": "Urmatorul>>"
+  },
+  {
+    "index": 30,
+    "metadata": 0,
+    "text": "<<Inapoi"
+  },
+  {
+    "index": 31,
+    "metadata": 0,
+    "text": "Selectati cel putin un campionat"
+  },
+  {
+    "index": 32,
+    "metadata": 0,
+    "text": "Alegeti echipa dumneavoastra"
+  },
+  {
+    "index": 33,
+    "metadata": 0,
+    "text": "Echipele tarii:"
+  },
+  {
+    "index": 34,
+    "metadata": 0,
+    "text": "Numele dumneavoastra:"
+  },
+  {
+    "index": 35,
+    "metadata": 0,
+    "text": "Prima divizie"
+  },
+  {
+    "index": 36,
+    "metadata": 0,
+    "text": "Divizia a doua"
+  },
+  {
+    "index": 37,
+    "metadata": 0,
+    "text": "Divizia a treia"
+  },
+  {
+    "index": 38,
+    "metadata": 0,
+    "text": "Divizia a patra"
+  },
+  {
+    "index": 39,
+    "metadata": 0,
+    "text": "Se alege echipa:"
+  },
+  {
+    "index": 40,
+    "metadata": 0,
+    "text": "Alegeti echipa urmatoare"
+  },
+  {
+    "index": 41,
+    "metadata": 0,
+    "text": "Incepeti jocul>>"
+  },
+  {
+    "index": 42,
+    "metadata": 0,
+    "text": "Echipa a fost selectata deja"
+  },
+  {
+    "index": 43,
+    "metadata": 0,
+    "text": "Aceasta este o copie neinregistrata a jocului CyberFoot"
+  },
+  {
+    "index": 44,
+    "metadata": 0,
+    "text": "In varianta neinregistrata a jocului puteti selecta numai o echipa din divizia inferioara"
+  },
+  {
+    "index": 45,
+    "metadata": 0,
+    "text": "In varianta inregistrata a jocului puteti alege o echipa din orice divizie"
+  },
+  {
+    "index": 46,
+    "metadata": 0,
+    "text": "Jocul este pe cale sa inceapa..."
+  },
+  {
+    "index": 47,
+    "metadata": 0,
+    "text": "Sustinerea conducerii clubului:"
+  },
+  {
+    "index": 48,
+    "metadata": 0,
+    "text": "Sustinerea suporterilor:"
+  },
+  {
+    "index": 49,
+    "metadata": 0,
+    "text": "Abilitate"
+  },
+  {
+    "index": 50,
+    "metadata": 0,
+    "text": "Varsta"
+  },
+  {
+    "index": 51,
+    "metadata": 0,
+    "text": "Valoare"
+  },
+  {
+    "index": 52,
+    "metadata": 0,
+    "text": "Salariu"
+  },
+  {
+    "index": 53,
+    "metadata": 0,
+    "text": "Meciuri jucate"
+  },
+  {
+    "index": 54,
+    "metadata": 0,
+    "text": "Caracteristici"
+  },
+  {
+    "index": 55,
+    "metadata": 0,
+    "text": "Contractul expira la data de"
+  },
+  {
+    "index": 56,
+    "metadata": 0,
+    "text": "Contract expirat"
+  },
+  {
+    "index": 57,
+    "metadata": 0,
+    "text": "Data de expirare a imprumutului"
+  },
+  {
+    "index": 58,
+    "metadata": 0,
+    "text": "Jucatorul este disponibil numai pentru meciul urmator"
+  },
+  {
+    "index": 59,
+    "metadata": 0,
+    "text": "Supendat pentru o partida: 3 cartonase galbene"
+  },
+  {
+    "index": 60,
+    "metadata": 0,
+    "text": "Suspendat pentru"
+  },
+  {
+    "index": 61,
+    "metadata": 0,
+    "text": "meci(uri)"
+  },
+  {
+    "index": 62,
+    "metadata": 0,
+    "text": "Accidentat pana la"
+  },
+  {
+    "index": 63,
+    "metadata": 0,
+    "text": "Vindeti"
+  },
+  {
+    "index": 64,
+    "metadata": 0,
+    "text": "Contract"
+  },
+  {
+    "index": 65,
+    "metadata": 0,
+    "text": "Retragere"
+  },
+  {
+    "index": 66,
+    "metadata": 0,
+    "text": "Retrageti din lista pentru transferuri"
+  },
+  {
+    "index": 67,
+    "metadata": 0,
+    "text": "Meciul urmator"
+  },
+  {
+    "index": 68,
+    "metadata": 0,
+    "text": "Asezare in teren"
+  },
+  {
+    "index": 69,
+    "metadata": 0,
+    "text": "Culorile echipei"
+  },
+  {
+    "index": 70,
+    "metadata": 0,
+    "text": "Un mesaj necitit"
+  },
+  {
+    "index": 71,
+    "metadata": 0,
+    "text": "Mesaje necitite"
+  },
+  {
+    "index": 72,
+    "metadata": 0,
+    "text": "Nu aveti mesaje noi"
+  },
+  {
+    "index": 73,
+    "metadata": 0,
+    "text": "jucatori"
+  },
+  {
+    "index": 74,
+    "metadata": 0,
+    "text": "Meciuri anterioare"
+  },
+  {
+    "index": 75,
+    "metadata": 0,
+    "text": "meci"
+  },
+  {
+    "index": 76,
+    "metadata": 0,
+    "text": "meciuri"
+  },
+  {
+    "index": 77,
+    "metadata": 0,
+    "text": "remiza"
+  },
+  {
+    "index": 78,
+    "metadata": 0,
+    "text": "remize"
+  },
+  {
+    "index": 79,
+    "metadata": 0,
+    "text": "V"
+  },
+  {
+    "index": 80,
+    "metadata": 0,
+    "text": "R"
+  },
+  {
+    "index": 81,
+    "metadata": 0,
+    "text": "I"
+  },
+  {
+    "index": 82,
+    "metadata": 0,
+    "text": "GP"
+  },
+  {
+    "index": 83,
+    "metadata": 0,
+    "text": "GM"
+  },
+  {
+    "index": 84,
+    "metadata": 0,
+    "text": "MJ"
+  },
+  {
+    "index": 85,
+    "metadata": 0,
+    "text": "DG"
+  },
+  {
+    "index": 86,
+    "metadata": 0,
+    "text": "Pt"
+  },
+  {
+    "index": 87,
+    "metadata": 0,
+    "text": "PP"
+  },
+  {
+    "index": 88,
+    "metadata": 0,
+    "text": "DE"
+  },
+  {
+    "index": 89,
+    "metadata": 0,
+    "text": "ultimul meci"
+  },
+  {
+    "index": 90,
+    "metadata": 0,
+    "text": "toate meciurile"
+  },
+  {
+    "index": 91,
+    "metadata": 0,
+    "text": "Primul meci dintre aceste echipe"
+  },
+  {
+    "index": 92,
+    "metadata": 0,
+    "text": "Istoricul sezoanelor precedente"
+  },
+  {
+    "index": 93,
+    "metadata": 0,
+    "text": "Salvati jocul"
+  },
+  {
+    "index": 94,
+    "metadata": 0,
+    "text": "Setari"
+  },
+  {
+    "index": 95,
+    "metadata": 0,
+    "text": "Abandonati"
+  },
+  {
+    "index": 96,
+    "metadata": 0,
+    "text": "Iesiti din joc"
+  },
+  {
+    "index": 97,
+    "metadata": 0,
+    "text": "Despre joc"
+  },
+  {
+    "index": 98,
+    "metadata": 0,
+    "text": "Clasificarea antrenorilor"
+  },
+  {
+    "index": 99,
+    "metadata": 0,
+    "text": "Adaugati/Inlaturati antrenor"
+  },
+  {
+    "index": 100,
+    "metadata": 0,
+    "text": "Ultimele transferuri de antrenor"
+  },
+  {
+    "index": 101,
+    "metadata": 0,
+    "text": "Clasificarea cluburilor"
+  },
+  {
+    "index": 102,
+    "metadata": 0,
+    "text": "Transferuri de jucatori"
+  },
+  {
+    "index": 103,
+    "metadata": 0,
+    "text": "Istoricul tuturor meciurilor"
+  },
+  {
+    "index": 104,
+    "metadata": 0,
+    "text": "Programul meciurilor dumneavoastra"
+  },
+  {
+    "index": 105,
+    "metadata": 0,
+    "text": "Programari"
+  },
+  {
+    "index": 106,
+    "metadata": 0,
+    "text": "Meciurile programate in cupa"
+  },
+  {
+    "index": 107,
+    "metadata": 0,
+    "text": "Meciurile eliminatorii din cupele internationale"
+  },
+  {
+    "index": 108,
+    "metadata": 0,
+    "text": "Amicale"
+  },
+  {
+    "index": 109,
+    "metadata": 0,
+    "text": "Finante"
+  },
+  {
+    "index": 110,
+    "metadata": 0,
+    "text": "Imprumut bancar"
+  },
+  {
+    "index": 111,
+    "metadata": 0,
+    "text": "Aranjare contract "
+  },
+  {
+    "index": 112,
+    "metadata": 0,
+    "text": "Vindeti jucator"
+  },
+  {
+    "index": 113,
+    "metadata": 0,
+    "text": "Retrageti jucator"
+  },
+  {
+    "index": 114,
+    "metadata": 0,
+    "text": "Numar stabilit"
+  },
+  {
+    "index": 115,
+    "metadata": 0,
+    "text": "Istoricul meciurilor"
+  },
+  {
+    "index": 116,
+    "metadata": 0,
+    "text": "Anulati imprumutul"
+  },
+  {
+    "index": 117,
+    "metadata": 0,
+    "text": "Cumparati jucator"
+  },
+  {
+    "index": 118,
+    "metadata": 0,
+    "text": "Adaugati in lista de imprumuturi"
+  },
+  {
+    "index": 119,
+    "metadata": 0,
+    "text": "Retrageti din lista de imprumuturi"
+  },
+  {
+    "index": 120,
+    "metadata": 0,
+    "text": "Clasamente"
+  },
+  {
+    "index": 121,
+    "metadata": 0,
+    "text": "Stadion"
+  },
+  {
+    "index": 122,
+    "metadata": 0,
+    "text": "Afisati toate cluburile"
+  },
+  {
+    "index": 123,
+    "metadata": 0,
+    "text": "Cautati jucatori"
+  },
+  {
+    "index": 124,
+    "metadata": 0,
+    "text": "Informatii antrenori"
+  },
+  {
+    "index": 125,
+    "metadata": 0,
+    "text": "Lista campionilor"
+  },
+  {
+    "index": 126,
+    "metadata": 0,
+    "text": "Cei mai buni marcatori"
+  },
+  {
+    "index": 127,
+    "metadata": 0,
+    "text": "Clasificarea cluburilor"
+  },
+  {
+    "index": 128,
+    "metadata": 0,
+    "text": "P"
+  },
+  {
+    "index": 129,
+    "metadata": 0,
+    "text": "Nume"
+  },
+  {
+    "index": 130,
+    "metadata": 0,
+    "text": "Partea"
+  },
+  {
+    "index": 131,
+    "metadata": 0,
+    "text": "A"
+  },
+  {
+    "index": 132,
+    "metadata": 0,
+    "text": "Vitalitate"
+  },
+  {
+    "index": 133,
+    "metadata": 0,
+    "text": "Salariu"
+  },
+  {
+    "index": 134,
+    "metadata": 0,
+    "text": "Valoare"
+  },
+  {
+    "index": 135,
+    "metadata": 0,
+    "text": "G"
+  },
+  {
+    "index": 136,
+    "metadata": 0,
+    "text": "Car."
+  },
+  {
+    "index": 137,
+    "metadata": 0,
+    "text": "Vst"
+  },
+  {
+    "index": 138,
+    "metadata": 0,
+    "text": "M"
+  },
+  {
+    "index": 139,
+    "metadata": 0,
+    "text": "Contractul expira intr-o saptamana"
+  },
+  {
+    "index": 140,
+    "metadata": 0,
+    "text": "Contractul expira in curand"
+  },
+  {
+    "index": 141,
+    "metadata": 0,
+    "text": "Dati clic aici pentru a inregistra CyberFoot"
+  },
+  {
+    "index": 142,
+    "metadata": 0,
+    "text": "Portar"
+  },
+  {
+    "index": 143,
+    "metadata": 0,
+    "text": "P"
+  },
+  {
+    "index": 144,
+    "metadata": 0,
+    "text": "Aparator central"
+  },
+  {
+    "index": 145,
+    "metadata": 0,
+    "text": "AC"
+  },
+  {
+    "index": 146,
+    "metadata": 0,
+    "text": "Fundas lateral"
+  },
+  {
+    "index": 147,
+    "metadata": 0,
+    "text": "FL"
+  },
+  {
+    "index": 148,
+    "metadata": 0,
+    "text": "Mijlocas"
+  },
+  {
+    "index": 149,
+    "metadata": 0,
+    "text": "M"
+  },
+  {
+    "index": 150,
+    "metadata": 0,
+    "text": "Atacant"
+  },
+  {
+    "index": 151,
+    "metadata": 0,
+    "text": "A"
+  },
+  {
+    "index": 152,
+    "metadata": 0,
+    "text": "Dreapta"
+  },
+  {
+    "index": 153,
+    "metadata": 0,
+    "text": "D"
+  },
+  {
+    "index": 154,
+    "metadata": 0,
+    "text": "Stanga"
+  },
+  {
+    "index": 155,
+    "metadata": 0,
+    "text": "S"
+  },
+  {
+    "index": 156,
+    "metadata": 0,
+    "text": "Asezare in teren"
+  },
+  {
+    "index": 157,
+    "metadata": 0,
+    "text": "Poz"
+  },
+  {
+    "index": 158,
+    "metadata": 0,
+    "text": "Apara penalty"
+  },
+  {
+    "index": 159,
+    "metadata": 0,
+    "text": "Pen"
+  },
+  {
+    "index": 160,
+    "metadata": 0,
+    "text": "Rezistenta"
+  },
+  {
+    "index": 161,
+    "metadata": 0,
+    "text": "Rez"
+  },
+  {
+    "index": 162,
+    "metadata": 0,
+    "text": "Control aerian"
+  },
+  {
+    "index": 163,
+    "metadata": 0,
+    "text": "Aer"
+  },
+  {
+    "index": 164,
+    "metadata": 0,
+    "text": "Conducator de joc"
+  },
+  {
+    "index": 165,
+    "metadata": 0,
+    "text": "CJ"
+  },
+  {
+    "index": 166,
+    "metadata": 0,
+    "text": "Lovitura cu capul"
+  },
+  {
+    "index": 167,
+    "metadata": 0,
+    "text": "LC"
+  },
+  {
+    "index": 168,
+    "metadata": 0,
+    "text": "Un-doi"
+  },
+  {
+    "index": 169,
+    "metadata": 0,
+    "text": "UD"
+  },
+  {
+    "index": 170,
+    "metadata": 0,
+    "text": "Tackling"
+  },
+  {
+    "index": 171,
+    "metadata": 0,
+    "text": "Tac"
+  },
+  {
+    "index": 172,
+    "metadata": 0,
+    "text": "Dribling"
+  },
+  {
+    "index": 173,
+    "metadata": 0,
+    "text": "Drl"
+  },
+  {
+    "index": 174,
+    "metadata": 0,
+    "text": "Suteor"
+  },
+  {
+    "index": 175,
+    "metadata": 0,
+    "text": "Sut"
+  },
+  {
+    "index": 176,
+    "metadata": 0,
+    "text": "Marcator"
+  },
+  {
+    "index": 177,
+    "metadata": 0,
+    "text": "Mar"
+  },
+  {
+    "index": 178,
+    "metadata": 0,
+    "text": "Pasator"
+  },
+  {
+    "index": 179,
+    "metadata": 0,
+    "text": "Pas"
+  },
+  {
+    "index": 180,
+    "metadata": 0,
+    "text": "Putere"
+  },
+  {
+    "index": 181,
+    "metadata": 0,
+    "text": "Put"
+  },
+  {
+    "index": 182,
+    "metadata": 0,
+    "text": "Rezistenta"
+  },
+  {
+    "index": 183,
+    "metadata": 0,
+    "text": "Rez"
+  },
+  {
+    "index": 184,
+    "metadata": 0,
+    "text": "1"
+  },
+  {
+    "index": 185,
+    "metadata": 0,
+    "text": "2"
+  },
+  {
+    "index": 186,
+    "metadata": 0,
+    "text": "3"
+  },
+  {
+    "index": 187,
+    "metadata": 0,
+    "text": "4"
+  },
+  {
+    "index": 188,
+    "metadata": 0,
+    "text": "5"
+  },
+  {
+    "index": 189,
+    "metadata": 0,
+    "text": "6"
+  },
+  {
+    "index": 190,
+    "metadata": 0,
+    "text": "7"
+  },
+  {
+    "index": 191,
+    "metadata": 0,
+    "text": "8"
+  },
+  {
+    "index": 192,
+    "metadata": 0,
+    "text": "9"
+  },
+  {
+    "index": 193,
+    "metadata": 0,
+    "text": "10"
+  },
+  {
+    "index": 194,
+    "metadata": 0,
+    "text": "11"
+  },
+  {
+    "index": 195,
+    "metadata": 0,
+    "text": "12"
+  },
+  {
+    "index": 196,
+    "metadata": 0,
+    "text": "13"
+  },
+  {
+    "index": 197,
+    "metadata": 0,
+    "text": "14"
+  },
+  {
+    "index": 198,
+    "metadata": 0,
+    "text": "15"
+  },
+  {
+    "index": 199,
+    "metadata": 0,
+    "text": "16"
+  },
+  {
+    "index": 200,
+    "metadata": 0,
+    "text": "17"
+  },
+  {
+    "index": 201,
+    "metadata": 0,
+    "text": "18"
+  },
+  {
+    "index": 202,
+    "metadata": 0,
+    "text": "19"
+  },
+  {
+    "index": 203,
+    "metadata": 0,
+    "text": "20"
+  },
+  {
+    "index": 204,
+    "metadata": 0,
+    "text": "loc"
+  },
+  {
+    "index": 205,
+    "metadata": 0,
+    "text": "Acasa"
+  },
+  {
+    "index": 206,
+    "metadata": 0,
+    "text": "A"
+  },
+  {
+    "index": 207,
+    "metadata": 0,
+    "text": "Deplasare"
+  },
+  {
+    "index": 208,
+    "metadata": 0,
+    "text": "D"
+  },
+  {
+    "index": 209,
+    "metadata": 0,
+    "text": "etapa"
+  },
+  {
+    "index": 210,
+    "metadata": 0,
+    "text": "Arbitru"
+  },
+  {
+    "index": 211,
+    "metadata": 0,
+    "text": "Amical International"
+  },
+  {
+    "index": 212,
+    "metadata": 0,
+    "text": "Amical"
+  },
+  {
+    "index": 213,
+    "metadata": 0,
+    "text": "Turul 1"
+  },
+  {
+    "index": 214,
+    "metadata": 0,
+    "text": "Turul 2"
+  },
+  {
+    "index": 215,
+    "metadata": 0,
+    "text": "Sfert de finala"
+  },
+  {
+    "index": 216,
+    "metadata": 0,
+    "text": "Semifinala"
+  },
+  {
+    "index": 217,
+    "metadata": 0,
+    "text": "Finala"
+  },
+  {
+    "index": 218,
+    "metadata": 0,
+    "text": "Mansa 1"
+  },
+  {
+    "index": 219,
+    "metadata": 0,
+    "text": "Mansa 2"
+  },
+  {
+    "index": 220,
+    "metadata": 0,
+    "text": "Liga Campionilor"
+  },
+  {
+    "index": 221,
+    "metadata": 0,
+    "text": "Liga Europa UEFA"
+  },
+  {
+    "index": 222,
+    "metadata": 0,
+    "text": "Cupa Libertadores"
+  },
+  {
+    "index": 223,
+    "metadata": 0,
+    "text": "Cupa Sud Americana"
+  },
+  {
+    "index": 224,
+    "metadata": 0,
+    "text": "Cupa mondiala a cluburilor FIFA"
+  },
+  {
+    "index": 225,
+    "metadata": 0,
+    "text": "Liga Germana"
+  },
+  {
+    "index": 226,
+    "metadata": 0,
+    "text": "Cupa Germaniei"
+  },
+  {
+    "index": 227,
+    "metadata": 0,
+    "text": "Liga italiana"
+  },
+  {
+    "index": 228,
+    "metadata": 0,
+    "text": "Cupa Italiei"
+  },
+  {
+    "index": 229,
+    "metadata": 0,
+    "text": "Liga spaniola"
+  },
+  {
+    "index": 230,
+    "metadata": 0,
+    "text": "Cupa Spaniei"
+  },
+  {
+    "index": 231,
+    "metadata": 0,
+    "text": "Liga engleza"
+  },
+  {
+    "index": 232,
+    "metadata": 0,
+    "text": "Cupa Angliei"
+  },
+  {
+    "index": 233,
+    "metadata": 0,
+    "text": "Liga franceza"
+  },
+  {
+    "index": 234,
+    "metadata": 0,
+    "text": "Cupa Frantei"
+  },
+  {
+    "index": 235,
+    "metadata": 0,
+    "text": "Liga belgiana"
+  },
+  {
+    "index": 236,
+    "metadata": 0,
+    "text": "Cupa Belgiei"
+  },
+  {
+    "index": 237,
+    "metadata": 0,
+    "text": "Liga greaca"
+  },
+  {
+    "index": 238,
+    "metadata": 0,
+    "text": "Cupa Greciei"
+  },
+  {
+    "index": 239,
+    "metadata": 0,
+    "text": "Liga olandeza"
+  },
+  {
+    "index": 240,
+    "metadata": 0,
+    "text": "Cupa Olandei"
+  },
+  {
+    "index": 241,
+    "metadata": 0,
+    "text": "Liga portugheza"
+  },
+  {
+    "index": 242,
+    "metadata": 0,
+    "text": "Cupa Portugaliei"
+  },
+  {
+    "index": 243,
+    "metadata": 0,
+    "text": "Liga braziliana"
+  },
+  {
+    "index": 244,
+    "metadata": 0,
+    "text": "Cupa Braziliei"
+  },
+  {
+    "index": 245,
+    "metadata": 0,
+    "text": "Liga argentiniana"
+  },
+  {
+    "index": 246,
+    "metadata": 0,
+    "text": "Cupa Argentinei"
+  },
+  {
+    "index": 247,
+    "metadata": 0,
+    "text": "Liga scotiana"
+  },
+  {
+    "index": 248,
+    "metadata": 0,
+    "text": "Cupa Scotiei"
+  },
+  {
+    "index": 249,
+    "metadata": 0,
+    "text": "Liga mexicana"
+  },
+  {
+    "index": 250,
+    "metadata": 0,
+    "text": "Cupa Mexicului"
+  },
+  {
+    "index": 251,
+    "metadata": 0,
+    "text": "Liga elvetiana"
+  },
+  {
+    "index": 252,
+    "metadata": 0,
+    "text": "Cupa elvetiei"
+  },
+  {
+    "index": 253,
+    "metadata": 0,
+    "text": "Liga turca"
+  },
+  {
+    "index": 254,
+    "metadata": 0,
+    "text": "Cupa Turciei"
+  },
+  {
+    "index": 255,
+    "metadata": 0,
+    "text": "Liga chiliana"
+  },
+  {
+    "index": 256,
+    "metadata": 0,
+    "text": "Cupa statului Chile"
+  },
+  {
+    "index": 257,
+    "metadata": 0,
+    "text": "Liga Paraguaiului"
+  },
+  {
+    "index": 258,
+    "metadata": 0,
+    "text": "Cupa Paraguaiului"
+  },
+  {
+    "index": 259,
+    "metadata": 0,
+    "text": "Liga columbiana"
+  },
+  {
+    "index": 260,
+    "metadata": 0,
+    "text": "Cupa Columbiei"
+  },
+  {
+    "index": 261,
+    "metadata": 0,
+    "text": "Liga rusa"
+  },
+  {
+    "index": 262,
+    "metadata": 0,
+    "text": "Cupa Rusiei"
+  },
+  {
+    "index": 263,
+    "metadata": 0,
+    "text": "Liga suedeza"
+  },
+  {
+    "index": 264,
+    "metadata": 0,
+    "text": "Cupa Suediei"
+  },
+  {
+    "index": 265,
+    "metadata": 0,
+    "text": "Liga ucrainiana"
+  },
+  {
+    "index": 266,
+    "metadata": 0,
+    "text": "Cupa Ucrainei"
+  },
+  {
+    "index": 267,
+    "metadata": 0,
+    "text": "Liga Uruguaiului"
+  },
+  {
+    "index": 268,
+    "metadata": 0,
+    "text": "Cupa Uruguaiului"
+  },
+  {
+    "index": 269,
+    "metadata": 0,
+    "text": "Liga Serbiei"
+  },
+  {
+    "index": 270,
+    "metadata": 0,
+    "text": "Cupa Serbiei"
+  },
+  {
+    "index": 271,
+    "metadata": 0,
+    "text": "Liga poloneza"
+  },
+  {
+    "index": 272,
+    "metadata": 0,
+    "text": "Cupa Poloniei"
+  },
+  {
+    "index": 273,
+    "metadata": 0,
+    "text": "Liga indoneziana"
+  },
+  {
+    "index": 274,
+    "metadata": 0,
+    "text": "Cupa Indoneziei"
+  },
+  {
+    "index": 275,
+    "metadata": 0,
+    "text": "Liga SUA"
+  },
+  {
+    "index": 276,
+    "metadata": 0,
+    "text": "Cupa SUA"
+  },
+  {
+    "index": 277,
+    "metadata": 0,
+    "text": "Liga bulgara"
+  },
+  {
+    "index": 278,
+    "metadata": 0,
+    "text": "Cupa Bulgariei"
+  },
+  {
+    "index": 279,
+    "metadata": 0,
+    "text": "Liga"
+  },
+  {
+    "index": 280,
+    "metadata": 0,
+    "text": "Cupa"
+  },
+  {
+    "index": 281,
+    "metadata": 0,
+    "text": "Retineti asezarea in teren"
+  },
+  {
+    "index": 282,
+    "metadata": 0,
+    "text": "Selectare automata a asezarii in teren"
+  },
+  {
+    "index": 283,
+    "metadata": 0,
+    "text": "Atitudinea echipei"
+  },
+  {
+    "index": 284,
+    "metadata": 0,
+    "text": "Atitudinea in aparare"
+  },
+  {
+    "index": 285,
+    "metadata": 0,
+    "text": "Atituidinea in atac"
+  },
+  {
+    "index": 286,
+    "metadata": 0,
+    "text": "Setati piesele"
+  },
+  {
+    "index": 287,
+    "metadata": 0,
+    "text": "Capitanul echipei"
+  },
+  {
+    "index": 288,
+    "metadata": 0,
+    "text": "Selectare automata a asezarii in teren"
+  },
+  {
+    "index": 289,
+    "metadata": 0,
+    "text": "Atitudinea echipei"
+  },
+  {
+    "index": 290,
+    "metadata": 0,
+    "text": "Echilibrata"
+  },
+  {
+    "index": 291,
+    "metadata": 0,
+    "text": "Toti oamenii in atac"
+  },
+  {
+    "index": 292,
+    "metadata": 0,
+    "text": "Defensiva"
+  },
+  {
+    "index": 293,
+    "metadata": 0,
+    "text": "Temperata"
+  },
+  {
+    "index": 294,
+    "metadata": 0,
+    "text": "Presiune mare"
+  },
+  {
+    "index": 295,
+    "metadata": 0,
+    "text": "Super presiune"
+  },
+  {
+    "index": 296,
+    "metadata": 0,
+    "text": "Joc de Mijloc"
+  },
+  {
+    "index": 297,
+    "metadata": 0,
+    "text": "Joc pe Aripi"
+  },
+  {
+    "index": 298,
+    "metadata": 0,
+    "text": "<<Inapoi"
+  },
+  {
+    "index": 299,
+    "metadata": 0,
+    "text": "Incepeti meciul>>"
+  },
+  {
+    "index": 300,
+    "metadata": 0,
+    "text": "joaca pe postul de"
+  },
+  {
+    "index": 301,
+    "metadata": 0,
+    "text": "Selectati cel putin 11 jucatori pentru a incepe meciul"
+  },
+  {
+    "index": 302,
+    "metadata": 0,
+    "text": "Selectati o echipa:"
+  },
+  {
+    "index": 303,
+    "metadata": 0,
+    "text": "Istoric"
+  },
+  {
+    "index": 304,
+    "metadata": 0,
+    "text": "Meciuri programate"
+  },
+  {
+    "index": 305,
+    "metadata": 0,
+    "text": "Transferuri"
+  },
+  {
+    "index": 306,
+    "metadata": 0,
+    "text": "Trofee"
+  },
+  {
+    "index": 307,
+    "metadata": 0,
+    "text": "Banii dumneavoastra:"
+  },
+  {
+    "index": 308,
+    "metadata": 0,
+    "text": "Limita echipei dumneavoastra este de 28 de jucatori"
+  },
+  {
+    "index": 309,
+    "metadata": 0,
+    "text": "nu vrea sa se transfere la echipa dumneavoastra"
+  },
+  {
+    "index": 310,
+    "metadata": 0,
+    "text": "transfer efectuat cu succes"
+  },
+  {
+    "index": 311,
+    "metadata": 0,
+    "text": "Listat pentru transfer"
+  },
+  {
+    "index": 312,
+    "metadata": 0,
+    "text": "Disponibil pentru imprumut"
+  },
+  {
+    "index": 313,
+    "metadata": 0,
+    "text": "LT"
+  },
+  {
+    "index": 314,
+    "metadata": 0,
+    "text": "DI"
+  },
+  {
+    "index": 315,
+    "metadata": 0,
+    "text": "Imprumutati jucatorul"
+  },
+  {
+    "index": 316,
+    "metadata": 0,
+    "text": "Puteti avea doar 2 jucatori imprumutati in echipa dumneavoastra"
+  },
+  {
+    "index": 317,
+    "metadata": 0,
+    "text": "Cumparati jucatorul"
+  },
+  {
+    "index": 318,
+    "metadata": 0,
+    "text": "Faceti o oferta"
+  },
+  {
+    "index": 319,
+    "metadata": 0,
+    "text": "Istoric complet"
+  },
+  {
+    "index": 320,
+    "metadata": 0,
+    "text": "An"
+  },
+  {
+    "index": 321,
+    "metadata": 0,
+    "text": "Echipa"
+  },
+  {
+    "index": 322,
+    "metadata": 0,
+    "text": "Total cariera"
+  },
+  {
+    "index": 323,
+    "metadata": 0,
+    "text": "Echipe regionale"
+  },
+  {
+    "index": 324,
+    "metadata": 0,
+    "text": "International"
+  },
+  {
+    "index": 325,
+    "metadata": 0,
+    "text": "Lista meciuri"
+  },
+  {
+    "index": 326,
+    "metadata": 0,
+    "text": "Campionatul Mondial"
+  },
+  {
+    "index": 327,
+    "metadata": 0,
+    "text": "Cupa Americii"
+  },
+  {
+    "index": 328,
+    "metadata": 0,
+    "text": "Campionatul European"
+  },
+  {
+    "index": 329,
+    "metadata": 0,
+    "text": "Afisati:"
+  },
+  {
+    "index": 330,
+    "metadata": 0,
+    "text": "Toate meciurile"
+  },
+  {
+    "index": 331,
+    "metadata": 0,
+    "text": "dum"
+  },
+  {
+    "index": 332,
+    "metadata": 0,
+    "text": "lun"
+  },
+  {
+    "index": 333,
+    "metadata": 0,
+    "text": "mar"
+  },
+  {
+    "index": 334,
+    "metadata": 0,
+    "text": "mie"
+  },
+  {
+    "index": 335,
+    "metadata": 0,
+    "text": "joi"
+  },
+  {
+    "index": 336,
+    "metadata": 0,
+    "text": "vin"
+  },
+  {
+    "index": 337,
+    "metadata": 0,
+    "text": "sam"
+  },
+  {
+    "index": 338,
+    "metadata": 0,
+    "text": "Jucator"
+  },
+  {
+    "index": 339,
+    "metadata": 0,
+    "text": "Goluri"
+  },
+  {
+    "index": 340,
+    "metadata": 0,
+    "text": "Meciuri"
+  },
+  {
+    "index": 341,
+    "metadata": 0,
+    "text": "Liga"
+  },
+  {
+    "index": 342,
+    "metadata": 0,
+    "text": "Cupa"
+  },
+  {
+    "index": 343,
+    "metadata": 0,
+    "text": "Cel mai bun din toate timpurile"
+  },
+  {
+    "index": 344,
+    "metadata": 0,
+    "text": "Dati clic aici pentru a vedea lista primilor 100 de jucatori"
+  },
+  {
+    "index": 345,
+    "metadata": 0,
+    "text": "Incarcati"
+  },
+  {
+    "index": 346,
+    "metadata": 0,
+    "text": "Anulati"
+  },
+  {
+    "index": 347,
+    "metadata": 0,
+    "text": "Stergeti"
+  },
+  {
+    "index": 348,
+    "metadata": 0,
+    "text": "Antrenor:"
+  },
+  {
+    "index": 349,
+    "metadata": 0,
+    "text": "Meciul urmator:"
+  },
+  {
+    "index": 350,
+    "metadata": 0,
+    "text": "Venituri"
+  },
+  {
+    "index": 351,
+    "metadata": 0,
+    "text": "Cheltuieli"
+  },
+  {
+    "index": 352,
+    "metadata": 0,
+    "text": "Jucatori vanduti:"
+  },
+  {
+    "index": 353,
+    "metadata": 0,
+    "text": "Bilete:"
+  },
+  {
+    "index": 354,
+    "metadata": 0,
+    "text": "Premii:"
+  },
+  {
+    "index": 355,
+    "metadata": 0,
+    "text": "Imprumut bancar:"
+  },
+  {
+    "index": 356,
+    "metadata": 0,
+    "text": "Sponsorizari:"
+  },
+  {
+    "index": 357,
+    "metadata": 0,
+    "text": "Sub-total:"
+  },
+  {
+    "index": 358,
+    "metadata": 0,
+    "text": "Jucatori cumparati:"
+  },
+  {
+    "index": 359,
+    "metadata": 0,
+    "text": "Stadion:"
+  },
+  {
+    "index": 360,
+    "metadata": 0,
+    "text": "Salarii:"
+  },
+  {
+    "index": 361,
+    "metadata": 0,
+    "text": "Dobanda creditului:"
+  },
+  {
+    "index": 362,
+    "metadata": 0,
+    "text": "Taxe transferuri:"
+  },
+  {
+    "index": 363,
+    "metadata": 0,
+    "text": "Diverse:"
+  },
+  {
+    "index": 364,
+    "metadata": 0,
+    "text": "Bilant:"
+  },
+  {
+    "index": 365,
+    "metadata": 0,
+    "text": "Dobanda saptamanala:"
+  },
+  {
+    "index": 366,
+    "metadata": 0,
+    "text": "Suma salariilor platite saptamanal:"
+  },
+  {
+    "index": 367,
+    "metadata": 0,
+    "text": "Lichiditati disponibile:"
+  },
+  {
+    "index": 368,
+    "metadata": 0,
+    "text": "Jucator scos la vanzare prin licitatie"
+  },
+  {
+    "index": 369,
+    "metadata": 0,
+    "text": "Pretul de inceput:"
+  },
+  {
+    "index": 370,
+    "metadata": 0,
+    "text": "vinde jucatorul"
+  },
+  {
+    "index": 371,
+    "metadata": 0,
+    "text": "Licitatia  dumneavoastra trebuie sa fie de ordinul sutelor de mii, ex: 300=300.000"
+  },
+  {
+    "index": 372,
+    "metadata": 0,
+    "text": "Nu exista cumparatori"
+  },
+  {
+    "index": 373,
+    "metadata": 0,
+    "text": "Vandut catre"
+  },
+  {
+    "index": 374,
+    "metadata": 0,
+    "text": "Licitatia  dumneavoastra:"
+  },
+  {
+    "index": 375,
+    "metadata": 0,
+    "text": "Licitati"
+  },
+  {
+    "index": 376,
+    "metadata": 0,
+    "text": "suma este mai mara decat lichidatile  dumneavoastra disponibile"
+  },
+  {
+    "index": 377,
+    "metadata": 0,
+    "text": "Nu aveti suficienti bani"
+  },
+  {
+    "index": 378,
+    "metadata": 0,
+    "text": "Contract"
+  },
+  {
+    "index": 379,
+    "metadata": 0,
+    "text": "Salariu nou:"
+  },
+  {
+    "index": 380,
+    "metadata": 0,
+    "text": "Durata contractului:"
+  },
+  {
+    "index": 381,
+    "metadata": 0,
+    "text": "6 luni"
+  },
+  {
+    "index": 382,
+    "metadata": 0,
+    "text": "1 an"
+  },
+  {
+    "index": 383,
+    "metadata": 0,
+    "text": "2 ani"
+  },
+  {
+    "index": 384,
+    "metadata": 0,
+    "text": "Oferiti"
+  },
+  {
+    "index": 385,
+    "metadata": 0,
+    "text": "Anulati"
+  },
+  {
+    "index": 386,
+    "metadata": 0,
+    "text": "Oferta  dumneavoastra a fost refuzata, vanzatorul vrea:"
+  },
+  {
+    "index": 387,
+    "metadata": 0,
+    "text": "Acceptati"
+  },
+  {
+    "index": 388,
+    "metadata": 0,
+    "text": "Refuzati"
+  },
+  {
+    "index": 389,
+    "metadata": 0,
+    "text": "Acest jucator are o limita salariala de:"
+  },
+  {
+    "index": 390,
+    "metadata": 0,
+    "text": "Campioni"
+  },
+  {
+    "index": 391,
+    "metadata": 0,
+    "text": "Continuati>>"
+  },
+  {
+    "index": 392,
+    "metadata": 0,
+    "text": "goluri"
+  },
+  {
+    "index": 393,
+    "metadata": 0,
+    "text": "Cautare"
+  },
+  {
+    "index": 394,
+    "metadata": 0,
+    "text": "Pozitie:"
+  },
+  {
+    "index": 395,
+    "metadata": 0,
+    "text": "Nationalitate:"
+  },
+  {
+    "index": 396,
+    "metadata": 0,
+    "text": "Afisati numai jucatorii listati pentru transfer"
+  },
+  {
+    "index": 397,
+    "metadata": 0,
+    "text": "Afisati numai jucatorii care joaca la"
+  },
+  {
+    "index": 398,
+    "metadata": 0,
+    "text": "Afisati numai starurile"
+  },
+  {
+    "index": 399,
+    "metadata": 0,
+    "text": "Afisati numai jucatorii disponibili pentru imprumut"
+  },
+  {
+    "index": 400,
+    "metadata": 0,
+    "text": "Orice valoare"
+  },
+  {
+    "index": 401,
+    "metadata": 0,
+    "text": "jucatori gasiti"
+  },
+  {
+    "index": 402,
+    "metadata": 0,
+    "text": "Deja imprumutat:"
+  },
+  {
+    "index": 403,
+    "metadata": 0,
+    "text": "Cota per joc:"
+  },
+  {
+    "index": 404,
+    "metadata": 0,
+    "text": "Luati mai mult de 500.000$"
+  },
+  {
+    "index": 405,
+    "metadata": 0,
+    "text": "Achitati 500.000$"
+  },
+  {
+    "index": 406,
+    "metadata": 0,
+    "text": "An"
+  },
+  {
+    "index": 407,
+    "metadata": 0,
+    "text": "Campion"
+  },
+  {
+    "index": 408,
+    "metadata": 0,
+    "text": "Vice-campion"
+  },
+  {
+    "index": 409,
+    "metadata": 0,
+    "text": "Cel mai bun marcator"
+  },
+  {
+    "index": 410,
+    "metadata": 0,
+    "text": "Antrenor campion"
+  },
+  {
+    "index": 411,
+    "metadata": 0,
+    "text": "Invitatie pentru antrenorat"
+  },
+  {
+    "index": 412,
+    "metadata": 0,
+    "text": "Echipa de mai jos vrea sa va angajeze, vreti sa manageriati aceasta echipa?"
+  },
+  {
+    "index": 413,
+    "metadata": 0,
+    "text": "Acceptati"
+  },
+  {
+    "index": 414,
+    "metadata": 0,
+    "text": "Refuzati tot"
+  },
+  {
+    "index": 415,
+    "metadata": 0,
+    "text": "va concediaza pentru ca:"
+  },
+  {
+    "index": 416,
+    "metadata": 0,
+    "text": "suporterii faceau presiuni asupra conducerii din cauza rezulatelor  dumneavoastra proaste."
+  },
+  {
+    "index": 417,
+    "metadata": 0,
+    "text": "ati produs necazuri financiare clubului nostru."
+  },
+  {
+    "index": 418,
+    "metadata": 0,
+    "text": "am avut foarte multe rezultate nefavorabile."
+  },
+  {
+    "index": 419,
+    "metadata": 0,
+    "text": "am retrogradat din divizia a-4-a..."
+  },
+  {
+    "index": 420,
+    "metadata": 0,
+    "text": "asa ati vrut  dumneavoastra. Va uram succes la echipa urmatoare."
+  },
+  {
+    "index": 421,
+    "metadata": 0,
+    "text": "Noul antrenor care va va inlocui este:"
+  },
+  {
+    "index": 422,
+    "metadata": 0,
+    "text": "Acum asteptati un club nou..."
+  },
+  {
+    "index": 423,
+    "metadata": 0,
+    "text": "Concediat!"
+  },
+  {
+    "index": 424,
+    "metadata": 0,
+    "text": "Setarile jocului"
+  },
+  {
+    "index": 425,
+    "metadata": 0,
+    "text": "Afisati ligile"
+  },
+  {
+    "index": 426,
+    "metadata": 0,
+    "text": "Salvare automata:"
+  },
+  {
+    "index": 427,
+    "metadata": 0,
+    "text": "Viteza jocului:"
+  },
+  {
+    "index": 428,
+    "metadata": 0,
+    "text": "Viteza fara jucatori umani:"
+  },
+  {
+    "index": 429,
+    "metadata": 0,
+    "text": "Afisati deciziile de departajare la penaltiuri v/i umane: "
+  },
+  {
+    "index": 430,
+    "metadata": 0,
+    "text": "Afisati transferurile de antrenori:"
+  },
+  {
+    "index": 431,
+    "metadata": 0,
+    "text": "Deschideti statistica meciului la pauza:"
+  },
+  {
+    "index": 432,
+    "metadata": 0,
+    "text": "Primiti avertizari legate de expirarea contractelor"
+  },
+  {
+    "index": 433,
+    "metadata": 0,
+    "text": "Reinoiti automat contractele expirate"
+  },
+  {
+    "index": 434,
+    "metadata": 0,
+    "text": "Culori si sunete"
+  },
+  {
+    "index": 435,
+    "metadata": 0,
+    "text": "Permiteti actiuni sonore"
+  },
+  {
+    "index": 436,
+    "metadata": 0,
+    "text": "Evidentiati evenimentele echpei care au loc pe teren propiu"
+  },
+  {
+    "index": 437,
+    "metadata": 0,
+    "text": "Folositi culorile in lista cu jucatori"
+  },
+  {
+    "index": 438,
+    "metadata": 0,
+    "text": "Dezactivati optiunea de salvare automata"
+  },
+  {
+    "index": 439,
+    "metadata": 0,
+    "text": "La fiecare 3 zile"
+  },
+  {
+    "index": 440,
+    "metadata": 0,
+    "text": "Dupa fiecare meci"
+  },
+  {
+    "index": 441,
+    "metadata": 0,
+    "text": "Inceputul sezonului"
+  },
+  {
+    "index": 442,
+    "metadata": 0,
+    "text": "Incet"
+  },
+  {
+    "index": 443,
+    "metadata": 0,
+    "text": "Normal"
+  },
+  {
+    "index": 444,
+    "metadata": 0,
+    "text": "Rapid"
+  },
+  {
+    "index": 445,
+    "metadata": 0,
+    "text": "Foarte rapid"
+  },
+  {
+    "index": 446,
+    "metadata": 0,
+    "text": "Super rapid"
+  },
+  {
+    "index": 447,
+    "metadata": 0,
+    "text": "Ultra rapid"
+  },
+  {
+    "index": 448,
+    "metadata": 0,
+    "text": "Extrem de rapid"
+  },
+  {
+    "index": 449,
+    "metadata": 0,
+    "text": "Nu"
+  },
+  {
+    "index": 450,
+    "metadata": 0,
+    "text": "Da"
+  },
+  {
+    "index": 451,
+    "metadata": 0,
+    "text": "Numai expirate"
+  },
+  {
+    "index": 452,
+    "metadata": 0,
+    "text": "Numai cele care vor expira in curand"
+  },
+  {
+    "index": 453,
+    "metadata": 0,
+    "text": "Afisati minutele in stil european (ex: minutul 60 in loc de minutul 15 repriza a doua)"
+  },
+  {
+    "index": 454,
+    "metadata": 0,
+    "text": "Afisati meciurile din ligile fara jucatori umani:"
+  },
+  {
+    "index": 455,
+    "metadata": 0,
+    "text": "Ligile neselectate se desfasoara de asemenea dar vor fi afisate numai rezultatele si statisticile."
+  },
+  {
+    "index": 456,
+    "metadata": 0,
+    "text": "Culorile listei cu jucatori"
+  },
+  {
+    "index": 457,
+    "metadata": 0,
+    "text": "Reveniti la setarile initiale"
+  },
+  {
+    "index": 458,
+    "metadata": 0,
+    "text": "Penalti"
+  },
+  {
+    "index": 459,
+    "metadata": 0,
+    "text": "Alegeti executantul"
+  },
+  {
+    "index": 460,
+    "metadata": 0,
+    "text": "Executa"
+  },
+  {
+    "index": 461,
+    "metadata": 0,
+    "text": "se pregateste sa execute..."
+  },
+  {
+    "index": 462,
+    "metadata": 0,
+    "text": "Loveste mingea si..."
+  },
+  {
+    "index": 463,
+    "metadata": 0,
+    "text": "A fost o lovitura frumoasa! Gol!!!"
+  },
+  {
+    "index": 464,
+    "metadata": 0,
+    "text": "A intrat in plasa, gol!!!"
+  },
+  {
+    "index": 465,
+    "metadata": 0,
+    "text": "Inscrie un gol superb!!!"
+  },
+  {
+    "index": 466,
+    "metadata": 0,
+    "text": "Apara portarul!"
+  },
+  {
+    "index": 467,
+    "metadata": 0,
+    "text": "Loveste bara!!!"
+  },
+  {
+    "index": 468,
+    "metadata": 0,
+    "text": "Loveste bara transversala!!!"
+  },
+  {
+    "index": 469,
+    "metadata": 0,
+    "text": "Puncte"
+  },
+  {
+    "index": 470,
+    "metadata": 0,
+    "text": "Meciuri jucate"
+  },
+  {
+    "index": 471,
+    "metadata": 0,
+    "text": "Victorii"
+  },
+  {
+    "index": 472,
+    "metadata": 0,
+    "text": "Remize"
+  },
+  {
+    "index": 473,
+    "metadata": 0,
+    "text": "Infrangeri"
+  },
+  {
+    "index": 474,
+    "metadata": 0,
+    "text": "Goluri marcate"
+  },
+  {
+    "index": 475,
+    "metadata": 0,
+    "text": "Goluri primite"
+  },
+  {
+    "index": 476,
+    "metadata": 0,
+    "text": "Golaveraj"
+  },
+  {
+    "index": 477,
+    "metadata": 0,
+    "text": "Grupa"
+  },
+  {
+    "index": 478,
+    "metadata": 0,
+    "text": "Inca nu a fost programat"
+  },
+  {
+    "index": 479,
+    "metadata": 0,
+    "text": "Departajare la penaltiuri"
+  },
+  {
+    "index": 480,
+    "metadata": 0,
+    "text": "Departajare la penaltiuri - Alegeti executantii"
+  },
+  {
+    "index": 481,
+    "metadata": 0,
+    "text": "Jucatori disponibili"
+  },
+  {
+    "index": 482,
+    "metadata": 0,
+    "text": "Executanti selecati:"
+  },
+  {
+    "index": 483,
+    "metadata": 0,
+    "text": "Selectare automata"
+  },
+  {
+    "index": 484,
+    "metadata": 0,
+    "text": "Continuati>>"
+  },
+  {
+    "index": 485,
+    "metadata": 0,
+    "text": "Gol"
+  },
+  {
+    "index": 486,
+    "metadata": 0,
+    "text": "Ratare"
+  },
+  {
+    "index": 487,
+    "metadata": 0,
+    "text": "Victorie"
+  },
+  {
+    "index": 488,
+    "metadata": 0,
+    "text": "Introduceti mai josi numele fisierului in care va fi salvat jocul:"
+  },
+  {
+    "index": 489,
+    "metadata": 0,
+    "text": "Salvati"
+  },
+  {
+    "index": 490,
+    "metadata": 0,
+    "text": "Numele fisierului exista deja, vreti sa-l inlocuiti?"
+  },
+  {
+    "index": 491,
+    "metadata": 0,
+    "text": "Da"
+  },
+  {
+    "index": 492,
+    "metadata": 0,
+    "text": "Nu"
+  },
+  {
+    "index": 493,
+    "metadata": 0,
+    "text": "Transferati jucatorul"
+  },
+  {
+    "index": 494,
+    "metadata": 0,
+    "text": "Transfer prin licitatie"
+  },
+  {
+    "index": 495,
+    "metadata": 0,
+    "text": "Valoarea initiala:"
+  },
+  {
+    "index": 496,
+    "metadata": 0,
+    "text": "(in sute de mii $)"
+  },
+  {
+    "index": 497,
+    "metadata": 0,
+    "text": "Introduceti pe lista de transferuri"
+  },
+  {
+    "index": 498,
+    "metadata": 0,
+    "text": "Incepeti licitatia"
+  },
+  {
+    "index": 499,
+    "metadata": 0,
+    "text": "Anulati"
+  },
+  {
+    "index": 500,
+    "metadata": 0,
+    "text": "Lista de transferuri"
+  },
+  {
+    "index": 501,
+    "metadata": 0,
+    "text": "(Trebuie sa platiti o taxa de transfer in functie de perioada de expirare a contractului jucatorului)"
+  },
+  {
+    "index": 502,
+    "metadata": 0,
+    "text": "Taxa de transfer estimata pentru acest jucator:"
+  },
+  {
+    "index": 503,
+    "metadata": 0,
+    "text": "Valoarea fixa:"
+  },
+  {
+    "index": 504,
+    "metadata": 0,
+    "text": "prima repriza"
+  },
+  {
+    "index": 505,
+    "metadata": 0,
+    "text": "repriza a doua"
+  },
+  {
+    "index": 506,
+    "metadata": 0,
+    "text": "Pauza"
+  },
+  {
+    "index": 507,
+    "metadata": 0,
+    "text": "Prelungiri"
+  },
+  {
+    "index": 508,
+    "metadata": 0,
+    "text": "Finalul meciului"
+  },
+  {
+    "index": 509,
+    "metadata": 0,
+    "text": "Finala mica"
+  },
+  {
+    "index": 510,
+    "metadata": 0,
+    "text": "(autogol)"
+  },
+  {
+    "index": 511,
+    "metadata": 0,
+    "text": "(penalti)"
+  },
+  {
+    "index": 512,
+    "metadata": 0,
+    "text": "(lovitura libera)"
+  },
+  {
+    "index": 513,
+    "metadata": 0,
+    "text": "(penalti ratat)"
+  },
+  {
+    "index": 514,
+    "metadata": 0,
+    "text": "Antrenor"
+  },
+  {
+    "index": 515,
+    "metadata": 0,
+    "text": "Echipa actuala"
+  },
+  {
+    "index": 516,
+    "metadata": 0,
+    "text": "Puncte"
+  },
+  {
+    "index": 517,
+    "metadata": 0,
+    "text": "Pozitia in clasamentul mondial"
+  },
+  {
+    "index": 518,
+    "metadata": 0,
+    "text": "Distinctii"
+  },
+  {
+    "index": 519,
+    "metadata": 0,
+    "text": "Jucator retras"
+  },
+  {
+    "index": 520,
+    "metadata": 0,
+    "text": "Jucatorii retrasi pot fi inlocuiti de jucatori promovati de la echipa dumneavoastra de tineret."
+  },
+  {
+    "index": 521,
+    "metadata": 0,
+    "text": "Cel mai tanar jucator promovat va avea o abilitate intre 1 si 20. Varsta lor va fi intre 17 si 20."
+  },
+  {
+    "index": 522,
+    "metadata": 0,
+    "text": "Puteti introduce un nume nou pentru noul jucator sau puteti sa-i dati acelasi  nume ca al jucatorului retras."
+  },
+  {
+    "index": 523,
+    "metadata": 0,
+    "text": "Numele jucatorului nou"
+  },
+  {
+    "index": 524,
+    "metadata": 0,
+    "text": "Pozitia"
+  },
+  {
+    "index": 525,
+    "metadata": 0,
+    "text": "Retragere"
+  },
+  {
+    "index": 526,
+    "metadata": 0,
+    "text": "Anulati"
+  },
+  {
+    "index": 527,
+    "metadata": 0,
+    "text": "Valoarea de licitatie a jucatorului"
+  },
+  {
+    "index": 528,
+    "metadata": 0,
+    "text": "Vrea jucatorul"
+  },
+  {
+    "index": 529,
+    "metadata": 0,
+    "text": "Acceptati oferta?"
+  },
+  {
+    "index": 530,
+    "metadata": 0,
+    "text": "Antrenori umani"
+  },
+  {
+    "index": 531,
+    "metadata": 0,
+    "text": "Stergeti"
+  },
+  {
+    "index": 532,
+    "metadata": 0,
+    "text": "Adaugati nou"
+  },
+  {
+    "index": 533,
+    "metadata": 0,
+    "text": "Pentru a inlatura un antrenor trebuie mai intai sa-l concediati"
+  },
+  {
+    "index": 534,
+    "metadata": 0,
+    "text": "Numele noului antrenor"
+  },
+  {
+    "index": 535,
+    "metadata": 0,
+    "text": "Jucator accidentat"
+  },
+  {
+    "index": 536,
+    "metadata": 0,
+    "text": "Selectati un jucator care sa-l inlocuiasca"
+  },
+  {
+    "index": 537,
+    "metadata": 0,
+    "text": "Penalti"
+  },
+  {
+    "index": 538,
+    "metadata": 0,
+    "text": "Istoricul sezoanelor"
+  },
+  {
+    "index": 539,
+    "metadata": 0,
+    "text": "Turneu"
+  },
+  {
+    "index": 540,
+    "metadata": 0,
+    "text": "Pozitie"
+  },
+  {
+    "index": 541,
+    "metadata": 0,
+    "text": "Antrenori"
+  },
+  {
+    "index": 542,
+    "metadata": 0,
+    "text": "locul 3"
+  },
+  {
+    "index": 543,
+    "metadata": 0,
+    "text": "locul 4"
+  },
+  {
+    "index": 544,
+    "metadata": 0,
+    "text": "Antrenor concediat"
+  },
+  {
+    "index": 545,
+    "metadata": 0,
+    "text": "Schimbare antrenori"
+  },
+  {
+    "index": 546,
+    "metadata": 0,
+    "text": "concediat de"
+  },
+  {
+    "index": 547,
+    "metadata": 0,
+    "text": "Antrenor nou:"
+  },
+  {
+    "index": 548,
+    "metadata": 0,
+    "text": "merge la"
+  },
+  {
+    "index": 549,
+    "metadata": 0,
+    "text": "Ultimele transferuri"
+  },
+  {
+    "index": 550,
+    "metadata": 0,
+    "text": "Jucatori"
+  },
+  {
+    "index": 551,
+    "metadata": 0,
+    "text": "De la"
+  },
+  {
+    "index": 552,
+    "metadata": 0,
+    "text": "La"
+  },
+  {
+    "index": 553,
+    "metadata": 0,
+    "text": "Jucatori"
+  },
+  {
+    "index": 554,
+    "metadata": 0,
+    "text": "Antrenori"
+  },
+  {
+    "index": 555,
+    "metadata": 0,
+    "text": "Toti jucatorii"
+  },
+  {
+    "index": 556,
+    "metadata": 0,
+    "text": "Faceti o oferta"
+  },
+  {
+    "index": 557,
+    "metadata": 0,
+    "text": "Valoarea jucatorului:"
+  },
+  {
+    "index": 558,
+    "metadata": 0,
+    "text": "Oferta dumneavoastra:"
+  },
+  {
+    "index": 559,
+    "metadata": 0,
+    "text": "Oferiti"
+  },
+  {
+    "index": 560,
+    "metadata": 0,
+    "text": "nu vrea sa joace in echipa dumneavoastra"
+  },
+  {
+    "index": 561,
+    "metadata": 0,
+    "text": "Oferta dumneavoastra nu a fost acceptata"
+  },
+  {
+    "index": 562,
+    "metadata": 0,
+    "text": "Pentru a juca pentru clubul dumneavoastra"
+  },
+  {
+    "index": 563,
+    "metadata": 0,
+    "text": "vrea o marire de salariu."
+  },
+  {
+    "index": 564,
+    "metadata": 0,
+    "text": "Acceptati"
+  },
+  {
+    "index": 565,
+    "metadata": 0,
+    "text": "Refuzati"
+  },
+  {
+    "index": 566,
+    "metadata": 0,
+    "text": "Casuta cu e-mail-uri"
+  },
+  {
+    "index": 567,
+    "metadata": 0,
+    "text": "Doriti sa amendati jucatorul?"
+  },
+  {
+    "index": 568,
+    "metadata": 0,
+    "text": "Management"
+  },
+  {
+    "index": 569,
+    "metadata": 0,
+    "text": "Suporteri"
+  },
+  {
+    "index": 570,
+    "metadata": 0,
+    "text": "Jucator"
+  },
+  {
+    "index": 571,
+    "metadata": 0,
+    "text": "Presa"
+  },
+  {
+    "index": 572,
+    "metadata": 0,
+    "text": "Centru medical"
+  },
+  {
+    "index": 573,
+    "metadata": 0,
+    "text": "Bine ati venit la"
+  },
+  {
+    "index": 574,
+    "metadata": 0,
+    "text": "trimis"
+  },
+  {
+    "index": 575,
+    "metadata": 0,
+    "text": "Nu-mi place "
+  },
+  {
+    "index": 576,
+    "metadata": 0,
+    "text": "accidentat"
+  },
+  {
+    "index": 577,
+    "metadata": 0,
+    "text": "Nu vom permite asa ceva"
+  },
+  {
+    "index": 578,
+    "metadata": 0,
+    "text": "Nu vom permite asa ceva"
+  },
+  {
+    "index": 579,
+    "metadata": 0,
+    "text": "merge la"
+  },
+  {
+    "index": 580,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 581,
+    "metadata": 0,
+    "text": "Multumesc"
+  },
+  {
+    "index": 582,
+    "metadata": 0,
+    "text": "Plangere"
+  },
+  {
+    "index": 583,
+    "metadata": 0,
+    "text": "Contractul meu a expirat"
+  },
+  {
+    "index": 584,
+    "metadata": 0,
+    "text": "Cearta intre"
+  },
+  {
+    "index": 585,
+    "metadata": 0,
+    "text": "Lupta intre suporteri"
+  },
+  {
+    "index": 586,
+    "metadata": 0,
+    "text": "transfer catre"
+  },
+  {
+    "index": 587,
+    "metadata": 0,
+    "text": "Invitatie la echipa nationala"
+  },
+  {
+    "index": 588,
+    "metadata": 0,
+    "text": "Contractul expira in curand"
+  },
+  {
+    "index": 589,
+    "metadata": 0,
+    "text": "Contract expirat"
+  },
+  {
+    "index": 590,
+    "metadata": 0,
+    "text": "nu exista spatiu pentru jucator"
+  },
+  {
+    "index": 591,
+    "metadata": 0,
+    "text": "A primit o suspendare de 10 meciuri dupa ce a scuipat arbitrul in fata"
+  },
+  {
+    "index": 592,
+    "metadata": 0,
+    "text": "A primit o suspendare de 10 meciuri dupa ce a injurat arbitrul"
+  },
+  {
+    "index": 593,
+    "metadata": 0,
+    "text": "A primit o suspendare de 5 meciuri dupa ce a realizat o intrare extrem de periculoasa din spate asupra unui jucator advers"
+  },
+  {
+    "index": 594,
+    "metadata": 0,
+    "text": "A primit o suspendare de 5 meciuri dupa ce a insultat un jucator advers. Noi credem ca a fost o penalizare incorecta."
+  },
+  {
+    "index": 595,
+    "metadata": 0,
+    "text": "A lovit un jucator advers si a primit o suspendare de 5 meciuri. Noi credem ca a fost o penalizare incorecta."
+  },
+  {
+    "index": 596,
+    "metadata": 0,
+    "text": "A facut o intrare prin alunecare din lateral si a primit o suspenadre de 3 meciuri"
+  },
+  {
+    "index": 597,
+    "metadata": 0,
+    "text": "A aruncat mingea in fata unui jucator advers si a primit o suspendare de 3 meciuri."
+  },
+  {
+    "index": 598,
+    "metadata": 0,
+    "text": "A faultat extrem de violent un adversar care scapa singur cu poarta goala. A primit o suspenadre de 3 meciuri"
+  },
+  {
+    "index": 599,
+    "metadata": 0,
+    "text": "Si-a lovit adversarul peste fata. A primit o suspendare de 3 meciuri"
+  },
+  {
+    "index": 600,
+    "metadata": 0,
+    "text": "Un fault extrem de violent. O suspendare de 2 meciuri"
+  },
+  {
+    "index": 601,
+    "metadata": 0,
+    "text": "A lovit adversarul. Jucatorul crede ca fotbalul este un sport de lupta? O suspendare de 2 meciuri"
+  },
+  {
+    "index": 602,
+    "metadata": 0,
+    "text": "A facut un fault dur. O suspendare de 2 meciuri"
+  },
+  {
+    "index": 603,
+    "metadata": 0,
+    "text": "Jucatorul a facut o contractura musculara. Va sta accidentat aproximativ o saptamana"
+  },
+  {
+    "index": 604,
+    "metadata": 0,
+    "text": "Jucatorul a suferit o luxatie la nivelul ligamentelor. Va sta accidentat cateva meciuri"
+  },
+  {
+    "index": 605,
+    "metadata": 0,
+    "text": "Are o accidentare la abdomen. Va sta accidentat aproximativ 2 saptamani"
+  },
+  {
+    "index": 606,
+    "metadata": 0,
+    "text": "Contuzie la nivelul coapsei. Va sta accidentat cateva meciuri."
+  },
+  {
+    "index": 607,
+    "metadata": 0,
+    "text": "Are o accidentare la nivelul abdomenului. Va sta accidentat aproximativ 2 saptamani."
+  },
+  {
+    "index": 608,
+    "metadata": 0,
+    "text": "Jucatorul are o contractura musculara. Va sta accidentat aproximativ o saptamana."
+  },
+  {
+    "index": 609,
+    "metadata": 0,
+    "text": "O luxatie usoara la glezna. Va sta accidentat aproximativ 2 saptamani."
+  },
+  {
+    "index": 610,
+    "metadata": 0,
+    "text": "Accidentare la tendonul genunchiului. Va sta accidentat mai multe meciuri."
+  },
+  {
+    "index": 611,
+    "metadata": 0,
+    "text": "Primeste ingrijiri din cauza unei afectiuni la calcai. Indisponibil cateva zile"
+  },
+  {
+    "index": 612,
+    "metadata": 0,
+    "text": "Unghie incarnata. Indisponibil cateva zile."
+  },
+  {
+    "index": 613,
+    "metadata": 0,
+    "text": "Entorsa la nivelul genunchiului. Indisponibil cateva zile."
+  },
+  {
+    "index": 614,
+    "metadata": 0,
+    "text": "Are un deget de la picior rupt. Va lipsi multe saptamani."
+  },
+  {
+    "index": 615,
+    "metadata": 0,
+    "text": "Are o incheietura rupta. Va lipsi multe saptamani."
+  },
+  {
+    "index": 616,
+    "metadata": 0,
+    "text": "Are o contractura musculara la nivelul coapsei. Va sta accidentat multe saptamani."
+  },
+  {
+    "index": 617,
+    "metadata": 0,
+    "text": "Taietura la nivelul piciorului. Va sta accidentat multe saptamani."
+  },
+  {
+    "index": 618,
+    "metadata": 0,
+    "text": "Are o luxatie grava la glezna. Va sta accidentat multe saptamani."
+  },
+  {
+    "index": 619,
+    "metadata": 0,
+    "text": "Jucatorul a suferit un atac de cord. Poate este momentul sa se retraga."
+  },
+  {
+    "index": 620,
+    "metadata": 0,
+    "text": "Si-a fracturat tibia. Va sta accidentat multe saptamani."
+  },
+  {
+    "index": 621,
+    "metadata": 0,
+    "text": "Accidentare la nivelul ligamentelor incrucisate. Va sta accidentat multe luni."
+  },
+  {
+    "index": 622,
+    "metadata": 0,
+    "text": "Picior rupt. Va sta accidentat multe luni."
+  },
+  {
+    "index": 623,
+    "metadata": 0,
+    "text": "Luxare a ligamentelor genunchiului. Sa fie acesta finalul carierei?"
+  },
+  {
+    "index": 624,
+    "metadata": 0,
+    "text": "Bine ati venit in clubul nostru. In zona aceasta veti primi unele notificari si atentionari."
+  },
+  {
+    "index": 625,
+    "metadata": 0,
+    "text": "Clubul nostru nu poate fi umilit in felul acesta! Nu vom accepta asa ceva. Fiti atenti!"
+  },
+  {
+    "index": 626,
+    "metadata": 0,
+    "text": "Nu puteti pierde cu un asemenea scor. Daca se va repeta vom cere conducerii sa va concedieze!"
+  },
+  {
+    "index": 627,
+    "metadata": 0,
+    "text": "Nu vom mai tolera pierderea jocurilor la o diferenta de scor atat de mare. Daca se va mai intampla vom cere conducerii sa va concedieze!"
+  },
+  {
+    "index": 628,
+    "metadata": 0,
+    "text": "Va multumesc pentru marirea de salariu. Imi voi arata recunostinta pe campul de joc!"
+  },
+  {
+    "index": 629,
+    "metadata": 0,
+    "text": "jucatorul care era de vanzare a fost vandut pentru"
+  },
+  {
+    "index": 630,
+    "metadata": 0,
+    "text": "Am auzit unele stiri despre convocarea dumneavoastra la echipa nationala. Asteptati o invitatie oficiala in urmatoarele saptamani"
+  },
+  {
+    "index": 631,
+    "metadata": 0,
+    "text": "Contractul jucatorului expira in aproximativ 3 saptamani"
+  },
+  {
+    "index": 632,
+    "metadata": 0,
+    "text": "Contractul jucatorului a expirat astazi"
+  },
+  {
+    "index": 633,
+    "metadata": 0,
+    "text": "S-a incheiat perioada de imprumut a jucatorului. Dar se va intoarce la clubul dumneavoastra numai cand veti avea mai putin de 28 de jucatori."
+  },
+  {
+    "index": 634,
+    "metadata": 0,
+    "text": "Saptamana aceasta s-a incheiat un transfer excelent. Jucatorul este deja la noua sa echipa."
+  },
+  {
+    "index": 635,
+    "metadata": 0,
+    "text": "Jucatorul a participat astazi la o conferinta de presa pentru a vorbi despre transferul sau extraordinar."
+  },
+  {
+    "index": 636,
+    "metadata": 0,
+    "text": "Esti nebun omule? Nu poti sa ma amendezi pe mine!"
+  },
+  {
+    "index": 637,
+    "metadata": 0,
+    "text": "Nu mi-a placut asta. Penalizarea nu a fost din vina mea."
+  },
+  {
+    "index": 638,
+    "metadata": 0,
+    "text": "Noul jucator achizitionat nu a fost primit bine. Poate sunt prea multe vedete in echipa dumneavoastra."
+  },
+  {
+    "index": 639,
+    "metadata": 0,
+    "text": "Jucatorul nu este incantat pentru ca nu joaca in nici un meci. Vrea sa plece la alta echipa."
+  },
+  {
+    "index": 640,
+    "metadata": 0,
+    "text": "Contractul meu a expirat. Va rog sa-mi reinoiti contractul sau sa ma mutati la alt club."
+  },
+  {
+    "index": 641,
+    "metadata": 0,
+    "text": "Acesti jucatori s-au batut pe terenul de joc."
+  },
+  {
+    "index": 642,
+    "metadata": 0,
+    "text": "Jucatorii si fanii nostri s-au certat astazi. Cred ca motivul acestei infruntari il constitue rezultatele proaste."
+  },
+  {
+    "index": 643,
+    "metadata": 0,
+    "text": "Sunt suprasolicitat. Am nevoie de o perioada de odihna."
+  },
+  {
+    "index": 644,
+    "metadata": 0,
+    "text": "(gol)"
+  },
+  {
+    "index": 645,
+    "metadata": 0,
+    "text": "(gol)"
+  },
+  {
+    "index": 646,
+    "metadata": 0,
+    "text": "(gol)"
+  },
+  {
+    "index": 647,
+    "metadata": 0,
+    "text": "(gol)"
+  },
+  {
+    "index": 648,
+    "metadata": 0,
+    "text": "(gol)"
+  },
+  {
+    "index": 649,
+    "metadata": 0,
+    "text": "Limita de 3 substituţii"
+  },
+  {
+    "index": 650,
+    "metadata": 0,
+    "text": "Programari"
+  },
+  {
+    "index": 651,
+    "metadata": 0,
+    "text": "multime"
+  },
+  {
+    "index": 652,
+    "metadata": 0,
+    "text": "venit"
+  },
+  {
+    "index": 653,
+    "metadata": 0,
+    "text": "Confirmati"
+  },
+  {
+    "index": 654,
+    "metadata": 0,
+    "text": "Vreti sa abandonati?"
+  },
+  {
+    "index": 655,
+    "metadata": 0,
+    "text": "Goluri"
+  },
+  {
+    "index": 656,
+    "metadata": 0,
+    "text": "Tabelul ligii"
+  },
+  {
+    "index": 657,
+    "metadata": 0,
+    "text": "posesia mingii"
+  },
+  {
+    "index": 658,
+    "metadata": 0,
+    "text": "suturi"
+  },
+  {
+    "index": 659,
+    "metadata": 0,
+    "text": "recuperari"
+  },
+  {
+    "index": 660,
+    "metadata": 0,
+    "text": "pase gresite"
+  },
+  {
+    "index": 661,
+    "metadata": 0,
+    "text": "faulturi comise"
+  },
+  {
+    "index": 662,
+    "metadata": 0,
+    "text": "Oferta de transfer"
+  },
+  {
+    "index": 663,
+    "metadata": 0,
+    "text": "Vrea jucatorul:"
+  },
+  {
+    "index": 664,
+    "metadata": 0,
+    "text": "Valoarea ofertei:"
+  },
+  {
+    "index": 665,
+    "metadata": 0,
+    "text": "Acceptati si transferati jucatorul?"
+  },
+  {
+    "index": 666,
+    "metadata": 0,
+    "text": "Clasarea dupa pozitia finala"
+  },
+  {
+    "index": 667,
+    "metadata": 0,
+    "text": "Clasarea dupa puncte"
+  },
+  {
+    "index": 668,
+    "metadata": 0,
+    "text": "Fotmat (Pct/GM/GP)"
+  },
+  {
+    "index": 669,
+    "metadata": 0,
+    "text": "Clasamentul Mondial"
+  },
+  {
+    "index": 670,
+    "metadata": 0,
+    "text": "Puncte"
+  },
+  {
+    "index": 671,
+    "metadata": 0,
+    "text": "pct"
+  },
+  {
+    "index": 672,
+    "metadata": 0,
+    "text": "Jucator decedat"
+  },
+  {
+    "index": 673,
+    "metadata": 0,
+    "text": "Jucatorul a decedat astazi in timpul antrenamentului. Probabil din cauza varstei sale inaintate."
+  },
+  {
+    "index": 674,
+    "metadata": 0,
+    "text": "Din acest motiv echipa dumneavoastra a pierdut 5 puncte in campionat"
+  },
+  {
+    "index": 675,
+    "metadata": 0,
+    "text": "Selectati o echipa nationala pe care sa o antrenati"
+  },
+  {
+    "index": 676,
+    "metadata": 0,
+    "text": "Unele echipe nationale va doresc ca antrenor, selectati de mai jos echipa nationala pe care vreti sa o antrenati:"
+  },
+  {
+    "index": 677,
+    "metadata": 0,
+    "text": "Cautati jucatori care sa fie convocati la nationala"
+  },
+  {
+    "index": 678,
+    "metadata": 0,
+    "text": "Cautati jucatorii si apoi dati clic pe \">>\" pentru a-i adauga. Puteti convoca 20 de jucatori de camp si 3 portari."
+  },
+  {
+    "index": 679,
+    "metadata": 0,
+    "text": "Meci intre castigatori"
+  },
+  {
+    "index": 680,
+    "metadata": 0,
+    "text": "Meciul invinsilor"
+  },
+  {
+    "index": 681,
+    "metadata": 0,
+    "text": "cel mai bun loc 3"
+  },
+  {
+    "index": 682,
+    "metadata": 0,
+    "text": "Tehnic:"
+  },
+  {
+    "index": 683,
+    "metadata": 0,
+    "text": "Disciplina:"
+  },
+  {
+    "index": 684,
+    "metadata": 0,
+    "text": "Program amicale"
+  },
+  {
+    "index": 685,
+    "metadata": 0,
+    "text": "Program amicale Pre-sezon"
+  },
+  {
+    "index": 686,
+    "metadata": 0,
+    "text": "Liga incepe la data de"
+  },
+  {
+    "index": 687,
+    "metadata": 0,
+    "text": "Date disponibile:"
+  },
+  {
+    "index": 688,
+    "metadata": 0,
+    "text": "Selectati adversarul:"
+  },
+  {
+    "index": 689,
+    "metadata": 0,
+    "text": "Locatia meciului:"
+  },
+  {
+    "index": 690,
+    "metadata": 0,
+    "text": "Acasa"
+  },
+  {
+    "index": 691,
+    "metadata": 0,
+    "text": "Deplasare"
+  },
+  {
+    "index": 692,
+    "metadata": 0,
+    "text": "Inregistrati amicalul"
+  },
+  {
+    "index": 693,
+    "metadata": 0,
+    "text": "are deja un meci amical la aceasta data"
+  },
+  {
+    "index": 694,
+    "metadata": 0,
+    "text": "meci amical refuzat"
+  },
+  {
+    "index": 695,
+    "metadata": 0,
+    "text": "nu aveti bani suficienti pentru a achita taxa pentru meciuri amicale"
+  },
+  {
+    "index": 696,
+    "metadata": 0,
+    "text": "Amical programat"
+  },
+  {
+    "index": 697,
+    "metadata": 0,
+    "text": "Amical confirmat"
+  },
+  {
+    "index": 698,
+    "metadata": 0,
+    "text": "vrea pentru amicalul sau:"
+  },
+  {
+    "index": 699,
+    "metadata": 0,
+    "text": "Trebuie sa platiti chiar acum pentru acest amical, confirmati amicalul?"
+  },
+  {
+    "index": 700,
+    "metadata": 0,
+    "text": "Pentru a confirma amicalul dintre aceste doua cluburi controlate de jucatori umani dati clic pe da"
+  },
+  {
+    "index": 701,
+    "metadata": 0,
+    "text": "Selectati numarul"
+  },
+  {
+    "index": 702,
+    "metadata": 0,
+    "text": "Nici un numar"
+  },
+  {
+    "index": 703,
+    "metadata": 0,
+    "text": "Vreti sa programati amicale inaintea sezonului?"
+  },
+  {
+    "index": 704,
+    "metadata": 0,
+    "text": "Oferta de imprumut"
+  },
+  {
+    "index": 705,
+    "metadata": 0,
+    "text": "Vreti sa imprumutati acest jucator?"
+  },
+  {
+    "index": 706,
+    "metadata": 0,
+    "text": "Galeria cu trofee este goala"
+  },
+  {
+    "index": 707,
+    "metadata": 0,
+    "text": "Culorile echipei"
+  },
+  {
+    "index": 708,
+    "metadata": 0,
+    "text": "Culoarea principala:"
+  },
+  {
+    "index": 709,
+    "metadata": 0,
+    "text": "Culoarea secundara:"
+  },
+  {
+    "index": 710,
+    "metadata": 0,
+    "text": "Continuati meciul"
+  },
+  {
+    "index": 711,
+    "metadata": 0,
+    "text": "Statistica meciului"
+  },
+  {
+    "index": 712,
+    "metadata": 0,
+    "text": "Prima mansa"
+  },
+  {
+    "index": 713,
+    "metadata": 0,
+    "text": "Statistica carierei"
+  },
+  {
+    "index": 714,
+    "metadata": 0,
+    "text": "Meciurile din sezonul actual"
+  },
+  {
+    "index": 715,
+    "metadata": 0,
+    "text": "Data"
+  },
+  {
+    "index": 716,
+    "metadata": 0,
+    "text": "Meci"
+  },
+  {
+    "index": 717,
+    "metadata": 0,
+    "text": "Apreciere"
+  },
+  {
+    "index": 718,
+    "metadata": 0,
+    "text": "Capacitatea actuala"
+  },
+  {
+    "index": 719,
+    "metadata": 0,
+    "text": "Terasa:"
+  },
+  {
+    "index": 720,
+    "metadata": 0,
+    "text": "Locuri neacoperite:"
+  },
+  {
+    "index": 721,
+    "metadata": 0,
+    "text": "Locuri acoperite:"
+  },
+  {
+    "index": 722,
+    "metadata": 0,
+    "text": "locuri VIP:"
+  },
+  {
+    "index": 723,
+    "metadata": 0,
+    "text": "Pretul biletelor"
+  },
+  {
+    "index": 724,
+    "metadata": 0,
+    "text": "Preturi recomandate pentru aceasta divizie:"
+  },
+  {
+    "index": 725,
+    "metadata": 0,
+    "text": "locuri"
+  },
+  {
+    "index": 726,
+    "metadata": 0,
+    "text": "Extindeti stadionul"
+  },
+  {
+    "index": 727,
+    "metadata": 0,
+    "text": "Extinderea actuala se va finaliza in"
+  },
+  {
+    "index": 728,
+    "metadata": 0,
+    "text": "Maximum"
+  },
+  {
+    "index": 729,
+    "metadata": 0,
+    "text": "Locuri noi:"
+  },
+  {
+    "index": 730,
+    "metadata": 0,
+    "text": "Cereti o estimare a pretului"
+  },
+  {
+    "index": 731,
+    "metadata": 0,
+    "text": "Incepeti extinderea"
+  },
+  {
+    "index": 732,
+    "metadata": 0,
+    "text": "Estimarea costurilor extinderii inclusiv executia proiectului"
+  },
+  {
+    "index": 733,
+    "metadata": 0,
+    "text": "Se asteapta ca proiectul sa fie gata in"
+  },
+  {
+    "index": 734,
+    "metadata": 0,
+    "text": "In prezent nu exista tehnologia necesara extinderii stadionului cu numarul de locuri dorite"
+  },
+  {
+    "index": 735,
+    "metadata": 0,
+    "text": "Nu aveti suficienti bani pentru a incepe extinderea stadionului"
+  },
+  {
+    "index": 736,
+    "metadata": 0,
+    "text": "Editorul echipei"
+  },
+  {
+    "index": 737,
+    "metadata": 0,
+    "text": "Se incarca echipele..."
+  },
+  {
+    "index": 738,
+    "metadata": 0,
+    "text": "Tatal echipe:"
+  },
+  {
+    "index": 739,
+    "metadata": 0,
+    "text": "Echipe"
+  },
+  {
+    "index": 740,
+    "metadata": 0,
+    "text": "Echipe nationale"
+  },
+  {
+    "index": 741,
+    "metadata": 0,
+    "text": "Adaugati echipa"
+  },
+  {
+    "index": 742,
+    "metadata": 0,
+    "text": "Editati echipa"
+  },
+  {
+    "index": 743,
+    "metadata": 0,
+    "text": "Stergeti echipa"
+  },
+  {
+    "index": 744,
+    "metadata": 0,
+    "text": "Tara"
+  },
+  {
+    "index": 745,
+    "metadata": 0,
+    "text": "Nivel"
+  },
+  {
+    "index": 746,
+    "metadata": 0,
+    "text": "Meniu principal"
+  },
+  {
+    "index": 747,
+    "metadata": 0,
+    "text": "Iesiti din joc"
+  },
+  {
+    "index": 748,
+    "metadata": 0,
+    "text": "Varsta"
+  },
+  {
+    "index": 749,
+    "metadata": 0,
+    "text": "Antrenor"
+  },
+  {
+    "index": 750,
+    "metadata": 0,
+    "text": "Stadion"
+  },
+  {
+    "index": 751,
+    "metadata": 0,
+    "text": "jucatori"
+  },
+  {
+    "index": 752,
+    "metadata": 0,
+    "text": "Adaugati jucator"
+  },
+  {
+    "index": 753,
+    "metadata": 0,
+    "text": "Editati jucator"
+  },
+  {
+    "index": 754,
+    "metadata": 0,
+    "text": "Stergeti jucator"
+  },
+  {
+    "index": 755,
+    "metadata": 0,
+    "text": "Aveti o limita de 25 de jucatori"
+  },
+  {
+    "index": 756,
+    "metadata": 0,
+    "text": "Vreti sa stergeti echipa selectata?"
+  },
+  {
+    "index": 757,
+    "metadata": 0,
+    "text": "Nume complet"
+  },
+  {
+    "index": 758,
+    "metadata": 0,
+    "text": "Nume prescurtat"
+  },
+  {
+    "index": 759,
+    "metadata": 0,
+    "text": "Culoare principala"
+  },
+  {
+    "index": 760,
+    "metadata": 0,
+    "text": "Culoare secundara"
+  },
+  {
+    "index": 761,
+    "metadata": 0,
+    "text": "Jucator vedeta"
+  },
+  {
+    "index": 762,
+    "metadata": 0,
+    "text": "Caracteristica"
+  },
+  {
+    "index": 763,
+    "metadata": 0,
+    "text": "Pozitionare"
+  },
+  {
+    "index": 764,
+    "metadata": 0,
+    "text": "Dati clic pentru a selecta emblema"
+  },
+  {
+    "index": 765,
+    "metadata": 0,
+    "text": "Numele fisierului"
+  },
+  {
+    "index": 766,
+    "metadata": 0,
+    "text": "Fisierul exista deja, alegeti altul"
+  },
+  {
+    "index": 767,
+    "metadata": 0,
+    "text": "Daca deveniti utilizator inregistrat sustineti dezvoltarea versiunilor viitoare, caracteriticilor noi si repararea bug-urilor si veti primi asistenta tehnica via e-mail"
+  },
+  {
+    "index": 768,
+    "metadata": 0,
+    "text": "In versiunea inregistrata puteti:"
+  },
+  {
+    "index": 769,
+    "metadata": 0,
+    "text": "Accesa Zona alocata membrilor pentru a descarca campionate noi, embleme, etc;"
+  },
+  {
+    "index": 770,
+    "metadata": 0,
+    "text": "Incepe jocul cu o echipa din orice divizie"
+  },
+  {
+    "index": 771,
+    "metadata": 0,
+    "text": "Puteti juca cu mai mult de o echipa controlata de jucatori umani"
+  },
+  {
+    "index": 772,
+    "metadata": 0,
+    "text": "Puteti juca in competitii cu echipe nationale (Campionatul Mondial, Campionatul European, Cupa Americii)"
+  },
+  {
+    "index": 773,
+    "metadata": 0,
+    "text": "Puteti face oferte pentru orice jucator, chiar daca nu este in lista cu transferuri si puteti imprumuta jucatori."
+  },
+  {
+    "index": 774,
+    "metadata": 0,
+    "text": "Puteti juca meciurile avand disponibile viteze mai mari"
+  },
+  {
+    "index": 775,
+    "metadata": 0,
+    "text": "Pentru a va inregistra jocul mergeti pe site-ul:"
+  },
+  {
+    "index": 776,
+    "metadata": 0,
+    "text": "Pretule este numai 12 EURO. Puteti plati cu Card de credit (Visa, MasterCard, American Express, Discover), cec, ordin de plata bancar, PayPal, Wester Union, Moneybookers sau  Mandat de plata postal international."
+  },
+  {
+    "index": 777,
+    "metadata": 0,
+    "text": "Imediat ce vom fi anuntati ca a fost procesata comanda  dumneavoastra (de obicei este vorba de o zi lucratoare), va vom oferi codul de inregistrare sub forma unui numar pe care il puteti introduce mai jos:"
+  },
+  {
+    "index": 778,
+    "metadata": 0,
+    "text": "Nume"
+  },
+  {
+    "index": 779,
+    "metadata": 0,
+    "text": "Cod"
+  },
+  {
+    "index": 780,
+    "metadata": 0,
+    "text": "Introduceti codul"
+  },
+  {
+    "index": 781,
+    "metadata": 0,
+    "text": "Cyberfoot este un joc de management fotbalistic gratuit"
+  },
+  {
+    "index": 782,
+    "metadata": 0,
+    "text": "Descarcati-l de pe www.cyberfoot.org"
+  },
+  {
+    "index": 783,
+    "metadata": 0,
+    "text": "Numai in versiunea inregistrata puteti face oferte pentru jucatorii care nu sunt in lista cu transferuri. Inregistrati-va jocul pe www.cyberfoot.org"
+  },
+  {
+    "index": 784,
+    "metadata": 0,
+    "text": "Numai in versiunea inregistrata puteti achizitiona jucatori disponibili pentru imprumut. Inregistrati-va jocul pe www.cyberfoot.org"
+  },
+  {
+    "index": 785,
+    "metadata": 0,
+    "text": "Lista tarilor"
+  },
+  {
+    "index": 786,
+    "metadata": 0,
+    "text": "Afganistan"
+  },
+  {
+    "index": 787,
+    "metadata": 0,
+    "text": "Africa de Sud"
+  },
+  {
+    "index": 788,
+    "metadata": 0,
+    "text": "Albania"
+  },
+  {
+    "index": 789,
+    "metadata": 0,
+    "text": "Germania"
+  },
+  {
+    "index": 790,
+    "metadata": 0,
+    "text": "Andora"
+  },
+  {
+    "index": 791,
+    "metadata": 0,
+    "text": "Angola"
+  },
+  {
+    "index": 792,
+    "metadata": 0,
+    "text": "Anguilla"
+  },
+  {
+    "index": 793,
+    "metadata": 0,
+    "text": "Antigua"
+  },
+  {
+    "index": 794,
+    "metadata": 0,
+    "text": "Antilele olandeze"
+  },
+  {
+    "index": 795,
+    "metadata": 0,
+    "text": "Arabia Saudita"
+  },
+  {
+    "index": 796,
+    "metadata": 0,
+    "text": "Algeria"
+  },
+  {
+    "index": 797,
+    "metadata": 0,
+    "text": "Argentina"
+  },
+  {
+    "index": 798,
+    "metadata": 0,
+    "text": "Armenia"
+  },
+  {
+    "index": 799,
+    "metadata": 0,
+    "text": "Aruba"
+  },
+  {
+    "index": 800,
+    "metadata": 0,
+    "text": "Australia"
+  },
+  {
+    "index": 801,
+    "metadata": 0,
+    "text": "Austria"
+  },
+  {
+    "index": 802,
+    "metadata": 0,
+    "text": "Azerbaijan"
+  },
+  {
+    "index": 803,
+    "metadata": 0,
+    "text": "Bahamas"
+  },
+  {
+    "index": 804,
+    "metadata": 0,
+    "text": "Bahrein"
+  },
+  {
+    "index": 805,
+    "metadata": 0,
+    "text": "Banglades"
+  },
+  {
+    "index": 806,
+    "metadata": 0,
+    "text": "Barbados"
+  },
+  {
+    "index": 807,
+    "metadata": 0,
+    "text": "Belgia"
+  },
+  {
+    "index": 808,
+    "metadata": 0,
+    "text": "Belize"
+  },
+  {
+    "index": 809,
+    "metadata": 0,
+    "text": "Benin"
+  },
+  {
+    "index": 810,
+    "metadata": 0,
+    "text": "Bermuda"
+  },
+  {
+    "index": 811,
+    "metadata": 0,
+    "text": "Belarus"
+  },
+  {
+    "index": 812,
+    "metadata": 0,
+    "text": "Bolivia"
+  },
+  {
+    "index": 813,
+    "metadata": 0,
+    "text": "Bosnia"
+  },
+  {
+    "index": 814,
+    "metadata": 0,
+    "text": "Botswana"
+  },
+  {
+    "index": 815,
+    "metadata": 0,
+    "text": "Brazilia"
+  },
+  {
+    "index": 816,
+    "metadata": 0,
+    "text": "Brunei"
+  },
+  {
+    "index": 817,
+    "metadata": 0,
+    "text": "Bulgaria"
+  },
+  {
+    "index": 818,
+    "metadata": 0,
+    "text": "Burkina Faso"
+  },
+  {
+    "index": 819,
+    "metadata": 0,
+    "text": "Burundi"
+  },
+  {
+    "index": 820,
+    "metadata": 0,
+    "text": "Butan"
+  },
+  {
+    "index": 821,
+    "metadata": 0,
+    "text": "Capul verde"
+  },
+  {
+    "index": 822,
+    "metadata": 0,
+    "text": "Camerun"
+  },
+  {
+    "index": 823,
+    "metadata": 0,
+    "text": "Cambogia"
+  },
+  {
+    "index": 824,
+    "metadata": 0,
+    "text": "Canada"
+  },
+  {
+    "index": 825,
+    "metadata": 0,
+    "text": "Qatar"
+  },
+  {
+    "index": 826,
+    "metadata": 0,
+    "text": "Kazakhstan"
+  },
+  {
+    "index": 827,
+    "metadata": 0,
+    "text": "Ciad"
+  },
+  {
+    "index": 828,
+    "metadata": 0,
+    "text": "Chile"
+  },
+  {
+    "index": 829,
+    "metadata": 0,
+    "text": "China"
+  },
+  {
+    "index": 830,
+    "metadata": 0,
+    "text": "Cipru"
+  },
+  {
+    "index": 831,
+    "metadata": 0,
+    "text": "Singapore"
+  },
+  {
+    "index": 832,
+    "metadata": 0,
+    "text": "Columbia"
+  },
+  {
+    "index": 833,
+    "metadata": 0,
+    "text": "Congo"
+  },
+  {
+    "index": 834,
+    "metadata": 0,
+    "text": "Corea de Nord"
+  },
+  {
+    "index": 835,
+    "metadata": 0,
+    "text": "Corea de Sud"
+  },
+  {
+    "index": 836,
+    "metadata": 0,
+    "text": "Cote d'Ivoire"
+  },
+  {
+    "index": 837,
+    "metadata": 0,
+    "text": "Costa Rica"
+  },
+  {
+    "index": 838,
+    "metadata": 0,
+    "text": "Croatia"
+  },
+  {
+    "index": 839,
+    "metadata": 0,
+    "text": "Cuba"
+  },
+  {
+    "index": 840,
+    "metadata": 0,
+    "text": "Danemarca"
+  },
+  {
+    "index": 841,
+    "metadata": 0,
+    "text": "Dijbouti"
+  },
+  {
+    "index": 842,
+    "metadata": 0,
+    "text": "Dominica"
+  },
+  {
+    "index": 843,
+    "metadata": 0,
+    "text": "Egipt"
+  },
+  {
+    "index": 844,
+    "metadata": 0,
+    "text": "El Salvador"
+  },
+  {
+    "index": 845,
+    "metadata": 0,
+    "text": "Emiratele Arabe Unite"
+  },
+  {
+    "index": 846,
+    "metadata": 0,
+    "text": "Ecuador"
+  },
+  {
+    "index": 847,
+    "metadata": 0,
+    "text": "Eritrea"
+  },
+  {
+    "index": 848,
+    "metadata": 0,
+    "text": "Scotia"
+  },
+  {
+    "index": 849,
+    "metadata": 0,
+    "text": "Slovacia"
+  },
+  {
+    "index": 850,
+    "metadata": 0,
+    "text": "Slovenia"
+  },
+  {
+    "index": 851,
+    "metadata": 0,
+    "text": "Spania"
+  },
+  {
+    "index": 852,
+    "metadata": 0,
+    "text": "Estonia"
+  },
+  {
+    "index": 853,
+    "metadata": 0,
+    "text": "Etiopia"
+  },
+  {
+    "index": 854,
+    "metadata": 0,
+    "text": "SUA"
+  },
+  {
+    "index": 855,
+    "metadata": 0,
+    "text": "Fiji"
+  },
+  {
+    "index": 856,
+    "metadata": 0,
+    "text": "Finlanda"
+  },
+  {
+    "index": 857,
+    "metadata": 0,
+    "text": "Filipine"
+  },
+  {
+    "index": 858,
+    "metadata": 0,
+    "text": "Franta"
+  },
+  {
+    "index": 859,
+    "metadata": 0,
+    "text": "Gabon"
+  },
+  {
+    "index": 860,
+    "metadata": 0,
+    "text": "Gambia"
+  },
+  {
+    "index": 861,
+    "metadata": 0,
+    "text": "Gana"
+  },
+  {
+    "index": 862,
+    "metadata": 0,
+    "text": "Georgia"
+  },
+  {
+    "index": 863,
+    "metadata": 0,
+    "text": "Grenada"
+  },
+  {
+    "index": 864,
+    "metadata": 0,
+    "text": "Grecia"
+  },
+  {
+    "index": 865,
+    "metadata": 0,
+    "text": "Guatemala"
+  },
+  {
+    "index": 866,
+    "metadata": 0,
+    "text": "Guyana"
+  },
+  {
+    "index": 867,
+    "metadata": 0,
+    "text": "Guineea"
+  },
+  {
+    "index": 868,
+    "metadata": 0,
+    "text": "Guineea-Bissau"
+  },
+  {
+    "index": 869,
+    "metadata": 0,
+    "text": "Guineea-Ecuatoriala"
+  },
+  {
+    "index": 870,
+    "metadata": 0,
+    "text": "Haiti"
+  },
+  {
+    "index": 871,
+    "metadata": 0,
+    "text": "Olanda"
+  },
+  {
+    "index": 872,
+    "metadata": 0,
+    "text": "Honduras"
+  },
+  {
+    "index": 873,
+    "metadata": 0,
+    "text": "Hong Kong"
+  },
+  {
+    "index": 874,
+    "metadata": 0,
+    "text": "Ungaria"
+  },
+  {
+    "index": 875,
+    "metadata": 0,
+    "text": "Yemen"
+  },
+  {
+    "index": 876,
+    "metadata": 0,
+    "text": "Insulele Cayman"
+  },
+  {
+    "index": 877,
+    "metadata": 0,
+    "text": "Insulele Cook"
+  },
+  {
+    "index": 878,
+    "metadata": 0,
+    "text": "Insulele Feroe"
+  },
+  {
+    "index": 879,
+    "metadata": 0,
+    "text": "Insulele Solomon"
+  },
+  {
+    "index": 880,
+    "metadata": 0,
+    "text": "Insulele Virgine Britanice"
+  },
+  {
+    "index": 881,
+    "metadata": 0,
+    "text": "India"
+  },
+  {
+    "index": 882,
+    "metadata": 0,
+    "text": "Indonezia"
+  },
+  {
+    "index": 883,
+    "metadata": 0,
+    "text": "Anglia"
+  },
+  {
+    "index": 884,
+    "metadata": 0,
+    "text": "Iran"
+  },
+  {
+    "index": 885,
+    "metadata": 0,
+    "text": "Iraq"
+  },
+  {
+    "index": 886,
+    "metadata": 0,
+    "text": "Irlanda"
+  },
+  {
+    "index": 887,
+    "metadata": 0,
+    "text": "Irlanda de Nord"
+  },
+  {
+    "index": 888,
+    "metadata": 0,
+    "text": "Islanda"
+  },
+  {
+    "index": 889,
+    "metadata": 0,
+    "text": "Israel"
+  },
+  {
+    "index": 890,
+    "metadata": 0,
+    "text": "Italia"
+  },
+  {
+    "index": 891,
+    "metadata": 0,
+    "text": "Muntenegru"
+  },
+  {
+    "index": 892,
+    "metadata": 0,
+    "text": "Jamaica"
+  },
+  {
+    "index": 893,
+    "metadata": 0,
+    "text": "Japonia"
+  },
+  {
+    "index": 894,
+    "metadata": 0,
+    "text": "Iordania"
+  },
+  {
+    "index": 895,
+    "metadata": 0,
+    "text": "Kenia"
+  },
+  {
+    "index": 896,
+    "metadata": 0,
+    "text": "Kosovo"
+  },
+  {
+    "index": 897,
+    "metadata": 0,
+    "text": "Kuwait"
+  },
+  {
+    "index": 898,
+    "metadata": 0,
+    "text": "Laos"
+  },
+  {
+    "index": 899,
+    "metadata": 0,
+    "text": "Lesotho"
+  },
+  {
+    "index": 900,
+    "metadata": 0,
+    "text": "Letonia"
+  },
+  {
+    "index": 901,
+    "metadata": 0,
+    "text": "Liban"
+  },
+  {
+    "index": 902,
+    "metadata": 0,
+    "text": "Libia"
+  },
+  {
+    "index": 903,
+    "metadata": 0,
+    "text": "Liberia"
+  },
+  {
+    "index": 904,
+    "metadata": 0,
+    "text": "Lihtenstein"
+  },
+  {
+    "index": 905,
+    "metadata": 0,
+    "text": "Lituania"
+  },
+  {
+    "index": 906,
+    "metadata": 0,
+    "text": "Luxemburg"
+  },
+  {
+    "index": 907,
+    "metadata": 0,
+    "text": "Macau"
+  },
+  {
+    "index": 908,
+    "metadata": 0,
+    "text": "Macedonia"
+  },
+  {
+    "index": 909,
+    "metadata": 0,
+    "text": "Madagascar"
+  },
+  {
+    "index": 910,
+    "metadata": 0,
+    "text": "Malaezia"
+  },
+  {
+    "index": 911,
+    "metadata": 0,
+    "text": "Malawi"
+  },
+  {
+    "index": 912,
+    "metadata": 0,
+    "text": "Insulele Maldive"
+  },
+  {
+    "index": 913,
+    "metadata": 0,
+    "text": "Mali"
+  },
+  {
+    "index": 914,
+    "metadata": 0,
+    "text": "Malta"
+  },
+  {
+    "index": 915,
+    "metadata": 0,
+    "text": "Maroc"
+  },
+  {
+    "index": 916,
+    "metadata": 0,
+    "text": "Mauritania"
+  },
+  {
+    "index": 917,
+    "metadata": 0,
+    "text": "Mexic"
+  },
+  {
+    "index": 918,
+    "metadata": 0,
+    "text": "Minamar"
+  },
+  {
+    "index": 919,
+    "metadata": 0,
+    "text": "Mozambic"
+  },
+  {
+    "index": 920,
+    "metadata": 0,
+    "text": "Moldova"
+  },
+  {
+    "index": 921,
+    "metadata": 0,
+    "text": "Monaco"
+  },
+  {
+    "index": 922,
+    "metadata": 0,
+    "text": "Mongolia"
+  },
+  {
+    "index": 923,
+    "metadata": 0,
+    "text": "Namibia"
+  },
+  {
+    "index": 924,
+    "metadata": 0,
+    "text": "Nepal"
+  },
+  {
+    "index": 925,
+    "metadata": 0,
+    "text": "Nicaragua"
+  },
+  {
+    "index": 926,
+    "metadata": 0,
+    "text": "Niger"
+  },
+  {
+    "index": 927,
+    "metadata": 0,
+    "text": "Nigeria"
+  },
+  {
+    "index": 928,
+    "metadata": 0,
+    "text": "Norvegia"
+  },
+  {
+    "index": 929,
+    "metadata": 0,
+    "text": "Noua Zeelanda"
+  },
+  {
+    "index": 930,
+    "metadata": 0,
+    "text": "Oman"
+  },
+  {
+    "index": 931,
+    "metadata": 0,
+    "text": "Tara Galilor"
+  },
+  {
+    "index": 932,
+    "metadata": 0,
+    "text": "Palestina"
+  },
+  {
+    "index": 933,
+    "metadata": 0,
+    "text": "Panama"
+  },
+  {
+    "index": 934,
+    "metadata": 0,
+    "text": "Papua Noua Guinee"
+  },
+  {
+    "index": 935,
+    "metadata": 0,
+    "text": "Pakistan"
+  },
+  {
+    "index": 936,
+    "metadata": 0,
+    "text": "Paraguay"
+  },
+  {
+    "index": 937,
+    "metadata": 0,
+    "text": "Peru"
+  },
+  {
+    "index": 938,
+    "metadata": 0,
+    "text": "Polonia"
+  },
+  {
+    "index": 939,
+    "metadata": 0,
+    "text": "Porto Rico"
+  },
+  {
+    "index": 940,
+    "metadata": 0,
+    "text": "Portugalia"
+  },
+  {
+    "index": 941,
+    "metadata": 0,
+    "text": "Kyrgystan"
+  },
+  {
+    "index": 942,
+    "metadata": 0,
+    "text": "Republica Centr-Africana"
+  },
+  {
+    "index": 943,
+    "metadata": 0,
+    "text": "Republica Democrata Congo"
+  },
+  {
+    "index": 944,
+    "metadata": 0,
+    "text": "Republica Dominicana"
+  },
+  {
+    "index": 945,
+    "metadata": 0,
+    "text": "Cehia"
+  },
+  {
+    "index": 946,
+    "metadata": 0,
+    "text": "Romania"
+  },
+  {
+    "index": 947,
+    "metadata": 0,
+    "text": "Ruanda"
+  },
+  {
+    "index": 948,
+    "metadata": 0,
+    "text": "Rusia"
+  },
+  {
+    "index": 949,
+    "metadata": 0,
+    "text": "Samoa"
+  },
+  {
+    "index": 950,
+    "metadata": 0,
+    "text": "San Marino"
+  },
+  {
+    "index": 951,
+    "metadata": 0,
+    "text": "St. Lucia"
+  },
+  {
+    "index": 952,
+    "metadata": 0,
+    "text": "St. Kitts and Nevis"
+  },
+  {
+    "index": 953,
+    "metadata": 0,
+    "text": "Sao Tome and Principe"
+  },
+  {
+    "index": 954,
+    "metadata": 0,
+    "text": "St. Vincent and The Grenadine"
+  },
+  {
+    "index": 955,
+    "metadata": 0,
+    "text": "Senegal"
+  },
+  {
+    "index": 956,
+    "metadata": 0,
+    "text": "Sierra Leone"
+  },
+  {
+    "index": 957,
+    "metadata": 0,
+    "text": "Serbia"
+  },
+  {
+    "index": 958,
+    "metadata": 0,
+    "text": "Seuchelles"
+  },
+  {
+    "index": 959,
+    "metadata": 0,
+    "text": "Singapore"
+  },
+  {
+    "index": 960,
+    "metadata": 0,
+    "text": "Siria"
+  },
+  {
+    "index": 961,
+    "metadata": 0,
+    "text": "Somalia"
+  },
+  {
+    "index": 962,
+    "metadata": 0,
+    "text": "Sri Lanka"
+  },
+  {
+    "index": 963,
+    "metadata": 0,
+    "text": "Swaziland"
+  },
+  {
+    "index": 964,
+    "metadata": 0,
+    "text": "Sudan"
+  },
+  {
+    "index": 965,
+    "metadata": 0,
+    "text": "Suedia"
+  },
+  {
+    "index": 966,
+    "metadata": 0,
+    "text": "Elvetia"
+  },
+  {
+    "index": 967,
+    "metadata": 0,
+    "text": "Surinam"
+  },
+  {
+    "index": 968,
+    "metadata": 0,
+    "text": "Tadjquistan"
+  },
+  {
+    "index": 969,
+    "metadata": 0,
+    "text": "Tailanda"
+  },
+  {
+    "index": 970,
+    "metadata": 0,
+    "text": "Taiti"
+  },
+  {
+    "index": 971,
+    "metadata": 0,
+    "text": "Taiwan"
+  },
+  {
+    "index": 972,
+    "metadata": 0,
+    "text": "Tanzania"
+  },
+  {
+    "index": 973,
+    "metadata": 0,
+    "text": "Togo"
+  },
+  {
+    "index": 974,
+    "metadata": 0,
+    "text": "Tonga"
+  },
+  {
+    "index": 975,
+    "metadata": 0,
+    "text": "Trinidad Tobago"
+  },
+  {
+    "index": 976,
+    "metadata": 0,
+    "text": "Tunisia"
+  },
+  {
+    "index": 977,
+    "metadata": 0,
+    "text": "Turkmenistan"
+  },
+  {
+    "index": 978,
+    "metadata": 0,
+    "text": "Turcia"
+  },
+  {
+    "index": 979,
+    "metadata": 0,
+    "text": "Ucraina"
+  },
+  {
+    "index": 980,
+    "metadata": 0,
+    "text": "Uganda"
+  },
+  {
+    "index": 981,
+    "metadata": 0,
+    "text": "Uruguay"
+  },
+  {
+    "index": 982,
+    "metadata": 0,
+    "text": "Uzbekistan"
+  },
+  {
+    "index": 983,
+    "metadata": 0,
+    "text": "Vanuatu"
+  },
+  {
+    "index": 984,
+    "metadata": 0,
+    "text": "Venezuela"
+  },
+  {
+    "index": 985,
+    "metadata": 0,
+    "text": "Vietnam"
+  },
+  {
+    "index": 986,
+    "metadata": 0,
+    "text": "Zambia"
+  },
+  {
+    "index": 987,
+    "metadata": 0,
+    "text": "Zimbabue"
+  },
+  {
+    "index": 988,
+    "metadata": 0,
+    "text": "Selecteaza cel putin o liga cu 42 de echipe"
+  },
+  {
+    "index": 989,
+    "metadata": 0,
+    "text": "Cupa Sud-Americana Program"
+  },
+  {
+    "index": 990,
+    "metadata": 0,
+    "text": "Balonul de aur"
+  },
+  {
+    "index": 991,
+    "metadata": 0,
+    "text": "Echipa saptamanii"
+  },
+  {
+    "index": 992,
+    "metadata": 0,
+    "text": "Echipa anului"
+  },
+  {
+    "index": 993,
+    "metadata": 0,
+    "text": "Academia de juniori"
+  },
+  {
+    "index": 994,
+    "metadata": 0,
+    "text": "Liga Campionilor a Africii"
+  },
+  {
+    "index": 995,
+    "metadata": 0,
+    "text": "Liga Campionilor a Asiei"
+  },
+  {
+    "index": 996,
+    "metadata": 0,
+    "text": "Supercupa Europei"
+  },
+  {
+    "index": 997,
+    "metadata": 0,
+    "text": "Recopa Sud-Americana"
+  },
+  {
+    "index": 998,
+    "metadata": 0,
+    "text": "Formatii salvate"
+  },
+  {
+    "index": 999,
+    "metadata": 0,
+    "text": "Salveaza formatia curenta"
+  },
+  {
+    "index": 1000,
+    "metadata": 0,
+    "text": "Selecteaza un nume:"
+  },
+  {
+    "index": 1001,
+    "metadata": 0,
+    "text": "Salveaza"
+  },
+  {
+    "index": 1002,
+    "metadata": 0,
+    "text": "Selecteaza cel putin 11 jucatori"
+  },
+  {
+    "index": 1003,
+    "metadata": 0,
+    "text": "Inapoi"
+  },
+  {
+    "index": 1004,
+    "metadata": 0,
+    "text": "Incarca"
+  },
+  {
+    "index": 1005,
+    "metadata": 0,
+    "text": "Sterge"
+  },
+  {
+    "index": 1006,
+    "metadata": 0,
+    "text": "Tricou"
+  },
+  {
+    "index": 1007,
+    "metadata": 0,
+    "text": "promovat de la academia de juniori in"
+  },
+  {
+    "index": 1008,
+    "metadata": 0,
+    "text": "Local"
+  },
+  {
+    "index": 1009,
+    "metadata": 0,
+    "text": "Stat"
+  },
+  {
+    "index": 1010,
+    "metadata": 0,
+    "text": "Regional"
+  },
+  {
+    "index": 1011,
+    "metadata": 0,
+    "text": "National"
+  },
+  {
+    "index": 1012,
+    "metadata": 0,
+    "text": "Continental"
+  },
+  {
+    "index": 1013,
+    "metadata": 0,
+    "text": "World"
+  },
+  {
+    "index": 1014,
+    "metadata": 0,
+    "text": "Reputatie"
+  },
+  {
+    "index": 1015,
+    "metadata": 0,
+    "text": "3 ani"
+  },
+  {
+    "index": 1016,
+    "metadata": 0,
+    "text": "Arata meciurile"
+  },
+  {
+    "index": 1017,
+    "metadata": 0,
+    "text": "Doar rezultate"
+  },
+  {
+    "index": 1018,
+    "metadata": 0,
+    "text": "LIGA"
+  },
+  {
+    "index": 1019,
+    "metadata": 0,
+    "text": "LIGA CAMPIONILOR"
+  },
+  {
+    "index": 1020,
+    "metadata": 0,
+    "text": "LIBERTADORES"
+  },
+  {
+    "index": 1021,
+    "metadata": 0,
+    "text": "EUROPA LEAGUE"
+  },
+  {
+    "index": 1022,
+    "metadata": 0,
+    "text": "AFRICA LIGA CAMPIONILOR"
+  },
+  {
+    "index": 1023,
+    "metadata": 0,
+    "text": "ASIA LIGA CAMPIONILOR"
+  },
+  {
+    "index": 1024,
+    "metadata": 0,
+    "text": "Motiv"
+  },
+  {
+    "index": 1025,
+    "metadata": 0,
+    "text": "rezultate proaste"
+  },
+  {
+    "index": 1026,
+    "metadata": 0,
+    "text": "criza financiara"
+  },
+  {
+    "index": 1027,
+    "metadata": 0,
+    "text": "suporteri nefericiti"
+  },
+  {
+    "index": 1028,
+    "metadata": 0,
+    "text": "Accepta"
+  },
+  {
+    "index": 1029,
+    "metadata": 0,
+    "text": "Refuza tot"
+  },
+  {
+    "index": 1030,
+    "metadata": 0,
+    "text": "foloseste"
+  },
+  {
+    "index": 1031,
+    "metadata": 0,
+    "text": "tineri"
+  },
+  {
+    "index": 1032,
+    "metadata": 0,
+    "text": "primii"
+  },
+  {
+    "index": 1033,
+    "metadata": 0,
+    "text": "Cauta club"
+  },
+  {
+    "index": 1034,
+    "metadata": 0,
+    "text": "Cata jucator"
+  },
+  {
+    "index": 1035,
+    "metadata": 0,
+    "text": "Cauta"
+  },
+  {
+    "index": 1036,
+    "metadata": 0,
+    "text": "Progres"
+  },
+  {
+    "index": 1037,
+    "metadata": 0,
+    "text": "Talent"
+  },
+  {
+    "index": 1038,
+    "metadata": 0,
+    "text": "Promoveaza"
+  },
+  {
+    "index": 1039,
+    "metadata": 0,
+    "text": "Concediaza"
+  },
+  {
+    "index": 1040,
+    "metadata": 0,
+    "text": "Ai deja 30 de jucatori"
+  },
+  {
+    "index": 1041,
+    "metadata": 0,
+    "text": "Confirma promovarea lui"
+  },
+  {
+    "index": 1042,
+    "metadata": 0,
+    "text": "Numai este loc pentru jucatorii tineri"
+  },
+  {
+    "index": 1043,
+    "metadata": 0,
+    "text": "Trimite"
+  },
+  {
+    "index": 1044,
+    "metadata": 0,
+    "text": "Anuleaza"
+  },
+  {
+    "index": 1045,
+    "metadata": 0,
+    "text": "transfer confirmat"
+  },
+  {
+    "index": 1046,
+    "metadata": 0,
+    "text": "Confirma transferul acestui junior"
+  },
+  {
+    "index": 1047,
+    "metadata": 0,
+    "text": "Concediaza jucatorul?"
+  },
+  {
+    "index": 1048,
+    "metadata": 0,
+    "text": "Setari competitie internationala"
+  },
+  {
+    "index": 1049,
+    "metadata": 0,
+    "text": "Joaca in primul sezon"
+  },
+  {
+    "index": 1050,
+    "metadata": 0,
+    "text": "Foloseste grupe reale in primul sezon:"
+  },
+  {
+    "index": 1051,
+    "metadata": 0,
+    "text": "Vezi partidele fara oameni:"
+  },
+  {
+    "index": 1052,
+    "metadata": 0,
+    "text": "Valoarea echipei"
+  },
+  {
+    "index": 1053,
+    "metadata": 0,
+    "text": "Nationalitate"
+  },
+  {
+    "index": 1054,
+    "metadata": 0,
+    "text": "medie"
+  },
+  {
+    "index": 1055,
+    "metadata": 0,
+    "text": "Mijlocas Defensiv"
+  },
+  {
+    "index": 1056,
+    "metadata": 0,
+    "text": "Mijlocas Ofensiv"
+  },
+  {
+    "index": 1057,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1058,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1059,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1060,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1061,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1062,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1063,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1064,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1065,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1066,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1067,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1068,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1069,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1070,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1071,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1072,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1073,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1074,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1075,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1076,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1077,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1078,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1079,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1080,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1081,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1082,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1083,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1084,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1085,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1086,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1087,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1088,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1089,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1090,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1091,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1092,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1093,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1094,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1095,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1096,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1097,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1098,
+    "metadata": 0,
+    "text": ""
+  },
+  {
+    "index": 1099,
+    "metadata": 0,
+    "text": ""
+  }
+]

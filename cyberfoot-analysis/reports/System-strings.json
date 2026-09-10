@@ -1,0 +1,1402 @@
+[
+  {
+    "offset": "0x4b",
+    "va": "0x1000004b",
+    "text": "LÍ!This program cannot be run in DOS mode."
+  },
+  {
+    "offset": "0x82",
+    "va": "0x10000082",
+    "text": "Òîuò¼½uò¼½uò¼½öî²½sò¼½uò½½aò¼½¶ýá½rò¼½!Ñ"
+  },
+  {
+    "offset": "0xab",
+    "va": "0x100000ab",
+    "text": "½qò¼½"
+  },
+  {
+    "offset": "0xb3",
+    "va": "0x100000b3",
+    "text": "½tò¼½"
+  },
+  {
+    "offset": "0xb9",
+    "va": "0x100000b9",
+    "text": "Ò¸½tò¼½Richuò¼½"
+  },
+  {
+    "offset": "0x1d8",
+    "va": "0x100001d8",
+    "text": ".text"
+  },
+  {
+    "offset": "0x1ff",
+    "va": "0x100001ff",
+    "text": "`.rdata"
+  },
+  {
+    "offset": "0x227",
+    "va": "0x10000227",
+    "text": "@.data"
+  },
+  {
+    "offset": "0x24f",
+    "va": "0x1000024f",
+    "text": "À.reloc"
+  },
+  {
+    "offset": "0x451",
+    "va": "0x10001051",
+    "text": "èÅÿÿÿYÃU"
+  },
+  {
+    "offset": "0x4dc",
+    "va": "0x100010dc",
+    "text": "[_^]Ã"
+  },
+  {
+    "offset": "0x50b",
+    "va": "0x1000110b",
+    "text": "D$(ÿP"
+  },
+  {
+    "offset": "0x55b",
+    "va": "0x1000115b",
+    "text": "tO+Át1Hue"
+  },
+  {
+    "offset": "0x59a",
+    "va": "0x1000119a",
+    "text": "ï0FFè "
+  },
+  {
+    "offset": "0x5c4",
+    "va": "0x100011c4",
+    "text": "YYPÿÕf"
+  },
+  {
+    "offset": "0x5d7",
+    "va": "0x100011d7",
+    "text": "_PÿÕ^][Ã¡@@"
+  },
+  {
+    "offset": "0x5eb",
+    "va": "0x100011eb",
+    "text": "SPÿ5t@"
+  },
+  {
+    "offset": "0x616",
+    "va": "0x10001216",
+    "text": "éFÿÿÿ¡l@"
+  },
+  {
+    "offset": "0x621",
+    "va": "0x10001221",
+    "text": "ÀPj@ÿ"
+  },
+  {
+    "offset": "0x62b",
+    "va": "0x1000122b",
+    "text": "Ãÿ5l@"
+  },
+  {
+    "offset": "0x636",
+    "va": "0x10001236",
+    "text": "èàÿÿÿPÿ"
+  },
+  {
+    "offset": "0x66a",
+    "va": "0x1000126a",
+    "text": "Òuò^Ã3ÀÃ"
+  },
+  {
+    "offset": "0x679",
+    "va": "0x10001279",
+    "text": "t:¡l@"
+  },
+  {
+    "offset": "0x6c1",
+    "va": "0x100012c1",
+    "text": "éUÿÿÿ¡l@"
+  },
+  {
+    "offset": "0x6d8",
+    "va": "0x100012d8",
+    "text": "APèMÿÿÿYÃU"
+  },
+  {
+    "offset": "0x725",
+    "va": "0x10001325",
+    "text": "3À3Òé>"
+  },
+  {
+    "offset": "0x78c",
+    "va": "0x1000138c",
+    "text": "ÿuøSèK"
+  },
+  {
+    "offset": "0x7a9",
+    "va": "0x100013a9",
+    "text": "Eøë£f"
+  },
+  {
+    "offset": "0x7af",
+    "va": "0x100013af",
+    "text": "ù7wCf"
+  },
+  {
+    "offset": "0x7f0",
+    "va": "0x100013f0",
+    "text": "ø0}Éë[f"
+  },
+  {
+    "offset": "0x806",
+    "va": "0x10001406",
+    "text": "ë,NNë("
+  },
+  {
+    "offset": "0x815",
+    "va": "0x10001415",
+    "text": "ÿuøSèÂ"
+  },
+  {
+    "offset": "0x85b",
+    "va": "0x1000145b",
+    "text": "Vè°þÿÿ"
+  },
+  {
+    "offset": "0x86b",
+    "va": "0x1000146b",
+    "text": "Ã^[ÉÃU"
+  },
+  {
+    "offset": "0x8d8",
+    "va": "0x100014d8",
+    "text": "FSWFè?"
+  },
+  {
+    "offset": "0x903",
+    "va": "0x10001503",
+    "text": "ÿÿÿ;ðwç"
+  },
+  {
+    "offset": "0x914",
+    "va": "0x10001514",
+    "text": "ÉÃVè'ýÿÿ"
+  },
+  {
+    "offset": "0x923",
+    "va": "0x10001523",
+    "text": "Èÿ^ÃWVèãýÿÿY"
+  },
+  {
+    "offset": "0x939",
+    "va": "0x10001539",
+    "text": "Ç_^ÃU"
+  },
+  {
+    "offset": "0x98b",
+    "va": "0x1000158b",
+    "text": "Ç_^Ãÿt$"
+  },
+  {
+    "offset": "0x9a7",
+    "va": "0x100015a7",
+    "text": "Pè¶ÿÿÿ"
+  },
+  {
+    "offset": "0x9b0",
+    "va": "0x100015b0",
+    "text": "Ã3ÀÃVèaüÿÿ"
+  },
+  {
+    "offset": "0x9fc",
+    "va": "0x100015fc",
+    "text": "Æ^ÃSUV3öWVVV"
+  },
+  {
+    "offset": "0xa0e",
+    "va": "0x1000160e",
+    "text": "Vjÿÿt$,VVÿ×"
+  },
+  {
+    "offset": "0xa1a",
+    "va": "0x1000161a",
+    "text": "èUj@ÿ"
+  },
+  {
+    "offset": "0xa26",
+    "va": "0x10001626",
+    "text": "ØVUSjÿÿt$,VVÿ×Sÿt$"
+  },
+  {
+    "offset": "0xa49",
+    "va": "0x10001649",
+    "text": "Æ_^][Ã"
+  },
+  {
+    "offset": "0xa62",
+    "va": "0x10001662",
+    "text": "è¯þÿÿ"
+  },
+  {
+    "offset": "0xa6f",
+    "va": "0x1000166f",
+    "text": "Àt;3É9p"
+  },
+  {
+    "offset": "0xa7f",
+    "va": "0x1000167f",
+    "text": "Àuòë)"
+  },
+  {
+    "offset": "0xadf",
+    "va": "0x100016df",
+    "text": "D$$ÿP"
+  },
+  {
+    "offset": "0xaf8",
+    "va": "0x100016f8",
+    "text": "èuûÿÿëVö"
+  },
+  {
+    "offset": "0xb09",
+    "va": "0x10001709",
+    "text": "è/þÿÿVè þÿÿPèXûÿÿ"
+  },
+  {
+    "offset": "0xb2e",
+    "va": "0x1000172e",
+    "text": "þÿÿPè;ûÿÿ"
+  },
+  {
+    "offset": "0xb3d",
+    "va": "0x1000173d",
+    "text": "YYPÿ×ö"
+  },
+  {
+    "offset": "0xb50",
+    "va": "0x10001750",
+    "text": "èèýÿÿY_^ÃU"
+  },
+  {
+    "offset": "0xbf4",
+    "va": "0x100017f4",
+    "text": "SèºýÿÿPèrúÿÿ"
+  },
+  {
+    "offset": "0xc10",
+    "va": "0x10001810",
+    "text": "t<VWj"
+  },
+  {
+    "offset": "0xc1e",
+    "va": "0x1000181e",
+    "text": "}àó¥Sè"
+  },
+  {
+    "offset": "0xc47",
+    "va": "0x10001847",
+    "text": "Yó¥_^ë"
+  },
+  {
+    "offset": "0xc90",
+    "va": "0x10001890",
+    "text": "è¨üÿÿYö"
+  },
+  {
+    "offset": "0xcbb",
+    "va": "0x100018bb",
+    "text": "V3ÛW£p@"
+  },
+  {
+    "offset": "0xcc5",
+    "va": "0x100018c5",
+    "text": "]øèwùÿÿP"
+  },
+  {
+    "offset": "0xcce",
+    "va": "0x100018ce",
+    "text": "Eüè<úÿÿY"
+  },
+  {
+    "offset": "0xcd9",
+    "va": "0x100018d9",
+    "text": "úèdùÿÿf"
+  },
+  {
+    "offset": "0xce7",
+    "va": "0x100018e7",
+    "text": "ù~t&f"
+  },
+  {
+    "offset": "0xced",
+    "va": "0x100018ed",
+    "text": "ù!t èMùÿÿP"
+  },
+  {
+    "offset": "0xd27",
+    "va": "0x10001927",
+    "text": "tmIt4"
+  },
+  {
+    "offset": "0xd50",
+    "va": "0x10001950",
+    "text": "ÿuøSWVè"
+  },
+  {
+    "offset": "0xd7d",
+    "va": "0x1000197d",
+    "text": "#ó#}øéì"
+  },
+  {
+    "offset": "0xda6",
+    "va": "0x100019a6",
+    "text": "×ë!ÿuøSWVèl"
+  },
+  {
+    "offset": "0xdbb",
+    "va": "0x100019bb",
+    "text": "UðSWVè"
+  },
+  {
+    "offset": "0xde0",
+    "va": "0x100019e0",
+    "text": "é<tiItXIt4"
+  },
+  {
+    "offset": "0xdf4",
+    "va": "0x100019f4",
+    "text": "IIu{÷Ö÷×ëuf"
+  },
+  {
+    "offset": "0xe0a",
+    "va": "0x10001a0a",
+    "text": "]øu:ë\\"
+  },
+  {
+    "offset": "0xe13",
+    "va": "0x10001a13",
+    "text": "}øë\\3ó3}øëUf"
+  },
+  {
+    "offset": "0xe30",
+    "va": "0x10001a30",
+    "text": "ë=;}ø|5"
+  },
+  {
+    "offset": "0xe39",
+    "va": "0x10001a39",
+    "text": ";óv/ë"
+  },
+  {
+    "offset": "0xe3f",
+    "va": "0x10001a3f",
+    "text": ";óu);}øu$3À@ë!f"
+  },
+  {
+    "offset": "0xe66",
+    "va": "0x10001a66",
+    "text": "|à;órÜ3À"
+  },
+  {
+    "offset": "0xe74",
+    "va": "0x10001a74",
+    "text": "E¸PWVèòùÿÿ"
+  },
+  {
+    "offset": "0xe7f",
+    "va": "0x10001a7f",
+    "text": "E¸Pèë÷ÿÿ"
+  },
+  {
+    "offset": "0xe90",
+    "va": "0x10001a90",
+    "text": "ÿuüÿÖÿu"
+  },
+  {
+    "offset": "0xe98",
+    "va": "0x10001a98",
+    "text": "ÿÖ_^[ÉÃU"
+  },
+  {
+    "offset": "0xec2",
+    "va": "0x10001ac2",
+    "text": "ùfv0f"
+  },
+  {
+    "offset": "0xece",
+    "va": "0x10001ace",
+    "text": "ùFv$f"
+  },
+  {
+    "offset": "0xf0b",
+    "va": "0x10001b0b",
+    "text": "ÿÿÿPèý÷ÿÿY^ÉÃU"
+  },
+  {
+    "offset": "0xf1c",
+    "va": "0x10001b1c",
+    "text": "ì4SV3ÛW"
+  },
+  {
+    "offset": "0xf35",
+    "va": "0x10001b35",
+    "text": "]Ôèßöÿÿ"
+  },
+  {
+    "offset": "0xf40",
+    "va": "0x10001b40",
+    "text": "EèèÔöÿÿ"
+  },
+  {
+    "offset": "0xf48",
+    "va": "0x10001b48",
+    "text": "EØèôöÿÿ"
+  },
+  {
+    "offset": "0xf75",
+    "va": "0x10001b75",
+    "text": "Á+Ãtq"
+  },
+  {
+    "offset": "0xf9e",
+    "va": "0x10001b9e",
+    "text": "ëOÇEä"
+  },
+  {
+    "offset": "0xfab",
+    "va": "0x10001bab",
+    "text": "]ðë@3À"
+  },
+  {
+    "offset": "0xfca",
+    "va": "0x10001bca",
+    "text": "]Üë!;}Ðv"
+  },
+  {
+    "offset": "0xff0",
+    "va": "0x10001bf0",
+    "text": "EÌ+Ãt"
+  },
+  {
+    "offset": "0x1014",
+    "va": "0x10001c14",
+    "text": "Eè;óf"
+  },
+  {
+    "offset": "0x1065",
+    "va": "0x10001c65",
+    "text": "IuvÿuØPÿ"
+  },
+  {
+    "offset": "0x1072",
+    "va": "0x10001c72",
+    "text": "ÿuìWÿ"
+  },
+  {
+    "offset": "0x107f",
+    "va": "0x10001c7f",
+    "text": "Eì9EètXV3ÿÿ"
+  },
+  {
+    "offset": "0x108f",
+    "va": "0x10001c8f",
+    "text": "ÿuìèzöÿÿ"
+  },
+  {
+    "offset": "0x1098",
+    "va": "0x10001c98",
+    "text": "ðY;ót@"
+  },
+  {
+    "offset": "0x10ab",
+    "va": "0x10001cab",
+    "text": "ð;óuî;ût"
+  },
+  {
+    "offset": "0x10c4",
+    "va": "0x10001cc4",
+    "text": "VèÅøÿÿ"
+  },
+  {
+    "offset": "0x1115",
+    "va": "0x10001d15",
+    "text": "èBt?HHt!"
+  },
+  {
+    "offset": "0x112a",
+    "va": "0x10001d2a",
+    "text": "HHu2j@ë"
+  },
+  {
+    "offset": "0x113e",
+    "va": "0x10001d3e",
+    "text": "j X3ÉA9Mü"
+  },
+  {
+    "offset": "0x1158",
+    "va": "0x10001d58",
+    "text": "3À@ëä÷]ü"
+  },
+  {
+    "offset": "0x1167",
+    "va": "0x10001d67",
+    "text": "Eè3ÛGG"
+  },
+  {
+    "offset": "0x1176",
+    "va": "0x10001d76",
+    "text": "ßýÿÿÿuÐ"
+  },
+  {
+    "offset": "0x1183",
+    "va": "0x10001d83",
+    "text": "ÿ×ÿuìÿ×ÿuØÿ×;ó"
+  },
+  {
+    "offset": "0x11bd",
+    "va": "0x10001dbd",
+    "text": "SèNõÿÿ"
+  },
+  {
+    "offset": "0x11db",
+    "va": "0x10001ddb",
+    "text": "SèKôÿÿ"
+  },
+  {
+    "offset": "0x121f",
+    "va": "0x10001e1f",
+    "text": "Müé:ÿÿÿ"
+  },
+  {
+    "offset": "0x1268",
+    "va": "0x10001e68",
+    "text": "ôþÿÿÇEÜ"
+  },
+  {
+    "offset": "0x1273",
+    "va": "0x10001e73",
+    "text": "éèþÿÿ"
+  },
+  {
+    "offset": "0x1280",
+    "va": "0x10001e80",
+    "text": "ÿEôëçÇEü"
+  },
+  {
+    "offset": "0x128c",
+    "va": "0x10001e8c",
+    "text": "éÏþÿÿ"
+  },
+  {
+    "offset": "0x1292",
+    "va": "0x10001e92",
+    "text": "MüÿéÆþÿÿj"
+  },
+  {
+    "offset": "0x12d6",
+    "va": "0x10001ed6",
+    "text": "EøPèÁûÿÿ@Y"
+  },
+  {
+    "offset": "0x1358",
+    "va": "0x10001f58",
+    "text": "þÿÿ3À@é@ÿÿÿj"
+  },
+  {
+    "offset": "0x1370",
+    "va": "0x10001f70",
+    "text": "Xé-ÿÿÿj"
+  },
+  {
+    "offset": "0x139f",
+    "va": "0x10001f9f",
+    "text": "éeÿÿÿ"
+  },
+  {
+    "offset": "0x13a5",
+    "va": "0x10001fa5",
+    "text": "EøPèòúÿÿ"
+  },
+  {
+    "offset": "0x13ae",
+    "va": "0x10001fae",
+    "text": "ØYCéSÿÿÿ"
+  },
+  {
+    "offset": "0x13c4",
+    "va": "0x10001fc4",
+    "text": "èRòÿÿ"
+  },
+  {
+    "offset": "0x13cc",
+    "va": "0x10001fcc",
+    "text": "EøSPèÊúÿÿYRPè"
+  },
+  {
+    "offset": "0x13e0",
+    "va": "0x10001fe0",
+    "text": "é$ÿÿÿ"
+  },
+  {
+    "offset": "0x1410",
+    "va": "0x10002010",
+    "text": "AAë×ÿuìf"
+  },
+  {
+    "offset": "0x1422",
+    "va": "0x10002022",
+    "text": "Øéáþÿÿ"
+  },
+  {
+    "offset": "0x1429",
+    "va": "0x10002029",
+    "text": "Ëÿéáþÿÿj"
+  },
+  {
+    "offset": "0x1442",
+    "va": "0x10002042",
+    "text": "[éÉþÿÿ"
+  },
+  {
+    "offset": "0x1453",
+    "va": "0x10002053",
+    "text": "ù:ugf"
+  },
+  {
+    "offset": "0x1474",
+    "va": "0x10002074",
+    "text": "8:uFf"
+  },
+  {
+    "offset": "0x147a",
+    "va": "0x1000207a",
+    "text": "ú-t@ÇEà"
+  },
+  {
+    "offset": "0x1489",
+    "va": "0x10002089",
+    "text": "Eì9Eèv"
+  },
+  {
+    "offset": "0x1494",
+    "va": "0x10002094",
+    "text": "EèÿuØf"
+  },
+  {
+    "offset": "0x14a2",
+    "va": "0x100020a2",
+    "text": "é¹üÿÿ"
+  },
+  {
+    "offset": "0x14ad",
+    "va": "0x100020ad",
+    "text": "é®üÿÿÇEà"
+  },
+  {
+    "offset": "0x14b9",
+    "va": "0x100020b9",
+    "text": "é¢üÿÿ"
+  },
+  {
+    "offset": "0x14dc",
+    "va": "0x100020dc",
+    "text": "Pè/òÿÿY"
+  },
+  {
+    "offset": "0x1543",
+    "va": "0x10002143",
+    "text": "è·ôÿÿY;ÃY"
+  },
+  {
+    "offset": "0x1560",
+    "va": "0x10002160",
+    "text": "Pè«ñÿÿ;ÃYt"
+  },
+  {
+    "offset": "0x1573",
+    "va": "0x10002173",
+    "text": "·ÀPÿ¶"
+  },
+  {
+    "offset": "0x15aa",
+    "va": "0x100021aa",
+    "text": "èPôÿÿY;ÃY"
+  },
+  {
+    "offset": "0x15b5",
+    "va": "0x100021b5",
+    "text": "*ÿÿÿ9"
+  },
+  {
+    "offset": "0x15c6",
+    "va": "0x100021c6",
+    "text": "Æ_^[ÉÃå"
+  },
+  {
+    "offset": "0x16ca",
+    "va": "0x100022ca",
+    "text": "~Ñ^_[ÃQ"
+  },
+  {
+    "offset": "0x16d5",
+    "va": "0x100022d5",
+    "text": "3ÀSU9"
+  },
+  {
+    "offset": "0x1703",
+    "va": "0x10002303",
+    "text": "X;èt#"
+  },
+  {
+    "offset": "0x170d",
+    "va": "0x1000230d",
+    "text": "è1ïÿÿë\""
+  },
+  {
+    "offset": "0x1730",
+    "va": "0x10002330",
+    "text": "è÷îÿÿY"
+  },
+  {
+    "offset": "0x1765",
+    "va": "0x10002365",
+    "text": "Uè¦ïÿÿë"
+  },
+  {
+    "offset": "0x177e",
+    "va": "0x1000237e",
+    "text": "Uè¨îÿÿ"
+  },
+  {
+    "offset": "0x17aa",
+    "va": "0x100023aa",
+    "text": "RRQPQURRÿ"
+  },
+  {
+    "offset": "0x17db",
+    "va": "0x100023db",
+    "text": "À~7Uè-ïÿÿPèï"
+  },
+  {
+    "offset": "0x180b",
+    "va": "0x1000240b",
+    "text": "RPè^ðÿÿ"
+  },
+  {
+    "offset": "0x1838",
+    "va": "0x10002438",
+    "text": "é«þÿÿÿD$"
+  },
+  {
+    "offset": "0x1841",
+    "va": "0x10002441",
+    "text": "é¢þÿÿ_^][YÃ]#"
+  },
+  {
+    "offset": "0x18a1",
+    "va": "0x100024a1",
+    "text": "î Ouä_^ÃQSUVWèhíÿÿ"
+  },
+  {
+    "offset": "0x18f8",
+    "va": "0x100024f8",
+    "text": "ëaÿ0ëVWÿp"
+  },
+  {
+    "offset": "0x1902",
+    "va": "0x10002502",
+    "text": "ÿ0ègïÿÿëM"
+  },
+  {
+    "offset": "0x1912",
+    "va": "0x10002512",
+    "text": "QÿRWQÿ0j"
+  },
+  {
+    "offset": "0x192e",
+    "va": "0x1000252e",
+    "text": "ë+ÿ5l@"
+  },
+  {
+    "offset": "0x1952",
+    "va": "0x10002552",
+    "text": "ÿ6UWÿÓ"
+  },
+  {
+    "offset": "0x1984",
+    "va": "0x10002584",
+    "text": "Wèèìÿÿë"
+  },
+  {
+    "offset": "0x1990",
+    "va": "0x10002590",
+    "text": "HWPèIíÿÿYYÿL$"
+  },
+  {
+    "offset": "0x19a8",
+    "va": "0x100025a8",
+    "text": "-ÿÿÿWÿ"
+  },
+  {
+    "offset": "0x19b3",
+    "va": "0x100025b3",
+    "text": "_^][YÃô$"
+  },
+  {
+    "offset": "0x1a4f",
+    "va": "0x1000264f",
+    "text": "V3öWF3ÿ9³"
+  },
+  {
+    "offset": "0x1ab2",
+    "va": "0x100026b2",
+    "text": "ÿuüj@ÿ"
+  },
+  {
+    "offset": "0x1adb",
+    "va": "0x100026db",
+    "text": "Eø3À@9"
+  },
+  {
+    "offset": "0x1b0b",
+    "va": "0x1000270b",
+    "text": "MäÿIÇEèÿ"
+  },
+  {
+    "offset": "0x1b1d",
+    "va": "0x1000271d",
+    "text": "ÇEìÿÿ"
+  },
+  {
+    "offset": "0x1b2a",
+    "va": "0x1000272a",
+    "text": "ÇEðÿÿÿ"
+  },
+  {
+    "offset": "0x1b7e",
+    "va": "0x1000277e",
+    "text": "ÿuøèÝíÿÿ"
+  },
+  {
+    "offset": "0x1b8f",
+    "va": "0x1000278f",
+    "text": "Wÿuøÿu"
+  },
+  {
+    "offset": "0x1b96",
+    "va": "0x10002796",
+    "text": "èÈíÿÿ"
+  },
+  {
+    "offset": "0x1b9f",
+    "va": "0x1000279f",
+    "text": "}øÿEô"
+  },
+  {
+    "offset": "0x1bd5",
+    "va": "0x100027d5",
+    "text": "u@hL@"
+  },
+  {
+    "offset": "0x1c6f",
+    "va": "0x1000286f",
+    "text": "Ãj XÃj"
+  },
+  {
+    "offset": "0x1ca0",
+    "va": "0x100028a0",
+    "text": "ÃÌÌÌU"
+  },
+  {
+    "offset": "0x1cb9",
+    "va": "0x100028b9",
+    "text": "èeÿÿÿ"
+  },
+  {
+    "offset": "0x1cd4",
+    "va": "0x100028d4",
+    "text": "èDÿÿÿè"
+  },
+  {
+    "offset": "0x1cef",
+    "va": "0x100028ef",
+    "text": "èkÿÿÿ"
+  },
+  {
+    "offset": "0x1cfa",
+    "va": "0x100028fa",
+    "text": "~BPèhÿÿÿ"
+  },
+  {
+    "offset": "0x1d05",
+    "va": "0x10002905",
+    "text": "Pèeÿÿÿ"
+  },
+  {
+    "offset": "0x1d0c",
+    "va": "0x1000290c",
+    "text": "Eü[Y÷á"
+  },
+  {
+    "offset": "0x1d13",
+    "va": "0x10002913",
+    "text": "ØSQèYÿÿÿPèWÿÿÿPèUÿÿÿP[Z^YX"
+  },
+  {
+    "offset": "0x1d39",
+    "va": "0x10002939",
+    "text": "+Eüâïè"
+  },
+  {
+    "offset": "0x1d56",
+    "va": "0x10002956",
+    "text": "èòþÿÿ"
+  },
+  {
+    "offset": "0x1d61",
+    "va": "0x10002961",
+    "text": "3ÀÿÑ£4@"
+  },
+  {
+    "offset": "0x1da0",
+    "va": "0x100029a0",
+    "text": "è®þÿÿ"
+  },
+  {
+    "offset": "0x1dae",
+    "va": "0x100029ae",
+    "text": "Rè}þÿÿ"
+  },
+  {
+    "offset": "0x1db7",
+    "va": "0x100029b7",
+    "text": "ZtdRè"
+  },
+  {
+    "offset": "0x1de7",
+    "va": "0x100029e7",
+    "text": "è7þÿÿ"
+  },
+  {
+    "offset": "0x1e08",
+    "va": "0x10002a08",
+    "text": "Eüâéë"
+  },
+  {
+    "offset": "0x1e31",
+    "va": "0x10002a31",
+    "text": "è4þÿÿ"
+  },
+  {
+    "offset": "0x1e3a",
+    "va": "0x10002a3a",
+    "text": "Ðè8þÿÿ"
+  },
+  {
+    "offset": "0x1e49",
+    "va": "0x10002a49",
+    "text": "è.þÿÿ"
+  },
+  {
+    "offset": "0x1e5a",
+    "va": "0x10002a5a",
+    "text": "è-þÿÿèÛýÿÿ"
+  },
+  {
+    "offset": "0x1e90",
+    "va": "0x10002a90",
+    "text": "Eüè¼ýÿÿ"
+  },
+  {
+    "offset": "0x1ea9",
+    "va": "0x10002aa9",
+    "text": "uóRQèÝêÿÿYZ"
+  },
+  {
+    "offset": "0x1ebb",
+    "va": "0x10002abb",
+    "text": "EüPè½ýÿÿXÇEô"
+  },
+  {
+    "offset": "0x1ef2",
+    "va": "0x10002af2",
+    "text": "ýÿÿPè}ýÿÿPè{ýÿÿP[Z^XYQ"
+  },
+  {
+    "offset": "0x1f2f",
+    "va": "0x10002b2f",
+    "text": "EðYâÓè ýÿÿ"
+  },
+  {
+    "offset": "0x1f41",
+    "va": "0x10002b41",
+    "text": "ÿuüèLýÿÿXU"
+  },
+  {
+    "offset": "0x1f61",
+    "va": "0x10002b61",
+    "text": "ìSWVè"
+  },
+  {
+    "offset": "0x1f70",
+    "va": "0x10002b70",
+    "text": "ýÿÿPè"
+  },
+  {
+    "offset": "0x1f7a",
+    "va": "0x10002b7a",
+    "text": "ÐYXÿ4"
+  },
+  {
+    "offset": "0x1f86",
+    "va": "0x10002b86",
+    "text": "è¦üÿÿ"
+  },
+  {
+    "offset": "0x1f91",
+    "va": "0x10002b91",
+    "text": "èÃüÿÿ"
+  },
+  {
+    "offset": "0x1fd1",
+    "va": "0x10002bd1",
+    "text": "å]ÿ%d@"
+  },
+  {
+    "offset": "0x1fd9",
+    "va": "0x10002bd9",
+    "text": "ÌÌÌÌÌÌÌ"
+  },
+  {
+    "offset": "0x2014",
+    "va": "0x10002c14",
+    "text": "ÌÌÌÌÌÌÌÌÌÌÌÌWVS3ÿ"
+  },
+  {
+    "offset": "0x2087",
+    "va": "0x10002c87",
+    "text": "ÑëÑÙÑêÑØ"
+  },
+  {
+    "offset": "0x2090",
+    "va": "0x10002c90",
+    "text": "Ûuô÷ñ"
+  },
+  {
+    "offset": "0x20ca",
+    "va": "0x10002cca",
+    "text": "ÌÌÌÌÌÌSW3ÿ"
+  },
+  {
+    "offset": "0x2122",
+    "va": "0x10002d22",
+    "text": "Â3ÒOyNëS"
+  },
+  {
+    "offset": "0x2138",
+    "va": "0x10002d38",
+    "text": "ÑëÑÙÑêÑØ"
+  },
+  {
+    "offset": "0x2141",
+    "va": "0x10002d41",
+    "text": "Ûuô÷ñ"
+  },
+  {
+    "offset": "0x2182",
+    "va": "0x10002d82",
+    "text": "ÌÌÌÌÌÌÌÌÌÌÌÌÌÌ"
+  },
+  {
+    "offset": "0x219b",
+    "va": "0x10002d9b",
+    "text": "¥ÂÓàÃ"
+  },
+  {
+    "offset": "0x21a7",
+    "va": "0x10002da7",
+    "text": "ÓâÃ3À3ÒÃÌ"
+  },
+  {
+    "offset": "0x21bb",
+    "va": "0x10002dbb",
+    "text": "­ÐÓúÃ"
+  },
+  {
+    "offset": "0x21c8",
+    "va": "0x10002dc8",
+    "text": "ÓøÃÁú"
+  },
+  {
+    "offset": "0x21cf",
+    "va": "0x10002dcf",
+    "text": "ÂÃÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌQ="
+  },
+  {
+    "offset": "0x2546",
+    "va": "0x10003146",
+    "text": "GlobalAlloc"
+  },
+  {
+    "offset": "0x2554",
+    "va": "0x10003154",
+    "text": "GlobalFree"
+  },
+  {
+    "offset": "0x2562",
+    "va": "0x10003162",
+    "text": "GlobalSize"
+  },
+  {
+    "offset": "0x2570",
+    "va": "0x10003170",
+    "text": "lstrcpynW"
+  },
+  {
+    "offset": "0x257c",
+    "va": "0x1000317c",
+    "text": "lstrcpyW"
+  },
+  {
+    "offset": "0x2588",
+    "va": "0x10003188",
+    "text": "GetProcAddress"
+  },
+  {
+    "offset": "0x259a",
+    "va": "0x1000319a",
+    "text": "WideCharToMultiByte"
+  },
+  {
+    "offset": "0x25b0",
+    "va": "0x100031b0",
+    "text": "VirtualFree"
+  },
+  {
+    "offset": "0x25be",
+    "va": "0x100031be",
+    "text": "FreeLibrary"
+  },
+  {
+    "offset": "0x25cc",
+    "va": "0x100031cc",
+    "text": "lstrlenW"
+  },
+  {
+    "offset": "0x25d8",
+    "va": "0x100031d8",
+    "text": "LoadLibraryW"
+  },
+  {
+    "offset": "0x25e8",
+    "va": "0x100031e8",
+    "text": "GetModuleHandleW"
+  },
+  {
+    "offset": "0x25fc",
+    "va": "0x100031fc",
+    "text": "MultiByteToWideChar"
+  },
+  {
+    "offset": "0x2612",
+    "va": "0x10003212",
+    "text": "VirtualAlloc"
+  },
+  {
+    "offset": "0x2622",
+    "va": "0x10003222",
+    "text": "VirtualProtect"
+  },
+  {
+    "offset": "0x2634",
+    "va": "0x10003234",
+    "text": "GetLastError"
+  },
+  {
+    "offset": "0x2642",
+    "va": "0x10003242",
+    "text": "KERNEL32.dll"
+  },
+  {
+    "offset": "0x2652",
+    "va": "0x10003252",
+    "text": "wsprintfW"
+  },
+  {
+    "offset": "0x265c",
+    "va": "0x1000325c",
+    "text": "USER32.dll"
+  },
+  {
+    "offset": "0x266a",
+    "va": "0x1000326a",
+    "text": "CLSIDFromString"
+  },
+  {
+    "offset": "0x267c",
+    "va": "0x1000327c",
+    "text": "StringFromGUID2"
+  },
+  {
+    "offset": "0x268c",
+    "va": "0x1000328c",
+    "text": "ole32.dll"
+  },
+  {
+    "offset": "0x2718",
+    "va": "0x10003318",
+    "text": "System.dll"
+  },
+  {
+    "offset": "0x2723",
+    "va": "0x10003323",
+    "text": "Alloc"
+  },
+  {
+    "offset": "0x273c",
+    "va": "0x1000333c",
+    "text": "Int64Op"
+  },
+  {
+    "offset": "0x2744",
+    "va": "0x10003344",
+    "text": "Store"
+  },
+  {
+    "offset": "0x274a",
+    "va": "0x1000334a",
+    "text": "StrAlloc"
+  },
+  {
+    "offset": "0x2a0b",
+    "va": "0x1000500b",
+    "text": "010D0M0`0i0¬0»0Ø0ç0ñ0û0"
+  },
+  {
+    "offset": "0x2a27",
+    "va": "0x10005027",
+    "text": "1'1l1r1{1"
+  },
+  {
+    "offset": "0x2a31",
+    "va": "0x10005031",
+    "text": "1à1ï1ü1"
+  },
+  {
+    "offset": "0x2a3b",
+    "va": "0x1000503b",
+    "text": "2'2.2>2E2t2|2"
+  },
+  {
+    "offset": "0x2a4b",
+    "va": "0x1000504b",
+    "text": "2 2¥2®2Ç2Í2ñ2÷2"
+  },
+  {
+    "offset": "0x2a5b",
+    "va": "0x1000505b",
+    "text": "345J5Q5"
+  },
+  {
+    "offset": "0x2a63",
+    "va": "0x10005063",
+    "text": "5£5È5Ï5Û5í5ô5"
+  },
+  {
+    "offset": "0x2a71",
+    "va": "0x10005071",
+    "text": "6 6;6D6U6^6j6"
+  },
+  {
+    "offset": "0x2a81",
+    "va": "0x10005081",
+    "text": "6©6°6¼6Å6Ï6Õ6Ú6ô6 797d7l7t7y7"
+  },
+  {
+    "offset": "0x2aa5",
+    "va": "0x100050a5",
+    "text": "8¢8´8À8"
+  },
+  {
+    "offset": "0x2aaf",
+    "va": "0x100050af",
+    "text": ":&<n<x<"
+  },
+  {
+    "offset": "0x2ab9",
+    "va": "0x100050b9",
+    "text": "=:>A>©>:?"
+  },
+  {
+    "offset": "0x2acf",
+    "va": "0x100050cf",
+    "text": "1$1~1"
+  },
+  {
+    "offset": "0x2ad5",
+    "va": "0x100050d5",
+    "text": "1Ì1Ð1Ô1Ø1Ü1à1ä1è1ì1ð1ô1ø1ü1"
+  },
+  {
+    "offset": "0x2aff",
+    "va": "0x100050ff",
+    "text": "2 2$2(2,2®2º2,3Y3"
+  },
+  {
+    "offset": "0x2b13",
+    "va": "0x10005113",
+    "text": "3¦3´3À3Í3Ö3õ3ý3"
+  },
+  {
+    "offset": "0x2b23",
+    "va": "0x10005123",
+    "text": "4L4P4T4X4\\4`4d4h4"
+  },
+  {
+    "offset": "0x2b35",
+    "va": "0x10005135",
+    "text": "4»4À4ð4"
+  },
+  {
+    "offset": "0x2b3f",
+    "va": "0x1000513f",
+    "text": "5$525;5C5L5t5¯5¹5½5Á5Å5É5Í5Ñ5Õ5é5î5"
+  },
+  {
+    "offset": "0x2b65",
+    "va": "0x10005165",
+    "text": "6 6)6"
+  },
+  {
+    "offset": "0x2b6b",
+    "va": "0x1000516b",
+    "text": "6¹6Í6"
+  },
+  {
+    "offset": "0x2b71",
+    "va": "0x10005171",
+    "text": "7Ñ7Ø7á7ç7ï7õ7ú7ÿ7"
+  },
+  {
+    "offset": "0x2b89",
+    "va": "0x10005189",
+    "text": "8¯8Ç8Í8à8è8J9R9f9l9r9z9"
+  },
+  {
+    "offset": "0x2ba5",
+    "va": "0x100051a5",
+    "text": "9ª9Ý9ú9"
+  },
+  {
+    "offset": "0x2bad",
+    "va": "0x100051ad",
+    "text": ": :):B:P:l:q:M;S;"
+  },
+  {
+    "offset": "0x2bbf",
+    "va": "0x100051bf",
+    "text": ";¥;¬;°;¹;Â;È;Õ;"
+  }
+]

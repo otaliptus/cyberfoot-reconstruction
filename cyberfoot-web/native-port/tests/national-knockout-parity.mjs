@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {verifyNationalKnockout} from './national-knockout-proof.mjs';const r=await verifyNationalKnockout(JSON.parse(readFileSync(new URL('./national-knockout-vectors.json',import.meta.url))));if(r.failures.length)throw Error(JSON.stringify(r.failures.slice(0,2)));console.log(`Original national knockout advancement: ${r.cases} cases passed.`);

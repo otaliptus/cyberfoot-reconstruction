@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Native original-form development</title><style>html,body{margin:0;background:#3a6ea5;height:100%}body{display:grid;place-items:center}canvas{width:1024px;height:auto;max-width:100vw}</style><canvas width="1024" height="768" aria-label="Original game window"></canvas><script type="module">
+import {currentCareerDate} from './calendar.mjs';
+import {openContract,counterofferView,stepContractOffer} from './contract-view.mjs';import {OriginalRandom} from './match-core.mjs';
+import {FormRenderer} from './form-renderer.mjs';import {originalMoney,financeView} from './finance-view.mjs';import {readSave,writeSave} from './save-format.mjs';import {openLoan,loanView} from './loan-view.mjs';
+const [forms,language,bytes]=await Promise.all([fetch('forms.json').then(r=>r.json()),fetch('language.json').then(r=>r.json()),fetch('tests/original-career.s15').then(r=>r.arrayBuffer())]);
+const save=readSave(bytes),renderer=new FormRenderer(document.querySelector('canvas'),forms);let loan,contract;const rng=new OriginalRandom(2015);
+const openFinance=()=>renderer.show(financeView(save,language)),showLoan=()=>renderer.show(loanView(loan.state,language)),openBank=()=>{loan=openLoan(save);return showLoan();};
+renderer.register('Form22.XiButton2Click',()=>renderer.close());renderer.register('Form28.bt3Click',()=>renderer.close());
+renderer.register('Form28.bt1Click',()=>{loan.act('borrow');return showLoan();});renderer.register('Form28.bt2Click',()=>{loan.act('repay');return showLoan();});
+// Date derives from the original base calendar. Locale format remains a fixture setting.
+const careerDate=currentCareerDate(save),formatFixtureDate=serial=>{const d=new Date(Date.UTC(1899,11,30)+Math.trunc(serial)*86400000);return `${d.getUTCMonth()+1}/${d.getUTCDate()}/${d.getUTCFullYear()}`;};
+const openContracts=(id=224)=>{contract=openContract(save,id,careerDate,rng,formatFixtureDate);return renderer.show(contract.view(language));};
+renderer.register('Form24.Edit1Change',text=>{contract.state.offer=text;renderer.update(contract.view(language));});
+renderer.register('Form24.combomChange',index=>{contract.state.durationIndex=index;renderer.update(contract.view(language));});
+renderer.register('Form24.UpDown1Click',direction=>{contract.state.offer=stepContractOffer(contract.state.offer,direction);renderer.update(contract.view(language));});
+renderer.register('Form24.bt3Click',()=>renderer.close());
+renderer.register('Form24.CHButton1Click',async()=>{const result=contract.offer();if(result?.decision==='accept')renderer.close();else if(result?.decision==='reject')await renderer.show(counterofferView(result.required,language),{modal:true});else if(result?.decision==='excessive')alert(language[389].text+' '+originalMoney(Math.imul(result.required,5)).slice(1));});
+renderer.register('Form25.button1Click',()=>{contract.acceptCounter();renderer.close();renderer.close();});renderer.register('Form25.button2Click',()=>renderer.close());
+const viewName=new URLSearchParams(location.search).get('view');await(viewName==='loan'?openBank():viewName==='contract'?openContracts():openFinance());
+addEventListener('keydown',e=>{if(e.key==='Escape'&&renderer.frame?.form!=='Form25')renderer.close();});
+const contractChecks=new URLSearchParams(location.search).get('check')==='contracts'?await(await import('./tests/contract-browser-proof.mjs')).checkContracts():null;
+const scheduleChecks=new URLSearchParams(location.search).get('check')==='schedule'?await(await import('./tests/schedule-browser-proof.mjs')).checkSchedule():null;
+const aiChecks=new URLSearchParams(location.search).get('check')==='ai'?await(await import('./tests/ai-browser-proof.mjs')).checkAI():null;
+const humanLineupChecks=new URLSearchParams(location.search).get('check')==='human-lineup'?await(await import('./tests/human-lineup-proof.mjs')).checkHumanLineup():null;
+const postMatchChecks=new URLSearchParams(location.search).get('check')==='post-match'?await(await import('./tests/match-records-proof.mjs')).checkMatchRecords():null;
+window.render_game_to_text=()=>JSON.stringify({developmentProof:true,completeGame:false,postMatchChecks,contractChecks,scheduleChecks,aiChecks,humanLineupChecks,contract:contract?{id:contract.state.id,offer:contract.state.offer,durationIndex:contract.state.durationIndex,result:contract.state.result}:null,form:renderer.frame?.form??null,origin:renderer.frame?.origin??null,coordinateSystem:'top left, x right, y down',finance:renderer.frame?.form==='Form22'?renderer.frame.amounts:null,loan:renderer.frame?.form==='Form28'?{...loan.state,cash:String(loan.state.cash)}:null,controls:renderer.hitTargets.map(h=>({name:h.name,x:h.x,y:h.y,width:h.width,height:h.height}))});
+window.advanceTime=async()=>{};window.nativeUI={renderer,openFinance,openBank,openContracts,save:()=>writeSave(save)};
+</script></html>

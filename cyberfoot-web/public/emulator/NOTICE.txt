@@ -1,0 +1,19 @@
+CYBERFOOT 2015 — ORIGINAL GAME BROWSER LAUNCHER
+
+The Windows executable and game data originate from the user-supplied cyberfoot2015.rar. The cf2015.exe SHA-256 is bb5132cfcf9c7f17733c6d8c73ff0cebb5b4b19e34dff34c614919beedc308d0. The game executable has not been patched. Original copyrights and registration restrictions remain applicable.
+
+Browser emulator: Boxedwine 26R1.0, Copyright the Boxedwine contributors.
+Official release: https://github.com/danoon2/Boxedwine/releases/tag/26R1.0
+Corresponding source: https://github.com/danoon2/Boxedwine/tree/26R1.0
+License: GNU General Public License, version 2 or later.
+License text: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+The shipped boxedwine.js and boxedwine.wasm are unmodified SingleThreaded binaries from Boxedwine26R1Web.zip. boxedwine-shell.js is modified to concatenate seventeen same-origin Wine filesystem parts and three original-game parts, report progress and report fetch errors. The modified JavaScript source is served directly alongside this notice. bridge.js and game.html implement the page integration and backup controls.
+
+Wine compatibility filesystem: Wine 11 minimal from the same official release.
+Wine source: https://gitlab.winehq.org/wine/wine/-/tree/wine-11.0
+Wine license: GNU Lesser General Public License, version 2.1 or later.
+Wine/Boxedwine filesystem construction and patches:
+https://github.com/danoon2/Boxedwine/tree/26R1.0/tools
+Components within that filesystem retain their respective licenses.
+
+Compatibility overlay: windowscodecs, mlang, and matching image libraries are taken from the official TinyCore15Wine11.0.zip at https://boxedwine.org/v2/6/TinyCore15Wine11.0.zip. No game code is changed by the overlay.

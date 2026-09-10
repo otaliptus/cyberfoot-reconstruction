@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><title>Original lineup image layer — development</title><style>body{margin:0;background:#3a6ea5;display:grid;place-items:center;min-height:100vh}canvas{max-width:100vw;height:auto}</style><canvas width="465" height="602" aria-label="Original lineup image layer"></canvas><script type="module">
+import {LineupPitch} from './lineup-pitch.mjs';import {formationScreenSlots,autoSelectScreenLineup} from './lineup-screen.mjs';
+import {buildLineupRoster} from './lineup-roster.mjs';import {readSave} from './save-format.mjs';import {openCareer} from './career-state.mjs';
+const query=new URLSearchParams(location.search);let career,rows,save;
+if(query.has('career')){save=readSave(await fetch('./tests/original-career.s15').then(r=>r.arrayBuffer()));career=openCareer(save);rows=buildLineupRoster(career,11);}
+const canvas=document.querySelector('canvas'),ctx=canvas.getContext('2d'),pitch=await new LineupPitch().load();let formation=4,slots=formationScreenSlots(formation),targets;
+if(career)slots=autoSelectScreenLineup(career,rows,formation,save,11).slots;
+function paint(){ctx.fillStyle='#000';ctx.fillRect(0,0,465,602);targets=pitch.draw(ctx,slots,{x:1,y:1});}
+const tacticalChecks=new URLSearchParams(location.search).get('check')==='tactics'?await(await import('./tests/tactics-proof.mjs')).checkTactics():null;
+const rosterChecks=query.get('check')==='roster'?await(await import('./tests/roster-proof.mjs')).checkRoster():null;
+paint();window.setFormation=n=>{formation=n;slots=career?autoSelectScreenLineup(career,rows,n,save,11).slots:formationScreenSlots(n);paint();};
+window.render_game_to_text=()=>JSON.stringify({developmentProof:true,completeGame:false,tacticalChecks,rosterChecks,club:career?.clubs[11].name,scope:'original pitch and shirt image layer; not interactive lineup screen',formation,coordinateSystem:'top left, x right, y down',targets});window.advanceTime=async()=>{};
+</script>

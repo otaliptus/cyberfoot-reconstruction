@@ -1,0 +1,1 @@
+import {readFileSync} from 'node:fs';import {verifyKnockoutProgress} from './knockout-progress-proof.mjs';const r=verifyKnockoutProgress(JSON.parse(readFileSync(new URL('./knockout-progress-vectors.json',import.meta.url))));if(r.failures.length)throw Error(JSON.stringify(r.failures.slice(0,2)));console.log(`Original knockout outcome/elimination: ${r.cases} cases passed.`);
