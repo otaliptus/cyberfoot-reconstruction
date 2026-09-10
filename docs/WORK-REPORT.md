@@ -113,7 +113,7 @@ Incomplete continuation paths reject missing effects rather than silently preten
 
 ## Repository scope and handoff
 
-This is a new independent snapshot with fresh Git history. It preserves emulator and native source, test fixtures/vectors, analysis scripts/reports, recovered resources/data, extracted original game payload and the Ghidra project. The previous hosting repository is unchanged.
+This is a new independent snapshot with fresh Git history. It preserves emulator and native source, test fixtures/vectors, analysis scripts/reports, recovered resources/data, extracted original game payload and the Ghidra project. The previous hosting remote is unchanged. After the initial snapshot, the user requested removal of duplicate folders: the new repository was moved directly into `misc`, retaining the original source directories. The older hosting Git metadata is archived locally under `.local-history/cyberfoot-web-hosting.git`. All 11,991 copied files were checked against the originals before the duplicate directories were removed.
 
 Excluded: installed dependencies, Python/tool environments, antivirus databases, build caches, prior Git history, hosting account configuration, duplicate emulator download staging, distributor installer/shortcut staging and bulk transient browser output. The emulator wrapper's runtime assets remain included. Selected screenshots and test logs are retained.
 

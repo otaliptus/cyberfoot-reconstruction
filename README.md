@@ -37,3 +37,7 @@ Browser test scripts may reference the original workspace's Playwright installat
 From `cyberfoot-web`, run `npm ci` and `npm run dev`. Hosting identity was omitted from this independent repository: pushing it does not deploy or change the old site. Runtime attribution is in `cyberfoot-web/public/emulator/NOTICE.txt`.
 
 Original material and third-party components retain their rights; no blanket open-source license is asserted. See the report for sample handling and scan limitations.
+
+## Local workspace
+
+The repository now lives directly at `/Users/talip/Documents/ChatGPT/misc`. `cyberfoot-web` and `cyberfoot-analysis` are the single working copies; the duplicate `cyberfoot-reconstruction` directory was removed after verifying all 11,991 copied files matched. Older hosting Git metadata is retained locally under ignored `.local-history/cyberfoot-web-hosting.git`. Local dependencies and analysis tools remain in place.

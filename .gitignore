@@ -12,3 +12,9 @@ outputs/
 *.tsbuildinfo
 .openai/
 cyberfoot-analysis/tools/
+
+# Local history, downloads and analysis environments
+.local-history/
+cyberfoot-analysis/emulator/
+cyberfoot-analysis/extracted/
+cyberfoot-web-deploy.tar.gz
