@@ -1,6 +1,8 @@
 import {runAITransfer} from './ai-transfers.mjs';
 import {continentalPostRound} from './continental-post-round.mjs';
 import {nationalPostRound} from './national-post-round.mjs';
+import {nationalSetup} from './national-setup.mjs';
+import {competitionFiveEligible} from './club-world.mjs';
 import {processManagerChanges} from './manager-changes.mjs';
 import {processEmployedManagerOffers,processUnemployedManagerOffers} from './manager-offer-timing.mjs';
 import {careerSchedule} from './schedule.mjs';import {processScheduledPlayerReturns,originalSeniorSquadLimit} from './player-move.mjs';import {resetResultsPlayers} from './results-career-continuation.mjs';import {restoreNationalAssignments} from './national-assignment-reset.mjs';import {refreshRefereeAssignments} from './referees.mjs';import {originalPlayerValue} from './player-value.mjs';import {selectResultsHumanParticipation} from './results-participation.mjs';
@@ -17,6 +19,8 @@ export function nativeResultsCareerEffects(save,runtime,{rng,temporary,calendar=
   ...(managerDialogs?.showOffer?{managerOffers:()=>processEmployedManagerOffers(save,runtime,{rng,showOffer:managerDialogs.showOffer}),unemployedOffers:()=>processUnemployedManagerOffers(save,runtime,{rng,showOffer:managerDialogs.showOffer})}:{}),
   aiTransfer:country=>runAITransfer(save,country,{rng,runtime,date:currentDate(),maxSeniorPlayers}),
   nationalPostRound:competition=>nationalPostRound(save,runtime,competition),
+  nationalSetup:()=>nationalSetup(save,runtime,{rng,date:currentDate()}),
+  competitionFiveEligible:()=>competitionFiveEligible(save,runtime,{rng}),
   continentalPostRound:competition=>{
    if(!Number.isFinite(runtime.completedMatchDate))throw Error('Original completed match date required.');
    return continentalPostRound(save,runtime,competition,{date:runtime.completedMatchDate});

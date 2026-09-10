@@ -124,6 +124,14 @@ await import('./player-value-parity.mjs');
 
 await import('./national-assignment-reset-parity.mjs');
 
+await import('./national-setup-parity.mjs');
+
+await import('./national-setup-integration.mjs');
+
+await import('./club-world-parity.mjs');
+
+await import('./club-world-integration.mjs');
+
 await import('./player-move-parity.mjs');
 
 await import('./player-return-integration.mjs');

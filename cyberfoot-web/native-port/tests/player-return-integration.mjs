@@ -14,5 +14,5 @@ completePlayerMove(save,outgoing,from,date+180,{rng,runtime,date});effects.dateE
 recallLoanedPlayer(save,source[2],{rng,runtime,date});assert.equal(clubOf(source[2]),to);assert.equal(v(record(save,'players',source[2])).getFloat64(0x70,true),date+180);assert.equal(v(record(save,pending.name,2)).getInt32(0,true),-1);assert.equal(history.count,beforeHistory+4);
 const bytes=writeSave(save),loaded=readSave(bytes);assert.deepEqual(writeSave(loaded),bytes);assert.equal(v(record(loaded,'players',source[1])).getInt32(0x20,true),to);
 // Incomplete career wiring must not advance or otherwise modify the save.
-await assert.rejects(continueResultsCareer(save,runtime,effects,calendar),/requires competitionFiveEligible/);assert.deepEqual(writeSave(save),bytes);
+await assert.rejects(continueResultsCareer(save,runtime,effects,calendar),/requires seasonEnd/);assert.deepEqual(writeSave(save),bytes);
 console.log('Original career fixture: capacity-limited returns, repeated pending notice, retry after a vacancy, future-date exclusion, immediate recall and save reload passed; incomplete Continue fails before mutation.');

@@ -77,6 +77,10 @@ Continental post-round processing ranks groups, eliminates clubs, records finish
 
 International post-round qualification is connected. Competition 8 advances the top two in three groups plus the two best third-place teams. Competition 9 advances the top two in four groups. Original quarter-final pairings and participation flags are preserved. The complete routine passes **800 original-execution comparisons**.
 
+National squad setup is implemented for competitions 7, 8 and 9 (8, 3 and 4 four-club groups). Eligibility uses the original 18 outfield players plus 2 goalkeepers rule with club range and injury date checks, selection applies the extracted `[3,4,4,8,6]` role quotas through the original sort, and previous and new assignments are recorded for restoration. The whole routine passes **600 original-execution comparisons** plus an original-career fixture integration test.
+
+The competition 5 club-world field is implemented. The 18 original countries seed six slots from league ranking records or ranked country candidates, four continental champions are resolved, the original weighted fallback tables fill the remaining slots, and the six clubs are written into the pairing records and flagged. It passes **400 original-execution comparisons** plus an original-career fixture test covering the success path, the original reinstall-error branch and deterministic replay.
+
 ## UI reconstruction
 
 Recovered definitions and assets drive lineup, match, tactics, results, dismissal, manager recap, offer and standings screens. Original crests, kit images, captions, colors and geometry are used where recovered and connected.
@@ -89,7 +93,7 @@ This is not pixel-perfect certification. Font rasterization, some control skins,
 
 ## Verification and repairs
 
-The cumulative development ledger records **249,407 original-comparison cases** through the latest qualification work. This is a historical coverage count, not unique features or a formal equivalence guarantee. Older READMEs contain earlier totals.
+The cumulative development ledger records **250,407 original-comparison cases** through the latest club-world work. This is a historical coverage count, not unique features or a formal equivalence guarantee. Older READMEs contain earlier totals.
 
 Verification combines isolated original-instruction comparisons, whole-routine comparisons, original-save integration, browser interaction tests and screenshot inspection. Depending on the test, adapters substitute Delphi storage/string operations, UI boundaries or unported children. Those distinctions limit the claims each test supports.
 
@@ -99,8 +103,7 @@ The [latest development regression log](evidence/cyberfoot-national-postround-re
 
 ## Remaining work
 
-- National squad eligibility, selection and setup, including temporary assignments.
-- Club-world setup and remaining competition scheduling dependencies.
+- Remaining competition scheduling dependencies.
 - Season-end processing and remaining career routing controllers.
 - Complete career entry/new-game initialization and continuous navigation through seasons.
 - Remaining management functions and screens, including incomplete training/stadium flows.
