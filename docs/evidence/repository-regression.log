@@ -386,6 +386,7 @@ Original career fixture: club-world champions, 18-country table, six-flag field,
 600 whole original automatic-next state comparisons passed (UI boundary adapters only).
 600 whole original auction-lot selection comparisons passed (UI stubs only).
 600 whole original auction bid comparisons passed (UI stubs only).
+600 whole original auction resolution comparisons passed (UI/finalization stubs only).
 800 whole original season-end manager move comparisons passed (stack slot controlled).
 Original career fixture: 10 season-end manager moves, slot flags cleared, deterministic replay, save round-trip and guards passed.
 Original career fixture: full results continuation with native engines and dev hosts reached humanNext; save round-trip and host guards passed.
