@@ -105,7 +105,7 @@ The [latest development regression log](evidence/cyberfoot-national-postround-re
 
 - Remaining competition scheduling dependencies.
 - Season-end processing and remaining career routing controllers.
-- Complete career entry/new-game initialization and continuous navigation through seasons.
+- Career entry/new-game initialization. A development continuous loop now chains the native lineup, watched match, archived results and the full results continuation back into the next fixture; the original next-screen forms remain to be populated.
 - Remaining management functions and screens, including incomplete training/stadium flows.
 - Full UI fidelity, sound and platform-clock decisions.
 - Broader full-career and season validation, plus missing whole-controller comparisons.

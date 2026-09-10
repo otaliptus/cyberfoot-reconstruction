@@ -1,0 +1,77 @@
+<!doctype html><meta charset="utf-8"><title>Native career loop — development</title><style>body{margin:0;background:#3a6ea5;display:grid;place-items:center;min-height:100vh}canvas{width:1024px;max-width:100vw;height:auto}</style><canvas width="1024" height="768" aria-label="Native career loop"></canvas><script type="module">
+import {createResultsHost} from './results-host.mjs';
+import {continueDomesticCompetition} from './domestic-competition-continuation.mjs';
+import {commitHumanLineup} from './human-lineup-commit.mjs';
+import {prepareDomesticTeams} from './prematch-teams.mjs';
+import {openDomesticMatchSession} from './domestic-match-session.mjs';
+import {OriginalRandom} from './match-core.mjs';
+import {clubKitPath} from './club-kit.mjs';
+import {saveScreenLineup} from './saved-lineup.mjs';
+import {LineupWindow} from './lineup-window.mjs';
+import {lineupView} from './lineup-view.mjs';
+import {buildLineupRoster} from './lineup-roster.mjs';
+import {autoSelectScreenLineup} from './lineup-screen.mjs';
+import {setTactic} from './tactics.mjs';
+import {readSave,writeSave} from './save-format.mjs';
+import {openCareer} from './career-state.mjs';
+import {careerAgenda,careerSchedule} from './schedule.mjs';
+import {nativeResultsCareerEffects} from './results-native-effects.mjs';
+import {continueResultsCareer} from './results-career-continuation.mjs';
+const [forms,language,bytes,kitAssets,crestAssets]=await Promise.all([fetch('forms.json').then(r=>r.json()),fetch('language.json').then(r=>r.json()),fetch('tests/original-career.s15').then(r=>r.arrayBuffer()),fetch('kit-assets.json').then(r=>r.json()),fetch('crest-assets.json').then(r=>r.json())]);
+const save=readSave(bytes),career=new DataView(save.career.buffer,save.career.byteOffset,save.career.byteLength),renderer=await new LineupWindow(document.querySelector('canvas'),forms).prepare();
+let clock=2015;const rng=new OriginalRandom(2015,()=>clock+=7919);let runtime={nationalManagerCount:0,nationalAssignmentsActive:false},temporary={lineups:[],matchTeams:[]},clubId=11,rounds=0,continuations=[];
+let state,agenda,rows,slots,formation=4,checkedKit=1,shirtImage=null,kitPaths=[],opponentId=null,opponentKit=null,matchSession=null,resultsHost=null,starting=false,startMessage=null;
+const managerDialogs={humanDismissal:async()=>{},showChanges:async()=>{},showOffer:async()=>{},humanNext:async()=>{},automaticNext:async()=>{},showMove:async()=>{}};
+function prepareRound(){
+ agenda=careerAgenda(save);if(agenda.fixtureId<0)return false;
+ career.setInt32(0x16c,agenda.nextDay,true);career.setInt32(0x88,1,true);career.setInt32(0x6c8,1,true);
+ state=openCareer(save,{currentDate:agenda.nextDate});rows=buildLineupRoster(state,clubId);
+ slots=autoSelectScreenLineup(state,rows,formation,save,clubId).slots;
+ opponentId=agenda.fixtures[agenda.fixtureId].clubs.find(id=>id!==clubId);kitPaths=[1,2,3].map(k=>clubKitPath(save,clubId,k,kitAssets));opponentKit=clubKitPath(save,opponentId,1,kitAssets);
+ checkedKit=[2,3].includes(state.clubs[clubId].selectedKit)&&kitPaths[state.clubs[clubId].selectedKit-1]?state.clubs[clubId].selectedKit:1;
+ shirtImage=kitPaths[checkedKit-1]?renderer.images.get(kitPaths[checkedKit-1]):null;return true;
+}
+const opponent=()=>state.clubs[opponentId].name;
+const view=()=>{const result=lineupView(state,rows,slots,formation,clubId,language,{remember:!!career.getUint8(0xde),opponent:opponent()});result.shirtImage=shirtImage;result.kitImagePaths={Image13:opponentKit,Image2:kitPaths[0]??'assets/original-shirt-1.png',Image4:kitPaths[1],Image5:kitPaths[2]};for(const k of [1,2,3])result.properties['rd'+k]={Visible:k===1||!!kitPaths[k-1],Checked:checkedKit===k};return result;};
+for(const k of [1,2,3])renderer.register('Form87.rd'+k+'Click',()=>{checkedKit=k;if(kitPaths[k-1]){state.clubs[clubId].selectedKit=k;shirtImage=renderer.images.get(kitPaths[k-1]);}renderer.update(view());});
+renderer.register('Form87.combtatClick',index=>{formation=index+1;slots=autoSelectScreenLineup(state,rows,formation,save,clubId).slots;renderer.update(view());});
+for(const [control,operation] of [['comboej','comboejClick'],['combomarc','combomarcChange'],['combo_cataq','combo_cataqChange']])renderer.register('Form87.'+operation,index=>{setTactic(state.clubs[clubId],control,index);renderer.update(view());});
+renderer.register('Form87.combo1Change',index=>{state.clubs[clubId].captain=rows[index].playerId;renderer.update(view());});renderer.register('Form87.combo2Change',index=>{state.clubs[clubId].setPiecePlayer=rows[index].playerId;renderer.update(view());});
+renderer.register('Form87.ckescalacaoClick',checked=>{career.setUint8(0xde,checked?1:0);renderer.update(view());});
+renderer.register('Form87.bt_voltarClick',()=>{if(career.getUint8(0xde))saveScreenLineup(save,clubId,slots);renderer.close();});
+renderer.register('Form87.bt_irprojogoClick',async()=>{
+ if(starting||matchSession)return;starting=true;
+ try{
+  const committed=commitHumanLineup(save,state,rows,slots,{clubId,remember:!!career.getUint8(0xde),rng});
+  if(!committed.accepted){startMessage=language[committed.messageId].text;return;}
+  prepareDomesticTeams(save,state,rng);
+  const scheduled=save.sections.find(s=>s.name==='records_0066afa0'),data=new DataView(scheduled.data.buffer,scheduled.data.byteOffset,scheduled.data.byteLength),subgroup=data.getInt32(agenda.fixtureId*72+0x38,true);
+  matchSession=await openDomesticMatchSession(renderer,{save,state,rng,context:{competitionType:1,subgroup,currentDate:agenda.nextDate},language,crestAssets,kitAssets,continueCompetition:async(route,matchRuntime)=>{
+   matchSession=null;
+   if(route!=='batch'){startMessage='Non-league route: '+route;return;}
+   await continueDomesticCompetition(save,matchRuntime,{close:async()=>{
+    resultsHost=createResultsHost(renderer,{save,state,language,crestAssets,onContinue:()=>renderer.close()});
+    await resultsHost.open({subgroup,caption:language[225].text});
+    const calendar=careerSchedule(save),effects=nativeResultsCareerEffects(save,runtime,{rng,temporary,calendar,managerDialogs});
+    await continueResultsCareer(save,runtime,effects,calendar);
+    rounds++;continuations.push({day:career.getInt32(0x16c,true),competition:runtime.nextCompetition,human:runtime.humanParticipation??null});
+    resultsHost=null;
+    if(!prepareRound())startMessage=language[484].text;
+    else await renderer.show(view());
+   }});
+  }});
+ }catch(error){startMessage=String(error);throw error;}finally{starting=false;}
+});
+renderer.onLineupDrop=({source,targetSlot,x,y})=>{if(starting||matchSession)return;if(targetSlot){if(source.playerId!==undefined){const row=rows.find(r=>r.playerId===source.playerId);if(row)slots[targetSlot]=row;}else if(source.slot){const tmp=slots[source.slot];slots[source.slot]=slots[targetSlot];slots[targetSlot]=tmp;}}renderer.update(view());};
+prepareRound();await renderer.show(view());
+window.render_game_to_text=()=>JSON.stringify({developmentProof:true,completeGame:false,form:renderer.frame?.form??null,rounds,startMessage,starting,agenda:agenda?{nextDay:agenda.nextDay,nextDate:agenda.nextDate,fixtureId:agenda.fixtureId,competition:agenda.nextCompetition}:null,continuations,round:career.getInt32(0x4c,true),leg:career.getInt32(0x50,true),match:matchSession?.snapshot()??null,results:resultsHost?{active:true}:null,club:state?.clubs[clubId]?.name??null});
+window.advanceTime=async ms=>matchSession?.advanceTime(ms);
+window.careerLoop={save:()=>writeSave(save),renderer,get state(){return state;},get match(){return matchSession;},get results(){return resultsHost;},get agenda(){return agenda;},get rounds(){return rounds;},get continuations(){return continuations;},async runContinuation(){
+ const calendar=careerSchedule(save),effects=nativeResultsCareerEffects(save,runtime,{rng,temporary,calendar,managerDialogs});
+ await continueResultsCareer(save,runtime,effects,calendar);
+ rounds++;continuations.push({day:career.getInt32(0x16c,true),competition:runtime.nextCompetition,human:runtime.humanParticipation??null});
+ if(!prepareRound())startMessage=language[484].text;else await renderer.show(view());
+ return {rounds,agenda,continuations};
+}};
+if(!new URLSearchParams(location.search).has('manualClock')){let last=performance.now();const animate=now=>{const delta=now-last;last=now;matchSession?.advanceTime(delta);requestAnimationFrame(animate);};requestAnimationFrame(animate);}
+</script>
