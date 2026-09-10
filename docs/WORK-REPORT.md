@@ -73,7 +73,7 @@ Original-style dismissal, recap and offer dialogs are connected in development f
 
 Implemented components include league standings and qualification highlights; seven regional formats; regional tables, knockout captions and geometry; continental group tables; knockout progression helpers; champion/history routines; and result-performance adjustments.
 
-Continental post-round processing ranks groups, eliminates clubs, records finishes and seeds two-legged fixtures. Its result-performance children have original-execution comparisons; whole-routine comparison coverage for the continental controller remains pending.
+Continental post-round processing ranks groups, eliminates clubs, records finishes and seeds two-legged fixtures. Its result-performance children have original-execution comparisons, and the complete controller now passes **200 whole-routine original-execution comparisons** with the performance application included.
 
 International post-round qualification is connected. Competition 8 advances the top two in three groups plus the two best third-place teams. Competition 9 advances the top two in four groups. Original quarter-final pairings and participation flags are preserved. The complete routine passes **800 original-execution comparisons**.
 
@@ -93,7 +93,7 @@ This is not pixel-perfect certification. Font rasterization, some control skins,
 
 ## Verification and repairs
 
-The cumulative development ledger records **250,707 original-comparison cases** through the latest routing-controller work. This is a historical coverage count, not unique features or a formal equivalence guarantee. Older READMEs contain earlier totals.
+The cumulative development ledger records **250,907 original-comparison cases** through the latest controller-oracle work. This is a historical coverage count, not unique features or a formal equivalence guarantee. Older READMEs contain earlier totals.
 
 Verification combines isolated original-instruction comparisons, whole-routine comparisons, original-save integration, browser interaction tests and screenshot inspection. Depending on the test, adapters substitute Delphi storage/string operations, UI boundaries or unported children. Those distinctions limit the claims each test supports.
 

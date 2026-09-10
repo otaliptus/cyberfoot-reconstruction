@@ -1,5 +1,11 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-10 — Whole continental controller oracle
+- Previous goal turn classified verified progress (national-next routing). Closed the pending whole-controller verification debt: continental_post_round_oracle.py runs200 whole original005f3890 comparisons with all children native (00646a38 performance,006490a8 finish records,0065a250 knockout lookup) and storage adapters only.98 competition4 and92 competition6 cases;92 final-round cases seed and finish;59 date-matched fixtures apply performance results. Career/clubs/fixtures/history bytes and RNG match.
+- The native controller required no changes; an initial oracle mismatch was traced to the harness setting the calendar pointer at66b574 through the wrong indirection (direct pointer, not pointer slot). Native and original were already identical.
+- Registered continental-post-round-whole-parity.mjs in run-all; half the cases run through the nativeResultsCareerEffects binding. Total original comparison cases250907(250707+200). Full run-all exit0.
+- Next dependencies: seasonEnd5f96dc, humanNext5f99c4/automaticNext5f9bcc UI hosts and forms, leagueNext binding to5fa020, national setup UI, career entry/new-game initialization and deployment. Native game incomplete/unpublished; goal active.
+
 ### 2026-09-10 — National next screen and cup/other dispatch
 - Previous goal turn classified verified progress (club world). Added results-routing.mjs: whole005f9dc8 nationalNextScreen and whole005f9efc/005f9f14 dispatchCompetitionNext. The national screen clears the27 regional second-stage flags at52e, awaits unemployedOffers, managerChanges and selectHumanParticipation twice, then dispatches to humanNext/automaticNext on runtime.humanParticipation. The original ordinal branch at66b080 only reads region52d/52f and discards its result, so it has no observable effect. All five callbacks are required before mutation; no no-ops.
 - national_next_oracle.py runs300 whole original005f9dc8 runs plus both dispatchers with subcontroller adapters only, comparing every regional record, call order and dispatch choice:139 human/161 automatic national,156/144 cup. Every case clears exactly the52e bytes and preserves all other region data.

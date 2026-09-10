@@ -134,6 +134,8 @@ await import('./club-world-integration.mjs');
 
 await import('./national-next-parity.mjs');
 
+await import('./continental-post-round-whole-parity.mjs');
+
 await import('./player-move-parity.mjs');
 
 await import('./player-return-integration.mjs');
