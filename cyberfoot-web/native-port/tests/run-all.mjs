@@ -136,6 +136,8 @@ await import('./national-next-parity.mjs');
 
 await import('./human-next-state-parity.mjs');
 
+await import('./automatic-next-state-parity.mjs');
+
 await import('./continental-post-round-whole-parity.mjs');
 
 await import('./player-move-parity.mjs');

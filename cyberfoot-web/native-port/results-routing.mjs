@@ -21,6 +21,27 @@ export function nationalManagerAssignmentIndex(save,runtime,{date}={}){
  if(c.getUint8(0x708)!==0)return false;
  c.setUint8(0x708,1);return result;
 }
+/** Whole005f9bcc state block: the continental flag and the original regional
+ * next-screen selection. The UI boundary (progress advance, generic form or
+ * season review) is a separate required host. */
+export function automaticNextState(save,runtime){
+ const c=view(save.career),state=runtime??{},competition=c.getInt32(0x88,true),region=id=>view(record(save,'records_0066ae98',id));
+ state.autoNextFlag=competition===4||competition===6?1:0;
+ if(competition!==3)return state;
+ const scan=()=>{for(let i=0;i<27;i++){const r=region(i);if(r.getUint8(0x52d)!==0&&r.getUint8(0x52f)===0)return i;}return 0;};
+ let next=0;
+ for(let i=0;i<27;i++){const r=region(i);if(r.getUint8(0x52c)!==0&&r.getUint8(0x52d)!==0&&r.getUint8(0x52f)===0){next=i;break;}}
+ if(next===0&&region(0).getInt32(0x510,true)===0){
+  if(region(25).getUint8(0x52d)===0||region(25).getUint8(0x52f)!==0){
+   if(region(18).getUint8(0x52d)===0||region(18).getUint8(0x52f)!==0){
+    if(region(10).getUint8(0x52d)===0||region(10).getUint8(0x52f)!==0)next=scan();
+    else next=10;
+   } else next=18;
+  }else next=25;
+ }
+ if(next===0&&region(0).getInt32(0x510,true)>0&&region(0).getUint8(0x52f)!==0)next=scan();
+ state.nextRegionIndex=next;return state;
+}
 /** Whole5f9efc and5f9f14: the cup and other-competition next screens dispatch
  * on the participation flag selected for the next competition. */
 export async function dispatchCompetitionNext(runtime,hosts){

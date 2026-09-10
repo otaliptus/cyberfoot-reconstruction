@@ -1,5 +1,11 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-10 — Automatic-next state and regional selection
+- Previous goal turn classified verified progress (human-next predicates). Added automaticNextState(whole005f9bcc state block) to results-routing.mjs: sets the continental flag66b484 for competitions4/6 and, for competition3, reproduces the regional selection66b09c: first 52c/52d/52f scan, the region25/18/10 special offsets0x8c55/0x667d/0x3b3d, the fallback52d scan, and the second scan gated by region0 0x510>0 and 52f. The not-found default0 quirk is preserved. UI boundary(4e1a98/5f4074/483bc4 plus generic or season-review form) remains a separate required host.
+- automatic_next_oracle.py runs600 whole original005f9bcc cases with UI boundary adapters only; regions never mutated. Coverage: flags202/398, region selections0/25/18/10/1..24 plus no-match,4 season-review tails.
+- Registered automatic-next-state-parity.mjs. Total original comparison cases252307(251707+600). Full run-all exit0.
+- Next dependencies: automaticNext/humanNext form hosts composing the state blocks, seasonEnd5f96dc with006552ec (uninitialized stack bound documented), leagueNext binding to5fa020, national setup UI, career entry and deployment. Native game incomplete/unpublished; goal active.
+
 ### 2026-09-10 — Human-next state predicates
 - Previous goal turn classified verified progress (continental controller oracle). Added hasUnderLimitHumanClub(whole005f996c) and nationalManagerAssignmentIndex(whole005f98f4) to results-routing.mjs. The first scans the human club list and compares club64 to the original senior limit pointer66b610. The second scans national manager slots, calls native eligibility0064d890, writes index+1 to66b710, then applies the one-shot career708 gate: the index is written even when the gate makes the result false.
 - human_next_state_oracle.py runs800 original comparisons with no adapters:400 under-limit predicates with signed slot ids/extreme limits and400 national index cases spanning empty/eligible squads, flag pre-set and unset, and date boundaries. All return values, index and flag bytes match.
