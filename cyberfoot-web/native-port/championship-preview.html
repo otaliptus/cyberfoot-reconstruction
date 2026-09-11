@@ -1,0 +1,21 @@
+<!doctype html><meta charset="utf-8"><title>Form39 custom championship — development</title><style>body{margin:0;padding:16px;font:13px Arial,sans-serif;background:#223722;color:#fff}pre{background:#111;color:#8f8;padding:8px;max-height:260px;overflow:auto;white-space:pre-wrap}button{margin-right:4px}</style>
+<h1>TForm39 custom championship — development preview</h1>
+<div id="championship"></div>
+<h2>Events</h2>
+<pre id="log" data-championship-log></pre>
+<script type="module">
+import {readSave} from './save-format.mjs';
+import {mountChampionship} from './championship.mjs';
+const [language,bytes]=await Promise.all([fetch('language.json').then(response=>response.json()),fetch('tests/original-career.s15').then(response=>response.arrayBuffer())]);
+const save=readSave(bytes);
+const manual=new URLSearchParams(location.search).has('manualClock');
+const logBox=document.querySelector('#log'),lines=[];
+const log=line=>{lines.push(line);if(lines.length>200)lines.shift();logBox.textContent=lines.join('\n');};
+const host=mountChampionship(document.querySelector('#championship'),{save,language,registered:true,seed:2015});
+const first=host.view().countries.slice(0,2).map(entry=>entry.country);
+for(const country of first)host.toggleCountry(country);
+try{const built=host.build();log(`built ${built.totalClubs} clubs ${built.formatId} cup=${built.cupBracket?built.cupBracket.length:0}`);}catch(error){log(`build error: ${error.message}`);}
+log(manual?'ready (manual clock)':'ready (auto clock)');
+window.championshipDevelopment={save,language,get host(){return host;},get view(){return host.view();},build:()=>host.build(),lines};
+window.render_game_to_text=()=>JSON.stringify({developmentProof:true,completeGame:false,form:'Form39',selected:host.selectedCountries,built:(()=>{try{const built=host.build();return {clubs:built.totalClubs,format:built.formatId,ties:built.cupBracket?built.cupBracket.length:0};}catch{return null;}})(),events:lines.length});
+</script>

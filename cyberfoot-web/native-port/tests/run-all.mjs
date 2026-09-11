@@ -159,6 +159,16 @@ await import('./training-window-node.mjs');
 await import('./season-transition-node.mjs');
 await import('./match-presentation-node.mjs');
 await import('./vcl-renderer-node.mjs');
+await import('./vcl-fidelity-node.mjs');
+await import('./transfer-trigger-node.mjs');
+await import('./national-fixtures-node.mjs');
+await import('./season-rotation-parity.mjs');
+await import('./season-prize-parity.mjs');
+await import('./player-aging-parity.mjs');
+await import('./youth-intake-parity.mjs');
+await import('./registration-node.mjs');
+await import('./championship-node.mjs');
+await import('./club-editor-node.mjs');
 
 await import('./season-move-parity.mjs');
 

@@ -1,0 +1,26 @@
+<!doctype html><meta charset="utf-8"><title>Form3 club editor — development</title><style>body{margin:0;padding:16px;font:13px Arial,sans-serif;background:#4d2b2b;color:#fff}input,select{max-width:160px}pre{background:#111;color:#8f8;padding:8px;max-height:260px;overflow:auto;white-space:pre-wrap}button{margin-right:4px}</style>
+<h1>TForm3 club editor — development preview</h1>
+<div><label>Club id: <input id="clubId" type="number" min="0" value="11"></label><button id="openClub" data-club-editor-open>Open club</button></div>
+<div id="editor"></div>
+<h2>Events</h2>
+<pre id="log" data-club-editor-log></pre>
+<script type="module">
+import {readSave,record,shortString} from './save-format.mjs';
+import {mountClubEditor} from './club-editor.mjs';
+const [language,bytes]=await Promise.all([fetch('language.json').then(response=>response.json()),fetch('tests/original-career.s15').then(response=>response.arrayBuffer())]);
+const save=readSave(bytes);
+const manual=new URLSearchParams(location.search).has('manualClock');
+const logBox=document.querySelector('#log'),lines=[];
+const log=line=>{lines.push(line);if(lines.length>200)lines.shift();logBox.textContent=lines.join('\n');};
+let host=null;
+function openClub(){
+  host?.element.remove();host=null;
+  const id=Number(document.querySelector('#clubId').value);
+  try{host=mountClubEditor(document.querySelector('#editor'),{save,language,clubId:id});log(`--- editor club ${id} (${shortString(record(save,'clubs',id),0,25)})`);}catch(error){log(`editor error: ${error.message}`);}
+}
+document.querySelector('#openClub').addEventListener('click',openClub);
+openClub();
+log(manual?'ready (manual clock)':'ready (auto clock)');
+window.clubEditorDevelopment={save,language,open:openClub,get host(){return host;},get view(){return host?.view()??null;},lines};
+window.render_game_to_text=()=>JSON.stringify({developmentProof:true,completeGame:false,form:'Form3',club:host?{id:host.clubId,view:host.view().club}:null,players:host?host.view().playerCount:null,events:lines.length});
+</script>

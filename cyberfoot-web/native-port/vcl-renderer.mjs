@@ -120,7 +120,16 @@ function richText(p){
  return {source:caption,parsed:null};
 }
 function imagePath(node,p,frame){
- return frame.images?.[node.name]??frame.imagePaths?.[node.name]??frame.kitImagePaths?.[node.name]??p['Picture.Data']?.asset??p['Glyph.Data']?.asset??null;
+ const direct=frame.images?.[node.name]??frame.imagePaths?.[node.name]??frame.kitImagePaths?.[node.name];
+ if(direct)return direct;
+ // Single-crest hosts (Form34/Form54 escudo via penalty hosts): frame.crest.
+ if(node.name==='escudo'&&typeof frame.crest==='string'&&frame.crest)return frame.crest;
+ // Dual-crest hosts (Form88 f88esc1/f88esc2 via match tactics): frame.crests array.
+ if(node.name==='f88esc1'&&Array.isArray(frame.crests)&&frame.crests[0])return frame.crests[0];
+ if(node.name==='f88esc2'&&Array.isArray(frame.crests)&&frame.crests[1])return frame.crests[1];
+ const crestMapped=frame.crestPaths?.[node.name];
+ if(typeof crestMapped==='string'&&crestMapped)return crestMapped;
+ return p['Picture.Data']?.asset??p['Glyph.Data']?.asset??null;
 }
 function pushInteraction(ctx,node,p,x,y,w,h,extra={}){
  const operation=p.OnClick??p.OnMouseDown;
@@ -269,7 +278,14 @@ function advSmoothLabelPrimitive(ctx,node,p,x,y,w,h){
  pushInteraction(ctx,node,p,x,y,w,h,{className:'label',cursor:p.Cursor});
 }
 function imagePrimitive(ctx,node,p,x,y,w,h){
- ctx.primitives.push({kind:'image',x,y,w,h,path:imagePath(node,p,ctx.frame),stretch:p.Stretch===true,center:p.Center===true,proportional:p.Proportional===true,fallback:{color:delphiColor(p.Color??'#000000'),border:null}});
+ const path=imagePath(node,p,ctx.frame);
+ // Control-colored fill only as a last resort: an original TImage with no
+ // picture is transparent unless it carries an explicit opaque Color.
+ // A missing bitmap otherwise paints nothing instead of a black box.
+ const hasExplicitColor=p.Color!==undefined&&!isTransparent(p.Color)&&p.Transparent!==true;
+ const fallback=path?null:(hasExplicitColor?{color:delphiColor(p.Color),border:null}:null);
+ if(fallback)ctx.fallbacks=(ctx.fallbacks??0)+1;
+ ctx.primitives.push({kind:'image',x,y,w,h,path,stretch:p.Stretch===true,center:p.Center===true,proportional:p.Proportional===true,fallback});
  pushInteraction(ctx,node,p,x,y,w,h,{className:'image',cursor:p.Cursor});
 }
 function buttonPrimitive(ctx,node,p,x,y,w,h,kind,parentFont){
@@ -337,14 +353,17 @@ function panelPrimitive(ctx,node,p,x,y,w,h,parentFont){
 }
 function layoutControl(ctx,node,parentProps,ox,oy,parentFont){
  const cls=node.class_name;
- if(INVISIBLE.has(cls))return;
  const overrides=ctx.frame.properties?.[node.name]??{};
  const p={...node.properties,...overrides};
  if(p.Visible===false)return;
  const x=ox+Number(p.Left??0),y=oy+Number(p.Top??0),w=Number(p.Width??0),h=Number(p.Height??0);
+ // Modal/overlay branches must run before the invisible-infrastructure skip:
+ // dlg_st is a TAdvSmoothMessageDialog (otherwise skipped) that hosts the
+ // statistics dialog when frame.statistics is present.
  if(ctx.frame.statistics&&node.name==='dlg_st'){statisticsPrimitive(ctx,p,x,y,w,h,parentFont);return;}
  if(ctx.frame.eventLog&&node.name==='teste'){ctx.primitives.push({kind:'event-log',x,y,w,h,rows:ctx.frame.eventLog.rows,truncated:ctx.frame.eventLog.truncated});return;}
  if(ctx.frame.lineups&&(node.name==='escalacao1'||node.name==='escalacao2')){lineupListPrimitive(ctx,node,p,x,y,w,h);return;}
+ if(INVISIBLE.has(cls))return;
  if(cls==='TShape'){shapePrimitive(ctx,node,p,x,y,w,h);return;}
  if(cls==='TBevel'){ctx.primitives.push({kind:'bevel',x,y,w,h,outer:p.Shape==='bsBox'?'bvLowered':'bvRaised',inner:'bvNone',width:Number(p.Shape==='bsBox'?1:2)});return;}
  if(cls==='TGradient'){ctx.primitives.push({kind:'radial-gradient',x,y,w,h,from:delphiColor(p.ColorBegin??'clNavy'),to:delphiColor(p.ColorEnd??'clBlack')});return;}
@@ -396,18 +415,35 @@ function layoutControl(ctx,node,parentProps,ox,oy,parentFont){
  ctx.primitives.push({kind:'placeholder',x,y,w,h,className:cls,name:node.name,color:'#d4d0c8'});
 }
 
-/** Pure layout: DFM form tree + per-control overrides -> drawing primitives. */
+/** Pure layout: DFM form tree + per-control overrides -> drawing primitives.
+ * Visible VCL classes wired in the game shell (enumerated in
+ * tests/vcl-fidelity-node.mjs): TShape/TBevel/TGradient/TPanel/TScrollBox/
+ * TNotebook+TPage/TPageControl+TTabSheet/TAdvSmoothPanel, TTntLabel/TLabel/
+ * TDBText/THTMLabel/TUniHTMLabel/TAdvSmoothLabel, TImage/TTntImage, TNextGrid/
+ * TStringGrid/TListView, TBitBtn/TTntBitBtn/TTntButton/TButton/TAdvGlowButton/
+ * TXiButton, TEdit/TMaskEdit/TMemo/TTntRichEdit/TTntMemo, TUniHTMLCombobox/
+ * TComboBox/TComboBoxEx, TUpDown, TCheckBox/THTMLCheckBox/TTntCheckBox,
+ * TRadioButton/THTMLRadioButton/TTntRadioButton, TGauge/TProgressBar/
+ * TAdvSmoothProgressBar/TTrackBar/TScrollBar. Never visible in the wired
+ * screens (stay skipped): TGroupBox/TRadioGroup/TSpeedButton/TStaticText/
+ * TDBImage/TDateTimePicker/TColorBox and other data-aware mirrors.
+ * Unknown visible classes fall back to a neutral placeholder; invisible
+ * infrastructure (TImageList/TTimer/menus/dialogs/columns/containers) is
+ * skipped. Missing bitmaps paint a control-colored fill only as a last
+ * resort (transparent otherwise); the per-layout count is exposed as
+ * `fallbackFills` and must stay zero for the wired screens. */
 export function layoutForm(form,frame={},_options={}){
  if(!form)throw Error('layoutForm requires an original form tree.');
  frame={form:form.name,...frame};
  const width=Number(frame.width??form.properties.ClientWidth??640),height=Number(frame.height??form.properties.ClientHeight??480);
- const ctx={form,frame,primitives:[],interactions:[],parentFont:fontSpec(form.properties,DEFAULT_FONT),hover:frame.hover??null,down:frame.down??null};
+ const ctx={form,frame,primitives:[],interactions:[],parentFont:fontSpec(form.properties,DEFAULT_FONT),hover:frame.hover??null,down:frame.down??null,fallbacks:0};
  if(frame.background)ctx.primitives.push({kind:'fill',x:0,y:0,w:width,h:height,color:delphiColor(form.properties.Color??'clBlack'),image:frame.background,tile:true});
  else ctx.primitives.push({kind:'fill',x:0,y:0,w:width,h:height,color:delphiColor(form.properties.Color??'clBtnFace')});
  for(const child of form.children??[])layoutControl(ctx,child,form.properties,0,0,ctx.parentFont);
  if(Array.isArray(frame.fixtures)&&form.name==='Form46')matchFixturesPrimitive(ctx,frame,width,height);
  if(Array.isArray(frame.dynamic))ctx.primitives.push(...frame.dynamic);
- return {form:form.name,width,height,color:delphiColor(form.properties.Color??'clBtnFace'),borderStyle:form.properties.BorderStyle??'bsSingle',primitives:ctx.primitives,interactions:ctx.interactions};
+ const fallbackFills=ctx.primitives.filter(primitive=>primitive.kind==='image'&&!primitive.path&&primitive.fallback?.color).length;
+ return {form:form.name,width,height,color:delphiColor(form.properties.Color??'clBtnFace'),borderStyle:form.properties.BorderStyle??'bsSingle',primitives:ctx.primitives,interactions:ctx.interactions,fallbackFills,fallbacks:ctx.fallbacks??0};
 }
 
 /* ------------------------------------------------------------------ painter */
@@ -720,7 +756,9 @@ function paintPrimitive(ctx,prim,images){
     else if(prim.stretch)ctx.drawImage(image,prim.x,prim.y,prim.w,prim.h);
     else if(prim.center)ctx.drawImage(image,prim.x+Math.trunc((prim.w-image.width)/2),prim.y+Math.trunc((prim.h-image.height)/2));
     else ctx.drawImage(image,prim.x,prim.y);
-   }else{ctx.fillStyle=prim.fallback.color;ctx.fillRect(prim.x,prim.y,prim.w,prim.h);}
+   }else if(prim.fallback?.color){ctx.fillStyle=prim.fallback.color;ctx.fillRect(prim.x,prim.y,prim.w,prim.h);}
+   // Transparent when neither bitmap nor control-colored fallback exists:
+   // the original TImage with no picture shows its parent, not a black box.
    return;
   }
   case 'text':return paintText(ctx,prim);

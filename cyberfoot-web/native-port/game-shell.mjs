@@ -4,7 +4,11 @@
  * clickable TShape hotspots and the SAIR label) painted by vcl-renderer from
  * forms.json. New Game/Load Game drive the verified career modules; the lineup,
  * match, results, route screens, season transition, auction and contract
- * windows are the original DFM forms. Only the VCL windows are visible; a
+ * windows are the original DFM forms. Every screen goes through the VCL-style
+ * form manager (form-manager.mjs: modeless Show via manager.open, modal
+ * ShowModal via manager.openModal); the match/penalty/injury/tactics hosts
+ * keep calling the renderer facade and stay in sync through the manager's
+ * wrapped show/update/close. Only the VCL windows are visible; a
  * hidden F12 dev overlay toggles the auxiliary windows.
  */
 import {VclRenderer} from './vcl-renderer.mjs';
@@ -37,6 +41,11 @@ import {originalMoney} from './finance-view.mjs';
 import {matchMinute} from './match-score-plan.mjs';
 import {createAuctionSession} from './auction-window.mjs';
 import {createContractSession} from './contract-window.mjs';
+import {pendingAuctionOffer,pendingContractOffer,consumeAuctionOffer} from './transfer-trigger.mjs';
+import {applySeasonRotation} from './season-rotation.mjs';
+import {applyPrizeMoney} from './season-prize.mjs';
+import {createLiveMatchDriver,createMatchSoundPlayer} from './live-match-driver.mjs';
+import {ModalResults,createFormManager} from './form-manager.mjs';
 
 const query=new URLSearchParams(location.search);
 const [forms,language,template,kitAssets,crestAssets]=await Promise.all([
@@ -55,6 +64,7 @@ const autoInteractions=query.has('autoInteractions')||query.has('automaticIntera
 const renderer=await new VclRenderer(document.getElementById('screen'),forms,{strict:false}).prepare();
 const unhandled=[];
 renderer.onUnhandled=operation=>{unhandled.push(operation);};
+const manager=createFormManager(renderer);
 
 let save=null,career=null,rng=null,state=null,agenda=null,rows=null,slots=null,clubId=11;
 let formation=4,checkedKit=1,shirtImage=null,kitPaths=[],opponentId=null,opponentKit=null;
@@ -63,7 +73,37 @@ let roundDay=0,roundDate=0,roundFixtureId=-1,routeScreen=null,routeSessionFixtur
 let rounds=0,continuations=[],seasonTransitions=[],playedCompetition=null,matchFailure=null;
 let runtime={nationalManagerCount:0,nationalAssignmentsActive:false},temporary={lineups:[],matchTeams:[]};
 let seasonMoveHost=null,auction=null,contractSession=null,auctionTimer=null,resultsActive=null;
+let liveDriver=null,liveSoundSeen=0,lastMatchSounds=[];
+const soundPlayer=createMatchSoundPlayer({basePath:'assets/sounds'});
 let clock=2015;
+
+function drainLiveSounds(){
+ if(!matchSession||!soundPlayer)return;
+ let requests=[];
+ try{requests=matchSession.snapshot().soundRequests??[];}catch{requests=[];}
+ while(liveSoundSeen<requests.length){
+  const name=requests[liveSoundSeen++];
+  try{void soundPlayer.play(name);}catch{}
+ }
+ // Retain the final request list: the full-time continuation clears the live
+ // session once Form67 owns the screen, so post-match reads fall back here.
+ lastMatchSounds=[...requests];
+}
+function stopLiveDriver(){
+ if(liveDriver){try{liveDriver.stop();}catch{}}
+ liveDriver=null;
+}
+function startLiveDriver(){
+ if(!matchSession||liveDriver)return liveDriver;
+ liveSoundSeen=0;
+ try{
+  const seen=matchSession.snapshot().soundRequests?.length??0;
+  liveSoundSeen=seen;
+ }catch{liveSoundSeen=0;}
+ liveDriver=createLiveMatchDriver({session:matchSession,manager,renderer,intervalMs:manualClock?60:120,onTick:()=>{drainLiveSounds();updateDevStatus();}});
+ liveDriver.start();
+ return liveDriver;
+}
 
 const currentDate=()=>{if(!save)return undefined;const calendar=careerSchedule(save),day=career.getInt32(0x16c,true);return calendar[day-1]?.date;};
 const opponent=()=>state.clubs[opponentId].name;
@@ -84,7 +124,7 @@ function menuFrame(){
  dynamic.push({kind:'text',x:25,y:238,w:180,h:16,text:'www.cyberfoot.net',lines:null,font:{...smallFont('#ffff00'),bold:true},color:'#ffff00',align:'left',wordWrap:false,shadow:null,background:null,vAlign:'top'});
  return {form:'Form1',properties:{comboi2:{Items:[language[0].text],ItemIndex:0}},dynamic};
 }
-function showMenu(){selector='menu';stopClubEditor();void renderer.show(menuFrame());updateDevStatus();}
+function showMenu(){selector='menu';stopClubEditor();void manager.open(menuFrame());updateDevStatus();}
 
 let newGameName='New Manager',newGameClub=11,loadSelection=0,selector='menu';
 function newGameFrame(){
@@ -108,7 +148,7 @@ function newGameFrame(){
   Label5:{Caption:language[35].text},Label6:{Caption:language[36].text},Label7:{Caption:language[37].text},Label8:{Caption:language[38].text}
  },clubs:list};
 }
-function showNewGame(){selector='new-game';void renderer.show(newGameFrame());updateDevStatus();}
+function showNewGame(){selector='new-game';void manager.open(newGameFrame());updateDevStatus();}
 
 function loadGameFrame(){
  const careers=listStoredCareers(localStorage),selected=careers[loadSelection];
@@ -121,9 +161,9 @@ function loadGameFrame(){
  });
  return {form:'Form21',properties,grids:{grid1:grid},careers};
 }
-function showLoadGame(){selector='load-game';loadSelection=Math.min(loadSelection,Math.max(listStoredCareers(localStorage).length-1,0));void renderer.show(loadGameFrame());updateDevStatus();}
+function showLoadGame(){selector='load-game';loadSelection=Math.min(loadSelection,Math.max(listStoredCareers(localStorage).length-1,0));void manager.open(loadGameFrame());updateDevStatus();}
 
-function showStaticMenuWindow(form){selector='message';void renderer.show({form,properties:{}});updateDevStatus();}
+function showStaticMenuWindow(form){selector='message';void manager.open({form,properties:{}});updateDevStatus();}
 
 /* ------------------------------------- original new-game settings (Form9) */
 
@@ -161,7 +201,7 @@ function gameSettingsFrame(){
   xibutton2:{Caption:language[29].text}
  },grids:{list1:rows},headers:{NxTextColumn1:language[744].text,nxtimes:language[739].text},countries,settingsCountry:countries[0]?.value??-1};
 }
-function showGameSettings(){selector='new-game-settings';void renderer.show(gameSettingsFrame());updateDevStatus();}
+function showGameSettings(){selector='new-game-settings';void manager.open(gameSettingsFrame());updateDevStatus();}
 renderer.register('Form9.XiButton1Click',()=>showMenu());
 renderer.register('Form9.XiButton2Click',()=>showNewGame());
 renderer.register('Form9.list1CellClick',index=>{
@@ -169,7 +209,7 @@ renderer.register('Form9.list1CellClick',index=>{
  if(!row)return;
  const selected=row.value===frame.settingsCountry?frame.countries[0]?.value:row.value;
  const next={...frame,settingsCountry:selected,properties:{...frame.properties,ComboBox1:{Items:frame.countries.map(country=>country.text),ItemIndex:Math.max(0,frame.countries.findIndex(country=>country.value===selected))}}};
- void renderer.show(next);updateDevStatus();
+  void manager.open(next);updateDevStatus();
 });
 
 /* --------------------------------- original club-editor loading (Form2) */
@@ -187,10 +227,10 @@ function clubEditorFrame(progress,total){
 function showClubEditor(){
  selector='club-editor';stopClubEditor();
  const total=clubChoices().length;let progress=0;
- void renderer.show(clubEditorFrame(0,total));
- clubEditorTimer=setInterval(()=>{
-  progress=Math.min(100,progress+10);
-  if(renderer.frame?.form==='Form2')renderer.update(clubEditorFrame(progress,total));
+  void manager.open(clubEditorFrame(0,total));
+  clubEditorTimer=setInterval(()=>{
+   progress=Math.min(100,progress+10);
+   if(renderer.frame?.form==='Form2')manager.update(clubEditorFrame(progress,total));
   if(progress>=100){stopClubEditor();setTimeout(()=>{if(renderer.frame?.form==='Form2')showMenu();},350);}
  },70);
  updateDevStatus();
@@ -229,10 +269,10 @@ renderer.register('Form11.button1Click',async()=>{
  newGameClub=list[combo]?.id??newGameClub;
  await newGame({managerName:edit,clubId:newGameClub});
 });
-renderer.register('Form21.grid1SelectCell',index=>{loadSelection=Number(index)||0;renderer.update(loadGameFrame());});
+renderer.register('Form21.grid1SelectCell',index=>{loadSelection=Number(index)||0;manager.update(loadGameFrame());});
 renderer.register('Form21.BitBtn1Click',async()=>{const entry=listStoredCareers(localStorage)[loadSelection];if(!entry)return;const bytes=await readStoredCareerSave(localStorage,entry.id);await enterCareer(bytes);});
 renderer.register('Form21.BitBtn2Click',()=>showMenu());
-renderer.register('Form21.BitBtn3Click',()=>{const entry=listStoredCareers(localStorage)[loadSelection];if(entry){removeStoredCareer(localStorage,entry.id);loadSelection=0;}renderer.update(loadGameFrame());});
+renderer.register('Form21.BitBtn3Click',()=>{const entry=listStoredCareers(localStorage)[loadSelection];if(entry){removeStoredCareer(localStorage,entry.id);loadSelection=0;}manager.update(loadGameFrame());});
 
 function managerDialogsHost(){return {humanDismissal:async()=>{},showChanges:async()=>{},showOffer:async()=>{},humanNext,automaticNext,showMove:move=>seasonMoveHost?seasonMoveHost.open(move):Promise.resolve()};}
 
@@ -268,15 +308,15 @@ function viewModel(){
  return result;
 }
 function showHub(){
- const frame=clubHubView(save,language,{state,date:currentDate()});
- void renderer.show(frame);updateDevStatus();
+  const frame=clubHubView(save,language,{state,date:currentDate()});
+  void manager.open(frame);updateDevStatus();
 }
-for(const k of [1,2,3])renderer.register('Form87.rd'+k+'Click',()=>{checkedKit=k;if(kitPaths[k-1]){state.clubs[clubId].selectedKit=k;shirtImage=kitPaths[k-1];}renderer.update(viewModel());});
-renderer.register('Form87.combtatClick',index=>{formation=index+1;slots=autoSelectScreenLineup(state,rows,formation,save,clubId).slots;renderer.update(viewModel());});
-for(const [control,operation] of [['comboej','comboejClick'],['combomarc','combomarcChange'],['combo_cataq','combo_cataqChange']])renderer.register('Form87.'+operation,index=>{setTactic(state.clubs[clubId],control,index);renderer.update(viewModel());});
-renderer.register('Form87.combo1Change',index=>{state.clubs[clubId].captain=rows[index].playerId;renderer.update(viewModel());});
-renderer.register('Form87.combo2Change',index=>{state.clubs[clubId].setPiecePlayer=rows[index].playerId;renderer.update(viewModel());});
-renderer.register('Form87.ckescalacaoClick',checked=>{career.setUint8(0xde,checked?1:0);renderer.update(viewModel());});
+for(const k of [1,2,3])renderer.register('Form87.rd'+k+'Click',()=>{checkedKit=k;if(kitPaths[k-1]){state.clubs[clubId].selectedKit=k;shirtImage=kitPaths[k-1];}manager.update(viewModel());});
+renderer.register('Form87.combtatClick',index=>{formation=index+1;slots=autoSelectScreenLineup(state,rows,formation,save,clubId).slots;manager.update(viewModel());});
+for(const [control,operation] of [['comboej','comboejClick'],['combomarc','combomarcChange'],['combo_cataq','combo_cataqChange']])renderer.register('Form87.'+operation,index=>{setTactic(state.clubs[clubId],control,index);manager.update(viewModel());});
+renderer.register('Form87.combo1Change',index=>{state.clubs[clubId].captain=rows[index].playerId;manager.update(viewModel());});
+renderer.register('Form87.combo2Change',index=>{state.clubs[clubId].setPiecePlayer=rows[index].playerId;manager.update(viewModel());});
+renderer.register('Form87.ckescalacaoClick',checked=>{career.setUint8(0xde,checked?1:0);manager.update(viewModel());});
 renderer.register('Form87.bt_voltarClick',()=>{if(career.getUint8(0xde))saveScreenLineup(save,clubId,slots);showHub();});
 renderer.onLineupDrop=({source,targetSlot})=>{
  if(starting||matchSession)return;
@@ -284,14 +324,14 @@ renderer.onLineupDrop=({source,targetSlot})=>{
   if(source.playerId!==undefined){const row=rows.find(entry=>entry.playerId===source.playerId);if(row)slots[targetSlot-1]=row;}
   else if(source.slot){const swap=slots[source.slot-1];slots[source.slot-1]=slots[targetSlot-1];slots[targetSlot-1]=swap;}
  }
- renderer.update(viewModel());
+  manager.update(viewModel());
 };
 
-function presentScreen(screen){return new Promise(resolve=>{routeScreen={view:screen,resolve};void renderer.show(screen);});}
-function resolveScreen(){if(!routeScreen){renderer.close();return false;}const entry=routeScreen;routeScreen=null;entry.resolve();return true;}
+function presentScreen(screen){return new Promise(resolve=>{routeScreen={view:screen,resolve};void manager.open(screen);});}
+function resolveScreen(){if(!routeScreen){manager.close(ModalResults.mrOk);return false;}const entry=routeScreen;routeScreen=null;entry.resolve();return true;}
 for(const key of ['Form26.bt3Click','Form75.btjogarClick','Form77.bt2Click','Form85.XiButton1Click','Form85.XiButton2Click'])renderer.register(key,resolveScreen);
-renderer.register('Form13.btjogarClick',()=>{if(routeScreen)resolveScreen();else void renderer.show(viewModel());});
-renderer.register('Form13.lb_infonextClick',()=>{if(routeScreen)resolveScreen();else void renderer.show(viewModel());});
+renderer.register('Form13.btjogarClick',()=>{if(routeScreen)resolveScreen();else void manager.open(viewModel());});
+renderer.register('Form13.lb_infonextClick',()=>{if(routeScreen)resolveScreen();else void manager.open(viewModel());});
 async function presentScreens(screens){for(const screen of screens){await presentScreen(screen);if(screen.form==='Form77'){runtime.routeNationalIndex=screen.managerIndex;selectNationalPlayers(save,screen.country,screen.nationalClubId,{rng});}}}
 async function humanNext(){
  const competition=career.getInt32(0x88,true),date=currentDate();
@@ -302,6 +342,17 @@ async function humanNext(){
   for(const candidate of candidates)if(candidate.eligible)screens.push(nationalAssignmentView(save,runtime,language,{index:candidate.index,state}));
   screens.push(nationalHubView(save,runtime,language,{state}));
   return presentScreens(screens);
+ }
+ // Original 005f99c4 auction branch: league + human participation shows Form23
+ // instead of the hub. The deterministic offer comes from transfer-trigger.mjs;
+ // the day guard in consumeAuctionOffer keeps it one-shot per career day.
+ const offer=pendingAuctionOffer(save,runtime);
+ if(offer){
+  runtime.auctionPlayer=offer.player;
+  runtime.auctionBasePrice=offer.basePrice;
+  await openAuction();
+  consumeAuctionOffer(save,runtime);
+  return;
  }
  return presentScreen(clubHubView(save,language,{state,date}));
 }
@@ -332,13 +383,13 @@ function showResults({subgroup=0,caption=''}){
   }
   return {form:'Form67',fullGameGauge:full,properties,lineups,panels,resultGrid:grid,selectedHistoryId:current.historyId,imagePaths:{escudo:current.crests[0],escudo2:current.crests[1]},crestPaths:{0:current.crests[0],1:current.crests[1]}};
  };
- return new Promise(resolve=>{
-  const done=()=>{if(resultsActive){resultsActive=null;renderer.close();resolve();}};
-  renderer.register('Form67.grid1SelectCell',historyId=>{if(!resultList.some(row=>row.historyId===historyId))return;selectedHistoryId=historyId;renderer.update(windowView());});
-  renderer.register('Form67.bt3Click',done);
-  renderer.register('Form67.bt2Click',()=>{});
-  renderer.register('Form67.Button2Click',()=>{});
-  void renderer.loadCrests(resultList.flatMap(row=>row.crests)).then(()=>{resultsActive={history,resultList};void renderer.show(windowView());});
+  return new Promise(resolve=>{
+   const done=()=>{if(resultsActive){resultsActive=null;manager.close(ModalResults.mrOk);resolve();}};
+   renderer.register('Form67.grid1SelectCell',historyId=>{if(!resultList.some(row=>row.historyId===historyId))return;selectedHistoryId=historyId;manager.update(windowView());});
+   renderer.register('Form67.bt3Click',done);
+   renderer.register('Form67.bt2Click',()=>{});
+   renderer.register('Form67.Button2Click',()=>{});
+   void renderer.loadCrests(resultList.flatMap(row=>row.crests)).then(()=>{resultsActive={history,resultList};void manager.open(windowView());});
  });
 }
 
@@ -346,12 +397,19 @@ renderer.register('Form87.bt_irprojogoClick',async()=>{
  if(starting||matchSession)return;starting=true;
  try{
   const committed=commitHumanLineup(save,state,rows,slots,{clubId,remember:!!career.getUint8(0xde),rng});
-  if(!committed.accepted){startMessage=language[committed.messageId].text;renderer.update(viewModel());return;}
+   if(!committed.accepted){startMessage=language[committed.messageId].text;manager.update(viewModel());return;}
+  // National days (7/8/9) prepare via the national-fixtures branch inside
+  // prepareRouteTeams; domestic days use the original batch preparation.
   prepareRouteTeams(save,state,rng,{competitionType:fixtureCompetition,subgroup:fixtureSubgroup,currentDate:roundDate});
   playedCompetition=fixtureCompetition;
   const knockoutOptions={decide:async id=>settleAutomaticDecider(save,id,routeSessionFixtures,rng).winner,champion:async(winner,fixtureId)=>finalizeCupChampion(save,winner,fixtureId,{activeSubgroup:fixtureSubgroup})};
-  const session=await openRouteMatchSession(renderer,{save,state,rng,context:{competitionType:fixtureCompetition,subgroup:fixtureSubgroup,currentDate:roundDate},language,crestAssets,kitAssets,knockoutOptions,autoInteractions,continueCompetition:async(route,matchRuntime)=>{
-   matchSession=null;
+   const session=await openRouteMatchSession(renderer,{save,state,rng,context:{competitionType:fixtureCompetition,subgroup:fixtureSubgroup,currentDate:roundDate},language,crestAssets,kitAssets,knockoutOptions,autoInteractions,continueCompetition:async(route,matchRuntime)=>{
+   // Drain + stash before clearing: finalize already pushed fimjogo, and
+   // Form67 owns the screen from here so the live session (and its request
+   // list) is gone. drainLiveSounds plays each request once via liveSoundSeen.
+   try{drainLiveSounds();}catch{}
+   try{lastMatchSounds=[...(matchSession?.snapshot().soundRequests??lastMatchSounds)];}catch{}
+   stopLiveDriver();matchSession=null;
    if(route!=='batch'){playedCompetition=route;await presentScreensForRoute(route);rounds++;continuations.push({day:career.getInt32(0x16c,true),competition:runtime.nextCompetition,human:runtime.humanParticipation??null,played:playedCompetition});await finishContinuation();return;}
    await continueDomesticCompetition(save,matchRuntime,{close:async()=>{
     if(career.getInt32(0x88,true)===1)await showResults({subgroup:fixtureSubgroup,caption:language[225].text});
@@ -362,11 +420,18 @@ renderer.register('Form87.bt_irprojogoClick',async()=>{
     await finishContinuation();
    }});
   }});
-  routeSessionFixtures=session.fixtures;matchSession=session;
+   routeSessionFixtures=session.fixtures;matchSession=session;lastMatchSounds=[];
+  // Live Form46: advance the watched match on a timer with manager refresh and
+  // WebAudio sound playback. The programmatic fast path (playMatchToResults)
+  // stops this driver first, so visible play and tests never contend.
+  startLiveDriver();
  }catch(error){matchFailure=String(error);startMessage=String(error);throw error;}finally{starting=false;}
 });
 async function presentScreensForRoute(route){
  if(route==='national'){await humanNext();return;}
+ // National group routes (7 -> competition7, 8/9 -> competition89) present the
+ // same national assignment/hub chain as competition 3 instead of a league table.
+ if(route==='competition7'||route==='competition89'){await humanNext();return;}
  if(route==='friendly'){await presentScreen(clubHubView(save,language,{state,date:currentDate()}));return;}
  await presentScreen(competitionTableView(save,language,{subgroup:fixtureSubgroup,currentDate:currentDate(),state,date:currentDate()}));
 }
@@ -374,6 +439,16 @@ async function runSeasonTransition(){
  const summary=seasonTransitionView(save,{language,crestAssets});
  await presentScreen(summary);
  await presentScreen(preSeasonFriendlyView(language));
+ // Original season settlement: promotion/relegation rotation per league
+ // (005deccc) then prize/sponsor money (005deb00), before the calendar rebuild.
+ try{
+  const leagues=save.sections.find(section=>section.name==='records_0066aca0');
+  const count=leagues?.count??0;
+  for(let leagueIndex=0;leagueIndex<count;leagueIndex++){
+   try{applySeasonRotation(save,leagueIndex,{rng});}catch{}
+  }
+ }catch{}
+ try{applyPrizeMoney(save);}catch{}
  const result=advanceCareerSeason(save);
  const nextDay=nextHumanFixtureDay(save,result.calendar,clubId,1);
  if(nextDay>0)career.setInt32(0x16c,nextDay-1,true);
@@ -391,11 +466,12 @@ async function enterCareer(bytes){
  runtime={nationalManagerCount:0,nationalAssignmentsActive:false};temporary={lineups:[],matchTeams:[]};
  rounds=0;continuations=[];seasonTransitions=[];playedCompetition=null;matchSession=null;matchFailure=null;
  starting=false;startMessage=null;formation=4;checkedKit=1;
+  stopLiveDriver();liveSoundSeen=0;lastMatchSounds=[];stopAuction();auction=null;contractSession=null;
  seasonMoveHost?.dispose?.();
  seasonMoveHost=createSeasonMoveHost(renderer,{save,language,crestAssets});
  selector='career';
  if(prepareRound())showHub();
- else{startMessage=language[484].text;void renderer.show(clubHubView(save,language,{state:openCareer(save,{currentDate:currentDate()}),date:currentDate()}));}
+  else{startMessage=language[484].text;void manager.open(clubHubView(save,language,{state:openCareer(save,{currentDate:currentDate()}),date:currentDate()}));}
  updateDevStatus();
 }
 
@@ -422,44 +498,67 @@ function auctionFrame(view,runtimeState){
  if(Number.isInteger(view.currentClubId)&&view.currentClubId>=0)imagePaths.escudo2=clubCrestPath(save,view.currentClubId,crestAssets);
  return {form:'Form23',properties,imagePaths,activePage:view.activePage??0};
 }
-function updateAuction(){if(!auction)return;const view=auction.session.view();auction.lastView=view;renderer.update(auctionFrame(view,auction.runtime));updateDevStatus();}
+function updateAuction(){if(!auction)return;const view=auction.session.view();auction.lastView=view;manager.update(auctionFrame(view,auction.runtime));updateDevStatus();}
 function stopAuction(){if(auctionTimer){clearInterval(auctionTimer);auctionTimer=null;}}
 async function openAuction(){
- if(!save){updateDevStatus();return null;}
- if(auction)return auction.session;
- const runtimeState={auctionPlayer:-1,auctionSellerClub:-1,auctionCurrentClub:-1,auctionPreviousClub:-1,auctionEditText:''};
- const session=createAuctionSession({save,runtime:runtimeState,rng,language,onFinished:()=>{setTimeout(()=>{stopAuction();if(auction){renderer.close();auction=null;}updateDevStatus();},1200);}});
- auction={session,runtime:runtimeState,lastView:null};
- renderer.register('Form23.CHButton1Click',()=>{session.bid(runtimeState.auctionEditText??'');updateAuction();});
- renderer.register('Form23.Edit1Change',value=>{runtimeState.auctionEditText=String(value??'');});
- session.start();
- if(session.finished)return session;
- updateAuction();
+  if(!save){updateDevStatus();return null;}
+  if(auction)return auction.session;
+  // Seed from the deterministic 005f99c4 offer so manual/dev opens use the same
+  // lot as the automatic humanNext branch (transfer-trigger.mjs). humanNext
+  // consumes the one-shot day guard after opening; direct opens leave it.
+  try{
+   const offer=pendingAuctionOffer(save,runtime);
+   if(offer&&(runtime.auctionPlayer??-1)<0){runtime.auctionPlayer=offer.player;runtime.auctionBasePrice=offer.basePrice;}
+  }catch{}
+  if(!Number.isInteger(runtime.auctionPlayer))runtime.auctionPlayer=-1;
+  if(!Number.isInteger(runtime.auctionSellerClub))runtime.auctionSellerClub=-1;
+  if(!Number.isInteger(runtime.auctionCurrentClub))runtime.auctionCurrentClub=-1;
+  if(!Number.isInteger(runtime.auctionPreviousClub))runtime.auctionPreviousClub=-1;
+  if(typeof runtime.auctionEditText!=='string')runtime.auctionEditText='';
+  const runtimeState=runtime;
+  const session=createAuctionSession({save,runtime:runtimeState,rng,language,onFinished:()=>{setTimeout(()=>{stopAuction();if(auction){manager.close(ModalResults.mrOk);auction=null;}updateDevStatus();},1200);}});
+  auction={session,runtime:runtimeState,lastView:null};
+  renderer.register('Form23.CHButton1Click',()=>{session.bid(runtimeState.auctionEditText??'');updateAuction();});
+  renderer.register('Form23.Edit1Change',value=>{runtimeState.auctionEditText=String(value??'');});
+  session.start();
+  if(session.finished)return session;
+  manager.open(auctionFrame(session.view(),runtimeState));
+  updateAuction();
  if(!manualClock)auctionTimer=setInterval(()=>{if(!auction){stopAuction();return;}if(session.finished){stopAuction();return;}session.tick();updateAuction();},2500);
  return session;
 }
 function contractFrame(){const view=contractSession.view();return {form:'Form24',...view,properties:view.properties??{}};}
-async function openContract(){
+async function openContract(playerId){
  if(!save||!state)return null;
  if(contractSession)return contractSession;
- const playerId=rows?.[0]?.playerId??buildLineupRoster(state,clubId)[0]?.playerId;
- if(!Number.isInteger(playerId))return null;
- contractSession=createContractSession({save,id:playerId,rng,language,currentDate:currentDate()});
- renderer.register('Form24.CHButton1Click',()=>{const outcome=contractSession.submitOffer();renderer.update(contractFrame());if(contractSession.counteroffer)showCounteroffer();void outcome;});
- renderer.register('Form24.bt3Click',()=>{contractSession=null;renderer.close();});
- renderer.register('Form24.UpDown1Click',direction=>{contractSession.stepOffer(direction);renderer.update(contractFrame());});
- renderer.register('Form25.button1Click',()=>{contractSession.acceptCounter();renderer.close();renderer.update(contractFrame());});
- renderer.register('Form25.button2Click',()=>{contractSession.refuseCounter();renderer.close();renderer.update(contractFrame());});
- void renderer.show(contractFrame(),{modal:true});
- return contractSession;
+ // Original Form24 is manual-only (0063f28c/0063f87c via 0063f294): no automatic
+ // post-results opening. The candidate comes from pendingContractOffer
+ // (earliest-expiry human player); explicit ids still win for tests/dev.
+ let candidate=Number.isInteger(playerId)?playerId:null;
+ if(candidate===null){
+  try{candidate=pendingContractOffer(save,runtime)?.player??null;}catch{candidate=null;}
+ }
+ const fallback=rows?.[0]?.playerId??buildLineupRoster(state,clubId)[0]?.playerId;
+ const id=candidate??fallback;
+ if(!Number.isInteger(id))return null;
+  contractSession=createContractSession({save,id,rng,language,currentDate:currentDate()});
+  renderer.register('Form24.CHButton1Click',()=>{const outcome=contractSession.submitOffer();manager.update(contractFrame());if(contractSession.counteroffer)showCounteroffer();void outcome;});
+  renderer.register('Form24.bt3Click',()=>{contractSession=null;manager.close(ModalResults.mrCancel);});
+  renderer.register('Form24.UpDown1Click',direction=>{contractSession.stepOffer(direction);manager.update(contractFrame());});
+  renderer.register('Form25.button1Click',()=>{contractSession.acceptCounter();manager.close(ModalResults.mrOk);manager.update(contractFrame());});
+  renderer.register('Form25.button2Click',()=>{contractSession.refuseCounter();manager.close(ModalResults.mrCancel);manager.update(contractFrame());});
+  void manager.openModal(contractFrame());
+  return contractSession;
 }
-function showCounteroffer(){const counter=contractSession.counteroffer;void renderer.show({form:'Form25',properties:counter.properties},{modal:true});}
+function showCounteroffer(){const counter=contractSession.counteroffer;void manager.openModal({form:'Form25',properties:counter.properties});}
 function openResults(){if(save&&state)return showResults({subgroup:fixtureSubgroup,caption:language[225].text});return null;}
-function openSeasonReview(){if(!save)return null;return renderer.show(seasonTransitionView(save,{language,crestAssets}));}
+function openSeasonReview(){if(!save)return null;return manager.open(seasonTransitionView(save,{language,crestAssets}));}
 renderer.onFieldInput=(key,value)=>{
- if(key==='Form24.combom'&&contractSession){contractSession.setDuration(value);renderer.update(contractFrame());}
+  if(key==='Form24.combom'&&contractSession){contractSession.setDuration(value);manager.update(contractFrame());}
  if(key==='Form23.Edit1'&&auction){auction.runtime.auctionEditText=String(value??'');}
 };
+// Dev overlay buttons route through the same public open functions as gameplay;
+// there are no dev-only auction/contract paths.
 document.getElementById('dev-auction').addEventListener('click',()=>{void openAuction();});
 document.getElementById('dev-contract').addEventListener('click',()=>{void openContract();});
 document.getElementById('dev-results').addEventListener('click',()=>{void openResults();});
@@ -474,27 +573,53 @@ function clickControl(name){
 }
 async function playMatchToResults(){
  if(!matchSession)throw Error('No match session is open.');
+ // Programmatic fast path for tests: stop the live timer so it never contends
+ // with this loop, then drive ticks directly with manager refresh + sound drain.
+ stopLiveDriver();
  let advancePromise=null;
  for(let step=0;step<600;step++){
-  if(renderer.frame?.form==='Form67')return renderer.frame.form;
-  if(!matchSession)return renderer.frame?.form??null;
+  if(renderer.frame?.form==='Form67'){drainLiveSounds();return renderer.frame.form;}
+  if(!matchSession){drainLiveSounds();return renderer.frame?.form??null;}
   if(matchFailure)throw Error(matchFailure);
   if(!advancePromise)advancePromise=matchSession.advance().catch(error=>{matchFailure=String(error);}).finally(()=>{advancePromise=null;});
   await Promise.race([advancePromise,new Promise(resolve=>setTimeout(resolve,30))]);
+  drainLiveSounds();
+  if(renderer.frame?.form==='Form46'){try{manager.update(renderer.frame);}catch{}}
  }
  throw Error('Match did not reach the results screen.');
 }
+/** Visible live play: (re)start the tick driver and wait for Form67.
+ * The match advances on the live timer with Form46 manager refreshes and
+ * WebAudio sound playback until full time, then the results screen. */
+async function playMatchLive({timeoutMs=180000}={}){
+ if(!matchSession)throw Error('No match session is open.');
+ startLiveDriver();
+ const start=Date.now();
+ for(;;){
+  if(renderer.frame?.form==='Form67'){drainLiveSounds();stopLiveDriver();return renderer.frame.form;}
+  if(!matchSession){drainLiveSounds();return renderer.frame?.form??null;}
+  if(matchFailure)throw Error(matchFailure);
+  if(matchSession.snapshot().finished&&renderer.frame?.form==='Form67'){drainLiveSounds();stopLiveDriver();return 'Form67';}
+  if(Date.now()-start>timeoutMs){stopLiveDriver();throw Error('Live match did not reach the results screen.');}
+  await new Promise(resolve=>setTimeout(resolve,100));
+ }
+}
 window.gameShell={
- renderer,
- get form(){return renderer.frame?.form??null;},
- get screens(){return (renderer.stack??[]).map(frame=>frame.form);},
+  renderer,
+  manager,
+  modalResults:ModalResults,
+  get form(){return renderer.frame?.form??null;},
+  get screens(){return (renderer.stack??[]).map(frame=>frame.form);},
+  get forms(){return manager.stack.map(entry=>entry.form);},
  get selector(){return selector;},
  click:clickControl,
  setField(name,value){const key=(renderer.frame?.form??'')+'.'+name;renderer.fieldValues[key]={kind:'edit',value:String(value)};renderer.paint();},
  showMenu,showGameSettings,showClubEditor,newGame,loadCareer:async id=>{const bytes=await readStoredCareerSave(localStorage,id);await enterCareer(bytes);},
  listCareers:()=>listStoredCareers(localStorage),
- openAuction,openContract,openResults,openSeasonReview,
- playMatchToResults,
+  openAuction,openContract,openResults,openSeasonReview,
+  playMatchToResults,playMatchLive,
+  get soundPlayed(){return soundPlayer.played;},
+  get soundRequests(){try{const live=matchSession?.snapshot().soundRequests;if(Array.isArray(live))return [...live];}catch{}return [...lastMatchSounds];},
  get match(){return matchSession?.snapshot()??null;},
  get auction(){return auction?{finished:auction.session.finished,result:auction.session.result}:null;},
  get contract(){return contractSession?{finished:contractSession.finished}:null;},

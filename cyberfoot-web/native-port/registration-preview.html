@@ -1,0 +1,19 @@
+<!doctype html><meta charset="utf-8"><title>Form42 registration — development</title><style>body{margin:0;padding:16px;font:13px Arial,sans-serif;background:#2b2b4d;color:#fff}input{width:140px}pre{background:#111;color:#8f8;padding:8px;max-height:260px;overflow:auto;white-space:pre-wrap}button{margin-right:4px}</style>
+<h1>TForm42 registration — development preview</h1>
+<div id="registration"></div>
+<h2>Events</h2>
+<pre id="log" data-registration-log></pre>
+<script type="module">
+import {readSave,writeSave} from './save-format.mjs';
+import {mountRegistration,deriveForm42Code,readRegistration} from './registration.mjs';
+const [language,bytes]=await Promise.all([fetch('language.json').then(response=>response.json()),fetch('tests/original-career.s15').then(response=>response.arrayBuffer())]);
+const save=readSave(bytes);
+const manual=new URLSearchParams(location.search).has('manualClock');
+const logBox=document.querySelector('#log'),lines=[];
+const log=line=>{lines.push(line);if(lines.length>200)lines.shift();logBox.textContent=lines.join('\n');};
+const host=mountRegistration(document.querySelector('#registration'),{save,language,onChange:event=>log(`registration ${JSON.stringify(event)}`)});
+try{host.submit('M Steen 77',deriveForm42Code('M Steen 77'));log(`derived valid code ${deriveForm42Code('M Steen 77')}`);}catch(error){log(`derive error: ${error.message}`);}
+log(manual?'ready (manual clock)':'ready (auto clock)');
+window.registrationDevelopment={save,language,get host(){return host;},get view(){return host.view();},state:()=>readRegistration(save),bytes:()=>writeSave(save),lines};
+window.render_game_to_text=()=>JSON.stringify({developmentProof:true,completeGame:false,form:'Form42',registered:readRegistration(save).registered,flag:readRegistration(save).flag,view:host.view().submitLabel,events:lines.length});
+</script>

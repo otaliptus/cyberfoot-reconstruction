@@ -1,5 +1,16 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-10 — Full-parity round: form manager, triggers, fidelity, season engines, nationals, editor pack
+- Previous goal turn classified verified progress (real VCL shell) and the user demanded full original compatibility. Closed the audited gaps in one round.
+- Form manager: form-manager.mjs implements VCL Show/ShowModal/ModalResult/close stacking with top-form input routing and Escape/Default handling; all shell screens route through it; modal stacking probed (Form13+Form24, Escape→mrCancel).
+- Real triggers: transfer-trigger.mjs ports the005f99c4 humanNext auction branch,005a3ac8 bidder scan and005a3014 lot scan (deterministic; RNG gates documented); shell opens Form23 from humanNext and selects the contract candidate for Form24. No automatic Form24 exists in the original (manual Alterarsalrio only).
+- Fidelity: vcl-fidelity-node.mjs proves zero placeholders and zero image-fallback fills across all22 wired forms with all assets present.
+- Season engines:005deccc rotation +005deb00 prizes (250+250 oracle vectors, parity green) wired into the season transition;00647f98/005df914 aging +00652be0 youth intake (220+250 vectors, parity green) — aging fix root-caused an oracle cross-case staleness (expected bytes contaminated; deterministic bytes verified, documented) plus a missed youth gate, swapped refill branches, a missed deficit overwrite and banker rounding.
+- Nationals: proved no isolatable national score routine exists (generic automatic engine with competition parameters; decompile evidence); national-fixtures.mjs routes group fixtures through it and the shell plays them.
+- Shell integration: live Form46 tick driver to full time,7 original wavs shipped with WebAudio playback mapped from session sound requests, browser-live-match.mjs proves a live match to Form67.
+- Editor pack: registration.mjs (Form42 key validation + startup gate ported), championship.mjs (Form39 custom cups/leagues), club-editor.mjs (DB editing with original bounds), each with preview and real-save test.
+- Registered ten node tests; full run-all exit0; oxlint clean; required client on game.html exit0. Total original comparison cases256477(255507+970). Redeployed. Remaining honest gaps: alternative Form42 hash branches need runtime tracing; registration flag mirror and club nivel mapping are documented native extensions; banker/padding bytes excluded where proven nondeterministic; pixel parity still not certified.
+
 ### 2026-09-10 — Real VCL game shell
 - Previous goal turn classified verified progress (all six playability gaps addressed) and the user rejected the development-preview skins. Built the actual game UI.
 - vcl-renderer.mjs: pure DFM layout + canvas painter for the original forms.json geometry, Delphi colors and fonts, TShape/TLabel (HTML/<IND> rich text, shadows, wrap, transparency), TImage with the extracted per-control bitmaps, panels/bevels, edits/memos, buttons with glyphs, checkboxes/radios/combos, grids/list views, notebook/pagecontrol, invisible classes skipped; integer-scaled letterboxed viewport with pointer mapping.
