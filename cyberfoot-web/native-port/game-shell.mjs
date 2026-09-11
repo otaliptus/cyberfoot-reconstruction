@@ -296,7 +296,7 @@ function showStaticMenuWindow(form){
 /* ------------------------------------- original new-game settings (Form9) */
 
 function gameSettingsFrame(){
-  const clubs=clubChoices();
+   const clubs=clubChoices(),registered=isRegistered(registrationFlag());
   const countryName=id=>language[786+id]?.text??String(id);
   const rows=defaultLeagueCountries.map(({country,count})=>({cells:{nxpais:'',NxImageColumn2:'',NxTextColumn1:countryName(country),nxtimes:String(count),NxTextColumn3:''},value:country,checked:settingsLeagues.has(country)}));
   return {form:'Form9',properties:{
@@ -314,13 +314,13 @@ function gameSettingsFrame(){
   UniHTMLabel5:{HTMLText:language[16].text},
   UniHTMLabel6:{HTMLText:language[17].text},
     ComboBox1:{Items:[language[13].text,language[14].text],ItemIndex:settingsMode,OnChange:'ComboBox1Change'},
-   ComboBox2:{ItemIndex:settingsCombo2,Items:Array.from({length:10},(_,index)=>String(index+1)),OnSelect:'ComboBox2Select'},
+   ComboBox2:{ItemIndex:Math.min(settingsCombo2,registered?9:0),Items:Array.from({length:registered?10:1},(_,index)=>String(index+1)),OnSelect:'ComboBox2Select'},
   ckcopa:{Checked:!!settingsToggles.ckcopa,Enabled:true,Caption:''},
   ckinter1:{Checked:!!settingsToggles.ckinter1,Enabled:true,Caption:''},
   ckinter2:{Checked:!!settingsToggles.ckinter2,Enabled:true,Caption:''},
-  ckcopamundo:{Checked:!!settingsToggles.ckcopamundo,Enabled:false,Caption:''},
-  ckeurocopa:{Checked:!!settingsToggles.ckeurocopa,Enabled:false,Caption:''},
-  ckcopaamerica:{Checked:!!settingsToggles.ckcopaamerica,Enabled:false,Caption:''},
+   ckcopamundo:{Checked:!!settingsToggles.ckcopamundo,Enabled:registered,Caption:''},
+   ckeurocopa:{Checked:!!settingsToggles.ckeurocopa,Enabled:registered,Caption:''},
+   ckcopaamerica:{Checked:!!settingsToggles.ckcopaamerica,Enabled:registered,Caption:''},
   ckgruposcopamundo:{Visible:false},
   ckestadual:{Visible:false},
   xibutton1:{Caption:language[30].text},
@@ -335,7 +335,7 @@ function refreshGameSettings(){if(renderer.frame?.form==='Form9')manager.update(
 // their overlay so they cannot be toggled). ComboBox2 OnSelect stores its
 // index; unported arrow buttons surface a no-op dialog (last resort).
 for(const name of ['ckcopa','ckinter1','ckinter2'])renderer.register('Form9.'+name+'Click',checked=>{settingsToggles[name]=!!checked;refreshGameSettings();});
-for(const name of ['ckcopamundo','ckeurocopa','ckcopaamerica'])renderer.register('Form9.'+name+'Click',()=>{refreshGameSettings();});
+for(const name of ['ckcopamundo','ckeurocopa','ckcopaamerica'])renderer.register('Form9.'+name+'Click',checked=>{settingsToggles[name]=!!checked;refreshGameSettings();});
 renderer.register('Form9.ComboBox2Select',index=>{settingsCombo2=Number(index)||0;refreshGameSettings();});
 renderer.register('Form9.ComboBox1Change',index=>{settingsMode=Math.max(0,Math.min(1,Number(index)||0));refreshGameSettings();});
 renderer.register('Form9.Image3Click',()=>{});

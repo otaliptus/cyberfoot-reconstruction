@@ -1,0 +1,21 @@
+import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';
+import assert from 'node:assert/strict';
+
+const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1280,height:800}}),errors=[];
+page.on('pageerror',error=>errors.push(String(error)));page.on('console',message=>{if(message.type()==='error')errors.push('console: '+message.text());});
+const clickControl=async name=>{const point=await page.evaluate(name=>{const renderer=window.gameShell.renderer,target=renderer.hitTargets.find(entry=>entry.name===name&&entry.operation);if(!target)return null;const rect=renderer.canvas.getBoundingClientRect();return {x:rect.left+(target.x+target.width/2)*rect.width/renderer.canvas.width,y:rect.top+(target.y+(target.height/2))*rect.height/renderer.canvas.height};},name);if(point)await page.mouse.click(point.x,point.y);else await page.evaluate(name=>window.gameShell.click(name),name);};
+await page.goto('http://127.0.0.1:8766/game.html?manualClock=1&automaticInteractions=1');await page.waitForFunction(()=>window.gameShell?.form==='Form1',{timeout:60000});
+await clickControl('Shape4');await page.waitForFunction(()=>window.gameShell.form==='Form42');
+await page.locator('[data-original-control="Form42.Edit1"]').fill('M Steen 77');await page.locator('[data-original-control="Form42.Edit2"]').fill('6195978');await clickControl('xibutton2');
+await page.waitForFunction(()=>window.gameShell.renderer.frame.registration.status==='Registered Version');
+await page.evaluate(()=>window.gameShell.showGameSettings());await page.waitForFunction(()=>window.gameShell.form==='Form9');
+const registeredSettings=await page.evaluate(()=>({world:window.gameShell.renderer.frame.properties.ckcopamundo,euro:window.gameShell.renderer.frame.properties.ckeurocopa,america:window.gameShell.renderer.frame.properties.ckcopaamerica,managerOptions:window.gameShell.renderer.frame.properties.ComboBox2.Items.length}));
+assert.equal(registeredSettings.world.Enabled,true);assert.equal(registeredSettings.euro.Enabled,true);assert.equal(registeredSettings.america.Enabled,true);assert.equal(registeredSettings.managerOptions,10);
+await page.locator('[data-original-control="Form9.ckcopamundo"]').check();await page.locator('[data-original-control="Form9.ckeurocopa"]').check();await page.locator('[data-original-control="Form9.ckcopaamerica"]').check();await page.locator('[data-original-control="Form9.ckinter2"]').check();
+await clickControl('xibutton2');await page.waitForFunction(()=>window.gameShell.form==='Form11');
+const teamSelect=await page.evaluate(()=>({registered:window.gameShell.renderer.frame.teamSelect.registered,selectable:window.gameShell.renderer.frame.teamSelect.selectableIds.length}));assert.equal(teamSelect.registered,true);assert.ok(teamSelect.selectable>10);
+await page.locator('[data-original-control="Form11.Edit1"]').fill('Registered Tester');await clickControl('button1');await page.waitForFunction(()=>window.gameShell.form==='Form13',{timeout:60000});
+const career=JSON.parse(await page.evaluate(()=>window.render_game_to_text()));assert.deepEqual(career.settings.flags,{'270':true,'368':false,'369':true,'370':true,'383':true,'384':true,'385':true,'1801':false});
+await clickControl('btjogar');await page.waitForFunction(()=>window.gameShell.form==='Form87',{timeout:60000});await clickControl('bt_irprojogo');await page.waitForFunction(()=>window.gameShell.form==='Form46',{timeout:30000});
+const result=await page.evaluate(async()=>window.gameShell.playMatchToResults());assert.ok(['Form26','Form67'].includes(result));assert.deepEqual(await page.evaluate(()=>JSON.parse(window.render_game_to_text()).unhandled),[]);assert.deepEqual(errors,[]);
+await browser.close();console.log('Registration browser route: valid registration enabled registered controls and higher-division clubs, national flags persisted, and the first match reached results without errors.');
