@@ -1,5 +1,10 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-11 — Registered Form9 path verified
+- Registered Form42 now gates the original national competition controls and manager-count selector: valid `M Steen 77` / `6195978` registration enables the controls, persists the selected flags, exposes higher-division clubs and reaches the first match without browser errors.
+- Added `browser-registration.mjs`; the local and public production flows pass. Full native regression remains green at 71,757 cases with 0 failures. Commit `c521d61` is deployed as `8102dd40` at https://8102dd40.cyberfoot-reconstruction.pages.dev and the public alias.
+- Remaining deliberate gaps: standard Form9 mode-2 requires the original league-record/fixture rebuild; manager counts above one require the repeated Form11 flow and multi-human career handling. Those options remain visible for original UI fidelity, but are not yet safe to claim as implemented.
+
 ### 2026-09-10 — Play-driven fixes: leagues, all screens, caveats
 - Previous goal turn classified verified progress (full-parity round) and the user reported leagues unplayable plus broken screens. Played the game like a user (three agents, screenshots throughout) and fixed what broke.
 - Leagues play: mode-2/4 guard widened in domestic/route sessions, knockout/national/settlement options passed through, sound-event dedup, live driver treats Form26 cup tables as terminal. Two live league matches + live cup round to tables,15-match depletion run; contract-expiry 11-man block documented (manual placement still starts the match per original condition penalty).
