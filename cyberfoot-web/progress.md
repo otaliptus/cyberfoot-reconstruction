@@ -1,5 +1,12 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-10 — Real VCL game shell
+- Previous goal turn classified verified progress (all six playability gaps addressed) and the user rejected the development-preview skins. Built the actual game UI.
+- vcl-renderer.mjs: pure DFM layout + canvas painter for the original forms.json geometry, Delphi colors and fonts, TShape/TLabel (HTML/<IND> rich text, shadows, wrap, transparency), TImage with the extracted per-control bitmaps, panels/bevels, edits/memos, buttons with glyphs, checkboxes/radios/combos, grids/list views, notebook/pagecontrol, invisible classes skipped; integer-scaled letterboxed viewport with pointer mapping.
+- game-shell.mjs + game.html boot the real Form1 main menu (verified via FormCreate/VMT pointers and the dispatcher: Shape1=Form9 new game, Shape2=Form21 load, Shape3=Form2 club editor, Shape4=Form42 register) and play through Form9→Form11→Form13→Form87→Form46 (with injury/penalty modals)→Form67 results→Form23 auction using the verified native sessions; no dev panels, hidden F12 overlay.
+- vcl-renderer-node.mjs registered in run-all; browser-game-shell.mjs clicks the whole flow with no console errors; boot screenshot inspected (original menu art, language combo, four menu items). Full suite exit0; oxlint clean.
+- index.html now features the game as the primary play entry. Redeployed to Cloudflare Pages. Remaining gaps (documented): club editor/registration/national tournament options not engine-implemented, Form9 selections do not yet alter career creation, sound assets absent, pixel parity not certified.
+
 ### 2026-09-10 — Published to Cloudflare Pages
 - Previous goal turn classified verified progress (all six playability gaps addressed). Chose Cloudflare Pages over GitHub Pages to keep the repository private; landed the static site with wrangler.
 - Project cyberfoot-reconstruction (account omertalib42@gmail.com); production URL https://cyberfoot-reconstruction.pages.dev/. Staged copy of native-port excluding oracle vectors (15MB upload,1622 files); all eight entry pages, language.json and the career save fixture verified200; required client run against the live URL exit0.

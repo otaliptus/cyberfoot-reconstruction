@@ -399,6 +399,7 @@ Original career season transition: settlement ran, 9 manager moves cleared, seas
 Automatic decisions pick the first original injury/penalty option deterministically, including the disabled keeper-only dialog.
 Unattended watched match resolved injury/penalty/halftime modals and reached full time.
 Match presentation: unattended 1 route(s), 186 offline ticks, byte-identical replay.
+vcl-renderer layout: original geometry/colours/fonts verified for Form1 menu, Form9 new-game settings, Form23 auction, Form46 match and Form87 lineup; TMemo/TPageControl/TStringGrid/TListView and unknown/invisible controls covered.
 800 whole original season-end manager move comparisons passed (stack slot controlled).
 Original career fixture: 10 season-end manager moves, slot flags cleared, deterministic replay, save round-trip and guards passed.
 Original career fixture: full results continuation with native engines and dev hosts reached humanNext; save round-trip and host guards passed.
