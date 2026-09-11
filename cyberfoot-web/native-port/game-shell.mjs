@@ -48,13 +48,14 @@ import {applyPlayerAging,refreshClubPlayerCounts,retirePlayerManually} from './p
 import {applyYouthIntake} from './youth-intake.mjs';
 import {createLiveMatchDriver,createMatchSoundPlayer} from './live-match-driver.mjs';
 import {ModalResults,createFormManager} from './form-manager.mjs';
-import {validateRegistrationKey,applyRegistration,registrationView,isRegistered,readRegistrationFlag,REGISTRATION_FLAG_OFFSET} from './registration.mjs';
+import {applyRegistration,registrationView,isRegistered,readRegistrationFlag,REGISTRATION_FLAG_OFFSET} from './registration.mjs';
 import {listChampionshipCountries,selectChampionshipClubs,championshipView} from './championship.mjs';
 import {clubEditorView,renameClub,renameStadium} from './club-editor.mjs';
 import {FORM13_TARGET,HUB_CLOSE_OP,barraFormAt,hubFormView,saveCareerFromForm40,weeklyTeamView,weeklyTeamLeagues,withdrawPlayerFromTransferList} from './hub-navigation.mjs';
 import {listPlayerForLoan,withdrawPlayerFromLoanList,recallLoan} from './loan-window.mjs';
 import {openLoan,loanView} from './loan-view.mjs';
 import {applyCustomChampionship} from './custom-championship-build.mjs';
+import {applyStandardModeTwo} from './standard-championship-build.mjs';
 import {createStandingsHost} from './standings-host.mjs';
 import {createManagerCareerDialogs} from './manager-career-dialogs.mjs';
 import {pendingFriendlyDates,appendFriendlyMatch} from './friendly-schedule.mjs';
@@ -134,9 +135,10 @@ function applyNewGameSettings(bytes){
    0x180:settingsToggles.ckeurocopa,
    0x181:settingsToggles.ckcopaamerica,
    0x709:false
-  };
-  for(const [offset,enabled] of Object.entries(flags))careerView.setUint8(Number(offset),enabled?1:0);
-  return writeSave(parsed);
+   };
+   for(const [offset,enabled] of Object.entries(flags))careerView.setUint8(Number(offset),enabled?1:0);
+   if(settingsMode===1){applyStandardModeTwo(parsed,{countries:[...settingsLeagues],rng:new OriginalRandom(2015)});return writeSave(parsed);}
+   return writeSave(parsed);
 }
 function showNotice(operation,detail){
  if(noticeDepth>0)return;
@@ -331,9 +333,8 @@ function gameSettingsFrame(){
 function showGameSettings(){selector='new-game-settings';void manager.open(gameSettingsFrame());updateDevStatus();}
 function refreshGameSettings(){if(renderer.frame?.form==='Form9')manager.update(gameSettingsFrame());updateDevStatus();}
 // Original Form9 toggles (0062xxxx family): enabled boxes flip the visible
-// Checked state; registered-only boxes stay disabled (vcl-renderer now hides
-// their overlay so they cannot be toggled). ComboBox2 OnSelect stores its
-// index; unported arrow buttons surface a no-op dialog (last resort).
+// Checked state. ComboBox2 OnSelect stores its index; unported arrow buttons
+// surface a no-op dialog (last resort).
 for(const name of ['ckcopa','ckinter1','ckinter2'])renderer.register('Form9.'+name+'Click',checked=>{settingsToggles[name]=!!checked;refreshGameSettings();});
 for(const name of ['ckcopamundo','ckeurocopa','ckcopaamerica'])renderer.register('Form9.'+name+'Click',checked=>{settingsToggles[name]=!!checked;refreshGameSettings();});
 renderer.register('Form9.ComboBox2Select',index=>{settingsCombo2=Number(index)||0;refreshGameSettings();});
@@ -342,8 +343,9 @@ renderer.register('Form9.Image3Click',()=>{});
 renderer.register('Form9.XiButton3Click',()=>openChampionship());
 renderer.register('Form9.XiButton1Click',()=>showMenu());
 renderer.register('Form9.XiButton2Click',()=>{
-  if(!settingsLeagues.size){showNotice('Form9.XiButton2Click','Select at least one league');return;}
-  showNewGame();
+   if(!settingsLeagues.size){showNotice('Form9.XiButton2Click','Select at least one league');return;}
+   if(settingsMode===1&&(settingsLeagues.size!==1||!settingsLeagues.has(3))){showNotice('Form9.XiButton2Click','Standard 2x20 mode is available for the bundled league data only');return;}
+   showNewGame();
 });
 renderer.register('Form9.list1CellClick',index=>{
   const rows=gameSettingsFrame().grids.list1,value=Number(index),row=rows.find(entry=>Number(entry.value)===value)??rows[value]??null;

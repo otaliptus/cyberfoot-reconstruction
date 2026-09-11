@@ -168,6 +168,7 @@ await import('./season-prize-parity.mjs');
 await import('./player-aging-parity.mjs');
 await import('./youth-intake-parity.mjs');
 await import('./registration-node.mjs');
+await import('./standard-championship-node.mjs');
 await import('./championship-node.mjs');
 await import('./club-editor-node.mjs');
 

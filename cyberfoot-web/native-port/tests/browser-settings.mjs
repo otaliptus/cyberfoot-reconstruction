@@ -3,7 +3,6 @@ import assert from 'node:assert/strict';
 
 const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1280,height:800}}),errors=[];
 page.on('pageerror',error=>errors.push(String(error)));page.on('console',message=>{if(message.type()==='error')errors.push('console: '+message.text());});
-const clickCanvas=async name=>{const point=await page.evaluate(name=>{const renderer=window.gameShell.renderer,target=renderer.hitTargets.find(entry=>entry.name===name&&entry.operation);if(!target)return null;const rect=renderer.canvas.getBoundingClientRect();return {x:rect.left+(target.x+target.width/2)*rect.width/renderer.canvas.width,y:rect.top+(target.y+target.height/2)*rect.height/renderer.canvas.height};},name);if(!point)throw Error(`Missing canvas control ${name}`);await page.mouse.click(point.x,point.y);};
 await page.goto('http://127.0.0.1:8766/game.html?manualClock=1&automaticInteractions=1');
 await page.waitForFunction(()=>window.gameShell?.form==='Form1',{timeout:60000});
 await page.evaluate(()=>window.gameShell.showGameSettings());await page.waitForFunction(()=>window.gameShell.form==='Form9');
@@ -15,13 +14,11 @@ await page.evaluate(()=>window.gameShell.click('xibutton2'));await page.waitForF
 await page.locator('[data-original-control="Form11.Edit1"]').fill('Settings Tester');await page.evaluate(()=>window.gameShell.click('button1'));
 await page.waitForFunction(()=>window.gameShell.form==='Form13',{timeout:60000});
 const configured=JSON.parse(await page.evaluate(()=>window.render_game_to_text()));
-assert.deepEqual(configured.settings,{mode:4,managerCount:1,flags:{'270':false,'368':false,'369':false,'370':false,'383':false,'384':false,'385':false,'1801':false}});
-assert.deepEqual(configured.unhandled,[]);
-await page.evaluate(()=>window.gameShell.showGameSettings());await page.waitForFunction(()=>window.gameShell.form==='Form9');
-await clickCanvas('list1');
-await clickCanvas('xibutton2');
-await page.waitForFunction(()=>window.gameShell.form==='Form85');
-assert.deepEqual(await page.evaluate(()=>JSON.parse(window.render_game_to_text()).unhandled),[]);
-await page.evaluate(()=>window.gameShell.click('xibutton1'));await page.waitForFunction(()=>window.gameShell.form==='Form9');
+assert.deepEqual(configured.settings,{mode:2,managerCount:1,flags:{'270':false,'368':false,'369':false,'370':false,'383':false,'384':false,'385':false,'1801':false}});
+assert.ok(configured.agenda.fixtureId>=0);assert.equal(configured.day,119);
+await page.evaluate(()=>window.gameShell.click('btjogar'));await page.waitForFunction(()=>window.gameShell.form==='Form87',{timeout:60000});
+await page.evaluate(()=>window.gameShell.click('bt_irprojogo'));await page.waitForFunction(()=>window.gameShell.form==='Form46',{timeout:30000});
+assert.ok(['Form26','Form67'].includes(await page.evaluate(()=>window.gameShell.playMatchToResults())));
+assert.deepEqual(JSON.parse(await page.evaluate(()=>window.render_game_to_text())).unhandled,[]);
 assert.deepEqual(errors,[]);await browser.close();
-console.log('Form9 settings: competition flags persisted into a new career, the unsupported mode stayed template-safe, and empty league selection stayed on Form9 behind a native notice.');
+console.log('Form9 settings: mode-2 league fixtures and competition flags persisted into a new career, and the first match reached results without errors.');
