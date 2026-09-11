@@ -157,6 +157,7 @@ await import('./route-screens-node.mjs');
 await import('./contract-window-node.mjs');
 await import('./training-window-node.mjs');
 await import('./season-transition-node.mjs');
+await import('./friendly-schedule-node.mjs');
 await import('./match-presentation-node.mjs');
 await import('./vcl-renderer-node.mjs');
 await import('./vcl-fidelity-node.mjs');

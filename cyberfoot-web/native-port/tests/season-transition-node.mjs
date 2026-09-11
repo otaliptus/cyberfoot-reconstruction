@@ -5,10 +5,11 @@ import {nativeResultsCareerEffects} from '../results-native-effects.mjs';
 import {continueResultsCareer} from '../results-career-continuation.mjs';
 import {findLeagueConfiguration} from '../weekly-team.mjs';
 import {OriginalRandom} from '../match-core.mjs';
+import {applySeasonRotation} from '../season-rotation.mjs';
 import {advanceCareerSeason,nextHumanFixtureDay,seasonTransitionView} from '../season-transition.mjs';
 const load=()=>readSave(fs.readFileSync(new URL('./original-career.s15',import.meta.url))),v=b=>new DataView(b.buffer,b.byteOffset,b.byteLength),language=JSON.parse(fs.readFileSync(new URL('../language.json',import.meta.url)));
 // Real career: force the season boundary, then run the native continuation settlement.
-const save=load(),c=v(save.career),fixtures=save.sections.find(s=>s.name==='records_0066afa0'),calendar=careerSchedule(save);
+const save=load(),c=v(save.career),fixtures=save.sections.find(s=>s.name==='records_0066afa0'),fixtureView=v(fixtures.data),baselinePairs=Array.from({length:360},(_,i)=>[fixtureView.getInt32(i*72,true),fixtureView.getInt32(i*72+4,true)]),calendar=careerSchedule(save);
 let last=0;for(const row of calendar)if(row.competition>0)last=row.dayIndex;
 c.setInt32(0x88,1,true);c.setInt32(0xc0,1,true);c.setInt32(0x6c8,1,true);c.setInt32(0x16c,last,true);
 const runtime={nationalManagerCount:0,nationalAssignmentsActive:false},records=[];
@@ -45,4 +46,13 @@ const firstDay=nextHumanFixtureDay(save,result.calendar,c.getInt32(8,true),1);as
 c.setInt32(0x16c,firstDay-1,true);
 const agenda=careerAgenda(save);assert.ok(agenda.fixtureId>=0,'career agenda must open the new season');assert.equal(agenda.fixtures[agenda.fixtureId].competition,1);
 const bytes=writeSave(save);assert.deepEqual(writeSave(readSave(bytes)),bytes);
+// Rotated divisions must own the regenerated fixtures, not the ended season's
+// club IDs. This catches stale-pairing regressions while preserving the native
+// day/interleaved-divisions ordering checked above.
+const rotated=load(),rotationRng=new OriginalRandom(0x5f9388);
+applySeasonRotation(rotated,0,{rng:rotationRng});
+const rotatedResult=advanceCareerSeason(rotated),rotatedLeague=record(rotated,'records_0066aca0',0),rotatedLeagueView=v(rotatedLeague),rotatedDivisions=[];
+for(let division=1;division<=4;division++)rotatedDivisions.push(new Set(Array.from({length:10},(_,i)=>rotatedLeagueView.getInt32(division*80-0x54+(i+1)*4,true))));
+assert.ok(rotatedResult.fixtures.some((row,i)=>row.home!==baselinePairs[i][0]||row.away!==baselinePairs[i][1]),'rotated fixture generation must use the new division membership');
+for(const fixtureRow of rotatedResult.fixtures)assert.ok(rotatedDivisions.some(teams=>teams.has(fixtureRow.home)&&teams.has(fixtureRow.away)),'rotated fixture must stay within one division');
 console.log(`Original career season transition: settlement ran, ${moves.length} manager moves cleared, season2 calendar (${leagueDays.length} league days) and ${result.fixtures.length} fixtures advanced, first human fixture #${agenda.fixtureId}; save round-trip passed.`);

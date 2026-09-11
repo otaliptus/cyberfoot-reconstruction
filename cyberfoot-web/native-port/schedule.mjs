@@ -30,11 +30,11 @@ export function careerSchedule(save){
 }
 
 // Original 00656a18. Positive slots stop immediately; the later type-3 branch is unreachable.
-export function nextCalendarCursor(calendar,currentDay,events){
+export function nextCalendarCursor(calendar,currentDay,events,{eventCompetition=0}={}){
  for(let day=(currentDay+1)|0;day<=366;day++){
   const row=calendar[day-1];if(!row)throw RangeError('Invalid original calendar cursor');
   if(row.competition>0)return day;
-  if(row.competition===0&&events.some(e=>e.date===row.date&&!e.complete))return day;
+  if((row.competition===eventCompetition||eventCompetition===-1&&row.competition===0)&&events.some(e=>e.date===row.date&&!e.complete))return day;
   if(row.competition<0&&day===366)return 366;
  }
  return currentDay;
@@ -45,7 +45,7 @@ export function savedFixtures(save){const s=save.sections.find(s=>s.name==='reco
 export function nextCareerCalendarCursor(save,calendar=careerSchedule(save)){
  const v=new DataView(save.career.buffer,save.career.byteOffset,save.career.byteLength),s=save.sections.find(s=>s.name==='records_0066b0d4'),data=new DataView(s.data.buffer,s.data.byteOffset,s.data.byteLength),events=[];
  for(let o=0;o<data.byteLength;o+=24)events.push({date:data.getFloat64(o+16,true),complete:!!data.getUint8(o+8)});
- return nextCalendarCursor(calendar,v.getInt32(0x16c,true),events);
+  return nextCalendarCursor(calendar,v.getInt32(0x16c,true),events,{eventCompetition:-1});
 }
 export function careerAgenda(save){
  const v=new DataView(save.career.buffer,save.career.byteOffset,save.career.byteLength),calendar=careerSchedule(save),fixtures=savedFixtures(save),currentDay=v.getInt32(0x16c,true),nextDay=nextCareerCalendarCursor(save,calendar),club=v.getInt32(8,true),current=calendar[currentDay-1],next=calendar[nextDay-1];

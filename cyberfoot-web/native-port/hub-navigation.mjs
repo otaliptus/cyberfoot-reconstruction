@@ -57,7 +57,7 @@ export function barraFormAt(x,y){
 
 export const HUB_CLOSE_OP={
  Form22:['bt3Click','XiButton1Click','XiButton2Click'],
- Form28:['bt3Click','bt2Click'],
+  Form28:['bt3Click'],
  Form40:['XiButton1Click'],
  Form44:['XiButton1Click'],
  Form48:['XiButton1Click','CHButton1Click'],
@@ -119,10 +119,14 @@ export function hubFormView(form,context={}){
   const id=playerId>=0?playerId:-1,name=id>=0?playerName(save,id):'',value=id>=0?originalPlayerValue(save,id):0;
   return {form,properties:{TntLabel1:{Caption:name},label6:{Caption:originalMoney(value)},TntLabel2:{Caption:originalMoney(Math.floor(value*0.12))},Edit1:{Text:String(value)},imagePaths:{escudo:clubCrestPath(save,clubId,crestAssets)}},playerId:id};
  }
- if(form==='Form48'&&save){
+  if(form==='Form48'&&save){
   const id=playerId>=0?playerId:-1;
-  return {form,properties:{Label2:{Caption:' '+ (id>=0?playerName(save,id):'')},Edit1:{Text:''}}};
- }
+   return {form,properties:{Label2:{Caption:' '+ (id>=0?playerName(save,id):'')},Edit1:{Text:''}}};
+  }
+  if(form==='Form82'&&save){
+   const id=playerId>=0?playerId:-1,name=id>=0?playerName(save,id):'';
+   return {form,properties:{label7:{Caption:text(language,702)||'Escolher numero'},label3:{Caption:name},combo1:{Items:Array.from({length:30},(_,i)=>String(i+1)),ItemIndex:context.jerseyNumber>0?context.jerseyNumber-1:-1,OnChange:'combo1Change'},button1:{Caption:text(language,114)||'OK'}} ,playerId:id};
+  }
  if(form==='Form14'&&save)return {...loanWindowView(save,{playerId,clubId,mode:'in'},language),form:'Form14'};
  if(form==='Form59'&&save)return {...loanWindowView(save,{playerId,clubId,mode:'out'},language),form:'Form59'};
  if(form==='Form45')return {form,properties:{}};

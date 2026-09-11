@@ -5,16 +5,11 @@ import {managerOfferView} from './manager-offer-view.mjs';
 const view=b=>new DataView(b.buffer,b.byteOffset,b.byteLength);
 const text=(language,id,fallback='')=>language?.[id]?.text??fallback;
 const fixtureRecordSize=72;
-/** FUN_005dfe10 season turn, restricted to the verified storage effects:
- * career0x704 reset (line24), career0x114/0x118 season flags (72/214), the
- * four 8-slot pairing arrays at0x648 (409..421), manager0x38/0x39 clears
- * (422..432), the season0xc0 increment (408) and the rebuilt calendar through
- * 00656abc/00653a40. New league fixture records are appended exactly as
- * 0065a2bc does, using the 0065a14c field set and the calendar dates that the
- * original copies from DAT_006d5334 (predicate leg/round). Player development
- * and retirement (00647f98), youth intake (00652be0), promotion/relegation
- * settlement (005deccc), prize money (005deb00) and pair regeneration
- * (00649b10/00643a40) remain unported and are deliberately not simulated. */
+/** FUN_005dfe10 calendar/cursor turn. The browser shell runs the surrounding
+ * season settlement (promotion/relegation, prize money, aging and youth
+ * intake) before calling this helper; this function resets the verified
+ * season fields, clears manager slot flags, increments the season, rebuilds
+ * the calendar and appends the next league fixtures. */
 export function advanceCareerSeason(save,{calendar,competition=1}={}){
  if(!save?.career)throw Error('Original career save required.');
  const c=view(save.career);
@@ -28,27 +23,59 @@ export function advanceCareerSeason(save,{calendar,competition=1}={}){
  return {season:c.getInt32(0xc0,true),calendar:schedule,fixtures:appendNextCompetitionFixtures(save,{calendar:schedule,competition})};
 }
 /** 0065a2bc appends the next season's fixtures (0065a14c/0065a1c0 records) to
- * the variable records_0066afa0 section. The original date pair index is
- * (leg-1)*roundsPerLeg+round into the calendar days whose competition matches.
- * The pairings themselves come from the ended season's records until
- * 00649b10/00643a40 is ported; only the 0065a14c field set is written. */
+ * the variable records_0066afa0 section. 00649b10/00643a40 use the same
+ * circle schedule for ten- and twenty-team divisions, but visit the pivots in
+ * alternating halves; this preserves the original home/away ordering. */
 export function appendNextCompetitionFixtures(save,{calendar=careerSchedule(save),competition=1}={}){
- const section=save.sections.find(s=>s.name==='records_0066afa0');
- if(!section)throw Error('Original fixture section required.');
- const source=view(section.data),templates=[];
- for(let i=0;i<section.count;i++){
-  const o=i*fixtureRecordSize;
-  if(source.getInt32(o+0x18,true)!==competition)continue;
-  templates.push({home:source.getInt32(o,true),away:source.getInt32(o+4,true),round:source.getInt32(o+0x1c,true),leg:source.getInt32(o+0x20,true),reserved:source.getInt32(o+0x24,true),subgroup:source.getInt32(o+0x38,true)});
- }
- if(!templates.length)return [];
- const firstLeg=templates.filter(t=>t.leg===1);
- const roundsPerLeg=firstLeg.length?Math.max(...firstLeg.map(t=>t.round)):Math.max(...templates.map(t=>t.round));
- const days=calendar.filter(row=>row.competition===competition),rows=[];
- for(const template of templates){
-  const day=days[(template.leg-1)*roundsPerLeg+template.round-1];
-  if(day)rows.push({...template,date:day.date,dayIndex:day.dayIndex});
- }
+  const section=save.sections.find(s=>s.name==='records_0066afa0');
+  if(!section)throw Error('Original fixture section required.');
+  const source=view(section.data),existing=[];
+  for(let i=0;i<section.count;i++){
+   const o=i*fixtureRecordSize;
+   if(source.getInt32(o+0x18,true)===competition)existing.push({reserved:source.getInt32(o+0x24,true),subgroup:source.getInt32(o+0x38,true)});
+  }
+  if(!existing.length)return [];
+  const leagueSection=save.sections.find(s=>s.name==='records_0066aca0');
+  const career=view(save.career),mode=career.getInt32(0x168,true),teamsPerDivision=mode===2?20:10;
+  const leagueView=leagueSection?view(leagueSection.data):null,days=calendar.filter(row=>row.competition===competition),rows=[];
+  const pairings=(teams,round,leg)=>{
+   const count=teams.length,ring=count-1,pivot=round%2===0?round/2:Math.floor(count/2)+(round-1)/2,out=[];
+   for(let i=0;i<count/2;i++){
+    const a=teams[(pivot+i)%ring],b=i===0?teams[ring]:teams[(pivot-i+ring)%ring];
+    const reverse=((round%2===1 && i===0) !== (leg===2));
+    out.push(reverse?{home:b,away:a}:{home:a,away:b});
+   }
+   return out;
+  };
+  if(leagueView){
+   for(let leagueIndex=0;leagueIndex<leagueSection.count;leagueIndex++){
+     const base=leagueIndex*660,divisions=leagueView.getInt32(base+0x144,true);
+    const divisionSchedules=[];
+    for(let division=1;division<=divisions;division++){
+      const teams=[];
+      for(let position=1;position<=teamsPerDivision;position++){
+       const id=leagueView.getInt32(base+division*80-0x54+position*4,true);
+       if(id>=0)teams.push(id);
+      }
+      if(teams.length!==teamsPerDivision)continue;
+      divisionSchedules.push({teams});
+    }
+    const roundsPerLeg=teamsPerDivision-1;
+    for(let leg=1;leg<=2;leg++)for(let round=0;round<roundsPerLeg;round++){
+     const day=days[(leg-1)*roundsPerLeg+round];if(!day)continue;
+     for(const schedule of divisionSchedules)for(const match of pairings(schedule.teams,round,leg))rows.push({home:match.home,away:match.away,round:round+1,leg,reserved:0,subgroup:leagueIndex,date:day.date,dayIndex:day.dayIndex});
+    }
+   }
+  }
+  if(!rows.length){
+   const sourceRows=[];
+   for(let i=0;i<section.count;i++){
+    const o=i*fixtureRecordSize;if(source.getInt32(o+0x18,true)!==competition)continue;
+    sourceRows.push({home:source.getInt32(o,true),away:source.getInt32(o+4,true),round:source.getInt32(o+0x1c,true),leg:source.getInt32(o+0x20,true),reserved:source.getInt32(o+0x24,true),subgroup:source.getInt32(o+0x38,true)});
+   }
+   const roundsPerLeg=Math.max(...sourceRows.filter(row=>row.leg===1).map(row=>row.round),...sourceRows.map(row=>row.round));
+   for(const row of sourceRows){const day=days[(row.leg-1)*roundsPerLeg+row.round-1];if(day)rows.push({...row,date:day.date,dayIndex:day.dayIndex});}
+  }
  const grown=new Uint8Array(section.data.length+rows.length*fixtureRecordSize);grown.set(section.data);
  const out=view(grown);
  rows.forEach((row,i)=>{

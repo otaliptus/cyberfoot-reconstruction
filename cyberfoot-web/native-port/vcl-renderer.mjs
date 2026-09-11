@@ -232,6 +232,24 @@ function matchPitchPrimitive(ctx,node,p,x,y,w,h){
 function matchFixturesPrimitive(ctx,frame,width,height){
  ctx.primitives.push({kind:'match-fixtures',x:0,y:0,width,height,layout:fourDivisionMatchLayout(frame.rowSpacing??20),fixtures:frame.fixtures,divisionLabels:frame.divisionLabels??[],background:'assets/original-match-background.png'});
 }
+function teamSelectPrimitive(ctx,frame,width,height){
+ const model=frame.teamSelect,clubs=Array.isArray(model?.clubs)?model.clubs:[];
+ if(!model||!clubs.length)return;
+ const cards=[{division:1,x:38,y:143},{division:2,x:494,y:143},{division:3,x:38,y:392},{division:4,x:494,y:392}];
+ const cardWidth=405,cardHeight=225,rowHeight=33;
+ const selectable=new Set(model.selectableIds??[]);
+ const placement=[];
+ for(const card of cards){
+  const divisionClubs=clubs.filter(club=>Number(club.division)===card.division).slice(0,10);
+  placement.push({...card,clubs:divisionClubs});
+  divisionClubs.forEach((club,index)=>{
+   const column=index<5?0:1,row=index%5;
+    const x=card.x+25+column*205,y=card.y+37+row*rowHeight;
+   ctx.interactions.push({name:`team-${club.id}`,className:'team-select',operation:model.operation??'teamSelectClick',x,y:y-2,width:164,height:rowHeight,value:club.id});
+  });
+ }
+ ctx.primitives.push({kind:'team-select',x:0,y:0,w:width,h:height,cards:placement,cardWidth,cardHeight,rowHeight,selectedId:model.selectedId,selectableIds:selectable,registered:model.registered});
+}
 function panelRowsPrimitive(ctx,node,p,x,y,w,h,parentFont){
  ctx.primitives.push({kind:'panel-rows',x,y,w,h,rows:ctx.frame.panels?.[node.name]??[],background:p['Fill.Color']!==undefined?delphiColor(p['Fill.Color']):null,font:fontSpec(p,parentFont)});
 }
@@ -404,8 +422,8 @@ function layoutControl(ctx,node,parentProps,ox,oy,parentFont){
  if(cls==='TBitBtn'||cls==='TTntBitBtn'||cls==='TTntButton'||cls==='TButton'||cls==='TAdvGlowButton'){buttonPrimitive(ctx,node,p,x,y,w,h,'button',parentFont);return;}
  if(cls==='TXiButton'){buttonPrimitive(ctx,node,p,x,y,w,h,'xibutton',parentFont);return;}
  if(cls==='TEdit'||cls==='TMaskEdit'||cls==='TMemo'||cls==='TTntRichEdit'||cls==='TTntMemo'){editPrimitive(ctx,node,p,x,y,w,h,parentFont);return;}
- if(cls==='TUniHTMLCombobox'||cls==='TComboBox'||cls==='TComboBoxEx'){
-   if(ctx.frame.countries&&(node.name==='combopais'||node.name==='combo1'||node.name==='ComboBox1'))p.Items=(ctx.frame.countries??[]).map(country=>country.text??String(country));
+  if(cls==='TUniHTMLCombobox'||cls==='TComboBox'||cls==='TComboBoxEx'){
+    if(ctx.frame.countries&&(node.name==='combopais'||node.name==='combo1'))p.Items=(ctx.frame.countries??[]).map(country=>country.text??String(country));
   comboPrimitive(ctx,node,p,x,y,w,h,parentFont);return;
  }
  if(cls==='TUpDown'){upDownPrimitive(ctx,node,p,x,y,w,h,parentFont);return;}
@@ -442,9 +460,11 @@ export function layoutForm(form,frame={},_options={}){
  const ctx={form,frame,primitives:[],interactions:[],parentFont:fontSpec(form.properties,DEFAULT_FONT),hover:frame.hover??null,down:frame.down??null,fallbacks:0};
  if(frame.background)ctx.primitives.push({kind:'fill',x:0,y:0,w:width,h:height,color:delphiColor(form.properties.Color??'clBlack'),image:frame.background,tile:true});
  else ctx.primitives.push({kind:'fill',x:0,y:0,w:width,h:height,color:delphiColor(form.properties.Color??'clBtnFace')});
- for(const child of form.children??[])layoutControl(ctx,child,form.properties,0,0,ctx.parentFont);
- if(Array.isArray(frame.fixtures)&&form.name==='Form46')matchFixturesPrimitive(ctx,frame,width,height);
- if(Array.isArray(frame.dynamic))ctx.primitives.push(...frame.dynamic);
+ const customTeam=form.name==='Form11'&&frame.teamSelect;
+ for(const child of form.children??[]){if(customTeam&&!['Edit1','combo1','combonac','button1'].includes(child.name))continue;layoutControl(ctx,child,form.properties,0,0,ctx.parentFont);}
+  if(Array.isArray(frame.fixtures)&&form.name==='Form46')matchFixturesPrimitive(ctx,frame,width,height);
+  if(frame.teamSelect&&form.name==='Form11')teamSelectPrimitive(ctx,frame,width,height);
+  if(Array.isArray(frame.dynamic))ctx.primitives.push(...frame.dynamic);
  const fallbackFills=ctx.primitives.filter(primitive=>primitive.kind==='image'&&!primitive.path&&primitive.fallback?.color).length;
  return {form:form.name,width,height,color:delphiColor(form.properties.Color??'clBtnFace'),borderStyle:form.properties.BorderStyle??'bsSingle',primitives:ctx.primitives,interactions:ctx.interactions,fallbackFills,fallbacks:ctx.fallbacks??0};
 }
@@ -526,6 +546,14 @@ function paintText(ctx,prim){
  });
  ctx.restore();
 }
+function paintCountryBadge(ctx,x,y,country){
+ const bands={3:['#111111','#d00000','#e0b400'],11:['#78b8e8','#ffffff','#78b8e8'],29:['#1a8c38','#f5d51e','#1a8c38'],65:['#d51e2e','#f4d331','#d51e2e'],104:['#13843c','#ffffff','#d51e2e']}[country]??['#b0b0b0','#ffffff','#707070'];
+ ctx.save();ctx.beginPath();ctx.arc(x+8,y+8,8,0,Math.PI*2);ctx.clip();for(let index=0;index<3;index++){ctx.fillStyle=bands[index];ctx.fillRect(x,y+Math.trunc(index*16/3),16,Math.ceil(16/3));}ctx.restore();ctx.strokeStyle='#707070';ctx.strokeRect(x+.5,y+.5,15,15);
+}
+function paintGridCheckbox(ctx,x,y,checked){
+ ctx.fillStyle='#ffffff';ctx.fillRect(x,y,13,13);ctx.strokeStyle='#707070';ctx.strokeRect(x+.5,y+.5,12,12);
+ if(checked){ctx.strokeStyle='#000000';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(x+2,y+7);ctx.lineTo(x+5,y+10);ctx.lineTo(x+11,y+3);ctx.stroke();}
+}
 function paintGrid(ctx,prim,images){
  const {x,y,w,h}=prim;
  ctx.save();ctx.beginPath();ctx.rect(x,y,w,h);ctx.clip();
@@ -548,11 +576,13 @@ function paintGrid(ctx,prim,images){
   const selected=!!row.selected||(row.playerId!==undefined&&row.playerId===prim.selectedPlayerId)||(row.historyId!==undefined&&row.historyId===prim.selectedHistoryId);
   if(selected){ctx.fillStyle=prim.colors.selection;ctx.fillRect(x,rowY,w,prim.rowHeight);}
   let cx=x;
-  prim.columns.forEach(column=>{
+   prim.columns.forEach((column,columnIndex)=>{
    const cw=column.width*scale;
    ctx.save();ctx.beginPath();ctx.rect(cx,rowY,cw,prim.rowHeight);ctx.clip();
    ctx.fillStyle=selected?prim.colors.selectionText:prim.colors.text;ctx.textAlign='left';
-   const value=row.cells?.[column.key]??row[column.key];
+    const value=row.cells?.[column.key]??row[column.key];
+    if(prim.name==='list1'&&columnIndex===0){paintCountryBadge(ctx,cx+Math.max(1,(cw-16)/2),rowY+3,row.value);ctx.restore();cx+=cw;return;}
+    if(prim.name==='list1'&&columnIndex===1){paintGridCheckbox(ctx,cx+Math.max(1,(cw-13)/2),rowY+4,!!row.checked);ctx.restore();cx+=cw;return;}
    const path=typeof value==='object'&&value!==null?value.image:null;
    if(path){const image=images.get(path);if(image)ctx.drawImage(image,cx+2,rowY+Math.max(1,(prim.rowHeight-image.height)/2));}
    else if(value!==undefined&&value!==null&&value!==''){ctx.fillText(typeof value==='object'?String(value.text??''):String(value),cx+3,rowY+prim.rowHeight/2+1);}
@@ -833,8 +863,33 @@ function paintPrimitive(ctx,prim,images){
   case 'result-grid':return paintResultGrid(ctx,prim,images);
   case 'pitch':return paintPitch(ctx,prim,images);
   case 'match-pitch':return paintMatchPitch(ctx,prim,images);
-  case 'match-fixtures':return paintMatchFixtures(ctx,prim,images);
-  case 'panel-rows':return paintPanelRows(ctx,prim,images);
+   case 'match-fixtures':return paintMatchFixtures(ctx,prim,images);
+   case 'team-select':{
+    ctx.save();ctx.textBaseline='top';
+    ctx.font='bold 18px Arial';ctx.fillStyle='#ffffff';ctx.textAlign='left';ctx.fillText('Select your team',40,15);
+    ctx.font='bold 12px Arial';ctx.textAlign='center';ctx.fillText('This is an unregistered copy of CyberFoot',700,13);
+    ctx.font='12px Arial';ctx.fillText('In the unregistered version you can only select a team from the bottom division.',700,36);
+    ctx.fillText('In the registered version you can select a team from any division.',700,56);
+    ctx.fillText('Register Cyberfoot, click here!',700,76);
+    ctx.textAlign='left';ctx.font='bold 12px Arial';ctx.fillStyle='#ffff00';ctx.fillText('Teams of country:',40,76);
+    ctx.fillStyle='#000000';ctx.fillRect(40,62,929,1);
+    ctx.fillStyle='#ffff00';ctx.fillText('Your name:',40,629);ctx.fillText('Nationality:',348,629);
+    for(const card of prim.cards){
+     ctx.fillStyle='#21652d';ctx.fillRect(card.x,card.y,prim.cardWidth,prim.cardHeight);
+     ctx.font='bold 13px Arial';ctx.fillStyle='#d8d8d8';ctx.fillText(`${card.division}${card.division===1?'st':card.division===2?'nd':card.division===3?'rd':'th'} division`,card.x+24,card.y+14);
+     card.clubs.forEach((club,index)=>{
+      const column=index<5?0:1,row=index%5,xx=card.x+25+column*205,yy=card.y+37+row*prim.rowHeight;
+      const enabled=prim.registered||prim.selectableIds.has(club.id),selected=club.id===prim.selectedId;
+      ctx.beginPath();ctx.arc(xx+7,yy+10,6,0,Math.PI*2);ctx.fillStyle='#ffffff';ctx.fill();ctx.strokeStyle='#a0a0a0';ctx.stroke();
+      if(selected){ctx.beginPath();ctx.arc(xx+7,yy+10,3,0,Math.PI*2);ctx.fillStyle='#000000';ctx.fill();}
+      const crest=club.crest?images.get(club.crest):null;if(crest)ctx.drawImage(crest,xx+16,yy+1,18,18);
+      ctx.font='12px Arial';ctx.fillStyle=enabled?'#d0d0d0':'#808080';ctx.fillText(club.name,xx+38,yy+3,135);
+      if(selected){ctx.fillStyle='#073d1c';ctx.fillRect(xx+36,yy+1,Math.min(136,ctx.measureText(club.name).width+5),18);if(crest)ctx.drawImage(crest,xx+16,yy+1,18,18);ctx.fillStyle='#ffffff';ctx.fillText(club.name,xx+38,yy+3,135);}
+     });
+    }
+    ctx.restore();return;
+   }
+   case 'panel-rows':return paintPanelRows(ctx,prim,images);
   case 'lineup-list':return paintLineupList(ctx,prim);
   case 'event-log':return paintEventLog(ctx,prim,images);
   case 'statistics-dialog':return paintStatistics(ctx,prim);
@@ -897,7 +952,8 @@ export class VclRenderer {
  async prepare(extra=[]){
   await Promise.all([...new Set([
    'assets/original-f01.jpg','assets/original-lineup-pitch.jpg','assets/original-lineup-targets.png','assets/original-match-background.png',
-   'assets/original-shirt-0.png','assets/original-shirt-1.png','assets/original-shirt-2.png','assets/original-shirt-3.png',
+    'assets/original-shirt-0.png','assets/original-shirt-1.png','assets/original-shirt-2.png','assets/original-shirt-3.png',
+    'assets/Form9-AdvGlowButton3-Picture-Data.png',
    'assets/i_gol.png','assets/i_golv.png','assets/i_ca.png','assets/i_cv.png','assets/i_cacv.png','assets/i_ct.png','assets/i_sub.png',
    ...extra
   ])].map(path=>this.bitmap(path).catch(()=>null)));
@@ -940,23 +996,27 @@ export class VclRenderer {
  update(view){const frame=this.normalize(view);if(this.stack.length)this.stack[this.stack.length-1]=frame;else this.stack=[frame];this.frame=frame;this.paint();return frame;}
  close(){if(!this.stack.length)return false;this.stack.pop();this.frame=this.stack[this.stack.length-1]??null;this.paint();return true;}
  drawStack(){
-  const stack=this.stack.length?this.stack:[];
-  const base=stack[0]??this.frame;if(!base)return;
-  const baseForm=this.forms.get(base.form);if(!baseForm)return;
-  let width=Number(baseForm.properties.ClientWidth)||640,height=Number(baseForm.properties.ClientHeight)||480;
-  for(const frame of stack){const form=this.forms.get(frame.form);if(form){width=Math.max(width,Number(form.properties.ClientWidth)||0);height=Math.max(height,Number(form.properties.ClientHeight)||0);}}
-  this.canvas.width=width;this.canvas.height=height;
-  const ctx=this.ctx;
-  ctx.clearRect(0,0,width,height);ctx.fillStyle='#000000';ctx.fillRect(0,0,width,height);
+   const stack=this.stack.length?this.stack:[];
+   const base=stack[0]??this.frame;if(!base)return;
+   const baseForm=this.forms.get(base.form);if(!baseForm)return;
+   // The original emulator exposes a fixed 1024x768 game surface. Forms are
+   // centered inside it; the browser only scales the complete surface down.
+   const width=1024,height=768;
+   this.canvas.width=width;this.canvas.height=height;
+   const ctx=this.ctx;
+   ctx.clearRect(0,0,width,height);ctx.fillStyle='#3a6ea5';ctx.fillRect(0,0,width,height);
   const layouts=[];
   for(const frame of stack){
    const form=this.forms.get(frame.form);if(!form)continue;
-   const resolved=this.applyFieldValues(frame);
-   const origin={x:Math.trunc((width-(Number(form.properties.ClientWidth)||width))/2),y:Math.trunc((height-(Number(form.properties.ClientHeight)||height))/2)};
-   const layout=layoutForm(form,{...resolved,width:form.properties.ClientWidth,height:form.properties.ClientHeight,firstRow:this.firstRow},{imageSizes:Object.fromEntries(this.imageSizes)});
-   layouts.push({frame,form,origin,layout});
-   ctx.save();ctx.translate(origin.x,origin.y);ctx.beginPath();ctx.rect(0,0,form.properties.ClientWidth,form.properties.ClientHeight);ctx.clip();
-   for(const primitive of layout.primitives){if(primitive.path)this.ensureImage(primitive.path);if(primitive.shirt)this.ensureImage(primitive.shirt);if(primitive.homeCrest)this.ensureImage(primitive.homeCrest);if(primitive.awayCrest)this.ensureImage(primitive.awayCrest);paintPrimitive(ctx,primitive,this.images);}
+    const resolved=this.applyFieldValues(frame);
+    const fullSurface=frame.form==='Form11'||frame.form==='Form13';
+    const clientWidth=fullSurface?width:Number(form.properties.ClientWidth)||width,clientHeight=fullSurface?height:Number(form.properties.ClientHeight)||height;
+    const origin={x:Math.trunc((width-(clientWidth+2))/2),y:Math.trunc((height-(clientHeight+2))/2)};
+     const layout=layoutForm(form,{...resolved,width:clientWidth,height:clientHeight,firstRow:this.firstRow},{imageSizes:Object.fromEntries(this.imageSizes)});
+    layouts.push({frame,form,origin,layout});
+    ctx.fillStyle='#000000';ctx.fillRect(origin.x,origin.y,clientWidth+2,clientHeight+2);
+    ctx.save();ctx.translate(origin.x+1,origin.y+1);ctx.beginPath();ctx.rect(0,0,clientWidth,clientHeight);ctx.clip();
+    for(const primitive of layout.primitives){if(primitive.path)this.ensureImage(primitive.path);if(primitive.shirt)this.ensureImage(primitive.shirt);if(primitive.homeCrest)this.ensureImage(primitive.homeCrest);if(primitive.awayCrest)this.ensureImage(primitive.awayCrest);if(primitive.kind==='team-select')for(const card of primitive.cards)for(const club of card.clubs)if(club.crest)this.ensureImage(club.crest);paintPrimitive(ctx,primitive,this.images);}
    ctx.restore();
   }
   this.canvas.__layouts=layouts;
@@ -971,7 +1031,7 @@ export class VclRenderer {
   for(const entry of interactive){
    const {origin,layout}=entry;
    for(const interaction of layout.interactions){
-    const x=interaction.x+origin.x,y=interaction.y+origin.y;
+     const x=interaction.x+origin.x+1,y=interaction.y+origin.y+1;
     if(interaction.className==='pitch-slot'||interaction.className==='match-slot')this.pitchTargets.push({...interaction,x,y});
     else if(typeof interaction.className==='string'&&interaction.className.startsWith('grid-row'))this.gridRowTargets.push({...interaction,x,y});
     if(interaction.kind)this.placeInput(entry,interaction);
@@ -980,7 +1040,9 @@ export class VclRenderer {
   }
   // Pitch/grid drag targets for the top form only; underlying modal state
   // stays painted but inert until the modal closes.
-  const scale=this.scaleFactor(width,height);
+   // Delphi keeps the original form pixels at 1:1. Downscale only when the
+   // browser viewport is smaller; never enlarge a form beyond its oracle size.
+   const scale=Math.min(this.scaleFactor(width,height),1);
   this.canvas.style.width=Math.round(width*scale)+'px';
   this.canvas.style.height=Math.round(height*scale)+'px';
   this.repositionInputs();
@@ -1045,7 +1107,7 @@ export class VclRenderer {
     if(interaction.input?.disabled)continue;
     const key=frame.form+'.'+interaction.name;
     if(positions.has(key))continue;
-    positions.set(key,{x:interaction.x+origin.x,y:interaction.y+origin.y,width:interaction.width,height:interaction.height});
+     positions.set(key,{x:interaction.x+origin.x+1,y:interaction.y+origin.y+1,width:interaction.width,height:interaction.height});
    }
   }
   for(const [key,element] of this.inputs){

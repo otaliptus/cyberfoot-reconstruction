@@ -562,8 +562,8 @@ function createReplacement(save, oldId, clubId, forcedRole, rng) {
   }
   return newId;
 }
-/** 00647f98 single retirement. Returns true when a coach record was added. */
-function retirePlayer(save, playerId, forcedRole, rng) {
+/** 00647f98 single retirement. Returns the replacement player id. */
+export function retirePlayer(save, playerId, forcedRole, rng) {
   const { players, clubs } = sections(save);
   const career = dv(save.career);
   const p = dv(players.data);
@@ -595,12 +595,24 @@ function retirePlayer(save, playerId, forcedRole, rng) {
     if (total < 0x10) need = true;
   }
   const youth = c.getInt32(clubId * CLUB + 0x2ec, true);
-  if (youth < 0x12 && !need) {
-    createYouth(save, clubId, forcedRole, -1, rng);
-  } else {
-    createReplacement(save, playerId, clubId, forcedRole, rng);
-  }
-  return true;
+  if (youth < 0x12 && !need) return createYouth(save, clubId, forcedRole, -1, rng);
+  return createReplacement(save, playerId, clubId, forcedRole, rng);
+}
+
+/** Manual Form48 retirement, including its optional name and position fields. */
+export function retirePlayerManually(save, playerId, { role = -1, name = '', rng } = {}) {
+  if (!Number.isInteger(playerId) || playerId < 0) throw Error('A player is required.');
+  if (typeof rng?.below !== 'function') throw Error('Original random generator required.');
+  const replacementId = retirePlayer(save, playerId, role, rng);
+  const players = save.sections.find(section => section.name === 'players');
+  if (!players || replacementId < 0 || replacementId >= players.count) throw Error('Retirement replacement was not created.');
+  const replacement = players.data.subarray(replacementId * PLAYER, (replacementId + 1) * PLAYER);
+  const cleanName = String(name ?? '').trim().slice(0, 25);
+  replacement[0] = cleanName.length;
+  replacement.fill(0, 1, 1 + 25);
+  for (let i = 0; i < cleanName.length; i++) replacement[1 + i] = cleanName.charCodeAt(i) & 0xff;
+  if (role >= 0 && role < 5) new DataView(replacement.buffer, replacement.byteOffset, replacement.byteLength).setInt32(0x24, role, true);
+  return { playerId, replacementId, role, name: cleanName };
 }
 /** Whole applyPlayerAging: 005dfe10 age++/gating + 00647f98 + 005df914 + refill. */
 export function applyPlayerAging(save, rng) {
@@ -756,5 +768,30 @@ function applyRefill(save, rng) {
     }
     if (limit < youth + need) need = limit - youth - 1;
     for (let k = 0; k < need; k++) createYouth(save, clubId, -1, -1, rng);
+  }
+}
+
+/** 00652988 refreshes the cached senior/role/youth counts before intake. */
+export function refreshClubPlayerCounts(save) {
+  const { players, clubs } = sections(save);
+  const p = dv(players.data);
+  const c = dv(clubs.data);
+  for (let clubId = 0; clubId < clubs.count; clubId++) {
+    let senior = 0;
+    let youth = 0;
+    const roles = [0, 0, 0, 0, 0];
+    for (let id = 1; id < players.count; id++) {
+      if (p.getInt32(id * PLAYER + 0x20, true) !== clubId) continue;
+      if (p.getUint8(id * PLAYER + 0x120) !== 0) {
+        youth++;
+        continue;
+      }
+      senior++;
+      const role = p.getInt32(id * PLAYER + 0x24, true);
+      if (role >= 0 && role < roles.length) roles[role]++;
+    }
+    c.setInt32(clubId * CLUB + 100, senior, true);
+    for (let role = 0; role < roles.length; role++) c.setInt32(clubId * CLUB + 0x68 + role * 4, roles[role], true);
+    c.setInt32(clubId * CLUB + 0x2ec, youth, true);
   }
 }

@@ -9,7 +9,7 @@ export function initializeScheduledFixture(save,savedFixtureId,id,competitionTyp
 /** Schedule-selection block 006133b1..006135a9 within 612a00. */
 export function selectMatchFixtures(save,{competitionType,subgroup,currentDate}){
  const fixtures=[],humanFixtureIds=[];let alternateRound=1;
- if(![1,2,4,6].includes(competitionType))return {fixtures,humanFixtureIds,alternateRound};
+  if(![0,1,2,4,6].includes(competitionType))return {fixtures,humanFixtureIds,alternateRound};
  const s=save.sections.find(s=>s.name==='records_0066afa0'),v=view(s.data);
  for(let i=0;i<s.count;i++)if(v.getInt32(i*72+0x38,true)===subgroup&&v.getInt32(i*72+0x18,true)===competitionType&&v.getFloat64(i*72+0x30,true)===currentDate&&v.getUint8(i*72+0x2c)===0){
   const fixture=initializeScheduledFixture(save,i,fixtures.length+1,competitionType);fixtures.push(fixture);
@@ -43,7 +43,7 @@ export function prepareScheduledMatches(save,context,rng,runtime={}){
  const selected=selectMatchFixtures(save,context);runtime.eventCursor=selected.humanFixtureIds.length;runtime.humanFixtures=Array(10).fill(0);selected.humanFixtureIds.forEach((id,i)=>runtime.humanFixtures[i]=id);runtime.alternateRound=selected.alternateRound;runtime.fixtureCount=selected.fixtures.length;
  for(const fixture of selected.fixtures){
   fixture.stadium=shortString(record(save,'clubs',fixture.clubs[0]),0x1d0,35);fixture.flag40=false;fixture.flag41=false;
-  prepareFixtureAttendance(save,fixture,rng,context);
+   prepareFixtureAttendance(save,fixture,rng,{...context,competitionType:kind===0?1:kind});
  }
  return selected;
 }

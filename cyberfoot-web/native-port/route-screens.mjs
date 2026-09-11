@@ -48,22 +48,49 @@ function squadRows(save,state,clubId,language){
  });
 }
 export function clubHubView(save,language,{state,date}={}){
- const c=view(save.career),clubId=c.getInt32(8,true),bytes=record(save,'clubs',clubId),club=view(bytes),name=shortString(bytes,0,25);
- const {fixture}=nextFixture(save),opponent=fixture?fixture.clubs.find(id=>id!==clubId):null,competition=fixture?fixture.competition:-1;
- const managerId=club.getInt32(0x44,true),manager=managerId>=0?shortString(record(save,'records_0066b718',managerId),0,25):'';
- const properties={
-  nometime:{Caption:name},
-  nometime_shad:{Caption:name},
-  lb_infonext:{HTMLText:fixture?`<P align="center">${text(language,67)}: ${shortString(record(save,'clubs',opponent),0,25)}</P>`:''},
-  lab_data:{Caption:Number.isFinite(date)?formatCareerDate(date):''},
-  lb_cd:{Caption:leagueTitle(club.getInt32(0x3c,true),language)},
-  lb_ct:{Caption:competitionCaption(competition,language)},
-  lb_tec:{Caption:manager},
-  labmoney:{Caption:originalMoney(Number(club.getBigInt64(0x48,true)/10000n))},
-  lb_cores:{Caption:text(language,69)}
- };
- const headers={posicaojog:text(language,128),nome:text(language,129),forca:text(language,131),energia:text(language,132),idade:text(language,50)};
- return {form:'Form13',properties,roster:squadRows(save,state,clubId,language),grids:{gridview1:squadRows(save,state,clubId,language)},headers,competition,clubId};
+  const c=view(save.career),clubId=c.getInt32(8,true),bytes=record(save,'clubs',clubId),club=view(bytes),name=shortString(bytes,0,25);
+  const {fixture}=nextFixture(save),opponent=fixture?fixture.clubs.find(id=>id!==clubId):null,competition=fixture?fixture.competition:-1;
+  const managerId=club.getInt32(0x44,true),manager=managerId>=0?shortString(record(save,'records_0066b718',managerId),0,25):'';
+  const squad=squadRows(save,state,clubId,language),first=squad[0],firstPlayer=first&&state?.players?.[first.playerId];
+  const playerName=firstPlayer?.name??text(language,129,'Name'),playerRole=firstPlayer?text(language,roleIds[firstPlayer.role]??roleIds[0]):'P';
+  const info=`<P align="left"><SHAD><B>Skill:</B>${firstPlayer?.skill??0}<IND x="150"><B>Age</B>:${firstPlayer?.age??0}<BR><B>Value:</B>$0<IND x="150"><B>Salary</B>:0<BR><B>Matches:</B>0    <B>Goals:</B>0    <B>Cards:</B>0<BR><B>Characteristics:</B>-<BR><B>Contract:</B>12 months<BR><B>Situation:</B>-</SHAD></P>`;
+  const properties={
+   Gradient1:{ColorBegin:'#a70cad',ColorEnd:'#a70cad',Width:1024,Height:768},
+   nometime:{Caption:name,'Caption.ColorEnd':'#ffffff',Left:118,Top:81},
+   nometime_shad:{Caption:name,'Caption.ColorEnd':'#000000',Left:117,Top:65},
+   escudo:{Left:42,Top:83},
+   pinfo_panel:{Left:8,Top:206,Height:287},
+   gridview1:{Left:348,Top:92,Width:559,Height:535,RowSize:27,HeaderSize:18},
+   btvender:{Left:20,Top:459,Width:94,Height:24},
+   btalterasal:{Left:123,Top:459,Width:94,Height:24},
+   btaposenta:{Left:225,Top:459,Width:94,Height:24},
+   lb_infonext:{Left:80,Top:559},
+   Image12:{Left:8,Top:520},
+   f13esc1:{Left:16,Top:550},
+   TntLabel1:{Left:24,Top:559,Caption:opponent!==null?shortString(record(save,'clubs',opponent),0,25):''},
+   Image13:{Left:184,Top:527},
+   icon_arbitro:{Left:216,Top:527},
+   btjogar:{Left:82,Top:627},
+   labmoney:{Left:373,Top:638},
+   lb_total:{Left:504,Top:638},
+   label32:{Left:616,Top:638},
+   lb_cores:{Left:784,Top:638},
+   Image5:{Left:477,Top:631},
+   imgj:{Left:605,Top:634},
+   Image9:{Left:349,Top:631},
+   Image10:{Left:769,Top:634},
+   lb_infonext:{HTMLText:fixture?`<P align="center">${text(language,67)}: ${shortString(record(save,'clubs',opponent),0,25)}</P>`:'',Left:80,Top:559},
+   lab_data:{HTMLText:Number.isFinite(date)?`<B><SHAD>${formatCareerDate(date)}</SHAD></B>`:''},
+   lb_cd:{HTMLText:`<B><SHAD>${leagueTitle(club.getInt32(0x3c,true),language)}</SHAD></B>`},
+   lb_ct:{HTMLText:`<B><SHAD>${competitionCaption(competition,language)}</SHAD></B>`},
+   lb_tec:{HTMLText:`<B><SHAD>${manager}</SHAD></B>`},
+   labmoney:{HTMLText:`<SHAD>${originalMoney(Number(club.getBigInt64(0x48,true)/10000n))}</SHAD>`,Left:373,Top:638},
+   lb_cores:{HTMLText:`<SHAD>${text(language,69)}</SHAD>`,Left:784,Top:638},
+   lb_infojogn:{HTMLText:`<B><SHAD>${playerName}<IND x="200">${playerRole}</SHAD></B>`},
+   lb_infojog:{HTMLText:info},
+  };
+  const headers={posicaojog:text(language,128),nome:text(language,129),forca:text(language,131),energia:text(language,132),idade:text(language,50)};
+  return {form:'Form13',properties,roster:squad,grids:{gridview1:squad},headers,competition,clubId,opponentClubId:opponent};
 }
 export function competitionTableView(save,language,{subgroup=0,currentDate}={}){
  const c=view(save.career),competition=c.getInt32(0x88,true),kind=c.getInt32(0x168,true),leagues=save.sections.find(s=>s.name==='records_0066aca0'),league=view(record(save,'records_0066aca0',subgroup<leagues.count?subgroup:0));

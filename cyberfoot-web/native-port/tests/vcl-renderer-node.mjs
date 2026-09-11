@@ -152,7 +152,7 @@ const imageAt=(layout,x,y)=>layout.primitives.find(primitive=>primitive.kind==='
 // --- Form9: original new-game settings window ----------------------------
 {
  const form=byName.Form9;
- const layout=layoutForm(form,{headers:{NxTextColumn1:'Country',nxtimes:'Teams'},grids:{list1:[{cells:{nxpais:'',NxImageColumn2:'',NxTextColumn1:'Spain',nxtimes:'20',NxTextColumn3:''},value:97}]},countries:[{text:'Spain',value:97}],properties:{ComboBox1:{ItemIndex:0}}});
+  const layout=layoutForm(form,{headers:{NxTextColumn1:'Country',nxtimes:'Teams'},grids:{list1:[{cells:{nxpais:'',NxImageColumn2:'',NxTextColumn1:'Spain',nxtimes:'20',NxTextColumn3:''},value:97}]},properties:{ComboBox1:{Items:['4 divisions with 10 teams in each division'],ItemIndex:0}}});
  assert.equal(layout.width,780);
  assert.equal(layout.height,558);
  const panel=find('Form9','Shape1').properties;
@@ -162,7 +162,7 @@ const imageAt=(layout,x,y)=>layout.primitives.find(primitive=>primitive.kind==='
  assert.equal(panelPrimitive.h,panel.Height);
  const combo=find('Form9','ComboBox1').properties;
  const comboPrimitive=layout.primitives.find(primitive=>primitive.kind==='combo'&&primitive.x===combo.Left);
- assert.deepEqual(comboPrimitive.items,['Spain'],'country combo items come from the frame');
+  assert.deepEqual(comboPrimitive.items,['4 divisions with 10 teams in each division'],'league-series combo items come from the frame');
  assert.equal(comboPrimitive.selected,0);
  const grid=layout.primitives.find(primitive=>primitive.kind==='grid'&&primitive.name==='list1');
  assert.equal(grid.header,true,'goHeader list keeps its header row');

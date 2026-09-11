@@ -1,0 +1,23 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {readSave,writeSave,record} from '../save-format.mjs';
+import {careerAgenda} from '../schedule.mjs';
+import {appendFriendlyMatch,pendingFriendlyDates} from '../friendly-schedule.mjs';
+
+const save=readSave(fs.readFileSync(new URL('./original-career.s15',import.meta.url)));
+const career=new DataView(save.career.buffer,save.career.byteOffset,save.career.byteLength);
+career.setInt32(0x16c,123,true);
+const available=pendingFriendlyDates(save),chosen=available[0];
+assert.ok(chosen,'A future free date is required.');
+const ids=appendFriendlyMatch(save,{home:11,away:4,date:chosen.date});
+assert.equal(pendingFriendlyDates(save).some(row=>row.date===chosen.date),false);
+const event=record(save,'records_0066b0d4',ids.eventId),fixture=record(save,'records_0066afa0',ids.fixtureId);
+assert.equal(new DataView(event.buffer,event.byteOffset,event.byteLength).getUint8(8),0);
+assert.equal(new DataView(fixture.buffer,fixture.byteOffset,fixture.byteLength).getInt32(0x18,true),0);
+const agenda=careerAgenda(save);
+assert.equal(agenda.nextDate,chosen.date);
+assert.equal(agenda.nextCompetition,-1);
+assert.equal(agenda.fixtureId,ids.fixtureId);
+const bytes=writeSave(save);
+assert.deepEqual(writeSave(readSave(bytes)),bytes);
+console.log(`Friendly scheduling: ${available.length} free dates, event/fixture persistence, agenda discovery and save round-trip passed.`);

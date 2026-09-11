@@ -44,15 +44,20 @@ import {createContractSession} from './contract-window.mjs';
 import {pendingAuctionOffer,pendingContractOffer,consumeAuctionOffer} from './transfer-trigger.mjs';
 import {applySeasonRotation} from './season-rotation.mjs';
 import {applyPrizeMoney} from './season-prize.mjs';
+import {applyPlayerAging,refreshClubPlayerCounts,retirePlayerManually} from './player-aging.mjs';
+import {applyYouthIntake} from './youth-intake.mjs';
 import {createLiveMatchDriver,createMatchSoundPlayer} from './live-match-driver.mjs';
 import {ModalResults,createFormManager} from './form-manager.mjs';
-import {validateRegistrationKey,applyRegistration,registrationView,isRegistered,readRegistrationFlag} from './registration.mjs';
+import {validateRegistrationKey,applyRegistration,registrationView,isRegistered,readRegistrationFlag,REGISTRATION_FLAG_OFFSET} from './registration.mjs';
 import {listChampionshipCountries,selectChampionshipClubs,championshipView} from './championship.mjs';
 import {clubEditorView,renameClub,renameStadium} from './club-editor.mjs';
 import {FORM13_TARGET,HUB_CLOSE_OP,barraFormAt,hubFormView,saveCareerFromForm40,weeklyTeamView,weeklyTeamLeagues,withdrawPlayerFromTransferList} from './hub-navigation.mjs';
 import {listPlayerForLoan,withdrawPlayerFromLoanList,recallLoan} from './loan-window.mjs';
+import {openLoan,loanView} from './loan-view.mjs';
 import {applyCustomChampionship} from './custom-championship-build.mjs';
 import {createStandingsHost} from './standings-host.mjs';
+import {createManagerCareerDialogs} from './manager-career-dialogs.mjs';
+import {pendingFriendlyDates,appendFriendlyMatch} from './friendly-schedule.mjs';
 
 const query=new URLSearchParams(location.search);
 const [forms,language,template,kitAssets,crestAssets]=await Promise.all([
@@ -80,7 +85,8 @@ let roundDay=0,roundDate=0,roundFixtureId=-1,routeScreen=null,routeSessionFixtur
 let hubPresented=false;
 let rounds=0,continuations=[],seasonTransitions=[],playedCompetition=null,matchFailure=null;
 let runtime={nationalManagerCount:0,nationalAssignmentsActive:false},temporary={lineups:[],matchTeams:[]};
-let seasonMoveHost=null,auction=null,contractSession=null,auctionTimer=null,resultsActive=null;
+let seasonMoveHost=null,auction=null,contractSession=null,auctionTimer=null,resultsActive=null,bankLoan=null;
+let careerDialogs=null;
 let liveDriver=null,liveSoundSeen=0,lastMatchSounds=[];
 let weeklySel={leagueIdx:0,division:1,season:null,round:null,mode:0};
 let customCareer=null;
@@ -93,11 +99,32 @@ let clock=2015;
 // without a ported engine open a no-op Form85 dialog (last resort) instead of
 // inventing game behavior or leaving an unhandled operation.
 let settingsCombo2=0,newGameCountry=-1,hubSelectedPlayer=-1,routeSubgroup=0;
+const defaultLeagueCountries=[{country:3,count:42},{country:11,count:42},{country:29,count:43},{country:65,count:42},{country:104,count:42}];
+const settingsLeagues=new Set([3]);
 const settingsToggles={ckcopa:true,ckinter1:true,ckinter2:false,ckcopamundo:false,ckeurocopa:false,ckcopaamerica:false};
+const registrationStorageKey='cyberfoot.registration.flag';
 const nationalSelected={gfind:-1,gsel:-1},championshipSelected=new Set();
 let championshipFormat='4x10',championshipCup=true;
-let clubEditorClub=11,clubEditorPlayer=-1,registrationName='',registrationCode='',registrationStatus='';
+let clubEditorClub=11,clubEditorPlayer=-1,registrationName='',registrationCode='',registrationStatus='',retirementName='',retirementRole=-1,jerseyNumber=0,friendlyDate=0,friendlyOpponent=-1,friendlyPlace=0;
 let noticeDepth=0;
+function persistedRegistrationFlag(){
+ try{const value=Number(localStorage.getItem(registrationStorageKey));return Number.isInteger(value)?value:0;}catch{return 0;}
+}
+function registrationFlag(){return Math.max(save?readRegistrationFlag(save):0,persistedRegistrationFlag());}
+function persistRegistrationFlag(flag){try{localStorage.setItem(registrationStorageKey,String(flag|0));}catch{} }
+function applyPersistedRegistration(bytes){
+ const flag=persistedRegistrationFlag();
+ if(!flag)return bytes;
+ const parsed=readSave(bytes),careerView=dataView(parsed.career);
+ careerView.setInt32(REGISTRATION_FLAG_OFFSET,flag,true);
+ return writeSave(parsed);
+}
+function applyNewGameSettings(bytes){
+ const parsed=readSave(bytes),careerView=dataView(parsed.career);
+ // Form9.ComboBox2Select writes the selected manager-count value as index+1.
+ careerView.setInt32(0x13c,settingsCombo2+1,true);
+ return writeSave(parsed);
+}
 function showNotice(operation,detail){
  if(noticeDepth>0)return;
  noticeDepth++;
@@ -148,8 +175,21 @@ function clubChoices(){
  for(let id=0;id<clubs.count;id++){const bytes=record(templateSave,'clubs',id),view=dataView(bytes),name=shortString(bytes,0,25),country=view.getInt32(0x3c,true),division=view.getInt32(0x7c,true);list.push({id,name,country,division,playable:playableSet.has(id)});}
  return list;
 }
+function orderedCountryClubs(clubs,country){
+ const leagueSection=templateSave.sections.find(section=>section.name==='records_0066aca0');
+ if(!leagueSection)return clubs;
+ const leagueIndex=Array.from({length:leagueSection.count},(_,index)=>index).find(index=>dataView(record(templateSave,'records_0066aca0',index)).getInt32(0x140,true)===country);
+ if(leagueIndex===undefined)return clubs;
+ const byId=new Map(clubs.map(club=>[club.id,club])),ordered=[];
+ const league=dataView(record(templateSave,'records_0066aca0',leagueIndex));
+ for(let division=1;division<=4;division++)for(let position=1;position<=10;position++){
+  const id=league.getInt32(division*80+0xfc+position*4,true),club=byId.get(id);
+  if(club&&!ordered.includes(club))ordered.push(club);
+ }
+ return ordered.concat(clubs.filter(club=>!ordered.includes(club)));
+}
 function newGameClubs(){
- const clubs=clubChoices(),registered=isRegistered(readRegistrationFlag(save??templateSave));
+  const clubs=clubChoices(),registered=isRegistered(registrationFlag());
  return clubs.filter(club=>club.playable&&(registered||club.division===4));
 }
 function menuFrame(){
@@ -162,38 +202,46 @@ function menuFrame(){
  const dynamic=[];
  [1,2,3,4].forEach((id,index)=>{
   const shape=props['Shape'+id]??{},x=Number(shape.Left)||304,y=Number(shape.Top)||(96+48*index),w=Number(shape.Width)||185,h=Number(shape.Height)||33;
-  dynamic.push({kind:'text',x,y,w,h,text:language[id].text,lines:null,font:menuFont('#ffff00'),color:'#ffff00',align:'center',wordWrap:false,shadow:{offset:1,color:'#000000'},background:null,vAlign:'middle'});
- });
- const unreg=props.lb_sl?null:{x:15,y:204,w:220,h:16};
- if(unreg)dynamic.push({kind:'text',...unreg,text:language[5].text,lines:null,font:smallFont('#ffffff'),color:'#ffffff',align:'left',wordWrap:false,shadow:null,background:null,vAlign:'top'});
- return {form:'Form1',properties:{comboi2:{Items:[language[0].text],ItemIndex:0}},dynamic};
+   dynamic.push({kind:'text',x,y,w,h,text:language[id].text,lines:null,font:menuFont('#ffffff'),color:'#ffffff',align:'center',wordWrap:false,shadow:{offset:1,color:'#000000'},background:null,vAlign:'middle'});
+  });
+  dynamic.push({kind:'text',x:15,y:204,w:220,h:16,text:language[5].text,lines:null,font:menuFont('#ffffff'),color:'#ffffff',align:'left',wordWrap:false,shadow:null,background:null,vAlign:'top'});
+  dynamic.push({kind:'text',x:25,y:238,w:180,h:14,text:'www.cyberfoot.net',lines:null,font:smallFont('#ffffff'),color:'#ffffff',align:'left',wordWrap:false,shadow:null,background:null,vAlign:'top'});
+  return {form:'Form1',properties:{
+   lb_sl:{Caption:language[8].text},TntLabel1:{Caption:language[7].text},comboi2:{Items:[language[0].text],ItemIndex:0}
+  },dynamic};
 }
 function showMenu(){selector='menu';stopClubEditor();void manager.open(menuFrame());updateDevStatus();}
 
-let newGameName='New Manager',newGameClub=11,loadSelection=0,selector='menu';
+let newGameName='',newGameClub=11,loadSelection=0,selector='menu';
 function newGameFrame(){
- const clubs=clubChoices(),playable=newGameClubs(),listBase=playable.length?playable:clubs;
- const countryNames=[...new Set(clubs.map(club=>club.country))].sort((a,b)=>a-b);
- const countryIndex=newGameCountry>=0?countryNames.indexOf(newGameCountry):-1;
- const list=countryIndex>=0?listBase.filter(club=>club.country===newGameCountry):listBase;
- const effective=list.length?list:listBase;
- if(!effective.some(club=>club.id===newGameClub))newGameClub=effective[0]?.id??listBase[0]?.id??0;
- const index=Math.max(0,effective.findIndex(club=>club.id===newGameClub));
+  const clubs=clubChoices(),registered=isRegistered(registrationFlag());
+ const countryIds=[...new Set(clubs.map(club=>club.country))].sort((a,b)=>a-b);
+ const initialCountry=clubs.find(club=>club.id===newGameClub)?.country??countryIds[0]??-1;
+ const selectedCountry=newGameCountry>=0?newGameCountry:initialCountry;
+ const countryIndex=Math.max(0,countryIds.indexOf(selectedCountry));
+ const displayClubs=orderedCountryClubs(clubs.filter(club=>club.country===countryIds[countryIndex]),countryIds[countryIndex]);
+ const selectable=displayClubs.filter(club=>registered||club.division===4&&club.playable);
+ const effective=displayClubs.length?displayClubs:(selectable.length?selectable:clubs);
+ if(!effective.some(club=>club.id===newGameClub))newGameClub=selectable[0]?.id??effective[0]?.id??0;
+ const crestClubs=effective.map(club=>({...club,crest:clubCrestPath(templateSave,club.id,crestAssets)}));
+ const nationalityIds=Array.from({length:202},(_,id)=>id).filter(id=>language[786+id]?.text);
  return {form:'Form11',properties:{
-  Edit1:{Text:newGameName},
-  combo1:{Items:effective.map(club=>`${club.name} · div ${club.division}`),ItemIndex:index,OnChange:'combo2Change'},
-  combonac:{Items:countryNames.map(id=>language[786+id]?.text??`${id}`),ItemIndex:Math.max(0,countryIndex)},
-  button1:{Caption:language[41].text,Enabled:true},
-  Label9:{Caption:language[34].text},
-  label11:{Caption:language[32].text},
-  Label12:{Caption:language[395].text},
-  Label3:{Caption:language[43].text},
-  Label4:{Caption:language[44].text},
-  Label1:{Caption:language[45].text},
-  Label2:{Caption:language[141].text},
-  UniHTMLabel7:{HTMLText:'<shad>'+language[11].text+'</shad>'},
-  Label5:{Caption:language[35].text},Label6:{Caption:language[36].text},Label7:{Caption:language[37].text},Label8:{Caption:language[38].text}
- },clubs:effective,allClubs:listBase,countryNames};
+   Label3:{Caption:language[43].text},Label4:{Caption:language[44].text},Label1:{Caption:language[45].text},Label2:{Caption:language[141].text},
+   Label5:{Visible:false},Label6:{Visible:false},Label7:{Visible:false},Label8:{Visible:false},
+    Edit1:{Text:newGameName,Left:40,Top:653,Width:226,Height:27},
+    combo1:{Items:countryIds.map(id=>language[786+id]?.text??`${id}`),ItemIndex:countryIndex,OnChange:'combo2Change',Left:40,Top:102,Width:185,Height:24},
+    combonac:{Items:nationalityIds.map(id=>language[786+id].text),ItemIndex:Math.max(0,nationalityIds.indexOf(2)),Left:348,Top:653,Width:183,Height:24},
+    button1:{Caption:language[41].text,Enabled:Boolean(newGameName.trim()),Left:666,Top:649,Width:153,Height:31},
+   Label9:{Caption:language[34].text},
+   label11:{Caption:language[32].text},
+   Label12:{Caption:language[395].text},
+   Label3:{Caption:language[43].text},
+   Label4:{Caption:language[44].text},
+   Label1:{Caption:language[45].text},
+   Label2:{Caption:language[141].text,Width:400},
+   UniHTMLabel7:{HTMLText:'<shad>'+language[32].text+'</shad>'},
+   Label5:{Caption:language[35].text},Label6:{Caption:language[36].text},Label7:{Caption:language[37].text},Label8:{Caption:language[38].text}
+  },background:'assets/original-f01.jpg',clubs:crestClubs,allClubs:crestClubs,countryIds,countryNames:countryIds.map(id=>language[786+id]?.text??`${id}`),nationalityIds,teamSelect:{clubs:crestClubs,selectedId:newGameClub,selectableIds:selectable.map(club=>club.id),registered}};
 }
 function customTeamFrame(){
  const cfg=customCareer;if(!cfg)return newGameFrame();
@@ -203,13 +251,14 @@ function customTeamFrame(){
  if(!clubs.some(club=>club.id===newGameClub))newGameClub=clubs[0].id;
  const index=Math.max(0,clubs.findIndex(club=>club.id===newGameClub));
  const frame=newGameFrame();
- frame.properties={...frame.properties,
-  Edit1:{Text:newGameName},
-  combo1:{Items:clubs.map(club=>`${club.name} · div ${club.division}`),ItemIndex:index,OnChange:'combo2Change'},
-  combonac:{Items:[language[10]?.text??'Custom championship'],ItemIndex:0},
-  Label12:{Caption:language[395]?.text??'Custom championship'}};
- frame.clubs=clubs;frame.allClubs=clubs;frame.countryNames=[];frame.custom=true;
- return frame;
+  frame.properties={...frame.properties,
+   Edit1:{Text:newGameName},
+   combo1:{Visible:false,Items:clubs.map(club=>`${club.name} · div ${club.division}`),ItemIndex:index,OnChange:'combo2Change'},
+   combonac:{Items:Array.from({length:202},(_,id)=>language[786+id]?.text).filter(Boolean),ItemIndex:2},
+   Label12:{Caption:language[395]?.text??'Custom championship'}};
+  frame.clubs=clubs;frame.allClubs=clubs;frame.countryNames=[];frame.custom=true;
+  frame.background='assets/original-f01.jpg';frame.teamSelect={clubs,selectedId:newGameClub,selectableIds:clubs.map(club=>club.id),registered:true};
+  return frame;
 }
 function showNewGame(){selector='new-game';void manager.open(newGameFrame());updateDevStatus();}
 
@@ -234,27 +283,25 @@ function showStaticMenuWindow(form){
 /* ------------------------------------- original new-game settings (Form9) */
 
 function gameSettingsFrame(){
- const clubs=clubChoices(),grouped=new Map();
- for(const club of clubs)grouped.set(club.country,(grouped.get(club.country)??0)+1);
- const countryName=id=>language[786+id]?.text??String(id);
- const rows=[...grouped.entries()].sort((a,b)=>countryName(a[0]).localeCompare(countryName(b[0]))).map(([country,count])=>({cells:{nxpais:'',NxImageColumn2:'',NxTextColumn1:countryName(country),nxtimes:String(count),NxTextColumn3:''},value:country}));
- const countries=[...grouped.keys()].sort((a,b)=>a-b).map(id=>({text:countryName(id),value:id}));
- return {form:'Form9',properties:{
-  UniHTMLabel7:{HTMLText:'<p align="left"><shad>'+language[10].text+'</shad></p>'},
+  const clubs=clubChoices();
+  const countryName=id=>language[786+id]?.text??String(id);
+  const rows=defaultLeagueCountries.map(({country,count})=>({cells:{nxpais:'',NxImageColumn2:'',NxTextColumn1:countryName(country),nxtimes:String(count),NxTextColumn3:''},value:country,checked:settingsLeagues.has(country)}));
+  return {form:'Form9',properties:{
+   UniHTMLabel7:{HTMLText:'<p align="left"><shad>Cyberfoot2015 - '+language[10].text+'</shad></p>'},
   HTMLabel2:{HTMLText:language[11].text},
   HTMLabel5:{HTMLText:language[23].text},
-  HTMLabel1:{HTMLText:language[33].text},
+   HTMLabel1:{HTMLText:language[12].text},
   HTMLabel3:{HTMLText:language[18].text},
   HTMLabel4:{HTMLText:language[27].text},
-  HTMLabel6:{HTMLText:'<p align="left">'+language[28].text+'</p>',WordWrap:true},
+   HTMLabel6:{HTMLText:'<p align="center">'+language[26].text+'</p>',WordWrap:true},
   UniHTMLabel1:{HTMLText:language[19].text},
   UniHTMLabel2:{HTMLText:language[21].text},
   UniHTMLabel3:{HTMLText:language[22].text},
   UniHTMLabel4:{HTMLText:language[15].text},
   UniHTMLabel5:{HTMLText:language[16].text},
   UniHTMLabel6:{HTMLText:language[17].text},
-  ComboBox1:{Items:countries.map(country=>country.text),ItemIndex:0},
-  ComboBox2:{ItemIndex:settingsCombo2,Items:['1','2'],OnSelect:'ComboBox2Select'},
+   ComboBox1:{Items:[language[13].text,language[14].text],ItemIndex:0},
+   ComboBox2:{ItemIndex:settingsCombo2,Items:Array.from({length:10},(_,index)=>String(index+1)),OnSelect:'ComboBox2Select'},
   ckcopa:{Checked:!!settingsToggles.ckcopa,Enabled:true,Caption:''},
   ckinter1:{Checked:!!settingsToggles.ckinter1,Enabled:true,Caption:''},
   ckinter2:{Checked:!!settingsToggles.ckinter2,Enabled:true,Caption:''},
@@ -264,8 +311,9 @@ function gameSettingsFrame(){
   ckgruposcopamundo:{Visible:false},
   ckestadual:{Visible:false},
   xibutton1:{Caption:language[30].text},
-  xibutton2:{Caption:language[29].text}
- },grids:{list1:rows},headers:{NxTextColumn1:language[744].text,nxtimes:language[739].text},countries,settingsCountry:countries[0]?.value??-1};
+   xibutton2:{Caption:language[29].text},
+   Label9:{Caption:language[28].text}
+   },background:'assets/original-f01.jpg',grids:{list1:rows},headers:{NxTextColumn1:language[744].text,nxtimes:language[739].text},clubs};
 }
 function showGameSettings(){selector='new-game-settings';void manager.open(gameSettingsFrame());updateDevStatus();}
 function refreshGameSettings(){if(renderer.frame?.form==='Form9')manager.update(gameSettingsFrame());updateDevStatus();}
@@ -281,11 +329,10 @@ renderer.register('Form9.XiButton3Click',()=>openChampionship());
 renderer.register('Form9.XiButton1Click',()=>showMenu());
 renderer.register('Form9.XiButton2Click',()=>showNewGame());
 renderer.register('Form9.list1CellClick',index=>{
- const frame=gameSettingsFrame(),row=frame.grids.list1[Number(index)||0];
- if(!row)return;
- const selected=row.value===frame.settingsCountry?frame.countries[0]?.value:row.value;
- const next={...frame,settingsCountry:selected,properties:{...frame.properties,ComboBox1:{Items:frame.countries.map(country=>country.text),ItemIndex:Math.max(0,frame.countries.findIndex(country=>country.value===selected))}}};
-  void manager.open(next);updateDevStatus();
+  const row=gameSettingsFrame().grids.list1[Number(index)||0];
+  if(!row)return;
+  if(settingsLeagues.has(row.value))settingsLeagues.delete(row.value);else settingsLeagues.add(row.value);
+  refreshGameSettings();
 });
 
 /* --------------------------------- original club-editor loading (Form2) */
@@ -359,7 +406,7 @@ function openChampionship(){
  let countries=[];
  try{countries=listChampionshipCountries(templateSave,{language});}catch{countries=[];}
  const total=selectChampionshipClubs(templateSave,[...championshipSelected]).length;
- const view=championshipView({language,countries,selectedCountries:[...championshipSelected],formatId:championshipFormat,playCup:championshipCup,registered:isRegistered(save??templateSave),totalClubs:total});
+ const view=championshipView({language,countries,selectedCountries:[...championshipSelected],formatId:championshipFormat,playCup:championshipCup,registered:isRegistered(registrationFlag()),totalClubs:total});
  const grid=view.countries.map(entry=>({country:entry.country,cells:{NxImageColumn1:'',NxImageColumn2:'',NxTextColumn1:entry.name,NxTextColumn2:String(entry.count),NxTextColumn3:entry.selected?'X':''},value:entry.country,selected:entry.selected}));
  selector='championship';
  void manager.open({form:'Form39',properties:{
@@ -379,7 +426,7 @@ renderer.register('Form39.list1CellClick',index=>{
  openChampionship();
 });
 renderer.register('Form39.XiButton1Click',()=>showGameSettings());
-renderer.register('Form39.formulaperChange',index=>{if(isRegistered(save??templateSave)){championshipFormat=Number(index)===1?'2x20':'4x10';openChampionship();}});
+renderer.register('Form39.formulaperChange',index=>{if(isRegistered(registrationFlag())){championshipFormat=Number(index)===1?'2x20':'4x10';openChampionship();}});
 renderer.register('Form39.ckcopaperClick',checked=>{championshipCup=!!checked;openChampionship();});
 renderer.register('Form39.bt1Click',()=>{
  if(!championshipSelected.size)return;
@@ -390,7 +437,7 @@ renderer.register('Form39.bt1Click',()=>{
   const clubIds=selectChampionshipClubs(templateSave,[...championshipSelected]);
   const playable=clubIds.find(id=>playableSet.has(id));
   if(!Number.isInteger(playable))throw Error('The selected countries have no club available for the current career date.');
-  const base=readSave(createCareerSave({managerName:newGameName,clubId:playable,language:[language[0].text],seed:2015,template:templateBytes}));
+   const base=readSave(applyNewGameSettings(createCareerSave({managerName:newGameName||'New Manager',clubId:playable,language:[language[0].text],seed:2015,template:templateBytes})));
   const result=applyCustomChampionship(base,{clubIds,formatId:championshipFormat,playCup:championshipCup,rng:new OriginalRandom(2015)});
   customCareer={clubIds,formatId:championshipFormat,playCup:championshipCup,bytes:writeSave(base),leagueIndex:result.leagueIndex};
   newGameClub=playable;selector='custom-new-game';void manager.open(customTeamFrame());updateDevStatus();
@@ -413,11 +460,12 @@ renderer.register('Form42.XiButton2Click',()=>{
  const name=renderer.fieldValues['Form42.Edit1']?.value??registrationName;
  const code=renderer.fieldValues['Form42.Edit2']?.value??registrationCode;
  registrationName=String(name??'');registrationCode=String(code??'');
- const result=validateRegistrationKey({name:registrationName,code:registrationCode});
- registrationStatus=result.valid?language[6]?.text||'OK':`${language[5]?.text||''} (${result.reason})`;
- // Mirror the flag into the template save when a career is not open yet; the
- // live career path (applyRegistration) is exercised once a save exists.
- try{if(save)applyRegistration(save,{name:registrationName,code:registrationCode});}catch{}
+  let result;
+  try{
+   result=save?applyRegistration(save,{name:registrationName,code:registrationCode}):applyRegistration(readSave(templateBytes),{name:registrationName,code:registrationCode});
+   persistRegistrationFlag(result.flag);
+  }catch(error){result={valid:false,reason:String(error?.message||error),flag:0};persistRegistrationFlag(0);}
+  registrationStatus=result.valid?language[6]?.text||'OK':`${language[5]?.text||''} (${result.reason})`;
  manager.update(registrationFrame());updateDevStatus();
 });
 
@@ -431,7 +479,7 @@ async function newGame({managerName=newGameName,clubId=newGameClub}={}){
  newGameName=String(managerName||'New Manager').slice(0,25);
  const eligible=newGameClubs(),clubs=eligible.length?eligible:clubChoices(),chosen=clubs.find(club=>club.id===clubId)??clubs.find(club=>club.id===newGameClub)??clubs[0];
  newGameClub=chosen.id;
- const bytes=createCareerSave({managerName:newGameName,clubId:newGameClub,language:[language[0].text],seed:2015,template:templateBytes,freshStart:true});
+  const bytes=applyPersistedRegistration(applyNewGameSettings(createCareerSave({managerName:newGameName,clubId:newGameClub,language:[language[0].text],seed:2015,template:templateBytes,freshStart:true})));
  await storeCareerBytes(bytes,newGameName,newGameClub);
  await enterCareer(bytes);
  return careerSaveSummary(bytes);
@@ -448,18 +496,24 @@ renderer.register('Form1.comboi2Change',()=>showMenu());
 // Original background mousedown is window-drag chrome: consume silently so the
 // menu never reports an unhandled operation when the backdrop is clicked.
 renderer.register('Form1.Image2MouseDown',()=>{});
-renderer.register('Form11.Edit1Change',value=>{newGameName=String(value??'').slice(0,25);});
+renderer.register('Form11.Edit1Change',value=>{newGameName=String(value??'').slice(0,25);manager.update(customCareer?customTeamFrame():newGameFrame());updateDevStatus();});
 renderer.register('Form11.combo2Change',index=>{
- const list=(customCareer?customTeamFrame():newGameFrame()).clubs;
- const picked=list[Number(index)||0];
- if(picked)newGameClub=picked.id;
+ if(customCareer){const list=customTeamFrame().clubs,picked=list[Number(index)||0];if(picked)newGameClub=picked.id;manager.update(customTeamFrame());updateDevStatus();return;}
+ const frame=newGameFrame(),country=frame.countryIds[Number(index)||0];
+ if(Number.isInteger(country))newGameCountry=country;
+ const next=newGameFrame();if(!next.teamSelect.selectableIds.includes(newGameClub))newGameClub=next.teamSelect.selectableIds[0]??next.clubs[0]?.id??0;
+ manager.update(newGameFrame());updateDevStatus();
+});
+renderer.register('Form11.teamSelectClick',clubId=>{
+ const frame=customCareer?customTeamFrame():newGameFrame();
+ if(frame.teamSelect.selectableIds.includes(Number(clubId)))newGameClub=Number(clubId);
  manager.update(customCareer?customTeamFrame():newGameFrame());updateDevStatus();
 });
 renderer.register('Form11.button1Click',async()=>{
  const edit=renderer.fieldValues['Form11.Edit1']?.value??newGameName;
  if(customCareer){
   const cfg=customCareer,clubs=customTeamFrame().clubs,chosen=clubs.some(club=>club.id===newGameClub)?newGameClub:clubs[0]?.id;
-  const bytes=createCareerSave({managerName:edit,clubId:chosen,language:[language[0].text],seed:2015,template:templateBytes,freshStart:true});
+   const bytes=applyPersistedRegistration(applyNewGameSettings(createCareerSave({managerName:edit,clubId:chosen,language:[language[0].text],seed:2015,template:templateBytes,freshStart:true})));
   const customSave=readSave(bytes);
   applyCustomChampionship(customSave,{clubIds:cfg.clubIds,formatId:cfg.formatId,playCup:cfg.playCup,rng:new OriginalRandom(2015)});
   const finalBytes=writeSave(customSave);
@@ -475,7 +529,22 @@ renderer.register('Form21.BitBtn1Click',async()=>{const entry=listStoredCareers(
 renderer.register('Form21.BitBtn2Click',()=>showMenu());
 renderer.register('Form21.BitBtn3Click',()=>{const entry=listStoredCareers(localStorage)[loadSelection];if(entry){removeStoredCareer(localStorage,entry.id);loadSelection=0;}manager.update(loadGameFrame());});
 
-function managerDialogsHost(){return {humanDismissal:async()=>{},showChanges:async()=>{},showOffer:async()=>{},humanNext,automaticNext,showMove:move=>seasonMoveHost?seasonMoveHost.open(move):Promise.resolve()};}
+function managerDialogsHost(){
+  if(!careerDialogs)throw Error('Manager dialog hosts are not initialized.');
+  return {humanDismissal:careerDialogs.humanDismissal,showChanges:careerDialogs.showChanges,showOffer:careerDialogs.showOffer,humanNext,automaticNext,showMove:move=>seasonMoveHost.open(move)};
+}
+function installForm30DialogRouter(){
+  renderer.register('Form30.bt3Click',()=>{
+    if(careerDialogs?.offer.active)return careerDialogs.offer.accept();
+    if(seasonMoveHost?.active)return seasonMoveHost.close();
+    return false;
+  });
+  renderer.register('Form30.XiButton1Click',()=>{
+    if(careerDialogs?.offer.active)return careerDialogs.offer.close(false);
+    if(seasonMoveHost?.active)return seasonMoveHost.close();
+    return false;
+  });
+}
 
 function prepareRound(){
  agenda=careerAgenda(save);
@@ -510,10 +579,13 @@ function viewModel(){
 }
 let hubPlayerPanel=true;
 function applyHubPanels(frame){
- frame.properties={...frame.properties,
-  pinfo_panel:{Visible:hubPlayerPanel},p_conf:{Visible:!hubPlayerPanel},
-  btvender:{Visible:hubPlayerPanel},btalterasal:{Visible:hubPlayerPanel},
-  btaposenta:{Visible:hubPlayerPanel},Button4:{Visible:hubPlayerPanel}};
+  frame.images={...(frame.images??{}),escudo:clubCrestPath(save,clubId,crestAssets),f13esc1:Number.isInteger(frame.opponentClubId)?clubCrestPath(save,frame.opponentClubId,crestAssets):null};
+  frame.properties={...frame.properties,
+   pinfo_panel:{...(frame.properties?.pinfo_panel??{}),Visible:hubPlayerPanel},p_conf:{Visible:!hubPlayerPanel},
+   btvender:{...(frame.properties?.btvender??{}),Caption:language[63].text,Visible:hubPlayerPanel},
+   btalterasal:{...(frame.properties?.btalterasal??{}),Caption:language[64].text,Visible:hubPlayerPanel},
+   btaposenta:{...(frame.properties?.btaposenta??{}),Caption:language[65].text,Visible:hubPlayerPanel},
+   Button4:{...(frame.properties?.Button4??{}),Visible:false}};
  return frame;
 }
 function showHub(){
@@ -583,9 +655,84 @@ renderer.register('Form13.gridview1DblClick',index=>{
  refreshHub();
 });
 function hubContext(){return {save,language,state,clubId,playerId:hubSelectedPlayer,crestAssets};}
+function bankLoanFrame(){return loanView(bankLoan.state,language);}
+function openBankLoan(){
+ if(!save)return;
+ bankLoan=openLoan(save);
+ renderer.register('Form28.bt1Click',()=>{if(bankLoan.act('borrow'))manager.update(bankLoanFrame());});
+ renderer.register('Form28.bt2Click',()=>{if(bankLoan.act('repay'))manager.update(bankLoanFrame());});
+ renderer.register('Form28.bt3Click',()=>{bankLoan=null;manager.close(ModalResults.mrOk);});
+ void manager.openModal(bankLoanFrame());
+}
+function retirementFrame(){
+ const frame=hubFormView('Form48',{...hubContext(),playerId:selectedHubPlayer()});
+ frame.properties={...frame.properties,Edit1:{...(frame.properties?.Edit1??{}),Text:retirementName},combopos:{Items:[0,1,2,3,4].map(id=>language[60+id]?.text??String(id+1)),ItemIndex:retirementRole<0?-1:retirementRole,OnChange:'comboposChange'}};
+ return frame;
+}
+function openRetirement(){
+ const id=selectedHubPlayer();
+ if(id<0){showNotice('Form48',language[484]?.text||'Select a player first.');return;}
+ retirementName='';retirementRole=-1;
+ renderer.register('Form48.Edit1Change',value=>{retirementName=String(value??'');});
+ renderer.register('Form48.comboposChange',index=>{retirementRole=Math.max(-1,Math.min(4,Number(index)));manager.update(retirementFrame());});
+ renderer.register('Form48.XiButton1Click',()=>{
+  try{
+   retirePlayerManually(save,id,{role:retirementRole,name:retirementName,rng});
+   state=openCareer(save,{currentDate:currentDate()});
+   rows=buildLineupRoster(state,clubId);hubSelectedPlayer=-1;manager.close(ModalResults.mrOk);refreshHub();
+  }catch(error){showNotice('Form48.XiButton1Click',String(error?.message||error));}
+ });
+ void manager.openModal(retirementFrame());
+}
+function jerseyFrame(){return hubFormView('Form82',{...hubContext(),playerId:selectedHubPlayer(),jerseyNumber});}
+function openJerseyNumber(){
+ const id=selectedHubPlayer();
+ if(id<0){showNotice('Form82',language[484]?.text||'Select a player first.');return;}
+  jerseyNumber=dataView(record(save,'players',id)).getInt32(0x54,true);
+ renderer.register('Form82.combo1Change',index=>{jerseyNumber=Math.max(1,Math.min(30,Number(index)+1));manager.update(jerseyFrame());});
+ renderer.register('Form82.button1Click',()=>{
+   if(jerseyNumber>0)dataView(record(save,'players',id)).setInt32(0x54,jerseyNumber,true);
+  manager.close(ModalResults.mrOk);refreshHub();
+ });
+ renderer.register('Form82.XiButton1Click',()=>manager.close(ModalResults.mrCancel));
+ void manager.openModal(jerseyFrame());
+}
+function friendlyDateLabel(row){
+ const date=new Date(Date.UTC(1899,11,30)+Math.round(row.date)*86400000);
+ return `${String(date.getUTCDate()).padStart(2,'0')}/${String(date.getUTCMonth()+1).padStart(2,'0')}/${date.getUTCFullYear()}`;
+}
+function friendlyFrame(){
+ const dates=pendingFriendlyDates(save),clubs=clubChoices().filter(entry=>entry.id!==clubId&&entry.division>0);
+ if(!dates.some(row=>row.date===friendlyDate))friendlyDate=dates[0]?.date??0;
+ if(!clubs.some(entry=>entry.id===friendlyOpponent))friendlyOpponent=clubs[0]?.id??-1;
+ const selectedDate=dates.find(row=>row.date===friendlyDate);
+ return {form:'Form81',properties:{Label1:{Caption:language[684]?.text||'Friendly Schedule'},Label6:{Caption:shortString(record(save,'clubs',clubId),0,25)},TntLabel1:{Caption:language[687]?.text||'Available dates:'},TntLabel2:{Caption:language[688]?.text||'Select opponent:'},TntLabel3:{Caption:language[689]?.text||'Match place:'},Label4:{Caption:selectedDate?friendlyDateLabel(selectedDate):''},Label7:{Caption:friendlyOpponent>=0?shortString(record(save,'clubs',friendlyOpponent),0,25):''},combo1:{Items:dates.map(friendlyDateLabel),ItemIndex:Math.max(0,dates.findIndex(row=>row.date===friendlyDate)),Enabled:dates.length>0,OnChange:'combo1Select'},ComboBox1:{Items:clubs.map(entry=>entry.name),ItemIndex:Math.max(0,clubs.findIndex(entry=>entry.id===friendlyOpponent)),Enabled:clubs.length>0,OnChange:'ComboBox1Select'},combo3:{Items:[language[690]?.text||'Home',language[691]?.text||'Away'],ItemIndex:friendlyPlace,OnChange:'combo3Select'},bt1:{Caption:language[692]?.text||'Book Friendly',Enabled:friendlyDate>0&&friendlyOpponent>=0}} ,friendly:{dates,opponents:clubs,friendlyDate,friendlyOpponent,friendlyPlace}};
+}
+function bookFriendly(opponentClub){
+ const date=friendlyDate;
+ if(!date)throw Error('A friendly date is required.');
+ const home=friendlyPlace===0?clubId:opponentClub,away=friendlyPlace===0?opponentClub:clubId;
+ appendFriendlyMatch(save,{home,away,date});
+}
+function openFriendlies(){
+ friendlyDate=0;friendlyOpponent=-1;friendlyPlace=0;
+ renderer.register('Form81.combo1Select',index=>{const frame=friendlyFrame(),date=frame.friendly.dates[Number(index)||0];friendlyDate=date?.date??0;friendlyOpponent=-1;manager.update(friendlyFrame());});
+ renderer.register('Form81.ComboBox1Select',index=>{const frame=friendlyFrame(),opponent=frame.friendly.opponents[Number(index)||0];friendlyOpponent=opponent?.id??-1;manager.update(friendlyFrame());});
+ renderer.register('Form81.combo3Select',index=>{friendlyPlace=Math.max(0,Math.min(1,Number(index)||0));manager.update(friendlyFrame());});
+ renderer.register('Form81.bt1Click',()=>{
+  if(friendlyOpponent<0)return;
+  try{bookFriendly(friendlyOpponent);manager.close(ModalResults.mrOk);refreshHub();}catch(error){showNotice('Form81.bt1Click',String(error?.message||error));}
+ });
+ renderer.register('Form81.XiButton1Click',()=>manager.close(ModalResults.mrCancel));
+ void manager.openModal(friendlyFrame());
+}
 function openHubForm(form){
  if(!form||!save)return;
- if(form==='Form24'){const id=hubSelectedPlayer>=0?hubSelectedPlayer:rows?.[0]?.playerId;if(Number.isInteger(id))void openContract(id);return;}
+ if(form==='Form28'){openBankLoan();return;}
+  if(form==='Form48'){openRetirement();return;}
+  if(form==='Form82'){openJerseyNumber();return;}
+  if(form==='Form81'){openFriendlies();return;}
+  if(form==='Form24'){const id=hubSelectedPlayer>=0?hubSelectedPlayer:rows?.[0]?.playerId;if(Number.isInteger(id))void openContract(id);return;}
  if(form==='Form23'){void openAuction();return;}
  if(form==='Form42'){openRegistration();return;}
  if(form==='Form87'){void manager.open(viewModel());return;}
@@ -804,14 +951,18 @@ async function runSeasonTransition(){
  await presentScreen(preSeasonFriendlyView(language));
  // Original season settlement: promotion/relegation rotation per league
  // (005deccc) then prize/sponsor money (005deb00), before the calendar rebuild.
- try{
-  const leagues=save.sections.find(section=>section.name==='records_0066aca0');
+  try{
+   const leagues=save.sections.find(section=>section.name==='records_0066aca0');
   const count=leagues?.count??0;
-  for(let leagueIndex=0;leagueIndex<count;leagueIndex++){
-   try{applySeasonRotation(save,leagueIndex,{rng});}catch{}
-  }
- }catch{}
- try{applyPrizeMoney(save);}catch{}
+   for(let leagueIndex=0;leagueIndex<count;leagueIndex++)applySeasonRotation(save,leagueIndex,{rng});
+  }catch(error){throw Error(`Season rotation failed: ${error?.message??error}`);}
+  try{applyPrizeMoney(save);}catch(error){throw Error(`Season prize processing failed: ${error?.message??error}`);}
+  // The original season boundary ages every attached player, promotes youth,
+  // and refills the youth pools before rebuilding the next calendar.
+  applyPlayerAging(save,rng);
+  refreshClubPlayerCounts(save);
+  applyYouthIntake(save,rng);
+  refreshClubPlayerCounts(save);
  const result=advanceCareerSeason(save);
  const nextDay=nextHumanFixtureDay(save,result.calendar,clubId,1);
  if(nextDay>0)career.setInt32(0x16c,nextDay-1,true);
@@ -827,14 +978,19 @@ async function finishContinuation(){
  showHub();
 }
 async function enterCareer(bytes){
- save=readSave(bytes);career=dataView(save.career);
+   careerDialogs?.dispose?.();careerDialogs=null;
+  bytes=applyPersistedRegistration(bytes);
+  save=readSave(bytes);career=dataView(save.career);
+  if(isRegistered(readRegistrationFlag(save)))persistRegistrationFlag(readRegistrationFlag(save));
  clubId=career.getInt32(8,true);clock=2015;rng=new OriginalRandom(2015,()=>clock+=7919);
  runtime={nationalManagerCount:0,nationalAssignmentsActive:false};temporary={lineups:[],matchTeams:[]};
  rounds=0;continuations=[];seasonTransitions=[];playedCompetition=null;matchSession=null;matchFailure=null;
  starting=false;startMessage=null;formation=4;checkedKit=1;
   stopLiveDriver();liveSoundSeen=0;lastMatchSounds=[];stopAuction();auction=null;contractSession=null;
- seasonMoveHost?.dispose?.();
- seasonMoveHost=createSeasonMoveHost(renderer,{save,language,crestAssets});
+  seasonMoveHost?.dispose?.();
+  seasonMoveHost=createSeasonMoveHost(renderer,{save,language,crestAssets});
+  careerDialogs=createManagerCareerDialogs(renderer,{save,runtime,rng,language,crestAssets,date:currentDate,manualClock});
+  installForm30DialogRouter();
  selector='career';
  if(prepareRound())showHub();
   else{startMessage=language[484].text;void manager.open(clubHubView(save,language,{state:openCareer(save,{currentDate:currentDate()}),date:currentDate()}));}
