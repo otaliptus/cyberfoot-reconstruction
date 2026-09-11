@@ -1,5 +1,11 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-11 — Standard Form9 mode-2 league verified
+- Ported the standard Form9 2x20 path: selected bundled teams are native-sorted, written into two 20-team divisions, and scheduled across 38 domestic rounds (760 fixtures). Unsupported multi-country selections stop behind a native notice rather than creating incomplete divisions.
+- Added `standard-championship-node.mjs` to the full regression suite and extended `browser-settings.mjs` through a real first match. Native suite remains 71,757 cases with 0 failures; targeted lint is clean for the new module/tests.
+- Commit `15525c5` is pushed and deployed as `7a200f09` at https://7a200f09.cyberfoot-reconstruction.pages.dev; the mode-2 flow also passes against the public alias https://cyberfoot-reconstruction.pages.dev/.
+- Remaining major gap: registered manager counts above one still require the repeated Form11 flow and multi-human career handling. Pixel parity and full release certification remain false.
+
 ### 2026-09-11 — Registered Form9 path verified
 - Registered Form42 now gates the original national competition controls and manager-count selector: valid `M Steen 77` / `6195978` registration enables the controls, persists the selected flags, exposes higher-division clubs and reaches the first match without browser errors.
 - Added `browser-registration.mjs`; the local and public production flows pass. Full native regression remains green at 71,757 cases with 0 failures. Commit `c521d61` is deployed as `8102dd40` at https://8102dd40.cyberfoot-reconstruction.pages.dev and the public alias.

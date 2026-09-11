@@ -2,8 +2,9 @@ import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules
 import assert from 'node:assert/strict';
 
 const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1280,height:800}}),errors=[];
+const baseUrl=process.env.CYBERFOOT_BASE_URL??'http://127.0.0.1:8766';
 page.on('pageerror',error=>errors.push(String(error)));page.on('console',message=>{if(message.type()==='error')errors.push('console: '+message.text());});
-await page.goto('http://127.0.0.1:8766/game.html?manualClock=1&automaticInteractions=1');
+await page.goto(`${baseUrl}/game.html?manualClock=1&automaticInteractions=1`);
 await page.waitForFunction(()=>window.gameShell?.form==='Form1',{timeout:60000});
 await page.evaluate(()=>window.gameShell.showGameSettings());await page.waitForFunction(()=>window.gameShell.form==='Form9');
 await page.locator('[data-original-control="Form9.ComboBox1"]').selectOption({index:1});
