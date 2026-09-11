@@ -18,7 +18,10 @@ const view=b=>new DataView(b.buffer,b.byteOffset,b.byteLength);
  * continental branches prepare every participating non-human club.
  */
 export function prepareRouteTeams(save,state,rng,{competitionType,subgroup,currentDate},{generate=generateAILineup,tactics=randomizeAITactics}={}){
- if(competitionType===1||competitionType===2)return prepareDomesticTeams(save,state,rng);
+  if(competitionType===1||competitionType===2){
+   const selected=selectMatchFixtures(save,{competitionType,subgroup,currentDate}),fixtureClubs=new Set(selected.fixtures.flatMap(fixture=>fixture.clubs));
+   return prepareDomesticTeams(save,state,rng,{generate,tactics,fixtureClubs});
+  }
  // Additive national branch (7/8/9 group stage via national-fixtures.mjs).
  // Human lineups stay preserved; every other participating national side gets
  // a generated lineup and tactics, mirroring the domestic branch below.

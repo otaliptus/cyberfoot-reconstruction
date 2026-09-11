@@ -72,7 +72,7 @@ export const HUB_CLOSE_OP={
  Form36:[],
  Form69:['imgfecharClick','XiButton1Click','bt3Click'],
  Form35:['Image8Click','XiButton1Click','bt3Click'],
- Form62:['XiButton1Click','bt3Click'],
+  Form62:['XiButton1Click','bt3Click','bt1Click'],
  Form81:['XiButton1Click','bt3Click'],
  Form82:['XiButton1Click','bt3Click'],
  Form50:['XiButton1Click','bt3Click'],

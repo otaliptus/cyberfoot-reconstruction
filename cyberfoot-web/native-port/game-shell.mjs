@@ -659,8 +659,12 @@ renderer.onLineupDrop=({source,targetSlot})=>{
 function presentScreen(screen){return new Promise(resolve=>{routeScreen={view:screen,resolve};void manager.open(screen);});}
 function resolveScreen(){if(noticeDepth>0){manager.close(ModalResults.mrOk);return true;}if(!routeScreen){manager.close(ModalResults.mrOk);return false;}const entry=routeScreen;routeScreen=null;entry.resolve();return true;}
 for(const key of ['Form26.bt3Click','Form75.btjogarClick','Form77.bt2Click','Form85.XiButton1Click','Form85.XiButton2Click'])renderer.register(key,resolveScreen);
-renderer.register('Form13.btjogarClick',()=>{if(routeScreen||noticeDepth>0)resolveScreen();else void manager.open(viewModel());});
-renderer.register('Form13.lb_infonextClick',()=>{if(routeScreen||noticeDepth>0)resolveScreen();else void manager.open(viewModel());});
+function refreshLineupState(){
+ state=openCareer(save,{currentDate:currentDate()});if(query.has('automaticInteractions'))state.automaticInteractions=true;
+ rows=buildLineupRoster(state,clubId);slots=autoSelectScreenLineup(state,rows,formation,save,clubId).slots;
+}
+renderer.register('Form13.btjogarClick',()=>{if(routeScreen||noticeDepth>0)resolveScreen();else{refreshLineupState();void manager.open(viewModel());}});
+renderer.register('Form13.lb_infonextClick',()=>{if(routeScreen||noticeDepth>0)resolveScreen();else{refreshLineupState();void manager.open(viewModel());}});
 // Hub Form13: every visible control wired. btalterasal opens the verified
 // manual Form24 contract (0063f87c via transfer-trigger); grid selection tracks
 // the hub player for contract/sell flows; Label24 opens registration; the top
@@ -1205,7 +1209,7 @@ window.gameShell={
  get match(){return matchSession?.snapshot()??null;},
  get auction(){return auction?{finished:auction.session.finished,result:auction.session.result}:null;},
  get contract(){return contractSession?{finished:contractSession.finished}:null;},
- get status(){return {form:renderer.frame?.form??null,selector,rounds,continuations:continuations.map(entry=>entry.played??null),startMessage,matchFailure,unhandled:[...new Set(unhandled)].slice(0,20)};}
+  get status(){return {form:renderer.frame?.form??null,selector,rounds,continuations:continuations.map(entry=>entry.played??null),startMessage,matchFailure,routePending:!!routeScreen,noticeDepth,unhandled:[...new Set(unhandled)].slice(0,20)};}
 };
 window.render_game_to_text=()=>JSON.stringify({
  ui:'vcl',

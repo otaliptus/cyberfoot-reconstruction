@@ -5,14 +5,14 @@ const view=b=>new DataView(b.buffer,b.byteOffset,b.byteLength);
 
 /** 4e1a98 league/cup branches. Order includes clubs outside the visible batch;
  * human lineups already committed by Form87 must survive this pass. */
-export function prepareDomesticTeams(save,state,rng,{generate=generateAILineup,tactics=randomizeAITactics}={}){
+export function prepareDomesticTeams(save,state,rng,{generate=generateAILineup,tactics=randomizeAITactics,fixtureClubs=new Set()}={}){
  const career=view(save.career),competition=career.getInt32(0x88,true);
  if(competition!==1&&competition!==2)throw RangeError('Domestic team preparation requires league or cup competition.');
  const initialLineupCount=state.lineups?.length??0,prepared=[];
  for(let id=0;id<career.getInt32(0x3c,true);id++){
   const club=view(record(save,'clubs',id));
   if(club.getUint8(0x39)!==0)continue;
-  if(competition===1?club.getInt32(0x7c,true)<=0:club.getUint8(0x214)===0)continue;
+   if(competition===1?club.getInt32(0x7c,true)<=0:!fixtureClubs.has(id)&&club.getUint8(0x214)===0)continue;
   generate(state,id,rng);tactics(state.clubs[id],rng);prepared.push(id);
  }
  // Original 4e1a14 excludes sentinel player zero, then 4e1988 includes it.
