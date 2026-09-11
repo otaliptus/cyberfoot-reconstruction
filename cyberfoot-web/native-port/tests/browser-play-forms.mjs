@@ -32,9 +32,12 @@ async function clickAll(label,reopen,skip=[]){
   if(cur!==start){
    // Expected counteroffer modal (Form25 over Form24) after CHButton1:
    // refuse back to Form24 so the remaining controls are still clicked.
-   if(start==='Form24'&&cur==='Form25'){
-    await page.evaluate(()=>window.gameShell.click('button2'));await page.waitForTimeout(350);
-   }else{
+    if(start==='Form24'&&cur==='Form25'){
+     await page.evaluate(()=>window.gameShell.click('button2'));await page.waitForTimeout(350);
+    }else if(start==='Form67'&&(cur==='Form36'||cur==='Form70')){
+     await page.evaluate(form=>window.gameShell.click(form==='Form36'?'Image8':'bt3'),cur);
+     await page.waitForFunction(f=>window.gameShell.form===f,start,{timeout:30000});
+    }else{
     await reopen();await page.waitForFunction(f=>window.gameShell.form===f,start,{timeout:30000});await page.waitForTimeout(220);
    }
   }
@@ -85,7 +88,10 @@ async function clickAll(label,reopen,skip=[]){
  const curFinal=await form();
  // Form24 CHButton1 legitimately ends on the Form25 counteroffer modal for the
  // next block: leave it open instead of forcing back to Form24.
- if(!(start==='Form24'&&curFinal==='Form25')){
+  if(start==='Form67'&&(curFinal==='Form36'||curFinal==='Form70')){
+   await page.evaluate(form=>window.gameShell.click(form==='Form36'?'Image8':'bt3'),curFinal);
+   await page.waitForFunction(f=>window.gameShell.form===f,start,{timeout:30000});
+  }else if(!(start==='Form24'&&curFinal==='Form25')){
   await reopen();await page.waitForFunction(f=>window.gameShell.form===f,start,{timeout:30000});await page.waitForTimeout(220);
  }
  await shot(label);const uhF=await unhandled();assert.deepEqual(uhF,[],`${label} final unhandled`);

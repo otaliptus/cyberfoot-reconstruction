@@ -36,9 +36,9 @@ export const ModalResults={
  mrYes:6,
  mrNo:7,
  mrClose:8,
- mrAll:8,
- mrNoToAll:9,
- mrYesToAll:10
+ mrAll:9,
+ mrNoToAll:10,
+ mrYesToAll:11
 };
 
 /** Fallback Default-button operations per form (DFMs carry no Default flags). */
@@ -148,17 +148,19 @@ export function createFormManager(renderer,{escapeResult=ModalResults.mrCancel}=
   return originals.update(view);
  }
 
- function close(result=ModalResults.mrCancel){
-  if(!stack.length){
+  function close(result=ModalResults.mrCancel){
+   if(!stack.length){
+    originals.close();
+    return ModalResults.mrNone;
+   }
+   const entry=stack.pop();
+   entry.result=result;
    originals.close();
-   return ModalResults.mrNone;
+   if(entry.modal&&typeof entry.resolve==='function')entry.resolve(result);
+   const prev=top();
+   if(prev?.view&&renderer.frame?.form!==prev.form)originals.show(prev.view,prev.modal?{modal:true}:{});
+   return result;
   }
-  const entry=stack.pop();
-  entry.result=result;
-  originals.close();
-  if(entry.modal&&typeof entry.resolve==='function')entry.resolve(result);
-  return result;
- }
 
  function closeAll(){
   let last=ModalResults.mrNone;

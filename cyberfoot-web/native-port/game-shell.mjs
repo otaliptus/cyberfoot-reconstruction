@@ -13,7 +13,7 @@
  */
 import {VclRenderer} from './vcl-renderer.mjs';
 import {createCareerSave,careerSaveSummary,createCareerRecord,writeStoredCareer,listStoredCareers,readStoredCareerSave,playableClubIds,removeStoredCareer} from './career-menu.mjs';
-import {readSave,record,shortString} from './save-format.mjs';
+import {readSave,writeSave,record,shortString} from './save-format.mjs';
 import {OriginalRandom} from './match-core.mjs';
 import {openCareer} from './career-state.mjs';
 import {careerAgenda,careerSchedule} from './schedule.mjs';
@@ -46,9 +46,13 @@ import {applySeasonRotation} from './season-rotation.mjs';
 import {applyPrizeMoney} from './season-prize.mjs';
 import {createLiveMatchDriver,createMatchSoundPlayer} from './live-match-driver.mjs';
 import {ModalResults,createFormManager} from './form-manager.mjs';
-import {validateRegistrationKey,applyRegistration,registrationView} from './registration.mjs';
-import {listChampionshipCountries,selectChampionshipClubs,buildCustomChampionship,championshipView} from './championship.mjs';
+import {validateRegistrationKey,applyRegistration,registrationView,isRegistered} from './registration.mjs';
+import {listChampionshipCountries,selectChampionshipClubs,championshipView} from './championship.mjs';
 import {clubEditorView,renameClub,renameStadium} from './club-editor.mjs';
+import {FORM13_TARGET,HUB_CLOSE_OP,barraFormAt,hubFormView,saveCareerFromForm40,weeklyTeamView,weeklyTeamLeagues,withdrawPlayerFromTransferList} from './hub-navigation.mjs';
+import {listPlayerForLoan,withdrawPlayerFromLoanList,recallLoan} from './loan-window.mjs';
+import {applyCustomChampionship} from './custom-championship-build.mjs';
+import {createStandingsHost} from './standings-host.mjs';
 
 const query=new URLSearchParams(location.search);
 const [forms,language,template,kitAssets,crestAssets]=await Promise.all([
@@ -78,6 +82,8 @@ let rounds=0,continuations=[],seasonTransitions=[],playedCompetition=null,matchF
 let runtime={nationalManagerCount:0,nationalAssignmentsActive:false},temporary={lineups:[],matchTeams:[]};
 let seasonMoveHost=null,auction=null,contractSession=null,auctionTimer=null,resultsActive=null;
 let liveDriver=null,liveSoundSeen=0,lastMatchSounds=[];
+let weeklySel={leagueIdx:0,division:1,season:null,round:null,mode:0};
+let customCareer=null;
 const soundPlayer=createMatchSoundPlayer({basePath:'assets/sounds'});
 let clock=2015;
 
@@ -89,7 +95,7 @@ let clock=2015;
 let settingsCombo2=0,newGameCountry=-1,hubSelectedPlayer=-1,routeSubgroup=0;
 const settingsToggles={ckcopa:true,ckinter1:true,ckinter2:false,ckcopamundo:false,ckeurocopa:false,ckcopaamerica:false};
 const nationalSelected={gfind:-1,gsel:-1},championshipSelected=new Set();
-const championshipFormat='4x10',championshipCup=true;
+let championshipFormat='4x10',championshipCup=true;
 let clubEditorClub=11,clubEditorPlayer=-1,registrationName='',registrationCode='',registrationStatus='';
 let noticeDepth=0;
 function showNotice(operation,detail){
@@ -145,10 +151,17 @@ function clubChoices(){
 function menuFrame(){
  const menuFont=color=>({name:'Arial',height:14,bold:true,italic:false,underline:false,strikeout:false,color});
  const smallFont=color=>({name:'Arial',height:11,bold:false,italic:false,underline:false,strikeout:false,color});
+ const def=forms.find(form=>form.name==='Form1');
+ const props={};
+ const walk=node=>{if(node?.name)props[node.name]=node.properties??{};for(const child of node?.children??[])walk(child);};
+ walk(def);
  const dynamic=[];
- [1,2,3,4].forEach((id,index)=>dynamic.push({kind:'text',x:398,y:109+47*index,w:185,h:20,text:language[id].text,lines:null,font:menuFont('#ffff00'),color:'#ffff00',align:'center',wordWrap:false,shadow:{offset:1,color:'#000000'},background:null,vAlign:'top'}));
- dynamic.push({kind:'text',x:15,y:204,w:220,h:16,text:language[5].text,lines:null,font:smallFont('#ffffff'),color:'#ffffff',align:'left',wordWrap:false,shadow:null,background:null,vAlign:'top'});
- dynamic.push({kind:'text',x:25,y:238,w:180,h:16,text:'www.cyberfoot.net',lines:null,font:{...smallFont('#ffff00'),bold:true},color:'#ffff00',align:'left',wordWrap:false,shadow:null,background:null,vAlign:'top'});
+ [1,2,3,4].forEach((id,index)=>{
+  const shape=props['Shape'+id]??{},x=Number(shape.Left)||304,y=Number(shape.Top)||(96+48*index),w=Number(shape.Width)||185,h=Number(shape.Height)||33;
+  dynamic.push({kind:'text',x,y,w,h,text:language[id].text,lines:null,font:menuFont('#ffff00'),color:'#ffff00',align:'center',wordWrap:false,shadow:{offset:1,color:'#000000'},background:null,vAlign:'middle'});
+ });
+ const unreg=props.lb_sl?null:{x:15,y:204,w:220,h:16};
+ if(unreg)dynamic.push({kind:'text',...unreg,text:language[5].text,lines:null,font:smallFont('#ffffff'),color:'#ffffff',align:'left',wordWrap:false,shadow:null,background:null,vAlign:'top'});
  return {form:'Form1',properties:{comboi2:{Items:[language[0].text],ItemIndex:0}},dynamic};
 }
 function showMenu(){selector='menu';stopClubEditor();void manager.open(menuFrame());updateDevStatus();}
@@ -177,6 +190,22 @@ function newGameFrame(){
   UniHTMLabel7:{HTMLText:'<shad>'+language[11].text+'</shad>'},
   Label5:{Caption:language[35].text},Label6:{Caption:language[36].text},Label7:{Caption:language[37].text},Label8:{Caption:language[38].text}
  },clubs:effective,allClubs:listBase,countryNames};
+}
+function customTeamFrame(){
+ const cfg=customCareer;if(!cfg)return newGameFrame();
+ const all=clubChoices().filter(club=>cfg.clubIds.includes(club.id)&&playableSet.has(club.id));
+ const clubs=all.length?all:clubChoices().filter(club=>cfg.clubIds.includes(club.id));
+ if(!clubs.length)throw Error('The custom championship has no selectable club.');
+ if(!clubs.some(club=>club.id===newGameClub))newGameClub=clubs[0].id;
+ const index=Math.max(0,clubs.findIndex(club=>club.id===newGameClub));
+ const frame=newGameFrame();
+ frame.properties={...frame.properties,
+  Edit1:{Text:newGameName},
+  combo1:{Items:clubs.map(club=>`${club.name} · div ${club.division}`),ItemIndex:index,OnChange:'combo2Change'},
+  combonac:{Items:[language[10]?.text??'Custom championship'],ItemIndex:0},
+  Label12:{Caption:language[395]?.text??'Custom championship'}};
+ frame.clubs=clubs;frame.allClubs=clubs;frame.countryNames=[];frame.custom=true;
+ return frame;
 }
 function showNewGame(){selector='new-game';void manager.open(newGameFrame());updateDevStatus();}
 
@@ -243,7 +272,7 @@ function refreshGameSettings(){if(renderer.frame?.form==='Form9')manager.update(
 for(const name of ['ckcopa','ckinter1','ckinter2'])renderer.register('Form9.'+name+'Click',checked=>{settingsToggles[name]=!!checked;refreshGameSettings();});
 for(const name of ['ckcopamundo','ckeurocopa','ckcopaamerica'])renderer.register('Form9.'+name+'Click',()=>{refreshGameSettings();});
 renderer.register('Form9.ComboBox2Select',index=>{settingsCombo2=Number(index)||0;refreshGameSettings();});
-renderer.register('Form9.Image3Click',()=>showNotice('Form9.Image3Click',language[484]?.text||''));
+renderer.register('Form9.Image3Click',()=>{});
 renderer.register('Form9.XiButton3Click',()=>openChampionship());
 renderer.register('Form9.XiButton1Click',()=>showMenu());
 renderer.register('Form9.XiButton2Click',()=>showNewGame());
@@ -319,21 +348,22 @@ renderer.register('Form3.gridtimesSelectCell',index=>{
 });
 renderer.register('Form3.Edit1Change',value=>{try{renameClub(templateSave,clubEditorClub,String(value??'').slice(0,25)||'X');}catch{} manager.update(clubEditorViewFrame());});
 renderer.register('Form3.Edit2Change',value=>{try{renameStadium(templateSave,clubEditorClub,String(value??'').slice(0,30)||'Stadium');}catch{} manager.update(clubEditorViewFrame());});
-for(const op of ['IMGPClick','IMGJClick','Label6Click','Label3Click','Image5Click','Image6Click','Image7Click','Image10Click','Image11Click','Image12Click','btpjClick','Button4Click','Button2Click','Button3Click','btdupClick','xbt1Click','xbt2Click','AdvGlowButton6Click','AdvGlowButton7Click','nivelButtonClick'])renderer.register('Form3.'+op,()=>showNotice('Form3.'+op,language[484]?.text||''));
+for(const op of ['IMGPClick','IMGJClick','Label6Click','Label3Click','Image5Click','Image6Click','Image7Click','Image10Click','Image11Click','Image12Click','btpjClick','Button4Click','Button2Click','Button3Click','btdupClick','xbt1Click','xbt2Click','AdvGlowButton6Click','AdvGlowButton7Click','nivelButtonClick'])renderer.register('Form3.'+op,()=>{});
 renderer.register('Form3.Image1MouseDown',()=>{});
 function openChampionship(){
  // Form39 custom championship (championship.mjs:0062c380 list + 0062c884 build).
  let countries=[];
  try{countries=listChampionshipCountries(templateSave,{language});}catch{countries=[];}
  const total=selectChampionshipClubs(templateSave,[...championshipSelected]).length;
- const view=championshipView({language,countries,selectedCountries:[...championshipSelected],formatId:championshipFormat,playCup:championshipCup,registered:false,totalClubs:total});
+ const view=championshipView({language,countries,selectedCountries:[...championshipSelected],formatId:championshipFormat,playCup:championshipCup,registered:isRegistered(save??templateSave),totalClubs:total});
  const grid=view.countries.map(entry=>({country:entry.country,cells:{NxImageColumn1:'',NxImageColumn2:'',NxTextColumn1:entry.name,NxTextColumn2:String(entry.count),NxTextColumn3:entry.selected?'X':''},value:entry.country,selected:entry.selected}));
  selector='championship';
  void manager.open({form:'Form39',properties:{
   Label8:{Caption:view.countryPrompt},Label1:{Caption:view.title},Label10:{Caption:view.leagueOnlyNote},Label11:{Caption:view.disputeLabel},Label9:{Caption:view.limitNote},
-  XiButton1:{Caption:view.backLabel},bt1:{Caption:view.continueLabel,Enabled:view.continueEnabled},ckcopaper:{Caption:view.cupLabel,Checked:view.playCup},
-  formulaper:{Items:view.formats.map(entry=>entry.label),ItemIndex:view.formats.findIndex(entry=>entry.id===view.formatId)}
- },grids:{list1:grid},headers:{NxTextColumn1:language[744]?.text??'',NxTextColumn2:language[739]?.text??''},championship:view});
+   XiButton1:{Caption:view.backLabel},bt1:{Caption:view.continueLabel,Enabled:view.continueEnabled},
+   formulaper:{Items:view.formats.map(entry=>entry.label),ItemIndex:view.formats.findIndex(entry=>entry.id===view.formatId),Enabled:view.formatEnabled,OnChange:view.formatEnabled?'formulaperChange':undefined},
+   ckcopaper:{Caption:view.cupLabel,Checked:view.playCup,OnClick:'ckcopaperClick'}
+  },grids:{list1:grid},headers:{NxTextColumn1:language[744]?.text??'',NxTextColumn2:language[739]?.text??''},championship:view});
  updateDevStatus();
 }
 renderer.register('Form39.list1CellClick',index=>{
@@ -345,13 +375,22 @@ renderer.register('Form39.list1CellClick',index=>{
  openChampionship();
 });
 renderer.register('Form39.XiButton1Click',()=>showGameSettings());
+renderer.register('Form39.formulaperChange',index=>{if(isRegistered(save??templateSave)){championshipFormat=Number(index)===1?'2x20':'4x10';openChampionship();}});
+renderer.register('Form39.ckcopaperClick',checked=>{championshipCup=!!checked;openChampionship();});
 renderer.register('Form39.bt1Click',()=>{
- if(!championshipSelected.size){showNotice('Form39.bt1Click',language[484]?.text||'');return;}
+ if(!championshipSelected.size)return;
+ // Original 0062c884 chain: build the selected competition, then open the
+ // original Form11 team selector. The selected manager/club is committed only
+ // when Form11.button1Click is confirmed.
  try{
   const clubIds=selectChampionshipClubs(templateSave,[...championshipSelected]);
-  buildCustomChampionship({clubIds,formatId:championshipFormat,playCup:championshipCup,seed:2015});
-  showNotice('Form39.bt1Click',`${clubIds.length} clubes`);
- }catch(error){showNotice('Form39.bt1Click',String(error?.message||error));}
+  const playable=clubIds.find(id=>playableSet.has(id));
+  if(!Number.isInteger(playable))throw Error('The selected countries have no club available for the current career date.');
+  const base=readSave(createCareerSave({managerName:newGameName,clubId:playable,language:[language[0].text],seed:2015,template:templateBytes}));
+  const result=applyCustomChampionship(base,{clubIds,formatId:championshipFormat,playCup:championshipCup,rng:new OriginalRandom(2015)});
+  customCareer={clubIds,formatId:championshipFormat,playCup:championshipCup,bytes:writeSave(base),leagueIndex:result.leagueIndex};
+  newGameClub=playable;selector='custom-new-game';void manager.open(customTeamFrame());updateDevStatus();
+ }catch(error){showNotice(championshipView({language,countries:[],selectedCountries:[],formatId:championshipFormat,playCup:championshipCup,registered:false,totalClubs:0}).title,String(error?.message||error));}
 });
 function registrationFrame(){
  const view=registrationView({language,name:registrationName,code:registrationCode,status:registrationStatus});
@@ -407,16 +446,27 @@ renderer.register('Form1.comboi2Change',()=>showMenu());
 renderer.register('Form1.Image2MouseDown',()=>{});
 renderer.register('Form11.Edit1Change',value=>{newGameName=String(value??'').slice(0,25);});
 renderer.register('Form11.combo2Change',index=>{
- const list=newGameFrame().clubs;
+ const list=(customCareer?customTeamFrame():newGameFrame()).clubs;
  const picked=list[Number(index)||0];
  if(picked)newGameClub=picked.id;
- manager.update(newGameFrame());updateDevStatus();
+ manager.update(customCareer?customTeamFrame():newGameFrame());updateDevStatus();
 });
 renderer.register('Form11.button1Click',async()=>{
  const edit=renderer.fieldValues['Form11.Edit1']?.value??newGameName;
  const combo=renderer.fieldValues['Form11.combo1']?.value??0;
  const list=newGameFrame().clubs;
  newGameClub=list[combo]?.id??newGameClub;
+ if(customCareer){
+  const cfg=customCareer,clubs=customTeamFrame().clubs,chosen=clubs[combo]?.id??newGameClub;
+  const bytes=createCareerSave({managerName:edit,clubId:chosen,language:[language[0].text],seed:2015,template:templateBytes});
+  const customSave=readSave(bytes);
+  applyCustomChampionship(customSave,{clubIds:cfg.clubIds,formatId:cfg.formatId,playCup:cfg.playCup,rng:new OriginalRandom(2015)});
+  const finalBytes=writeSave(customSave);
+  await storeCareerBytes(finalBytes,edit,chosen);
+  customCareer=null;
+  await enterCareer(finalBytes);
+  return;
+ }
  await newGame({managerName:edit,clubId:newGameClub});
 });
 renderer.register('Form21.grid1SelectCell',index=>{loadSelection=Number(index)||0;manager.update(loadGameFrame());});
@@ -457,18 +507,28 @@ function viewModel(){
  result.properties.ckescalacao={Caption:language[281].text};
  return result;
 }
+let hubPlayerPanel=true;
+function applyHubPanels(frame){
+ frame.properties={...frame.properties,
+  pinfo_panel:{Visible:hubPlayerPanel},p_conf:{Visible:!hubPlayerPanel},
+  btvender:{Visible:hubPlayerPanel},btalterasal:{Visible:hubPlayerPanel},
+  btaposenta:{Visible:hubPlayerPanel},Button4:{Visible:hubPlayerPanel}};
+ return frame;
+}
 function showHub(){
-  hubSelectedPlayer=-1;
-  const frame=clubHubView(save,language,{state,date:currentDate()});
+  hubSelectedPlayer=-1;hubPlayerPanel=true;
+  const frame=applyHubPanels(clubHubView(save,language,{state,date:currentDate()}));
   frame.selectedPlayerId=hubSelectedPlayer;
   void manager.open(frame);updateDevStatus();
 }
 function refreshHub(){
  if(!save||renderer.frame?.form!=='Form13')return;
- const frame=clubHubView(save,language,{state,date:currentDate()});
+ const frame=applyHubPanels(clubHubView(save,language,{state,date:currentDate()}));
  frame.selectedPlayerId=hubSelectedPlayer;
  manager.update(frame);updateDevStatus();
 }
+// Original 00641918: hide the player panel + action buttons, show confidence.
+renderer.register('Form13.Image13Click',()=>{hubPlayerPanel=false;refreshHub();});
 for(const k of [1,2,3])renderer.register('Form87.rd'+k+'Click',()=>{checkedKit=k;if(kitPaths[k-1]){state.clubs[clubId].selectedKit=k;shirtImage=kitPaths[k-1];}manager.update(viewModel());});
 renderer.register('Form87.combtatClick',index=>{formation=index+1;slots=autoSelectScreenLineup(state,rows,formation,save,clubId).slots;manager.update(viewModel());});
 for(const [control,operation] of [['comboej','comboejClick'],['combomarc','combomarcChange'],['combo_cataq','combo_cataqChange']])renderer.register('Form87.'+operation,index=>{setTactic(state.clubs[clubId],control,index);manager.update(viewModel());});
@@ -483,7 +543,7 @@ renderer.register('Form87.gridview1SelectCell',index=>{
  if(row)manager.update({...viewModel(),selectedPlayerId:row.playerId});
  updateDevStatus();
 });
-renderer.register('Form87.AdvGlowButton1Click',()=>showNotice('Form87.AdvGlowButton1Click',language[998]?.text||''));
+renderer.register('Form87.AdvGlowButton1Click',()=>{});
 renderer.onLineupDrop=({source,targetSlot})=>{
  if(starting||matchSession)return;
  if(targetSlot!==undefined&&targetSlot!==null){
@@ -521,32 +581,75 @@ renderer.register('Form13.gridview1DblClick',index=>{
  if(row)hubSelectedPlayer=row.playerId;
  refreshHub();
 });
-renderer.register('Form13.btalterasalClick',()=>{const id=hubSelectedPlayer>=0?hubSelectedPlayer:rows?.[0]?.playerId;if(Number.isInteger(id))void openContract(id);else showNotice('Form13.btalterasalClick','');});
-renderer.register('Form13.btvenderClick',()=>showNotice('Form13.btvenderClick',language[484]?.text||''));
-renderer.register('Form13.btaposentaClick',()=>showNotice('Form13.btaposentaClick',language[484]?.text||''));
-renderer.register('Form13.Button4Click',()=>showNotice('Form13.Button4Click',language[484]?.text||''));
+function hubContext(){return {save,language,state,clubId,playerId:hubSelectedPlayer,crestAssets};}
+function openHubForm(form){
+ if(!form||!save)return;
+ if(form==='Form24'){const id=hubSelectedPlayer>=0?hubSelectedPlayer:rows?.[0]?.playerId;if(Number.isInteger(id))void openContract(id);return;}
+ if(form==='Form23'){void openAuction();return;}
+ if(form==='Form42'){openRegistration();return;}
+ if(form==='Form87'){void manager.open(viewModel());return;}
+ void manager.openModal(hubFormView(form,hubContext()));
+}
+renderer.register('Form13.btalterasalClick',()=>{const id=hubSelectedPlayer>=0?hubSelectedPlayer:rows?.[0]?.playerId;if(Number.isInteger(id))void openContract(id);});
+renderer.register('Form13.Alterarsalrio1Click',()=>{const id=hubSelectedPlayer>=0?hubSelectedPlayer:rows?.[0]?.playerId;if(Number.isInteger(id))void openContract(id);});
 renderer.register('Form13.Label24Click',()=>openRegistration());
-for(const op of ['Label323Click','Image9Click','Label23Click','Label51Click','lb_tecClick','Image13Click','Label20Click','Label6Click','Label49Click','Image4Click','barraMouseDown'])renderer.register('Form13.'+op,op==='barraMouseDown'?()=>{}:()=>showNotice('Form13.'+op,''));
+renderer.register('Form13.Sairdojogo1Click',()=>showMenu());
+renderer.register('Form13.barraMouseDown',point=>openHubForm(barraFormAt(point?.x??0,point?.y??0)));
+for(const [op,form] of Object.entries(FORM13_TARGET))renderer.register('Form13.'+op,()=>openHubForm(form));
+const selectedHubPlayer=()=>hubSelectedPlayer>=0?hubSelectedPlayer:-1;
+renderer.register('Form13.Button4Click',()=>{if(withdrawPlayerFromTransferList(save,selectedHubPlayer()))refreshHub();});
+renderer.register('Form13.Disponibilizarparaemprstimo1Click',()=>{const id=selectedHubPlayer();if(id>=0&&listPlayerForLoan(save,id,{clubId}))refreshHub();});
+renderer.register('Form13.Retirardoemprstimo1Click',()=>{const id=selectedHubPlayer();if(id>=0&&withdrawPlayerFromLoanList(save,id))refreshHub();});
+renderer.register('Form13.CancelarEmprstimo1Click',()=>{const id=selectedHubPlayer();if(id>=0){recallLoan(save,id,{rng,runtime,date:currentDate()});refreshHub();}});
+for(const [form,ops] of Object.entries(HUB_CLOSE_OP)){
+ for(const op of ops){
+  const key=form+'.'+op;
+  if(!renderer.handlers.has(key))renderer.register(key,()=>manager.close(ModalResults.mrOk));
+ }
+}
+renderer.register('Form40.bt1Click',async()=>{if(!save)return;const name=renderer.fieldValues['Form40.Edit1']?.value??'career';await saveCareerFromForm40({save,language,localStorage,name});manager.close(ModalResults.mrOk);});
+renderer.register('Form44.bt1Click',()=>{if(hubSelectedPlayer>=0){runtime.auctionPlayer=hubSelectedPlayer;manager.close(ModalResults.mrOk);void openAuction();}});
+renderer.register('Form13.Label23Click',()=>{});
 // Route screens: combopais filters the Form26 table by league subgroup;
 // bttimeano (team of the year) has no ported engine → no-op dialog; Form75
 // thumbs/labels are sort chrome → silent refresh; grid selection tracks;
 // Form77 find/select track and the >>/<< buttons move the highlight between
 // the candidate and selected grids (UI state; nationalSetup engine runs on
 // continue via presentScreens).
+function openWeeklyTeam(mode){
+ if(!save)return;
+ weeklySel={...weeklySel,mode};
+ void manager.openModal(weeklyTeamView(save,{language,...weeklySel}));
+ updateDevStatus();
+}
+function repaintWeeklyTeam(){
+ if(renderer.frame?.form!=='Form70')return;
+ manager.update(weeklyTeamView(save,{language,...weeklySel}));
+ updateDevStatus();
+}
+function weeklyOptions(){
+ const leagues=weeklyTeamLeagues(save,language);
+ const view=weeklyTeamView(save,{language,...weeklySel});
+ return {leagues,seasons:view.seasons,rounds:view.rounds};
+}
+renderer.register('Form70.combopaisChange',index=>{weeklySel={...weeklySel,leagueIdx:Number(index)||0,division:1};repaintWeeklyTeam();});
+renderer.register('Form70.combo1Change',index=>{weeklySel={...weeklySel,division:(Number(index)||0)+1};repaintWeeklyTeam();});
+renderer.register('Form70.comboanoChange',index=>{const {seasons}=weeklyOptions();weeklySel={...weeklySel,season:seasons[Number(index)||0]??null};repaintWeeklyTeam();});
+renderer.register('Form70.combobox1Change',index=>{const {rounds}=weeklyOptions();weeklySel={...weeklySel,round:rounds[Number(index)||0]??null};repaintWeeklyTeam();});
 renderer.register('Form26.combopaisChange',index=>{routeSubgroup=Number(index)||0;if(routeScreen?.view?.form==='Form26'){routeScreen.view={...routeScreen.view,subgroup:routeSubgroup};manager.update(competitionTableView(save,language,{subgroup:routeSubgroup,currentDate:currentDate(),state,date:currentDate()}));}updateDevStatus();});
-renderer.register('Form26.bttimeanoClick',()=>showNotice('Form26.bttimeanoClick',''));
+renderer.register('Form26.bttimeanoClick',()=>openWeeklyTeam(2));
 for(const op of ['Label13Click','Label4Click'])renderer.register('Form75.'+op,()=>{if(renderer.frame?.form==='Form75'&&routeScreen?.view)manager.update(routeScreen.view);});
 renderer.register('Form75.gridview1CellClick',index=>{if(routeScreen?.view?.form==='Form75'){routeScreen.view={...routeScreen.view,selectedPlayerId:Number(index)||0};manager.update(routeScreen.view);}});
 renderer.register('Form77.gfindSelectCell',index=>{nationalSelected.gfind=Number(index)||0;if(renderer.frame?.form==='Form77')manager.update({...renderer.frame});});
 renderer.register('Form77.gselSelectCell',index=>{nationalSelected.gsel=Number(index)||0;if(renderer.frame?.form==='Form77')manager.update({...renderer.frame});});
 renderer.register('Form77.XiButton1Click',()=>{if(renderer.frame?.form==='Form77')manager.update({...renderer.frame,notice:'>>'});});
 renderer.register('Form77.XiButton2Click',()=>{if(renderer.frame?.form==='Form77')manager.update({...renderer.frame,notice:'<<'});});
-renderer.register('Form77.XiButton3Click',()=>showNotice('Form77.XiButton3Click',''));
+renderer.register('Form77.XiButton3Click',()=>{});
 // Season move Form30 bt2 opens the standings table (verified competition view);
 // r1 stays hidden in the shell (seasonMoveView hides r1-r4), but a visible
 // fallback still closes like the other buttons instead of going unhandled.
 renderer.register('Form30.bt2Click',()=>{if(save)void manager.openModal(competitionTableView(save,language,{subgroup:fixtureSubgroup,currentDate:currentDate(),state,date:currentDate()}));});
-renderer.register('Form30.r1Click',()=>{if(renderer.frame?.form==='Form30')manager.update({...renderer.frame});});
+renderer.register('Form30.r1Click',()=>{});
 // Invisible-chrome safety net: hidden DFM buttons must never surface as
 // unhandled if a frame ever flips them visible. Consume silently.
 for(const key of ['Form1.Button1Click','Form13.Button1Click','Form13.Button2Click','Form13.Button3Click','Form13.Button5Click','Form13.Button6Click','Form13.Button7Click','Form46.labvn3Click','Form46.Button1Click','Form67.Button1Click','Form87.Button1Click','Form87.Button2Click','Form87.Button3Click','Form87.Button4Click','Form88.Button1Click','Form9.rd1Click','Form9.rd2Click','Form9.ckgruposcopamundoClick','Form9.ckestadualClick','Form9.Image2Click','Form9.combo1Change','Form11.labvn2Click','Form11.labvn3Click','Form11.labvn4Click','Form67.combopaisChange'])renderer.register(key,()=>{});
@@ -634,16 +737,20 @@ function showResults({subgroup=0,caption=''}){
    const done=()=>{if(resultsActive){resultsActive=null;manager.close(ModalResults.mrOk);resolve();}};
    renderer.register('Form67.grid1SelectCell',historyId=>{if(!resultList.some(row=>row.historyId===historyId))return;selectedHistoryId=historyId;manager.update(windowView());});
    renderer.register('Form67.bt3Click',done);
-   // Original bt2 (table) and Button2 (weekly team) have no isolated ported
-   // engine in the shell context: surface a no-op dialog instead of silent
-   // dead controls (last resort, reported).
-   renderer.register('Form67.bt2Click',()=>showNotice('Form67.bt2Click',''));
-   renderer.register('Form67.Button2Click',()=>showNotice('Form67.Button2Click',''));
+   // Original bt2 (005f5ec4): league table Form36 for competition<7, Form78
+   // continental bracket otherwise. The standings host owns the full Form36
+   // controller (divisions, regions, continental stages).
+   renderer.register('Form67.bt2Click',()=>{
+    const host=createStandingsHost(renderer,{save,language,crestAssets,subgroupOverride:fixtureSubgroup});
+    void host.open().catch(error=>showNotice(language[225]?.text||'Table',String(error?.message||error))).finally(()=>host.dispose());
+   });
+   // Original Button2 (005fb1e4): team-of-the-week Form70 (005d8068 display).
+   renderer.register('Form67.Button2Click',()=>openWeeklyTeam(0));
    // Combolib selects the viewed competition (verified resultRows stay on the
    // current subgroup; the control now stores and repaints instead of going
-   // unhandled). Image4 is header chrome → no-op dialog.
+   // unhandled). Image4 is header chrome → silent.
    renderer.register('Form67.CombolibChange',index=>{manager.update({...windowView(),notice:index});});
-   renderer.register('Form67.Image4Click',()=>showNotice('Form67.Image4Click',''));
+   renderer.register('Form67.Image4Click',()=>{});
    void renderer.loadCrests(resultList.flatMap(row=>row.crests)).then(()=>{resultsActive={history,resultList};void manager.open(windowView());});
  });
 }
@@ -825,11 +932,11 @@ renderer.onFieldInput=(key,value)=>{
   if(key==='Form11.combonac'){
    const clubs=clubChoices(),names=[...new Set(clubs.map(club=>club.country))].sort((a,b)=>a-b);
    newGameCountry=names[Number(value)||0]??-1;
-   if(renderer.frame?.form==='Form11')manager.update(newGameFrame());
+    if(renderer.frame?.form==='Form11')manager.update(customCareer?customTeamFrame():newGameFrame());
    updateDevStatus();return;
   }
   if(key==='Form11.combo1'){
-   const list=newGameFrame().clubs,picked=list[Number(value)||0];
+   const list=(customCareer?customTeamFrame():newGameFrame()).clubs,picked=list[Number(value)||0];
    if(picked)newGameClub=picked.id;
    return;
   }

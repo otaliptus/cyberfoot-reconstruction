@@ -1094,7 +1094,11 @@ export class VclRenderer {
    this.paint();return;
   }
   const hit=this.hitAt(point),pressed=this.down;this.down=null;this.paint();
-  if(hit&&(!pressed||hit.name===pressed.name))this.invoke(hit.operation,hit.value);
+   if(hit&&(!pressed||hit.name===pressed.name)){
+    const local={x:point.x-hit.x,y:point.y-hit.y};
+    const mouse=String(hit.operation??'').endsWith('MouseDown')||String(hit.operation??'').endsWith('MouseUp');
+    this.invoke(hit.operation,mouse?local:(hit.value!==undefined?hit.value:local));
+   }
  }
  onKeyDown(event){
   const frame=this.frame;if(!frame)return;

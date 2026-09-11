@@ -1,0 +1,27 @@
+import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';
+import assert from 'node:assert/strict';
+
+const browser=await chromium.launch({headless:true});
+const page=await browser.newPage({viewport:{width:1280,height:800}});
+const errors=[];
+page.on('pageerror',error=>errors.push(String(error)));
+page.on('console',message=>{if(message.type()==='error')errors.push('console: '+message.text());});
+await page.goto('http://127.0.0.1:8766/game.html?manualClock=1');
+await page.waitForFunction(()=>window.gameShell?.form==='Form1');
+await page.evaluate(()=>window.gameShell.showGameSettings());
+await page.waitForFunction(()=>window.gameShell.form==='Form9');
+await page.evaluate(()=>window.gameShell.openChampionship());
+await page.waitForFunction(()=>window.gameShell.form==='Form39');
+await page.evaluate(()=>window.gameShell.click('list1'));
+await page.waitForTimeout(150);
+await page.evaluate(()=>window.gameShell.click('bt1'));
+await page.waitForFunction(()=>window.gameShell.form==='Form11');
+assert.equal(await page.evaluate(()=>window.gameShell.renderer.frame.custom),true);
+assert.ok(await page.evaluate(()=>window.gameShell.renderer.frame.clubs.length>=20));
+await page.evaluate(()=>window.gameShell.setField('Edit1','Custom Forms'));
+await page.evaluate(()=>window.gameShell.click('button1'));
+await page.waitForFunction(()=>window.gameShell.form==='Form13',{timeout:60000});
+assert.deepEqual(await page.evaluate(()=>JSON.parse(window.render_game_to_text()).unhandled),[]);
+assert.deepEqual(errors,[]);
+await browser.close();
+console.log('custom championship: Form39 -> Form11 -> playable career hub passed.');

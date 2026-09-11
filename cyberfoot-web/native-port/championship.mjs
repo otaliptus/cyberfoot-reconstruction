@@ -1,4 +1,4 @@
-/** Form39 custom championship over career clubs (new file; shell stays read-only).
+/** Form39 custom championship over career clubs.
  *
  * Shell insertion points in game-shell.mjs (do not edit here):
  * - gameSettingsFrame()/showGameSettings() at lines 166-200
@@ -7,9 +7,8 @@
  *   `manager.open(championshipView(...))` next to showGameSettings, e.g. after
  *   line 200, with `Form39.bt1Click` routed to `buildCustomChampionship` and
  *   `Form39.list1CellClick` routed to `toggleChampionshipCountry`.
- * - No existing Form39 handler exists in the shell; this module is the first
- *   native host and must be wired alongside the Form9 XiButton handlers at
- *   lines 201-209.
+ * - The shell wires Form39 alongside the Form9 XiButton handlers and hands the
+ *   selected clubs to custom-championship-build.mjs.
  *
  * Original addresses ported:
  * - 0062c380 TForm39_FormCreate: lists every country with club count > 0
