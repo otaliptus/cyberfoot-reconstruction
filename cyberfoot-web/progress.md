@@ -1,5 +1,11 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-12 — Whole career seasons verified
+- Played fresh registered mode-4 and mode-2 careers through the season boundary with the browser driver. Form62 calendar closing, scheduled cup opponent lineups, expired-contract renewals and stale Form13 lineups were fixed; both paths completed without browser errors.
+- Mode 4 crossed to season 2 after 20 fixtures; mode 2 crossed to season 2 after 35 fixtures with the rebuilt 760-fixture calendar. Full native regression remains 71,757 cases with 0 failures; the whole-season browser driver and targeted lint pass.
+- Commit `c135d55` is pushed and deployed as `de2d86d9` at https://de2d86d9.cyberfoot-reconstruction.pages.dev; the stable public alias https://cyberfoot-reconstruction.pages.dev/ passes registration, unlock-toggle and mode-2 first-match smoke tests.
+- Release certification, pixel parity, and the original repeated multi-manager Form11 flow remain false/unimplemented.
+
 ### 2026-09-12 — Registered unlock toggle and UI play pass
 - Added a top-right `Registered unlock: OFF/ON` button outside the original VCL canvas. It persists the local runtime unlock, refreshes Form9/Form11 immediately, survives reloads, and is bounded on mobile; the renderer now also updates stale disabled DOM overlays correctly.
 - Played the full browser suite after the change: career, matches, route screens, standings, auctions, manager dialogs, registrations, settings, and all reachable forms passed with no new UI errors. Production toggle, valid registration, and mode-2 flows pass against the public alias.
