@@ -1060,7 +1060,7 @@ export class VclRenderer {
   // the overlay hidden and inert so the original disabled state is honored.
   if(input.disabled){
    const stale=this.inputs.get(key);
-   if(stale)stale.style.display='none';
+   if(stale){stale.disabled=true;stale.style.display='none';}
    return;
   }
   let element=this.inputs.get(key);

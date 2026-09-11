@@ -108,11 +108,22 @@ const nationalSelected={gfind:-1,gsel:-1},championshipSelected=new Set();
 let championshipFormat='4x10',championshipCup=true;
 let clubEditorClub=11,clubEditorPlayer=-1,registrationName='',registrationCode='',registrationStatus='',retirementName='',retirementRole=-1,jerseyNumber=0,friendlyDate=0,friendlyOpponent=-1,friendlyPlace=0;
 let noticeDepth=0;
+const registeredUnlockStorageKey='cyberfoot.registration.unlock';
+const registeredUnlockFlag=500;
+function registeredUnlockEnabled(){try{return localStorage.getItem(registeredUnlockStorageKey)==='1';}catch{return false;}}
 function persistedRegistrationFlag(){
  try{const value=Number(localStorage.getItem(registrationStorageKey));return Number.isInteger(value)?value:0;}catch{return 0;}
 }
-function registrationFlag(){return Math.max(save?readRegistrationFlag(save):0,persistedRegistrationFlag());}
+function registrationFlag(){return Math.max(save?readRegistrationFlag(save):0,persistedRegistrationFlag(),registeredUnlockEnabled()?registeredUnlockFlag:0);}
 function persistRegistrationFlag(flag){try{localStorage.setItem(registrationStorageKey,String(flag|0));}catch{} }
+function refreshRegisteredUnlock(){
+ const button=document.getElementById('registered-toggle');if(!button)return;
+ const enabled=registeredUnlockEnabled();button.dataset.enabled=String(enabled);button.setAttribute('aria-pressed',String(enabled));button.textContent=`Registered unlock: ${enabled?'ON':'OFF'}`;
+ if(renderer.frame?.form==='Form9')manager.update(gameSettingsFrame());
+ else if(renderer.frame?.form==='Form11')manager.update(customCareer?customTeamFrame():newGameFrame());
+ updateDevStatus();
+}
+function setRegisteredUnlock(enabled){try{if(enabled)localStorage.setItem(registeredUnlockStorageKey,'1');else localStorage.removeItem(registeredUnlockStorageKey);}catch{}refreshRegisteredUnlock();}
 function applyPersistedRegistration(bytes){
  const flag=persistedRegistrationFlag();
  if(!flag)return bytes;
@@ -124,8 +135,8 @@ function applyNewGameSettings(bytes){
   const parsed=readSave(bytes),careerView=dataView(parsed.career);
   // Form9 writes these values before Form11 creates the human manager slots.
   careerView.setInt32(0x13c,settingsCombo2+1,true);
-  // The mode selector is coupled to the original league-record rebuild; keep
-  // the template's supported layout until that standard builder is ported.
+  // Mode 2 rebuilds the bundled standard league below; mode 4 retains the
+  // original template layout.
   const flags={
    0x10e:settingsToggles.ckcopa,
    0x170:false,
@@ -1180,6 +1191,9 @@ window.gameShell={
   get screens(){return (renderer.stack??[]).map(frame=>frame.form);},
   get forms(){return manager.stack.map(entry=>entry.form);},
  get selector(){return selector;},
+  get registered(){return isRegistered(registrationFlag());},
+  get registeredUnlock(){return registeredUnlockEnabled();},
+  setRegisteredUnlock,
  click:clickControl,
   setField(name,value){const key=(renderer.frame?.form??'')+'.'+name,text=String(value),input=renderer.lastLayout?.interactions.find(entry=>entry.name===name&&entry.kind==='edit');renderer.fieldValues[key]={kind:'edit',value:text};renderer.onFieldInput?.(key,text);if(input?.operation)renderer.invoke(input.operation,text);renderer.paint();},
  showMenu,showGameSettings,showClubEditor,showClubEditorView,openChampionship,openRegistration,showHub,showLineup:()=>{if(save&&state)void manager.open(viewModel());},newGame,loadCareer:async id=>{const bytes=await readStoredCareerSave(localStorage,id);await enterCareer(bytes);},
@@ -1212,4 +1226,6 @@ window.render_game_to_text=()=>JSON.stringify({
 });
 addEventListener('keydown',event=>{if(event.key==='Escape'&&!matchSession&&!auction&&!contractSession&&['Form2','Form3','Form9','Form11','Form21','Form42','Form39'].includes(renderer.frame?.form))showMenu();});
 showMenu();
+document.getElementById('registered-toggle')?.addEventListener('click',()=>setRegisteredUnlock(!registeredUnlockEnabled()));
+refreshRegisteredUnlock();
 if(!manualClock){let last=performance.now();const animate=now=>{const delta=now-last;last=now;matchSession?.advanceTime(delta);requestAnimationFrame(animate);};requestAnimationFrame(animate);}
