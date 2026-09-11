@@ -3,9 +3,7 @@
  * Shell integration:
  * - Form39.bt1Click builds a fresh template career and opens the original
  *   Form11 team selector. Form11.button1Click applies the same build to the
- *   confirmed manager/club save and enters the career. The custom calendar
- *   adapter remains a separate pending step; the native shell never opens a
- *   synthetic Form36 preview for this path.
+ *   confirmed manager/club save and enters the career.
  *
  * Original addresses ported:
  * - 0062c884 TForm39_bt1Click: marks team-table byte0=0xca, zeroes career
@@ -45,8 +43,8 @@
  * - Career 0x3c+=K increment is kept for parity (original counts new entries
  *   as additional); on reuse-model saves total will exceed clubs count by K.
  *   Vectors share the same overcount so finals still validate.
- * - League SetLength(1) (truncate) is implemented as append to preserve
- *   template data per task; on empty leagues (parity synthetics) both give 1.
+ * - League SetLength(1) (truncate) remains append-only for the metadata section;
+ *   the scheduled fixture table is rebuilt separately from the custom divisions.
  * - Tail form opens (00487474/00483d6c/00483bc4 -> TForm11) are UI-only.
  * - K<20 would OOB-read in the original (slots> K); port requires K>=1 but
  *   vectors use K>=20 (minimum safe 20 slots) and thresholds guarantee
@@ -54,6 +52,9 @@
  *   left as-is) documented here.
  */
 import { originalCandidateSort } from './ai-selection.mjs';
+import { pairCupBracket } from './championship.mjs';
+import { careerSchedule } from './schedule.mjs';
+import { appendRows } from './match-records.mjs';
 
 export const CUSTOM_BUILD_CLUB_LIMIT = 1000;
 const COPA_NAME = 'Copa Internacional';
@@ -79,6 +80,93 @@ function divCountFor(mode, total) {
   if (total >= 0x2a) return 4;
   if (total >= 0x20) return 3;
   return 2;
+}
+
+function roundRobinPairs(group) {
+  const teams = [...group];
+  if (teams.length % 2 === 1) teams.push(-1);
+  const rounds = [];
+  const fixed = teams[0];
+  let ring = teams.slice(1);
+  for (let round = 0; round < teams.length - 1; round += 1) {
+    const order = [fixed, ...ring];
+    const pairs = [];
+    for (let i = 0; i < order.length / 2; i += 1) {
+      const home = order[i];
+      const away = order[order.length - 1 - i];
+      if (home >= 0 && away >= 0) pairs.push(round % 2 === 0 ? [home, away] : [away, home]);
+    }
+    if (pairs.length) rounds.push(pairs);
+    ring = [ring[ring.length - 1], ...ring.slice(0, -1)];
+  }
+  return rounds;
+}
+
+function fixtureRow(home, away, competition, round, leg, subgroup, ordinal) {
+  const row = Array(18).fill(0);
+  row[0] = home;
+  row[1] = away;
+  row[6] = competition;
+  row[7] = round;
+  row[8] = leg;
+  row[9] = ordinal;
+  row[14] = subgroup;
+  return row;
+}
+
+function rebuildCustomFixtures(save, { clubIds, groups, leagueIndex, playCup }) {
+  const section = save.sections.find((entry) => entry.name === 'records_0066afa0');
+  if (!section) throw new Error('Save is missing scheduled fixtures.');
+  const calendar = careerSchedule(save);
+  const leagueDates = calendar.filter((entry) => entry.competition === 1).map((entry) => entry.date);
+  const rounds = Math.max(0, ...groups.map((group) => roundRobinPairs(group).length));
+  const rows = [];
+  const datedRows = [];
+  const firstLegs = groups.map((group) => roundRobinPairs(group));
+  for (let round = 0; round < rounds; round += 1) {
+    for (const schedule of firstLegs) {
+      for (const [home, away] of schedule[round] ?? []) {
+        const row = fixtureRow(home, away, 1, round + 1, 1, leagueIndex, -1);
+        rows.push(row);
+        datedRows.push({row, date: leagueDates[round] ?? 0});
+      }
+    }
+  }
+  for (let round = 0; round < rounds; round += 1) {
+    for (const schedule of firstLegs) {
+      for (const [home, away] of schedule[round] ?? []) {
+        const row = fixtureRow(away, home, 1, round + 1, 2, leagueIndex, -1);
+        rows.push(row);
+        datedRows.push({row, date: leagueDates[rounds + round] ?? 0});
+      }
+    }
+  }
+  if (rows.length && leagueDates.length < rounds * 2) throw new Error('Custom league has more rounds than the original calendar.');
+
+  if (playCup) {
+    const cupDates = calendar.filter((entry) => entry.competition === 2).map((entry) => entry.date);
+    const entrants = [...clubIds].slice(0, 32);
+    const bracket = pairCupBracket(entrants, {seed: 2015});
+    const firstRound = bracket.concat(Array.from({length: Math.max(0, 16 - bracket.length)}, () => [-1, -1]));
+    for (let round = 1, ties = 16; round <= 5; round += 1, ties = Math.max(1, ties >> 1)) {
+      const date1 = cupDates[(round - 1) * 2] ?? 0;
+      const date2 = cupDates[(round - 1) * 2 + 1] ?? date1;
+      for (let tie = 0; tie < ties; tie += 1) {
+        const pair = round === 1 ? firstRound[tie] : [-1, -1];
+        const ordinal = ties * 2 - 1 - tie;
+        const first = fixtureRow(pair[0], pair[1], 2, round, 1, leagueIndex, ordinal);
+        const second = fixtureRow(pair[1], pair[0], 2, round, 1, leagueIndex, ordinal);
+        datedRows.push({row: first, date: date1}, {row: second, date: date2});
+      }
+    }
+  }
+  section.data = new Uint8Array(0);
+  section.count = 0;
+  section.marker = 0;
+  appendRows(save, 'records_0066afa0', datedRows.map(({row}) => row));
+  const data = new DataView(section.data.buffer, section.data.byteOffset, section.data.byteLength);
+  datedRows.forEach(({date}, index) => data.setFloat64(index * section.recordSize + 0x30, date, true));
+  return {leagueFixtures: rows.length, cupFixtures: datedRows.length - rows.length};
 }
 
 /** 00631934 comparator: byte1 descending, byte0x51 ascending. */
@@ -153,5 +241,9 @@ export function applyCustomChampionship(save, { clubIds = [], formatId = '4x10',
   }
   // 00631634 epilogue: career 0x3c += copied.
   career.setInt32(0x3c, career.getInt32(0x3c, true) + rows.length, true);
-  return { leagueIndex, divCount, perDiv, totalClubs: rows.length, slots: rows.slice(0, divCount * perDiv).map((row) => row.club) };
+  const slots = rows.slice(0, divCount * perDiv).map((row) => row.club);
+  const groups = Array.from({length: divCount}, (_, index) => slots.slice(index * perDiv, (index + 1) * perDiv));
+  const schedule = save.sections.some((section) => section.name === 'records_0066afa0') ? rebuildCustomFixtures(save, {clubIds: ids, groups, leagueIndex, playCup}) : null;
+  if (save.sections.some((section) => section.name === 'records_0066b6ac')) appendRows(save, 'records_0066b6ac', [[1, MARKER, 1]]);
+  return { leagueIndex, divCount, perDiv, totalClubs: rows.length, slots, groups, leagueFixtures: schedule?.leagueFixtures ?? groups.reduce((sum, group) => sum + group.length * Math.max(0, group.length - 1), 0), cupFixtures: schedule?.cupFixtures ?? (playCup ? Math.min(32, ids.length) * 2 : 0) };
 }

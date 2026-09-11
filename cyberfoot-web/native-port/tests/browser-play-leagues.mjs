@@ -1,9 +1,8 @@
 import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';
 import assert from 'node:assert/strict';import {mkdirSync,writeFileSync} from 'node:fs';
-// League play end to end (NOT registered in run-all.mjs):
-// new game -> team -> hub -> lineup -> live league match #1 to Form67
-// -> hub double-confirm -> cup lineup -> live cup to Form26 table
-// -> hub -> live league match #2 to Form67 -> hub.
+// Fresh-career play end to end (NOT registered in run-all.mjs):
+// new game -> team -> hub -> lineup -> live cup match to Form26 table
+// -> hub -> live league match #1 to Form67 -> hub -> live league match #2.
 // Asserts results/standings advance and no console/unhandled errors.
 // Screenshots each screen under cyberfoot-web/output/play-leagues/.
 const output='/Users/talip/Documents/ChatGPT/misc/cyberfoot-web/output/play-leagues';mkdirSync(output,{recursive:true});mkdirSync(output+'/client',{recursive:true});
@@ -35,7 +34,7 @@ assert.equal((await text()).form,'Form11');
 await clickControl('button1');await page.waitForFunction(()=>window.gameShell.form==='Form13',{timeout:60000});
 const hub1=await text();
 await page.screenshot({path:output+'/04-hub-1.png'});
-assert.equal(hub1.form,'Form13');assert.equal(hub1.career.competitionType,1);assert.equal(hub1.round,1);
+assert.equal(hub1.form,'Form13');assert.equal(hub1.career.competitionType,2);assert.equal(hub1.round,1);
 await clickControl('btjogar');await page.waitForFunction(()=>window.gameShell.form==='Form87',{timeout:60000});
 await page.screenshot({path:output+'/05-lineup-1-league.png'});
 assert.equal((await text()).form,'Form87');
@@ -47,28 +46,20 @@ await page.waitForFunction(previous=>window.gameShell.match&&window.gameShell.ma
 assert.equal(await page.evaluate(()=>window.gameShell.form),'Form46');
 await page.screenshot({path:output+'/07-match-1-live.png'});
 const live1=await page.evaluate(async()=>await window.gameShell.playMatchLive({timeoutMs:170000}));
-assert.equal(live1,'Form67');
+assert.equal(live1,'Form26');
 const results1=await text();
 await page.screenshot({path:output+'/08-results-1-league.png'});
-assert.equal(results1.form,'Form67');assert.equal(results1.matchFailure,null);assert.equal(results1.match,null);assert.deepEqual(results1.unhandled,[]);
-assert.equal(results1.round,2);
-const grid1=await frameGrid();
-assert.ok(Array.isArray(grid1)&&grid1.length>5,'league results grid has rows');
-const human1=grid1.find(row=>row.names&&row.names.some(name=>/Augsburg/.test(name)));
-assert.ok(human1,'human Augsburg result present in league #1');
-assert.ok(Number.isInteger(human1.score[0])&&Number.isInteger(human1.score[1]),'league #1 human score present');
+assert.equal(results1.form,'Form26');assert.equal(results1.matchFailure,null);assert.equal(results1.match,null);assert.deepEqual(results1.unhandled,[]);
+assert.equal(results1.round,1);assert.equal(results1.career.competitionType,2);
 const sounds1=await page.evaluate(()=>({session:window.gameShell.soundRequests,played:window.gameShell.soundPlayed}));
 assert.ok(sounds1.session.includes('fimjogo'),'league #1 fimjogo recorded');
-await clickControl('bt3');await page.waitForFunction(()=>window.gameShell.form==='Form13',{timeout:60000});
+await clickControl('bt3');await page.waitForFunction(()=>['Form13','Form26'].includes(window.gameShell.form),{timeout:60000});
+if(await page.evaluate(()=>window.gameShell.form==='Form26')){await clickControl('bt3');await page.waitForFunction(()=>window.gameShell.form==='Form13',{timeout:60000});}
 const hubIntermediate1=await text();
 await page.screenshot({path:output+'/09-hub-intermediate-1.png'});
-assert.equal(hubIntermediate1.form,'Form13');assert.equal(hubIntermediate1.rounds,0);
-await clickControl('btjogar');
-await page.waitForFunction(()=>JSON.parse(window.render_game_to_text()).rounds===1,{timeout:30000});
-const hub2=await text();
-await page.screenshot({path:output+'/10-hub-2-cup.png'});
-assert.equal(hub2.form,'Form13');assert.equal(hub2.rounds,1);assert.equal(hub2.continuations.length,1);assert.equal(hub2.continuations[0].played,1);
-assert.equal(hub2.career.competitionType,2);
+assert.equal(hubIntermediate1.form,'Form13');assert.equal(hubIntermediate1.rounds,1);assert.equal(hubIntermediate1.continuations.length,1);
+assert.equal(hubIntermediate1.career.competitionType,1);
+const hub2=hubIntermediate1;
 await clickControl('btjogar');await page.waitForFunction(()=>window.gameShell.form==='Form87',{timeout:60000});
 await page.screenshot({path:output+'/11-lineup-2-cup.png'});
 assert.equal((await text()).form,'Form87');
@@ -78,17 +69,17 @@ const cupTick0=await page.evaluate(()=>window.gameShell.match.tick);
 await page.waitForFunction(previous=>window.gameShell.match&&window.gameShell.match.tick>previous,cupTick0,{timeout:60000});
 await page.screenshot({path:output+'/13-match-2-cup-live.png'});
 const cupEnd=await page.evaluate(async()=>await window.gameShell.playMatchLive({timeoutMs:170000}));
-assert.equal(cupEnd,'Form26');
+assert.equal(cupEnd,'Form67');
 const tableCup=await text();
 await page.screenshot({path:output+'/14-table-cup.png'});
-assert.equal(tableCup.form,'Form26');assert.equal(tableCup.matchFailure,null);assert.deepEqual(tableCup.unhandled,[]);
-assert.equal(tableCup.career.competitionType,2);
-const cupDetail=await page.evaluate(()=>{const f=window.gameShell.renderer.frame;return {competition:f?.competition,grids:Object.keys(f?.grids??{}),rows:(f?.grids?.gridc??[]).length};});
-assert.equal(cupDetail.competition,2);assert.ok(cupDetail.rows>0,'cup table has result rows');
+assert.equal(tableCup.form,'Form67');assert.equal(tableCup.matchFailure,null);assert.deepEqual(tableCup.unhandled,[]);
+assert.equal(tableCup.career.competitionType,1);
+const cupDetail=await page.evaluate(()=>{const f=window.gameShell.renderer.frame;return {rows:(f?.resultGrid??[]).length};});
+assert.ok(cupDetail.rows>0,'league results have rows');
 await clickControl('bt3');await page.waitForFunction(()=>JSON.parse(window.render_game_to_text()).rounds===2,{timeout:30000});
 const hub3=await text();
 await page.screenshot({path:output+'/15-hub-3-league.png'});
-assert.equal(hub3.form,'Form13');assert.equal(hub3.rounds,2);assert.equal(hub3.continuations.length,2);assert.equal(hub3.continuations[1].played,2);
+assert.equal(hub3.form,'Form13');assert.equal(hub3.rounds,2);assert.equal(hub3.continuations.length,2);assert.equal(hub3.continuations[1].played,1);
 assert.equal(hub3.career.competitionType,1);
 await clickControl('btjogar');await page.waitForFunction(()=>window.gameShell.form==='Form87',{timeout:60000});
 await page.screenshot({path:output+'/16-lineup-3-league.png'});
@@ -106,13 +97,13 @@ assert.equal(results2.form,'Form67');assert.equal(results2.matchFailure,null);as
 assert.equal(results2.round,3);
 const grid2=await frameGrid();
 assert.ok(Array.isArray(grid2)&&grid2.length>5,'second league results grid has rows');
-const human2=grid2.find(row=>row.names&&row.names.some(name=>/Augsburg/.test(name)));
-assert.ok(human2,'human Augsburg result present in league #2');
-assert.ok(!(human1.historyId===human2.historyId&&human1.score[0]===human2.score[0]&&human1.score[1]===human2.score[1]&&results1.day===results2.day)||human1.historyId!==human2.historyId,'second league is a new result, standings advanced');
+const human2=grid2.find(row=>row.names&&row.names.some(name=>/Erzgebirge Aue/.test(name)));
+assert.ok(human2,'human Aue result present in league #2');
 assert.ok(results2.day>results1.day||results2.round>results1.round,'calendar/round advanced across leagues');
 const sounds3=await page.evaluate(()=>({session:window.gameShell.soundRequests,played:window.gameShell.soundPlayed}));
 assert.ok(sounds3.session.includes('fimjogo'),'league #2 fimjogo recorded');
-await clickControl('bt3');await page.waitForFunction(()=>window.gameShell.form==='Form13',{timeout:60000});
+await clickControl('bt3');await page.waitForFunction(()=>['Form13','Form26'].includes(window.gameShell.form),{timeout:60000});
+if(await page.evaluate(()=>window.gameShell.form==='Form26')){await clickControl('bt3');await page.waitForFunction(()=>window.gameShell.form==='Form13',{timeout:60000});}
 await page.screenshot({path:output+'/20-hub-intermediate-2.png'});
 await clickControl('btjogar');
 await page.waitForFunction(()=>JSON.parse(window.render_game_to_text()).rounds===3,{timeout:30000});
@@ -122,5 +113,5 @@ assert.equal(hub4.rounds,3);assert.equal(hub4.continuations.length,3);
 assert.ok(hub4.day>hub3.day,'day advanced to next round');
 assert.equal(hub4.matchFailure,null);assert.deepEqual(hub4.unhandled,[]);
 assert.deepEqual(errors,[]);
-writeFileSync(output+'/checks.json',JSON.stringify({hub1,results1,hub2,tableCup,hub3,results2,hub4,grids:{league1:human1,cupRows:cupDetail.rows,league2:human2},sounds:{league1:sounds1,league2:sounds3},errors},null,2));
+writeFileSync(output+'/checks.json',JSON.stringify({hub1,results1,hub2,tableCup,hub3,results2,hub4,grids:{cupRows:cupDetail.rows,league2:human2},sounds:{league1:sounds1,league2:sounds3},errors},null,2));
 await browser.close();console.log('Play leagues: two live league matches to Form67 plus a live cup round to Form26, hubs/lineups/results/tables advanced with sounds and no errors.');

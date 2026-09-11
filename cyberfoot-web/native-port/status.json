@@ -110,14 +110,12 @@
  "originalRuntimeLoadedByNativeModule": false,
  "uiPixelParityCertified": false,
  "registrationBypassImplemented": false,
- "remaining": [
-  "match presentation, halftime/finalization and competition integration",
-  "career creation, transfers, finances, development and season rules",
-  "registered-edition competition coverage",
-  "remaining save-field semantics, fixture generation and day progression",
-  "interactive UI forms and human match dialogs",
-  "complete-game end-to-end parity",
-  "exact locale date format and native message-box styling; font/control pixel fidelity"
+  "remaining": [
+   "whole-controller original execution parity without test adapters",
+   "complete registered-edition competition and national-career entry coverage",
+   "full-year day progression and unassisted complete-game parity",
+   "remaining development-only forms and normal manager-offer/dismissal entry routes",
+   "exact locale date format, native message-box styling, and Windows font/control pixel fidelity"
  ],
  "comparisonSuites": {
   "core": 17257,
@@ -223,12 +221,20 @@
   "keyboardAndScaledControls": true,
   "currentDateFromOriginalSave": true
  },
- "calendarIntegration": {
-  "completeOriginalCalendarAssignment": true,
-  "nextDateAndFixtureMatchOriginalSave": true,
-  "saveUnchanged": true,
-  "fullDayProgressionImplemented": false
- },
+  "calendarIntegration": {
+   "completeOriginalCalendarAssignment": true,
+   "nextDateAndFixtureMatchOriginalSave": true,
+   "saveUnchanged": true,
+   "fullDayProgressionImplemented": false
+  },
+  "customChampionshipIntegration": {
+   "customLeagueMetadata": true,
+   "customFixtureRowsRebuilt": true,
+   "originalCalendarDatesAssigned": true,
+   "fourByTenCupBracket": true,
+   "twoByTwentyLeagueOnly": true,
+   "browserFirstFixtureCompleted": true
+  },
  "aiLineupIntegration": {
   "originalLineupGeneration": true,
   "selectionMutationsAndRandomStateCompared": true,

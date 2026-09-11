@@ -46,7 +46,7 @@ import {applySeasonRotation} from './season-rotation.mjs';
 import {applyPrizeMoney} from './season-prize.mjs';
 import {createLiveMatchDriver,createMatchSoundPlayer} from './live-match-driver.mjs';
 import {ModalResults,createFormManager} from './form-manager.mjs';
-import {validateRegistrationKey,applyRegistration,registrationView,isRegistered} from './registration.mjs';
+import {validateRegistrationKey,applyRegistration,registrationView,isRegistered,readRegistrationFlag} from './registration.mjs';
 import {listChampionshipCountries,selectChampionshipClubs,championshipView} from './championship.mjs';
 import {clubEditorView,renameClub,renameStadium} from './club-editor.mjs';
 import {FORM13_TARGET,HUB_CLOSE_OP,barraFormAt,hubFormView,saveCareerFromForm40,weeklyTeamView,weeklyTeamLeagues,withdrawPlayerFromTransferList} from './hub-navigation.mjs';
@@ -148,6 +148,10 @@ function clubChoices(){
  for(let id=0;id<clubs.count;id++){const bytes=record(templateSave,'clubs',id),view=dataView(bytes),name=shortString(bytes,0,25),country=view.getInt32(0x3c,true),division=view.getInt32(0x7c,true);list.push({id,name,country,division,playable:playableSet.has(id)});}
  return list;
 }
+function newGameClubs(){
+ const clubs=clubChoices(),registered=isRegistered(readRegistrationFlag(save??templateSave));
+ return clubs.filter(club=>club.playable&&(registered||club.division===4));
+}
 function menuFrame(){
  const menuFont=color=>({name:'Arial',height:14,bold:true,italic:false,underline:false,strikeout:false,color});
  const smallFont=color=>({name:'Arial',height:11,bold:false,italic:false,underline:false,strikeout:false,color});
@@ -168,7 +172,7 @@ function showMenu(){selector='menu';stopClubEditor();void manager.open(menuFrame
 
 let newGameName='New Manager',newGameClub=11,loadSelection=0,selector='menu';
 function newGameFrame(){
- const clubs=clubChoices(),playable=clubs.filter(club=>club.playable),listBase=playable.length?playable:clubs;
+ const clubs=clubChoices(),playable=newGameClubs(),listBase=playable.length?playable:clubs;
  const countryNames=[...new Set(clubs.map(club=>club.country))].sort((a,b)=>a-b);
  const countryIndex=newGameCountry>=0?countryNames.indexOf(newGameCountry):-1;
  const list=countryIndex>=0?listBase.filter(club=>club.country===newGameCountry):listBase;
@@ -425,9 +429,9 @@ function storeCareerBytes(bytes,managerName,clubId){
 }
 async function newGame({managerName=newGameName,clubId=newGameClub}={}){
  newGameName=String(managerName||'New Manager').slice(0,25);
- const clubs=clubChoices(),chosen=clubs.find(club=>club.id===clubId&&club.playable)??clubs.find(club=>club.id===newGameClub)??clubs[0];
+ const eligible=newGameClubs(),clubs=eligible.length?eligible:clubChoices(),chosen=clubs.find(club=>club.id===clubId)??clubs.find(club=>club.id===newGameClub)??clubs[0];
  newGameClub=chosen.id;
- const bytes=createCareerSave({managerName:newGameName,clubId:newGameClub,language:[language[0].text],seed:2015,template:templateBytes});
+ const bytes=createCareerSave({managerName:newGameName,clubId:newGameClub,language:[language[0].text],seed:2015,template:templateBytes,freshStart:true});
  await storeCareerBytes(bytes,newGameName,newGameClub);
  await enterCareer(bytes);
  return careerSaveSummary(bytes);
@@ -453,12 +457,9 @@ renderer.register('Form11.combo2Change',index=>{
 });
 renderer.register('Form11.button1Click',async()=>{
  const edit=renderer.fieldValues['Form11.Edit1']?.value??newGameName;
- const combo=renderer.fieldValues['Form11.combo1']?.value??0;
- const list=newGameFrame().clubs;
- newGameClub=list[combo]?.id??newGameClub;
  if(customCareer){
-  const cfg=customCareer,clubs=customTeamFrame().clubs,chosen=clubs[combo]?.id??newGameClub;
-  const bytes=createCareerSave({managerName:edit,clubId:chosen,language:[language[0].text],seed:2015,template:templateBytes});
+  const cfg=customCareer,clubs=customTeamFrame().clubs,chosen=clubs.some(club=>club.id===newGameClub)?newGameClub:clubs[0]?.id;
+  const bytes=createCareerSave({managerName:edit,clubId:chosen,language:[language[0].text],seed:2015,template:templateBytes,freshStart:true});
   const customSave=readSave(bytes);
   applyCustomChampionship(customSave,{clubIds:cfg.clubIds,formatId:cfg.formatId,playCup:cfg.playCup,rng:new OriginalRandom(2015)});
   const finalBytes=writeSave(customSave);
@@ -476,11 +477,11 @@ renderer.register('Form21.BitBtn3Click',()=>{const entry=listStoredCareers(local
 
 function managerDialogsHost(){return {humanDismissal:async()=>{},showChanges:async()=>{},showOffer:async()=>{},humanNext,automaticNext,showMove:move=>seasonMoveHost?seasonMoveHost.open(move):Promise.resolve()};}
 
-function prepareRound(fromCursor=false){
+function prepareRound(){
  agenda=careerAgenda(save);
  let day=agenda.nextDay,date=agenda.nextDate,fixtureId=agenda.fixtureId;
  const onCursor=agenda.currentFixtureId>=0?agenda.fixtures[agenda.currentFixtureId]:null;
- if(fromCursor&&onCursor&&!onCursor.complete){day=agenda.currentDay;date=agenda.currentDate;fixtureId=agenda.currentFixtureId;}
+ if(onCursor&&!onCursor.complete){day=agenda.currentDay;date=agenda.currentDate;fixtureId=agenda.currentFixtureId;}
  if(fixtureId<0){
   const skip=nextHumanFixtureDay(save,careerSchedule(save),clubId,agenda.nextDay);
   if(skip>agenda.nextDay){career.setInt32(0x16c,skip-1,true);agenda=careerAgenda(save);day=agenda.nextDay;date=agenda.nextDate;fixtureId=agenda.fixtureId;}
@@ -819,7 +820,7 @@ async function runSeasonTransition(){
 }
 async function finishContinuation(){
  if(runtime.nextCompetition===-1)await runSeasonTransition();
- if(!prepareRound(true))startMessage=language[484].text;
+ if(!prepareRound())startMessage=language[484].text;
  // humanNext already presented the hub as the next screen: refresh it with the
  // prepared round instead of opening a second identical hub (looked stuck).
  if(hubPresented){hubPresented=false;refreshHub();return;}

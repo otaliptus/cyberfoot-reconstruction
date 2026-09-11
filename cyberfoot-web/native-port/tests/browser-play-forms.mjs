@@ -176,9 +176,9 @@ await shot('21-Form46-match');
  console.log('[22-Form46] '+JSON.stringify(snap));assert.equal(snap.ff,0);
 }
 await shot('22-Form46-all');
-const resultsForm=await page.evaluate(async()=>await window.gameShell.playMatchToResults());assert.equal(resultsForm,'Form67');
-await shot('25-Form67-results');
-await clickAll('26-Form67',async()=>{await page.waitForTimeout(120);},['bt3Click']);
+const resultsForm=await page.evaluate(async()=>await window.gameShell.playMatchToResults());assert.ok(['Form26','Form67'].includes(resultsForm));
+await shot('25-'+resultsForm+'-results');
+if(resultsForm==='Form67')await clickAll('26-Form67',async()=>{await page.waitForTimeout(120);},['bt3Click']);
 await page.evaluate(()=>window.gameShell.click('bt3'));await page.waitForFunction(()=>window.gameShell.form==='Form13',{timeout:60000});
 await shot('27-Form13-postmatch');
 // Auction

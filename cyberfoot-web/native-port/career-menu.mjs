@@ -95,7 +95,7 @@ export function playableClubIds(saveOrBytes){
  * manager record and the human manager slots are reset. Bytes in every other
  * original section stay untouched, so schedule, fixtures and league data remain
  * the genuine original data. */
-export function createCareerSave({managerName,clubId,language,seed=0,template,day}={}){
+export function createCareerSave({managerName,clubId,language,seed=0,template,day,freshStart=false}={}){
  const name=String(managerName??'').trim();
  if(!name)throw Error('A manager name is required.');
  if(name.length>25)throw Error('Manager names are limited to 25 characters.');
@@ -130,6 +130,17 @@ export function createCareerSave({managerName,clubId,language,seed=0,template,da
  career.setInt32(0x10,managerId,true);
  career.setInt32(0x13c,1,true);
  for(let i=0;i<10;i++)career.setInt32(0x140+i*4,i===0?clubId:-1,true);
+ if(freshStart){
+   // A new original career clears progressed result/history tables before the first cup round.
+   for(const name of ['records_0066ae84','records_0066b154','records_0066b160','records_0066b128','records_0066ae14','playerSeasonStats','scorers','appearances','records_0066b474','records_0066b754','records_0066b1b8']){
+    const section=save.sections.find(entry=>entry.name===name);
+    if(section){section.data=new Uint8Array();section.count=0;section.marker=0;}
+   }
+   career.setInt32(0x88,2,true);
+   career.setInt32(0x16c,119,true);
+  const fixtures=save.sections.find(section=>section.name==='records_0066afa0');
+  for(let offset=0;offset<fixtures.data.length;offset+=72)fixtures.data[offset+0x2c]=0;
+ }
  if(day!==undefined){
   if(!Number.isInteger(day)||day<1||day>366)throw Error('Invalid original calendar day.');
   career.setInt32(0x16c,day,true);

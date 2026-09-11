@@ -30,6 +30,9 @@ assert.equal(summary.managerName,'Node Manager');assert.equal(summary.clubId,13)
 const playable=playableClubIds(bytes);assert.ok(playable.includes(13));assert.equal(playable.length,40);
 const blocked=Array.from({length:save.sections.find(section=>section.name==='clubs').count},(_,id)=>id).find(id=>!playable.includes(id));
 assert.throws(()=>createCareerSave({managerName:'Blocked',clubId:blocked,language,seed:7,template}));
+const freshBytes=createCareerSave({managerName:'Fresh Manager',clubId:11,language,seed:7,template,freshStart:true}),fresh=readSave(freshBytes),freshSummary=careerSaveSummary(freshBytes);
+assert.equal(freshSummary.day,119);assert.equal(freshSummary.competitionType,2);assert.equal(freshSummary.clubName,'Erzgebirge Aue');
+for(const name of ['records_0066ae84','records_0066b154','records_0066b160','records_0066b128','records_0066ae14','playerSeasonStats','scorers','appearances','records_0066b474','records_0066b754','records_0066b1b8'])assert.equal(fresh.sections.find(section=>section.name===name).count,0,`${name} reset for fresh career`);
 const data=new Map(),storage={getItem:key=>data.has(key)?data.get(key):null,setItem:(key,value)=>data.set(key,String(value)),removeItem:key=>data.delete(key)};
 const first=await createCareerRecord(bytes,{id:'node-1',managerName:'Node Manager',clubId:13,language:'English',savedAt:1});
 assert.equal(first.encoding,'gzip+base64');assert.equal(first.size,bytes.length);assert.ok(first.save.length<bytes.length/2);
