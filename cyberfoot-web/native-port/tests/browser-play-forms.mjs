@@ -111,6 +111,7 @@ await showSettings();await page.waitForTimeout(250);await shot('03-Form9-setting
 await clickAll('04-Form9',async()=>{await showSettings();await page.waitForTimeout(200);});
 // Form11
 await showSettings();await page.waitForTimeout(200);
+if(!await page.evaluate(()=>window.gameShell.renderer.frame.grids.list1.some(row=>row.checked)))await page.evaluate(()=>window.gameShell.click('list1'));
 await page.evaluate(()=>window.gameShell.click('xibutton2'));await page.waitForFunction(()=>window.gameShell.form==='Form11',{timeout:15000});
 await shot('05-Form11-select');
 await clickAll('06-Form11',async()=>{await showSettings();await page.waitForTimeout(200);await page.evaluate(()=>window.gameShell.click('xibutton2'));await page.waitForTimeout(300);});

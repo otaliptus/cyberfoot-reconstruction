@@ -94,11 +94,11 @@ const soundPlayer=createMatchSoundPlayer({basePath:'assets/sounds'});
 let clock=2015;
 
 /* --------------------------------- shared play-forms state + notice dialog */
-// Persistent UI state for controls whose original engine op has no verified
-// native counterpart yet. Toggles/edits update the visible frame; actions
-// without a ported engine open a no-op Form85 dialog (last resort) instead of
-// inventing game behavior or leaving an unhandled operation.
-let settingsCombo2=0,newGameCountry=-1,hubSelectedPlayer=-1,routeSubgroup=0;
+// Persistent UI state for Form9 controls whose values are consumed when the
+// career is created. Actions without a ported engine open a no-op Form85
+// dialog (last resort) instead of inventing game behavior or leaving an
+// unhandled operation.
+let settingsMode=0,settingsCombo2=0,newGameCountry=-1,hubSelectedPlayer=-1,routeSubgroup=0;
 const defaultLeagueCountries=[{country:3,count:42},{country:11,count:42},{country:29,count:43},{country:65,count:42},{country:104,count:42}];
 const settingsLeagues=new Set([3]);
 const settingsToggles={ckcopa:true,ckinter1:true,ckinter2:false,ckcopamundo:false,ckeurocopa:false,ckcopaamerica:false};
@@ -120,10 +120,23 @@ function applyPersistedRegistration(bytes){
  return writeSave(parsed);
 }
 function applyNewGameSettings(bytes){
- const parsed=readSave(bytes),careerView=dataView(parsed.career);
- // Form9.ComboBox2Select writes the selected manager-count value as index+1.
- careerView.setInt32(0x13c,settingsCombo2+1,true);
- return writeSave(parsed);
+  const parsed=readSave(bytes),careerView=dataView(parsed.career);
+  // Form9 writes these values before Form11 creates the human manager slots.
+  careerView.setInt32(0x13c,settingsCombo2+1,true);
+  // The mode selector is coupled to the original league-record rebuild; keep
+  // the template's supported layout until that standard builder is ported.
+  const flags={
+   0x10e:settingsToggles.ckcopa,
+   0x170:false,
+   0x171:settingsToggles.ckinter1,
+   0x172:settingsToggles.ckinter1&&settingsToggles.ckinter2,
+   0x17f:settingsToggles.ckcopamundo,
+   0x180:settingsToggles.ckeurocopa,
+   0x181:settingsToggles.ckcopaamerica,
+   0x709:false
+  };
+  for(const [offset,enabled] of Object.entries(flags))careerView.setUint8(Number(offset),enabled?1:0);
+  return writeSave(parsed);
 }
 function showNotice(operation,detail){
  if(noticeDepth>0)return;
@@ -300,7 +313,7 @@ function gameSettingsFrame(){
   UniHTMLabel4:{HTMLText:language[15].text},
   UniHTMLabel5:{HTMLText:language[16].text},
   UniHTMLabel6:{HTMLText:language[17].text},
-   ComboBox1:{Items:[language[13].text,language[14].text],ItemIndex:0},
+    ComboBox1:{Items:[language[13].text,language[14].text],ItemIndex:settingsMode,OnChange:'ComboBox1Change'},
    ComboBox2:{ItemIndex:settingsCombo2,Items:Array.from({length:10},(_,index)=>String(index+1)),OnSelect:'ComboBox2Select'},
   ckcopa:{Checked:!!settingsToggles.ckcopa,Enabled:true,Caption:''},
   ckinter1:{Checked:!!settingsToggles.ckinter1,Enabled:true,Caption:''},
@@ -324,12 +337,16 @@ function refreshGameSettings(){if(renderer.frame?.form==='Form9')manager.update(
 for(const name of ['ckcopa','ckinter1','ckinter2'])renderer.register('Form9.'+name+'Click',checked=>{settingsToggles[name]=!!checked;refreshGameSettings();});
 for(const name of ['ckcopamundo','ckeurocopa','ckcopaamerica'])renderer.register('Form9.'+name+'Click',()=>{refreshGameSettings();});
 renderer.register('Form9.ComboBox2Select',index=>{settingsCombo2=Number(index)||0;refreshGameSettings();});
+renderer.register('Form9.ComboBox1Change',index=>{settingsMode=Math.max(0,Math.min(1,Number(index)||0));refreshGameSettings();});
 renderer.register('Form9.Image3Click',()=>{});
 renderer.register('Form9.XiButton3Click',()=>openChampionship());
 renderer.register('Form9.XiButton1Click',()=>showMenu());
-renderer.register('Form9.XiButton2Click',()=>showNewGame());
+renderer.register('Form9.XiButton2Click',()=>{
+  if(!settingsLeagues.size){showNotice('Form9.XiButton2Click','Select at least one league');return;}
+  showNewGame();
+});
 renderer.register('Form9.list1CellClick',index=>{
-  const row=gameSettingsFrame().grids.list1[Number(index)||0];
+  const rows=gameSettingsFrame().grids.list1,value=Number(index),row=rows.find(entry=>Number(entry.value)===value)??rows[value]??null;
   if(!row)return;
   if(settingsLeagues.has(row.value))settingsLeagues.delete(row.value);else settingsLeagues.add(row.value);
   refreshGameSettings();
@@ -418,8 +435,8 @@ function openChampionship(){
  updateDevStatus();
 }
 renderer.register('Form39.list1CellClick',index=>{
- const frame=renderer.frame;const row=frame?.grids?.list1?.[Number(index)||0]??null;
- const country=row?.value??row?.country;
+  const frame=renderer.frame,rows=frame?.grids?.list1??[],value=Number(index),row=rows.find(entry=>Number(entry.value??entry.country)===value)??rows[value]??null;
+  const country=row?.value??row?.country;
  if(country===undefined)return;
  if(championshipSelected.has(Number(country)))championshipSelected.delete(Number(country));
  else championshipSelected.add(Number(country));
@@ -1179,7 +1196,8 @@ window.render_game_to_text=()=>JSON.stringify({
  form:renderer.frame?.form??null,
  screens:(renderer.stack??[]).map(frame=>frame.form),
  selector,
- career:save?careerSaveSummary(save) : null,
+  career:save?careerSaveSummary(save) : null,
+  settings:career?{mode:career.getInt32(0x168,true),managerCount:career.getInt32(0x13c,true),flags:Object.fromEntries([0x10e,0x170,0x171,0x172,0x17f,0x180,0x181,0x709].map(offset=>[offset,!!career.getUint8(offset)]))}:null,
  round:career?career.getInt32(0x4c,true):null,
  season:career?career.getInt32(0xc0,true):null,
  day:career?career.getInt32(0x16c,true):null,
