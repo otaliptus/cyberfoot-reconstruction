@@ -1162,7 +1162,7 @@ window.gameShell={
   get forms(){return manager.stack.map(entry=>entry.form);},
  get selector(){return selector;},
  click:clickControl,
- setField(name,value){const key=(renderer.frame?.form??'')+'.'+name;renderer.fieldValues[key]={kind:'edit',value:String(value)};renderer.paint();},
+  setField(name,value){const key=(renderer.frame?.form??'')+'.'+name,text=String(value),input=renderer.lastLayout?.interactions.find(entry=>entry.name===name&&entry.kind==='edit');renderer.fieldValues[key]={kind:'edit',value:text};renderer.onFieldInput?.(key,text);if(input?.operation)renderer.invoke(input.operation,text);renderer.paint();},
  showMenu,showGameSettings,showClubEditor,showClubEditorView,openChampionship,openRegistration,showHub,showLineup:()=>{if(save&&state)void manager.open(viewModel());},newGame,loadCareer:async id=>{const bytes=await readStoredCareerSave(localStorage,id);await enterCareer(bytes);},
  listCareers:()=>listStoredCareers(localStorage),
   openAuction,openContract,openResults,openSeasonReview,
