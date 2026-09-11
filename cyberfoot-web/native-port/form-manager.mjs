@@ -61,7 +61,11 @@ const DEFAULT_BUTTON_OP={
  Form88:'bt_irprojogoClick',
  Form34:'bt1Click',
  Form53:'bt1Click',
- Form54:'bt1Click'
+ Form54:'bt1Click',
+ Form39:'bt1Click',
+ Form3:'xbt1Click',
+ Form42:'XiButton2Click',
+ Form1:'comboi2Change'
 };
 
 /** Fallback Cancel-button operations per form. */
@@ -75,7 +79,10 @@ const CANCEL_BUTTON_OP={
  Form75:'btjogarClick',
  Form77:'bt2Click',
  Form85:'XiButton2Click',
- Form88:'bt_irprojogoClick'
+ Form88:'bt_irprojogoClick',
+ Form39:'XiButton1Click',
+ Form3:'xbt1Click',
+ Form42:'XiButton1Click'
 };
 
 function childByDefault(formDef,wantDefault){

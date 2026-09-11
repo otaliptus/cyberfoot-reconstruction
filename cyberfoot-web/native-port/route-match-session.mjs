@@ -85,7 +85,7 @@ export async function openRouteMatchSession(renderer,{save,state,rng,context,lan
  // Additive national branch: competitions 7/8/9 play via national-fixtures.
  if(Number.isInteger(context?.competitionType)&&context.competitionType>=7&&context.competitionType<=9)return openNationalRouteMatchSession(renderer,{save,state,rng,context,language,crestAssets,kitAssets,knockoutOptions,nationalOptions,settlementOptions,autoInteractions,continueCompetition});
  const career=view(save.career),displayRound=career.getInt32(0x4c,true);
- if(![1,2,4,6].includes(context.competitionType)||career.getInt32(0x168,true)!==4)throw RangeError('This presentation supports original batch competitions 1,2,4 and 6.');
+ if(![1,2,4,6].includes(context.competitionType)||![2,4].includes(career.getInt32(0x168,true)))throw RangeError('This presentation supports original batch competitions 1,2,4 and 6 (league modes 2 and 4).');
  if(typeof continueCompetition!=='function')throw TypeError('Competition continuation is required.');
  const runtime={silent:false,subgroup:context.subgroup},prepared=prepareScheduledMatches(save,context,rng,runtime),fixtures=prepared.fixtures,teamsFor=f=>f.lineupIds.map(id=>state.lineups[id]);
  for(const fixture of fixtures)if(teamsFor(fixture).some(t=>!t))throw Error('A participating club has no committed lineup.');

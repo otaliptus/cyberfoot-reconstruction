@@ -1,5 +1,12 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-10 — Play-driven fixes: leagues, all screens, caveats
+- Previous goal turn classified verified progress (full-parity round) and the user reported leagues unplayable plus broken screens. Played the game like a user (three agents, screenshots throughout) and fixed what broke.
+- Leagues play: mode-2/4 guard widened in domestic/route sessions, knockout/national/settlement options passed through, sound-event dedup, live driver treats Form26 cup tables as terminal. Two live league matches + live cup round to tables,15-match depletion run; contract-expiry 11-man block documented (manual placement still starts the match per original condition penalty).
+- Shell fixes by playing every screen: double-hub eliminated (humanNext hub is now the next screen; finishContinuation refreshes it instead of opening a second), auction from humanNext now waits modally for conclusion (was instantly overwritten by the hub), lineup rejection surfaces a message dialog, Form13 contract button opens Form24 for the candidate, Form42/39/3 reachable and functional, every control on22 forms clicked with zero unhandled ops.
+- Caveats closed: Form42 hash branches runtime-traced against the live original (pipeline LowerCase/strip-accents/substitute, weighted sum, blacklist, startup +0x4b bias); registration mirror and club-strength mapping proven harmless with guard tests; aging oracle zero-fills per case, vectors regenerated, parity tightened to full-byte220/220.
+- Registered no new node tests (browser suites browser-play-leagues/browser-play-forms/browser-live-match cover the fixes); full run-all exit0; oxlint clean; required client on game.html exit0. Total original comparison cases256477. Redeployed. Remaining last-resorts (reported, zero errors): finance/kit/referee/sell/retire/loan hub buttons, saved-tactics, weekly-team table — no ported engine behind them.
+
 ### 2026-09-10 — Full-parity round: form manager, triggers, fidelity, season engines, nationals, editor pack
 - Previous goal turn classified verified progress (real VCL shell) and the user demanded full original compatibility. Closed the audited gaps in one round.
 - Form manager: form-manager.mjs implements VCL Show/ShowModal/ModalResult/close stacking with top-form input routing and Escape/Default handling; all shell screens route through it; modal stacking probed (Form13+Form24, Escape→mrCancel).

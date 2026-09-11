@@ -150,7 +150,9 @@ export function createLiveMatchDriver({session,manager,renderer,intervalMs=120,s
  function isFinished(){
   if(done)return true;
   try{
-   if(session.snapshot().finished&&renderer?.frame?.form==='Form67')return true;
+   // Terminal league (Form67 results) and cup (Form26 table) presentations
+   // both clear the live session after 61f604; any finished snapshot stops.
+   if(session.snapshot().finished&&(renderer?.frame?.form==='Form67'||renderer?.frame?.form==='Form26'))return true;
    return !!session.snapshot().finished;
   }catch{return false;}
  }
@@ -175,13 +177,16 @@ export function createLiveMatchDriver({session,manager,renderer,intervalMs=120,s
  async function playToEnd({maxSteps=600}={}){
   stop();
   for(let step=0;step<maxSteps;step++){
-   if(renderer?.frame?.form==='Form67')return renderer.frame.form;
+   // League full time owns Form67 results; cup full time owns the Form26
+   // competition table (route-match-session batch close). Return the actual
+   // terminal form so callers can distinguish league vs cup endings.
+   if(renderer?.frame?.form==='Form67'||renderer?.frame?.form==='Form26')return renderer.frame.form;
    let snapshot=null;
    try{snapshot=session.snapshot();}catch(error){lastError=String(error);throw error;}
    if(snapshot.finished){
     await drainSounds();
-    if(renderer?.frame?.form==='Form67')return 'Form67';
-    return 'finished';
+    if(renderer?.frame?.form==='Form67'||renderer?.frame?.form==='Form26')return renderer.frame.form;
+    return renderer?.frame?.form??'finished';
    }
    if(lastError&&snapshot.error)throw Error(snapshot.error);
    if(session.pending||snapshot.modal){

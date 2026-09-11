@@ -20,6 +20,8 @@ assert.equal(renameStadium(save,clubId,'Test Arena').name,'Test Arena');
 assert.equal(shortString(record(save,'clubs',clubId),0x1d0,35),'Test Arena');
 assert.equal(editClubLevel(save,clubId,18).level,18);
 assert.equal(view(record(save,'clubs',clubId)).getInt32(0x98,true),18);
+assert.equal(view(record(save,'clubs',clubId)).getInt32(0x94,true),view(record(fresh(),'clubs',clubId)).getInt32(0x94,true),'club-strength mirror 0x98 does not touch adjacent 0x94 (oracle: 0064e824/0064e750 strength thresholds)');
+assert.equal(view(record(save,'clubs',clubId)).getInt32(0x9c,true),view(record(fresh(),'clubs',clubId)).getInt32(0x9c,true),'club-strength mirror 0x98 does not touch adjacent 0x9c');
 assert.equal(editPlayerName(save,playerId,'Test Player').name,'Test Player');
 assert.equal(shortString(record(save,'players',playerId),0,20),'Test Player');
 assert.equal(editPlayerAttribute(save,playerId,{age:25,skill:42}).current.age,25);

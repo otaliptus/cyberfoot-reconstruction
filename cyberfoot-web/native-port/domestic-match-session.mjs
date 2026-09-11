@@ -11,24 +11,27 @@ import {createInjuryDialogHost} from './injury-dialog-host.mjs';
 import {createMatchAutoInteractions} from './match-auto-interactions.mjs';
 const view=b=>new DataView(b.buffer,b.byteOffset,b.byteLength);
 
-/** Shared native match session for the recovered four-division league display.
+/** Shared native match session for the recovered league display.
  * Team preparation is owned by the caller, preserving the human lineup.
  * Competition/day continuation remains an explicit dependency.
+ * Sound requests are de-duplicated per event index (as in
+ * route-match-session.mjs) so substitution re-presentation never double
+ * records gol/goladv/expulsao.
  */
-export async function openDomesticMatchSession(renderer,{save,state,rng,context,language,crestAssets,kitAssets,autoInteractions=false,continueCompetition}){
+export async function openDomesticMatchSession(renderer,{save,state,rng,context,language,crestAssets,kitAssets,knockoutOptions,nationalOptions,settlementOptions,autoInteractions=false,continueCompetition}){
  const career=view(save.career),displayRound=career.getInt32(0x4c,true);
- if(context.competitionType!==1||career.getInt32(0x168,true)!==4)throw RangeError('This presentation currently supports the four-division league.');
+ if(context.competitionType!==1||![2,4].includes(career.getInt32(0x168,true)))throw RangeError('This presentation currently supports the league (modes 2 and 4).');
  if(typeof continueCompetition!=='function')throw TypeError('Competition continuation is required.');
  const runtime={silent:false,subgroup:context.subgroup},prepared=prepareScheduledMatches(save,context,rng,runtime),fixtures=prepared.fixtures,teamsFor=f=>f.lineupIds.map(id=>state.lineups[id]);
  for(const fixture of fixtures)if(teamsFor(fixture).some(t=>!t))throw Error('A participating club has no committed lineup.');
  initializeWatchedKickoff(save,fixtures,rng,runtime);
  let minute=0,period=language[504].text,finished=false,elapsed=0,pending=null,failure=null;
- const latestEvents=new Map(),soundRequests=[];
+ const latestEvents=new Map(),soundRequests=[],soundedEvents=new Set();
  const windowView=()=>({form:'Form46',divisionLabels:[35,36,37,38].map(i=>language[i].text),properties:{g1:{Progress:minute,MaxValue:career.getUint8(0xdd)?90:45},HTMLabel3:{HTMLText:language[209].text+displayRound},labtempo:{Caption:period},Label1:{Caption:minute+"'",Visible:true}},fixtures:fixtures.map(f=>{const home=view(record(save,'clubs',f.clubs[0])),away=view(record(save,'clubs',f.clubs[1]));return {homeCrest:clubCrestPath(save,f.clubs[0],crestAssets),awayCrest:clubCrestPath(save,f.clubs[1],crestAssets),event:latestEvents.get(f.id),id:f.id,stadium:f.stadium,attendance:'| '+f.field28,home:state.clubs[f.clubs[0]].name,away:state.clubs[f.clubs[1]].name,homeScore:f.counters[0x48]??0,awayScore:f.counters[0x4c]??0,homeColor:home.getInt32(0xb0,true),awayColor:away.getInt32(0xb0,true),homeBackground:home.getInt32(0xac,true),awayBackground:away.getInt32(0xac,true)};})});
  await renderer.loadCrests(fixtures.flatMap(f=>f.clubs.map(id=>clubCrestPath(save,id,crestAssets))));
  await renderer.show(windowView());
  const penaltyHost=createPenaltyDialogHost(renderer,{save,state,language,assets:crestAssets,playSound:name=>soundRequests.push(name)}),injuryHost=createInjuryDialogHost(renderer,{state,language,playSound:name=>soundRequests.push(name)});
- const showEvent=index=>{const event=state.events[index],fixture=fixtures.find(f=>f.id===event[5]);const presentation=matchEventPresentation(event,fixture,state,language,{silent:runtime.silent,sound:!!career.getUint8(0xdc),fullGameGauge:!!career.getUint8(0xdd)});latestEvents.set(fixture.id,presentation);return {fixture,presentation};};
+ const showEvent=index=>{const event=state.events[index],fixture=fixtures.find(f=>f.id===event[5]);const presentation=matchEventPresentation(event,fixture,state,language,{silent:runtime.silent,sound:!!career.getUint8(0xdc),fullGameGauge:!!career.getUint8(0xdd)});latestEvents.set(fixture.id,presentation);if(!soundedEvents.has(index)){soundedEvents.add(index);for(const name of presentation.sounds??[])soundRequests.push(name);}return {fixture,presentation};};
  const tacticsHost=createMatchTacticsHost(renderer,{save,state,language,assets:crestAssets,kitAssets,rng,recordEvent:recordCareerEvent,presentEvent:showEvent});
  // autoInteractions resolves the original modal decisions with their first
  // option so a watched human fixture can finish unattended. The engine branch
@@ -44,7 +47,7 @@ export async function openDomesticMatchSession(renderer,{save,state,rng,context,
    renderer.update(windowView());const side=state.clubs[fixture.clubs[0]].human?1:2;await openTactics({fixture,teams:teamsFor(fixture),side,minute,period:1});
   },finalize:async()=>{
   const leagueMetadataId=view(record(save,'records_0066b6ac',fixtures[0].competition)).getInt32(4,true);
-  await finalizeMatchBatch(save,fixtures,state,rng,{runtime,teamsFor,historyContext:{competitionGroupId:0,subgroupId:context.subgroup,leagueMetadataId},continueCompetition:route=>continueCompetition(route,runtime),present:(type,resource)=>{if(type==='sound')soundRequests.push(resource);if(type==='finishing')renderer.update(windowView());}});finished=true;
+  await finalizeMatchBatch(save,fixtures,state,rng,{runtime,teamsFor,historyContext:{competitionGroupId:0,subgroupId:context.subgroup,leagueMetadataId},knockoutOptions:{...knockoutOptions,subgroup:runtime.subgroup,alternateRound:runtime.alternateRound},nationalOptions,nationalPhase:runtime.nationalPhase,settlementOptions,continueCompetition:route=>continueCompetition(route,runtime),present:(type,resource)=>{if(type==='sound')soundRequests.push(resource);if(type==='finishing')renderer.update(windowView());}});finished=true;
  }});
  const modal=()=>!!(tacticsHost.active||injuryHost.active||injuryHost.opening||penaltyHost.active||penaltyHost.opening);
  const advance=()=>{if(pending||finished||failure||modal())return pending;pending=controller.advance().then(()=>{if(renderer.frame?.form==='Form46')renderer.update(windowView());},error=>{failure=error;throw error;}).finally(()=>{pending=null;});return pending;};

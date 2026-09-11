@@ -11,30 +11,70 @@
  * `Form42.XiButton2Click` (validate) / `Form42.Image1Click` (open site)
  * through `validateRegistrationKey` + `applyRegistration`.
  *
- * Original addresses ported:
+ * Original addresses ported (traced with Unicorn oracle harness, venv
+ * cyberfoot-analysis/tools/venv/bin/python run from cyberfoot-analysis/scripts):
  * - 00651f8c FUN_00651f8c: registered gate `*(int*)0x66b1c0 > 499`.
  *   Ported exactly as `isRegistered(flag)`.
  * - 005b83e8 TForm42_XiButton2Click: click counter at DAT_006d2b04, calls
  *   FUN_005b6ad0 while `< 0x14`. Ported as attempt counting in the session.
- * - 005b6ad0 FUN_005b6ad0 (Form42 key validation, 1234-line handler):
+ * - 005b6ad0 FUN_005b6ad0 (Form42 key validation):
  *   Edit offsets confirm the fields: form-fields.json gives
  *   Edit2 (code) at 800 (0x320) and Edit1 (name) at 804 (0x324); the handler
- *   reads param+800 (code) and param+0x324 (name). Length gates require both
- *   strings longer than 4 chars; code must parse as integer >= 1000
- *   (branches at 0x5b6c99/0x5b820d). Name/code hash loops skip 0x20 (space)
- *   and 0x41 ('A') / 0x61 ('a') and accumulate flat and position-weighted
- *   64-bit sums; several alternative expected-code branches are compared with
- *   StrToInt(code). One fully recoverable branch (lines 1166-1176) requires
- *   `code == nameLength * 0x408 (1032)`; ported exactly as
- *   `form42LengthBranch`. A second startup-registry branch at 0064aa20
- *   (lines 178-198) requires `code == ((b1+b2+5)*weighted*7 + 0x2a705) + 0x4b`
- *   with weighted sum skipping ' '/'A'; ported as `startupWeightedBranch`.
- *   Remaining multi-stage constants depend on runtime string tables at
- *   DAT_005b8360 etc. and are documented as uncertain (see REPORT notes).
+ *   reads param+800 (code) and param+0x324 (name). Length gates require raw
+ *   name len > 4, filtered code (digits-only via 0040343c/00404abc/00404bac
+ *   loop at 0x5b6b63) len 5-10, and StrToInt64(code) >= 1000 (0x5b6c6e).
+ *   Twelve hash flags at [ebp-0x31..0x3c] are set by comparing
+ *   StrToInt64(code) to 64-bit expected values (0040a06c + 00405c1c __llmul).
+ *   Disassembly (/tmp/form42.asm from 005b6ad0-005b8357, 1804 insns) proves
+ *   only [ebp-0x3c] (set at 0x5b803d) is ever read (cmp at 0x5b8071 gates the
+ *   `*(0x66b1c0)=Random(500)+500` write at 0x5b809e); flags 0x31-0x3b are
+ *   write-only dead stores (no reads in the 1804-insn function). In
+ *   particular the length*0x408 branch at 0x5b81e7 (flag 0x31, set after the
+ *   registration decision) is dead: feeding its code does NOT register in
+ *   the running original (oracle probe: flag stays 0). Kept here as
+ *   `form42LengthBranch` for backwards compat but NOT accepted by
+ *   `validateRegistrationKey` (documented dead).
+ *   The LIVE branch (0x5b7f59-0x5b803d, flag 0x3c) computes over the
+ *   string-table-driven normalized name (see below):
+ *   `S1=Σ(byte*i+i+3)` skipping 0x20/0x41, 1-based (0x5b7f75, with
+ *   `imul ebx; lea edx,[ebx+3]`); dead second sum `Σ(byte*i)` at 0x5b7fbd is
+ *   ignored (result in [ebp-0x20] never used; multiply uses [ebp-0x18]=S1).
+ *   `expected=S1*(b1+b2+5)*7+0x2a705` (0x5b7ffb *b, 0x5b8010 *7,
+ *   0x5b801d +0x2a705; b1=s[1],b2=s[2] at 0x5b7fe9) compared to
+ *   StrToInt64(filteredCode). Ported as `form42LiveBranch` (+ `deriveLiveCode`
+ *   via `deriveForm42Code`). Tables near DAT_005b8360 recovered via Unicorn
+ *   mem reads (all single-char AnsiStrings, len@-4=1): 0x5b836c=" ",
+ *   0x5b8378="`", 0x5b8384="'", 0x5b8390="\xb4" (same at 00647e4c/58/64/70 and
+ *   0064aec0/eec/ef8/af04; flags byte at 0x5b8360/0x64aeb4/0x647e40 =0x01
+ *   =rfReplaceAll for 0040f7c8 StringReplace). Accent-strip 0064a6f4 tables at
+ *   0x64a7c0 (24 bytes e0..f6) -> 0x64a7e4 ("aaaaeeeoooouuuuiiicnaeio");
+ *   substitution 0064a800 charset at 0x64a8cc
+ *   ("abcdefghijklmnopqrstuvxzyw0123456789", note uvxzyw) -> mapping at
+ *   0x64a8fc ("fitbzvengwpkycmuqhldxjrasofitbzvengw"). Full live pipeline for
+ *   [ebp-0x24] (0x5b7e09-0x5b7f54): LowerCase(raw) (00409724 via CharLowerBuffA,
+ *   stubbed as ASCII lower in oracle), delete " ", accent-strip, delete "`",
+ *   delete "'", delete "\xb4", LowerCase, substitute (0064a800). Ported as
+ *   `transformFinalName`. Blacklist 00647cec (lower+deletes+accent+lower,
+ *   compare to "emmanueldossantos" at 0x647e7c, len 0x11) gates the write at
+ *   0x5b807e (`test al,al; jne skip`): blacklisted names never register even
+ *   with correct hash. Ported as `isBlacklistedName` (checked in validate).
  * - 0064aa20 FUN_0064aa20 (startup registry validation): rejects empty
  *   name/code (unregistered `random(100)`), rejects literal "Crackx"/"CrackX",
- *   requires a space inside names longer than 6 chars. Ported as
- *   `CRACK_NAMES` + `hasSpaceGate`.
+ *   requires len>=7 with a space (0x64ac4d/0x64ac7d). Same transform pipeline
+ *   (0x64ac8d-0x64ad8e: LowerCase, delete " " x2, accent, delete "`"/"'"/"\xb4",
+ *   LowerCase, substitute) then same hash `S1*(b1+b2+5)*7+0x2a705` (0x64adc6,
+ *   0x64ade7 *b, 0x64aded *7 via shl8-sub) compared to `code-0x4b`
+ *   (0x64ac37 sub 0x4b; registry globals *0x66b580 are 0 on web, so
+ *   `code==expected+0x4b`). Ported as `startupLiveBranch` (+0x4b bias) and
+ *   `deriveStartupCode` (both use `transformFinalName`). The old raw-name
+ *   `startupWeightedBranch`/`startupWeightedSum` are kept for flag hashing but
+ *   no longer used for validation (raw without transforms fails against the
+ *   running original for accented/mixed-case names; oracle probes prove live
+ *   codes with transforms register, raw-only do not).
+ *   Remaining dead hash branches (flags 0x32-0x3b: multipliers 0xe4,0x1a,0x19,
+ *   0x14,0x15,0x17+0x575,0x11+0x575,0x0d+0x14a4,0x0e+0xa77,0x05+0x987b7) are
+ *   write-only (no reads) and NOT ported as valid; oracle probe with e.g.
+ *   raw `S*0x1a` code confirms no registration (flag unchanged).
  * - 005b66d0 TForm42_FormCreate: language ids 0x2ff-0x30d drive the labels;
  *   mapped here to language.json 4/5/6/768-780 (see registrationView).
  * - forms.json TForm42 control tree: Panel1 > Bevel1, Label8 'Nome:',
@@ -42,13 +82,16 @@
  *   Image1 (site link), label1 '<B><SHAD>Registro do Cyberfoot 2015</SHAD></B>'.
  *
  * Save persistence: the original flag lives at global 0x66b1c0 (not in the
- * save). This port mirrors it into the career block at REGISTRATION_FLAG_OFFSET
+ * save; registry at \\Software\\Cyberfoot2015 via 006476b4/0064aa20). This port
+ * mirrors it into the career block at REGISTRATION_FLAG_OFFSET
  * (0x740, Int32LE) so the real save carries the state through readSave/writeSave
  * without colliding with verified career fields (0x700-0x738 hold referee ids;
- * 0x75c/0x75d are season flags; 0x739-0x75b are zero in the template).
- * Success stores 500 + (hash % 500) mirroring `random(500)+500` at
- * 005b6ad0:1123 and 0064aa20:198; failure stores hash % 100 mirroring
- * `random(100)` at 0064aa20:202/215.
+ * 0x75c/0x75d are season flags; 0x739-0x75b are zero in the template; oracle
+ * probe: no 0x740 refs in decompiled, sentinel 0x12345678 at career+0x740
+ * preserved across 005df914; registration-node asserts 0x700-0x740 and
+ * 0x744-0x760 unchanged). Success stores 500 + (hash % 500) mirroring
+ * `random(500)+500` at 005b6ad0:1123 and 0064aa20:198; failure stores hash % 100
+ * mirroring `random(100)` at 0064aa20:202/215.
  */
 
 export const REGISTRATION_THRESHOLD = 499;
@@ -59,6 +102,11 @@ export const REGISTRATION_CODE_MULTIPLIER = 0x408;
 export const REGISTRATION_STARTUP_BASE = 0x2a705;
 export const REGISTRATION_STARTUP_FACTOR = 7;
 export const REGISTRATION_STARTUP_BIAS = 0x4b;
+export const REGISTRATION_BLACKLIST = 'emmanueldossantos';
+const ACCENT_SOURCE = 'àáâãéèêóòôõúùûüíìîçñäëïö';
+const ACCENT_MAPPED = 'aaaaeeeoooouuuuiiicnaeio';
+const SUBSTITUTION_CHARSET = 'abcdefghijklmnopqrstuvxzyw0123456789';
+const SUBSTITUTION_MAPPING = 'fitbzvengwpkycmuqhldxjrasofitbzvengw';
 
 const viewOf = (bytes) => new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
 
@@ -120,11 +168,104 @@ export function flatNameSum(name) {
   return sum >>> 0;
 }
 
-/** 005b6ad0:1166-1176 recoverable branch: code == len(name) * 1032. */
+/** Live normalized name for 005b6ad0:0x3c and 0064aa20 (traced pipeline). */
+export function transformFinalName(name) {
+  let text = String(name ?? '').toLowerCase();
+  text = text.split(' ').join('');
+  let stripped = '';
+  for (const char of text) {
+    const index = ACCENT_SOURCE.indexOf(char);
+    stripped += index >= 0 ? ACCENT_MAPPED[index] : char;
+  }
+  text = stripped.split('`').join('').split("'").join('').split('´').join('');
+  text = text.toLowerCase();
+  let out = '';
+  for (const char of text) {
+    const index = SUBSTITUTION_CHARSET.indexOf(char);
+    out += index >= 0 ? SUBSTITUTION_MAPPING[index] : char;
+  }
+  return out;
+}
+
+/** Blacklist 00647cec: normalized delete-space name equals emmanueldossantos. */
+export function isBlacklistedName(name) {
+  let text = String(name ?? '').toLowerCase().split(' ').join('');
+  let stripped = '';
+  for (const char of text) {
+    const index = ACCENT_SOURCE.indexOf(char);
+    stripped += index >= 0 ? ACCENT_MAPPED[index] : char;
+  }
+  text = stripped.split('`').join('').split("'").join('').split('´').join('').toLowerCase();
+  return text === REGISTRATION_BLACKLIST;
+}
+
+/** S1 for the live branches: Σ(byte*i+i+3) skipping 0x20/0x41, 1-based. */
+export function liveWeightedSum(transformed) {
+  const text = String(transformed ?? '');
+  let low = 0;
+  let high = 0;
+  for (let index = 1; index <= text.length; index += 1) {
+    const code = byteOf(text[index - 1]);
+    if (code === 0x20 || code === 0x41) continue;
+    const term = code * index + index + 3;
+    const next = low + term;
+    high += next < low ? 1 : 0;
+    high += Math.floor(term / 0x100000000);
+    low = next >>> 0;
+  }
+  return { low: low >>> 0, high: high >>> 0, combined: high * 0x100000000 + (low >>> 0) };
+}
+
+export function liveExpectedCode(transformed) {
+  const text = String(transformed ?? '');
+  if (text.length < 3) return null;
+  const { combined } = liveWeightedSum(text);
+  const expected = (byteOf(text[1]) + byteOf(text[2]) + 5) * combined * REGISTRATION_STARTUP_FACTOR
+    + REGISTRATION_STARTUP_BASE;
+  return expected;
+}
+
+/** LIVE 005b6ad0:0x3c branch: filteredCode == S1*(b1+b2+5)*7+0x2a705 on transformed. */
+export function form42LiveBranch(name, codeText) {
+  const filtered = filterCode(codeText);
+  if (filtered === null) return false;
+  const transformed = transformFinalName(trimmed(name));
+  const expected = liveExpectedCode(transformed);
+  if (expected === null) return false;
+  return Number(filtered) === expected;
+}
+
+/** LIVE 0064aa20 branch: same hash +0x4b bias, len>=7 with a space. */
+export function startupLiveBranch(name, codeText) {
+  const clean = trimmed(name);
+  const filtered = filterCode(codeText);
+  if (filtered === null || clean.length < 3) return false;
+  if (!clean.includes(' ') || clean.length <= 6) return false;
+  const transformed = transformFinalName(clean);
+  const expected = liveExpectedCode(transformed);
+  if (expected === null) return false;
+  return Number(filtered) === expected + REGISTRATION_STARTUP_BIAS;
+}
+
+/** Digits-only filtered code (original 005b6ad0 code loop keeps 0-9). */
+export function filterCode(value) {
+  const clean = trimmed(value);
+  if (!clean) return null;
+  const filtered = clean.replace(/[^0-9]/g, '');
+  if (!filtered) return null;
+  if (!Number.isSafeInteger(Number(filtered))) return null;
+  return filtered;
+}
+
+/** 005b6ad0:1166-1176 DEAD branch (flag 0x31 never read; cf. 0x5b8071 live 0x3c).
+ * Correct formula is len*byte0*0x408 (0x5b81e7 imul [ebp-0x10]=byte0, 0x5b81ea
+ * imul 0x408); oracle probe with both 10320 (old len-only) and 794640
+ * (correct len*77*0x408 for 'M Steen 77') confirms flag stays 0. */
 export function form42LengthBranch(name, codeText) {
+  const clean = trimmed(name);
   const parsed = parseCode(codeText);
-  if (parsed === null) return false;
-  return parsed === trimmed(name).length * REGISTRATION_CODE_MULTIPLIER;
+  if (parsed === null || !clean) return false;
+  return parsed === clean.length * byteOf(clean[0]) * REGISTRATION_CODE_MULTIPLIER;
 }
 
 /** 0064aa20:190-198 startup branch: code == ((b1+b2+5)*w*7 + 0x2a705) + 0x4b. */
@@ -149,38 +290,47 @@ export function parseCode(value) {
   return parsed;
 }
 
-/** Full Form42 validation: generic gates plus either exact branch. */
+/** Full Form42 validation: generic gates plus live branches (dead length excluded). */
 export function validateRegistrationKey({ name, code } = {}) {
   const cleanName = trimmed(name);
   const cleanCode = trimmed(code);
   if (!cleanName || !cleanCode) return { valid: false, reason: 'empty' };
   if (CRACK_NAMES.includes(cleanName)) return { valid: false, reason: 'crack' };
+  if (isBlacklistedName(cleanName)) return { valid: false, reason: 'blacklisted' };
   if (cleanName.length <= 4 || cleanCode.length <= 4) return { valid: false, reason: 'too-short' };
-  const parsed = parseCode(cleanCode);
-  if (parsed === null) return { valid: false, reason: 'non-numeric' };
+  const filtered = filterCode(cleanCode);
+  if (filtered === null) return { valid: false, reason: 'non-numeric' };
+  if (filtered.length <= 4 || filtered.length >= 11) return { valid: false, reason: 'bad-length' };
+  const parsed = Number(filtered);
   if (parsed < 1000) return { valid: false, reason: 'too-small' };
-  if (form42LengthBranch(cleanName, cleanCode)) return { valid: true, reason: 'form42-length', expected: String(cleanName.length * REGISTRATION_CODE_MULTIPLIER) };
-  if (startupWeightedBranch(cleanName, cleanCode)) return { valid: true, reason: 'startup-weighted' };
+  if (form42LiveBranch(cleanName, filtered)) {
+    const transformed = transformFinalName(cleanName);
+    return { valid: true, reason: 'form42-live', expected: String(liveExpectedCode(transformed)) };
+  }
+  if (startupLiveBranch(cleanName, filtered)) return { valid: true, reason: 'startup-live' };
   return { valid: false, reason: 'mismatch' };
 }
 
-/** Deterministic Form42 code for a name (exact 005b6ad0 length branch). */
+/** Deterministic Form42 code for a name (LIVE 005b6ad0:0x3c branch). */
 export function deriveForm42Code(name) {
   const clean = trimmed(name);
   if (!clean) throw new Error('A registration name is required.');
-  return String(clean.length * REGISTRATION_CODE_MULTIPLIER);
+  const transformed = transformFinalName(clean);
+  const expected = liveExpectedCode(transformed);
+  if (expected === null) throw new Error('Transformed name is too short for a live code.');
+  return String(expected);
 }
 
-/** Deterministic startup-registry code for a name (exact 0064aa20 branch). */
+/** Deterministic startup-registry code for a name (LIVE 0064aa20 branch). */
 export function deriveStartupCode(name) {
   const clean = trimmed(name);
   if (clean.length < 3 || !clean.includes(' ') || clean.length <= 6) {
     throw new Error('Startup codes require a spaced name longer than 6 characters.');
   }
-  const { combined } = startupWeightedSum(clean);
-  const expected = (byteOf(clean[1]) + byteOf(clean[2]) + 5) * combined * REGISTRATION_STARTUP_FACTOR
-    + REGISTRATION_STARTUP_BASE + REGISTRATION_STARTUP_BIAS;
-  return String(expected);
+  const transformed = transformFinalName(clean);
+  const expected = liveExpectedCode(transformed);
+  if (expected === null) throw new Error('Transformed name is too short for a live code.');
+  return String(expected + REGISTRATION_STARTUP_BIAS);
 }
 
 function successFlag(name, code) {

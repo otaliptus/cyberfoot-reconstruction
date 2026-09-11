@@ -139,7 +139,10 @@ function pushInteraction(ctx,node,p,x,y,w,h,extra={}){
  return entry;
 }
 function pushInput(ctx,node,p,x,y,w,h,kind,model,operation){
- ctx.interactions.push({name:node.name,className:node.class_name,operation:operation??p.OnClick??p.OnChange??null,x,y,width:w,height:h,kind,input:model});
+ const disabled=p.Enabled===false;
+ // Delphi OnSelect (TComboBox/ComboBoxEx) behaves like OnChange for selection.
+ const resolved=disabled?null:(operation??p.OnClick??p.OnChange??p.OnSelect??null);
+ ctx.interactions.push({name:node.name,className:node.class_name,operation:resolved,x,y,width:w,height:h,kind,input:{...model,disabled}});
 }
 
 function gridRows(frame,name){
@@ -961,7 +964,11 @@ export class VclRenderer {
   if(top){this.lastLayout=top.layout;this.frame=top.frame;}
   this.hitTargets=[];this.pitchTargets=[];this.gridRowTargets=[];
   for(const element of this.inputs.values())element.style.display='none';
-  for(const entry of layouts){
+  // Modal focus: only the top form owns hit targets and inputs. Underlying
+  // forms still paint (dimmed by the top form's own geometry) but their
+  // controls must not intercept pointer input while a modal is on top.
+  const interactive=top?[top]:[];
+  for(const entry of interactive){
    const {origin,layout}=entry;
    for(const interaction of layout.interactions){
     const x=interaction.x+origin.x,y=interaction.y+origin.y;
@@ -971,6 +978,8 @@ export class VclRenderer {
     else if(interaction.operation)this.hitTargets.push({...interaction,x,y});
    }
   }
+  // Pitch/grid drag targets for the top form only; underlying modal state
+  // stays painted but inert until the modal closes.
   const scale=this.scaleFactor(width,height);
   this.canvas.style.width=Math.round(width*scale)+'px';
   this.canvas.style.height=Math.round(height*scale)+'px';
@@ -985,6 +994,13 @@ export class VclRenderer {
  placeInput(entry,interaction){
   const key=entry.frame.form+'.'+interaction.name;
   const input=interaction.input??{};
+  // Disabled VCL controls (Enabled=false) paint but never take input: keep
+  // the overlay hidden and inert so the original disabled state is honored.
+  if(input.disabled){
+   const stale=this.inputs.get(key);
+   if(stale)stale.style.display='none';
+   return;
+  }
   let element=this.inputs.get(key);
   if(!element){
    const owner=this.canvas.ownerDocument;
@@ -1003,6 +1019,9 @@ export class VclRenderer {
    this.inputs.set(key,element);
   }
   element.style.display='block';
+  // Mirror VCL Enabled state onto the DOM overlay so disabled controls cannot
+  // take focus even if a stale overlay survives a frame change.
+  try{element.disabled=!!input.disabled;}catch{}
   if(interaction.kind==='combo'){
    if(element.dataset.items!==(input.items??[]).join('\u0000')){element.replaceChildren(...(input.items??[]).map((text,index)=>{const option=this.canvas.ownerDocument.createElement('option');option.value=String(index);option.textContent=text;return option;}));element.dataset.items=(input.items??[]).join('\u0000');}
    if(element.selectedIndex!==(input.selected??-1))element.selectedIndex=input.selected??-1;
@@ -1015,10 +1034,15 @@ export class VclRenderer {
   const rect=this.canvas.getBoundingClientRect();
   const scale=this.canvas.width?rect.width/this.canvas.width:1;
   const positions=new Map();
-  for(const entry of this.canvas.__layouts??[]){
-   const {frame,origin,layout}=entry;
+  // Only the top layout owns visible inputs while a modal is stacked; lower
+  // forms keep painting underneath but must not capture pointer focus.
+  const layouts=this.canvas.__layouts??[];
+  const top=layouts[layouts.length-1];
+  if(top){
+   const {frame,origin,layout}=top;
    for(const interaction of layout.interactions){
     if(!interaction.kind)continue;
+    if(interaction.input?.disabled)continue;
     const key=frame.form+'.'+interaction.name;
     if(positions.has(key))continue;
     positions.set(key,{x:interaction.x+origin.x,y:interaction.y+origin.y,width:interaction.width,height:interaction.height});

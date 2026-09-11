@@ -57,6 +57,12 @@ def dyn_setlen(uc, address, size, data):
     uc.mem_write(new_base - 4, struct.pack("<I", n))
     if old_bytes:
         uc.mem_write(new_base, old_bytes)
+    # Zero-fill the new tail (cf. youth-intake oracle dyn_setlen lines
+    # 57-58). Without this, SetLength-grown tails keep prior-case bytes
+    # from bump reuse (cross-case staleness).
+    total = n * 0x200
+    if total > len(old_bytes):
+        uc.mem_write(new_base + len(old_bytes), bytes(total - len(old_bytes)))
     uc.mem_write(dest, struct.pack("<I", new_base))
     uc.reg_write(UC_X86_REG_ESP, sp + 4)
     uc.reg_write(UC_X86_REG_EIP, read32(sp))
@@ -221,6 +227,10 @@ for i in range(220):
     u.mem_write(slotC, p32(C))
     u.mem_write(slotP, p32(P))
     u.mem_write(slotM, p32(MGR))
+    # Zero scratch + snapshot (bump) regions per case so over-reads beyond
+    # the fresh C/P writes and SetLength-grown tails start from zeros
+    # instead of prior-case bytes (cross-case staleness).
+    u.mem_write(0x1300000, b"\x00" * 0x60000)
     u.mem_write(C, bytes(clubs))
     u.mem_write(C - 4, p32(clubCount))
     u.mem_write(P, bytes(players))
@@ -228,6 +238,9 @@ for i in range(220):
     u.mem_write(MGR - 4, p32(0))
     u.mem_write(career, bytes(car))
     bump[0] = 0x1400000
+    # Zero the snapshot (bump) region per case so SetLength-grown tails
+    # start from zeros instead of prior-case bytes (cross-case staleness).
+    u.mem_write(0x1400000, b"\x00" * 0x60000)
     initial_seed = r.getrandbits(32)
     seed = initial_seed
     orig_count = playerCount
