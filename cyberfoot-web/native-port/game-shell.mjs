@@ -1001,7 +1001,12 @@ async function enterCareer(bytes){
 
 const devPanel=document.getElementById('dev'),devStatus=document.getElementById('dev-status');
 if(query.has('debug')||query.has('debugPanel'))devPanel.hidden=false;
-addEventListener('keydown',event=>{if(event.key==='F12'){event.preventDefault();devPanel.hidden=!devPanel.hidden;}});
+addEventListener('keydown',event=>{
+ if(event.key==='F12'){event.preventDefault();devPanel.hidden=!devPanel.hidden;return;}
+ // Form13's original Jogos Amistosos menu item is a TMainMenu shortcut (F9),
+ // not a canvas child, so preserve the native keyboard route for human play.
+ if(event.key==='F9'&&renderer.frame?.form==='Form13'&&!routeScreen&&!noticeDepth){event.preventDefault();renderer.invoke('Form13.JogosAmistosos1Click');}
+});
 function updateDevStatus(){
  if(!devStatus)return;
  devStatus.textContent=`form: ${renderer.frame?.form??'-'}\nrounds: ${rounds} · day: ${career?career.getInt32(0x16c,true):'-'} · season: ${career?career.getInt32(0xc0,true):'-'}\nclub: ${save?state?.clubs?.[clubId]?.name??clubId:'-'}\nmatch: ${matchSession?(matchSession.snapshot().finished?'finished':'playing'):'-'}`;

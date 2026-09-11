@@ -2,7 +2,8 @@ import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules
 import assert from 'node:assert/strict';import {mkdirSync,writeFileSync} from 'node:fs';
 // Live Form46 playback: manual clock, real pointer clicks from the main menu
 // into a new career, then the watched match plays start-to-finish on the
-// shell's live tick driver (manager.refresh + WebAudio sounds) until Form67.
+// shell's live tick driver (manager.refresh + WebAudio sounds) until the
+// competition's native result route (Form26 or Form67).
 // NOT registered in run-all.mjs (manual-clock live play only).
 const output='/Users/talip/Documents/ChatGPT/misc/cyberfoot-web/output/live-match';mkdirSync(output,{recursive:true});
 const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1280,height:800}}),errors=[];
@@ -34,11 +35,12 @@ await page.screenshot({path:output+'/live-mid-match.png'});
 const mid=JSON.parse(await page.evaluate(()=>window.render_game_to_text()));
 assert.equal(mid.form,'Form46');assert.ok(mid.match.tick>first);
 const resultsForm=await page.evaluate(async()=>await window.gameShell.playMatchLive({timeoutMs:170000}));
-assert.equal(resultsForm,'Form67');
+assert.ok(['Form26','Form67'].includes(resultsForm));
 const results=JSON.parse(await page.evaluate(()=>window.render_game_to_text()));
-assert.equal(results.form,'Form67');assert.equal(results.matchFailure,null);
+assert.equal(results.form,resultsForm);assert.equal(results.matchFailure,null);
 // Full time proof: the continuation cleared the live session after the 61f604
-// finalizer recorded its fimjogo request (match is null once Form67 owns it).
+// finalizer recorded its fimjogo request (match is null once the result route
+// owns it).
 assert.equal(results.match,null);
 // Sound: the session recorded original sons/*.wav requests across live play
 // and the WebAudio player drained them (headless-safe: recorded, never throws).
@@ -48,5 +50,5 @@ assert.ok(sounds.played.length>0,'live match played sounds through the WebAudio 
 assert.ok(sounds.session.includes('fimjogo'),'full-time fimjogo request was recorded');
 await page.screenshot({path:output+'/live-results.png'});
 assert.deepEqual(errors,[]);
-writeFileSync(output+'/checks.json',JSON.stringify({firstTick:first,midTick:mid.match.tick,results,sounds,errors},null,2));
-await browser.close();console.log('Live match: manual-clock shell played Form46 start-to-finish visibly to Form67 with recorded sound requests and no console errors.');
+writeFileSync(output+'/checks.json',JSON.stringify({firstTick:first,midTick:mid.match.tick,resultsForm,results,sounds,errors},null,2));
+await browser.close();console.log(`Live match: manual-clock shell played Form46 start-to-finish visibly to ${resultsForm} with recorded sound requests and no console errors.`);
