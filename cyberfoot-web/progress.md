@@ -1,5 +1,11 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-12 — Registered unlock toggle and UI play pass
+- Added a top-right `Registered unlock: OFF/ON` button outside the original VCL canvas. It persists the local runtime unlock, refreshes Form9/Form11 immediately, survives reloads, and is bounded on mobile; the renderer now also updates stale disabled DOM overlays correctly.
+- Played the full browser suite after the change: career, matches, route screens, standings, auctions, manager dialogs, registrations, settings, and all reachable forms passed with no new UI errors. Production toggle, valid registration, and mode-2 flows pass against the public alias.
+- Commit `9b9a0e9` is pushed and deployed as `b95ce981` at https://b95ce981.cyberfoot-reconstruction.pages.dev; public alias https://cyberfoot-reconstruction.pages.dev/ is verified.
+- The toggle activates the existing registered gate; it does not yet implement the original repeated multi-manager Form11 flow. Release certification and pixel parity remain false.
+
 ### 2026-09-11 — Standard Form9 mode-2 league verified
 - Ported the standard Form9 2x20 path: selected bundled teams are native-sorted, written into two 20-team divisions, and scheduled across 38 domestic rounds (760 fixtures). Unsupported multi-country selections stop behind a native notice rather than creating incomplete divisions.
 - Added `standard-championship-node.mjs` to the full regression suite and extended `browser-settings.mjs` through a real first match. Native suite remains 71,757 cases with 0 failures; targeted lint is clean for the new module/tests.
