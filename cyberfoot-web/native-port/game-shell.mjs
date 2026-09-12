@@ -12,18 +12,23 @@
  * hidden F12 dev overlay toggles the auxiliary windows.
  */
 import {VclRenderer} from './vcl-renderer.mjs';
-import {createCareerSave,careerSaveSummary,createCareerRecord,writeStoredCareer,listStoredCareers,readStoredCareerSave,playableClubIds,removeStoredCareer} from './career-menu.mjs';
+import {createCareerSave,addCareerManager,careerSaveSummary,createCareerRecord,writeStoredCareer,listStoredCareers,readStoredCareerSave,playableClubIds,removeStoredCareer} from './career-menu.mjs';
 import {readSave,writeSave,record,shortString} from './save-format.mjs';
 import {OriginalRandom} from './match-core.mjs';
-import {openCareer} from './career-state.mjs';
+import {openCareer,commitCareerStats} from './career-state.mjs';
 import {careerAgenda,careerSchedule} from './schedule.mjs';
 import {buildLineupRoster} from './lineup-roster.mjs';
 import {autoSelectScreenLineup} from './lineup-screen.mjs';
+import {placeRosterPlayer,swapScreenPlayers,repositionScreenSlot} from './manual-lineup.mjs';
 import {setTactic} from './tactics.mjs';
 import {saveScreenLineup} from './saved-lineup.mjs';
 import {lineupView} from './lineup-view.mjs';
 import {commitHumanLineup} from './human-lineup-commit.mjs';
 import {openRouteMatchSession,prepareRouteTeams} from './route-match-session.mjs';
+import {prepareScheduledMatches} from './match-preparation.mjs';
+import {runAutomaticMatches} from './automatic-matches.mjs';
+import {recordCareerEvent} from './career-stats.mjs';
+import {finalizeMatchBatch} from './match-finalization.mjs';
 import {continueDomesticCompetition} from './domestic-competition-continuation.mjs';
 import {nativeResultsCareerEffects} from './results-native-effects.mjs';
 import {continueResultsCareer} from './results-career-continuation.mjs';
@@ -32,12 +37,13 @@ import {createSeasonMoveHost} from './season-move-host.mjs';
 import {selectResultHistory,resultDetailLabels,resultRows,resultLineupRows,resultSubstitutionChain} from './results-data.mjs';
 import {settleAutomaticDecider} from './knockout-decider.mjs';
 import {finalizeCupChampion} from './champion-finalization.mjs';
-import {selectNationalPlayers} from './national-setup.mjs';
+import {selectNationalPlayers,assignNationalPlayer,unassignNationalPlayer} from './national-setup.mjs';
 import {clubHubView,competitionTableView,nationalHubView,nationalAssignmentView,automaticNextScreens,nationalAssignmentCandidates} from './route-screens.mjs';
 import {nationalManagerAssignmentIndex} from './results-routing.mjs';
 import {clubCrestPath} from './club-crest.mjs';
 import {clubKitPath} from './club-kit.mjs';
 import {originalMoney} from './finance-view.mjs';
+import {originalPlayerValue} from './player-value.mjs';
 import {matchMinute} from './match-score-plan.mjs';
 import {createAuctionSession} from './auction-window.mjs';
 import {createContractSession} from './contract-window.mjs';
@@ -79,7 +85,7 @@ const unhandled=[];
 renderer.onUnhandled=operation=>{unhandled.push(operation);};
 const manager=createFormManager(renderer);
 
-let save=null,career=null,rng=null,state=null,agenda=null,rows=null,slots=null,clubId=11;
+let save=null,career=null,rng=null,state=null,agenda=null,rows=null,slots=null,clubId=11,activeCareerId=null,careerSaveName='';
 let formation=4,checkedKit=1,shirtImage=null,kitPaths=[],opponentId=null,opponentKit=null;
 let matchSession=null,starting=false,startMessage=null,fixtureCompetition=1,fixtureSubgroup=0;
 let roundDay=0,roundDate=0,roundFixtureId=-1,routeScreen=null,routeSessionFixtures=[];
@@ -132,10 +138,8 @@ function applyPersistedRegistration(bytes){
  return writeSave(parsed);
 }
 function applyNewGameSettings(bytes){
-  const parsed=readSave(bytes),careerView=dataView(parsed.career);
-  // Form9 writes these values before Form11 creates the human manager slots.
-  careerView.setInt32(0x13c,settingsCombo2+1,true);
-  // Mode 2 rebuilds the bundled standard league below; mode 4 retains the
+   const parsed=readSave(bytes),careerView=dataView(parsed.career);
+   // Mode 2 rebuilds the bundled standard league below; mode 4 retains the
   // original template layout.
   const flags={
    0x10e:settingsToggles.ckcopa,
@@ -238,7 +242,7 @@ function menuFrame(){
 }
 function showMenu(){selector='menu';stopClubEditor();void manager.open(menuFrame());updateDevStatus();}
 
-let newGameName='',newGameClub=11,loadSelection=0,selector='menu';
+let newGameName='',newGameClub=11,loadSelection=0,selector='menu',multiManagerState=null;
 function newGameFrame(){
   const clubs=clubChoices(),registered=isRegistered(registrationFlag());
  const countryIds=[...new Set(clubs.map(club=>club.country))].sort((a,b)=>a-b);
@@ -501,9 +505,17 @@ renderer.register('Form42.XiButton2Click',()=>{
 
 /* ------------------------------------------------------ new game creation */
 
-function storeCareerBytes(bytes,managerName,clubId){
- const summary=careerSaveSummary(bytes),promise=createCareerRecord(bytes,{managerName,clubId,language:language[0].text,summary}).then(entry=>{try{writeStoredCareer(localStorage,entry);}catch{}return entry;});
- return promise;
+function currentCareerRecord(){
+ if(activeCareerId===null||activeCareerId===undefined)return null;
+ const id=String(activeCareerId);return listStoredCareers(localStorage).find(entry=>String(entry.id)===id)??null;
+}
+function currentCareerSaveName(){
+ const entry=currentCareerRecord();return careerSaveName||entry?.saveName||entry?.managerName||'career';
+}
+async function storeCareerBytes(bytes,managerName,clubId){
+ const summary=careerSaveSummary(bytes),entry=await createCareerRecord(bytes,{managerName,clubId,language:language[0].text,summary,saveName:managerName});
+ writeStoredCareer(localStorage,entry);activeCareerId=String(entry.id);careerSaveName=entry.saveName||entry.managerName||'career';
+ return entry;
 }
 async function newGame({managerName=newGameName,clubId=newGameClub}={}){
  newGameName=String(managerName||'New Manager').slice(0,25);
@@ -540,22 +552,41 @@ renderer.register('Form11.teamSelectClick',clubId=>{
  manager.update(customCareer?customTeamFrame():newGameFrame());updateDevStatus();
 });
 renderer.register('Form11.button1Click',async()=>{
- const edit=renderer.fieldValues['Form11.Edit1']?.value??newGameName;
- if(customCareer){
-  const cfg=customCareer,clubs=customTeamFrame().clubs,chosen=clubs.some(club=>club.id===newGameClub)?newGameClub:clubs[0]?.id;
-   const bytes=applyPersistedRegistration(applyNewGameSettings(createCareerSave({managerName:edit,clubId:chosen,language:[language[0].text],seed:2015,template:templateBytes,freshStart:true})));
-  const customSave=readSave(bytes);
-  applyCustomChampionship(customSave,{clubIds:cfg.clubIds,formatId:cfg.formatId,playCup:cfg.playCup,rng:new OriginalRandom(2015)});
-  const finalBytes=writeSave(customSave);
-  await storeCareerBytes(finalBytes,edit,chosen);
-  customCareer=null;
-  await enterCareer(finalBytes);
-  return;
- }
- await newGame({managerName:edit,clubId:newGameClub});
+ try{
+   const edit=renderer.fieldValues['Form11.Edit1']?.value??newGameName;
+   const managerTotal=Math.max(1,Math.min(10,settingsCombo2+1));
+   if(!customCareer&&managerTotal>1){
+    if(multiManagerState?.clubIds.includes(newGameClub))throw Error('Choose a different club for each human manager.');
+    if(!multiManagerState){
+     const bytes=applyPersistedRegistration(applyNewGameSettings(createCareerSave({managerName:edit,clubId:newGameClub,language:[language[0].text],seed:2015,template:templateBytes,freshStart:true})));
+     multiManagerState={bytes,count:1,clubIds:[newGameClub],firstName:edit,firstClub:newGameClub};
+    }else{
+     multiManagerState.bytes=addCareerManager(multiManagerState.bytes,{managerName:edit,clubId:newGameClub});
+     multiManagerState.count++;multiManagerState.clubIds.push(newGameClub);
+    }
+    if(multiManagerState.count<managerTotal){
+     const next=newGameClubs().find(club=>!multiManagerState.clubIds.includes(club.id));
+     if(!next)throw Error('There are not enough playable clubs for the selected manager count.');
+     newGameName='';delete renderer.fieldValues['Form11.Edit1'];newGameClub=next.id;manager.update(newGameFrame());updateDevStatus();return;
+    }
+    const finalBytes=multiManagerState.bytes,firstName=multiManagerState.firstName,firstClub=multiManagerState.firstClub;multiManagerState=null;await storeCareerBytes(finalBytes,firstName,firstClub);await enterCareer(finalBytes);return;
+   }
+   if(customCareer){
+    const cfg=customCareer,clubs=customTeamFrame().clubs,chosen=clubs.some(club=>club.id===newGameClub)?newGameClub:clubs[0]?.id;
+     const bytes=applyPersistedRegistration(applyNewGameSettings(createCareerSave({managerName:edit,clubId:chosen,language:[language[0].text],seed:2015,template:templateBytes,freshStart:true})));
+    const customSave=readSave(bytes);
+    applyCustomChampionship(customSave,{clubIds:cfg.clubIds,formatId:cfg.formatId,playCup:cfg.playCup,rng:new OriginalRandom(2015)});
+    const finalBytes=writeSave(customSave);
+    await storeCareerBytes(finalBytes,edit,chosen);
+    customCareer=null;
+    await enterCareer(finalBytes);
+    return;
+   }
+   await newGame({managerName:edit,clubId:newGameClub});
+ }catch(error){showNotice('Form11.button1Click',String(error?.message||error));}
 });
 renderer.register('Form21.grid1SelectCell',index=>{loadSelection=Number(index)||0;manager.update(loadGameFrame());});
-renderer.register('Form21.BitBtn1Click',async()=>{const entry=listStoredCareers(localStorage)[loadSelection];if(!entry)return;const bytes=await readStoredCareerSave(localStorage,entry.id);await enterCareer(bytes);});
+renderer.register('Form21.BitBtn1Click',async()=>{const entry=listStoredCareers(localStorage)[loadSelection];if(!entry)return;const bytes=await readStoredCareerSave(localStorage,entry.id);activeCareerId=String(entry.id);careerSaveName=entry.saveName||entry.managerName||'career';await enterCareer(bytes);});
 renderer.register('Form21.BitBtn2Click',()=>showMenu());
 renderer.register('Form21.BitBtn3Click',()=>{const entry=listStoredCareers(localStorage)[loadSelection];if(entry){removeStoredCareer(localStorage,entry.id);loadSelection=0;}manager.update(loadGameFrame());});
 
@@ -647,18 +678,26 @@ renderer.register('Form87.gridview1SelectCell',index=>{
  updateDevStatus();
 });
 renderer.register('Form87.AdvGlowButton1Click',()=>{});
-renderer.onLineupDrop=({source,targetSlot})=>{
- if(starting||matchSession)return;
- if(targetSlot!==undefined&&targetSlot!==null){
-  if(source.playerId!==undefined){const row=rows.find(entry=>entry.playerId===source.playerId);if(row)slots[targetSlot-1]=row;}
-  else if(source.slot){const swap=slots[source.slot-1];slots[source.slot-1]=slots[targetSlot-1];slots[targetSlot-1]=swap;}
- }
+renderer.onLineupDrop=({source,targetSlot,x,y})=>{
+  if(starting||matchSession)return;
+  if(targetSlot!==undefined&&targetSlot!==null){
+   if(source?.playerId!==undefined)placeRosterPlayer(slots,rows,source.playerId,targetSlot);
+   else if(source?.slot!==undefined)swapScreenPlayers(slots,rows,source.slot,targetSlot);
+  }else if(source?.slot!==undefined){
+   const origin=renderer.canvas.__layouts?.at(-1)?.origin??{x:0,y:0};
+   repositionScreenSlot(slots,source.slot,x-origin.x-1,y-origin.y-1);
+  }
   manager.update(viewModel());
 };
 
 function presentScreen(screen){return new Promise(resolve=>{routeScreen={view:screen,resolve};void manager.open(screen);});}
 function resolveScreen(){if(noticeDepth>0){manager.close(ModalResults.mrOk);return true;}if(!routeScreen){manager.close(ModalResults.mrOk);return false;}const entry=routeScreen;routeScreen=null;entry.resolve();return true;}
-for(const key of ['Form26.bt3Click','Form75.btjogarClick','Form77.bt2Click','Form85.XiButton1Click','Form85.XiButton2Click'])renderer.register(key,resolveScreen);
+for(const key of ['Form26.bt3Click','Form75.btjogarClick','Form77.bt2Click'])renderer.register(key,resolveScreen);
+renderer.register('Form85.XiButton1Click',()=>{
+ if(routeScreen?.view?.seasonFriendlyPrompt){const pending=routeScreen;routeScreen=null;openFriendlies(()=>pending.resolve());return true;}
+ return resolveScreen();
+});
+renderer.register('Form85.XiButton2Click',resolveScreen);
 function refreshLineupState(){
  state=openCareer(save,{currentDate:currentDate()});if(query.has('automaticInteractions'))state.automaticInteractions=true;
  rows=buildLineupRoster(state,clubId);slots=autoSelectScreenLineup(state,rows,formation,save,clubId).slots;
@@ -689,7 +728,7 @@ renderer.register('Form13.gridview1DblClick',index=>{
   if(row)hubSelectedPlayer=row.playerId;
   refreshHub();
 });
-function hubContext(){return {save,language,state,clubId,playerId:selectedHubPlayer(),crestAssets};}
+function hubContext(){return {save,language,state,clubId,playerId:selectedHubPlayer(),saveName:currentCareerSaveName(),crestAssets};}
 function bankLoanFrame(){return loanView(bankLoan.state,language);}
 function openBankLoan(){
  if(!save)return;
@@ -749,16 +788,16 @@ function bookFriendly(opponentClub){
  const home=friendlyPlace===0?clubId:opponentClub,away=friendlyPlace===0?opponentClub:clubId;
  appendFriendlyMatch(save,{home,away,date});
 }
-function openFriendlies(){
+function openFriendlies(onDone){
  friendlyDate=0;friendlyOpponent=-1;friendlyPlace=0;
  renderer.register('Form81.combo1Select',index=>{const frame=friendlyFrame(),date=frame.friendly.dates[Number(index)||0];friendlyDate=date?.date??0;friendlyOpponent=-1;manager.update(friendlyFrame());});
  renderer.register('Form81.ComboBox1Select',index=>{const frame=friendlyFrame(),opponent=frame.friendly.opponents[Number(index)||0];friendlyOpponent=opponent?.id??-1;manager.update(friendlyFrame());});
  renderer.register('Form81.combo3Select',index=>{friendlyPlace=Math.max(0,Math.min(1,Number(index)||0));manager.update(friendlyFrame());});
  renderer.register('Form81.bt1Click',()=>{
   if(friendlyOpponent<0)return;
-  try{bookFriendly(friendlyOpponent);manager.close(ModalResults.mrOk);refreshHub();}catch(error){showNotice('Form81.bt1Click',String(error?.message||error));}
+   try{bookFriendly(friendlyOpponent);manager.close(ModalResults.mrOk);if(onDone)void onDone();else refreshHub();}catch(error){showNotice('Form81.bt1Click',String(error?.message||error));}
  });
- renderer.register('Form81.XiButton1Click',()=>manager.close(ModalResults.mrCancel));
+  renderer.register('Form81.XiButton1Click',()=>{manager.close(ModalResults.mrCancel);if(onDone)void onDone();});
  void manager.openModal(friendlyFrame());
 }
 function openHubForm(form){
@@ -769,9 +808,10 @@ function openHubForm(form){
   if(form==='Form81'){openFriendlies();return;}
   if(form==='Form24'){const id=hubSelectedPlayer>=0?hubSelectedPlayer:rows?.[0]?.playerId;if(Number.isInteger(id))void openContract(id);return;}
  if(form==='Form23'){void openAuction();return;}
- if(form==='Form42'){openRegistration();return;}
- if(form==='Form87'){void manager.open(viewModel());return;}
- void manager.openModal(hubFormView(form,hubContext()));
+  if(form==='Form42'){openRegistration();return;}
+  if(form==='Form87'){void manager.open(viewModel());return;}
+  if(form==='Form40')careerSaveName=currentCareerSaveName();
+  void manager.openModal(hubFormView(form,hubContext()));
 }
 renderer.register('Form13.btalterasalClick',()=>{const id=hubSelectedPlayer>=0?hubSelectedPlayer:rows?.[0]?.playerId;if(Number.isInteger(id))void openContract(id);});
 renderer.register('Form13.Alterarsalrio1Click',()=>{const id=hubSelectedPlayer>=0?hubSelectedPlayer:rows?.[0]?.playerId;if(Number.isInteger(id))void openContract(id);});
@@ -793,8 +833,22 @@ for(const [form,ops] of Object.entries(HUB_CLOSE_OP)){
   if(!renderer.handlers.has(key))renderer.register(key,()=>manager.close(ModalResults.mrOk));
  }
 }
-renderer.register('Form40.bt1Click',async()=>{if(!save)return;const name=renderer.fieldValues['Form40.Edit1']?.value??'career';await saveCareerFromForm40({save,language,localStorage,name});manager.close(ModalResults.mrOk);});
-renderer.register('Form44.bt1Click',()=>{if(hubSelectedPlayer>=0){runtime.auctionPlayer=hubSelectedPlayer;manager.close(ModalResults.mrOk);void openAuction();}});
+renderer.register('Form40.bt1Click',async()=>{
+ if(!save)return;
+ const name=renderer.fieldValues['Form40.Edit1']?.value??careerSaveName??'career';
+ try{
+  const entry=await saveCareerFromForm40({save,state,language,localStorage,name,id:activeCareerId});
+  activeCareerId=String(entry.id);careerSaveName=entry.saveName||entry.managerName||'career';
+  manager.close(ModalResults.mrOk);updateDevStatus();
+ }catch(error){showNotice('Form40.bt1Click',String(error?.message||error));}
+});
+renderer.register('Form44.bt1Click',()=>{
+ const id=selectedHubPlayer();if(!save||id<0)return;
+ const seller=dataView(record(save,'players',id)).getInt32(0x20,true);
+ runtime.auctionPlayer=id;runtime.auctionSellerClub=seller;runtime.auctionSecondClub=seller;runtime.auctionCurrentClub=-1;runtime.auctionPreviousClub=seller;runtime.auctionStartClub=seller;
+ runtime.auctionBasePrice=originalPlayerValue(save,id);runtime.auctionHighestBid=0;runtime.auctionHighestBidder=0;runtime.auctionIndex=0;runtime.auctionVisibility=[];runtime.auctionFlag=0;runtime.auctionValuation=0;runtime.auctionValueGate=0;runtime.timerGate=0;runtime.auctionReturnToHub=true;
+ manager.close(ModalResults.mrOk);void openAuction();
+});
 renderer.register('Form13.Label23Click',()=>{});
 // Route screens: combopais filters the Form26 table by league subgroup;
 // bttimeano (team of the year) has no ported engine → no-op dialog; Form75
@@ -826,10 +880,19 @@ renderer.register('Form26.combopaisChange',index=>{routeSubgroup=Number(index)||
 renderer.register('Form26.bttimeanoClick',()=>openWeeklyTeam(2));
 for(const op of ['Label13Click','Label4Click'])renderer.register('Form75.'+op,()=>{if(renderer.frame?.form==='Form75'&&routeScreen?.view)manager.update(routeScreen.view);});
 renderer.register('Form75.gridview1CellClick',index=>{if(routeScreen?.view?.form==='Form75'){routeScreen.view={...routeScreen.view,selectedPlayerId:Number(index)||0};manager.update(routeScreen.view);}});
+function refreshNationalAssignment(){if(renderer.frame?.form==='Form77')manager.update(nationalAssignmentView(save,runtime,language,{index:runtime.routeNationalIndex,state}));}
 renderer.register('Form77.gfindSelectCell',index=>{nationalSelected.gfind=Number(index)||0;if(renderer.frame?.form==='Form77')manager.update({...renderer.frame});});
 renderer.register('Form77.gselSelectCell',index=>{nationalSelected.gsel=Number(index)||0;if(renderer.frame?.form==='Form77')manager.update({...renderer.frame});});
-renderer.register('Form77.XiButton1Click',()=>{if(renderer.frame?.form==='Form77')manager.update({...renderer.frame,notice:'>>'});});
-renderer.register('Form77.XiButton2Click',()=>{if(renderer.frame?.form==='Form77')manager.update({...renderer.frame,notice:'<<'});});
+renderer.register('Form77.XiButton1Click',()=>{
+ const playerId=renderer.frame?.candidates?.[nationalSelected.gfind]?.playerId;
+ if(playerId===undefined){showNotice('Form77.XiButton1Click','Select a player to call up.');return;}
+ try{assignNationalPlayer(save,playerId,renderer.frame.nationalClubId);nationalSelected.gfind=-1;refreshNationalAssignment();}catch(error){showNotice('Form77.XiButton1Click',String(error?.message||error));}
+});
+renderer.register('Form77.XiButton2Click',()=>{
+ const playerId=renderer.frame?.selected?.[nationalSelected.gsel]?.playerId;
+ if(playerId===undefined){showNotice('Form77.XiButton2Click','Select a called-up player to remove.');return;}
+ try{unassignNationalPlayer(save,playerId,renderer.frame.nationalClubId);nationalSelected.gsel=-1;refreshNationalAssignment();}catch(error){showNotice('Form77.XiButton2Click',String(error?.message||error));}
+});
 renderer.register('Form77.XiButton3Click',()=>{});
 // Season move Form30 bt2 opens the standings table (verified competition view);
 // r1 stays hidden in the shell (seasonMoveView hides r1-r4), but a visible
@@ -945,28 +1008,56 @@ renderer.register('Form87.bt_irprojogoClick',async()=>{
  if(starting||matchSession)return;starting=true;
  try{
   const committed=commitHumanLineup(save,state,rows,slots,{clubId,remember:!!career.getUint8(0xde),rng});
-   if(!committed.accepted){startMessage=language[committed.messageId].text;showNotice('Form87.bt_irprojogoClick',startMessage);manager.update(viewModel());return;}
+    if(!committed.accepted){startMessage=language[committed.messageId].text;manager.update(viewModel());showNotice('Form87.bt_irprojogoClick',startMessage);return;}
   // National days (7/8/9) prepare via the national-fixtures branch inside
   // prepareRouteTeams; domestic days use the original batch preparation.
   prepareRouteTeams(save,state,rng,{competitionType:fixtureCompetition,subgroup:fixtureSubgroup,currentDate:roundDate});
   playedCompetition=fixtureCompetition;
   const knockoutOptions={decide:async id=>settleAutomaticDecider(save,id,routeSessionFixtures,rng).winner,champion:async(winner,fixtureId)=>finalizeCupChampion(save,winner,fixtureId,{activeSubgroup:fixtureSubgroup})};
    const session=await openRouteMatchSession(renderer,{save,state,rng,context:{competitionType:fixtureCompetition,subgroup:fixtureSubgroup,currentDate:roundDate},language,crestAssets,kitAssets,knockoutOptions,autoInteractions,continueCompetition:async(route,matchRuntime)=>{
-   // Drain + stash before clearing: finalize already pushed fimjogo, and
-   // Form67 owns the screen from here so the live session (and its request
-   // list) is gone. drainLiveSounds plays each request once via liveSoundSeen.
-   try{drainLiveSounds();}catch{}
-   try{lastMatchSounds=[...(matchSession?.snapshot().soundRequests??lastMatchSounds)];}catch{}
-   stopLiveDriver();matchSession=null;
-   if(route!=='batch'){playedCompetition=route;await presentScreensForRoute(route);rounds++;continuations.push({day:career.getInt32(0x16c,true),competition:runtime.nextCompetition,human:runtime.humanParticipation??null,played:playedCompetition});await finishContinuation();return;}
-   await continueDomesticCompetition(save,matchRuntime,{close:async()=>{
-    if(career.getInt32(0x88,true)===1)await showResults({subgroup:fixtureSubgroup,caption:language[225].text});
-    else if(selectResultHistory(save,{subgroup:fixtureSubgroup,currentDate:currentDate()}).length)await presentScreen(competitionTableView(save,language,{subgroup:fixtureSubgroup,currentDate:currentDate(),state,date:currentDate()}));
-    const effects=nativeResultsCareerEffects(save,runtime,{rng,temporary,calendar:careerSchedule(save),managerDialogs:managerDialogsHost()});
-    await continueResultsCareer(save,runtime,effects,careerSchedule(save));
-    rounds++;continuations.push({day:career.getInt32(0x16c,true),competition:runtime.nextCompetition,human:runtime.humanParticipation??null,played:playedCompetition});
-    await finishContinuation();
-   }});
+     const continueRoute=async(nextRoute,nextRuntime)=>{
+      // Finalization owns the current session until this callback detaches it.
+      // Keep the last sound requests before the next batch replaces the host.
+      try{drainLiveSounds();}catch{}
+      try{lastMatchSounds=[...(matchSession?.snapshot().soundRequests??lastMatchSounds)];}catch{}
+      stopLiveDriver();matchSession=null;
+      if(nextRoute!=='batch'){
+      playedCompetition=nextRoute;await presentScreensForRoute(nextRoute);rounds++;continuations.push({day:career.getInt32(0x16c,true),competition:runtime.nextCompetition,human:runtime.humanParticipation??null,played:playedCompetition});await finishContinuation();return;
+     }
+     let batchFixtures=[];
+     const batchContext=()=>({competitionType:career.getInt32(0x88,true),subgroup:nextRuntime.subgroup,currentDate:currentDate()});
+     await continueDomesticCompetition(save,nextRuntime,{
+      reset:async()=>{
+       if(nextRuntime.showMatch){batchFixtures=[];return;}
+       const context=batchContext(),prepared=prepareScheduledMatches(save,context,rng,nextRuntime);
+       batchFixtures=prepared.fixtures;prepareRouteTeams(save,state,rng,context);
+      },
+      simulate:async()=>{
+       const fixtures=batchFixtures,teamsFor=fixture=>fixture.lineupIds.map(id=>state.lineups[id]);
+       if(!fixtures.length)return;
+       await runAutomaticMatches({fixtures,teamsFor,state,rng,recordEvent:recordCareerEvent,runtime:nextRuntime,prepare:async()=>{},finalize:async()=>{
+        const first=fixtures[0],leagueMetadataId=first?.competition===undefined?undefined:dataView(record(save,'records_0066b6ac',first.competition)).getInt32(4,true);
+        await finalizeMatchBatch(save,fixtures,state,rng,{runtime:nextRuntime,teamsFor,historyContext:{competitionGroupId:0,subgroupId:nextRuntime.subgroup,leagueMetadataId},knockoutOptions:{...knockoutOptions,subgroup:nextRuntime.subgroup,alternateRound:nextRuntime.alternateRound},continueCompetition:route=>continueRoute(route,nextRuntime),present:(type,resource)=>{if(type==='sound')lastMatchSounds.push(resource);}});
+       }});
+      },
+      competitionUI:async competition=>{nextRuntime.competition=competition;},
+      fixtureUI:async()=>{nextRuntime.fixtureCount=batchFixtures.length;},
+      timerInterval:async value=>{nextRuntime.batchTimerInterval=value;},
+      start:async()=>{
+       const context=batchContext(),session=await openRouteMatchSession(renderer,{save,state,rng,context,language,crestAssets,kitAssets,knockoutOptions,autoInteractions,continueCompetition:continueRoute});
+       routeSessionFixtures=session.fixtures;matchSession=session;lastMatchSounds=[];startLiveDriver();
+      },
+      close:async()=>{
+       if(career.getInt32(0x88,true)===1)await showResults({subgroup:fixtureSubgroup,caption:language[225].text});
+       else if(selectResultHistory(save,{subgroup:fixtureSubgroup,currentDate:currentDate()}).length)await presentScreen(competitionTableView(save,language,{subgroup:fixtureSubgroup,currentDate:currentDate(),state,date:currentDate()}));
+       const effects=nativeResultsCareerEffects(save,runtime,{rng,temporary,calendar:careerSchedule(save),managerDialogs:managerDialogsHost()});
+       await continueResultsCareer(save,runtime,effects,careerSchedule(save));
+       rounds++;continuations.push({day:career.getInt32(0x16c,true),competition:runtime.nextCompetition,human:runtime.humanParticipation??null,played:playedCompetition});
+       await finishContinuation();
+      }
+     });
+    };
+    await continueRoute('batch',matchRuntime);
   }});
    routeSessionFixtures=session.fixtures;matchSession=session;lastMatchSounds=[];
   // Live Form46: advance the watched match on a timer with manager refresh and
@@ -986,7 +1077,7 @@ async function presentScreensForRoute(route){
 async function runSeasonTransition(){
  const summary=seasonTransitionView(save,{language,crestAssets});
  await presentScreen(summary);
- await presentScreen(preSeasonFriendlyView(language));
+  await presentScreen({...preSeasonFriendlyView(language),seasonFriendlyPrompt:true});
  // Original season settlement: promotion/relegation rotation per league
  // (005deccc) then prize/sponsor money (005deb00), before the calendar rebuild.
   try{
@@ -1008,7 +1099,8 @@ async function runSeasonTransition(){
  return result;
 }
 async function finishContinuation(){
- if(runtime.nextCompetition===-1)await runSeasonTransition();
+  if(save&&state)commitCareerStats(save,state);
+  if(runtime.nextCompetition===-1)await runSeasonTransition();
  if(!prepareRound())startMessage=language[484].text;
  // humanNext already presented the hub as the next screen: refresh it with the
  // prepared round instead of opening a second identical hub (looked stuck).
@@ -1040,8 +1132,9 @@ async function enterCareer(bytes){
 const devPanel=document.getElementById('dev'),devStatus=document.getElementById('dev-status');
 if(query.has('debug')||query.has('debugPanel'))devPanel.hidden=false;
 addEventListener('keydown',event=>{
- if(event.key==='F12'){event.preventDefault();devPanel.hidden=!devPanel.hidden;return;}
- // Form13's original Jogos Amistosos menu item is a TMainMenu shortcut (F9),
+  if(event.key==='F12'){event.preventDefault();devPanel.hidden=!devPanel.hidden;return;}
+  if(event.key==='F2'&&renderer.frame?.form==='Form13'&&!routeScreen&&!noticeDepth){event.preventDefault();renderer.invoke('SalvarClick');return;}
+  // Form13's original Jogos Amistosos menu item is a TMainMenu shortcut (F9),
  // not a canvas child, so preserve the native keyboard route for human play.
  if(event.key==='F9'&&renderer.frame?.form==='Form13'&&!routeScreen&&!noticeDepth){event.preventDefault();renderer.invoke('Form13.JogosAmistosos1Click');}
 });
@@ -1081,7 +1174,21 @@ async function openAuction(){
   if(!Number.isInteger(runtime.auctionPreviousClub))runtime.auctionPreviousClub=-1;
   if(typeof runtime.auctionEditText!=='string')runtime.auctionEditText='';
  const runtimeState=runtime;
- const session=createAuctionSession({save,runtime:runtimeState,rng,language,onFinished:()=>{setTimeout(()=>{stopAuction();if(auction&&renderer.frame?.form==='Form23'){manager.close(ModalResults.mrOk);}if(auction&&renderer.frame?.form!=='Form23'){/* Auction finished while another modal (contract/notice) owns the screen: clear state without popping it. */}if(auction){try{auction.finish();}catch{} auction=null;}updateDevStatus();},1200);}});
+  const session=createAuctionSession({save,runtime:runtimeState,rng,language,onFinished:()=>{setTimeout(()=>{
+   const returnToHub=runtimeState.auctionReturnToHub===true;
+   stopAuction();
+   if(auction&&renderer.frame?.form==='Form23')manager.close(ModalResults.mrOk);
+   if(auction&&renderer.frame?.form!=='Form23'){/* Auction finished while another modal (contract/notice) owns the screen: clear state without popping it. */}
+   if(auction){try{auction.finish();}catch{} auction=null;}
+   if(returnToHub&&save){
+    state=openCareer(save,{currentDate:currentDate()});
+    rows=buildLineupRoster(state,clubId);
+    hubSelectedPlayer=-1;
+    showHub();
+   }
+   runtimeState.auctionReturnToHub=false;
+   updateDevStatus();
+  },1200);}});
  auction={session,runtime:runtimeState,lastView:null};
  let finishAuction=null;
  auction.done=new Promise(resolve=>{finishAuction=resolve;});
@@ -1129,6 +1236,7 @@ renderer.onFieldInput=(key,value)=>{
   if(key==='Form24.combom'&&contractSession){contractSession.setDuration(value);if(renderer.frame?.form==='Form24')manager.update(contractFrame());return;}
   if(key==='Form24.Edit1'&&contractSession){contractSession.setOffer(String(value??''));return;}
   if(key==='Form23.Edit1'&&auction){auction.runtime.auctionEditText=String(value??'');return;}
+  if(key==='Form40.Edit1'){careerSaveName=String(value??'').slice(0,30);if(renderer.frame?.form==='Form40')manager.update(hubFormView('Form40',hubContext()));return;}
   if(key==='Form11.combonac'){
    const clubs=clubChoices(),names=[...new Set(clubs.map(club=>club.country))].sort((a,b)=>a-b);
    newGameCountry=names[Number(value)||0]??-1;
@@ -1204,14 +1312,15 @@ window.gameShell={
   setRegisteredUnlock,
  click:clickControl,
   setField(name,value){const key=(renderer.frame?.form??'')+'.'+name,text=String(value),input=renderer.lastLayout?.interactions.find(entry=>entry.name===name&&entry.kind==='edit');renderer.fieldValues[key]={kind:'edit',value:text};renderer.onFieldInput?.(key,text);if(input?.operation)renderer.invoke(input.operation,text);renderer.paint();},
- showMenu,showGameSettings,showClubEditor,showClubEditorView,openChampionship,openRegistration,showHub,showLineup:()=>{if(save&&state)void manager.open(viewModel());},newGame,loadCareer:async id=>{const bytes=await readStoredCareerSave(localStorage,id);await enterCareer(bytes);},
+  showMenu,showGameSettings,showClubEditor,showClubEditorView,openChampionship,openRegistration,showHub,showLineup:()=>{if(save&&state)void manager.open(viewModel());},newGame,loadCareer:async id=>{const entry=listStoredCareers(localStorage).find(candidate=>String(candidate.id)===String(id));const bytes=await readStoredCareerSave(localStorage,id);activeCareerId=String(id);careerSaveName=entry?.saveName||entry?.managerName||'career';await enterCareer(bytes);},
  listCareers:()=>listStoredCareers(localStorage),
   openAuction,openContract,openResults,openSeasonReview,
   playMatchToResults,playMatchLive,
   get soundPlayed(){return soundPlayer.played;},
   get soundRequests(){try{const live=matchSession?.snapshot().soundRequests;if(Array.isArray(live))return [...live];}catch{}return [...lastMatchSounds];},
- get match(){return matchSession?.snapshot()??null;},
- get auction(){return auction?{finished:auction.session.finished,result:auction.session.result}:null;},
+   get match(){return matchSession?.snapshot()??null;},
+  get stats(){return state?{scorers:state.scorers.length,appearances:state.appearances.length,playerSeasonStats:state.playerSeasonStats.length}:null;},
+   get auction(){return auction?{finished:auction.session.finished,result:auction.session.result}:null;},
  get contract(){return contractSession?{finished:contractSession.finished}:null;},
   get status(){return {form:renderer.frame?.form??null,selector,rounds,continuations:continuations.map(entry=>entry.played??null),startMessage,matchFailure,routePending:!!routeScreen,noticeDepth,unhandled:[...new Set(unhandled)].slice(0,20)};}
 };

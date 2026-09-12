@@ -80,7 +80,7 @@ async function nationalRound(){
  const effects=nativeResultsCareerEffects(save,runtime,{rng,temporary:{lineups:[],matchTeams:[]},calendar,managerDialogs});
  await continueResultsCareer(save,runtime,effects,calendar);
  assert.equal(career.getInt32(0x700,true),1,'National setup completed');
- assert.ok(routeViews.some(screen=>screen.form==='Form77'&&screen.candidates.length>0),'National assignment screen built from the verified candidate scan');
+ assert.ok(routeViews.some(screen=>screen.form==='Form77'&&screen.candidates.length>0),'National assignment screen built from the verified candidate scan');assert.equal(routeViews.find(screen=>screen.form==='Form77')?.properties.bt2.Enabled,true,'National assignment can continue from Form77');
  assert.ok(routeViews.some(screen=>screen.form==='Form75'),'National hub screen built from the national squad');
  assert.ok(routeViews.every(screen=>screen.properties&&Object.keys(screen.properties).length>0),'National screens carry language captions');
  assert.ok(save.sections.find(s=>s.name==='records_0066b544').count>=25,'National call-up assignments recorded');

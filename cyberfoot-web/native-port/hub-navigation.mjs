@@ -6,6 +6,7 @@ import {clubCrestPath} from './club-crest.mjs';
 import {record,shortString,writeSave} from './save-format.mjs';
 import {originalPlayerValue} from './player-value.mjs';
 import {careerAgenda} from './schedule.mjs';
+import {commitCareerStats} from './career-state.mjs';
 import {leagueStandingsData} from './standings-data.mjs';
 import {findCompetitionMetadata} from './champion-records.mjs';
 import {writeStoredCareer,createCareerRecord,careerSaveSummary} from './career-menu.mjs';
@@ -112,8 +113,9 @@ export function hubFormView(form,context={}){
   const club=record(save,'clubs',clubId),cash=dv(club).getBigInt64(0x48,true);
   return {form,properties:{Label2:{Caption:originalMoney(Number(cash/10000n))},Label6:{Caption:originalMoney(0)},Label7:{Caption:originalMoney(0)},label32:{HTMLText:`<p align="center"><shad>${text(language,109)}</shad></p>`}}};
  }
- if(form==='Form40'){
-  return {form,properties:{TntLabel1:{Caption:text(language,3)||'Salvar'},label1:{Caption:text(language,32)||''},Edit1:{Text:context.saveName??'career'}}};
+  if(form==='Form40'){
+   const saveName=String(context.saveName??'career');
+   return {form,properties:{TntLabel1:{Caption:text(language,3)||'Salvar'},label1:{Caption:text(language,32)||''},Edit1:{Text:saveName},bt1:{Enabled:Boolean(saveName.trim())}}};
  }
  if(form==='Form44'&&save){
   const id=playerId>=0?playerId:-1,name=id>=0?playerName(save,id):'',value=id>=0?originalPlayerValue(save,id):0;
@@ -271,10 +273,14 @@ export function customChampionshipTableView(buildSave,leagueIndex,{language,cupT
  return {form:'Form36',properties:{labcamp:{HTMLText:`<p align="center"><shad>Copa Internacional</shad></p>`}},dynamic,custom:{leagueIndex,divCount,perDiv}};
 }
 
-export async function saveCareerFromForm40({save,language,localStorage,name}){
- const bytes=writeSave(save);
- const summary=careerSaveSummary(bytes);
- const entry=await createCareerRecord(bytes,{managerName:name||summary?.manager||'career',clubId:new DataView(save.career.buffer,save.career.byteOffset,save.career.byteLength).getInt32(8,true),language:language[0]?.text,summary});
- writeStoredCareer(localStorage,entry);
- return entry;
+export async function saveCareerFromForm40({save,state,language,localStorage,name,id}){
+  const saveName=String(name??'').trim();
+  if(!saveName)throw Error('A save name is required.');
+  if(saveName.length>30)throw Error('Save names are limited to 30 characters.');
+  if(state)commitCareerStats(save,state);
+  const bytes=writeSave(save);
+  const summary=careerSaveSummary(bytes);
+  const entry=await createCareerRecord(bytes,{id,managerName:summary.managerName,saveName,clubId:summary.clubId,language:language[0]?.text,summary});
+  writeStoredCareer(localStorage,entry);
+  return entry;
 }

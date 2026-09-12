@@ -24,7 +24,10 @@ export function encodeBase64(input){
 export function decodeBase64(value){
  const clean=String(value).replace(/\s+/g,'');
  if(clean.length%4!==0)throw Error('Invalid base64 length.');
- const padding=clean.endsWith('==')?2:clean.endsWith('=')?1:0,padded=clean.replace(/=+$/,'');
+ if(!/^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/.test(clean))throw Error('Invalid base64 characters or padding.');
+ const padding=clean.endsWith('==')?2:clean.endsWith('=')?1:0,padded=clean.slice(0,clean.length-padding);
+ if(padding===2&&(b64Lookup[clean.charCodeAt(clean.length-3)]&15)!==0)throw Error('Invalid base64 trailing bits.');
+ if(padding===1&&(b64Lookup[clean.charCodeAt(clean.length-2)]&3)!==0)throw Error('Invalid base64 trailing bits.');
  const bytes=new Uint8Array(clean.length/4*3-padding);
  let offset=0;
  for(let i=0;i<padded.length;i+=4){
@@ -149,6 +152,21 @@ export function createCareerSave({managerName,clubId,language,seed=0,template,da
  if(agenda.fixtureId<0||!agenda.fixtures[agenda.fixtureId].clubs.includes(clubId))throw Error(`Club ${clubId} has no fixture on the original schedule.`);
  return writeSave(save);
 }
+/** Adds one additional human manager to an initialized career. The primary
+ * career pointer remains unchanged; only the next manager and club slots are
+ * populated. */
+export function addCareerManager(saveOrBytes,{managerName,clubId}={}){
+  const name=String(managerName??'').trim();if(!name)throw Error('A manager name is required.');if(name.length>25)throw Error('Manager names are limited to 25 characters.');
+  const save=saveFrom(saveOrBytes),clubs=save.sections.find(s=>s.name==='clubs'),managers=save.sections.find(s=>s.name===managerSection);if(!clubs||!managers)throw Error('Career is missing the original club or manager section.');
+  const career=new DataView(save.career.buffer,save.career.byteOffset,save.career.byteLength),count=career.getInt32(0x13c,true);if(count<1||count>=10)throw Error('The original career supports one to ten human managers.');
+  if(!Number.isInteger(clubId)||clubId<0||clubId>=clubs.count)throw Error(`Club ${clubId} is not in the career.`);
+  const club=record(save,'clubs',clubId),clubView=new DataView(club.buffer,club.byteOffset,club.byteLength);if(clubView.getUint8(0x39)!==0)throw Error('That club is already controlled by a human manager.');
+  let managerId=-1;for(let i=0;i<managers.count;i++)if(managers.data[i*managerRecordSize+0x40]===0){managerId=i;break;}
+  if(managerId<0){const grown=new Uint8Array(managers.data.length+managerRecordSize);grown.set(managers.data);managers.data=grown;managers.count++;managerId=managers.count-1;}
+  clubView.setUint8(0x39,1);clubView.setInt32(0x44,managerId,true);
+  const manager=record(save,managerSection,managerId),managerView=new DataView(manager.buffer,manager.byteOffset,manager.byteLength);writeShortString(manager,0,managerNameCapacity,name);managerView.setInt32(0x1c,clubId,true);managerView.setInt32(0x24,clubView.getInt32(0x7c,true),true);managerView.setInt32(0x3c,clubView.getInt32(0x3c,true),true);managerView.setUint8(0x31,1);managerView.setUint8(0x40,1);managerView.setInt32(0x34,5,true);
+  career.setInt32(0x13c,count+1,true);career.setInt32(0x140+count*4,clubId,true);return writeSave(save);
+}
 export function careerMenuView({language,careers=[]}={}){
  if(!Array.isArray(language))throw Error('language.json entries are required.');
  const list=(Array.isArray(careers)?careers:[]).map((entry,index)=>{
@@ -170,11 +188,11 @@ export function careerMenuView({language,careers=[]}={}){
   dialogs:{settings:languageText(language,10),about:languageText(language,97)}
  };
 }
-export async function createCareerRecord(saveBytes,{id,managerName,clubId,language,savedAt=Date.now(),summary,compress=true}={}){
+export async function createCareerRecord(saveBytes,{id,managerName,clubId,language,savedAt=Date.now(),summary,saveName,compress=true}={}){
  const bytes=saveBytes instanceof Uint8Array?saveBytes:new Uint8Array(saveBytes);
  const info=summary??careerSaveSummary(bytes);
  const encoded=compress?await compressCareerSave(bytes):bytes;
- return {id:id??`career-${savedAt.toString(36)}-${Math.random().toString(36).slice(2,8)}`,managerName:String(managerName??info.managerName),clubId:clubId??info.clubId,clubName:info.clubName,managerId:info.managerId,season:info.season,day:info.day,date:info.date,dateIso:info.dateIso,language:language??null,savedAt,size:bytes.length,encoding:compress?'gzip+base64':'base64',save:encodeBase64(encoded)};
+ return {id:id??`career-${savedAt.toString(36)}-${Math.random().toString(36).slice(2,8)}`,managerName:String(managerName??info.managerName),saveName:saveName===undefined?null:String(saveName),clubId:clubId??info.clubId,clubName:info.clubName,managerId:info.managerId,season:info.season,day:info.day,date:info.date,dateIso:info.dateIso,language:language??null,savedAt,size:bytes.length,encoding:compress?'gzip+base64':'base64',save:encodeBase64(encoded)};
 }
 function careerMetadata(recordValue){
  const {save:_encoded,...metadata}=recordValue;
@@ -183,23 +201,25 @@ function careerMetadata(recordValue){
 export function listStoredCareers(storage){
  const store=requireStorage(storage),raw=store.getItem(CAREER_INDEX_STORAGE_KEY);
  if(!raw)return [];
- try{const parsed=JSON.parse(raw);return Array.isArray(parsed)?parsed:[];}catch{return [];}
+ try{
+  const parsed=JSON.parse(raw);if(!Array.isArray(parsed))return [];
+  const seen=new Set();return parsed.filter(entry=>{if(!entry||entry.id===undefined||entry.id===null)return false;const id=String(entry.id);if(seen.has(id))return false;seen.add(id);return true;});
+ }catch{return [];}
 }
 export function writeStoredCareer(storage,recordValue){
  const store=requireStorage(storage);
  if(!recordValue||typeof recordValue.save!=='string')throw Error('Career record requires an encoded save.');
- const previous=listStoredCareers(store).filter(entry=>entry.id!==recordValue.id);
- for(;;){
-  try{
-   store.setItem(careerStorageKey(recordValue.id),JSON.stringify(recordValue));
-   store.setItem(CAREER_INDEX_STORAGE_KEY,JSON.stringify([careerMetadata(recordValue),...previous]));
-   store.setItem(CAREER_SAVE_STORAGE_KEY,JSON.stringify({id:recordValue.id,encoding:recordValue.encoding,size:recordValue.size,savedAt:recordValue.savedAt}));
-   return recordValue;
-  }catch(error){
-   if(!error||error.name!=='QuotaExceededError'||!previous.length)throw error;
-   const oldest=previous.pop();
-   store.removeItem(careerStorageKey(oldest.id));
-  }
+ const id=String(recordValue.id),previous=listStoredCareers(store).filter(entry=>String(entry.id)!==id),keys=[careerStorageKey(recordValue.id),CAREER_INDEX_STORAGE_KEY,CAREER_SAVE_STORAGE_KEY],before=new Map(keys.map(key=>[key,store.getItem(key)]));
+ try{
+  store.setItem(careerStorageKey(recordValue.id),JSON.stringify(recordValue));
+  store.setItem(CAREER_INDEX_STORAGE_KEY,JSON.stringify([careerMetadata(recordValue),...previous]));
+  store.setItem(CAREER_SAVE_STORAGE_KEY,JSON.stringify({id:recordValue.id,encoding:recordValue.encoding,size:recordValue.size,savedAt:recordValue.savedAt}));
+  return recordValue;
+ }catch(error){
+  let rollbackError=null;
+  for(const key of keys){try{const value=before.get(key);if(value===null||value===undefined)store.removeItem(key);else store.setItem(key,value);}catch(candidate){rollbackError??=candidate;}}
+  if(rollbackError)throw Error(`Career save failed and rollback was incomplete: ${error?.message??error}; ${rollbackError?.message??rollbackError}`);
+  throw error;
  }
 }
 export function readStoredCareer(storage,id){
@@ -226,20 +246,27 @@ export async function readActiveCareerSave(storage){
  if(!raw)return null;
  let parsed;
  try{parsed=JSON.parse(raw);}catch{parsed=raw;}
- if(parsed&&typeof parsed==='object'&&parsed.id&&!parsed.save)return readStoredCareerSave(store,parsed.id);
+  if(parsed&&typeof parsed==='object'&&parsed.id!==undefined&&parsed.id!==null&&!parsed.save)return readStoredCareerSave(store,parsed.id);
  return decodeCareerSave(parsed);
 }
 export function removeStoredCareer(storage,id){
  const store=requireStorage(storage);
- store.removeItem(careerStorageKey(id));
- store.setItem(CAREER_INDEX_STORAGE_KEY,JSON.stringify(listStoredCareers(store).filter(entry=>String(entry.id)!==String(id))));
- const raw=store.getItem(CAREER_SAVE_STORAGE_KEY);
- if(!raw)return;
- try{const parsed=JSON.parse(raw);if(parsed&&typeof parsed==='object'&&String(parsed.id)===String(id))store.removeItem(CAREER_SAVE_STORAGE_KEY);}catch{}
+ const index=listStoredCareers(store),remaining=index.filter(entry=>String(entry.id)!==String(id)),keys=[careerStorageKey(id),CAREER_INDEX_STORAGE_KEY,CAREER_SAVE_STORAGE_KEY],before=new Map(keys.map(key=>[key,store.getItem(key)]));
+ try{
+  store.removeItem(careerStorageKey(id));
+  store.setItem(CAREER_INDEX_STORAGE_KEY,JSON.stringify(remaining));
+  const raw=before.get(CAREER_SAVE_STORAGE_KEY);
+   if(raw){try{const parsed=JSON.parse(raw);if(parsed&&typeof parsed==='object'&&String(parsed.id)===String(id)){const next=remaining[0];if(next)store.setItem(CAREER_SAVE_STORAGE_KEY,JSON.stringify({id:next.id,encoding:next.encoding,size:next.size,savedAt:next.savedAt}));else store.removeItem(CAREER_SAVE_STORAGE_KEY);}}catch{}}
+ }catch(error){
+  let rollbackError=null;
+  for(const key of keys){try{const value=before.get(key);if(value===null||value===undefined)store.removeItem(key);else store.setItem(key,value);}catch(candidate){rollbackError??=candidate;}}
+  if(rollbackError)throw Error(`Career delete failed and rollback was incomplete: ${error?.message??error}; ${rollbackError?.message??rollbackError}`);
+  throw error;
+ }
 }
 function requireStorage(storage){
  const store=storage??(typeof localStorage==='undefined'?null:localStorage);
- if(!store||typeof store.getItem!=='function'||typeof store.setItem!=='function')throw Error('Career storage requires a localStorage-compatible object.');
+  if(!store||typeof store.getItem!=='function'||typeof store.setItem!=='function'||typeof store.removeItem!=='function')throw Error('Career storage requires a localStorage-compatible object.');
  return store;
 }
 export function mountCareerMenu(container,{language,onStart,clubs=[],template,storage,seed=2015,defaultManager='',onLog}={}){

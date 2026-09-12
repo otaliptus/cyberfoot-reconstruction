@@ -1,6 +1,7 @@
-import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';
-import assert from 'node:assert/strict';import {mkdirSync,writeFileSync} from 'node:fs';
-const resultsProof=process.env.RESULTS_PROOF==='1',output='/Users/talip/Documents/ChatGPT/misc/output/'+(resultsProof?'native-results-window':'native-lineup-match');mkdirSync(output,{recursive:true});
+import {chromium} from 'playwright';
+import {testOutput} from './browser-test-helpers.mjs';
+import assert from 'node:assert/strict';import {writeFileSync} from 'node:fs';
+const resultsProof=process.env.RESULTS_PROOF==='1',output=testOutput(resultsProof?'native-results-window':'native-lineup-match');
 const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1024,height:768}}),errors=[];page.on('pageerror',e=>errors.push(String(e)));
 await page.goto('http://127.0.0.1:8766/lineup-window-preview.html?manualClock=1'+(resultsProof?'&resultsIntegration=1':''));await page.waitForFunction(()=>window.lineupDevelopment);
 await page.evaluate(()=>window.lineupDevelopment.renderer.onLineupDrop({source:{slot:2},targetSlot:3,x:0,y:0}));

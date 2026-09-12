@@ -1,7 +1,8 @@
-import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';
+import {chromium} from 'playwright';
+import {testOutput} from './browser-test-helpers.mjs';
 import assert from 'node:assert/strict';
 import {mkdirSync} from 'node:fs';
-const output='/Users/talip/Documents/ChatGPT/misc/cyberfoot-web/output/play-forms';
+const output=testOutput('play-forms');
 mkdirSync(output,{recursive:true});
 const browser=await chromium.launch({headless:true});
 const page=await browser.newPage({viewport:{width:1280,height:800}});

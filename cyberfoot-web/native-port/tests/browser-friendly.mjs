@@ -1,14 +1,15 @@
-import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';
-import assert from 'node:assert/strict';import {mkdirSync,writeFileSync} from 'node:fs';
+import {chromium} from 'playwright';
+import {testOutput} from './browser-test-helpers.mjs';
+import assert from 'node:assert/strict';import {writeFileSync} from 'node:fs';
 
 // Native human route: Form13's original F9 menu shortcut opens Form81, where
 // booking a date appends the event/fixture and removes that date from the list.
-const output='/Users/talip/Documents/ChatGPT/misc/cyberfoot-web/output/friendly';mkdirSync(output,{recursive:true});
+const output=testOutput('friendly');
 const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1280,height:800}}),errors=[];
 page.on('pageerror',error=>errors.push(String(error)));page.on('console',message=>{if(message.type()==='error')errors.push('console: '+message.text());});
 const clickControl=async name=>{
  const point=await page.evaluate(name=>{const renderer=window.gameShell.renderer,target=renderer.hitTargets.find(entry=>entry.name===name&&entry.operation);if(!target)return null;const rect=renderer.canvas.getBoundingClientRect();return {x:rect.left+(target.x+target.width/2)*rect.width/renderer.canvas.width,y:rect.top+(target.y+target.height/2)*rect.height/renderer.canvas.height};},name);
- if(point)await page.mouse.click(point.x,point.y);else await page.evaluate(name=>window.gameShell.click(name),name);
+  assert.ok(point,`rendered hit target exists for ${name}`);await page.mouse.click(point.x,point.y);
 };
 await page.goto('http://127.0.0.1:8766/game.html?manualClock=1&autoInteractions=1');
 await page.waitForFunction(()=>window.gameShell?.form==='Form1',{timeout:60000});

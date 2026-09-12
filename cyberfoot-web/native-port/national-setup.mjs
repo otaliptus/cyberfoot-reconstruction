@@ -49,6 +49,22 @@ export function selectNationalPlayers(save,country,club,{rng}){
  for(const id of selected){pending.push([id,p.getInt32(id*304+0x20,true)]);p.setInt32(id*304+0x20,club,true);}
  if(pending.length)appendRows(save,'records_0066b544',pending);
 }
+function assignmentIndex(save,playerId){
+ const section=save.sections.find(s=>s.name==='records_0066b544'),v=view(section.data);
+ for(let i=0;i<section.count;i++)if(v.getInt32(i*8,true)===playerId)return i;
+ return -1;
+}
+export function assignNationalPlayer(save,playerId,nationalClubId){
+ const player=view(record(save,'players',playerId)),club=view(record(save,'clubs',nationalClubId)),previous=player.getInt32(0x20,true);
+ if(previous===nationalClubId)return false;
+ if(player.getInt32(0x1c,true)!==club.getInt32(0x3c,true))throw Error('Player nationality does not match the national squad.');
+ if(assignmentIndex(save,playerId)>=0)return false;
+ player.setInt32(0x20,nationalClubId,true);appendRows(save,'records_0066b544',[[playerId,previous]]);return true;
+}
+export function unassignNationalPlayer(save,playerId,nationalClubId){
+ const section=save.sections.find(s=>s.name==='records_0066b544'),player=view(record(save,'players',playerId)),row=assignmentIndex(save,playerId);if(row<0||player.getInt32(0x20,true)!==nationalClubId)return false;
+ const v=view(section.data),previous=v.getInt32(row*8+4,true),data=new Uint8Array((section.count-1)*section.recordSize);data.set(section.data.subarray(0,row*section.recordSize));data.set(section.data.subarray((row+1)*section.recordSize),row*section.recordSize);section.data=data;section.count--;section.marker=section.count;view(record(save,'players',playerId)).setInt32(0x20,previous,true);return true;
+}
 /** Whole005f3380: competitions7,8 and9 field8,3 and4 four-club groups of
  * national sides. Human-run clubs are skipped; eligible countries select a
  * squad, then the original completion flag at700 is set. */

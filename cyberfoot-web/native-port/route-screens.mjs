@@ -141,8 +141,8 @@ export function nationalAssignmentView(save,runtime,language,{index,state}={}){
  }
  const selected=[];
  for(let i=0;i<save.sections.find(s=>s.name==='records_0066b544').count;i++){
-  const row=view(record(save,'records_0066b544',i)),playerId=row.getInt32(0,true),assigned=row.getInt32(4,true);
-  if(assigned!==clubId)continue;
+   const row=view(record(save,'records_0066b544',i)),playerId=row.getInt32(0,true);
+   if(state?.players?.[playerId]?.clubId!==clubId)continue;
   const p=state?.players?.[playerId];if(!p)continue;
   selected.push({playerId,cells:{nximg2:'',nxnome2:p.name,nxposicao2:text(language,roleIds[p.role]??roleIds[0]),nxforca2:p.skill,nxidade2:p.age,nxid2:String(playerId),nxlado2:''}});
  }
@@ -158,7 +158,7 @@ export function nationalAssignmentView(save,runtime,language,{index,state}={}){
   TntLabel9:{Caption:text(language,128)},
   Label16:{Caption:text(language,677)},
   label14:{Caption:text(language,398)},
-  bt2:{Caption:text(language,484)},
+   bt2:{Caption:text(language,484),Enabled:true},
   XiButton1:{Caption:'>>'},XiButton2:{Caption:'<<'},xibutton3:{Caption:text(language,484)},
   c1:{Caption:text(language,128)},c2:{Caption:text(language,129)},c3:{Caption:text(language,131)},c4:{Caption:text(language,132)},c5:{Caption:text(language,50)},c6:{Caption:text(language,54)}
  };

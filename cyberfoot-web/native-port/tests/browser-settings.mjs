@@ -1,4 +1,4 @@
-import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';
+import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 
 const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1280,height:800}}),errors=[];
@@ -7,15 +7,18 @@ page.on('pageerror',error=>errors.push(String(error)));page.on('console',message
 await page.goto(`${baseUrl}/game.html?manualClock=1&automaticInteractions=1`);
 await page.waitForFunction(()=>window.gameShell?.form==='Form1',{timeout:60000});
 await page.evaluate(()=>window.gameShell.showGameSettings());await page.waitForFunction(()=>window.gameShell.form==='Form9');
+await page.evaluate(()=>window.gameShell.setRegisteredUnlock(true));
+await page.locator('[data-original-control="Form9.ComboBox2"]').selectOption({index:1});
 await page.locator('[data-original-control="Form9.ComboBox1"]').selectOption({index:1});
 await page.locator('[data-original-control="Form9.ckcopa"]').uncheck();
 await page.locator('[data-original-control="Form9.ckinter1"]').uncheck();
 await page.locator('[data-original-control="Form9.ckinter2"]').check();
 await page.evaluate(()=>window.gameShell.click('xibutton2'));await page.waitForFunction(()=>window.gameShell.form==='Form11');
-await page.locator('[data-original-control="Form11.Edit1"]').fill('Settings Tester');await page.evaluate(()=>window.gameShell.click('button1'));
+await page.locator('[data-original-control="Form11.Edit1"]').fill('Settings Tester');await page.evaluate(()=>window.gameShell.click('button1'));await page.waitForFunction(()=>window.gameShell.form==='Form11');
+await page.locator('[data-original-control="Form11.Edit1"]').fill('Second Settings Tester');await page.evaluate(()=>window.gameShell.click('button1'));
 await page.waitForFunction(()=>window.gameShell.form==='Form13',{timeout:60000});
 const configured=JSON.parse(await page.evaluate(()=>window.render_game_to_text()));
-assert.deepEqual(configured.settings,{mode:2,managerCount:1,flags:{'270':false,'368':false,'369':false,'370':false,'383':false,'384':false,'385':false,'1801':false}});
+assert.deepEqual(configured.settings,{mode:2,managerCount:2,flags:{'270':false,'368':false,'369':false,'370':false,'383':false,'384':false,'385':false,'1801':false}});
 assert.ok(configured.agenda.fixtureId>=0);assert.equal(configured.day,119);
 await page.evaluate(()=>window.gameShell.click('btjogar'));await page.waitForFunction(()=>window.gameShell.form==='Form87',{timeout:60000});
 await page.evaluate(()=>window.gameShell.click('bt_irprojogo'));await page.waitForFunction(()=>window.gameShell.form==='Form46',{timeout:30000});

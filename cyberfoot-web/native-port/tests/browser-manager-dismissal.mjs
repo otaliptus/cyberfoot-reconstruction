@@ -1,5 +1,6 @@
-import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';import assert from 'node:assert/strict';import {mkdirSync} from 'node:fs';
-const output='/Users/talip/Documents/ChatGPT/misc/output/native-manager-dismissal';mkdirSync(output,{recursive:true});
+import {chromium} from 'playwright';import assert from 'node:assert/strict';
+import {testOutput} from './browser-test-helpers.mjs';
+const output=testOutput('native-manager-dismissal');
 const browser=await chromium.launch({headless:true});
 try{for(const action of ['button','Enter','Escape']){
  const page=await browser.newPage({viewport:{width:1024,height:768}}),errors=[];page.on('pageerror',e=>errors.push(String(e)));

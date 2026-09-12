@@ -1,6 +1,7 @@
-import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';
-import assert from 'node:assert/strict';import {mkdirSync,writeFileSync} from 'node:fs';
-const output='/Users/talip/Documents/ChatGPT/misc/output/native-route-screens';mkdirSync(output,{recursive:true});
+import {chromium} from 'playwright';
+import {testOutput} from './browser-test-helpers.mjs';
+import assert from 'node:assert/strict';import {writeFileSync} from 'node:fs';
+const output=testOutput('native-route-screens');
 const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1024,height:768}}),errors=[];
 page.on('pageerror',e=>errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')errors.push('console: '+m.text());});
 const continueControl={Form13:'Form13.btjogar',Form26:'Form26.bt3',Form75:'Form75.btjogar',Form77:'Form77.bt2'};

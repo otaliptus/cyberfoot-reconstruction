@@ -1,11 +1,12 @@
-import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';
-import assert from 'node:assert/strict';import {mkdirSync,writeFileSync} from 'node:fs';
+import {chromium} from 'playwright';
+import {testOutput} from './browser-test-helpers.mjs';
+import assert from 'node:assert/strict';import {writeFileSync} from 'node:fs';
 // Live Form46 playback: manual clock, real pointer clicks from the main menu
 // into a new career, then the watched match plays start-to-finish on the
 // shell's live tick driver (manager.refresh + WebAudio sounds) until the
 // competition's native result route (Form26 or Form67).
 // NOT registered in run-all.mjs (manual-clock live play only).
-const output='/Users/talip/Documents/ChatGPT/misc/cyberfoot-web/output/live-match';mkdirSync(output,{recursive:true});
+const output=testOutput('live-match');
 const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1280,height:800}}),errors=[];
 page.on('pageerror',error=>errors.push(String(error)));page.on('console',message=>{if(message.type()==='error')errors.push('console: '+message.text());});
 await page.goto('http://127.0.0.1:8766/game.html?manualClock=1&autoInteractions=1');
@@ -16,7 +17,7 @@ const clickControl=async name=>{
   if(!target)return null;const rect=renderer.canvas.getBoundingClientRect();
   return {x:rect.left+(target.x+target.width/2)*rect.width/renderer.canvas.width,y:rect.top+(target.y+target.height/2)*rect.height/renderer.canvas.height};
  },name);
- if(!point)return page.evaluate(name=>window.gameShell.click(name),name);
+ assert.ok(point,`rendered hit target exists for ${name}`);
  await page.mouse.click(point.x,point.y);
  return true;
 };

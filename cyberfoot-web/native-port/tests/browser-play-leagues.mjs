@@ -1,11 +1,12 @@
-import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';
+import {chromium} from 'playwright';
+import {testOutput} from './browser-test-helpers.mjs';
 import assert from 'node:assert/strict';import {mkdirSync,writeFileSync} from 'node:fs';
 // Fresh-career play end to end (NOT registered in run-all.mjs):
 // new game -> team -> hub -> lineup -> live cup match to Form26 table
 // -> hub -> live league match #1 to Form67 -> hub -> live league match #2.
 // Asserts results/standings advance and no console/unhandled errors.
 // Screenshots each screen under cyberfoot-web/output/play-leagues/.
-const output='/Users/talip/Documents/ChatGPT/misc/cyberfoot-web/output/play-leagues';mkdirSync(output,{recursive:true});mkdirSync(output+'/client',{recursive:true});
+const output=testOutput('play-leagues');mkdirSync(output+'/client',{recursive:true});
 const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1280,height:800}}),errors=[];
 page.on('pageerror',error=>errors.push(String(error)));page.on('console',message=>{if(message.type()==='error')errors.push('console: '+message.text());});
 const text=async()=>JSON.parse(await page.evaluate(()=>window.render_game_to_text()));
@@ -15,7 +16,7 @@ const clickControl=async name=>{
   if(!target)return null;const rect=renderer.canvas.getBoundingClientRect();
   return {x:rect.left+(target.x+target.width/2)*rect.width/renderer.canvas.width,y:rect.top+(target.y+target.height/2)*rect.height/renderer.canvas.height};
  },name);
- if(!point)return page.evaluate(name=>window.gameShell.click(name),name);
+  assert.ok(point,`rendered hit target exists for ${name}`);
  await page.mouse.click(point.x,point.y);
  return true;
 };

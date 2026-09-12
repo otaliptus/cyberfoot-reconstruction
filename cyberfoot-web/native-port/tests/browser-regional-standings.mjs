@@ -1,5 +1,6 @@
-import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';import assert from 'node:assert/strict';import {mkdirSync} from 'node:fs';
-const output='/Users/talip/Documents/ChatGPT/misc/output/native-regional-screen';mkdirSync(output,{recursive:true});const browser=await chromium.launch({headless:true});
+import {chromium} from 'playwright';import assert from 'node:assert/strict';
+import {testOutput} from './browser-test-helpers.mjs';
+const output=testOutput('native-regional-screen');const browser=await chromium.launch({headless:true});
 try{for(let format=Number(process.env.REGIONAL_FORMAT)||1;format<=7;format++){
  const page=await browser.newPage({viewport:{width:format===7?640:1024,height:768}}),errors=[];page.on('pageerror',e=>{errors.push(String(e));console.error('Regional format '+format+': '+e.stack);});
  await page.goto('http://localhost:8766/manager-offer-preview.html?manualClock=1&regionalFixture='+format);await page.waitForFunction(()=>window.offerDevelopment?.host.active);const hash=()=>page.evaluate(async()=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',window.offerDevelopment.save()))).map(n=>n.toString(16).padStart(2,'0')).join(''));const before=await hash();

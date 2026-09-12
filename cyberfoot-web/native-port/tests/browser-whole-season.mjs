@@ -1,4 +1,5 @@
-import { chromium } from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';
+import { chromium } from 'playwright';
+import { testOutputFile } from './browser-test-helpers.mjs';
 import assert from 'node:assert/strict';
 
 const baseUrl = process.env.CYBERFOOT_BASE_URL ?? 'http://127.0.0.1:8766';
@@ -82,8 +83,8 @@ async function runSeason(mode) {
         y: rect.top + (local.y * rect.height) / renderer.canvas.height,
       };
     }, name);
-    if (point) await page.mouse.click(point.x, point.y);
-    else await page.evaluate((name) => window.gameShell.click(name), name);
+    assert.ok(point, `rendered hit target exists for ${name}`);
+    await page.mouse.click(point.x, point.y);
   };
   const check = async () => {
     const state = await text();
@@ -240,6 +241,11 @@ async function runSeason(mode) {
     }
     if (state.form === 'Form85') {
       await clickControl('xibutton1');
+      await page.waitForFunction(() => window.gameShell.form === 'Form81', null, {
+        timeout: 30000,
+      });
+      visited.add('Form81');
+      await clickControl('XiButton1');
       await page.waitForFunction(
         () => ['Form13', 'Form87'].includes(window.gameShell.form),
         null,
@@ -258,7 +264,7 @@ async function runSeason(mode) {
   assert.ok(visited.has('Form36'), `${label} opened standings`);
   assert.ok(visited.has('Form62'), `${label} opened career calendar`);
   await page.screenshot({
-    path: `/Users/talip/Documents/ChatGPT/misc/output/whole-season-${label}.png`,
+    path: testOutputFile(`whole-season-${label}.png`),
   });
   await context.close();
   return {

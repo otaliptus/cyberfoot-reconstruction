@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';import fs from 'node:fs';
-import {readSave,writeSave,record} from '../save-format.mjs';import {currentCareerDate} from '../calendar.mjs';import {nationalEligibility,nationalSetup} from '../national-setup.mjs';import {restoreNationalAssignments} from '../national-assignment-reset.mjs';import {OriginalRandom} from '../match-core.mjs';
+import {readSave,writeSave,record} from '../save-format.mjs';import {currentCareerDate} from '../calendar.mjs';import {nationalEligibility,nationalSetup,assignNationalPlayer,unassignNationalPlayer} from '../national-setup.mjs';import {restoreNationalAssignments} from '../national-assignment-reset.mjs';import {OriginalRandom} from '../match-core.mjs';
 const load=()=>readSave(fs.readFileSync(new URL('./original-career.s15',import.meta.url))),v=b=>new DataView(b.buffer,b.byteOffset,b.byteLength);
 const countries=[3,29,11,65,72,85,195,9,10,14,21,42],save=load(),c=v(save.career),date=currentCareerDate(save),players=save.sections.find(s=>s.name==='players'),p=v(players.data),clubs=[];
 c.setInt32(0x88,8,true);c.setInt32(0x700,0,true);
@@ -20,5 +20,6 @@ const expectedRestore=beforeClubs.slice();for(let i=0;i<assignments.count;i++)ex
 restoreNationalAssignments(save,{nationalManagerCount:0});
 for(const id of ids)assert.equal(clubOf(id),expectedRestore[id],`Player ${id} restored in record order`);
 assert.equal(assignments.count,0);assert.equal(assignments.data.length,0);
+const nationalClub=clubs[0],candidate=ids.find(id=>id>0&&p.getInt32(id*304+0x1c,true)===countries[0]&&clubOf(id)!==nationalClub);assert.ok(candidate!==undefined);const candidateClub=clubOf(candidate);assert.equal(assignNationalPlayer(save,candidate,nationalClub),true);assert.equal(clubOf(candidate),nationalClub);assert.equal(assignNationalPlayer(save,candidate,nationalClub),false);assert.equal(unassignNationalPlayer(save,candidate,nationalClub),true);assert.equal(clubOf(candidate),candidateClub);assert.equal(assignments.count,0);
 const guarded=load(),guardedBytes=writeSave(guarded);assert.throws(()=>nationalSetup(guarded,{}, {date}),/random generator/);assert.throws(()=>nationalSetup(guarded,{}, {rng:new OriginalRandom(1)}),/calendar date/);assert.deepEqual(writeSave(guarded),guardedBytes);
 console.log('Original career fixture: 12 national sides, full-quota selections, ineligible countries preserved, deterministic replay, save round-trip, assignment restoration and argument guards passed.');

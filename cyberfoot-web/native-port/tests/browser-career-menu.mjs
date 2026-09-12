@@ -1,6 +1,7 @@
-import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';
-import assert from 'node:assert/strict';import {mkdirSync,writeFileSync} from 'node:fs';
-const output='/Users/talip/Documents/ChatGPT/misc/output/native-career-menu';mkdirSync(output,{recursive:true});
+import {chromium} from 'playwright';
+import {testOutput} from './browser-test-helpers.mjs';
+import assert from 'node:assert/strict';import {writeFileSync} from 'node:fs';
+const output=testOutput('native-career-menu');
 const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1024,height:768}}),errors=[];
 page.on('pageerror',error=>errors.push(String(error)));page.on('console',message=>{if(message.type()==='error')errors.push('console: '+message.text());});
 await page.goto('http://127.0.0.1:8766/career-menu-preview.html?reset=1&club=11&manager=Browser%20Tester&manualClock=1');

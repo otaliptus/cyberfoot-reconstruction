@@ -1,10 +1,10 @@
-import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';
+import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
 
 const baseUrl=process.env.CYBERFOOT_BASE_URL??'http://127.0.0.1:8766';
 const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1280,height:800}}),errors=[];
 page.on('pageerror',error=>errors.push(String(error)));page.on('console',message=>{if(message.type()==='error')errors.push('console: '+message.text());});
-const clickControl=async name=>{const point=await page.evaluate(name=>{const renderer=window.gameShell.renderer,target=renderer.hitTargets.find(entry=>entry.name===name&&entry.operation);if(!target)return null;const rect=renderer.canvas.getBoundingClientRect();return {x:rect.left+(target.x+target.width/2)*rect.width/renderer.canvas.width,y:rect.top+(target.y+(target.height/2))*rect.height/renderer.canvas.height};},name);if(point)await page.mouse.click(point.x,point.y);else await page.evaluate(name=>window.gameShell.click(name),name);};
+const clickControl=async name=>{const point=await page.evaluate(name=>{const renderer=window.gameShell.renderer,target=renderer.hitTargets.find(entry=>entry.name===name&&entry.operation);if(!target)return null;const rect=renderer.canvas.getBoundingClientRect();return {x:rect.left+(target.x+target.width/2)*rect.width/renderer.canvas.width,y:rect.top+(target.y+(target.height/2))*rect.height/renderer.canvas.height};},name);assert.ok(point,`rendered hit target exists for ${name}`);await page.mouse.click(point.x,point.y);};
 await page.goto(`${baseUrl}/game.html?manualClock=1&automaticInteractions=1`);await page.waitForFunction(()=>window.gameShell?.form==='Form1',{timeout:60000});
 await clickControl('Shape4');await page.waitForFunction(()=>window.gameShell.form==='Form42');
 await page.locator('[data-original-control="Form42.Edit1"]').fill('M Steen 77');await page.locator('[data-original-control="Form42.Edit2"]').fill('6195978');await clickControl('xibutton2');

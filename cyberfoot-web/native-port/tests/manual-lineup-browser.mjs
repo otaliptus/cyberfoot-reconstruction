@@ -1,4 +1,4 @@
-import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';import assert from 'node:assert/strict';
+import {chromium} from 'playwright';import assert from 'node:assert/strict';
 const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1100,height:800}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
 const open=async()=>{await page.goto('http://127.0.0.1:8765/lineup-window-preview.html?check=manual');await page.waitForFunction(()=>typeof window.render_game_to_text==='function');};const state=async()=>JSON.parse(await page.evaluate(()=>window.render_game_to_text()));
 const point=async slot=>page.evaluate(slot=>{const r=window.lineupDevelopment.renderer,t=r.slotTargets.find(t=>t.slot===slot),b=r.canvas.getBoundingClientRect();return {x:b.left+(t.x+20)*b.width/r.canvas.width,y:b.top+(t.y+20)*b.height/r.canvas.height};},slot);

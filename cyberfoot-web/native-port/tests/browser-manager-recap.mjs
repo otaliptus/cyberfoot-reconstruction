@@ -1,5 +1,6 @@
-import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';import assert from 'node:assert/strict';import {mkdirSync} from 'node:fs';
-const output='/Users/talip/Documents/ChatGPT/misc/output/native-manager-recap';mkdirSync(output,{recursive:true});const browser=await chromium.launch({headless:true});
+import {chromium} from 'playwright';import assert from 'node:assert/strict';
+import {testOutput} from './browser-test-helpers.mjs';
+const output=testOutput('native-manager-recap');const browser=await chromium.launch({headless:true});
 try{for(const scenario of ['normal','fast','mixed','scaled']){
  const page=await browser.newPage({viewport:scenario==='scaled'?{width:640,height:480}:{width:1024,height:768}}),errors=[];page.on('pageerror',e=>errors.push(String(e)));await page.goto('http://127.0.0.1:8766/manager-recap-preview.html?manualClock=1&'+scenario+'=1');
  if(scenario==='mixed'){await page.waitForFunction(()=>window.recapDevelopment?.renderer.frame?.form==='Form31');assert.equal(JSON.parse(await page.evaluate(()=>window.render_game_to_text())).finished,false);await page.keyboard.press('Enter');}

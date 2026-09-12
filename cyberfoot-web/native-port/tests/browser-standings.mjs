@@ -1,5 +1,6 @@
-import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';import assert from 'node:assert/strict';import {mkdirSync} from 'node:fs';
-const output='/Users/talip/Documents/ChatGPT/misc/output/native-standings';mkdirSync(output,{recursive:true});const browser=await chromium.launch({headless:true});
+import {chromium} from 'playwright';import assert from 'node:assert/strict';
+import {testOutput} from './browser-test-helpers.mjs';
+const output=testOutput('native-standings');const browser=await chromium.launch({headless:true});
 try{for(const width of [1024,640]){const page=await browser.newPage({viewport:{width,height:768}}),errors=[];page.on('pageerror',e=>errors.push(String(e)));await page.goto('http://localhost:8766/manager-offer-preview.html?manualClock=1&standingsFixtures=1'+(width===640?'&mode2=1':''));await page.waitForFunction(()=>window.offerDevelopment?.host.active);
  await page.locator('label[for="Form30.r2"]').click();const before=await page.evaluate(()=>Array.from(window.offerDevelopment.save()));
  await page.locator('[data-original-control="Form30.bt2"]').click();await page.waitForFunction(()=>window.offerDevelopment.renderer.frame?.form==='Form36');

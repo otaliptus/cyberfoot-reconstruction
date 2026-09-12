@@ -1,4 +1,4 @@
-import {chromium} from '/Users/talip/.codex/skills/develop-web-game/node_modules/playwright/index.mjs';import assert from 'node:assert/strict';
+import {chromium} from 'playwright';import assert from 'node:assert/strict';
 const browser=await chromium.launch({headless:true});try{for(const unemployed of [false,true])for(const accept of [false,true]){
  const page=await browser.newPage({viewport:{width:accept?640:1024,height:768}}),errors=[];page.on('pageerror',e=>errors.push(String(e)));await page.goto('http://localhost:8766/manager-career-preview.html?manualClock=1'+(unemployed?'&unemployed=1':''));await page.waitForFunction(()=>window.managerCareerDevelopment?.dialogs.offer.active);
  const state=()=>page.evaluate(()=>JSON.parse(window.render_game_to_text())),before=await state();assert.equal(before.finished,false);assert.equal(before.presented,1);assert.equal(before.managerClub,unemployed?-1:11);const destination=before.offer.choices[0].clubId;
