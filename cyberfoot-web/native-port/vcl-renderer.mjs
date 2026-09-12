@@ -359,7 +359,8 @@ function gaugePrimitive(ctx,p,x,y,w,h,parentFont){
  ctx.primitives.push({kind:'gauge',x,y,w,h,progress:Number(p.Progress??0),max:Number(p.MaxValue??100)||100,color:delphiColor(p.Color??'clWhite'),foreColor:delphiColor(p.ForeColor??'#008000'),showText:p.ShowText===true,font:fontSpec(p,parentFont)});
 }
 function progressBarPrimitive(ctx,p,x,y,w,h){
- ctx.primitives.push({kind:'progress',x,y,w,h,progress:Number(p.Position??0),max:Number(p.Max??100)||100,foreColor:'#000080',background:'#d4d0c8'});
+  const progress=Number(p.Position),max=Number(p.Max??p.Maximum??100)||100,advanced=p['Appearance.ProgressFill.Color']!==undefined;
+  ctx.primitives.push({kind:'progress',x,y,w,h,progress:Number.isFinite(progress)?progress:0,max,foreColor:delphiColor(p['Appearance.ProgressFill.Color']??'#000080'),background:delphiColor(p['Appearance.BackGroundFill.Color']??'clGray'),valueVisible:p['Appearance.ValueVisible']===true,progressFont:fontSpec({'Font.Color':p['Appearance.ProgressFont.Color']??'clWhite','Font.Height':p['Appearance.ProgressFont.Height']??-11},ctx.parentFont),advanced});
 }
 function trackBarPrimitive(ctx,p,x,y,w,h){
  ctx.primitives.push({kind:'trackbar',x,y,w,h,position:Number(p.Position??0),max:Number(p.Max??10)||10,vertical:p.Orientation==='trVertical',lineColor:delphiColor(p.LineColor??'#808080'),thumbColor:'#d4d0c8'});
@@ -841,9 +842,10 @@ function paintPrimitive(ctx,prim,images){
    return;
   }
   case 'progress':{
-   ctx.fillStyle=prim.background;ctx.fillRect(prim.x,prim.y,prim.w,prim.h);ctx.strokeStyle='#808080';ctx.strokeRect(prim.x+.5,prim.y+.5,prim.w-1,prim.h-1);
-   for(let bx=prim.x+1;bx<prim.x+prim.w-1;bx+=3){ctx.fillStyle='#ffffff';ctx.fillRect(bx,prim.y+1,1,prim.h-2);}
-   ctx.fillStyle=prim.foreColor;ctx.fillRect(prim.x+1,prim.y+1,Math.max(0,Math.min(1,prim.progress/prim.max))*(prim.w-2),prim.h-2);return;
+    ctx.fillStyle=prim.background;ctx.fillRect(prim.x,prim.y,prim.w,prim.h);ctx.strokeStyle='#808080';ctx.strokeRect(prim.x+.5,prim.y+.5,prim.w-1,prim.h-1);
+    const fillWidth=Math.max(0,Math.min(1,prim.progress/prim.max))*(prim.w-2);ctx.fillStyle=prim.foreColor;ctx.fillRect(prim.x+1,prim.y+1,fillWidth,prim.h-2);
+    if(!prim.advanced)for(let bx=prim.x+1;bx<prim.x+prim.w-1;bx+=3){ctx.fillStyle='#ffffff';ctx.fillRect(bx,prim.y+1,1,prim.h-2);}
+    if(prim.valueVisible){ctx.font=fontCss(prim.progressFont);ctx.fillStyle=prim.progressFont.color;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(`${Math.round(100*prim.progress/prim.max)}%`,prim.x+prim.w/2,prim.y+prim.h/2+1);}return;
   }
   case 'trackbar':{
    ctx.fillStyle='#d4d0c8';ctx.fillRect(prim.x,prim.y,prim.w,prim.h);

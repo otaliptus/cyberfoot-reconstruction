@@ -619,14 +619,14 @@ function applyHubPanels(frame){
  return frame;
 }
 function showHub(){
-  hubSelectedPlayer=-1;hubPlayerPanel=true;
-  const frame=applyHubPanels(clubHubView(save,language,{state,date:currentDate()}));
+   hubSelectedPlayer=-1;hubPlayerPanel=true;
+   const frame=applyHubPanels(clubHubView(save,language,{state,date:currentDate(),selectedPlayerId:hubSelectedPlayer}));
   frame.selectedPlayerId=hubSelectedPlayer;
   void manager.open(frame);updateDevStatus();
 }
 function refreshHub(){
- if(!save||renderer.frame?.form!=='Form13')return;
- const frame=applyHubPanels(clubHubView(save,language,{state,date:currentDate()}));
+  if(!save||renderer.frame?.form!=='Form13')return;
+  const frame=applyHubPanels(clubHubView(save,language,{state,date:currentDate(),selectedPlayerId:hubSelectedPlayer}));
  frame.selectedPlayerId=hubSelectedPlayer;
  manager.update(frame);updateDevStatus();
 }
@@ -670,23 +670,24 @@ renderer.register('Form13.lb_infonextClick',()=>{if(routeScreen||noticeDepth>0)r
 // the hub player for contract/sell flows; Label24 opens registration; the top
 // drag bar is silent chrome; all remaining original ops without a ported engine
 // surface a no-op dialog (last resort, reported).
+function hubRosterRow(index){
+  const roster=rows??[],id=Number(index);
+  return roster.find(row=>row.playerId===id)??roster[id];
+}
 renderer.register('Form13.gridview1SelectCell',index=>{
- const roster=rows??[];
- const row=roster[Number(index)||0];
- if(row)hubSelectedPlayer=row.playerId;
- refreshHub();
+  const row=hubRosterRow(index);
+  if(row)hubSelectedPlayer=row.playerId;
+  refreshHub();
 });
 renderer.register('Form13.gridview1CellClick',index=>{
- const roster=rows??[];
- const row=roster[Number(index)||0];
- if(row)hubSelectedPlayer=row.playerId;
- refreshHub();
+  const row=hubRosterRow(index);
+  if(row)hubSelectedPlayer=row.playerId;
+  refreshHub();
 });
 renderer.register('Form13.gridview1DblClick',index=>{
- const roster=rows??[];
- const row=roster[Number(index)||0];
- if(row)hubSelectedPlayer=row.playerId;
- refreshHub();
+  const row=hubRosterRow(index);
+  if(row)hubSelectedPlayer=row.playerId;
+  refreshHub();
 });
 function hubContext(){return {save,language,state,clubId,playerId:hubSelectedPlayer,crestAssets};}
 function bankLoanFrame(){return loanView(bankLoan.state,language);}
