@@ -689,7 +689,7 @@ renderer.register('Form13.gridview1DblClick',index=>{
   if(row)hubSelectedPlayer=row.playerId;
   refreshHub();
 });
-function hubContext(){return {save,language,state,clubId,playerId:hubSelectedPlayer,crestAssets};}
+function hubContext(){return {save,language,state,clubId,playerId:selectedHubPlayer(),crestAssets};}
 function bankLoanFrame(){return loanView(bankLoan.state,language);}
 function openBankLoan(){
  if(!save)return;
@@ -779,7 +779,10 @@ renderer.register('Form13.Label24Click',()=>openRegistration());
 renderer.register('Form13.Sairdojogo1Click',()=>showMenu());
 renderer.register('Form13.barraMouseDown',point=>openHubForm(barraFormAt(point?.x??0,point?.y??0)));
 for(const [op,form] of Object.entries(FORM13_TARGET))renderer.register('Form13.'+op,()=>openHubForm(form));
-const selectedHubPlayer=()=>hubSelectedPlayer>=0?hubSelectedPlayer:-1;
+// Form13 displays the first roster row when no row has been clicked yet. Keep
+// action buttons aligned with that visible default instead of requiring a
+// separate, invisible selection step.
+const selectedHubPlayer=()=>hubSelectedPlayer>=0?hubSelectedPlayer:(rows?.[0]?.playerId??-1);
 renderer.register('Form13.Button4Click',()=>{if(withdrawPlayerFromTransferList(save,selectedHubPlayer()))refreshHub();});
 renderer.register('Form13.Disponibilizarparaemprstimo1Click',()=>{const id=selectedHubPlayer();if(id>=0&&listPlayerForLoan(save,id,{clubId}))refreshHub();});
 renderer.register('Form13.Retirardoemprstimo1Click',()=>{const id=selectedHubPlayer();if(id>=0&&withdrawPlayerFromLoanList(save,id))refreshHub();});
