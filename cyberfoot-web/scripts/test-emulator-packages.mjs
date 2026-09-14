@@ -43,10 +43,27 @@ function entries(bytes){
  return result;
 }
 const originalWine=entries(Buffer.concat(Array.from({length:17},(_,i)=>readFileSync(new URL('wine.part'+i,root))))),restored=entries(wine);
-assert.equal(restored.size,originalWine.size);
-for(const [name,contents] of originalWine)assert.deepEqual(restored.get(name),contents,name);
+const retainedCodepages=new Set([1252,1254,437,850,857,20127,28591,28599]);
+const removedWine=new Set(manifest['boxedwine.zip'].removedFiles);
+for(const [name,contents] of originalWine){
+ const cp=name.match(/\/c_(\d+)\.nls$/),remove=cp&&!retainedCodepages.has(Number(cp[1]));
+ assert.equal(removedWine.has(name),Boolean(remove),name);
+ if(remove)assert.equal(restored.has(name),false,name);
+ else assert.deepEqual(restored.get(name),contents,name);
+}
+assert.equal(restored.size,originalWine.size-removedWine.size);
+const originalGame=entries(Buffer.concat(Array.from({length:3},(_,i)=>readFileSync(new URL('cyberfoot.part'+i,root))))),retainedGame=entries(original);
+const retainedLanguages=new Set(['languages/97.cft','languages/971.cft','languages/default.cft','languages/192.cft']);
+const removedGame=new Set(manifest['cyberfoot.zip'].removedFiles);
+for(const [name,contents] of originalGame){
+ const remove=name.startsWith('languages/')&&name.endsWith('.cft')&&!retainedLanguages.has(name);
+ assert.equal(removedGame.has(name),remove,name);
+ if(remove)assert.equal(retainedGame.has(name),false,name);
+ else assert.deepEqual(retainedGame.get(name),contents,name);
+}
+assert.equal(retainedGame.size,originalGame.size-removedGame.size);
 corrupt=true;CyberfootPackages.prefetch('','cyberfoot.zip');
 await assert.rejects(CyberfootPackages.load('','cyberfoot.zip'),/checksum mismatch/);
 corrupt=false;assert.ok(await CyberfootPackages.load('','cyberfoot.zip'));
 assert.equal(await CyberfootPackages.load('','unknown.zip'),null);
-console.log(`Prefetch consumes each part once with at most four downloads; ${restored.size} restored Wine entries match original bytes/CRC; corruption rejects and retry succeeds.`);
+console.log(`Prefetch consumes each part once with at most four downloads; ${restored.size} Wine entries and ${retainedGame.size} game entries match original bytes/CRC; only unrelated codepages/translations omitted; corruption rejects and retry succeeds.`);

@@ -1,5 +1,11 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-14 — English/Turkish delivery packages
+- User authorized removal of other locales. pack-emulator.py omits120 Wine codepage entries and14 game translations, retaining eight English/Turkish/ASCII/Latin codepages, all shared Unicode/case/normalization/sort tables, English97/971/default and Turkish192. Manifest records all omissions; original source archives untouched.
+- Combined archive download55,137,315→54,269,313 bytes, saving868,002 (1.57%). Deduplicated NLS compressed streams2,684,827→1,981,634 bytes. English/Turkish UI visible; dropdown contains exactly these two. Both menus and Turkish settings/characters inspected; required English game-client screenshot passes.
+- Expanded package test passes all3,131 retained Wine and1,684 retained game entries byte/CRC comparisons, exact omission policy, fresh RNG seeds, original mode, bounded prefetch, corrupt rejection/retry. Targeted lint and diff checks pass. See performance report locale section for exact figures.
+
+
 ### 2026-09-14 — Further emulator startup optimization
 - Published code80c8825 as17366257. Stable public loader files exactly match source and isolation headers pass. Public first menu frame20,756ms, package requests536–4,193ms overlap WASM590–1,059ms; zero browser errors/long tasks in10-second idle sample. Public New Game screenshot inspected.
 - Prefetch configured Wine/game packages during runtime initialization; consume once, sharing a four-part global request limit. Preserve payload/unknown package fallback behavior and fresh per-launch RNG patching.

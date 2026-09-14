@@ -27,3 +27,20 @@ The official site, https://www.cyberfoot.org/, currently directs users to Androi
 ## Publication
 
 Published code `80c8825` as deployment https://17366257.cyberfoot-original-emulator.pages.dev/. The stable site serves byte-identical loader files and the required isolation headers. Its cold browser check reached the first menu image at20,756ms, with package requests536–4,193ms overlapping WASM590–1,059ms; zero browser errors and zero long tasks in the ten-second idle sample. The public New Game screenshot was inspected.
+
+## English/Turkish locale reduction
+
+At the user's request, the current package profile now omits 120 unrelated Wine code-page files (60 tables in two locations) and 14 game translation files. Keep Windows 1252/1254, OEM 437/850/857, ASCII 20127, Latin-1/Latin-5 28591/28599. Shared `locale.nls`, `l_intl.nls`, `sortdefault.nls` and all normalization tables remain. These contain shared Unicode/locale services and are not independent removable language packs. Wine's locale initialization uses the locale mapping, case table and ANSI/OEM tables: https://raw.githubusercontent.com/wine-mirror/wine/wine-11.0/dlls/ntdll/locale.c.
+
+| Download measure | Before | After |
+| --- | ---: | ---: |
+| Unique Wine NLS compressed streams (excluding ZIP headers) | 2,684,827 bytes | 1,981,634 bytes |
+| Wine transport archive | 46,419,497 bytes | 45,702,970 bytes |
+| Game transport archive | 8,717,818 bytes | 8,566,343 bytes |
+| Combined archives | 55,137,315 bytes | 54,269,313 bytes |
+
+Total download saving is 868,002 bytes, about 1.57% of those archives. The original Wine NLS files, including duplicate filesystem copies, occupied 20,652,868 uncompressed bytes. Most of that was already compressed and deduplicated; removing languages does not save that entire uncompressed size on the network. Runtime and graphics-overlay transfers are additional to the combined archive figures.
+
+English `97.cft`, legacy English `971.cft`, English fallback `default.cft` and Turkish `192.cft` remain byte-identical. The visible language selector offers exactly English and Türkçe. The original source archives are retained; pruning applies to generated delivery packages. No game executable, graphics, teams or players were altered by this profile.
+
+The expanded package test verifies all 3,131 retained Wine entries and 1,684 retained game entries against original bytes and CRCs, with independently constrained omission rules. Integrity rejection/retry, prefetch reuse, fresh random seeds and original-executable mode still pass. Targeted lint and diff checks pass. Required browser-client English startup screenshot and interactive English/Turkish menu, two-language dropdown and Turkish settings screenshots were inspected, including accented Turkish text. Evidence: `output/emulator-locales/`.
