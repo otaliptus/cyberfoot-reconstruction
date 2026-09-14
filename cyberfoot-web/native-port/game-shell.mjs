@@ -37,7 +37,7 @@ import {createSeasonMoveHost} from './season-move-host.mjs';
 import {selectResultHistory,resultDetailLabels,resultRows,resultLineupRows,resultSubstitutionChain} from './results-data.mjs';
 import {settleAutomaticDecider} from './knockout-decider.mjs';
 import {finalizeCupChampion} from './champion-finalization.mjs';
-import {selectNationalPlayers,assignNationalPlayer,unassignNationalPlayer} from './national-setup.mjs';
+import {assignNationalPlayer,unassignNationalPlayer} from './national-setup.mjs';
 import {clubHubView,competitionTableView,nationalHubView,nationalAssignmentView,automaticNextScreens,nationalAssignmentCandidates} from './route-screens.mjs';
 import {nationalManagerAssignmentIndex} from './results-routing.mjs';
 import {clubCrestPath} from './club-crest.mjs';
@@ -99,6 +99,7 @@ let weeklySel={leagueIdx:0,division:1,season:null,round:null,mode:0};
 let customCareer=null;
 const soundPlayer=createMatchSoundPlayer({basePath:'assets/sounds'});
 let clock=2015;
+let humanLineupQueue=[],humanLineupIndex=0,roundPrimaryClub=11;
 
 /* --------------------------------- shared play-forms state + notice dialog */
 // Persistent UI state for Form9 controls whose values are consumed when the
@@ -256,8 +257,6 @@ function newGameFrame(){
  const crestClubs=effective.map(club=>({...club,crest:clubCrestPath(templateSave,club.id,crestAssets)}));
  const nationalityIds=Array.from({length:202},(_,id)=>id).filter(id=>language[786+id]?.text);
  return {form:'Form11',properties:{
-   Label3:{Caption:language[43].text},Label4:{Caption:language[44].text},Label1:{Caption:language[45].text},Label2:{Caption:language[141].text},
-   Label5:{Visible:false},Label6:{Visible:false},Label7:{Visible:false},Label8:{Visible:false},
     Edit1:{Text:newGameName,Left:40,Top:653,Width:226,Height:27},
     combo1:{Items:countryIds.map(id=>language[786+id]?.text??`${id}`),ItemIndex:countryIndex,OnChange:'combo2Change',Left:40,Top:102,Width:185,Height:24},
     combonac:{Items:nationalityIds.map(id=>language[786+id].text),ItemIndex:Math.max(0,nationalityIds.indexOf(2)),Left:348,Top:653,Width:183,Height:24},
@@ -608,6 +607,7 @@ function installForm30DialogRouter(){
 }
 
 function prepareRound(){
+ clubId=career.getInt32(8,true);
  agenda=careerAgenda(save);
  let day=agenda.nextDay,date=agenda.nextDate,fixtureId=agenda.fixtureId;
  const onCursor=agenda.currentFixtureId>=0?agenda.fixtures[agenda.currentFixtureId]:null;
@@ -620,8 +620,11 @@ function prepareRound(){
  roundDay=day;roundDate=date;roundFixtureId=fixtureId;
  const scheduled=dataView(record(save,'records_0066afa0',fixtureId));
  fixtureCompetition=scheduled.getInt32(0x18,true);fixtureSubgroup=scheduled.getInt32(0x38,true);
- career.setInt32(0x16c,day,true);career.setInt32(0x88,fixtureCompetition,true);career.setInt32(0x6c8,1,true);
+ career.setInt32(0x16c,day,true);career.setInt32(0x88,fixtureCompetition,true);
  state=openCareer(save,{currentDate:date});if(query.has('automaticInteractions'))state.automaticInteractions=true;
+ roundPrimaryClub=clubId;humanLineupIndex=0;
+ const humanClubs=Array.from({length:Math.min(10,career.getInt32(0x13c,true))},(_,i)=>career.getInt32(0x140+i*4,true));
+ humanLineupQueue=[clubId,...humanClubs.filter(id=>id>=0&&id!==clubId&&agenda.fixtures.some(f=>!f.complete&&f.date===date&&f.competition===fixtureCompetition&&f.clubs.includes(id)))];
  rows=buildLineupRoster(state,clubId);
  slots=autoSelectScreenLineup(state,rows,formation,save,clubId).slots;
  opponentId=agenda.fixtures[fixtureId].clubs.find(id=>id!==clubId);
@@ -630,23 +633,36 @@ function prepareRound(){
  shirtImage=kitPaths[checkedKit-1]??null;
  return true;
 }
+function activateHumanLineup(id){
+ clubId=id;career.setInt32(8,id,true);
+ career.setInt32(0x10,dataView(record(save,'clubs',id)).getInt32(0x44,true),true);
+ rows=buildLineupRoster(state,id);
+ slots=autoSelectScreenLineup(state,rows,formation,save,id).slots;
+ const fixture=agenda.fixtures.find(f=>!f.complete&&f.date===roundDate&&f.competition===fixtureCompetition&&f.clubs.includes(id));
+ opponentId=fixture?.clubs.find(other=>other!==id)??opponentId;
+ kitPaths=[1,2,3].map(kit=>clubKitPath(save,id,kit,kitAssets));opponentKit=clubKitPath(save,opponentId,1,kitAssets);
+ checkedKit=[2,3].includes(state.clubs[id].selectedKit)&&kitPaths[state.clubs[id].selectedKit-1]?state.clubs[id].selectedKit:1;
+ shirtImage=kitPaths[checkedKit-1]??null;
+}
 function viewModel(){
  const result=lineupView(state,rows,slots,formation,clubId,language,{remember:!!career.getUint8(0xde),opponent:opponent()});
  result.shirtImage=shirtImage;
  result.kitImagePaths={Image13:opponentKit,Image2:kitPaths[0]??'assets/original-shirt-1.png',Image4:kitPaths[1],Image5:kitPaths[2]};
  for(const k of [1,2,3])result.properties['rd'+k]={Visible:k===1||!!kitPaths[k-1],Checked:checkedKit===k,Caption:''};
- result.properties.ckescalacao={Caption:language[281].text};
+ // The original adjacent TntLabel2 supplies this caption; painting it twice
+ // overlaps the checkbox label with the original text control.
+ result.properties.ckescalacao={...result.properties.ckescalacao,Caption:''};
  return result;
 }
 let hubPlayerPanel=true;
 function applyHubPanels(frame){
-  frame.images={...(frame.images??{}),escudo:clubCrestPath(save,clubId,crestAssets),f13esc1:Number.isInteger(frame.opponentClubId)?clubCrestPath(save,frame.opponentClubId,crestAssets):null};
+  frame.images={...frame.images,escudo:clubCrestPath(save,clubId,crestAssets),f13esc1:Number.isInteger(frame.opponentClubId)?clubCrestPath(save,frame.opponentClubId,crestAssets):null};
   frame.properties={...frame.properties,
-   pinfo_panel:{...(frame.properties?.pinfo_panel??{}),Visible:hubPlayerPanel},p_conf:{Visible:!hubPlayerPanel},
-   btvender:{...(frame.properties?.btvender??{}),Caption:language[63].text,Visible:hubPlayerPanel},
-   btalterasal:{...(frame.properties?.btalterasal??{}),Caption:language[64].text,Visible:hubPlayerPanel},
-   btaposenta:{...(frame.properties?.btaposenta??{}),Caption:language[65].text,Visible:hubPlayerPanel},
-   Button4:{...(frame.properties?.Button4??{}),Visible:false}};
+   pinfo_panel:{...frame.properties?.pinfo_panel,Visible:hubPlayerPanel},p_conf:{Visible:!hubPlayerPanel},
+   btvender:{...frame.properties?.btvender,Caption:language[63].text,Visible:hubPlayerPanel},
+   btalterasal:{...frame.properties?.btalterasal,Caption:language[64].text,Visible:hubPlayerPanel},
+   btaposenta:{...frame.properties?.btaposenta,Caption:language[65].text,Visible:hubPlayerPanel},
+   Button4:{...frame.properties?.Button4,Visible:false}};
  return frame;
 }
 function showHub(){
@@ -740,7 +756,7 @@ function openBankLoan(){
 }
 function retirementFrame(){
  const frame=hubFormView('Form48',{...hubContext(),playerId:selectedHubPlayer()});
- frame.properties={...frame.properties,Edit1:{...(frame.properties?.Edit1??{}),Text:retirementName},combopos:{Items:[0,1,2,3,4].map(id=>language[60+id]?.text??String(id+1)),ItemIndex:retirementRole<0?-1:retirementRole,OnChange:'comboposChange'}};
+ frame.properties={...frame.properties,Edit1:{...frame.properties?.Edit1,Text:retirementName},combopos:{Items:[0,1,2,3,4].map(id=>language[60+id]?.text??String(id+1)),ItemIndex:retirementRole<0?-1:retirementRole,OnChange:'comboposChange'}};
  return frame;
 }
 function openRetirement(){
@@ -913,7 +929,12 @@ renderer.register('Form88.bt_irprojogoClick',()=>{try{if(matchSession?.tacticsHo
 renderer.register('Form88.Image4Click',()=>{});
 for(const control of ['comboej','combomarc','combo_cataq'])renderer.register('Form88.'+control+'Change',()=>{});
 for(const side of [1,2])renderer.register('Form88.nometime'+side+'Click',()=>{});
-async function presentScreens(screens){for(const screen of screens){await presentScreen(screen);if(screen.form==='Form77'){runtime.routeNationalIndex=screen.managerIndex;selectNationalPlayers(save,screen.country,screen.nationalClubId,{rng});}}}
+async function presentScreens(screens){for(const screen of screens){
+ if(screen.form==='Form77')runtime.routeNationalIndex=screen.managerIndex;
+ // Form77 edits the actual assignments. Confirmation must retain those
+ // choices instead of replacing the human squad with an AI selection.
+ await presentScreen(screen);
+}}
 async function humanNext(){
  const competition=career.getInt32(0x88,true),date=currentDate();
  if(competition>=7&&competition<=9){
@@ -1009,6 +1030,12 @@ renderer.register('Form87.bt_irprojogoClick',async()=>{
  try{
   const committed=commitHumanLineup(save,state,rows,slots,{clubId,remember:!!career.getUint8(0xde),rng});
     if(!committed.accepted){startMessage=language[committed.messageId].text;manager.update(viewModel());showNotice('Form87.bt_irprojogoClick',startMessage);return;}
+  // Collect each participating human's lineup in the shared match state
+  // before simulating any fixture; AI preparation preserves these entries.
+  if(humanLineupIndex+1<humanLineupQueue.length){
+   activateHumanLineup(humanLineupQueue[++humanLineupIndex]);showHub();return;
+  }
+  if(clubId!==roundPrimaryClub)activateHumanLineup(roundPrimaryClub);
   // National days (7/8/9) prepare via the national-fixtures branch inside
   // prepareRouteTeams; domestic days use the original batch preparation.
   prepareRouteTeams(save,state,rng,{competitionType:fixtureCompetition,subgroup:fixtureSubgroup,currentDate:roundDate});

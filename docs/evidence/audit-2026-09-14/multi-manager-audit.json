@@ -1,0 +1,156 @@
+{
+  "initial": {
+    "ui": "vcl",
+    "form": "Form13",
+    "screens": [
+      "Form13"
+    ],
+    "selector": "career",
+    "career": {
+      "clubId": 11,
+      "clubName": "Erzgebirge Aue",
+      "managerId": 11,
+      "managerName": "Audit First",
+      "season": 1,
+      "day": 119,
+      "date": 42123,
+      "dateIso": "2015-04-29",
+      "competitionType": 2
+    },
+    "settings": {
+      "mode": 4,
+      "managerCount": 2,
+      "flags": {
+        "270": true,
+        "368": false,
+        "369": true,
+        "370": false,
+        "383": false,
+        "384": false,
+        "385": false,
+        "1801": false
+      }
+    },
+    "round": 1,
+    "season": 1,
+    "day": 119,
+    "agenda": {
+      "nextDay": 123,
+      "fixtureId": 15
+    },
+    "rounds": 0,
+    "continuations": [],
+    "seasonTransitions": [],
+    "startMessage": null,
+    "matchFailure": null,
+    "roundDay": 119,
+    "roundFixtureId": 366,
+    "match": null,
+    "results": null,
+    "auction": null,
+    "unhandled": []
+  },
+  "persisted": {
+    "fastFlag": 0,
+    "activeClub": 11,
+    "humanClubs": [
+      {
+        "id": 11,
+        "name": "Erzgebirge Aue"
+      },
+      {
+        "id": 1,
+        "name": "Augsburg"
+      }
+    ]
+  },
+  "views": [
+    {
+      "clubId": 11,
+      "clubName": "Erzgebirge Aue",
+      "managerId": 11,
+      "managerName": "Audit First",
+      "season": 1,
+      "day": 119,
+      "date": 42123,
+      "dateIso": "2015-04-29",
+      "competitionType": 2
+    },
+    {
+      "clubId": 11,
+      "clubName": "Erzgebirge Aue",
+      "managerId": 11,
+      "managerName": "Audit First",
+      "season": 1,
+      "day": 123,
+      "date": 42127,
+      "dateIso": "2015-05-03",
+      "competitionType": 1
+    }
+  ],
+  "after": {
+    "ui": "vcl",
+    "form": "Form13",
+    "screens": [
+      "Form13"
+    ],
+    "selector": "career",
+    "career": {
+      "clubId": 11,
+      "clubName": "Erzgebirge Aue",
+      "managerId": 11,
+      "managerName": "Audit First",
+      "season": 1,
+      "day": 130,
+      "date": 42134,
+      "dateIso": "2015-05-10",
+      "competitionType": 1
+    },
+    "settings": {
+      "mode": 4,
+      "managerCount": 2,
+      "flags": {
+        "270": true,
+        "368": false,
+        "369": true,
+        "370": false,
+        "383": false,
+        "384": false,
+        "385": false,
+        "1801": false
+      }
+    },
+    "round": 2,
+    "season": 1,
+    "day": 130,
+    "agenda": {
+      "nextDay": 133,
+      "fixtureId": 367
+    },
+    "rounds": 2,
+    "continuations": [
+      {
+        "day": 123,
+        "competition": 1,
+        "human": true,
+        "played": 2
+      },
+      {
+        "day": 130,
+        "competition": 1,
+        "human": true,
+        "played": 1
+      }
+    ],
+    "seasonTransitions": [],
+    "startMessage": null,
+    "matchFailure": null,
+    "roundDay": 130,
+    "roundFixtureId": 39,
+    "match": null,
+    "results": null,
+    "auction": null,
+    "unhandled": []
+  },
+  "errors": []
+}

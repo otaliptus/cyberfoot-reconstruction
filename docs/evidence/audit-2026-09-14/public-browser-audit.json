@@ -1,0 +1,29 @@
+{
+  "state": {
+    "ui": "vcl",
+    "form": "Form1",
+    "screens": [
+      "Form1"
+    ],
+    "selector": "menu",
+    "career": null,
+    "settings": null,
+    "round": null,
+    "season": null,
+    "day": null,
+    "agenda": null,
+    "rounds": 0,
+    "continuations": [],
+    "seasonTransitions": [],
+    "startMessage": null,
+    "matchFailure": null,
+    "roundDay": 0,
+    "roundFixtureId": -1,
+    "match": null,
+    "results": null,
+    "auction": null,
+    "unhandled": []
+  },
+  "errors": [],
+  "bodyScrollWidth": 390
+}

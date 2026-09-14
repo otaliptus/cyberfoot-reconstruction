@@ -93,7 +93,18 @@ export function clubHubView(save,language,{state,date,selectedPlayerId=-1}={}){
     lb_infojogn:{HTMLText:`<B><SHAD>${playerName}<IND x="200">${playerRole}</SHAD></B>`},
     lb_infojog:{HTMLText:info},
    };
-  const headers={posicaojog:text(language,128),nome:text(language,129),forca:text(language,131),energia:text(language,132),idade:text(language,50)};
+  // These labels sit on the dark club background, while the player details
+  // sit on a light panel. Keep their foregrounds explicit and shadow-free.
+  for(const key of ['lb_infonext','labmoney','lb_total','label32','lb_cores','lab_data','lb_infot','lb_tec','lb_cd','lb_ct']){
+   properties[key]['Font.Color']='#ffffff';
+   properties[key].HTMLText=properties[key].HTMLText.replace(/<\/?SHAD>/gi,'');
+  }
+  for(const key of ['lb_infojogn','lb_infojog']){
+   properties[key]['Font.Color']='#000000';
+   properties[key]['Font.Style']=[];
+   properties[key].HTMLText=properties[key].HTMLText.replace(/<\/?SHAD>/gi,'');
+  }
+  const headers={posicaojog:text(language,128),nome:text(language,129),lado:text(language,130),funcaojog:text(language,130),forca:text(language,131),energia:text(language,132),salario:text(language,133),passe:text(language,134),gols:text(language,135),habilidades:text(language,136),idade:text(language,50)};
   return {form:'Form13',properties,roster:squad,grids:{gridview1:squad},headers,competition,clubId,opponentClubId:opponent};
 }
 export function competitionTableView(save,language,{subgroup=0,currentDate}={}){

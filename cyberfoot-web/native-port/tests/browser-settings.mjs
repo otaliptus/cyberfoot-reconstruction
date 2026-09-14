@@ -21,6 +21,12 @@ const configured=JSON.parse(await page.evaluate(()=>window.render_game_to_text()
 assert.deepEqual(configured.settings,{mode:2,managerCount:2,flags:{'270':false,'368':false,'369':false,'370':false,'383':false,'384':false,'385':false,'1801':false}});
 assert.ok(configured.agenda.fixtureId>=0);assert.equal(configured.day,119);
 await page.evaluate(()=>window.gameShell.click('btjogar'));await page.waitForFunction(()=>window.gameShell.form==='Form87',{timeout:60000});
+await page.evaluate(()=>window.gameShell.click('bt_irprojogo'));await page.waitForFunction(()=>window.gameShell.form==='Form13',{timeout:30000});
+const second=JSON.parse(await page.evaluate(()=>window.render_game_to_text()));
+assert.equal(second.career.managerName,'Second Settings Tester');
+assert.notEqual(second.career.clubId,configured.career.clubId);
+assert.equal(second.day,configured.day,'each human selects before the calendar advances');
+await page.evaluate(()=>window.gameShell.click('btjogar'));await page.waitForFunction(()=>window.gameShell.form==='Form87');
 await page.evaluate(()=>window.gameShell.click('bt_irprojogo'));await page.waitForFunction(()=>window.gameShell.form==='Form46',{timeout:30000});
 assert.ok(['Form26','Form67'].includes(await page.evaluate(()=>window.gameShell.playMatchToResults())));
 assert.deepEqual(JSON.parse(await page.evaluate(()=>window.render_game_to_text())).unhandled,[]);

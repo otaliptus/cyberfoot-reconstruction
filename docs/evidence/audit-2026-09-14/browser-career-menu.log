@@ -1,0 +1,1 @@
+Career menu browser: default career created and persisted, New Game created a second stored career, Load and a fresh page load re-opened it from localStorage, no console errors.

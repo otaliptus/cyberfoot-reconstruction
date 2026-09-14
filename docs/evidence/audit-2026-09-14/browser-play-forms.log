@@ -1,0 +1,97 @@
+[02-Form1] Form1: 7 ops primitives=15
+[02-Form1] Form1.Shape1MouseDown -> Form9
+[02-Form1] Form1.Shape2MouseDown -> Form21
+[02-Form1] Form1.Shape3MouseDown -> Form2
+[02-Form1] Form1.Shape4MouseDown -> Form42
+[04-Form9] Form9: 10 ops primitives=32
+[04-Form9] Form9.XiButton1Click -> Form1
+[04-Form9] Form9.XiButton3Click -> Form39
+[06-Form11] Form11: 42 ops primitives=6
+[06-Form11] skip disabled Form11.teamSelectClick (team-3)
+[06-Form11] skip disabled Form11.teamSelectClick (team-2)
+[06-Form11] skip disabled Form11.teamSelectClick (team-41)
+[06-Form11] skip disabled Form11.teamSelectClick (team-34)
+[06-Form11] skip disabled Form11.teamSelectClick (team-28)
+[06-Form11] skip disabled Form11.teamSelectClick (team-1)
+[06-Form11] skip disabled Form11.teamSelectClick (team-22)
+[06-Form11] skip disabled Form11.teamSelectClick (team-21)
+[06-Form11] skip disabled Form11.teamSelectClick (team-40)
+[06-Form11] skip disabled Form11.teamSelectClick (team-5)
+[06-Form11] skip disabled Form11.teamSelectClick (team-19)
+[06-Form11] skip disabled Form11.teamSelectClick (team-10)
+[06-Form11] skip disabled Form11.teamSelectClick (team-12)
+[06-Form11] skip disabled Form11.teamSelectClick (team-18)
+[06-Form11] skip disabled Form11.teamSelectClick (team-16)
+[06-Form11] skip disabled Form11.teamSelectClick (team-36)
+[06-Form11] skip disabled Form11.teamSelectClick (team-14)
+[06-Form11] skip disabled Form11.teamSelectClick (team-31)
+[06-Form11] skip disabled Form11.teamSelectClick (team-8)
+[06-Form11] skip disabled Form11.teamSelectClick (team-25)
+[06-Form11] skip disabled Form11.teamSelectClick (team-24)
+[06-Form11] skip disabled Form11.teamSelectClick (team-26)
+[06-Form11] skip disabled Form11.teamSelectClick (team-13)
+[06-Form11] skip disabled Form11.teamSelectClick (team-20)
+[06-Form11] skip disabled Form11.teamSelectClick (team-30)
+[06-Form11] skip disabled Form11.teamSelectClick (team-6)
+[06-Form11] skip disabled Form11.teamSelectClick (team-15)
+[06-Form11] skip disabled Form11.teamSelectClick (team-27)
+[06-Form11] skip disabled Form11.teamSelectClick (team-29)
+[06-Form11] skip disabled Form11.teamSelectClick (team-33)
+[06-Form11] skip disabled Form11.teamSelectClick (team-11)
+[06-Form11] skip disabled Form11.teamSelectClick (team-4)
+[06-Form11] skip disabled Form11.teamSelectClick (team-17)
+[06-Form11] skip disabled Form11.teamSelectClick (team-38)
+[06-Form11] skip disabled Form11.teamSelectClick (team-35)
+[06-Form11] skip disabled Form11.teamSelectClick (team-39)
+[06-Form11] skip disabled Form11.teamSelectClick (team-32)
+[06-Form11] skip disabled Form11.teamSelectClick (team-7)
+[06-Form11] skip disabled Form11.teamSelectClick (team-23)
+[06-Form11] skip disabled Form11.teamSelectClick (team-9)
+[08-Form13] Form13: 22 ops primitives=40
+[08-Form13] Form13.Label323Click -> Form62
+[08-Form13] Form13.Image9Click -> Form22
+[08-Form13] Form13.Label24Click -> Form42
+[08-Form13] Form13.Label51Click -> Form86
+[08-Form13] Form13.lb_infonextClick -> Form87
+[08-Form13] Form13.lb_tecClick -> Form47
+[08-Form13] Form13.Label51Click -> Form86
+[08-Form13] Form13.Image9Click -> Form22
+[08-Form13] Form13.Label323Click -> Form62
+[08-Form13] Form13.Label20Click -> Form80
+[08-Form13] Form13.lb_infonextClick -> Form87
+[08-Form13] Form13.lb_infonextClick -> Form87
+[08-Form13] Form13.Image4Click -> Form16
+[08-Form13] Form13.btvenderClick -> Form44
+[08-Form13] Form13.btalterasalClick -> Form24
+[08-Form13] Form13.btaposentaClick -> Form48
+[08-Form13] Form13.btjogarClick -> Form87
+[10-Form21] Form21: 4 ops primitives=13
+[10-Form21] Form21.BitBtn2Click -> Form1
+[10-Form21] skip disabled Form21.grid1SelectCell (grid1)
+[13-Form3] Form3: 37 ops primitives=52
+[15-Form42] Form42: 3 ops primitives=24
+[15-Form42] Form42.XiButton1Click -> Form1
+[17-Form39] Form39: 3 ops primitives=18
+[17-Form39] Form39.XiButton1Click -> Form9
+[24-Form53] Form53: 1 ops primitives=8
+[24-Form34] Form34: 1 ops primitives=8
+[24-Form54] Form54: 0 ops primitives=5
+[24-Form88] Form88: 12 ops primitives=35
+[20-Form87] Form87: 13 ops primitives=35
+[20-Form87] Form87.bt_voltarClick -> Form13
+[20-Form87] Form87.bt_irprojogoClick -> Form46
+[22-Form46] {"form":"Form46","ops":0,"ff":0}
+[30-Form23] Form23: 2 ops primitives=40
+[33-Form24] Form24: 5 ops primitives=15
+[33-Form24] Form24.CHButton1Click -> Form25
+[37-Form26] Form26: 3 ops primitives=9
+[37-Form26] Form26.bttimeanoClick -> Form70
+[37-Form26] Form26.bt3Click -> null
+[39-Form75] Form75: 7 ops primitives=22
+[39-Form75] Form75.btjogarClick -> null
+[41-Form77] Form77: 2 ops primitives=34
+[43-Form30] Form30: 3 ops primitives=15
+[45-Form85] Form85: 2 ops primitives=6
+[45-Form85] Form85.XiButton1Click -> null
+[45-Form85] Form85.XiButton2Click -> null
+play-forms: every reachable screen opened, every control clicked, zero console errors, empty unhandled ops.

@@ -1,0 +1,33 @@
+import {chromium} from 'playwright';
+import assert from 'node:assert/strict';
+import {testOutput} from './browser-test-helpers.mjs';
+const output=testOutput('ui-clarity'),browser=await chromium.launch({headless:true});
+const page=await browser.newPage({viewport:{width:1280,height:800}}),errors=[];
+page.on('pageerror',error=>errors.push(String(error)));
+await page.goto('http://127.0.0.1:8766/game.html?manualClock=1');
+await page.waitForFunction(()=>window.gameShell?.form==='Form1');
+await page.evaluate(()=>window.gameShell.newGame({managerName:'UI Check',clubId:11}));
+await page.waitForFunction(()=>window.gameShell.form==='Form13');
+const draws=await page.evaluate(()=>{
+ const r=window.gameShell.renderer,ctx=r.ctx,original=ctx.fillText,draws=[];
+ ctx.fillText=function(text,...args){draws.push({text:String(text),color:this.fillStyle,font:this.font});return original.call(this,text,...args);};
+ try{r.paint();}finally{ctx.fillText=original;}
+ return draws;
+});
+const ratings=draws.filter(row=>row.text.includes('Management Rating'));
+assert.ok(ratings.length>0);assert.ok(ratings.every(row=>row.color==='#ffffff'));
+assert.ok(draws.some(row=>row.text==='UI Check'&&row.color==='#ffffff'));
+assert.ok(draws.filter(row=>row.text.includes('Skill:')).every(row=>row.color==='#000000'));
+await page.waitForTimeout(700);await page.screenshot({path:output+'/hub.png'});
+await page.evaluate(()=>window.gameShell.click('btjogar'));await page.waitForFunction(()=>window.gameShell.form==='Form87');
+assert.equal(await page.evaluate(()=>window.gameShell.renderer.frame.properties.ckescalacao.Caption),'');
+await page.screenshot({path:output+'/lineup.png'});
+await page.evaluate(()=>window.gameShell.showMenu());await page.setViewportSize({width:390,height:844});await page.waitForTimeout(700);
+const size=await page.evaluate(()=>({width:window.gameShell.renderer.canvas.width,rectWidth:window.gameShell.renderer.canvas.getBoundingClientRect().width,formWidth:window.gameShell.renderer.lastLayout.width}));
+assert.ok(size.width<600,'mobile menu fits the window instead of the desktop');assert.ok(size.rectWidth>=380);
+await page.screenshot({path:output+'/mobile-menu.png'});
+await page.locator('#registered-toggle').click();
+await page.evaluate(()=>window.gameShell.click('Shape1'));await page.waitForFunction(()=>window.gameShell.form==='Form9');
+assert.equal(await page.locator('[data-original-control="Form9.ComboBox1"]').isVisible(),true);
+assert.deepEqual(errors,[]);await browser.close();
+console.log('Readable hub text, valid inherited HTML fonts, one lineup caption and usable compact menu verified.');

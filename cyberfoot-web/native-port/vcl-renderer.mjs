@@ -283,8 +283,9 @@ function labelPrimitive(ctx,node,p,x,y,w,h,parentFont){
  const transparent=p.Color===undefined||isTransparent(p.Color)||p.Transparent===true;
  const align=p.Alignment==='taRightJustify'?'right':p.Alignment==='taCenter'?'center':parsed?.align??'left';
  const shadowOffset=p.HTMLShadowOffset??p.ShadowOffset;
- const shadow=shadowOffset!==undefined||p.HTMLShadowColor!==undefined||parsed?.shadow?{offset:Number(shadowOffset??1),color:delphiColor(p.HTMLShadowColor??p.ShadowColor??'clBlack')}:null;
- const primitive={kind:'text',x,y,w,h,text:parsed?parsed.plain:stripTags(source),lines:parsed&&parsed.runs.length>1?parsed.lines:null,
+ const hasShadow=html?parsed?.shadow:shadowOffset!==undefined||p.HTMLShadowColor!==undefined;
+ const shadow=hasShadow?{offset:Number(shadowOffset??1),color:delphiColor(p.HTMLShadowColor??p.ShadowColor??'clBlack')}:null;
+ const primitive={kind:'text',x,y,w,h,text:parsed?parsed.plain:stripTags(source),lines:parsed&&parsed.runs.length?parsed.lines:null,
   font,color:font.color,align,wordWrap:p.WordWrap===true||(html&&p.AutoSizing===false&&w>0),shadow,
   background:transparent?null:delphiColor(p.Color),
   vAlign:p.VAlignment==='tvaCenter'?'center':p.VAlignment==='tvaBottom'?'bottom':'top'};
@@ -507,8 +508,11 @@ function drawButtonFace(ctx,prim,images){
   if(caption)ctx.fillText(caption,gx+glyph.width+2+textWidth/2,h/2+y+1);
  }else if(caption)ctx.fillText(caption,x+w/2,y+h/2+1);
 }
-function paintTextRuns(ctx,runs,align,top,shadow){
- const runFont=run=>`${run.italic?'italic ':''}${run.bold?'bold ':''}${run.size?run.size+'px':''}${run.face?run.face+',':''}sans-serif`;
+function paintTextRuns(ctx,runs,align,top,shadow,font,color){
+ // Alignment is applied to the complete run sequence below, not once again
+ // by Canvas to each fragment (which clips centered captions at the left).
+ ctx.textAlign='left';
+ const runFont=run=>fontCss({...font,name:run.face??font.name,height:run.size??font.height,bold:font.bold||run.bold,italic:font.italic||run.italic});
  // UniHTMLabel <IND x="N"> advances the pen to an absolute x inside the line.
  const advanceToIndent=(x,run)=>run.indent!==null&&run.indent!==undefined&&run.indent>x?run.indent:x;
  let total=0;
@@ -518,7 +522,7 @@ function paintTextRuns(ctx,runs,align,top,shadow){
   x=advanceToIndent(x,run);
   ctx.font=runFont(run);
   if(shadow){ctx.fillStyle=shadow.color;ctx.fillText(run.text,x+shadow.offset,top+shadow.offset);}
-  ctx.fillStyle=run.color??ctx.fillStyle;ctx.fillText(run.text,x,top);x+=ctx.measureText(run.text).width;
+  ctx.fillStyle=run.color??color;ctx.fillText(run.text,x,top);x+=ctx.measureText(run.text).width;
  }
 }
 function paintText(ctx,prim){
@@ -541,7 +545,7 @@ function paintText(ctx,prim){
  lines.forEach((line,index)=>{
   if(!line)return;
   const lineY=top+index*lineHeight;
-  if(prim.lines&&prim.lines[index]?.length){ctx.save();ctx.translate(tx,lineY);paintTextRuns(ctx,prim.lines[index],prim.align,0,prim.shadow);ctx.restore();return;}
+  if(prim.lines&&prim.lines[index]?.length){ctx.save();ctx.translate(tx,lineY);paintTextRuns(ctx,prim.lines[index],prim.align,0,prim.shadow,font,prim.color);ctx.restore();return;}
   if(prim.shadow){ctx.fillStyle=prim.shadow.color;ctx.fillText(line,tx+prim.shadow.offset,lineY+prim.shadow.offset);ctx.fillStyle=prim.color;}
   ctx.fillText(line,tx,lineY);
  });
@@ -1003,7 +1007,15 @@ export class VclRenderer {
    const baseForm=this.forms.get(base.form);if(!baseForm)return;
    // The original emulator exposes a fixed 1024x768 game surface. Forms are
    // centered inside it; the browser only scales the complete surface down.
-   const width=1024,height=768;
+   // On a narrow viewport, fit the actual windows rather than scaling a
+   // small menu inside 1024 pixels of mostly empty desktop background.
+   const compact=this.container.getBoundingClientRect().width<600;
+   const dimensions=stack.map(frame=>{
+    const form=this.forms.get(frame.form),full=frame.form==='Form11'||frame.form==='Form13';
+    return {width:full?1024:Number(frame.width??form?.properties.ClientWidth)||640,height:full?768:Number(frame.height??form?.properties.ClientHeight)||480};
+   });
+   const width=compact?Math.max(...dimensions.map(d=>d.width))+18:1024;
+   const height=compact?Math.max(...dimensions.map(d=>d.height))+18:768;
    this.canvas.width=width;this.canvas.height=height;
    const ctx=this.ctx;
    ctx.clearRect(0,0,width,height);ctx.fillStyle='#3a6ea5';ctx.fillRect(0,0,width,height);
@@ -1012,7 +1024,7 @@ export class VclRenderer {
    const form=this.forms.get(frame.form);if(!form)continue;
     const resolved=this.applyFieldValues(frame);
     const fullSurface=frame.form==='Form11'||frame.form==='Form13';
-    const clientWidth=fullSurface?width:Number(form.properties.ClientWidth)||width,clientHeight=fullSurface?height:Number(form.properties.ClientHeight)||height;
+    const clientWidth=fullSurface?1024:Number(form.properties.ClientWidth)||width,clientHeight=fullSurface?768:Number(form.properties.ClientHeight)||height;
     const origin={x:Math.trunc((width-(clientWidth+2))/2),y:Math.trunc((height-(clientHeight+2))/2)};
      const layout=layoutForm(form,{...resolved,width:clientWidth,height:clientHeight,firstRow:this.firstRow},{imageSizes:Object.fromEntries(this.imageSizes)});
     layouts.push({frame,form,origin,layout});

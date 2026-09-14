@@ -1,0 +1,54 @@
+[
+  {
+    "test": "browser-game-shell",
+    "exit": 0
+  },
+  {
+    "test": "browser-settings",
+    "exit": 0
+  },
+  {
+    "test": "browser-registered-toggle",
+    "exit": 0
+  },
+  {
+    "test": "browser-custom-championship",
+    "exit": 0
+  },
+  {
+    "test": "browser-route-screens",
+    "exit": 0
+  },
+  {
+    "test": "browser-play-forms",
+    "exit": 0
+  },
+  {
+    "test": "browser-registration",
+    "exit": 0
+  },
+  {
+    "test": "browser-auction",
+    "exit": 0
+  },
+  {
+    "test": "browser-career-menu",
+    "exit": 0
+  },
+  {
+    "test": "browser-manager-career",
+    "exit": 0
+  },
+  {
+    "test": "browser-standings",
+    "exit": 0
+  },
+  {
+    "test": "browser-regional-standings",
+    "exit": 0
+  },
+  {
+    "test": "browser-continental-standings",
+    "exit": 0
+  }
+]
