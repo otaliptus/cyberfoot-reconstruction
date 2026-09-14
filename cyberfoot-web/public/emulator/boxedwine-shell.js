@@ -333,6 +333,8 @@
         }
         async function loadFile(pathPrefix, filename, callback) {
             try {
+                const optimized=await CyberfootPackages.load(pathPrefix,filename);
+                if(optimized){callback(optimized);return;}
                 let parts = filename === "boxedwine.zip" ? Array.from({length:17}, (_,i)=>"wine.part"+i) : filename === "cyberfoot.zip" ? Array.from({length:3}, (_,i)=>"cyberfoot.part"+i) : [filename];
                 const data = []; let total = 0;
                 for (let i=0; i<parts.length; i++) {

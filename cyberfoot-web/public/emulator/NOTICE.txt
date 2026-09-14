@@ -1,6 +1,6 @@
 CYBERFOOT 2015 — ORIGINAL GAME BROWSER LAUNCHER
 
-The Windows executable and game data originate from the user-supplied cyberfoot2015.rar. The cf2015.exe SHA-256 is bb5132cfcf9c7f17733c6d8c73ff0cebb5b4b19e34dff34c614919beedc308d0. The game executable has not been patched. Original copyrights and registration restrictions remain applicable.
+The Windows executable and game data originate from the user-supplied cyberfoot2015.rar. The cf2015.exe SHA-256 is bb5132cfcf9c7f17733c6d8c73ff0cebb5b4b19e34dff34c614919beedc308d0. The archived original executable remains unchanged. By default, package-loader.js applies an in-memory compatibility modification at launch: Randomize returns immediately and RandSeed is initialized from browser cryptographic randomness. This avoids repeated coarse-clock reseeding; the Borland random-number generator and registration checks are unchanged. Add rng=original to the emulator URL to run the byte-identical original executable. Original copyrights and registration restrictions remain applicable.
 
 Browser emulator: Boxedwine 26R1.0, Copyright the Boxedwine contributors.
 Official release: https://github.com/danoon2/Boxedwine/releases/tag/26R1.0
@@ -17,3 +17,5 @@ https://github.com/danoon2/Boxedwine/tree/26R1.0/tools
 Components within that filesystem retain their respective licenses.
 
 Compatibility overlay: windowscodecs, mlang, and matching image libraries are taken from the official TinyCore15Wine11.0.zip at https://boxedwine.org/v2/6/TinyCore15Wine11.0.zip. No game code is changed by the overlay.
+
+Optimized packaging: duplicate immutable Wine .nls locale tables are downloaded once and restored as ordinary files in the in-memory ZIP before Wine starts. The build verifies their resolved bytes and every other file against the source archive. Download parts are content-addressed and integrity checked. The browser downloads up to four parts concurrently. scripts/pack-emulator.py in the project repository reproduces the packages.

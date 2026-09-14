@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import vm from 'node:vm';
+const root=new URL('../public/emulator/',import.meta.url);
+vm.runInThisContext(readFileSync(new URL('package-loader.js',root),'utf8'));
+let active=0,peak=0;
+globalThis.window={};globalThis.location={search:''};
+globalThis.fetch=async path=>{active++;peak=Math.max(peak,active);await new Promise(r=>setTimeout(r,1));const bytes=readFileSync(new URL(path,root));active--;return new Response(bytes);};
+const manifest=JSON.parse(readFileSync(new URL('packages.json',root))),patch=manifest['cyberfoot.zip'].patch;
+location.search='?rng=original';const original=await CyberfootPackages.load('','cyberfoot.zip');
+assert.equal(CyberfootPackages.crc32(original.subarray(patch.offset,patch.offset+patch.size)),patch.crc);
+location.search='';const first=await CyberfootPackages.load('','cyberfoot.zip'),second=await CyberfootPackages.load('','cyberfoot.zip');
+const seed=bytes=>new DataView(bytes.buffer).getUint32(patch.offset+patch.seed,true);
+assert.notEqual(seed(first),seed(second));assert.equal(first[patch.offset+patch.randomize],0xc3);
+for(let i=0;i<patch.size;i++)if(i!==patch.randomize&&(i<patch.seed||i>=patch.seed+4))assert.equal(first[patch.offset+i],original[patch.offset+i]);
+assert.ok(peak<=4&&peak>1);
+assert.throws(()=>CyberfootPackages.repairRandomness(first,patch,1),/Unexpected game executable/);
+console.log('Original mode retains executable CRC; repaired mode changes only Randomize and seed; launch seeds differ; concurrency bounded to four.');

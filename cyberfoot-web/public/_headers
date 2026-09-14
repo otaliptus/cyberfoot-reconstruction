@@ -1,0 +1,6 @@
+/emulator/packages/*
+  Cache-Control: public, max-age=31536000, immutable
+/emulator/packages.json
+  Cache-Control: no-cache
+/emulator/*.js
+  Cache-Control: no-cache
