@@ -1,0 +1,12 @@
+{
+  "machine": "Apple M2 Pro",
+  "logicalCpus": 12,
+  "memoryBytes": 17179869184,
+  "macOS": "26.4",
+  "browser": "Chromium 153.0.8010.12",
+  "gameSeed": 380188361,
+  "gameplay": "English, Germany, four divisions, default competition settings, Bochum, automatic4-4-2, first16-game German Cup round, sale of Luthe",
+  "sampledRun": "1ms CPU sampling, page and12 workers; startup window ended manually; early team-selection and automatic-lineup observations are not settled-screen measurements",
+  "controlRun": "No CPU sampling; independent browser, same seed; startup detector waits for focused English selector; canvas hashes at approximately100ms intervals",
+  "productionChanged": false
+}

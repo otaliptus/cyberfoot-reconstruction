@@ -1,5 +1,14 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-14 — Gameplay profiling before further optimization
+- Completed both full-round/transfer sessions and control save. Required game-client startup check passed and screenshot inspected separately from timed runs. Targeted profiler lint and git diff checks pass; compact evidence and replay commands committed with report.
+- Added scripts/profile-emulator.mjs: original-game interactions, page/worker CPU sampling, process CPU counters, canvas-change timing, screenshots, action log and explicit no-sampling control. Test-only seed replay; production files unchanged.
+- Two isolated sessions on M2 Pro/Chromium153, same seed380188361 and Bochum career. Complete16-match German Cup round,2–0 defeat, then sale of Luthe19→18 players/cash3,491,649 reproduced. Control: startup18.07s after downloads0.52s; settings2.47s; career8.43s; lineup4.40s; auto4-4-2 7.68s; result-to-club5.03s; auction4.30s. Approximate final visual updates with quiet windows, not profiler window durations.
+- Match segments45.87+40.03+6.92≈92.82s to results exclude user waits at halftime/red card. Actual save normal timer300ms/background50ms; regulation clock180ticks already budgets54s. Do not label the whole duration computation/lag.
+- Profiler overhead is material: idle renderer3.291CPU-seconds/6s with1ms worker sampling vs0.287 without. Most sampled worker wait time is not active CPU work. Primary timing claims use control; incomplete first auto-lineup and blinking team-picker measurements excluded.
+- Save2,656,864 bytes, subsequent flush3ms/no error (not end-to-end save latency). Prioritize profiling/reducing redundant lineup/form painting inside Wine/game; exact Delphi-vs-Wine hotspot needs symbols/guest instrumentation. See docs/GAMEPLAY-PROFILE-2026-09-14.md and committed compact evidence. Full profiles/screenshots in output/emulator-profile*, ignored; no live deployment changed.
+
+
 ### 2026-09-14 — English/Turkish delivery packages
 - Published code4791fca as5cee7fcb to the existing stable emulator URL. Turkish career reached Greuther Fürth club screen with accented player names; screenshot inspected.
 - User authorized removal of other locales. pack-emulator.py omits120 Wine codepage entries and14 game translations, retaining eight English/Turkish/ASCII/Latin codepages, all shared Unicode/case/normalization/sort tables, English97/971/default and Turkish192. Manifest records all omissions; original source archives untouched.
