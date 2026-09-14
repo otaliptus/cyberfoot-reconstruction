@@ -1,5 +1,12 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-14 — Further emulator startup optimization
+- Prefetch configured Wine/game packages during runtime initialization; consume once, sharing a four-part global request limit. Preserve payload/unknown package fallback behavior and fresh per-launch RNG patching.
+- Restore 76 locale aliases using verified compressed streams instead of inflating them. All 3,251 Wine entries match original bytes and CRCs. Assembled ZIP shrinks 56,756,915 to 49,115,308 bytes; two local preparation samples 251/157ms before vs21/18ms after. Network archive size unchanged.
+- Expanded package tests pass concurrency, request reuse, fresh seeds, integrity rejection/retry, original-byte mode and unknown-package fallback. Targeted lint passes. Local threaded startup20,746ms, package requests235–2,486ms overlap WASM298–563ms; zero long tasks/browser errors in10-second idle sample. Pre-change52,244ms sample is not a controlled speedup claim because host load varied. Required game client passes with inspected original menu; interactive settings country list verified. See docs/EMULATOR-PERFORMANCE-2026-09-14.md.
+- New Aue career reached the club screen and a transfer offer. Single-thread fallback also boots21,578ms with no browser errors; eight long tasks677ms in10-second idle sample confirm continued preference for threaded runtime. Both runtime menu screenshots inspected.
+- Official-site search found no public2015 registration code or registered Windows release; official page now directs to Android. User has no key. Registration remains unchanged; no contact message sent.
+
 ### 2026-09-14 — Emulator runtime performance
 - Added official Boxedwine 26R1 MultiThreaded WASM and JS, selected by runtime-loader.js when SharedArrayBuffer/cross-origin isolation are supported. COOP same-origin + COEP require-corp headers enable this on Pages. engine=single retains the prior runtime and unsupported browsers automatically use it. Same game files, random repair and save paths.
 - Local controlled cold comparison: single 21,770 ms to rendered menu vs threaded32 17,104 ms (~21% faster). Ten-second idle browser samples: single 502 ms in six long tasks, worst RAF gap 100 ms; threaded zero long tasks, worst gap16.67ms. These are browser responsiveness/boot measurements, not in-game FPS or universal speed guarantees.

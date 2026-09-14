@@ -19,3 +19,5 @@ Components within that filesystem retain their respective licenses.
 Compatibility overlay: windowscodecs, mlang, and matching image libraries are taken from the official TinyCore15Wine11.0.zip at https://boxedwine.org/v2/6/TinyCore15Wine11.0.zip. No game code is changed by the overlay.
 
 Optimized packaging: duplicate immutable Wine .nls locale tables are downloaded once and restored as ordinary files in the in-memory ZIP before Wine starts. The build verifies their resolved bytes and every other file against the source archive. Download parts are content-addressed and integrity checked. The browser downloads up to four parts concurrently. scripts/pack-emulator.py in the project repository reproduces the packages.
+
+Startup optimization: runtime-loader.js prefetches the configured root and game packages while WebAssembly initializes. All optimized packages share a four-download limit; the normal loader consumes each prefetched package once. Locale aliases reuse the integrity-checked compressed streams, avoiding redundant decompression and reducing temporary archive memory. No additional game-code changes are made by these startup optimizations.

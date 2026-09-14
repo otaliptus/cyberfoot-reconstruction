@@ -1,11 +1,12 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
+import {inflateRawSync} from 'node:zlib';
 const root=new URL('../public/emulator/',import.meta.url);
 vm.runInThisContext(readFileSync(new URL('package-loader.js',root),'utf8'));
-let active=0,peak=0;
+let active=0,peak=0,corrupt=false;const requests=new Map();
 globalThis.window={};globalThis.location={search:''};
-globalThis.fetch=async path=>{active++;peak=Math.max(peak,active);await new Promise(r=>setTimeout(r,1));const bytes=readFileSync(new URL(path,root));active--;return new Response(bytes);};
+globalThis.fetch=async path=>{requests.set(path,(requests.get(path)??0)+1);active++;peak=Math.max(peak,active);await new Promise(r=>setTimeout(r,1));const bytes=readFileSync(new URL(path,root));if(corrupt&&path.includes('packages/'))bytes[0]^=1;active--;return new Response(bytes);};
 const manifest=JSON.parse(readFileSync(new URL('packages.json',root))),patch=manifest['cyberfoot.zip'].patch;
 location.search='?rng=original';const original=await CyberfootPackages.load('','cyberfoot.zip');
 assert.equal(CyberfootPackages.crc32(original.subarray(patch.offset,patch.offset+patch.size)),patch.crc);
@@ -16,3 +17,36 @@ for(let i=0;i<patch.size;i++)if(i!==patch.randomize&&(i<patch.seed||i>=patch.see
 assert.ok(peak<=4&&peak>1);
 assert.throws(()=>CyberfootPackages.repairRandomness(first,patch,1),/Unexpected game executable/);
 console.log('Original mode retains executable CRC; repaired mode changes only Randomize and seed; launch seeds differ; concurrency bounded to four.');
+
+// Startup prefetches share the global download limit and are consumed once.
+requests.clear();peak=0;
+CyberfootPackages.prefetch('','boxedwine.zip');
+CyberfootPackages.prefetch('','cyberfoot.zip');
+CyberfootPackages.prefetch('','cyberfoot.zip');
+const [wine,game]=await Promise.all([CyberfootPackages.load('','boxedwine.zip'),CyberfootPackages.load('','cyberfoot.zip')]);
+assert.ok(peak<=4&&peak>1);assert.ok([...requests.values()].every(n=>n===1));
+assert.notEqual(seed(game),seed(second));
+function entries(bytes){
+ const data=Buffer.from(bytes),result=new Map();let end=data.length-22;
+ while(data.readUInt32LE(end)!==0x06054b50)end--;
+ let at=data.readUInt32LE(end+16);
+ for(let n=data.readUInt16LE(end+10);n>0;n--){
+  assert.equal(data.readUInt32LE(at),0x02014b50);
+  const length=data.readUInt16LE(at+28),name=data.toString('utf8',at+46,at+46+length),local=data.readUInt32LE(at+42);
+  const start=local+30+data.readUInt16LE(local+26)+data.readUInt16LE(local+28),method=data.readUInt16LE(at+10);
+  assert.equal(data.readUInt16LE(local+8),method);
+  const compressed=data.subarray(start,start+data.readUInt32LE(at+20)),contents=method===8?inflateRawSync(compressed):compressed;
+  assert.equal(contents.length,data.readUInt32LE(at+24));
+  assert.equal(CyberfootPackages.crc32(contents),data.readUInt32LE(at+16),name);
+  result.set(name,contents);at+=46+length+data.readUInt16LE(at+30)+data.readUInt16LE(at+32);
+ }
+ return result;
+}
+const originalWine=entries(Buffer.concat(Array.from({length:17},(_,i)=>readFileSync(new URL('wine.part'+i,root))))),restored=entries(wine);
+assert.equal(restored.size,originalWine.size);
+for(const [name,contents] of originalWine)assert.deepEqual(restored.get(name),contents,name);
+corrupt=true;CyberfootPackages.prefetch('','cyberfoot.zip');
+await assert.rejects(CyberfootPackages.load('','cyberfoot.zip'),/checksum mismatch/);
+corrupt=false;assert.ok(await CyberfootPackages.load('','cyberfoot.zip'));
+assert.equal(await CyberfootPackages.load('','unknown.zip'),null);
+console.log(`Prefetch consumes each part once with at most four downloads; ${restored.size} restored Wine entries match original bytes/CRC; corruption rejects and retry succeeds.`);

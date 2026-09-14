@@ -16,5 +16,10 @@ try{for(const engine of (process.env.ENGINES??'single,threaded').split(',')){
  await page.evaluate(()=>{window.bench.gaps=[];window.bench.longTasks=[];});await page.waitForTimeout(10000);
  const metrics=await page.evaluate(()=>{const values=window.bench.gaps.sort((a,b)=>a-b);return {...window.cyberfootRuntime,frames:values.length,medianGapMs:values[Math.floor(values.length/2)],p95GapMs:values[Math.floor(values.length*.95)],worstGapMs:values.at(-1),blockedMs:window.bench.longTasks.reduce((a,b)=>a+b,0),longTaskCount:window.bench.longTasks.length,workers:typeof PThread!=='undefined'?{running:PThread.runningWorkers.length,unused:PThread.unusedWorkers.length}:null};});
  await page.mouse.click(777,413,{delay:80});await page.waitForTimeout(2000);await page.screenshot({path:new URL(engine+'-new-game.png',output).pathname});
- const result={engine,bootMs,...metrics,errors};results.push(result);console.log(JSON.stringify(result));await page.close();
+ const startup=await page.evaluate(()=>{
+  const resources=performance.getEntriesByType('resource');
+  const summarize=items=>({firstRequestMs:Math.round(Math.min(...items.map(r=>r.startTime))),lastResponseMs:Math.round(Math.max(...items.map(r=>r.responseEnd))),transferBytes:items.reduce((n,r)=>n+r.transferSize,0),requests:items.length});
+  return {packages:summarize(resources.filter(r=>r.name.includes('/packages/'))),wasm:summarize(resources.filter(r=>r.name.endsWith('.wasm')))};
+ });
+ const result={engine,bootMs,...metrics,startup,errors};results.push(result);console.log(JSON.stringify(result));await page.close();
 }}finally{writeFileSync(new URL('results.json',output),JSON.stringify(results,null,2));await browser.close();}

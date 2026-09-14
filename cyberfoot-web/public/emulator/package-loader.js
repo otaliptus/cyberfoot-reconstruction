@@ -36,28 +36,41 @@
       const entry=entries.get(source);if(!entry)throw Error('Missing locale source '+source);
       const c=entry.at,local=v.getUint32(c+42,true),compressed=v.getUint32(c+20,true),method=v.getUint16(c+10,true);
       const dataAt=local+30+v.getUint16(local+26,true)+v.getUint16(local+28,true);
-      let data=bytes.subarray(dataAt,dataAt+compressed);
-      if(method===8)data=new Uint8Array(await new Response(new Blob([data]).stream().pipeThrough(new DecompressionStream('deflate-raw'))).arrayBuffer());
-      else if(method!==0)throw Error('Unsupported locale compression');
-      if(crc32(data)!==v.getUint32(c+16,true))throw Error('Locale checksum mismatch');
+      // The whole transport archive has already passed SHA-256 validation.
+      // Reuse its compressed stream instead of inflating every duplicate locale.
+      const data=bytes.subarray(dataAt,dataAt+compressed);
+      if(method!==0&&method!==8)throw Error('Unsupported locale compression');
       const nameBytes=new TextEncoder().encode(name),header=new Uint8Array(30+nameBytes.length),h=new DataView(header.buffer);
-      h.setUint32(0,0x04034b50,true);h.setUint16(4,20,true);h.setUint16(6,0x800,true);h.setUint16(10,v.getUint16(c+12,true),true);h.setUint16(12,v.getUint16(c+14,true),true);h.setUint32(14,crc32(data),true);h.setUint32(18,data.length,true);h.setUint32(22,data.length,true);h.setUint16(26,nameBytes.length,true);header.set(nameBytes,30);
+      h.setUint32(0,0x04034b50,true);h.setUint16(4,20,true);h.setUint16(6,0x800,true);h.setUint16(8,method,true);h.setUint16(10,v.getUint16(c+12,true),true);h.setUint16(12,v.getUint16(c+14,true),true);h.setUint32(14,v.getUint32(c+16,true),true);h.setUint32(18,data.length,true);h.setUint32(22,v.getUint32(c+24,true),true);h.setUint16(26,nameBytes.length,true);header.set(nameBytes,30);
       const central=new Uint8Array(46+nameBytes.length);central.set(bytes.subarray(c,c+46));central.set(nameBytes,46);const cv=new DataView(central.buffer);
-      cv.setUint16(8,0x800,true);cv.setUint16(10,0,true);cv.setUint32(20,data.length,true);cv.setUint16(28,nameBytes.length,true);cv.setUint16(30,0,true);cv.setUint16(32,0,true);cv.setUint32(42,offset,true);
+      cv.setUint16(8,0x800,true);cv.setUint16(28,nameBytes.length,true);cv.setUint16(30,0,true);cv.setUint16(32,0,true);cv.setUint32(42,offset,true);
       locals.push(header,data);directory.push(central);offset+=header.length+data.length;
     }
     const directorySize=directory.reduce((n,b)=>n+b.length,0),tail=new Uint8Array(22),t=new DataView(tail.buffer),total=count+Object.keys(aliases).length;
     t.setUint32(0,0x06054b50,true);t.setUint16(8,total,true);t.setUint16(10,total,true);t.setUint32(12,directorySize,true);t.setUint32(16,offset,true);
     return new Uint8Array(await new Blob([...locals,...directory,tail]).arrayBuffer());
   }
-  let manifest;
-  async function load(prefix,name){
+  let manifest,active=0;
+  const waiting=[],prefetched=new Map();
+  async function download(url){
+    if(active>=4)await new Promise(resolve=>waiting.push(resolve));
+    else active++;
+    try{
+      const response=await fetch(url,{cache:'force-cache'});
+      if(!response.ok)throw Error('Download failed: '+url);
+      return new Uint8Array(await response.arrayBuffer());
+    }finally{
+      if(waiting.length)waiting.shift()();
+      else active--;
+    }
+  }
+  async function prepare(prefix,name){
     manifest??=fetch('packages.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Package manifest unavailable');return r.json();});
     const entry=(await manifest)[name];
     if(!entry)return null;
     const pieces=Array.from({length:entry.parts.length});let next=0,done=0;
     await Promise.all(Array.from({length:Math.min(4,pieces.length)},async()=>{
-      while(next<pieces.length){const i=next++;const response=await fetch(prefix+entry.parts[i],{cache:'force-cache'});if(!response.ok)throw Error('Download failed: '+entry.parts[i]);pieces[i]=new Uint8Array(await response.arrayBuffer());done++;window.reportStatus?.('Loading '+(name==='boxedwine.zip'?'Windows compatibility files':'Cyberfoot 2015')+' · '+Math.round(done/pieces.length*100)+'%');}
+      while(next<pieces.length){const i=next++;pieces[i]=await download(prefix+entry.parts[i]);done++;window.reportStatus?.('Loading '+(name==='boxedwine.zip'?'Windows compatibility files':'Cyberfoot 2015')+' · '+Math.round(done/pieces.length*100)+'%');}
     }));
     let bytes=new Uint8Array(pieces.reduce((sum,p)=>sum+p.length,0)),offset=0;
     for(const piece of pieces){bytes.set(piece,offset);offset+=piece.length;}
@@ -65,11 +78,30 @@
     if(digest!==entry.sha256)throw Error('Package checksum mismatch. Reload to retry.');
     if(entry.encoding==='gzip')bytes=new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer());
     if(entry.restoreAliases)bytes=await restoreAliases(bytes,entry.restoreAliases);
+    return {bytes,entry};
+  }
+  function prefetch(prefix,name){
+    if(!name)return;
+    const key=prefix+'\n'+name;
+    if(!prefetched.has(key)){
+      const promise=prepare(prefix,name);
+      // Report any failure when the emulator consumes this request, with no
+      // unhandled rejection while its WebAssembly runtime is still starting.
+      promise.catch(()=>{});
+      prefetched.set(key,promise);
+    }
+  }
+  async function load(prefix,name){
+    const key=prefix+'\n'+name,pending=prefetched.get(key);
+    prefetched.delete(key);
+    const prepared=await (pending??prepare(prefix,name));
+    if(!prepared)return null;
+    const {bytes,entry}=prepared;
     if(entry.patch&&new URLSearchParams(location.search).get('rng')!=='original'){
       const seed=crypto.getRandomValues(new Uint32Array(1))[0];repairRandomness(bytes,entry.patch,seed);
       window.cyberfootRandomness={mode:'continuous-original-generator',seeded:true};
     }else if(entry.patch)window.cyberfootRandomness={mode:'original-timer-reseeding'};
     return bytes;
   }
-  globalThis.CyberfootPackages={load,repairRandomness,crc32,restoreAliases};
+  globalThis.CyberfootPackages={load,prefetch,repairRandomness,crc32,restoreAliases};
 })();
