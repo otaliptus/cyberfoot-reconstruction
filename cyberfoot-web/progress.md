@@ -1,6 +1,7 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
 ### 2026-09-14 — Further emulator startup optimization
+- Published code80c8825 as17366257. Stable public loader files exactly match source and isolation headers pass. Public first menu frame20,756ms, package requests536–4,193ms overlap WASM590–1,059ms; zero browser errors/long tasks in10-second idle sample. Public New Game screenshot inspected.
 - Prefetch configured Wine/game packages during runtime initialization; consume once, sharing a four-part global request limit. Preserve payload/unknown package fallback behavior and fresh per-launch RNG patching.
 - Restore 76 locale aliases using verified compressed streams instead of inflating them. All 3,251 Wine entries match original bytes and CRCs. Assembled ZIP shrinks 56,756,915 to 49,115,308 bytes; two local preparation samples 251/157ms before vs21/18ms after. Network archive size unchanged.
 - Expanded package tests pass concurrency, request reuse, fresh seeds, integrity rejection/retry, original-byte mode and unknown-package fallback. Targeted lint passes. Local threaded startup20,746ms, package requests235–2,486ms overlap WASM298–563ms; zero long tasks/browser errors in10-second idle sample. Pre-change52,244ms sample is not a controlled speedup claim because host load varied. Required game client passes with inspected original menu; interactive settings country list verified. See docs/EMULATOR-PERFORMANCE-2026-09-14.md.
