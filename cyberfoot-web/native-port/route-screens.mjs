@@ -52,7 +52,10 @@ function squadRows(save,state,clubId,language){
 }
 export function clubHubView(save,language,{state,date,selectedPlayerId=-1}={}){
    const c=view(save.career),clubId=c.getInt32(8,true),bytes=record(save,'clubs',clubId),club=view(bytes),name=shortString(bytes,0,25);
-   const {fixture}=nextFixture(save),opponent=fixture?fixture.clubs.find(id=>id!==clubId):null,competition=fixture?fixture.competition:-1;
+   const next=nextFixture(save);
+   const fixture=next.agenda.fixtures.find(f=>!f.complete&&f.date===date&&f.competition===c.getInt32(0x88,true)&&f.clubs.includes(clubId))
+    ??(next.fixture?.clubs.includes(clubId)?next.fixture:next.agenda.fixtures.find(f=>!f.complete&&f.date===next.fixture?.date&&f.competition===next.fixture?.competition&&f.clubs.includes(clubId)));
+   const opponent=fixture?fixture.clubs.find(id=>id!==clubId):null,competition=fixture?fixture.competition:-1;
    const managerId=club.getInt32(0x44,true),manager=managerId>=0?shortString(record(save,'records_0066b718',managerId),0,25):'';
    const squad=squadRows(save,state,clubId,language),selected=squad.find(row=>row.playerId===selectedPlayerId)??squad[0],firstPlayer=selected&&state?.players?.[selected.playerId];
    const playerName=firstPlayer?.name??text(language,129,'Name'),playerRole=firstPlayer?text(language,roleIds[firstPlayer.role]??roleIds[0]):'P';
@@ -112,7 +115,7 @@ export function clubHubView(save,language,{state,date,selectedPlayerId=-1}={}){
 export function competitionTableView(save,language,{subgroup=0,currentDate}={}){
  const c=view(save.career),competition=c.getInt32(0x88,true),kind=c.getInt32(0x168,true),leagues=save.sections.find(s=>s.name==='records_0066aca0'),league=view(record(save,'records_0066aca0',subgroup<leagues.count?subgroup:0));
  const properties={
-  label32:{Caption:competitionCaption(competition,language)},
+  label32:{Caption:competitionCaption(competition,language),HTMLText:competitionCaption(competition,language)},
   bt3:{Caption:text(language,391)},
   TntBitBtn1:{Caption:text(language,992)},
   combopais:{Visible:leagues.count>1}

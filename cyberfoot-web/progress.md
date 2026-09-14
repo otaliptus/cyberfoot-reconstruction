@@ -1,5 +1,11 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-14 — Current opponent and results heading
+- Club hub prioritizes the active club's unplayed fixture on the current date. A two-manager browser assertion caught the second hub showing Bayer Leverkusen while its lineup correctly showed Paderborn 07; corrected date selection passes.
+- Corrected Form26 rich-text heading which still displayed the resource default Game Settings. Expanded browser-settings asserts hub/lineup opponent consistency and captures the results screen.
+- Results selector work deferred: explicit detailed-results opening after the tested batch reaches a non-league career context and throws Other results layouts remain unported. Unverified selector changes were removed. This remains a real integration gap; no results-picker completion is claimed.
+- Browser-settings and browser-game-shell passed opponent changes; route-screen test, 2,200 original results-data comparisons and lint passed. Final heading verification recorded below. Full multi-season/multi-manager and competition parity remain unfinished.
+
 ### 2026-09-14 — First audit remediation batch
 - Follow-up commit `1d2fa03` pushed and published as `54e3d058`. Production UI-clarity test passes, including populated financial columns and compact mobile menu. Both league season-transition tests passed locally after the gameplay changes. The audit below remains a pre-fix snapshot; the current remaining scope is stated here.
 - Published commit `9dd36b7` to Cloudflare Pages deployment `7090f8a5`; production two-manager match test passed. Follow-up populates previously empty roster salary, value and traits from the existing save/value routines; local UI browser test, route-screen test and targeted lint pass. UI test now supports production URLs.

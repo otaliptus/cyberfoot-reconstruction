@@ -1,5 +1,6 @@
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
+import {testOutputFile} from './browser-test-helpers.mjs';
 
 const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1280,height:800}}),errors=[];
 const baseUrl=process.env.CYBERFOOT_BASE_URL??'http://127.0.0.1:8766';
@@ -26,9 +27,12 @@ const second=JSON.parse(await page.evaluate(()=>window.render_game_to_text()));
 assert.equal(second.career.managerName,'Second Settings Tester');
 assert.notEqual(second.career.clubId,configured.career.clubId);
 assert.equal(second.day,configured.day,'each human selects before the calendar advances');
+const secondHubOpponent=await page.evaluate(()=>window.gameShell.renderer.frame.properties.TntLabel1.Caption);
 await page.evaluate(()=>window.gameShell.click('btjogar'));await page.waitForFunction(()=>window.gameShell.form==='Form87');
+assert.equal(await page.evaluate(()=>window.gameShell.renderer.frame.properties.Label3.Caption),secondHubOpponent,'second manager sees the same opponent in hub and lineup');
 await page.evaluate(()=>window.gameShell.click('bt_irprojogo'));await page.waitForFunction(()=>window.gameShell.form==='Form46',{timeout:30000});
 assert.ok(['Form26','Form67'].includes(await page.evaluate(()=>window.gameShell.playMatchToResults())));
 assert.deepEqual(JSON.parse(await page.evaluate(()=>window.render_game_to_text())).unhandled,[]);
+await page.screenshot({path:testOutputFile('settings-results.png')});
 assert.deepEqual(errors,[]);await browser.close();
 console.log('Form9 settings: mode-2 league fixtures and competition flags persisted into a new career, and the first match reached results without errors.');
