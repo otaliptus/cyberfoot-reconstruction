@@ -672,8 +672,8 @@
             //text = text.replace('\n', '<br>', 'g');
             console.log(text);
             if (element) {
-              element.value += text + "\n";
-              element.scrollTop = element.scrollHeight; // focus on bottom
+              element.value = (element.value + text + "\n").slice(-65536);
+              if (element.offsetParent !== null) element.scrollTop = element.scrollHeight;
             }
           };
         })(),

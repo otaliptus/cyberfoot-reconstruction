@@ -7,7 +7,7 @@ Official release: https://github.com/danoon2/Boxedwine/releases/tag/26R1.0
 Corresponding source: https://github.com/danoon2/Boxedwine/tree/26R1.0
 License: GNU General Public License, version 2 or later.
 License text: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-The shipped boxedwine.js and boxedwine.wasm are unmodified SingleThreaded binaries from Boxedwine26R1Web.zip. boxedwine-shell.js is modified to concatenate seventeen same-origin Wine filesystem parts and three original-game parts, report progress and report fetch errors. The modified JavaScript source is served directly alongside this notice. bridge.js and game.html implement the page integration and backup controls.
+The single-thread fallback boxedwine.js and boxedwine.wasm are unmodified SingleThreaded binaries from Boxedwine26R1Web.zip. The default isolated runtime uses the official MultiThreaded WASM from the same release; its JavaScript preallocated worker pool is reduced from 32 to 12. runtime-loader.js selects this runtime when SharedArrayBuffer and cross-origin isolation are available, with engine=single as an explicit fallback. boxedwine-shell.js is modified to concatenate seventeen same-origin Wine filesystem parts and three original-game parts, report progress and report fetch errors. The modified JavaScript source is served directly alongside this notice. bridge.js and game.html implement the page integration and backup controls.
 
 Wine compatibility filesystem: Wine 11 minimal from the same official release.
 Wine source: https://gitlab.winehq.org/wine/wine/-/tree/wine-11.0
