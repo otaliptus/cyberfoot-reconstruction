@@ -1,4 +1,4 @@
-"""Build English/Turkish packages, retaining shared Unicode support and game data."""
+"""Build English/Turkish runtime packages without Wine development headers."""
 from pathlib import Path
 import zipfile,io,hashlib,json,gzip,struct,copy,re
 root=Path(__file__).resolve().parents[1]/'public/emulator'
@@ -21,7 +21,7 @@ for source in original.infolist():
  entry=copy.copy(source);data=original.read(source);digest=hashlib.sha256(data).hexdigest()
  central_size=46+sum(struct.unpack_from('<HHH',raw,cursor+28));record=bytearray(raw[cursor:cursor+central_size]);cursor+=central_size
  cp=re.search(r'/c_(\d+)\.nls$',entry.filename)
- if cp and int(cp[1]) not in codepages:
+ if (cp and int(cp[1]) not in codepages) or entry.filename.startswith('opt/wine/include/'):
   removed.append(entry.filename);continue
  assert source.flag_bits==0
  local_size=30+sum(struct.unpack_from('<HH',raw,source.header_offset+26))+source.compress_size

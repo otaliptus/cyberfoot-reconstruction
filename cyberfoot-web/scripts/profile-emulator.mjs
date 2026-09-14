@@ -86,6 +86,7 @@ async function action(a){
 try{
  await start('startup');await page.goto(base+'/emulator/game.html?app=cyberfoot&overlay=graphics&p=cf2015.exe&resolution=1024x768&sound=false&storage=indexeddb');
  await page.waitForFunction(()=>{
+  if(window.CyberfootLoading?.state().failed)throw Error(document.getElementById('status').textContent);
   const c=document.getElementById('canvas');if(!c||c.width!==1024)return false;
   const s=document.createElement('canvas');s.width=256;s.height=192;const ctx=s.getContext('2d');ctx.drawImage(c,0,0,256,192);
   const pixels=ctx.getImageData(96,88,32,7).data;let blue=0;
@@ -97,6 +98,7 @@ try{
  if(runtime?.engine!=='threaded'||!runtime.isolated)throw Error('This profile requires the isolated threaded runtime; check the server COOP/COEP headers.');
  const downloads=await page.evaluate(()=>performance.getEntriesByType('resource').filter(r=>r.name.includes('/packages/')||r.name.endsWith('.wasm')).map(r=>({name:r.name.split('/').at(-1),startMs:Math.round(r.startTime),endMs:Math.round(r.responseEnd),transferBytes:r.transferSize})));
  await shot('startup');await finish({menuReadyMs,runtime,menuReadyCriterion:'English selector focus visible at fixed 1024x768 canvas coordinates',downloads});
+ await page.waitForFunction(()=>!window.CyberfootLoading?.state().starting,null,{timeout:10000});
  console.log('READY: Commands: finish, measure, start, shot, eval, close.');
  for await(const line of readline.createInterface({input:process.stdin})){
   try{

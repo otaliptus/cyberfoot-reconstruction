@@ -1,0 +1,30 @@
+[
+  {
+    "name": "default",
+    "mode": 0,
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive"
+    },
+    "pageErrors": []
+  },
+  {
+    "name": "opt-out",
+    "mode": 1,
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true
+    },
+    "pageErrors": []
+  },
+  {
+    "name": "single",
+    "mode": 1,
+    "runtime": {
+      "engine": "single",
+      "isolated": true
+    },
+    "pageErrors": []
+  }
+]

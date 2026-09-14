@@ -46,7 +46,7 @@ const originalWine=entries(Buffer.concat(Array.from({length:17},(_,i)=>readFileS
 const retainedCodepages=new Set([1252,1254,437,850,857,20127,28591,28599]);
 const removedWine=new Set(manifest['boxedwine.zip'].removedFiles);
 for(const [name,contents] of originalWine){
- const cp=name.match(/\/c_(\d+)\.nls$/),remove=cp&&!retainedCodepages.has(Number(cp[1]));
+ const cp=name.match(/\/c_(\d+)\.nls$/),remove=Boolean(cp&&!retainedCodepages.has(Number(cp[1])))||name.startsWith('opt/wine/include/');
  assert.equal(removedWine.has(name),Boolean(remove),name);
  if(remove)assert.equal(restored.has(name),false,name);
  else assert.deepEqual(restored.get(name),contents,name);
@@ -66,4 +66,4 @@ corrupt=true;CyberfootPackages.prefetch('','cyberfoot.zip');
 await assert.rejects(CyberfootPackages.load('','cyberfoot.zip'),/checksum mismatch/);
 corrupt=false;assert.ok(await CyberfootPackages.load('','cyberfoot.zip'));
 assert.equal(await CyberfootPackages.load('','unknown.zip'),null);
-console.log(`Prefetch consumes each part once with at most four downloads; ${restored.size} Wine entries and ${retainedGame.size} game entries match original bytes/CRC; only unrelated codepages/translations omitted; corruption rejects and retry succeeds.`);
+console.log(`Prefetch consumes each part once with at most four downloads; ${restored.size} Wine entries and ${retainedGame.size} game entries match original bytes/CRC; only unrelated codepages/translations and Wine development headers omitted; corruption rejects and retry succeeds.`);
