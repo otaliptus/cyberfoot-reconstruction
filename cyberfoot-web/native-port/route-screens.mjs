@@ -44,8 +44,10 @@ function squadRows(save,state,clubId,language){
  if(!state)return [];
  const rows=buildLineupRoster(state,clubId);
  return rows.map(row=>{
-  const p=state.players[row.playerId];
-  return {...row,cells:{id:String(row.playerId),status:'',posicaojog:text(language,roleIds[p.role]??roleIds[0]),condicao:'',nome:p.name,funcaojog:text(language,roleIds[p.role]??roleIds[0]),forca:p.skill,energia:p.condition,salario:'',passe:'',gols:p.seasonGoals??0,habilidades:'',idade:p.age,moral:'',passet:'',salariot:'',nxstatus:''}};
+  const p=state.players[row.playerId],raw=view(record(save,'players',row.playerId));
+  const salary=Number(raw.getBigInt64(0x38,true)/10000n),value=originalPlayerValue(save,row.playerId);
+  const traits=[p.trait1,p.trait2].map(id=>text(language,157+id*2)).filter(Boolean).join(' / ');
+  return {...row,cells:{id:String(row.playerId),status:'',posicaojog:text(language,roleIds[p.role]??roleIds[0]),condicao:'',nome:p.name,funcaojog:text(language,roleIds[p.role]??roleIds[0]),forca:p.skill,energia:p.condition,salario:originalMoney(salary),passe:originalMoney(value),gols:p.seasonGoals??0,habilidades:traits,idade:p.age,moral:'',passet:'',salariot:'',nxstatus:''}};
  });
 }
 export function clubHubView(save,language,{state,date,selectedPlayerId=-1}={}){

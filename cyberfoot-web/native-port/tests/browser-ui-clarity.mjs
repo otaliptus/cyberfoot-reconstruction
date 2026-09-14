@@ -4,10 +4,14 @@ import {testOutput} from './browser-test-helpers.mjs';
 const output=testOutput('ui-clarity'),browser=await chromium.launch({headless:true});
 const page=await browser.newPage({viewport:{width:1280,height:800}}),errors=[];
 page.on('pageerror',error=>errors.push(String(error)));
-await page.goto('http://127.0.0.1:8766/game.html?manualClock=1');
+const baseUrl=process.env.CYBERFOOT_BASE_URL??'http://127.0.0.1:8766';
+await page.goto(`${baseUrl}/game.html?manualClock=1`);
 await page.waitForFunction(()=>window.gameShell?.form==='Form1');
 await page.evaluate(()=>window.gameShell.newGame({managerName:'UI Check',clubId:11}));
 await page.waitForFunction(()=>window.gameShell.form==='Form13');
+const roster=await page.evaluate(()=>window.gameShell.renderer.frame.roster);
+assert.ok(roster.length>0);
+assert.ok(roster.every(row=>row.cells.salario.includes('$')&&row.cells.passe.includes('$')));
 const draws=await page.evaluate(()=>{
  const r=window.gameShell.renderer,ctx=r.ctx,original=ctx.fillText,draws=[];
  ctx.fillText=function(text,...args){draws.push({text:String(text),color:this.fillStyle,font:this.font});return original.call(this,text,...args);};
