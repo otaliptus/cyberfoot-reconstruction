@@ -1,5 +1,10 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-14 — Separate original emulator deployment
+- User switched focus and requested the previously running emulator at another link. Published the unchanged `public/emulator` Boxedwine/Wine/game assets in a separate Cloudflare Pages project `cyberfoot-original-emulator`.
+- Public URL: https://cyberfoot-original-emulator.pages.dev/ ; deployment: https://a4b81a9e.cyberfoot-original-emulator.pages.dev/ . Root redirects to the original emulator game.html with the same app/overlay/executable/resolution/audio/storage settings used by the old wrapper. Native reconstruction and original Sites deployment are unchanged.
+- Upload staging lives only in /private/tmp/cyberfoot-emulator-deploy; no duplicate source tree. Browser saves are origin-specific, so this link begins with separate storage.
+
 ### 2026-09-14 — Current opponent and results heading
 - Club hub prioritizes the active club's unplayed fixture on the current date. A two-manager browser assertion caught the second hub showing Bayer Leverkusen while its lineup correctly showed Paderborn 07; corrected date selection passes.
 - Corrected Form26 rich-text heading which still displayed the resource default Game Settings. Expanded browser-settings asserts hub/lineup opponent consistency and captures the results screen.
