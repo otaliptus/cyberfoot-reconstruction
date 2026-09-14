@@ -1,6 +1,7 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
 ### 2026-09-14 — English/Turkish delivery packages
+- Published code4791fca as5cee7fcb to the existing stable emulator URL. Turkish career reached Greuther Fürth club screen with accented player names; screenshot inspected.
 - User authorized removal of other locales. pack-emulator.py omits120 Wine codepage entries and14 game translations, retaining eight English/Turkish/ASCII/Latin codepages, all shared Unicode/case/normalization/sort tables, English97/971/default and Turkish192. Manifest records all omissions; original source archives untouched.
 - Combined archive download55,137,315→54,269,313 bytes, saving868,002 (1.57%). Deduplicated NLS compressed streams2,684,827→1,981,634 bytes. English/Turkish UI visible; dropdown contains exactly these two. Both menus and Turkish settings/characters inspected; required English game-client screenshot passes.
 - Expanded package test passes all3,131 retained Wine and1,684 retained game entries byte/CRC comparisons, exact omission policy, fresh RNG seeds, original mode, bounded prefetch, corrupt rejection/retry. Targeted lint and diff checks pass. See performance report locale section for exact figures.
