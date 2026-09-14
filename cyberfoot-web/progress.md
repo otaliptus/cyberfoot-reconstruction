@@ -1,5 +1,11 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-15 — Emulator waiting indicator
+- Added loading.js and an animated, accessible “Please wait…” indicator. Keeps boot feedback visible until the original menu's language-selector focus paint appears for three 250ms samples; stops startup sampling then. Startup pointer input is held until that ready signal. Errors replace the spinner with a failure message; reduced-motion preference disables rotation.
+- Later waits use the game's CSS wait/progress cursor. Wine can leave it stale until mouse movement: sample a 256×192 thumbnail only while busy and clear after 1.5s without substantial visual changes (32-pixel threshold excludes caret noise). This is a visual heuristic, not instrumentation of every guest task. Backup export/import also acquire and release loading feedback. Game logic, timers, registration and packaged binaries untouched.
+- Verified isolated Chromium startup, settings spinner/automatic dismissal without moving the mouse, fresh career, lineup, operation feedback, reduced motion and failure state. No browser page errors. Required web-game client passes and screenshot inspected; targeted loading/bridge lint and diff checks pass. Screenshots in ignored output/emulator-loading and output/emulator-loading-client.
+- User requested registered-only original, but previously confirmed no registration key; no registration bypass or replacement build produced.
+
 ### 2026-09-14 — Gameplay profiling before further optimization
 - Completed both full-round/transfer sessions and control save. Required game-client startup check passed and screenshot inspected separately from timed runs. Targeted profiler lint and git diff checks pass; compact evidence and replay commands committed with report.
 - Added scripts/profile-emulator.mjs: original-game interactions, page/worker CPU sampling, process CPU counters, canvas-change timing, screenshots, action log and explicit no-sampling control. Test-only seed replay; production files unchanged.
