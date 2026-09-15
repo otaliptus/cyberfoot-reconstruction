@@ -1,6 +1,7 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
 ### 2026-09-15 — Measured emulator performance improvements
+- Published5dd4bb9 as https://d35ea10b.cyberfoot-original-emulator.pages.dev/ at the existing stable URL. Public source/manifest match, isolation, actual timer-scheduler mode, settings/spinner, and zero console/page-error checks pass; public screenshot inspected.
 - Selected browser-timer servicing of the threaded native UI queue in visible tabs; hidden tabs and single-thread fallback retain animation-frame scheduling. event-pump.js uses the existing Emscripten scheduler; pump=original opts out. Executable, WASM, game assets, rules, RNG and match timer values unchanged.
 - Removed 1,410 Wine SDK/include entries from delivery only. Combined Wine/game transport54,269,313→46,874,448 bytes, saving7,394,865 (13.6%). Original archives retained. Package tests verify all1,721 retained Wine and1,684 game files byte-for-byte/CRC and exact omissions, plus RNG/integrity/retry/concurrency checks.
 - Fresh fixed-seed baseline automatic4-4-2 7.814s; independent timer experiment6.452s; combined build6.667s (~15% faster). Combined boot18.50s and career8.11s are not substantial gains. Idle renderer0.221CPU-seconds/6s vsbaseline0.342; active lineupCPU8.80 vs8.31 over15s means latency gain does not promise lower active CPU.

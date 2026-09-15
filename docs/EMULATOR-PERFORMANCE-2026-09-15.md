@@ -63,3 +63,7 @@ Compact results, environment, replay actions and comparison screenshots are in `
 Further major improvements to career creation require tracing the original game's work inside the emulator and isolating expensive calculations or drawing calls. The tested archive and compiler changes did not solve that bottleneck. Results here cover one desktop and one fixed career, not a range of phones or full seasons.
 
 The scheduling rationale is supported by the matching Boxedwine source: [threaded main loop](https://github.com/danoon2/Boxedwine/blob/26R1.0/source/sdl/emscripten/mainloop.cpp) processes due timers and input events, while [SDL event processing](https://github.com/danoon2/Boxedwine/blob/26R1.0/platform/sdl/knativeinputSDL.cpp) executes queued callbacks and wakes waiting threads. The rejected archive experiment followed inspection of [ZIP read positioning](https://github.com/danoon2/Boxedwine/blob/26R1.0/source/io/fszip.cpp), which can restart decompression. These source observations informed experiments; the measurements determine the selected changes.
+
+## Publication
+
+Published commit `5dd4bb9` as [deployment d35ea10b](https://d35ea10b.cyberfoot-original-emulator.pages.dev/) at the [existing game link](https://cyberfoot-original-emulator.pages.dev/). Public HTML, scheduler script and package manifest match source. The public browser check confirms cross-origin isolation, timer-scheduler mode, working settings/spinner dismissal and no console or page errors. Public screenshot inspected.
