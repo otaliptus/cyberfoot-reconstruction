@@ -1,0 +1,100 @@
+{
+  "base": "https://cyberfoot-original-emulator.pages.dev",
+  "soundEnabled": true,
+  "headerVerified": true,
+  "freshMobileStartup": true,
+  "checked": [
+    {
+      "file": "index.html",
+      "bytes": 461,
+      "sha256": "71aa0dca12766b0d1a06c659653db745fb4ecd79bfd5188d5acdfcb1b33331cc"
+    },
+    {
+      "file": "game.html",
+      "bytes": 2793,
+      "sha256": "c3af54b5adfff1cfcff850f849826dd1834b4f47a4595fb7b872d2ffb19f827c"
+    },
+    {
+      "file": "loading.js",
+      "bytes": 5570,
+      "sha256": "ee19bc49af42cf28b50dfc7f1d501c9af801e644212e656d4a6ed2686a0c9349"
+    },
+    {
+      "file": "boxedwine-shell.js",
+      "bytes": 40506,
+      "sha256": "35910bd0a0789a95ba28345f281eb24c61280206ed342d40204a36068ccef440"
+    },
+    {
+      "file": "graphics.zip",
+      "bytes": 1358832,
+      "sha256": "ad5b2329dc2083070b5754abd8756bc52a7b727c0b893ad8317e66783ffd3ee7"
+    },
+    {
+      "file": "fork-runtime.js",
+      "bytes": 924,
+      "sha256": "c7250d22c424ab3c87003f32aeb2f566e19dd096c5bf0d4009561d615605b27a"
+    },
+    {
+      "file": "runtime-loader.js",
+      "bytes": 1171,
+      "sha256": "fa64c1658b3c7389945f12cc2c624adf43ee1e3c4259c45fa3c045ca28480c2b"
+    },
+    {
+      "file": "threaded/boxedwine.js",
+      "bytes": 231075,
+      "sha256": "40493ba9d2846e22bb084c90cd66f0b017fef863d565007b184216414b8cd1ca"
+    },
+    {
+      "file": "threaded/boxedwine.wasm",
+      "bytes": 2368239,
+      "sha256": "f598b8995579bd6040b8a593b71cafe84fa95aadfa547d9d009424722feb7bce"
+    },
+    {
+      "file": "source/runtime.patch",
+      "bytes": 28648,
+      "sha256": "dc786d8e37ec3681e19c8d550fb8900c7004068fc643b48d73fbf45e441a9c70"
+    },
+    {
+      "file": "source/boxedwine-cyberfoot-source.tar.gz",
+      "bytes": 12388567,
+      "sha256": "b649eaea7ab671f4ae6eb0c6cbba5da80dc6b98f0b75619ad0385d7eaf5165de"
+    }
+  ],
+  "state": {
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive",
+      "forkMode": 3
+    },
+    "loading": {
+      "starting": false,
+      "failed": false,
+      "busy": false,
+      "visible": false
+    },
+    "timingMode": 0,
+    "metrics": {
+      "dispatches": 0,
+      "queueUs": 0,
+      "executionUs": 0,
+      "resumeUs": 0,
+      "maxQueueUs": 0,
+      "maxExecutionUs": 0,
+      "frames": 8,
+      "compositionUs": 16000,
+      "uploads": 9,
+      "uploadPixels": 1126253,
+      "flushes": 1559,
+      "putImages": 12,
+      "putImageUs": 0,
+      "wakes": 0,
+      "coalescedWakes": 0,
+      "deferredFlushes": 1559,
+      "mainTicks": 2909
+    }
+  },
+  "settingsSpinnerDismissed": true,
+  "optionalSourceNotLoadedDuringPlay": true,
+  "errors": []
+}
