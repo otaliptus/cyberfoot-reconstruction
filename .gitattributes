@@ -1,0 +1,2 @@
+# Preserve byte-exact compiler output, including its generated whitespace.
+cyberfoot-web/public/emulator/threaded/boxedwine.js -whitespace linguist-generated=true

@@ -56,7 +56,7 @@ function summarize(profile){
 async function start(name){
  if(phase)throw Error('A phase is already recording');
  if(samplePaint)await page.evaluate(()=>window.cyberfootPaintProbe?.reset());
- phase={name,started:performance.now(),cpu:await processes()};if(sampleCpu)await main.send('Profiler.start');
+ phase={name,started:performance.now(),cpu:await processes(),fork:await page.evaluate(()=>window.cyberfootForkMetrics?.()??null)};if(sampleCpu)await main.send('Profiler.start');
  for(const item of sessions.values())if(item.send&&!item.error){await item.send('Profiler.start');item.recording=true;}
 }
 async function finish(extra={}){
@@ -70,7 +70,9 @@ async function finish(extra={}){
  const before=new Map(current.cpu.map(p=>[p.id,p.cpuTime]));
  const cpu=endCpu.map(p=>({type:p.type,seconds:Math.max(0,p.cpuTime-(before.get(p.id)??0))}));
  const paint=samplePaint?await page.evaluate(()=>window.cyberfootPaintProbe?.read()??null):undefined;
- const result={name:current.name,wallMs:Math.round(performance.now()-current.started),cpuSampling:sampleCpu,cpu,profiles,paint,...extra};results.push(result);
+ const forkNow=await page.evaluate(()=>window.cyberfootForkMetrics?.()??null);
+ const fork=forkNow?Object.fromEntries(Object.entries(forkNow).map(([key,value])=>[key,key.startsWith('max')?value:value-(current.fork?.[key]??0)])):undefined;
+ const result={name:current.name,wallMs:Math.round(performance.now()-current.started),cpuSampling:sampleCpu,cpu,profiles,paint,fork,...extra};results.push(result);
  writeFileSync(out+'/results.json',JSON.stringify(results,null,2));writeFileSync(out+'/console.json',JSON.stringify(logs,null,2));
  const compact={...result};delete compact.profiles;console.log(JSON.stringify(compact));return result;
 }
@@ -87,7 +89,7 @@ async function action(a){
  if(a.type==='text')await page.keyboard.type(a.text,{delay:60});
 }
 try{
- await start('startup');await page.goto(base+'/emulator/game.html?app=cyberfoot&overlay=graphics&p=cf2015.exe&resolution=1024x768&sound=false&storage=indexeddb');
+ await start('startup');await page.goto(base+'/emulator/game.html?app=cyberfoot&overlay=graphics&p=cf2015.exe&resolution=1024x768&sound=false&storage=indexeddb'+(process.env.PROFILE_FORK_MODE===undefined?'':'&forkmode='+encodeURIComponent(process.env.PROFILE_FORK_MODE)));
  await page.waitForFunction(()=>{
   if(window.CyberfootLoading?.state().failed)throw Error(document.getElementById('status').textContent);
   const c=document.getElementById('canvas');if(!c||c.width!==1024)return false;
@@ -99,7 +101,7 @@ try{
  const menuReadyMs=Math.round(performance.now()-phase.started);
  const runtime=await page.evaluate(()=>window.cyberfootRuntime);
  if(runtime?.engine!=='threaded'||!runtime.isolated)throw Error('This profile requires the isolated threaded runtime; check the server COOP/COEP headers.');
- const downloads=await page.evaluate(()=>performance.getEntriesByType('resource').filter(r=>r.name.includes('/packages/')||r.name.endsWith('.wasm')).map(r=>({name:r.name.split('/').at(-1),startMs:Math.round(r.startTime),endMs:Math.round(r.responseEnd),transferBytes:r.transferSize})));
+ const downloads=await page.evaluate(()=>performance.getEntriesByType('resource').filter(r=>r.name.includes('/packages/')||new URL(r.name).pathname.endsWith('.wasm')).map(r=>({name:r.name.split('/').at(-1),startMs:Math.round(r.startTime),endMs:Math.round(r.responseEnd),transferBytes:r.transferSize})));
  await shot('startup');await finish({menuReadyMs,runtime,menuReadyCriterion:'English selector focus visible at fixed 1024x768 canvas coordinates',downloads});
  await page.waitForFunction(()=>!window.CyberfootLoading?.state().starting,null,{timeout:10000});
  if(samplePaint)await page.evaluate(()=>{

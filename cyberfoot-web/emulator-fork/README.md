@@ -1,0 +1,49 @@
+# Cyberfoot Boxedwine fork
+
+An instrumented, reproducible fork of Boxedwine 26R1.0, maintained as a patch in the existing Cyberfoot repository. The source checkout, SDK and build output live under ignored `output/emulator-fork/`. This does not modify the game executable, Wine package, rules or clocks.
+
+Upstream commit: `d7d5a1421bd781a81cbdf8f222cced11a7ebd76e` (annotated tag `26R1.0`). Emscripten SDK: `4.0.23`, SDK repository commit `c0bb220cb6e6f4e0fabb6f6db9efd53390ef5e56`. Patches and derived emulator binaries are GPL-2.0-or-later, consistent with upstream. Corresponding source is the pinned upstream plus `runtime.patch` and these build instructions.
+
+## Build and serve locally
+
+From the repository root:
+
+```sh
+python3 cyberfoot-web/emulator-fork/build.py
+python3 cyberfoot-web/emulator-fork/serve.py
+```
+
+The first build downloads the source and SDK. Existing checkouts must match their pinned commits; the script checks whether the patch is already applied. Builds use six jobs at most and the existing 12-worker pool. No shell profile is modified and nothing is deployed automatically.
+
+The local server on port 8778 serves the existing game files with the fork JS/WASM and a diagnostic hook. `forkmode` selects independent experimental features:
+
+| Mode | Queue wakeups | Deferred XFlush presentation |
+| --- | --- | --- |
+| 0 | Off | Off |
+| 1 | On | Off |
+| 2 | Off | On |
+| 3 | On | On |
+
+The production launcher defaults to mode 3; use explicit mode 0 for the control. The normal timer-based event pump remains in place. Wakeups use a dedicated Emscripten proxy queue to notify the main thread only when an SDL callback is queued; duplicate pending notifications combine. Workers still wait for operations that return results. The main loop remains the fallback if a wake notification cannot be scheduled.
+
+In batching modes, XFlush sets a pending-presentation flag and returns after previously issued drawing operations have already updated their surfaces. The normal main loop presents at most once per 16 ms, after servicing native events. Intermediate presentation requests combine; the latest surface data is rendered using the original compositor. Display/window dirty flags are atomic, and window dirty state is consumed while its surface is locked, so a later update is not erased by completion of a previous draw. These modes require gameplay validation before production use.
+
+## Measurement
+
+```sh
+PROFILE_SAMPLES=0 PROFILE_FORK_MODE=0 PROFILE_SEED=380188361 \
+CYBERFOOT_EMULATOR_BASE=http://127.0.0.1:8778 \
+PROFILE_OUTPUT="$PWD/output/emulator-fork/profiles/control" \
+node cyberfoot-web/scripts/profile-emulator.mjs \
+< docs/evidence/emulator-ui-paint-2026-09-15/actions.jsonl
+```
+
+Repeat sequentially with modes 1, 2 and 3 and separate output directories. Avoid concurrent benchmark browsers or compilation. Use identical seed/actions and inspect screenshots as well as latency. Production randomness is not fixed.
+
+The diagnostic callback exposes cumulative counters through `window.cyberfootForkMetrics()`. The profiler records phase deltas; `maxQueueUs` and `maxExecutionUs` remain lifetime high-water marks. Timings use Boxedwine's common process clock, which has millisecond resolution in this build despite the `Us` units. Queue time starts immediately before enqueueing; execution time includes callback drawing; resume time measures callback completion to worker continuation. These are aggregate wall times across threads, not CPU time or a sum that necessarily equals user-visible latency. `compositionUs` overlaps callback execution time and must not be added to it. Presentation and image-upload counters do not count every emulated GDI or Delphi operation.
+
+The original fixed-offset browser frame-copy probe (`PROFILE_PAINT=1`) is tied to the official binary and should not be used with this fork; native counters provide the relevant display measurements.
+
+## Stage for publication
+
+After validation, `python3 cyberfoot-web/emulator-fork/stage.py` verifies the tested binary/patch hashes and stages JS/WASM plus a corresponding-source archive in the existing public directory. It does not deploy. The archive contains the patched source, headers, bundled libraries, platform code and original web build files, excluding build output. It can also be built directly after extraction: activate Emscripten 4.0.23 and run `make -C project/emscripten -j6 BUILD_DIR=Build/MultiThreaded EXTRA_CPP_FLAGS='-DBOXEDWINE_MULTI_THREADED -pthread' EXTRA_LD_FLAGS='-pthread -sPTHREAD_POOL_SIZE=12' SHELL_FILE=shell.html` from its root. Runtime switches are configured separately by the launcher.

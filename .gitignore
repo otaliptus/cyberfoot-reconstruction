@@ -21,3 +21,6 @@ cyberfoot-web-deploy.tar.gz
 
 # Reproducible emulator download packages
 cyberfoot-web/public/emulator/packages/
+
+# Published corresponding emulator source, reproduced by emulator-fork/stage.py
+cyberfoot-web/public/emulator/source/

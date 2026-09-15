@@ -1,0 +1,376 @@
+diff --git a/include/cyberfoot_perf.h b/include/cyberfoot_perf.h
+new file mode 100644
+index 0000000..3bf4605
+--- /dev/null
++++ b/include/cyberfoot_perf.h
+@@ -0,0 +1,19 @@
++// Cyberfoot-specific, optional web runtime instrumentation (GPL-2.0-or-later).
++#pragma once
++#if defined(__EMSCRIPTEN__) && defined(BOXEDWINE_MULTI_THREADED)
++#include <atomic>
++enum CfMetric { CF_DISPATCH, CF_QUEUE_US, CF_EXEC_US, CF_RESUME_US,
++ CF_MAX_QUEUE_US, CF_MAX_EXEC_US, CF_FRAMES, CF_COMPOSE_US, CF_UPLOADS,
++ CF_UPLOAD_PIXELS, CF_FLUSH, CF_PUT_IMAGE, CF_PUT_IMAGE_US, CF_WAKE,
++ CF_WAKE_COALESCED, CF_DEFERRED_FLUSH, CF_MAIN_TICKS, CF_METRIC_COUNT };
++extern std::atomic<unsigned long long> cfMetrics[CF_METRIC_COUNT];
++extern std::atomic<unsigned> cfMode;
++inline void cfAdd(CfMetric id, unsigned long long n=1) { cfMetrics[id].fetch_add(n, std::memory_order_relaxed); }
++inline void cfMax(CfMetric id, unsigned long long n) {
++ auto old=cfMetrics[id].load(std::memory_order_relaxed);
++ while(old<n && !cfMetrics[id].compare_exchange_weak(old,n,std::memory_order_relaxed)) {}
++}
++void cfWakeUi();
++void cfRequestPresent();
++void cfPresentTick();
++#endif
+diff --git a/platform/sdl/knativeinputSDL.cpp b/platform/sdl/knativeinputSDL.cpp
+index a508116..b70c875 100644
+--- a/platform/sdl/knativeinputSDL.cpp
++++ b/platform/sdl/knativeinputSDL.cpp
+@@ -17,6 +17,7 @@
+  */
+ 
+ #include "boxedwine.h"
++#include "cyberfoot_perf.h"
+ #include <SDL.h>
+ #include "../../source/x11/x11.h"
+ #include "sdlcallback.h"
+@@ -26,6 +27,17 @@
+ #include "kdspaudio.h"
+ 
+ U32 sdlCustomEvent;
++#if defined(__EMSCRIPTEN__) && defined(BOXEDWINE_MULTI_THREADED)
++static U32 cfExecute(SdlCallback* callback) {
++ const U64 start=KSystem::getMicroCounter(), wait=start-callback->queuedAt;
++ cfAdd(CF_QUEUE_US,wait); cfMax(CF_MAX_QUEUE_US,wait);
++ U32 result=callback->pfn();
++ callback->finishedAt=KSystem::getMicroCounter();
++ const U64 elapsed=callback->finishedAt-start;
++ cfAdd(CF_EXEC_US,elapsed); cfMax(CF_MAX_EXEC_US,elapsed);
++ return result;
++}
++#endif
+ 
+ KNativeInputSDL::KNativeInputSDL(U32 cx, U32 cy, int scaleX, int scaleY) {
+     if (!sdlCustomEvent) {
+@@ -275,7 +287,11 @@ bool KNativeInputSDL::waitForEvent(U32 ms) {
+         if (e.type == sdlCustomEvent) {
+             SdlCallback* callback = (SdlCallback*)e.user.data1;
+             if (callback->pfn) {
++                #ifdef __EMSCRIPTEN__
++                callback->result = cfExecute(callback);
++#else
+                 callback->result = (U32)callback->pfn();
++#endif
+             }
+             BOXEDWINE_CRITICAL_SECTION_WITH_CONDITION(callback->cond);
+             BOXEDWINE_CONDITION_SIGNAL(callback->cond);
+@@ -295,7 +311,11 @@ bool KNativeInputSDL::processEvents() {
+ #ifdef BOXEDWINE_MULTI_THREADED
+         if (e.type == sdlCustomEvent) {
+             SdlCallback* callback = (SdlCallback*)e.user.data1;
+-            callback->result = (U32)callback->pfn();
++            #ifdef __EMSCRIPTEN__
++                callback->result = cfExecute(callback);
++#else
++                callback->result = (U32)callback->pfn();
++#endif
+             BOXEDWINE_CRITICAL_SECTION_WITH_CONDITION(callback->cond);
+             BOXEDWINE_CONDITION_SIGNAL(callback->cond);
+         } else
+@@ -533,7 +553,11 @@ void KNativeInputSDL::processCustomEvents(std::function<bool(bool isKeyDown, int
+ #ifdef BOXEDWINE_MULTI_THREADED
+         else if (e.type == sdlCustomEvent) {
+             SdlCallback* callback = (SdlCallback*)e.user.data1;
+-            callback->result = (U32)callback->pfn();
++            #ifdef __EMSCRIPTEN__
++                callback->result = cfExecute(callback);
++#else
++                callback->result = (U32)callback->pfn();
++#endif
+             BOXEDWINE_CRITICAL_SECTION_WITH_CONDITION(callback->cond);
+             BOXEDWINE_CONDITION_SIGNAL(callback->cond);
+         }
+diff --git a/platform/sdl/knativescreenSDL.cpp b/platform/sdl/knativescreenSDL.cpp
+index c4e0149..b8b28d1 100644
+--- a/platform/sdl/knativescreenSDL.cpp
++++ b/platform/sdl/knativescreenSDL.cpp
+@@ -17,6 +17,7 @@
+  */
+ 
+ #include "boxedwine.h"
++#include "cyberfoot_perf.h"
+ #include "../../source/ui/mainui.h"
+ #include "../../source/sdl/startupArgs.h"
+ 
+@@ -212,6 +213,9 @@ void KNativeScreenSDL::putBitsOnWnd(U32 id, U8* bits, U32 bitsPerPixel, U32 srcP
+         isDirty = true;
+     }
+     if (isDirty) {
++#if defined(__EMSCRIPTEN__) && defined(BOXEDWINE_MULTI_THREADED)
++        cfAdd(CF_UPLOADS); cfAdd(CF_UPLOAD_PIXELS, static_cast<U64>(width)*height);
++#endif
+         lastUpdateTime = KSystem::getMilliesSinceStart();
+     }
+     if (!wnd->sdlTexture) {
+diff --git a/platform/sdl/sdlcallback.cpp b/platform/sdl/sdlcallback.cpp
+index 2f66c7b..036d729 100644
+--- a/platform/sdl/sdlcallback.cpp
++++ b/platform/sdl/sdlcallback.cpp
+@@ -17,6 +17,7 @@
+  */
+ 
+ #include "boxedwine.h"
++#include "cyberfoot_perf.h"
+ #ifdef BOXEDWINE_MULTI_THREADED
+ 
+ #include <SDL.h>
+@@ -56,9 +57,19 @@ U32 sdlDispatch(std::function<U32()> p) {
+     callback->pfn = p;
+     {
+         BOXEDWINE_CRITICAL_SECTION_WITH_CONDITION(callback->cond);
++#ifdef __EMSCRIPTEN__
++        callback->queuedAt = KSystem::getMicroCounter();
++        cfAdd(CF_DISPATCH);
++#endif
+         SDL_PushEvent(&callback->sdlEvent);
++#ifdef __EMSCRIPTEN__
++        cfWakeUi();
++#endif
+         BOXEDWINE_CONDITION_WAIT(callback->cond);
+     }
++#ifdef __EMSCRIPTEN__
++    cfAdd(CF_RESUME_US, KSystem::getMicroCounter()-callback->finishedAt);
++#endif
+     U32 result = callback->result;
+     callback->pfn = nullptr;
+     freeSdlCallback(callback);    
+diff --git a/platform/sdl/sdlcallback.h b/platform/sdl/sdlcallback.h
+index 8cdb81c..b72b05a 100644
+--- a/platform/sdl/sdlcallback.h
++++ b/platform/sdl/sdlcallback.h
+@@ -29,6 +29,9 @@ public:
+     BOXEDWINE_CONDITION cond;
+     std::function<U32()> pfn;
+     U32 result = 0;
++#if defined(__EMSCRIPTEN__)
++    U64 queuedAt = 0, finishedAt = 0;
++#endif
+     SdlCallback* next = nullptr;
+ };
+ 
+diff --git a/source/sdl/emscripten/cyberfoot_perf.cpp b/source/sdl/emscripten/cyberfoot_perf.cpp
+new file mode 100644
+index 0000000..ec19a65
+--- /dev/null
++++ b/source/sdl/emscripten/cyberfoot_perf.cpp
+@@ -0,0 +1,37 @@
++// Cyberfoot-specific, optional web runtime instrumentation (GPL-2.0-or-later).
++#include "boxedwine.h"
++#if defined(__EMSCRIPTEN__) && defined(BOXEDWINE_MULTI_THREADED)
++#include "cyberfoot_perf.h"
++#include "knativesystem.h"
++#include "../../x11/x11.h"
++#include <emscripten/emscripten.h>
++#include <emscripten/threading.h>
++#include <emscripten/proxying.h>
++std::atomic<unsigned long long> cfMetrics[CF_METRIC_COUNT]{};
++std::atomic<unsigned> cfMode{0};
++static std::atomic<bool> wakePending{false}, presentPending{false};
++static em_proxying_queue* wakeQueue = em_proxying_queue_create();
++static void cfDrain(void*) {
++ wakePending.store(false);
++ cfAdd(CF_WAKE);
++ if (!isMainthread()) return; // The first normal tick initializes main-thread identity.
++ if (!KNativeSystem::getCurrentInput()->processEvents()) KNativeSystem::cleanup();
++}
++void cfWakeUi() {
++ if (!(cfMode.load(std::memory_order_relaxed)&1)) return;
++ if (wakePending.exchange(true)) { cfAdd(CF_WAKE_COALESCED); return; }
++ if (!emscripten_proxy_async(wakeQueue, emscripten_main_runtime_thread_id(), cfDrain, nullptr)) wakePending.store(false);
++}
++void cfRequestPresent() { presentPending.store(true); cfAdd(CF_DEFERRED_FLUSH); }
++void cfPresentTick() {
++ static double last=0;
++ if (!presentPending.load() || emscripten_get_now()-last<16) return;
++ presentPending.store(false);
++ if (auto server=XServer::getServer(true)) server->draw(true);
++ last=emscripten_get_now();
++}
++extern "C" {
++EMSCRIPTEN_KEEPALIVE double cyberfoot_metric(int id) { return id>=0 && id<CF_METRIC_COUNT ? double(cfMetrics[id].load()) : -1; }
++EMSCRIPTEN_KEEPALIVE void cyberfoot_mode(unsigned mode) { cfMode.store(mode&3); }
++}
++#endif
+diff --git a/source/sdl/emscripten/mainloop.cpp b/source/sdl/emscripten/mainloop.cpp
+index daf345d..82e90ea 100644
+--- a/source/sdl/emscripten/mainloop.cpp
++++ b/source/sdl/emscripten/mainloop.cpp
+@@ -19,6 +19,7 @@
+ #ifdef __EMSCRIPTEN__
+ #include <emscripten/emscripten.h>
+ #include "boxedwine.h"
++#include "cyberfoot_perf.h"
+ #include "knativesystem.h"
+ 
+ #ifdef BOXEDWINE_MULTI_THREADED
+@@ -52,6 +53,7 @@ static BString getSize(int pages)
+ extern int allocatedRamPages;
+ void mainloop() {
+     isMainThread = true;
++    cfAdd(CF_MAIN_TICKS);
+         U32 t = KSystem::getMilliesSinceStart();
+         U32 nextTimer = getNextTimer();
+         if (nextTimer == 0) {
+@@ -74,6 +76,7 @@ void mainloop() {
+         if (!KNativeSystem::getCurrentInput()->processEvents()) {
+             KNativeSystem::cleanup();
+         }
++        cfPresentTick();
+ }
+ 
+ void waitForProcessToFinish(const std::shared_ptr<KProcess>& process, KThread* thread) {
+diff --git a/source/x11/x11common.cpp b/source/x11/x11common.cpp
+index 016eb53..d19ad71 100644
+--- a/source/x11/x11common.cpp
++++ b/source/x11/x11common.cpp
+@@ -17,6 +17,7 @@
+  */
+ 
+ #include "boxedwine.h"
++#include "cyberfoot_perf.h"
+ #include "../../tools/x11/X11_def.h"
+ #include "x11.h"
+ #include "knativesystem.h"
+@@ -1621,13 +1622,25 @@ static void x11_PutImage(CPU* cpu) {
+     U32 dest_y = ARG8;
+     U32 width = ARG9;
+     U32 height = ARG10;
++#if defined(__EMSCRIPTEN__) && defined(BOXEDWINE_MULTI_THREADED)
++    const U64 cfStart=KSystem::getMicroCounter(); cfAdd(CF_PUT_IMAGE);
++#endif
+     EAX = d->putImage(thread, gc, &image, src_x, src_y, dest_x, dest_y, width, height);
++#if defined(__EMSCRIPTEN__) && defined(BOXEDWINE_MULTI_THREADED)
++    cfAdd(CF_PUT_IMAGE_US,KSystem::getMicroCounter()-cfStart);
++#endif
+ }
+ 
+ // int XFlush(Display* display)
+ static void x11_Flush(CPU* cpu) {
+     XServer* server = XServer::getServer();
++#if defined(__EMSCRIPTEN__) && defined(BOXEDWINE_MULTI_THREADED)
++    cfAdd(CF_FLUSH);
++    if (cfMode.load(std::memory_order_relaxed)&2) cfRequestPresent();
++    else server->draw(true);
++#else
+     server->draw(true);
++#endif
+     EAX = Success;
+ }
+ 
+diff --git a/source/x11/xdrawable.h b/source/x11/xdrawable.h
+index d37201b..bcc49ab 100644
+--- a/source/x11/xdrawable.h
++++ b/source/x11/xdrawable.h
+@@ -53,7 +53,7 @@ public:
+ 	void unlockData();
+ 
+ 	virtual void setDirty() {};
+-	bool isDirty = false;
++	std::atomic<bool> isDirty{false};
+ 	const bool isWindow;
+ 	bool isOpenGL = false;
+ 
+diff --git a/source/x11/xserver.cpp b/source/x11/xserver.cpp
+index 86d7c38..06c11ab 100644
+--- a/source/x11/xserver.cpp
++++ b/source/x11/xserver.cpp
+@@ -17,6 +17,7 @@
+  */
+ 
+ #include "boxedwine.h"
++#include "cyberfoot_perf.h"
+ #include "x11.h"
+ #include "knativesystem.h"
+ #include "ksocket.h"
+@@ -370,15 +371,16 @@ void XServer::draw(bool drawNow) {
+ 	}
+ 	{
+ 		BOXEDWINE_CRITICAL_SECTION;
+-		if (!isDisplayDirty) {
++		if (!isDisplayDirty.exchange(false)) {
+ 			return;
+ 		}
+ 		U32 now = KSystem::getMilliesSinceStart();
+ 		if (!drawNow && (now - lastDraw < 16)) {
++            isDisplayDirty = true;
+ 			return;
+ 		}
+ 		lastDraw = now;
+-		isDisplayDirty = false;
++
+ 	}
+ 
+ 	KNativeScreenPtr screen = KNativeSystem::getScreen();
+@@ -386,7 +388,10 @@ void XServer::draw(bool drawNow) {
+ 		return;
+ 	}
+ 	screen->getInput()->runOnUiThread([screen, this]() {
+-		bool childWasDrawn = false;
++#if defined(__EMSCRIPTEN__) && defined(BOXEDWINE_MULTI_THREADED)
++        const U64 cfStart=KSystem::getMicroCounter(); cfAdd(CF_FRAMES);
++#endif
++        bool childWasDrawn = false;
+ 
+ 		screen->clear();
+ 		root->iterateMappedChildrenBackToFront([&childWasDrawn](XWindowPtr child) {
+@@ -396,7 +401,10 @@ void XServer::draw(bool drawNow) {
+ 			}
+ 			return true;
+ 			}, true);		
+-		screen->present();
++        screen->present();
++#if defined(__EMSCRIPTEN__) && defined(BOXEDWINE_MULTI_THREADED)
++        cfAdd(CF_COMPOSE_US,KSystem::getMicroCounter()-cfStart);
++#endif
+ 	});	
+ }
+ 
+diff --git a/source/x11/xserver.h b/source/x11/xserver.h
+index 2e32015..5ec9b18 100644
+--- a/source/x11/xserver.h
++++ b/source/x11/xserver.h
+@@ -109,7 +109,7 @@ public:
+ 
+ 	bool trace = false;
+ 	bool traceGC = false;
+-	bool isDisplayDirty = false;
++	std::atomic<bool> isDisplayDirty{false};
+ 
+ 	CLXFBConfigPtr getFbConfig(U32 id);	
+ 	U32 getFbConfigCount();
+diff --git a/source/x11/xwindow.cpp b/source/x11/xwindow.cpp
+index 6bbaa90..4b38c4d 100644
+--- a/source/x11/xwindow.cpp
++++ b/source/x11/xwindow.cpp
+@@ -876,8 +876,7 @@ int XWindow::reparentWindow(const XWindowPtr& parent, S32 x, S32 y) {
+ }
+ 
+ void XWindow::setDirty() {
+-	if (!isDirty) {
+-		isDirty = true;
++	if (!isDirty.exchange(true)) {
+ 		XServer::getServer()->isDisplayDirty = true;
+ 	}
+ }
+@@ -896,9 +895,8 @@ void XWindow::draw() {
+ 	S32 screenY = top;
+ 	//windowToScreen(screenX, screenY);
+ 	lockData();
+-	KNativeSystem::getScreen()->putBitsOnWnd(id, data, visual?visual->bits_per_rgb:32, bytes_per_line, screenX, screenY, width(), height(), palette, isDirty);
++	KNativeSystem::getScreen()->putBitsOnWnd(id, data, visual?visual->bits_per_rgb:32, bytes_per_line, screenX, screenY, width(), height(), palette, isDirty.exchange(false));
+ 	unlockData();
+-	isDirty = false;
+ 
+ 	iterateMappedChildrenBackToFront([](const XWindowPtr& child) {
+ 		child->draw();

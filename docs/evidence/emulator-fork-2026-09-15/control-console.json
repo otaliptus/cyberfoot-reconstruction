@@ -1,0 +1,217 @@
+[
+  {
+    "ms": 1789436831695,
+    "type": "log",
+    "text": "setting root zip file to: boxedwine.zip"
+  },
+  {
+    "ms": 1789436831695,
+    "type": "log",
+    "text": "setting app zip file to: cyberfoot.zip"
+  },
+  {
+    "ms": 1789436831772,
+    "type": "log",
+    "text": "running initial setup"
+  },
+  {
+    "ms": 1789436831772,
+    "type": "log",
+    "text": "setting auto run to: true"
+  },
+  {
+    "ms": 1789436831772,
+    "type": "log",
+    "text": "setting load Desktop to: false"
+  },
+  {
+    "ms": 1789436831772,
+    "type": "log",
+    "text": "setting root zip file to: boxedwine.zip"
+  },
+  {
+    "ms": 1789436831772,
+    "type": "log",
+    "text": "setting overlay zip file(s) to: graphics.zip"
+  },
+  {
+    "ms": 1789436831772,
+    "type": "log",
+    "text": "setting app zip file to: cyberfoot.zip"
+  },
+  {
+    "ms": 1789436831773,
+    "type": "log",
+    "text": "setting program to execute to: cf2015.exe"
+  },
+  {
+    "ms": 1789436831773,
+    "type": "log",
+    "text": "setting sound to: false"
+  },
+  {
+    "ms": 1789436831773,
+    "type": "log",
+    "text": "setting BPP to: 32"
+  },
+  {
+    "ms": 1789436831773,
+    "type": "log",
+    "text": "setting skipFrameFPS to: 0"
+  },
+  {
+    "ms": 1789436831774,
+    "type": "log",
+    "text": "setting Resolution to: 1024x768"
+  },
+  {
+    "ms": 1789436831774,
+    "type": "log",
+    "text": "Use Storage mode: INDEXED_DB"
+  },
+  {
+    "ms": 1789436831877,
+    "type": "log",
+    "text": "File created://graphics.zip"
+  },
+  {
+    "ms": 1789436832083,
+    "type": "log",
+    "text": "File created://cyberfoot.zip"
+  },
+  {
+    "ms": 1789436832154,
+    "type": "log",
+    "text": "File created://boxedwine.zip"
+  },
+  {
+    "ms": 1789436832154,
+    "type": "log",
+    "text": "Emulator params:-root,/root,-zip,boxedwine.zip,-zip,graphics.zip,-mount,cyberfoot.zip,/home/username/.wine/dosdevices/c:/files,-mount_drive,/d_drive,d,-resolution,1024x768,-nosound,-w,/home/username/.wine/dosdevices/c:/files,/bin/wine,cf2015.exe"
+  },
+  {
+    "ms": 1789436832159,
+    "type": "log",
+    "text": "Starting ..."
+  },
+  {
+    "ms": 1789436832161,
+    "type": "log",
+    "text": "Command line arguments: \"./this.program\" \"-root\" \"/root\" \"-zip\" \"boxedwine.zip\" \"-zip\" \"graphics.zip\" \"-mount\" \"cyberfoot.zip\" \"/home/username/.wine/dosdevices/c:/files\" \"-mount_drive\" \"/d_drive\" \"d\" \"-resolution\" \"1024x768\" \"-nosound\" \"-w\" \"/home/username/.wine/dosdevices/c:/files\" \"/bin/wine\" \"cf2015.exe\""
+  },
+  {
+    "ms": 1789436832164,
+    "type": "log",
+    "text": "Using root directory: /root"
+  },
+  {
+    "ms": 1789436832179,
+    "type": "log",
+    "text": "Using zip file system: boxedwine.zip"
+  },
+  {
+    "ms": 1789436832179,
+    "type": "log",
+    "text": "Using zip file system: graphics.zip"
+  },
+  {
+    "ms": 1789436832179,
+    "type": "log",
+    "text": "Resolution set to: 1024x768"
+  },
+  {
+    "ms": 1789436832198,
+    "type": "log",
+    "text": "Loaded boxedwine.zip in 19 ms"
+  },
+  {
+    "ms": 1789436832199,
+    "type": "log",
+    "text": "Loaded graphics.zip in 1 ms"
+  },
+  {
+    "ms": 1789436832215,
+    "type": "log",
+    "text": "Mounted cyberfoot.zip in 13 ms"
+  },
+  {
+    "ms": 1789436832218,
+    "type": "log",
+    "text": "Launching \"/bin/wine\" \"cf2015.exe\" "
+  },
+  {
+    "ms": 1789436834510,
+    "type": "log",
+    "text": "wine: failed to start L\"C:\\\\windows\\\\system32\\\\wineboot.exe\": c0000135"
+  },
+  {
+    "ms": 1789436834521,
+    "type": "log",
+    "text": "0024:err:environ:run_wineboot failed to start wineboot c0000135"
+  },
+  {
+    "ms": 1789436834617,
+    "type": "log",
+    "text": "0024:err:module:load_apiset_dll failed to load apiset: c000000f"
+  },
+  {
+    "ms": 1789436837591,
+    "type": "log",
+    "text": "0034:err:module:load_apiset_dll failed to load apiset: c000000f"
+  },
+  {
+    "ms": 1789436838692,
+    "type": "log",
+    "text": "0034:err:vulkan:vulkan_init_once Failed to load libvulkan.so.1"
+  },
+  {
+    "ms": 1789436839667,
+    "type": "log",
+    "text": "0034:err:ole:start_rpcss Failed to open service manager"
+  },
+  {
+    "ms": 1789436842851,
+    "type": "log",
+    "text": "0024:fixme:mci:MCI_LoadMciDriver Couldn't load driver for type L\"WAVEAUDIO\"."
+  },
+  {
+    "ms": 1789436842858,
+    "type": "log",
+    "text": "0024:fixme:mci:MCI_LoadMciDriver Couldn't load driver for type L\"WAVEAUDIO\"."
+  },
+  {
+    "ms": 1789436842863,
+    "type": "log",
+    "text": "0024:fixme:mci:MCI_LoadMciDriver Couldn't load driver for type L\"WAVEAUDIO\"."
+  },
+  {
+    "ms": 1789436842868,
+    "type": "log",
+    "text": "0024:fixme:mci:MCI_LoadMciDriver Couldn't load driver for type L\"WAVEAUDIO\"."
+  },
+  {
+    "ms": 1789436842873,
+    "type": "log",
+    "text": "0024:fixme:mci:MCI_LoadMciDriver Couldn't load driver for type L\"WAVEAUDIO\"."
+  },
+  {
+    "ms": 1789436842879,
+    "type": "log",
+    "text": "0024:fixme:mci:MCI_LoadMciDriver Couldn't load driver for type L\"WAVEAUDIO\"."
+  },
+  {
+    "ms": 1789436842884,
+    "type": "log",
+    "text": "0024:fixme:mci:MCI_LoadMciDriver Couldn't load driver for type L\"WAVEAUDIO\"."
+  },
+  {
+    "ms": 1789436848028,
+    "type": "log",
+    "text": "Showing Window"
+  },
+  {
+    "ms": 1789436848038,
+    "type": "info",
+    "text": "Looks like you are rendering without using requestAnimationFrame for the main loop. You should use 0 for the frame rate in emscripten_set_main_loop in order to use requestAnimationFrame, as that can greatly improve your frame rates!"
+  }
+]

@@ -1,0 +1,464 @@
+[
+  {
+    "name": "startup",
+    "wallMs": 17580,
+    "cpuSampling": false,
+    "cpu": [
+      {
+        "type": "browser",
+        "seconds": 0.146076
+      },
+      {
+        "type": "renderer",
+        "seconds": 18.266261
+      },
+      {
+        "type": "GPU",
+        "seconds": 0.144656
+      },
+      {
+        "type": "network.mojom.NetworkService",
+        "seconds": 0.040173
+      }
+    ],
+    "profiles": {},
+    "fork": {
+      "dispatches": 11,
+      "queueUs": 0,
+      "executionUs": 25000,
+      "resumeUs": 1000,
+      "maxQueueUs": 0,
+      "maxExecutionUs": 10000,
+      "frames": 11,
+      "compositionUs": 25000,
+      "uploads": 11,
+      "uploadPixels": 1448039,
+      "flushes": 1559,
+      "putImages": 12,
+      "putImageUs": 0,
+      "wakes": 11,
+      "coalescedWakes": 0,
+      "deferredFlushes": 0,
+      "mainTicks": 3823
+    },
+    "menuReadyMs": 17506,
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive",
+      "forkMode": 1
+    },
+    "menuReadyCriterion": "English selector focus visible at fixed 1024x768 canvas coordinates",
+    "downloads": [
+      {
+        "name": "boxedwine.zip-858b287b376584c7.0",
+        "startMs": 91,
+        "endMs": 98,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.1",
+        "startMs": 91,
+        "endMs": 98,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.2",
+        "startMs": 91,
+        "endMs": 98,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.3",
+        "startMs": 91,
+        "endMs": 98,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.wasm",
+        "startMs": 124,
+        "endMs": 144,
+        "transferBytes": 2371952
+      },
+      {
+        "name": "cyberfoot.zip-757d0de26ae8bae4.0",
+        "startMs": 131,
+        "endMs": 153,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "cyberfoot.zip-757d0de26ae8bae4.1",
+        "startMs": 131,
+        "endMs": 153,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "cyberfoot.zip-757d0de26ae8bae4.2",
+        "startMs": 133,
+        "endMs": 163,
+        "transferBytes": 2566643
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.4",
+        "startMs": 133,
+        "endMs": 164,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.5",
+        "startMs": 178,
+        "endMs": 230,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.6",
+        "startMs": 178,
+        "endMs": 231,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.7",
+        "startMs": 180,
+        "endMs": 233,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.8",
+        "startMs": 198,
+        "endMs": 249,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.9",
+        "startMs": 249,
+        "endMs": 256,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.10",
+        "startMs": 249,
+        "endMs": 256,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.11",
+        "startMs": 249,
+        "endMs": 256,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.12",
+        "startMs": 253,
+        "endMs": 266,
+        "transferBytes": 2308405
+      }
+    ]
+  },
+  {
+    "name": "menu-idle",
+    "wallMs": 6112,
+    "cpuSampling": false,
+    "cpu": [
+      {
+        "type": "browser",
+        "seconds": 0.055614
+      },
+      {
+        "type": "renderer",
+        "seconds": 0.24962199999999868
+      },
+      {
+        "type": "GPU",
+        "seconds": 0.012234999999999996
+      },
+      {
+        "type": "network.mojom.NetworkService",
+        "seconds": 0
+      }
+    ],
+    "profiles": {},
+    "fork": {
+      "dispatches": 0,
+      "queueUs": 0,
+      "executionUs": 0,
+      "resumeUs": 0,
+      "maxQueueUs": 0,
+      "maxExecutionUs": 10000,
+      "frames": 0,
+      "compositionUs": 0,
+      "uploads": 0,
+      "uploadPixels": 0,
+      "flushes": 0,
+      "putImages": 0,
+      "putImageUs": 0,
+      "wakes": 0,
+      "coalescedWakes": 0,
+      "deferredFlushes": 0,
+      "mainTicks": 1346
+    },
+    "actionEndMs": 0,
+    "firstVisualChangeMs": null,
+    "lastVisualChangeMs": null,
+    "changedSamples": 0,
+    "visualQuietMs": 6103,
+    "mask": [],
+    "observationMs": 6103
+  },
+  {
+    "name": "new-game-settings",
+    "wallMs": 6082,
+    "cpuSampling": false,
+    "cpu": [
+      {
+        "type": "browser",
+        "seconds": 0.06348199999999998
+      },
+      {
+        "type": "renderer",
+        "seconds": 2.879626000000002
+      },
+      {
+        "type": "GPU",
+        "seconds": 0.05315700000000001
+      },
+      {
+        "type": "network.mojom.NetworkService",
+        "seconds": 0.0002489999999999992
+      }
+    ],
+    "profiles": {},
+    "fork": {
+      "dispatches": 28,
+      "queueUs": 2000,
+      "executionUs": 56000,
+      "resumeUs": 3000,
+      "maxQueueUs": 1000,
+      "maxExecutionUs": 10000,
+      "frames": 25,
+      "compositionUs": 56000,
+      "uploads": 24,
+      "uploadPixels": 10574592,
+      "flushes": 539,
+      "putImages": 24,
+      "putImageUs": 2000,
+      "wakes": 28,
+      "coalescedWakes": 0,
+      "deferredFlushes": 0,
+      "mainTicks": 1332
+    },
+    "actionEndMs": 124,
+    "firstVisualChangeMs": 1405,
+    "lastVisualChangeMs": 2868,
+    "changedSamples": 11,
+    "visualQuietMs": 3210,
+    "mask": [],
+    "observationMs": 6078
+  },
+  {
+    "name": "team-selection",
+    "wallMs": 8136,
+    "cpuSampling": false,
+    "cpu": [
+      {
+        "type": "browser",
+        "seconds": 0.12359800000000004
+      },
+      {
+        "type": "renderer",
+        "seconds": 6.177648000000001
+      },
+      {
+        "type": "GPU",
+        "seconds": 0.081256
+      },
+      {
+        "type": "network.mojom.NetworkService",
+        "seconds": 0
+      }
+    ],
+    "profiles": {},
+    "fork": {
+      "dispatches": 68,
+      "queueUs": 2000,
+      "executionUs": 167000,
+      "resumeUs": 0,
+      "maxQueueUs": 1000,
+      "maxExecutionUs": 10000,
+      "frames": 66,
+      "compositionUs": 167000,
+      "uploads": 65,
+      "uploadPixels": 49907976,
+      "flushes": 1002,
+      "putImages": 66,
+      "putImageUs": 1000,
+      "wakes": 68,
+      "coalescedWakes": 0,
+      "deferredFlushes": 0,
+      "mainTicks": 1809
+    },
+    "actionEndMs": 96,
+    "firstVisualChangeMs": 98,
+    "lastVisualChangeMs": 7825,
+    "changedSamples": 23,
+    "visualQuietMs": 308,
+    "mask": [
+      [
+        32,
+        654,
+        226,
+        25
+      ]
+    ],
+    "observationMs": 8133
+  },
+  {
+    "name": "create-career",
+    "wallMs": 12088,
+    "cpuSampling": false,
+    "cpu": [
+      {
+        "type": "browser",
+        "seconds": 0.08414500000000003
+      },
+      {
+        "type": "renderer",
+        "seconds": 8.976007
+      },
+      {
+        "type": "GPU",
+        "seconds": 0.05869000000000002
+      },
+      {
+        "type": "network.mojom.NetworkService",
+        "seconds": 0
+      }
+    ],
+    "profiles": {},
+    "fork": {
+      "dispatches": 64,
+      "queueUs": 1000,
+      "executionUs": 138000,
+      "resumeUs": 0,
+      "maxQueueUs": 2000,
+      "maxExecutionUs": 10000,
+      "frames": 60,
+      "compositionUs": 138000,
+      "uploads": 58,
+      "uploadPixels": 36590592,
+      "flushes": 1131,
+      "putImages": 60,
+      "putImageUs": 2000,
+      "wakes": 64,
+      "coalescedWakes": 0,
+      "deferredFlushes": 0,
+      "mainTicks": 2685
+    },
+    "actionEndMs": 99,
+    "firstVisualChangeMs": 100,
+    "lastVisualChangeMs": 7790,
+    "changedSamples": 27,
+    "visualQuietMs": 4294,
+    "mask": [],
+    "observationMs": 12084
+  },
+  {
+    "name": "open-lineup",
+    "wallMs": 12159,
+    "cpuSampling": false,
+    "cpu": [
+      {
+        "type": "browser",
+        "seconds": 0.12236999999999998
+      },
+      {
+        "type": "renderer",
+        "seconds": 6.560083999999996
+      },
+      {
+        "type": "GPU",
+        "seconds": 0.04677100000000001
+      },
+      {
+        "type": "network.mojom.NetworkService",
+        "seconds": 0.002688999999999997
+      }
+    ],
+    "profiles": {},
+    "fork": {
+      "dispatches": 53,
+      "queueUs": 3000,
+      "executionUs": 149000,
+      "resumeUs": 3000,
+      "maxQueueUs": 2000,
+      "maxExecutionUs": 10000,
+      "frames": 50,
+      "compositionUs": 149000,
+      "uploads": 50,
+      "uploadPixels": 28204596,
+      "flushes": 1202,
+      "putImages": 50,
+      "putImageUs": 2000,
+      "wakes": 53,
+      "coalescedWakes": 0,
+      "deferredFlushes": 0,
+      "mainTicks": 2680
+    },
+    "actionEndMs": 93,
+    "firstVisualChangeMs": 94,
+    "lastVisualChangeMs": 4197,
+    "changedSamples": 18,
+    "visualQuietMs": 7959,
+    "mask": [],
+    "observationMs": 12156
+  },
+  {
+    "name": "automatic-lineup",
+    "wallMs": 15144,
+    "cpuSampling": false,
+    "cpu": [
+      {
+        "type": "browser",
+        "seconds": 0.13439299999999998
+      },
+      {
+        "type": "renderer",
+        "seconds": 8.940791000000004
+      },
+      {
+        "type": "GPU",
+        "seconds": 0.145841
+      },
+      {
+        "type": "network.mojom.NetworkService",
+        "seconds": 0.0008500000000000035
+      }
+    ],
+    "profiles": {},
+    "fork": {
+      "dispatches": 179,
+      "queueUs": 11000,
+      "executionUs": 541000,
+      "resumeUs": 2000,
+      "maxQueueUs": 2000,
+      "maxExecutionUs": 10000,
+      "frames": 178,
+      "compositionUs": 540000,
+      "uploads": 177,
+      "uploadPixels": 93120924,
+      "flushes": 982,
+      "putImages": 177,
+      "putImageUs": 18000,
+      "wakes": 179,
+      "coalescedWakes": 0,
+      "deferredFlushes": 0,
+      "mainTicks": 3295
+    },
+    "actionEndMs": 87,
+    "firstVisualChangeMs": 88,
+    "lastVisualChangeMs": 6161,
+    "changedSamples": 42,
+    "visualQuietMs": 8980,
+    "mask": [],
+    "observationMs": 15141
+  }
+]

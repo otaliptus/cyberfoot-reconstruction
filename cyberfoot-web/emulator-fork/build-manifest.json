@@ -1,0 +1,19 @@
+{
+  "upstreamCommit": "d7d5a1421bd781a81cbdf8f222cced11a7ebd76e",
+  "emsdkVersion": "4.0.23",
+  "emsdkCommit": "c0bb220cb6e6f4e0fabb6f6db9efd53390ef5e56",
+  "compilerRelease": "aaa43392544d695232b70eda706d751f18980c2a",
+  "workerPool": 12,
+  "platform": "macOS-26.4-arm64-arm-64bit-Mach-O",
+  "patchSha256": "74d8dddddcf23c884d866625e81955ab34a681fc38a5b7fe7aefc8a289a59115",
+  "files": {
+    "boxedwine.js": {
+      "bytes": 494897,
+      "sha256": "f8813774f9b7ead7ea1543e95ede1db8a952138c58a0f2240558d4013887fd50"
+    },
+    "boxedwine.wasm": {
+      "bytes": 2371652,
+      "sha256": "de88ffb91441390e96eea985cadc8b7e181ebdfed9cd8523d1dc5f097606063e"
+    }
+  }
+}
