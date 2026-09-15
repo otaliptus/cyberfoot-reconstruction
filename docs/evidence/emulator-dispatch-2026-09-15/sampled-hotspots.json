@@ -1,0 +1,612 @@
+{
+  "startup": [
+    {
+      "function": "(idle)",
+      "sampledWallMs": 121245
+    },
+    {
+      "function": "__timedwait_cp",
+      "sampledWallMs": 49412
+    },
+    {
+      "function": "emscripten_futex_wait",
+      "sampledWallMs": 2113
+    },
+    {
+      "function": "normal_movr32e32(CPU*, DecodedOp*)",
+      "sampledWallMs": 1289
+    },
+    {
+      "function": "platformThread(CPU*)",
+      "sampledWallMs": 1229
+    },
+    {
+      "function": "normal_popEd_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 768
+    },
+    {
+      "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 615
+    },
+    {
+      "function": "normal_movr32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 555
+    },
+    {
+      "function": "(program)",
+      "sampledWallMs": 540
+    },
+    {
+      "function": "normal_jumpZ(CPU*, DecodedOp*)",
+      "sampledWallMs": 436
+    },
+    {
+      "function": "unzReadCurrentFile",
+      "sampledWallMs": 433
+    },
+    {
+      "function": "NormalCPU::run()",
+      "sampledWallMs": 405
+    },
+    {
+      "function": "normal_move32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 389
+    },
+    {
+      "function": "normal_add32_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 357
+    },
+    {
+      "function": "void* std::__2::__thread_proxy[abi:ne200100]<std::__2::tuple<std::__2::unique_ptr<std::__2::__thread_struct, std::__2::default_delete<std::__2::__thread_struct>>, void (*)(CPU*), CPU*>>(void*)",
+      "sampledWallMs": 292
+    },
+    {
+      "function": "crc32",
+      "sampledWallMs": 279
+    },
+    {
+      "function": "normal_testr32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 278
+    },
+    {
+      "function": "normal_callJd(CPU*, DecodedOp*)",
+      "sampledWallMs": 258
+    },
+    {
+      "function": "normal_jumpNLE(CPU*, DecodedOp*)",
+      "sampledWallMs": 232
+    },
+    {
+      "function": "_emscripten_get_now",
+      "sampledWallMs": 221
+    },
+    {
+      "function": "normal_inc32_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 204
+    },
+    {
+      "function": "normal_retn32(CPU*, DecodedOp*)",
+      "sampledWallMs": 194
+    },
+    {
+      "function": "normal_leaR32(CPU*, DecodedOp*)",
+      "sampledWallMs": 190
+    },
+    {
+      "function": "normal_jumpNZ(CPU*, DecodedOp*)",
+      "sampledWallMs": 180
+    },
+    {
+      "function": "normal_jumpL(CPU*, DecodedOp*)",
+      "sampledWallMs": 146
+    },
+    {
+      "function": "normal_cmpr32e32(CPU*, DecodedOp*)",
+      "sampledWallMs": 136
+    },
+    {
+      "function": "NormalCPU::getOp(unsigned int, unsigned int)",
+      "sampledWallMs": 135
+    },
+    {
+      "function": "normal_and32_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 134
+    },
+    {
+      "function": "normal_cmp32_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 133
+    },
+    {
+      "function": "emscripten_futex_wake",
+      "sampledWallMs": 130
+    }
+  ],
+  "new-game-settings": [
+    {
+      "function": "(idle)",
+      "sampledWallMs": 42248
+    },
+    {
+      "function": "__timedwait_cp",
+      "sampledWallMs": 34602
+    },
+    {
+      "function": "normal_movr32e32(CPU*, DecodedOp*)",
+      "sampledWallMs": 233
+    },
+    {
+      "function": "(program)",
+      "sampledWallMs": 220
+    },
+    {
+      "function": "void* std::__2::__thread_proxy[abi:ne200100]<std::__2::tuple<std::__2::unique_ptr<std::__2::__thread_struct, std::__2::default_delete<std::__2::__thread_struct>>, void (*)(CPU*), CPU*>>(void*)",
+      "sampledWallMs": 212
+    },
+    {
+      "function": "_emscripten_get_now",
+      "sampledWallMs": 142
+    },
+    {
+      "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 116
+    },
+    {
+      "function": "normal_jumpNZ(CPU*, DecodedOp*)",
+      "sampledWallMs": 109
+    },
+    {
+      "function": "normal_move32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 91
+    },
+    {
+      "function": "NormalCPU::run()",
+      "sampledWallMs": 85
+    },
+    {
+      "function": "normal_movr32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 82
+    },
+    {
+      "function": "normal_testr32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 71
+    },
+    {
+      "function": "normal_jumpZ(CPU*, DecodedOp*)",
+      "sampledWallMs": 71
+    },
+    {
+      "function": "normal_callJd(CPU*, DecodedOp*)",
+      "sampledWallMs": 59
+    },
+    {
+      "function": "normal_cmpe32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 49
+    },
+    {
+      "function": "normal_popEd_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 49
+    },
+    {
+      "function": "normal_orr32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 49
+    },
+    {
+      "function": "normal_add32_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 47
+    },
+    {
+      "function": "",
+      "sampledWallMs": 47
+    },
+    {
+      "function": "setTimeout",
+      "sampledWallMs": 33
+    },
+    {
+      "function": "normal_retn32(CPU*, DecodedOp*)",
+      "sampledWallMs": 33
+    },
+    {
+      "function": "evaluate",
+      "sampledWallMs": 26
+    },
+    {
+      "function": "256875",
+      "sampledWallMs": 26
+    },
+    {
+      "function": "ramPageAlloc()",
+      "sampledWallMs": 25
+    },
+    {
+      "function": "do_proxy",
+      "sampledWallMs": 25
+    },
+    {
+      "function": "normal_cmpr32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 24
+    },
+    {
+      "function": "normal_cmp16_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 24
+    },
+    {
+      "function": "normal_leaR32(CPU*, DecodedOp*)",
+      "sampledWallMs": 24
+    },
+    {
+      "function": "normal_movGdXzR16(CPU*, DecodedOp*)",
+      "sampledWallMs": 24
+    },
+    {
+      "function": "_emscripten_date_now",
+      "sampledWallMs": 24
+    }
+  ],
+  "create-career": [
+    {
+      "function": "(idle)",
+      "sampledWallMs": 84364
+    },
+    {
+      "function": "__timedwait_cp",
+      "sampledWallMs": 64491
+    },
+    {
+      "function": "normal_movr32e32(CPU*, DecodedOp*)",
+      "sampledWallMs": 922
+    },
+    {
+      "function": "void* std::__2::__thread_proxy[abi:ne200100]<std::__2::tuple<std::__2::unique_ptr<std::__2::__thread_struct, std::__2::default_delete<std::__2::__thread_struct>>, void (*)(CPU*), CPU*>>(void*)",
+      "sampledWallMs": 825
+    },
+    {
+      "function": "normal_move32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 457
+    },
+    {
+      "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 385
+    },
+    {
+      "function": "(program)",
+      "sampledWallMs": 363
+    },
+    {
+      "function": "NormalCPU::run()",
+      "sampledWallMs": 345
+    },
+    {
+      "function": "normal_jumpNZ(CPU*, DecodedOp*)",
+      "sampledWallMs": 281
+    },
+    {
+      "function": "_emscripten_get_now",
+      "sampledWallMs": 281
+    },
+    {
+      "function": "normal_retn32(CPU*, DecodedOp*)",
+      "sampledWallMs": 251
+    },
+    {
+      "function": "normal_movr32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 224
+    },
+    {
+      "function": "normal_add32_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 204
+    },
+    {
+      "function": "normal_dec32_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 196
+    },
+    {
+      "function": "normal_popEd_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 195
+    },
+    {
+      "function": "normal_leaR32(CPU*, DecodedOp*)",
+      "sampledWallMs": 165
+    },
+    {
+      "function": "normal_callJd(CPU*, DecodedOp*)",
+      "sampledWallMs": 158
+    },
+    {
+      "function": "normal_inc32_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 142
+    },
+    {
+      "function": "normal_addr32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 125
+    },
+    {
+      "function": "normal_jumpZ(CPU*, DecodedOp*)",
+      "sampledWallMs": 123
+    },
+    {
+      "function": "normal_cmpr32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 119
+    },
+    {
+      "function": "emscripten_futex_wake",
+      "sampledWallMs": 116
+    },
+    {
+      "function": "normal_testr32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 114
+    },
+    {
+      "function": "normal_shr32_reg_op(CPU*, DecodedOp*)",
+      "sampledWallMs": 109
+    },
+    {
+      "function": "normal_cmp8_mem(CPU*, DecodedOp*)",
+      "sampledWallMs": 109
+    },
+    {
+      "function": "normal_jumpNLE(CPU*, DecodedOp*)",
+      "sampledWallMs": 108
+    },
+    {
+      "function": "_emscripten_date_now",
+      "sampledWallMs": 105
+    },
+    {
+      "function": "NormalCPU::getOp(unsigned int, unsigned int)",
+      "sampledWallMs": 101
+    },
+    {
+      "function": "normal_movGdXzR8(CPU*, DecodedOp*)",
+      "sampledWallMs": 97
+    },
+    {
+      "function": "platformThread(CPU*)",
+      "sampledWallMs": 94
+    }
+  ],
+  "open-lineup": [
+    {
+      "function": "(idle)",
+      "sampledWallMs": 84097
+    },
+    {
+      "function": "__timedwait_cp",
+      "sampledWallMs": 66161
+    },
+    {
+      "function": "normal_movr32e32(CPU*, DecodedOp*)",
+      "sampledWallMs": 616
+    },
+    {
+      "function": "void* std::__2::__thread_proxy[abi:ne200100]<std::__2::tuple<std::__2::unique_ptr<std::__2::__thread_struct, std::__2::default_delete<std::__2::__thread_struct>>, void (*)(CPU*), CPU*>>(void*)",
+      "sampledWallMs": 568
+    },
+    {
+      "function": "(program)",
+      "sampledWallMs": 413
+    },
+    {
+      "function": "normal_movr32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 382
+    },
+    {
+      "function": "normal_move32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 378
+    },
+    {
+      "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 368
+    },
+    {
+      "function": "_emscripten_get_now",
+      "sampledWallMs": 307
+    },
+    {
+      "function": "normal_popEd_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 227
+    },
+    {
+      "function": "NormalCPU::run()",
+      "sampledWallMs": 191
+    },
+    {
+      "function": "normal_callJd(CPU*, DecodedOp*)",
+      "sampledWallMs": 188
+    },
+    {
+      "function": "normal_jumpNZ(CPU*, DecodedOp*)",
+      "sampledWallMs": 178
+    },
+    {
+      "function": "normal_add32_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 154
+    },
+    {
+      "function": "normal_jumpZ(CPU*, DecodedOp*)",
+      "sampledWallMs": 144
+    },
+    {
+      "function": "emscripten_futex_wake",
+      "sampledWallMs": 140
+    },
+    {
+      "function": "normal_retn32(CPU*, DecodedOp*)",
+      "sampledWallMs": 137
+    },
+    {
+      "function": "setTimeout",
+      "sampledWallMs": 127
+    },
+    {
+      "function": "normal_testr32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 108
+    },
+    {
+      "function": "normal_jumpNLE(CPU*, DecodedOp*)",
+      "sampledWallMs": 95
+    },
+    {
+      "function": "normal_leaR32(CPU*, DecodedOp*)",
+      "sampledWallMs": 85
+    },
+    {
+      "function": "internal_poll(KThread*, KPollData*, unsigned int, unsigned int)",
+      "sampledWallMs": 82
+    },
+    {
+      "function": "_emscripten_date_now",
+      "sampledWallMs": 80
+    },
+    {
+      "function": "platformThread(CPU*)",
+      "sampledWallMs": 77
+    },
+    {
+      "function": "normal_addr32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 74
+    },
+    {
+      "function": "normal_inc32_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 73
+    },
+    {
+      "function": "normal_and32_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 71
+    },
+    {
+      "function": "normal_movr8e8(CPU*, DecodedOp*)",
+      "sampledWallMs": 61
+    },
+    {
+      "function": "pthread_mutex_unlock",
+      "sampledWallMs": 61
+    },
+    {
+      "function": "normal_FADD_SINGLE_REAL(CPU*, DecodedOp*)",
+      "sampledWallMs": 59
+    }
+  ],
+  "automatic-lineup": [
+    {
+      "function": "(idle)",
+      "sampledWallMs": 104456
+    },
+    {
+      "function": "__timedwait_cp",
+      "sampledWallMs": 82437
+    },
+    {
+      "function": "normal_movr32e32(CPU*, DecodedOp*)",
+      "sampledWallMs": 784
+    },
+    {
+      "function": "void* std::__2::__thread_proxy[abi:ne200100]<std::__2::tuple<std::__2::unique_ptr<std::__2::__thread_struct, std::__2::default_delete<std::__2::__thread_struct>>, void (*)(CPU*), CPU*>>(void*)",
+      "sampledWallMs": 678
+    },
+    {
+      "function": "(program)",
+      "sampledWallMs": 514
+    },
+    {
+      "function": "",
+      "sampledWallMs": 469
+    },
+    {
+      "function": "normal_move32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 421
+    },
+    {
+      "function": "normal_movsb_op(CPU*, DecodedOp*)",
+      "sampledWallMs": 368
+    },
+    {
+      "function": "normal_jumpNLE(CPU*, DecodedOp*)",
+      "sampledWallMs": 364
+    },
+    {
+      "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 345
+    },
+    {
+      "function": "normal_movr32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 343
+    },
+    {
+      "function": "NormalCPU::run()",
+      "sampledWallMs": 312
+    },
+    {
+      "function": "normal_popEd_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 305
+    },
+    {
+      "function": "_emscripten_get_now",
+      "sampledWallMs": 302
+    },
+    {
+      "function": "normal_add32_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 298
+    },
+    {
+      "function": "normal_cmpr32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 240
+    },
+    {
+      "function": "normal_jumpNZ(CPU*, DecodedOp*)",
+      "sampledWallMs": 229
+    },
+    {
+      "function": "normal_ore32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 201
+    },
+    {
+      "function": "normal_callJd(CPU*, DecodedOp*)",
+      "sampledWallMs": 201
+    },
+    {
+      "function": "setTimeout",
+      "sampledWallMs": 195
+    },
+    {
+      "function": "normal_sub32_reg(CPU*, DecodedOp*)",
+      "sampledWallMs": 183
+    },
+    {
+      "function": "normal_testr32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 182
+    },
+    {
+      "function": "normal_leaR32(CPU*, DecodedOp*)",
+      "sampledWallMs": 182
+    },
+    {
+      "function": "normal_addr32r32(CPU*, DecodedOp*)",
+      "sampledWallMs": 179
+    },
+    {
+      "function": "Blit_3or4_to_3or4__inversed_rgb",
+      "sampledWallMs": 177
+    },
+    {
+      "function": "normal_jumpZ(CPU*, DecodedOp*)",
+      "sampledWallMs": 140
+    },
+    {
+      "function": "emscripten_futex_wake",
+      "sampledWallMs": 129
+    },
+    {
+      "function": "pthread_mutex_unlock",
+      "sampledWallMs": 127
+    },
+    {
+      "function": "normal_addr32e32(CPU*, DecodedOp*)",
+      "sampledWallMs": 108
+    },
+    {
+      "function": "NormalCPU::getOp(unsigned int, unsigned int)",
+      "sampledWallMs": 106
+    }
+  ]
+}

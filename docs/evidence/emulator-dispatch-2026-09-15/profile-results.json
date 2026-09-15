@@ -1,0 +1,3089 @@
+[
+  {
+    "name": "startup",
+    "wallMs": 14673,
+    "cpuSampling": true,
+    "cpu": [
+      {
+        "type": "browser",
+        "seconds": 0.15743600000000002
+      },
+      {
+        "type": "renderer",
+        "seconds": 16.037912
+      },
+      {
+        "type": "GPU",
+        "seconds": 0.150606
+      },
+      {
+        "type": "network.mojom.NetworkService",
+        "seconds": 0.043396000000000004
+      }
+    ],
+    "profiles": {
+      "main": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 12663
+        },
+        {
+          "function": "(program)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 527
+        },
+        {
+          "function": "crc32",
+          "url": "http://127.0.0.1:8786/emulator/package-loader.js",
+          "line": 3,
+          "sampledMs": 204
+        },
+        {
+          "function": "setTimeout",
+          "url": "",
+          "line": -1,
+          "sampledMs": 81
+        },
+        {
+          "function": "",
+          "url": "",
+          "line": 0,
+          "sampledMs": 72
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 66
+        },
+        {
+          "function": "256875",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 60
+        },
+        {
+          "function": "prepare",
+          "url": "http://127.0.0.1:8786/emulator/package-loader.js",
+          "line": 66,
+          "sampledMs": 58
+        },
+        {
+          "function": "(garbage collector)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 44
+        },
+        {
+          "function": "normalize",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 36
+        },
+        {
+          "function": "lookupPath",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 34
+        },
+        {
+          "function": "emscripten_futex_wake",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "lookup",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 24
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        }
+      ],
+      "worker-0": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 14441
+        }
+      ],
+      "worker-1": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 14434
+        }
+      ],
+      "worker-2": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 14421
+        },
+        {
+          "function": "getWasmImports",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        }
+      ],
+      "worker-3": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 14444
+        }
+      ],
+      "worker-4": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 14424
+        },
+        {
+          "function": "getWasmImports",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        }
+      ],
+      "worker-5": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 14447
+        }
+      ],
+      "worker-6": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 8726
+        },
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 5724
+        },
+        {
+          "function": "createDevice",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 5
+        }
+      ],
+      "worker-7": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 8821
+        },
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 5606
+        },
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        }
+      ],
+      "worker-8": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 8793
+        },
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 5533
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 22
+        },
+        {
+          "function": "syscall_execve(CPU*, unsigned int)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "normal_subr32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "std::__2::pair<std::__2::__hash_iterator<std::__2::__hash_node<std::__2::__hash_value_type<unsigned long long, RamInfo>, void*>*>, bool> std::__2::__hash_table<std::__2::__hash_value_type<unsigned long long, RamInfo>, std::__2::__unordered_map_hasher<unsigned long long, std::__2::__hash_value_type<unsigned long long, RamInfo>, std::__2::hash<unsigned long long>, std::__2::equal_to<unsigned long long>, true>, std::__2::__unordered_map_equal<unsigned long long, std::__2::__hash_value_type<unsigned long long, RamInfo>, std::__2::equal_to<unsigned long long>, std::__2::hash<unsigned long long>, true>, std::__2::allocator<std::__2::__hash_value_type<unsigned long long, RamInfo>>>::__emplace_unique_key_args<unsigned long long, std::__2::piecewise_construct_t const&, std::__2::tuple<unsigned long long&&>, std::__2::tuple<>>(unsigned long long const&, std::__2::piecewise_construct_t const&, std::__2::tuple<unsigned long long&&>&&, std::__2::tuple<>&&)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "normal_add32_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "(program)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 13
+        },
+        {
+          "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 11
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 11
+        }
+      ],
+      "worker-9": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 11246
+        },
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 638
+        },
+        {
+          "function": "emscripten_futex_wait",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 318
+        },
+        {
+          "function": "platformThread(CPU*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 153
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 92
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 49
+        },
+        {
+          "function": "normal_add32_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 46
+        },
+        {
+          "function": "normal_cmp16_mem(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 38
+        },
+        {
+          "function": "normal_move32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 37
+        },
+        {
+          "function": "normal_movr32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 36
+        },
+        {
+          "function": "normal_jumpZ(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_movGdXzE16(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_jumpNZ(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_jumpZ(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        }
+      ],
+      "worker-10": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 8718
+        },
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 3965
+        },
+        {
+          "function": "platformThread(CPU*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 216
+        },
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 62
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 60
+        },
+        {
+          "function": "normal_add32_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 49
+        },
+        {
+          "function": "normal_movr32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 36
+        },
+        {
+          "function": "RWPage::readd(MMU*, unsigned int)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 26
+        },
+        {
+          "function": "normal_jumpNLE(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_addr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "unzReadCurrentFile",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 24
+        },
+        {
+          "function": "normal_popEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 24
+        },
+        {
+          "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        }
+      ],
+      "worker-11": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 1703
+        },
+        {
+          "function": "emscripten_futex_wait",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 1482
+        },
+        {
+          "function": "platformThread(CPU*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 860
+        },
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 763
+        },
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 507
+        },
+        {
+          "function": "NormalCPU::run()",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 370
+        },
+        {
+          "function": "void* std::__2::__thread_proxy[abi:ne200100]<std::__2::tuple<std::__2::unique_ptr<std::__2::__thread_struct, std::__2::default_delete<std::__2::__thread_struct>>, void (*)(CPU*), CPU*>>(void*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 292
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 226
+        },
+        {
+          "function": "normal_jumpNLE(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 127
+        },
+        {
+          "function": "emscripten_futex_wait",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 111
+        },
+        {
+          "function": "normal_popEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 103
+        },
+        {
+          "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 97
+        },
+        {
+          "function": "normal_inc32_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 86
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 85
+        }
+      ]
+    },
+    "fork": {
+      "dispatches": 0,
+      "queueUs": 0,
+      "executionUs": 0,
+      "resumeUs": 0,
+      "maxQueueUs": 0,
+      "maxExecutionUs": 0,
+      "frames": 8,
+      "compositionUs": 18000,
+      "uploads": 10,
+      "uploadPixels": 1287146,
+      "flushes": 1559,
+      "putImages": 12,
+      "putImageUs": 0,
+      "wakes": 0,
+      "coalescedWakes": 0,
+      "deferredFlushes": 1559,
+      "mainTicks": 3092
+    },
+    "menuReadyMs": 14554,
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive",
+      "forkMode": 3
+    },
+    "menuReadyCriterion": "English selector focus visible at fixed 1024x768 canvas coordinates",
+    "downloads": [
+      {
+        "name": "boxedwine.zip-858b287b376584c7.0",
+        "startMs": 94,
+        "endMs": 100,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.1",
+        "startMs": 94,
+        "endMs": 100,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.2",
+        "startMs": 94,
+        "endMs": 100,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.3",
+        "startMs": 94,
+        "endMs": 99,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.wasm?v=cf-181c92020f48",
+        "startMs": 121,
+        "endMs": 140,
+        "transferBytes": 2724130
+      },
+      {
+        "name": "cyberfoot.zip-757d0de26ae8bae4.0",
+        "startMs": 127,
+        "endMs": 146,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "cyberfoot.zip-757d0de26ae8bae4.1",
+        "startMs": 127,
+        "endMs": 142,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "cyberfoot.zip-757d0de26ae8bae4.2",
+        "startMs": 128,
+        "endMs": 142,
+        "transferBytes": 2566643
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.4",
+        "startMs": 129,
+        "endMs": 179,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.5",
+        "startMs": 196,
+        "endMs": 232,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.6",
+        "startMs": 205,
+        "endMs": 264,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.7",
+        "startMs": 205,
+        "endMs": 263,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.8",
+        "startMs": 229,
+        "endMs": 276,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.9",
+        "startMs": 277,
+        "endMs": 282,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.10",
+        "startMs": 278,
+        "endMs": 283,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.11",
+        "startMs": 278,
+        "endMs": 284,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.12",
+        "startMs": 280,
+        "endMs": 294,
+        "transferBytes": 2308405
+      }
+    ]
+  },
+  {
+    "name": "menu-idle",
+    "wallMs": 6183,
+    "cpuSampling": true,
+    "cpu": [
+      {
+        "type": "browser",
+        "seconds": 0.061041999999999985
+      },
+      {
+        "type": "renderer",
+        "seconds": 0.6446919999999992
+      },
+      {
+        "type": "GPU",
+        "seconds": 0.008220000000000005
+      },
+      {
+        "type": "network.mojom.NetworkService",
+        "seconds": 0
+      }
+    ],
+    "profiles": {
+      "main": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 5406
+        },
+        {
+          "function": "",
+          "url": "",
+          "line": 0,
+          "sampledMs": 399
+        },
+        {
+          "function": "(program)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 147
+        },
+        {
+          "function": "setTimeout",
+          "url": "",
+          "line": -1,
+          "sampledMs": 35
+        },
+        {
+          "function": "getImageData",
+          "url": "",
+          "line": -1,
+          "sampledMs": 25
+        },
+        {
+          "function": "_emscripten_date_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "mainloop()",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        },
+        {
+          "function": "SDL_PushEvent",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        },
+        {
+          "function": "std::__2::__function::__func<StartUpArgs::buildVirtualFileSystem()::$_3, std::__2::allocator<StartUpArgs::buildVirtualFileSystem()::$_3>, FsOpenNode* (std::__2::shared_ptr<FsNode> const&, unsigned int, unsigned int)>::destroy()",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        },
+        {
+          "function": "_emscripten_date_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 11
+        },
+        {
+          "function": "drawImage",
+          "url": "",
+          "line": -1,
+          "sampledMs": 11
+        },
+        {
+          "function": "KNativeInputSDL::processEvents()",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 11
+        },
+        {
+          "function": "now",
+          "url": "",
+          "line": -1,
+          "sampledMs": 11
+        }
+      ],
+      "worker-0": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 6143
+        }
+      ],
+      "worker-1": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 6135
+        }
+      ],
+      "worker-2": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 6145
+        }
+      ],
+      "worker-3": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 6141
+        }
+      ],
+      "worker-4": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 6140
+        }
+      ],
+      "worker-5": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 6133
+        }
+      ],
+      "worker-6": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 6140
+        }
+      ],
+      "worker-7": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 6138
+        }
+      ],
+      "worker-8": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 6137
+        }
+      ],
+      "worker-9": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 6006
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 34
+        },
+        {
+          "function": "internal_poll(KThread*, KPollData*, unsigned int, unsigned int)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        },
+        {
+          "function": "normal_pushEd_mem(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "wasm-to-js",
+          "url": "",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "BoxedWineCondition::removeParentCondition(std::__2::shared_ptr<BoxedWineCondition> const&)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        },
+        {
+          "function": "normal_jumpNZ(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        },
+        {
+          "function": "_emscripten_date_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 11
+        }
+      ],
+      "worker-10": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 6120
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        }
+      ],
+      "worker-11": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 6118
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 11
+        }
+      ]
+    },
+    "fork": {
+      "dispatches": 0,
+      "queueUs": 0,
+      "executionUs": 0,
+      "resumeUs": 0,
+      "maxQueueUs": 0,
+      "maxExecutionUs": 0,
+      "frames": 0,
+      "compositionUs": 0,
+      "uploads": 0,
+      "uploadPixels": 0,
+      "flushes": 0,
+      "putImages": 0,
+      "putImageUs": 0,
+      "wakes": 0,
+      "coalescedWakes": 0,
+      "deferredFlushes": 0,
+      "mainTicks": 1335
+    },
+    "actionEndMs": 0,
+    "firstVisualChangeMs": null,
+    "lastVisualChangeMs": null,
+    "changedSamples": 0,
+    "visualQuietMs": 6100,
+    "mask": [],
+    "observationMs": 6100
+  },
+  {
+    "name": "new-game-settings",
+    "wallMs": 6166,
+    "cpuSampling": true,
+    "cpu": [
+      {
+        "type": "browser",
+        "seconds": 0.07308500000000001
+      },
+      {
+        "type": "renderer",
+        "seconds": 2.571726999999999
+      },
+      {
+        "type": "GPU",
+        "seconds": 0.042931000000000025
+      },
+      {
+        "type": "network.mojom.NetworkService",
+        "seconds": 0
+      }
+    ],
+    "profiles": {
+      "main": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 5583
+        },
+        {
+          "function": "(program)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 220
+        },
+        {
+          "function": "setTimeout",
+          "url": "",
+          "line": -1,
+          "sampledMs": 33
+        },
+        {
+          "function": "",
+          "url": "",
+          "line": 0,
+          "sampledMs": 28
+        },
+        {
+          "function": "evaluate",
+          "url": "",
+          "line": 304,
+          "sampledMs": 26
+        },
+        {
+          "function": "256875",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 26
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        },
+        {
+          "function": "getImageData",
+          "url": "",
+          "line": -1,
+          "sampledMs": 23
+        },
+        {
+          "function": "",
+          "url": "http://127.0.0.1:8786/emulator/loading.js",
+          "line": 79,
+          "sampledMs": 19
+        },
+        {
+          "function": "Blit_3or4_to_3or4__inversed_rgb",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "emscripten_futex_wake",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        },
+        {
+          "function": "SDL_UpdateTexture",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        },
+        {
+          "function": "runIter",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        },
+        {
+          "function": "drawImage",
+          "url": "",
+          "line": -1,
+          "sampledMs": 12
+        }
+      ],
+      "worker-0": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 6117
+        }
+      ],
+      "worker-1": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 6109
+        }
+      ],
+      "worker-2": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 6114
+        }
+      ],
+      "worker-3": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 6112
+        }
+      ],
+      "worker-4": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 6108
+        }
+      ],
+      "worker-5": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 6105
+        }
+      ],
+      "worker-6": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 6107
+        }
+      ],
+      "worker-7": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 6088
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 24
+        }
+      ],
+      "worker-8": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 6109
+        }
+      ],
+      "worker-9": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 5680
+        },
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 50
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 47
+        },
+        {
+          "function": "normal_callJd(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        },
+        {
+          "function": "internal_poll(KThread*, KPollData*, unsigned int, unsigned int)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        },
+        {
+          "function": "platformThread(CPU*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        },
+        {
+          "function": "normal_testr32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "KUnixSocketObject::internal_write(KThread*, std::__2::shared_ptr<KUnixSocketObject> const&, std::__2::shared_ptr<BoxedWineCondition>&, unsigned int, unsigned int)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "normal_jumpZ(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "normal_movr32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        }
+      ],
+      "worker-10": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 6102
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        }
+      ],
+      "worker-11": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 4346
+        },
+        {
+          "function": "void* std::__2::__thread_proxy[abi:ne200100]<std::__2::tuple<std::__2::unique_ptr<std::__2::__thread_struct, std::__2::default_delete<std::__2::__thread_struct>>, void (*)(CPU*), CPU*>>(void*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 212
+        },
+        {
+          "function": "NormalCPU::run()",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 85
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 75
+        },
+        {
+          "function": "normal_jumpNZ(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 38
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_orr32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_cmpe32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_testr32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        },
+        {
+          "function": "normal_move32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 22
+        }
+      ]
+    },
+    "fork": {
+      "dispatches": 3,
+      "queueUs": 1000,
+      "executionUs": 0,
+      "resumeUs": 0,
+      "maxQueueUs": 1000,
+      "maxExecutionUs": 0,
+      "frames": 19,
+      "compositionUs": 33000,
+      "uploads": 19,
+      "uploadPixels": 8371552,
+      "flushes": 538,
+      "putImages": 23,
+      "putImageUs": 0,
+      "wakes": 3,
+      "coalescedWakes": 0,
+      "deferredFlushes": 538,
+      "mainTicks": 1327
+    },
+    "actionEndMs": 118,
+    "firstVisualChangeMs": 941,
+    "lastVisualChangeMs": 2069,
+    "changedSamples": 9,
+    "visualQuietMs": 4003,
+    "mask": [],
+    "observationMs": 6072
+  },
+  {
+    "name": "team-selection",
+    "wallMs": 8221,
+    "cpuSampling": true,
+    "cpu": [
+      {
+        "type": "browser",
+        "seconds": 0.12140600000000007
+      },
+      {
+        "type": "renderer",
+        "seconds": 6.262620999999999
+      },
+      {
+        "type": "GPU",
+        "seconds": 0.082291
+      },
+      {
+        "type": "network.mojom.NetworkService",
+        "seconds": 0.00031199999999999284
+      }
+    ],
+    "profiles": {
+      "main": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 7463
+        },
+        {
+          "function": "(program)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 280
+        },
+        {
+          "function": "Blit_3or4_to_3or4__inversed_rgb",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 60
+        },
+        {
+          "function": "256875",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 46
+        },
+        {
+          "function": "",
+          "url": "",
+          "line": 0,
+          "sampledMs": 38
+        },
+        {
+          "function": "emscripten_futex_wake",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 35
+        },
+        {
+          "function": "SW_UpdateTexture",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 35
+        },
+        {
+          "function": "(garbage collector)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 35
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 34
+        },
+        {
+          "function": "getImageData",
+          "url": "",
+          "line": -1,
+          "sampledMs": 23
+        },
+        {
+          "function": "hashName",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "___syscall_stat64",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "expandFileStorage",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "setTimeout",
+          "url": "",
+          "line": -1,
+          "sampledMs": 12
+        }
+      ],
+      "worker-0": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 8164
+        },
+        {
+          "function": "(garbage collector)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 11
+        }
+      ],
+      "worker-1": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 8180
+        }
+      ],
+      "worker-2": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 8177
+        }
+      ],
+      "worker-3": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 8156
+        },
+        {
+          "function": "(garbage collector)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 11
+        }
+      ],
+      "worker-4": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 8171
+        }
+      ],
+      "worker-5": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 8159
+        },
+        {
+          "function": "(program)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 11
+        }
+      ],
+      "worker-6": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 8154
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        }
+      ],
+      "worker-7": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 8161
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        }
+      ],
+      "worker-8": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 8149
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        }
+      ],
+      "worker-9": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 6478
+        },
+        {
+          "function": "platformThread(CPU*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 218
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 59
+        },
+        {
+          "function": "normal_add32_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 37
+        },
+        {
+          "function": "emscripten_futex_wake",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_sub32_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "BoxedWineCondition::addParentCondition(std::__2::shared_ptr<BoxedWineCondition> const&)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_leaR32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 24
+        },
+        {
+          "function": "internal_poll(KThread*, KPollData*, unsigned int, unsigned int)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        },
+        {
+          "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        },
+        {
+          "function": "normal_move32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        },
+        {
+          "function": "normal_inc32_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        },
+        {
+          "function": "normal_jumpBE(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        }
+      ],
+      "worker-10": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 8146
+        },
+        {
+          "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 10
+        }
+      ],
+      "worker-11": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 4330
+        },
+        {
+          "function": "void* std::__2::__thread_proxy[abi:ne200100]<std::__2::tuple<std::__2::unique_ptr<std::__2::__thread_struct, std::__2::default_delete<std::__2::__thread_struct>>, void (*)(CPU*), CPU*>>(void*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 413
+        },
+        {
+          "function": "NormalCPU::run()",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 108
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 87
+        },
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 50
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 37
+        },
+        {
+          "function": "normal_movr32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 36
+        },
+        {
+          "function": "normal_movEaxOd(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 35
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 35
+        },
+        {
+          "function": "normal_shr32_reg_op(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_movr32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_movr32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        }
+      ]
+    },
+    "fork": {
+      "dispatches": 2,
+      "queueUs": 0,
+      "executionUs": 0,
+      "resumeUs": 0,
+      "maxQueueUs": 1000,
+      "maxExecutionUs": 0,
+      "frames": 65,
+      "compositionUs": 155000,
+      "uploads": 65,
+      "uploadPixels": 50311344,
+      "flushes": 1003,
+      "putImages": 68,
+      "putImageUs": 1000,
+      "wakes": 2,
+      "coalescedWakes": 0,
+      "deferredFlushes": 1003,
+      "mainTicks": 1783
+    },
+    "actionEndMs": 83,
+    "firstVisualChangeMs": 84,
+    "lastVisualChangeMs": 7947,
+    "changedSamples": 24,
+    "visualQuietMs": 193,
+    "mask": [
+      [
+        32,
+        654,
+        226,
+        25
+      ]
+    ],
+    "observationMs": 8140
+  },
+  {
+    "name": "create-career",
+    "wallMs": 12227,
+    "cpuSampling": true,
+    "cpu": [
+      {
+        "type": "browser",
+        "seconds": 0.07487199999999994
+      },
+      {
+        "type": "renderer",
+        "seconds": 9.462948000000004
+      },
+      {
+        "type": "GPU",
+        "seconds": 0.059033999999999975
+      },
+      {
+        "type": "network.mojom.NetworkService",
+        "seconds": 0
+      }
+    ],
+    "profiles": {
+      "main": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 11336
+        },
+        {
+          "function": "(program)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 363
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 58
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 56
+        },
+        {
+          "function": "SDL_FillRect4",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 37
+        },
+        {
+          "function": "setTimeout",
+          "url": "",
+          "line": -1,
+          "sampledMs": 36
+        },
+        {
+          "function": "Blit_3or4_to_3or4__inversed_rgb",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 33
+        },
+        {
+          "function": "normalize",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "_emscripten_date_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 24
+        },
+        {
+          "function": "now",
+          "url": "",
+          "line": -1,
+          "sampledMs": 13
+        },
+        {
+          "function": "read",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "writeStat",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "SDL_PeepEventsInternal",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        },
+        {
+          "function": "mainloop()",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        }
+      ],
+      "worker-0": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 12180
+        }
+      ],
+      "worker-1": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 12176
+        }
+      ],
+      "worker-2": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 12172
+        }
+      ],
+      "worker-3": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 12166
+        }
+      ],
+      "worker-4": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 12169
+        }
+      ],
+      "worker-5": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 12166
+        }
+      ],
+      "worker-6": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12156
+        }
+      ],
+      "worker-7": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12147
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        }
+      ],
+      "worker-8": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12129
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        }
+      ],
+      "worker-9": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 11091
+        },
+        {
+          "function": "platformThread(CPU*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 83
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 46
+        },
+        {
+          "function": "BoxedWineCondition::removeParentCondition(std::__2::shared_ptr<BoxedWineCondition> const&)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 37
+        },
+        {
+          "function": "emscripten_futex_wake",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 35
+        },
+        {
+          "function": "normal_movr32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_popEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "do_proxy",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 24
+        },
+        {
+          "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        },
+        {
+          "function": "normal_leaR32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        },
+        {
+          "function": "KUnixSocketObject::waitForEvents(std::__2::shared_ptr<BoxedWineCondition>&, unsigned int)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        }
+      ],
+      "worker-10": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12099
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "normal_jumpNZ(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        },
+        {
+          "function": "normal_retn32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 11
+        },
+        {
+          "function": "emscripten_futex_wake",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 11
+        },
+        {
+          "function": "platformThread(CPU*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 10
+        }
+      ],
+      "worker-11": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 4714
+        },
+        {
+          "function": "void* std::__2::__thread_proxy[abi:ne200100]<std::__2::tuple<std::__2::unique_ptr<std::__2::__thread_struct, std::__2::default_delete<std::__2::__thread_struct>>, void (*)(CPU*), CPU*>>(void*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 825
+        },
+        {
+          "function": "NormalCPU::run()",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 309
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 206
+        },
+        {
+          "function": "normal_dec32_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 172
+        },
+        {
+          "function": "normal_inc32_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 94
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 85
+        },
+        {
+          "function": "normal_jumpNLE(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 83
+        },
+        {
+          "function": "normal_add32_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 74
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 69
+        },
+        {
+          "function": "normal_jumpNZ(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 69
+        },
+        {
+          "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 63
+        },
+        {
+          "function": "normal_dimulcr32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 60
+        },
+        {
+          "function": "normal_movr32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 59
+        }
+      ]
+    },
+    "fork": {
+      "dispatches": 4,
+      "queueUs": 1000,
+      "executionUs": 0,
+      "resumeUs": 0,
+      "maxQueueUs": 1000,
+      "maxExecutionUs": 0,
+      "frames": 55,
+      "compositionUs": 137000,
+      "uploads": 54,
+      "uploadPixels": 34948608,
+      "flushes": 1141,
+      "putImages": 60,
+      "putImageUs": 3000,
+      "wakes": 4,
+      "coalescedWakes": 0,
+      "deferredFlushes": 1141,
+      "mainTicks": 2664
+    },
+    "actionEndMs": 81,
+    "firstVisualChangeMs": 185,
+    "lastVisualChangeMs": 7628,
+    "changedSamples": 27,
+    "visualQuietMs": 4496,
+    "mask": [],
+    "observationMs": 12124
+  },
+  {
+    "name": "open-lineup",
+    "wallMs": 12203,
+    "cpuSampling": true,
+    "cpu": [
+      {
+        "type": "browser",
+        "seconds": 0.12072300000000002
+      },
+      {
+        "type": "renderer",
+        "seconds": 7.242568000000006
+      },
+      {
+        "type": "GPU",
+        "seconds": 0.043837000000000015
+      },
+      {
+        "type": "network.mojom.NetworkService",
+        "seconds": 0.0022120000000000056
+      }
+    ],
+    "profiles": {
+      "main": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 11172
+        },
+        {
+          "function": "(program)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 413
+        },
+        {
+          "function": "setTimeout",
+          "url": "",
+          "line": -1,
+          "sampledMs": 127
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 57
+        },
+        {
+          "function": "Blit_3or4_to_3or4__inversed_rgb",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 57
+        },
+        {
+          "function": "getImageData",
+          "url": "",
+          "line": -1,
+          "sampledMs": 38
+        },
+        {
+          "function": "drawImage",
+          "url": "",
+          "line": -1,
+          "sampledMs": 33
+        },
+        {
+          "function": "mainloop()",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 24
+        },
+        {
+          "function": "_emscripten_date_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 24
+        },
+        {
+          "function": "js-to-wasm::",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 22
+        },
+        {
+          "function": "256875",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "putImageData",
+          "url": "",
+          "line": -1,
+          "sampledMs": 13
+        },
+        {
+          "function": "getContext",
+          "url": "",
+          "line": -1,
+          "sampledMs": 13
+        },
+        {
+          "function": "MainLoop_scheduler_setTimeout",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        }
+      ],
+      "worker-0": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 12158
+        }
+      ],
+      "worker-1": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 12157
+        }
+      ],
+      "worker-2": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 12153
+        }
+      ],
+      "worker-3": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 12156
+        }
+      ],
+      "worker-4": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 12154
+        }
+      ],
+      "worker-5": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 12147
+        }
+      ],
+      "worker-6": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12153
+        }
+      ],
+      "worker-7": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12122
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 24
+        }
+      ],
+      "worker-8": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12128
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        },
+        {
+          "function": "normal_and32_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 11
+        }
+      ],
+      "worker-9": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 10681
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 91
+        },
+        {
+          "function": "internal_poll(KThread*, KPollData*, unsigned int, unsigned int)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 82
+        },
+        {
+          "function": "platformThread(CPU*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 77
+        },
+        {
+          "function": "emscripten_futex_wake",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 60
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 52
+        },
+        {
+          "function": "BoxedWineCondition::removeParentCondition(std::__2::shared_ptr<BoxedWineCondition> const&)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 36
+        },
+        {
+          "function": "normal_move32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 35
+        },
+        {
+          "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 35
+        },
+        {
+          "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 34
+        },
+        {
+          "function": "_clock_time_get",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 30
+        },
+        {
+          "function": "pthread_mutex_unlock",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "syscall_clock_gettime64(CPU*, unsigned int)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        }
+      ],
+      "worker-10": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12095
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 11
+        },
+        {
+          "function": "wasm-to-js",
+          "url": "",
+          "line": 0,
+          "sampledMs": 11
+        }
+      ],
+      "worker-11": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 6981
+        },
+        {
+          "function": "void* std::__2::__thread_proxy[abi:ne200100]<std::__2::tuple<std::__2::unique_ptr<std::__2::__thread_struct, std::__2::default_delete<std::__2::__thread_struct>>, void (*)(CPU*), CPU*>>(void*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 568
+        },
+        {
+          "function": "NormalCPU::run()",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 180
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 151
+        },
+        {
+          "function": "normal_movr32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 98
+        },
+        {
+          "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 68
+        },
+        {
+          "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 63
+        },
+        {
+          "function": "emscripten_futex_wake",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 59
+        },
+        {
+          "function": "normal_movr32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 51
+        },
+        {
+          "function": "normal_move32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 50
+        },
+        {
+          "function": "normal_move32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 48
+        },
+        {
+          "function": "normal_jumpNLE(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 48
+        },
+        {
+          "function": "normal_add32_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 45
+        },
+        {
+          "function": "normal_callJd(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 44
+        }
+      ]
+    },
+    "fork": {
+      "dispatches": 3,
+      "queueUs": 0,
+      "executionUs": 0,
+      "resumeUs": 0,
+      "maxQueueUs": 1000,
+      "maxExecutionUs": 0,
+      "frames": 40,
+      "compositionUs": 118000,
+      "uploads": 40,
+      "uploadPixels": 22705596,
+      "flushes": 1202,
+      "putImages": 50,
+      "putImageUs": 2000,
+      "wakes": 3,
+      "coalescedWakes": 0,
+      "deferredFlushes": 1202,
+      "mainTicks": 2640
+    },
+    "actionEndMs": 84,
+    "firstVisualChangeMs": 86,
+    "lastVisualChangeMs": 4023,
+    "changedSamples": 16,
+    "visualQuietMs": 8095,
+    "mask": [],
+    "observationMs": 12118
+  },
+  {
+    "name": "automatic-lineup",
+    "wallMs": 15226,
+    "cpuSampling": true,
+    "cpu": [
+      {
+        "type": "browser",
+        "seconds": 0.12670500000000007
+      },
+      {
+        "type": "renderer",
+        "seconds": 9.591661000000002
+      },
+      {
+        "type": "GPU",
+        "seconds": 0.12993299999999997
+      },
+      {
+        "type": "network.mojom.NetworkService",
+        "seconds": 0.0011980000000000046
+      }
+    ],
+    "profiles": {
+      "main": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 13380
+        },
+        {
+          "function": "(program)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 502
+        },
+        {
+          "function": "",
+          "url": "",
+          "line": 0,
+          "sampledMs": 469
+        },
+        {
+          "function": "setTimeout",
+          "url": "",
+          "line": -1,
+          "sampledMs": 195
+        },
+        {
+          "function": "Blit_3or4_to_3or4__inversed_rgb",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 177
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 111
+        },
+        {
+          "function": "256875",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 81
+        },
+        {
+          "function": "SDL_FillRect4",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 46
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 45
+        },
+        {
+          "function": "SW_UpdateTexture",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 35
+        },
+        {
+          "function": "getImageData",
+          "url": "",
+          "line": -1,
+          "sampledMs": 34
+        },
+        {
+          "function": "read",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "putImageData",
+          "url": "",
+          "line": -1,
+          "sampledMs": 12
+        },
+        {
+          "function": "MainLoop_scheduler_setTimeout",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 12
+        }
+      ],
+      "worker-0": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 15180
+        }
+      ],
+      "worker-1": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 15177
+        }
+      ],
+      "worker-2": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 15186
+        }
+      ],
+      "worker-3": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 15179
+        }
+      ],
+      "worker-4": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 15181
+        }
+      ],
+      "worker-5": [
+        {
+          "function": "(idle)",
+          "url": "",
+          "line": -1,
+          "sampledMs": 15173
+        }
+      ],
+      "worker-6": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 15159
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 23
+        }
+      ],
+      "worker-7": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 15150
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 11
+        },
+        {
+          "function": "wasm-to-js",
+          "url": "",
+          "line": 0,
+          "sampledMs": 11
+        },
+        {
+          "function": "now",
+          "url": "",
+          "line": -1,
+          "sampledMs": 11
+        }
+      ],
+      "worker-8": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 15158
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13
+        },
+        {
+          "function": "wasm-to-js",
+          "url": "",
+          "line": 0,
+          "sampledMs": 10
+        }
+      ],
+      "worker-9": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 13425
+        },
+        {
+          "function": "emscripten_futex_wake",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 93
+        },
+        {
+          "function": "platformThread(CPU*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 92
+        },
+        {
+          "function": "_emscripten_get_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 79
+        },
+        {
+          "function": "pthread_mutex_unlock",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 57
+        },
+        {
+          "function": "BoxedWineCondition::removeParentCondition(std::__2::shared_ptr<BoxedWineCondition> const&)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 56
+        },
+        {
+          "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 49
+        },
+        {
+          "function": "KEPoll::wait(KThread*, unsigned int, unsigned int, unsigned int)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 48
+        },
+        {
+          "function": "_emscripten_date_now",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.js?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 45
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 38
+        },
+        {
+          "function": "normal_move32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 36
+        },
+        {
+          "function": "internal_poll(KThread*, KPollData*, unsigned int, unsigned int)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 36
+        },
+        {
+          "function": "wasm-to-js",
+          "url": "",
+          "line": 0,
+          "sampledMs": 35
+        },
+        {
+          "function": "pthread_mutex_unlock",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 25
+        }
+      ],
+      "worker-10": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 15175
+        }
+      ],
+      "worker-11": [
+        {
+          "function": "__timedwait_cp",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 8369
+        },
+        {
+          "function": "void* std::__2::__thread_proxy[abi:ne200100]<std::__2::tuple<std::__2::unique_ptr<std::__2::__thread_struct, std::__2::default_delete<std::__2::__thread_struct>>, void (*)(CPU*), CPU*>>(void*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 678
+        },
+        {
+          "function": "normal_movsb_op(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 356
+        },
+        {
+          "function": "NormalCPU::run()",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 290
+        },
+        {
+          "function": "normal_add32_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 224
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 205
+        },
+        {
+          "function": "normal_ore32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 176
+        },
+        {
+          "function": "normal_jumpNLE(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 154
+        },
+        {
+          "function": "normal_jumpNLE(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 140
+        },
+        {
+          "function": "normal_cmpr32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 130
+        },
+        {
+          "function": "normal_movr32e32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 121
+        },
+        {
+          "function": "normal_move32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 118
+        },
+        {
+          "function": "normal_pushEd_reg(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 71
+        },
+        {
+          "function": "normal_addr32r32(CPU*, DecodedOp*)",
+          "url": "http://127.0.0.1:8786/emulator/threaded/boxedwine.wasm?v=cf-181c92020f48",
+          "line": 0,
+          "sampledMs": 62
+        }
+      ]
+    },
+    "fork": {
+      "dispatches": 1,
+      "queueUs": 0,
+      "executionUs": 0,
+      "resumeUs": 0,
+      "maxQueueUs": 1000,
+      "maxExecutionUs": 0,
+      "frames": 157,
+      "compositionUs": 450000,
+      "uploads": 162,
+      "uploadPixels": 85398846,
+      "flushes": 983,
+      "putImages": 178,
+      "putImageUs": 14000,
+      "wakes": 1,
+      "coalescedWakes": 0,
+      "deferredFlushes": 983,
+      "mainTicks": 3213
+    },
+    "actionEndMs": 88,
+    "firstVisualChangeMs": 89,
+    "lastVisualChangeMs": 5216,
+    "changedSamples": 37,
+    "visualQuietMs": 9931,
+    "mask": [],
+    "observationMs": 15147
+  }
+]

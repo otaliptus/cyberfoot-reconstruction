@@ -181,6 +181,34 @@ index 8cdb81c..b72b05a 100644
      SdlCallback* next = nullptr;
  };
  
+diff --git a/source/emulation/cpu/normal/normalPlatformMultiThreaded.cpp b/source/emulation/cpu/normal/normalPlatformMultiThreaded.cpp
+index 51f7dc9..6ec4990 100644
+--- a/source/emulation/cpu/normal/normalPlatformMultiThreaded.cpp
++++ b/source/emulation/cpu/normal/normalPlatformMultiThreaded.cpp
+@@ -18,6 +18,9 @@
+ 
+ #include "boxedwine.h"
+ #include "knativesystem.h"
++#if defined(__EMSCRIPTEN__) && !defined(BOXEDWINE_JIT)
++#include "normalCPU.h"
++#endif
+ 
+ #if defined(BOXEDWINE_MULTI_THREADED)
+ 
+@@ -35,7 +38,13 @@ static void platformThread(CPU* cpu) {
+ 
+     while (true) {
+         try {
++#if defined(__EMSCRIPTEN__) && !defined(BOXEDWINE_JIT)
++            // CPU::allocCPU in this interpreter-only web build creates NormalCPU.
++            // Keep the same run implementation while allowing LTO to inline it.
++            static_cast<NormalCPU*>(cpu)->NormalCPU::run();
++#else
+             cpu->run();
++#endif
+         } catch (...) {
+             if (!cpu->thread->terminating) {
+                 cpu->nextOp = cpu->getNextOp();
 diff --git a/source/io/fszip.cpp b/source/io/fszip.cpp
 index 467eb39..dcfb9ec 100644
 --- a/source/io/fszip.cpp

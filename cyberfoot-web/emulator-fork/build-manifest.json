@@ -5,18 +5,18 @@
   "compilerRelease": "aaa43392544d695232b70eda706d751f18980c2a",
   "workerPool": 12,
   "platform": "macOS-26.4-arm64-arm-64bit-Mach-O",
-  "patchSha256": "686da507c9771c6b07927fc724fb7ba75908351d82e4981bd28962cc3fc40701",
+  "patchSha256": "3fc0bf07758eb6439f8d0d493f0395c59230c2f4e06cb49f19d1d9533d6a4205",
   "files": {
     "boxedwine.js": {
       "bytes": 231075,
       "sha256": "76d3f909e7619e811346adba93d2baf16fdfc4edde788023dfbf979e46894340"
     },
     "boxedwine.wasm": {
-      "bytes": 2365254,
-      "sha256": "181c92020f48390f38c53c5835f1eee8743131798efcc06da8a0c56df8c8b93e"
+      "bytes": 2365259,
+      "sha256": "11916c1840d5b6a0840d348e6f1a7e2fe1e907ce0d0ab1f19c50a28649c4854e"
     }
   },
-  "buildDirectory": "Build/ZipCache",
+  "buildDirectory": "Build/DirectCpu",
   "extraCppFlags": "-DBOXEDWINE_MULTI_THREADED -pthread -flto",
   "extraLdFlags": "-pthread -sPTHREAD_POOL_SIZE=12 -O3 -flto"
 }

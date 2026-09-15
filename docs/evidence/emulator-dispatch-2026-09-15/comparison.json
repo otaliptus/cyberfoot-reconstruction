@@ -1,0 +1,67 @@
+{
+  "startup": {
+    "controlMs": [
+      13897,
+      13547
+    ],
+    "candidateMs": [
+      14324,
+      13382
+    ],
+    "controlMedianMs": 13722.0,
+    "candidateMedianMs": 13853.0,
+    "reductionPercent": -0.95
+  },
+  "new-game-settings": {
+    "controlMs": [
+      1948,
+      1963
+    ],
+    "candidateMs": [
+      1971,
+      1838
+    ],
+    "controlMedianMs": 1955.5,
+    "candidateMedianMs": 1904.5,
+    "reductionPercent": 2.61
+  },
+  "create-career": {
+    "controlMs": [
+      6871,
+      6854
+    ],
+    "candidateMs": [
+      6661,
+      6565
+    ],
+    "controlMedianMs": 6862.5,
+    "candidateMedianMs": 6613.0,
+    "reductionPercent": 3.64
+  },
+  "open-lineup": {
+    "controlMs": [
+      3782,
+      3475
+    ],
+    "candidateMs": [
+      3581,
+      3462
+    ],
+    "controlMedianMs": 3628.5,
+    "candidateMedianMs": 3521.5,
+    "reductionPercent": 2.95
+  },
+  "automatic-lineup": {
+    "controlMs": [
+      4831,
+      4702
+    ],
+    "candidateMs": [
+      4612,
+      4502
+    ],
+    "controlMedianMs": 4766.5,
+    "candidateMedianMs": 4557.0,
+    "reductionPercent": 4.4
+  }
+}
