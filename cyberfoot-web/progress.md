@@ -1,5 +1,9 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-15 — Updated launcher note
+- Replaced the top note with the user-supplied two lines: esektas 1 / 6622229. Reserved60px above the canvas and moved the loading indicator below the two-line note. Published as dbf9281e; public HTML byte match and narrow-window two-line header checked.
+
+
 ### 2026-09-15 — Sound enabled, top note and window-size investigation
 - Standalone root now launches with sound=true and shows the exact requested username/code text in a 40px header. No registration validation or game-code change. Restored matching official Wine11 WaveAudio implementation/stubs (+16,272 bytes); source hash, overlay identity and idempotent reproduction verified.
 - Fixed SDL threaded AudioContext crash by synchronously dispatching enabled audio lifecycle and buffer operations to the browser main thread, serializing callbacks/mutations. Atomic open-state polling; muted/native paths preserved. Fresh reproducible Build/AudioMain; WASM +2,980 bytes, version cf-f598b8995579; source patch/manifest/archive and staging hashes match.
