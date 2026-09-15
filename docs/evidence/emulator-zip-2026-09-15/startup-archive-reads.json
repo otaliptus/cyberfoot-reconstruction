@@ -1,0 +1,2965 @@
+{
+  "scope": "Archive reads before the first Showing Window log only. Per-read logging is intrusive; no latency claim from this trace.",
+  "totals": {
+    "reads": 13431,
+    "returnedBytes": 27979640,
+    "discardedBytes": 625794328,
+    "resets": 2013
+  },
+  "files": [
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/win32u.so",
+      "reads": 275,
+      "returnedBytes": 1117232,
+      "discardedBytes": 132279808,
+      "resets": 155
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/shell32.dll.so",
+      "reads": 251,
+      "returnedBytes": 1010182,
+      "discardedBytes": 60304896,
+      "resets": 58
+    },
+    {
+      "path": "/lib/libc.so.6",
+      "reads": 156,
+      "returnedBytes": 621056,
+      "discardedBytes": 58752512,
+      "resets": 89
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/user32.dll.so",
+      "reads": 246,
+      "returnedBytes": 989486,
+      "discardedBytes": 50814464,
+      "resets": 54
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/comctl32_v6.dll.so",
+      "reads": 251,
+      "returnedBytes": 1018043,
+      "discardedBytes": 31993344,
+      "resets": 40
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/kernelbase.dll.so",
+      "reads": 196,
+      "returnedBytes": 787470,
+      "discardedBytes": 27708928,
+      "resets": 39
+    },
+    {
+      "path": "/opt/wine/bin/wineserver",
+      "reads": 111,
+      "returnedBytes": 434707,
+      "discardedBytes": 22306592,
+      "resets": 78
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/ucrtbase.dll.so",
+      "reads": 201,
+      "returnedBytes": 806918,
+      "discardedBytes": 22093312,
+      "resets": 36
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/ntdll.so",
+      "reads": 114,
+      "returnedBytes": 449896,
+      "discardedBytes": 21790208,
+      "resets": 84
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/ntdll.dll.so",
+      "reads": 157,
+      "returnedBytes": 627670,
+      "discardedBytes": 16711168,
+      "resets": 34
+    },
+    {
+      "path": "/usr/local/lib/libfreetype.so.6.18.1",
+      "reads": 94,
+      "returnedBytes": 375804,
+      "discardedBytes": 14867968,
+      "resets": 55
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/rpcrt4.dll.so",
+      "reads": 132,
+      "returnedBytes": 522610,
+      "discardedBytes": 14425600,
+      "resets": 32
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/oleaut32.dll.so",
+      "reads": 147,
+      "returnedBytes": 585338,
+      "discardedBytes": 13098496,
+      "resets": 31
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/msvcrt.dll.so",
+      "reads": 157,
+      "returnedBytes": 625314,
+      "discardedBytes": 12062208,
+      "resets": 27
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/ole32.dll.so",
+      "reads": 133,
+      "returnedBytes": 529422,
+      "discardedBytes": 11591168,
+      "resets": 30
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/winex11.so",
+      "reads": 81,
+      "returnedBytes": 324608,
+      "discardedBytes": 11279872,
+      "resets": 54
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/kernel32.dll.so",
+      "reads": 91,
+      "returnedBytes": 357390,
+      "discardedBytes": 8883712,
+      "resets": 29
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/gdi32.dll.so",
+      "reads": 114,
+      "returnedBytes": 451166,
+      "discardedBytes": 8441344,
+      "resets": 24
+    },
+    {
+      "path": "/opt/wine/share/wine/nls/sortdefault.nls",
+      "reads": 10,
+      "returnedBytes": 40960,
+      "discardedBytes": 7892992,
+      "resets": 4
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/gdiplus.dll.so",
+      "reads": 122,
+      "returnedBytes": 491895,
+      "discardedBytes": 7552512,
+      "resets": 19
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/cf2015.exe",
+      "reads": 1427,
+      "returnedBytes": 5818536,
+      "discardedBytes": 5091480,
+      "resets": 6
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/uxtheme.dll.so",
+      "reads": 53,
+      "returnedBytes": 201742,
+      "discardedBytes": 5012992,
+      "resets": 27
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/winmm.dll.so",
+      "reads": 61,
+      "returnedBytes": 240207,
+      "discardedBytes": 4619776,
+      "resets": 16
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/combase.dll.so",
+      "reads": 71,
+      "returnedBytes": 272798,
+      "discardedBytes": 4316672,
+      "resets": 21
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/win32u.dll.so",
+      "reads": 51,
+      "returnedBytes": 190802,
+      "discardedBytes": 4234752,
+      "resets": 20
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/comdlg32.dll.so",
+      "reads": 78,
+      "returnedBytes": 310131,
+      "discardedBytes": 4099584,
+      "resets": 14
+    },
+    {
+      "path": "/opt/wine/share/wine/nls/locale.nls",
+      "reads": 604,
+      "returnedBytes": 2462566,
+      "discardedBytes": 3497984,
+      "resets": 12
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/advapi32.dll.so",
+      "reads": 60,
+      "returnedBytes": 228366,
+      "discardedBytes": 3411456,
+      "resets": 18
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/shlwapi.dll.so",
+      "reads": 55,
+      "returnedBytes": 207886,
+      "discardedBytes": 3218944,
+      "resets": 17
+    },
+    {
+      "path": "/usr/local/lib/libfontconfig.so.1.12.0",
+      "reads": 50,
+      "returnedBytes": 195300,
+      "discardedBytes": 2948608,
+      "resets": 29
+    },
+    {
+      "path": "/lib/libm.so.6",
+      "reads": 22,
+      "returnedBytes": 80372,
+      "discardedBytes": 2846208,
+      "resets": 13
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/actxprxy.dll.so",
+      "reads": 34,
+      "returnedBytes": 131495,
+      "discardedBytes": 2358784,
+      "resets": 14
+    },
+    {
+      "path": "/lib/ld-linux.so.2",
+      "reads": 160,
+      "returnedBytes": 459852,
+      "discardedBytes": 2314192,
+      "resets": 37
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/resources/themes/light/light.msstyles",
+      "reads": 52,
+      "returnedBytes": 181024,
+      "discardedBytes": 2294448,
+      "resets": 22
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/winspool.drv.so",
+      "reads": 40,
+      "returnedBytes": 155563,
+      "discardedBytes": 1584640,
+      "resets": 11
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/explorer.exe.so",
+      "reads": 34,
+      "returnedBytes": 131507,
+      "discardedBytes": 1564160,
+      "resets": 11
+    },
+    {
+      "path": "/usr/local/lib/libexpat.so.1.8.10",
+      "reads": 29,
+      "returnedBytes": 108960,
+      "discardedBytes": 1113600,
+      "resets": 18
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/sechost.dll.so",
+      "reads": 30,
+      "returnedBytes": 107246,
+      "discardedBytes": 1039872,
+      "resets": 11
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/imm32.dll.so",
+      "reads": 31,
+      "returnedBytes": 109454,
+      "discardedBytes": 1039872,
+      "resets": 11
+    },
+    {
+      "path": "/usr/local/share/fonts/liberation/LiberationSans-Regular.ttf",
+      "reads": 12,
+      "returnedBytes": 49152,
+      "discardedBytes": 1032192,
+      "resets": 6
+    },
+    {
+      "path": "/usr/local/share/fonts/liberation/LiberationSans-Bold.ttf",
+      "reads": 11,
+      "returnedBytes": 45056,
+      "discardedBytes": 1011712,
+      "resets": 5
+    },
+    {
+      "path": "/usr/local/share/fonts/liberation/LiberationSerif-Italic.ttf",
+      "reads": 9,
+      "returnedBytes": 36864,
+      "discardedBytes": 991232,
+      "resets": 3
+    },
+    {
+      "path": "/usr/local/share/fonts/liberation/LiberationSerif-Bold.ttf",
+      "reads": 8,
+      "returnedBytes": 32768,
+      "discardedBytes": 983040,
+      "resets": 3
+    },
+    {
+      "path": "/usr/local/share/fonts/liberation/LiberationSans-Italic.ttf",
+      "reads": 8,
+      "returnedBytes": 32768,
+      "discardedBytes": 946176,
+      "resets": 3
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/msacm32.dll.so",
+      "reads": 26,
+      "returnedBytes": 98747,
+      "discardedBytes": 794112,
+      "resets": 7
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/shcore.dll.so",
+      "reads": 23,
+      "returnedBytes": 77838,
+      "discardedBytes": 740864,
+      "resets": 9
+    },
+    {
+      "path": "/usr/local/share/fonts/liberation/LiberationSerif-Regular.ttf",
+      "reads": 7,
+      "returnedBytes": 28672,
+      "discardedBytes": 700416,
+      "resets": 3
+    },
+    {
+      "path": "/usr/local/share/fonts/liberation/LiberationSerif-BoldItalic.ttf",
+      "reads": 8,
+      "returnedBytes": 32768,
+      "discardedBytes": 663552,
+      "resets": 3
+    },
+    {
+      "path": "/usr/local/share/fonts/liberation/LiberationSans-BoldItalic.ttf",
+      "reads": 7,
+      "returnedBytes": 28672,
+      "discardedBytes": 614400,
+      "resets": 3
+    },
+    {
+      "path": "/usr/local/share/fonts/liberation/LiberationMono-Regular.ttf",
+      "reads": 8,
+      "returnedBytes": 32220,
+      "discardedBytes": 593920,
+      "resets": 3
+    },
+    {
+      "path": "/usr/local/lib/libpng16.so.16.40.0",
+      "reads": 10,
+      "returnedBytes": 31644,
+      "discardedBytes": 577024,
+      "resets": 7
+    },
+    {
+      "path": "/usr/local/share/fonts/liberation/LiberationMono-Bold.ttf",
+      "reads": 7,
+      "returnedBytes": 28672,
+      "discardedBytes": 573440,
+      "resets": 3
+    },
+    {
+      "path": "/usr/local/share/fonts/liberation/LiberationMono-BoldItalic.ttf",
+      "reads": 7,
+      "returnedBytes": 25716,
+      "discardedBytes": 528384,
+      "resets": 3
+    },
+    {
+      "path": "/usr/local/share/fonts/liberation/LiberationMono-Italic.ttf",
+      "reads": 8,
+      "returnedBytes": 30908,
+      "discardedBytes": 520192,
+      "resets": 3
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/coml2.dll.so",
+      "reads": 12,
+      "returnedBytes": 32770,
+      "discardedBytes": 355840,
+      "resets": 7
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/cryptbase.dll.so",
+      "reads": 10,
+      "returnedBytes": 24014,
+      "discardedBytes": 318976,
+      "resets": 8
+    },
+    {
+      "path": "/usr/local/share/fonts/fontawesome-webfont.ttf",
+      "reads": 3,
+      "returnedBytes": 12288,
+      "discardedBytes": 282624,
+      "resets": 3
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/compstui.dll.so",
+      "reads": 10,
+      "returnedBytes": 33287,
+      "discardedBytes": 257536,
+      "resets": 5
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/version.dll.so",
+      "reads": 8,
+      "returnedBytes": 25095,
+      "discardedBytes": 241152,
+      "resets": 5
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/winex11.drv.so",
+      "reads": 9,
+      "returnedBytes": 20166,
+      "discardedBytes": 232960,
+      "resets": 7
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/tahoma.ttf",
+      "reads": 8,
+      "returnedBytes": 32768,
+      "discardedBytes": 212992,
+      "resets": 5
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/tahomabd.ttf",
+      "reads": 6,
+      "returnedBytes": 24576,
+      "discardedBytes": 188416,
+      "resets": 3
+    },
+    {
+      "path": "/usr/lib/libz.so.1.3",
+      "reads": 7,
+      "returnedBytes": 19024,
+      "discardedBytes": 159232,
+      "resets": 5
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/tzres.dll",
+      "reads": 37,
+      "returnedBytes": 23680,
+      "discardedBytes": 158400,
+      "resets": 18
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/wine-preloader",
+      "reads": 213,
+      "returnedBytes": 28227,
+      "discardedBytes": 99348,
+      "resets": 27
+    },
+    {
+      "path": "/usr/local/lib/libX11.so.6.4.0",
+      "reads": 9,
+      "returnedBytes": 29696,
+      "discardedBytes": 85504,
+      "resets": 8
+    },
+    {
+      "path": "/lib/libuuid.so.1.3.0",
+      "reads": 8,
+      "returnedBytes": 23144,
+      "discardedBytes": 73216,
+      "resets": 6
+    },
+    {
+      "path": "/home/username/.wine/system.reg",
+      "reads": 3529,
+      "returnedBytes": 1806088,
+      "discardedBytes": 40448,
+      "resets": 3
+    },
+    {
+      "path": "/opt/wine/bin/wine",
+      "reads": 13,
+      "returnedBytes": 14566,
+      "discardedBytes": 24640,
+      "resets": 6
+    },
+    {
+      "path": "/etc/ld.so.cache",
+      "reads": 5,
+      "returnedBytes": 17210,
+      "discardedBytes": 24576,
+      "resets": 3
+    },
+    {
+      "path": "/lib/libdl.so.2",
+      "reads": 8,
+      "returnedBytes": 15724,
+      "discardedBytes": 24064,
+      "resets": 7
+    },
+    {
+      "path": "/lib/libpthread.so.0",
+      "reads": 8,
+      "returnedBytes": 15724,
+      "discardedBytes": 24064,
+      "resets": 7
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/wine",
+      "reads": 7,
+      "returnedBytes": 19916,
+      "discardedBytes": 22528,
+      "resets": 6
+    },
+    {
+      "path": "/opt/wine/lib/wine/i386-unix/winspool.so",
+      "reads": 5,
+      "returnedBytes": 14216,
+      "discardedBytes": 19968,
+      "resets": 3
+    },
+    {
+      "path": "/usr/local/lib/libXext.so.6.4.0",
+      "reads": 6,
+      "returnedBytes": 15908,
+      "discardedBytes": 19968,
+      "resets": 4
+    },
+    {
+      "path": "/usr/local/lib/libXinerama.so.1.0.0",
+      "reads": 6,
+      "returnedBytes": 15764,
+      "discardedBytes": 19968,
+      "resets": 4
+    },
+    {
+      "path": "/usr/local/lib/libXrender.so.1.3.0",
+      "reads": 6,
+      "returnedBytes": 15720,
+      "discardedBytes": 19968,
+      "resets": 4
+    },
+    {
+      "path": "/usr/local/lib/libXrandr.so.2.2.0",
+      "reads": 6,
+      "returnedBytes": 16644,
+      "discardedBytes": 19968,
+      "resets": 4
+    },
+    {
+      "path": "/usr/local/lib/libXi.so.6.1.0",
+      "reads": 6,
+      "returnedBytes": 15844,
+      "discardedBytes": 19968,
+      "resets": 4
+    },
+    {
+      "path": "/usr/local/lib/libXcursor.so.1.0.2",
+      "reads": 6,
+      "returnedBytes": 15948,
+      "discardedBytes": 19968,
+      "resets": 4
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/symbol.ttf",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 16384,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/sserife.fon",
+      "reads": 4,
+      "returnedBytes": 16176,
+      "discardedBytes": 12288,
+      "resets": 2
+    },
+    {
+      "path": "/opt/wine/share/wine/nls/c_1252.nls",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 8192,
+      "resets": 2
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/mciwave.dll",
+      "reads": 42,
+      "returnedBytes": 3724,
+      "discardedBytes": 6328,
+      "resets": 14
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/vgasys.fon",
+      "reads": 2,
+      "returnedBytes": 6512,
+      "discardedBytes": 4096,
+      "resets": 2
+    },
+    {
+      "path": "/etc/localtime",
+      "reads": 16,
+      "returnedBytes": 6942,
+      "discardedBytes": 3044,
+      "resets": 4
+    },
+    {
+      "path": "/opt/wine/share/wine/nls/l_intl.nls",
+      "reads": 12,
+      "returnedBytes": 23488,
+      "discardedBytes": 2864,
+      "resets": 5
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/sechost.dll",
+      "reads": 12,
+      "returnedBytes": 1064,
+      "discardedBytes": 1808,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/win32u.dll",
+      "reads": 12,
+      "returnedBytes": 1062,
+      "discardedBytes": 1808,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/combase.dll",
+      "reads": 12,
+      "returnedBytes": 1064,
+      "discardedBytes": 1808,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/cryptbase.dll",
+      "reads": 12,
+      "returnedBytes": 1068,
+      "discardedBytes": 1808,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/coml2.dll",
+      "reads": 12,
+      "returnedBytes": 1060,
+      "discardedBytes": 1808,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/shcore.dll",
+      "reads": 12,
+      "returnedBytes": 1062,
+      "discardedBytes": 1808,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/kernel32.dll",
+      "reads": 12,
+      "returnedBytes": 1146,
+      "discardedBytes": 1728,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/kernelbase.dll",
+      "reads": 12,
+      "returnedBytes": 1150,
+      "discardedBytes": 1728,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/user32.dll",
+      "reads": 12,
+      "returnedBytes": 1142,
+      "discardedBytes": 1728,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/advapi32.dll",
+      "reads": 12,
+      "returnedBytes": 1146,
+      "discardedBytes": 1728,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/msvcrt.dll",
+      "reads": 12,
+      "returnedBytes": 1142,
+      "discardedBytes": 1728,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/ucrtbase.dll",
+      "reads": 12,
+      "returnedBytes": 1146,
+      "discardedBytes": 1728,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/gdi32.dll",
+      "reads": 12,
+      "returnedBytes": 1140,
+      "discardedBytes": 1728,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/oleaut32.dll",
+      "reads": 12,
+      "returnedBytes": 1146,
+      "discardedBytes": 1728,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/ole32.dll",
+      "reads": 12,
+      "returnedBytes": 1140,
+      "discardedBytes": 1728,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/rpcrt4.dll",
+      "reads": 12,
+      "returnedBytes": 1142,
+      "discardedBytes": 1728,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/imm32.dll",
+      "reads": 12,
+      "returnedBytes": 1140,
+      "discardedBytes": 1728,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/shell32.dll",
+      "reads": 12,
+      "returnedBytes": 1144,
+      "discardedBytes": 1728,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/shlwapi.dll",
+      "reads": 12,
+      "returnedBytes": 1144,
+      "discardedBytes": 1728,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/uxtheme.dll",
+      "reads": 12,
+      "returnedBytes": 1144,
+      "discardedBytes": 1728,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/version.dll",
+      "reads": 6,
+      "returnedBytes": 572,
+      "discardedBytes": 864,
+      "resets": 2
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/winsxs/x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.2600.2982_none_deadbeef/comctl32.dll",
+      "reads": 6,
+      "returnedBytes": 576,
+      "discardedBytes": 864,
+      "resets": 2
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/winspool.drv",
+      "reads": 6,
+      "returnedBytes": 573,
+      "discardedBytes": 864,
+      "resets": 2
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/compstui.dll",
+      "reads": 6,
+      "returnedBytes": 573,
+      "discardedBytes": 864,
+      "resets": 2
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/comdlg32.dll",
+      "reads": 6,
+      "returnedBytes": 573,
+      "discardedBytes": 864,
+      "resets": 2
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/gdiplus.dll",
+      "reads": 6,
+      "returnedBytes": 572,
+      "discardedBytes": 864,
+      "resets": 2
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/winmm.dll",
+      "reads": 6,
+      "returnedBytes": 570,
+      "discardedBytes": 864,
+      "resets": 2
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/msacm32.dll",
+      "reads": 6,
+      "returnedBytes": 572,
+      "discardedBytes": 864,
+      "resets": 2
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/actxprxy.dll",
+      "reads": 6,
+      "returnedBytes": 573,
+      "discardedBytes": 864,
+      "resets": 2
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/olepro32.dll",
+      "reads": 6,
+      "returnedBytes": 573,
+      "discardedBytes": 864,
+      "resets": 2
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/explorer.exe",
+      "reads": 8,
+      "returnedBytes": 960,
+      "discardedBytes": 688,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system32/winex11.drv",
+      "reads": 8,
+      "returnedBytes": 960,
+      "discardedBytes": 688,
+      "resets": 4
+    },
+    {
+      "path": "/wineVersion.txt",
+      "reads": 1,
+      "returnedBytes": 4,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/nls/c_20127.nls",
+      "reads": 52,
+      "returnedBytes": 202342,
+      "discardedBytes": 0,
+      "resets": 4
+    },
+    {
+      "path": "/home/username/.wine/userdef.reg",
+      "reads": 10,
+      "returnedBytes": 4130,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/user.reg",
+      "reads": 48,
+      "returnedBytes": 23751,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/winsxs/manifests/x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.2600.2982_none_deadbeef.manifest",
+      "reads": 1,
+      "returnedBytes": 1575,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/nls/c_437.nls",
+      "reads": 1,
+      "returnedBytes": 4096,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/usr/local/etc/fonts/fonts.conf",
+      "reads": 6,
+      "returnedBytes": 5318,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/10-hinting-slight.conf",
+      "reads": 4,
+      "returnedBytes": 1392,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/10-scale-bitmap-fonts.conf",
+      "reads": 6,
+      "returnedBytes": 4456,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/20-unhint-small-vera.conf",
+      "reads": 6,
+      "returnedBytes": 3074,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/30-metric-aliases.conf",
+      "reads": 12,
+      "returnedBytes": 26548,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/40-nonlatin.conf",
+      "reads": 6,
+      "returnedBytes": 10848,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/45-generic.conf",
+      "reads": 6,
+      "returnedBytes": 7086,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/45-latin.conf",
+      "reads": 8,
+      "returnedBytes": 13200,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/49-sansserif.conf",
+      "reads": 4,
+      "returnedBytes": 1598,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/50-user.conf",
+      "reads": 4,
+      "returnedBytes": 1822,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/51-local.conf",
+      "reads": 4,
+      "returnedBytes": 846,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/60-generic.conf",
+      "reads": 6,
+      "returnedBytes": 4082,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/60-latin.conf",
+      "reads": 6,
+      "returnedBytes": 4136,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/65-fonts-persian.conf",
+      "reads": 12,
+      "returnedBytes": 20586,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/65-nonlatin.conf",
+      "reads": 8,
+      "returnedBytes": 16340,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/69-unifont.conf",
+      "reads": 4,
+      "returnedBytes": 1694,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/80-delicious.conf",
+      "reads": 4,
+      "returnedBytes": 1194,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/90-synthetic.conf",
+      "reads": 6,
+      "returnedBytes": 3834,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/10-autohint.conf",
+      "reads": 4,
+      "returnedBytes": 1412,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/10-hinting-full.conf",
+      "reads": 4,
+      "returnedBytes": 1384,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/10-hinting-medium.conf",
+      "reads": 4,
+      "returnedBytes": 1392,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/10-hinting-none.conf",
+      "reads": 4,
+      "returnedBytes": 1384,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/10-no-sub-pixel.conf",
+      "reads": 4,
+      "returnedBytes": 1446,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/10-sub-pixel-bgr.conf",
+      "reads": 4,
+      "returnedBytes": 1496,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/10-sub-pixel-rgb.conf",
+      "reads": 4,
+      "returnedBytes": 1496,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/10-sub-pixel-vbgr.conf",
+      "reads": 4,
+      "returnedBytes": 1516,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/10-sub-pixel-vrgb.conf",
+      "reads": 4,
+      "returnedBytes": 1516,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/10-unhinted.conf",
+      "reads": 4,
+      "returnedBytes": 1402,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/11-lcdfilter-default.conf",
+      "reads": 4,
+      "returnedBytes": 1542,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/11-lcdfilter-legacy.conf",
+      "reads": 4,
+      "returnedBytes": 1536,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/11-lcdfilter-light.conf",
+      "reads": 4,
+      "returnedBytes": 1530,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/25-unhint-nonlatin.conf",
+      "reads": 6,
+      "returnedBytes": 6978,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/65-khmer.conf",
+      "reads": 4,
+      "returnedBytes": 928,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/70-no-bitmaps.conf",
+      "reads": 4,
+      "returnedBytes": 974,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fontconfig/conf.avail/70-yes-bitmaps.conf",
+      "reads": 4,
+      "returnedBytes": 974,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fonts/.uuid",
+      "reads": 2,
+      "returnedBytes": 72,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/var/cache/fontconfig/b3f63079-92f3-454d-bbfb-57f915dacc60-le32d4.cache-7",
+      "reads": 3,
+      "returnedBytes": 256,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/usr/local/share/fonts/liberation/.uuid",
+      "reads": 2,
+      "returnedBytes": 72,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/var/cache/fontconfig/2676e502-7bb0-4a81-8cd3-6a63c5299bdd-le32d4.cache-7",
+      "reads": 9,
+      "returnedBytes": 29248,
+      "discardedBytes": 0,
+      "resets": 2
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/vgafix.fon",
+      "reads": 2,
+      "returnedBytes": 5360,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/coue1255.fon",
+      "reads": 2,
+      "returnedBytes": 4912,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/coue1256.fon",
+      "reads": 2,
+      "returnedBytes": 4912,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/coue1257.fon",
+      "reads": 2,
+      "returnedBytes": 4912,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/coure.fon",
+      "reads": 2,
+      "returnedBytes": 4912,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/couree.fon",
+      "reads": 2,
+      "returnedBytes": 4912,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/coureg.fon",
+      "reads": 2,
+      "returnedBytes": 4912,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/courer.fon",
+      "reads": 2,
+      "returnedBytes": 4912,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/couret.fon",
+      "reads": 2,
+      "returnedBytes": 4912,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/cvgasys.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/hvgasys.fon",
+      "reads": 2,
+      "returnedBytes": 6512,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/jsmalle.fon",
+      "reads": 2,
+      "returnedBytes": 4480,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/jvgafix.fon",
+      "reads": 2,
+      "returnedBytes": 6032,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/jvgasys.fon",
+      "reads": 2,
+      "returnedBytes": 7360,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/marlett.ttf",
+      "reads": 1,
+      "returnedBytes": 4096,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/smae1255.fon",
+      "reads": 2,
+      "returnedBytes": 4512,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/smae1256.fon",
+      "reads": 2,
+      "returnedBytes": 4512,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/smae1257.fon",
+      "reads": 2,
+      "returnedBytes": 4512,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/smalle.fon",
+      "reads": 2,
+      "returnedBytes": 4512,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/smallee.fon",
+      "reads": 2,
+      "returnedBytes": 4496,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/smalleg.fon",
+      "reads": 2,
+      "returnedBytes": 4512,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/smaller.fon",
+      "reads": 2,
+      "returnedBytes": 4560,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/smallet.fon",
+      "reads": 2,
+      "returnedBytes": 4512,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/ssee1255.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/ssee1256.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/ssee1257.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/ssee874.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/ssef1255.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/ssef1256.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/ssef1257.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/ssef874.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/sserifee.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/sserifeg.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/sserifer.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/sserifet.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/sseriff.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/sseriffe.fon",
+      "reads": 2,
+      "returnedBytes": 6576,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/sseriffg.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/sseriffr.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/sserifft.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/svgasys.fon",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/vgas1255.fon",
+      "reads": 2,
+      "returnedBytes": 6448,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/vgas1256.fon",
+      "reads": 2,
+      "returnedBytes": 6064,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/vgas1257.fon",
+      "reads": 2,
+      "returnedBytes": 6576,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/vgas874.fon",
+      "reads": 2,
+      "returnedBytes": 6000,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/vgasyse.fon",
+      "reads": 2,
+      "returnedBytes": 6608,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/vgasysg.fon",
+      "reads": 2,
+      "returnedBytes": 6576,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/vgasysr.fon",
+      "reads": 2,
+      "returnedBytes": 6864,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/vgasyst.fon",
+      "reads": 2,
+      "returnedBytes": 6480,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/webdings.ttf",
+      "reads": 1,
+      "returnedBytes": 4096,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/opt/wine/share/wine/fonts/wingding.ttf",
+      "reads": 2,
+      "returnedBytes": 8192,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/drive_c/windows/system.ini",
+      "reads": 2,
+      "returnedBytes": 478,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/f01.jpg",
+      "reads": 32,
+      "returnedBytes": 127444,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/cyberfoot.ini",
+      "reads": 1,
+      "returnedBytes": 586,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/languages/97.cft",
+      "reads": 12,
+      "returnedBytes": 44090,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/languages/192.cft",
+      "reads": 13,
+      "returnedBytes": 46512,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/0.png",
+      "reads": 12,
+      "returnedBytes": 1002,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/1.png",
+      "reads": 12,
+      "returnedBytes": 1097,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/2.png",
+      "reads": 12,
+      "returnedBytes": 1050,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/3.png",
+      "reads": 12,
+      "returnedBytes": 904,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/4.png",
+      "reads": 12,
+      "returnedBytes": 1056,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/5.png",
+      "reads": 13,
+      "returnedBytes": 888,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/6.png",
+      "reads": 12,
+      "returnedBytes": 1084,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/7.png",
+      "reads": 12,
+      "returnedBytes": 1055,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/8.png",
+      "reads": 12,
+      "returnedBytes": 1110,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/9.png",
+      "reads": 12,
+      "returnedBytes": 1030,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/10.png",
+      "reads": 13,
+      "returnedBytes": 1134,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/11.png",
+      "reads": 12,
+      "returnedBytes": 1049,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/12.png",
+      "reads": 12,
+      "returnedBytes": 884,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/13.png",
+      "reads": 13,
+      "returnedBytes": 1023,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/14.png",
+      "reads": 12,
+      "returnedBytes": 1104,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/15.png",
+      "reads": 12,
+      "returnedBytes": 980,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/16.png",
+      "reads": 13,
+      "returnedBytes": 1096,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/17.png",
+      "reads": 12,
+      "returnedBytes": 1002,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/18.png",
+      "reads": 12,
+      "returnedBytes": 1047,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/19.png",
+      "reads": 13,
+      "returnedBytes": 984,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/20.png",
+      "reads": 12,
+      "returnedBytes": 1050,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/21.png",
+      "reads": 12,
+      "returnedBytes": 828,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/22.png",
+      "reads": 12,
+      "returnedBytes": 1121,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/23.png",
+      "reads": 12,
+      "returnedBytes": 1002,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/24.png",
+      "reads": 12,
+      "returnedBytes": 1130,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/25.png",
+      "reads": 12,
+      "returnedBytes": 944,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/26.png",
+      "reads": 12,
+      "returnedBytes": 1035,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/27.png",
+      "reads": 13,
+      "returnedBytes": 1067,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/28.png",
+      "reads": 12,
+      "returnedBytes": 967,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/29.png",
+      "reads": 12,
+      "returnedBytes": 1218,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/30.png",
+      "reads": 13,
+      "returnedBytes": 1100,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/31.png",
+      "reads": 12,
+      "returnedBytes": 864,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/32.png",
+      "reads": 12,
+      "returnedBytes": 908,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/33.png",
+      "reads": 12,
+      "returnedBytes": 1128,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/34.png",
+      "reads": 12,
+      "returnedBytes": 1120,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/35.png",
+      "reads": 13,
+      "returnedBytes": 1098,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/36.png",
+      "reads": 12,
+      "returnedBytes": 926,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/37.png",
+      "reads": 13,
+      "returnedBytes": 1061,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/38.png",
+      "reads": 13,
+      "returnedBytes": 1005,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/39.png",
+      "reads": 12,
+      "returnedBytes": 1023,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/40.png",
+      "reads": 13,
+      "returnedBytes": 1093,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/41.png",
+      "reads": 12,
+      "returnedBytes": 922,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/42.png",
+      "reads": 12,
+      "returnedBytes": 983,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/43.png",
+      "reads": 13,
+      "returnedBytes": 918,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/44.png",
+      "reads": 12,
+      "returnedBytes": 1066,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/45.png",
+      "reads": 12,
+      "returnedBytes": 986,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/46.png",
+      "reads": 12,
+      "returnedBytes": 930,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/47.png",
+      "reads": 12,
+      "returnedBytes": 983,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/48.png",
+      "reads": 12,
+      "returnedBytes": 1062,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/49.png",
+      "reads": 12,
+      "returnedBytes": 1054,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/50.png",
+      "reads": 12,
+      "returnedBytes": 900,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/51.png",
+      "reads": 12,
+      "returnedBytes": 1012,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/52.png",
+      "reads": 12,
+      "returnedBytes": 1112,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/53.png",
+      "reads": 12,
+      "returnedBytes": 1056,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/54.png",
+      "reads": 13,
+      "returnedBytes": 991,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/55.png",
+      "reads": 12,
+      "returnedBytes": 1066,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/56.png",
+      "reads": 12,
+      "returnedBytes": 1108,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/57.png",
+      "reads": 13,
+      "returnedBytes": 870,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/58.png",
+      "reads": 12,
+      "returnedBytes": 1053,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/59.png",
+      "reads": 13,
+      "returnedBytes": 842,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/60.png",
+      "reads": 12,
+      "returnedBytes": 1092,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/61.png",
+      "reads": 12,
+      "returnedBytes": 1068,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/62.png",
+      "reads": 12,
+      "returnedBytes": 1184,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/63.png",
+      "reads": 12,
+      "returnedBytes": 1052,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/64.png",
+      "reads": 12,
+      "returnedBytes": 918,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/65.png",
+      "reads": 13,
+      "returnedBytes": 1042,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/66.png",
+      "reads": 12,
+      "returnedBytes": 874,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/67.png",
+      "reads": 12,
+      "returnedBytes": 1050,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/68.png",
+      "reads": 13,
+      "returnedBytes": 1078,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/69.png",
+      "reads": 12,
+      "returnedBytes": 1173,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/70.png",
+      "reads": 12,
+      "returnedBytes": 1056,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/71.png",
+      "reads": 12,
+      "returnedBytes": 1106,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/72.png",
+      "reads": 12,
+      "returnedBytes": 884,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/73.png",
+      "reads": 13,
+      "returnedBytes": 957,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/74.png",
+      "reads": 12,
+      "returnedBytes": 930,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/75.png",
+      "reads": 12,
+      "returnedBytes": 964,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/76.png",
+      "reads": 12,
+      "returnedBytes": 1072,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/77.png",
+      "reads": 12,
+      "returnedBytes": 1024,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/78.png",
+      "reads": 12,
+      "returnedBytes": 1019,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/79.png",
+      "reads": 13,
+      "returnedBytes": 1027,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/80.png",
+      "reads": 12,
+      "returnedBytes": 1123,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/81.png",
+      "reads": 12,
+      "returnedBytes": 915,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/82.png",
+      "reads": 13,
+      "returnedBytes": 943,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/83.png",
+      "reads": 12,
+      "returnedBytes": 968,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/84.png",
+      "reads": 13,
+      "returnedBytes": 1076,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/85.png",
+      "reads": 12,
+      "returnedBytes": 925,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/86.png",
+      "reads": 12,
+      "returnedBytes": 1004,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/87.png",
+      "reads": 13,
+      "returnedBytes": 1016,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/88.png",
+      "reads": 12,
+      "returnedBytes": 934,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/89.png",
+      "reads": 12,
+      "returnedBytes": 800,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/90.png",
+      "reads": 13,
+      "returnedBytes": 1118,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/91.png",
+      "reads": 12,
+      "returnedBytes": 1116,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/92.png",
+      "reads": 12,
+      "returnedBytes": 1147,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/93.png",
+      "reads": 12,
+      "returnedBytes": 1071,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/94.png",
+      "reads": 12,
+      "returnedBytes": 1111,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/95.png",
+      "reads": 12,
+      "returnedBytes": 1065,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/96.png",
+      "reads": 12,
+      "returnedBytes": 906,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/97.png",
+      "reads": 12,
+      "returnedBytes": 1190,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/98.png",
+      "reads": 13,
+      "returnedBytes": 1051,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/99.png",
+      "reads": 12,
+      "returnedBytes": 853,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/100.png",
+      "reads": 12,
+      "returnedBytes": 875,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/101.png",
+      "reads": 12,
+      "returnedBytes": 1137,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/102.png",
+      "reads": 12,
+      "returnedBytes": 1060,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/103.png",
+      "reads": 13,
+      "returnedBytes": 1104,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/104.png",
+      "reads": 12,
+      "returnedBytes": 886,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/105.png",
+      "reads": 12,
+      "returnedBytes": 1043,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/106.png",
+      "reads": 13,
+      "returnedBytes": 1037,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/107.png",
+      "reads": 12,
+      "returnedBytes": 1006,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/108.png",
+      "reads": 12,
+      "returnedBytes": 1050,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/109.png",
+      "reads": 12,
+      "returnedBytes": 1085,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/110.png",
+      "reads": 12,
+      "returnedBytes": 1269,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/111.png",
+      "reads": 13,
+      "returnedBytes": 880,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/112.png",
+      "reads": 12,
+      "returnedBytes": 1049,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/113.png",
+      "reads": 12,
+      "returnedBytes": 1057,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/114.png",
+      "reads": 12,
+      "returnedBytes": 890,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/115.png",
+      "reads": 12,
+      "returnedBytes": 1113,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/116.png",
+      "reads": 12,
+      "returnedBytes": 909,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/117.png",
+      "reads": 13,
+      "returnedBytes": 1023,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/118.png",
+      "reads": 12,
+      "returnedBytes": 1032,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/119.png",
+      "reads": 12,
+      "returnedBytes": 875,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/120.png",
+      "reads": 13,
+      "returnedBytes": 955,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/121.png",
+      "reads": 12,
+      "returnedBytes": 1113,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/122.png",
+      "reads": 13,
+      "returnedBytes": 1163,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/123.png",
+      "reads": 12,
+      "returnedBytes": 946,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/124.png",
+      "reads": 12,
+      "returnedBytes": 1081,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/125.png",
+      "reads": 12,
+      "returnedBytes": 877,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/126.png",
+      "reads": 12,
+      "returnedBytes": 1026,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/127.png",
+      "reads": 12,
+      "returnedBytes": 888,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/128.png",
+      "reads": 13,
+      "returnedBytes": 980,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/129.png",
+      "reads": 12,
+      "returnedBytes": 1053,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/130.png",
+      "reads": 12,
+      "returnedBytes": 1059,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/131.png",
+      "reads": 13,
+      "returnedBytes": 963,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/132.png",
+      "reads": 12,
+      "returnedBytes": 1158,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/133.png",
+      "reads": 12,
+      "returnedBytes": 1080,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/134.png",
+      "reads": 13,
+      "returnedBytes": 1014,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/135.png",
+      "reads": 12,
+      "returnedBytes": 900,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/136.png",
+      "reads": 12,
+      "returnedBytes": 1026,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/137.png",
+      "reads": 12,
+      "returnedBytes": 1153,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/138.png",
+      "reads": 12,
+      "returnedBytes": 1184,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/139.png",
+      "reads": 12,
+      "returnedBytes": 1057,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/140.png",
+      "reads": 12,
+      "returnedBytes": 1001,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/141.png",
+      "reads": 12,
+      "returnedBytes": 853,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/142.png",
+      "reads": 13,
+      "returnedBytes": 1070,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/143.png",
+      "reads": 12,
+      "returnedBytes": 1073,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/144.png",
+      "reads": 12,
+      "returnedBytes": 1007,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/145.png",
+      "reads": 12,
+      "returnedBytes": 1222,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/146.png",
+      "reads": 13,
+      "returnedBytes": 1060,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/147.png",
+      "reads": 12,
+      "returnedBytes": 1047,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/148.png",
+      "reads": 12,
+      "returnedBytes": 898,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/149.png",
+      "reads": 12,
+      "returnedBytes": 1099,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/150.png",
+      "reads": 12,
+      "returnedBytes": 1061,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/151.png",
+      "reads": 13,
+      "returnedBytes": 1043,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/152.png",
+      "reads": 12,
+      "returnedBytes": 853,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/153.png",
+      "reads": 13,
+      "returnedBytes": 1075,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/154.png",
+      "reads": 12,
+      "returnedBytes": 1142,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/155.png",
+      "reads": 12,
+      "returnedBytes": 972,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/156.png",
+      "reads": 13,
+      "returnedBytes": 1067,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/157.png",
+      "reads": 12,
+      "returnedBytes": 1114,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/158.png",
+      "reads": 12,
+      "returnedBytes": 1035,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/159.png",
+      "reads": 12,
+      "returnedBytes": 903,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/160.png",
+      "reads": 12,
+      "returnedBytes": 941,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/161.png",
+      "reads": 13,
+      "returnedBytes": 1017,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/162.png",
+      "reads": 12,
+      "returnedBytes": 812,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/163.png",
+      "reads": 12,
+      "returnedBytes": 1014,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/164.png",
+      "reads": 12,
+      "returnedBytes": 990,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/165.png",
+      "reads": 12,
+      "returnedBytes": 1137,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/166.png",
+      "reads": 12,
+      "returnedBytes": 1037,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/167.png",
+      "reads": 12,
+      "returnedBytes": 989,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/168.png",
+      "reads": 12,
+      "returnedBytes": 1014,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/169.png",
+      "reads": 12,
+      "returnedBytes": 1020,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/170.png",
+      "reads": 13,
+      "returnedBytes": 1010,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/171.png",
+      "reads": 12,
+      "returnedBytes": 1104,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/172.png",
+      "reads": 13,
+      "returnedBytes": 1025,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/173.png",
+      "reads": 12,
+      "returnedBytes": 959,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/174.png",
+      "reads": 12,
+      "returnedBytes": 862,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/175.png",
+      "reads": 13,
+      "returnedBytes": 1080,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/176.png",
+      "reads": 12,
+      "returnedBytes": 1062,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/177.png",
+      "reads": 12,
+      "returnedBytes": 1133,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/178.png",
+      "reads": 12,
+      "returnedBytes": 861,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/179.png",
+      "reads": 12,
+      "returnedBytes": 1071,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/180.png",
+      "reads": 12,
+      "returnedBytes": 954,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/181.png",
+      "reads": 13,
+      "returnedBytes": 1013,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/182.png",
+      "reads": 12,
+      "returnedBytes": 1017,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/183.png",
+      "reads": 12,
+      "returnedBytes": 936,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/184.png",
+      "reads": 12,
+      "returnedBytes": 1083,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/185.png",
+      "reads": 13,
+      "returnedBytes": 961,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/186.png",
+      "reads": 12,
+      "returnedBytes": 1071,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/187.png",
+      "reads": 12,
+      "returnedBytes": 1006,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/188.png",
+      "reads": 13,
+      "returnedBytes": 903,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/189.png",
+      "reads": 12,
+      "returnedBytes": 1121,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/190.png",
+      "reads": 12,
+      "returnedBytes": 1035,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/191.png",
+      "reads": 13,
+      "returnedBytes": 995,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/192.png",
+      "reads": 12,
+      "returnedBytes": 1069,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/193.png",
+      "reads": 13,
+      "returnedBytes": 956,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/194.png",
+      "reads": 12,
+      "returnedBytes": 1019,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/195.png",
+      "reads": 12,
+      "returnedBytes": 1036,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/196.png",
+      "reads": 13,
+      "returnedBytes": 973,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/197.png",
+      "reads": 12,
+      "returnedBytes": 1047,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/198.png",
+      "reads": 13,
+      "returnedBytes": 947,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/199.png",
+      "reads": 12,
+      "returnedBytes": 958,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/200.png",
+      "reads": 12,
+      "returnedBytes": 1037,
+      "discardedBytes": 0,
+      "resets": 1
+    },
+    {
+      "path": "/home/username/.wine/dosdevices/c:/files/img/flags/201.png",
+      "reads": 12,
+      "returnedBytes": 1104,
+      "discardedBytes": 0,
+      "resets": 1
+    }
+  ]
+}

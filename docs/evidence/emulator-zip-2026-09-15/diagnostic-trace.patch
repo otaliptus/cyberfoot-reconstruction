@@ -1,0 +1,17 @@
+--- a/source/io/fszipopennode.cpp
++++ b/source/io/fszipopennode.cpp
+@@ -95,10 +95,14 @@
+     BOXEDWINE_CRITICAL_SECTION_WITH_MUTEX(*getReadMutex());
+     std::shared_ptr<FsZip> fsZip = zipNode->fsZip.lock();
+     if (fsZip) {
++        U64 tracePos = this->pos;
++        bool traceReset = this->offset != fsZip->lastZipOffset || this->pos < fsZip->lastZipFileOffset;
++        U64 traceSkip = this->pos - (traceReset ? 0 : fsZip->lastZipFileOffset);
+         fsZip->setupZipRead(this->offset, this->pos);
+         result = unzReadCurrentFile(fsZip->zipfile, buffer, len);
+         this->pos += result;
+         fsZip->lastZipFileOffset = this->pos;
++        klog_fmt("CFZIP %s|%llu|%u|%llu|%u", node->path.c_str(), (unsigned long long)tracePos, result, (unsigned long long)traceSkip, traceReset ? 1 : 0);
+     }
+     return result;
+ }

@@ -181,6 +181,87 @@ index 8cdb81c..b72b05a 100644
      SdlCallback* next = nullptr;
  };
  
+diff --git a/source/io/fszip.cpp b/source/io/fszip.cpp
+index 467eb39..dcfb9ec 100644
+--- a/source/io/fszip.cpp
++++ b/source/io/fszip.cpp
+@@ -29,6 +29,33 @@ extern "C"
+ #include "fszipnode.h"
+ #include <time.h> 
+ 
++#ifdef __EMSCRIPTEN__
++// Called only with this archive's readMutex held. ZIP members are immutable;
++// writable files use the existing copy-to-filesystem path.
++bool FsZip::readCached(U64 offset, U64 length, U64 pos, U8* buffer, U32 len, U32& result) {
++    return readCache.read(offset, length, pos, buffer, len, result, [&](U8* data, U32 size) {
++        unzCloseCurrentFile(zipfile);
++        lastZipOffset = 0xFFFFFFFFFFFFFFFFULL;
++        lastZipFileOffset = 0;
++        if (unzSetOffset64(zipfile, offset) != UNZ_OK || unzOpenCurrentFile(zipfile) != UNZ_OK) {
++            return false;
++        }
++        U32 total = 0;
++        while (total < size) {
++            int count = unzReadCurrentFile(zipfile, data + total, size - total);
++            if (count <= 0) {
++                unzCloseCurrentFile(zipfile);
++                return false;
++            }
++            total += count;
++        }
++        // Publish only complete, CRC-verified contents. On failure the caller
++        // falls back to the existing ZIP reader with its stream state reset.
++        return unzCloseCurrentFile(zipfile) == UNZ_OK;
++    });
++}
++#endif
++
+ void FsZip::setupZipRead(U64 zipOffset, U64 zipFileOffset) {
+ #ifdef BOXEDWINE_ZLIB    
+     if (zipOffset != lastZipOffset || zipFileOffset < lastZipFileOffset) {
+diff --git a/source/io/fszip.h b/source/io/fszip.h
+index 9073235..441abbc 100644
+--- a/source/io/fszip.h
++++ b/source/io/fszip.h
+@@ -22,6 +22,9 @@
+ #define __FSZIP_H__
+ 
+ #include "platformBoxedwine.h"
++#ifdef __EMSCRIPTEN__
++#include "zipreadcache.h"
++#endif
+ 
+ #undef OF
+ #define STRICTUNZIP
+@@ -55,6 +58,11 @@ public:
+ 
+     BOXEDWINE_MUTEX readMutex;
+ 
++#ifdef __EMSCRIPTEN__
++    ZipReadCache readCache;
++    bool readCached(U64 offset, U64 length, U64 pos, U8* buffer, U32 len, U32& result);
++#endif
++
+     void setupZipRead(U64 zipOffset, U64 zipFileOffset);
+     void remove(BString localPath);
+ 
+diff --git a/source/io/fszipopennode.cpp b/source/io/fszipopennode.cpp
+index f6f062f..00b74cf 100644
+--- a/source/io/fszipopennode.cpp
++++ b/source/io/fszipopennode.cpp
+@@ -95,6 +95,12 @@ U32 FsZipOpenNode::readNative(U8* buffer, U32 len) {
+     BOXEDWINE_CRITICAL_SECTION_WITH_MUTEX(*getReadMutex());
+     std::shared_ptr<FsZip> fsZip = zipNode->fsZip.lock();
+     if (fsZip) {
++#ifdef __EMSCRIPTEN__
++        if (fsZip->readCached(this->offset, zipNode->length(), this->pos, buffer, len, result)) {
++            this->pos += result;
++            return result;
++        }
++#endif
+         fsZip->setupZipRead(this->offset, this->pos);
+         result = unzReadCurrentFile(fsZip->zipfile, buffer, len);
+         this->pos += result;
 diff --git a/source/kernel/kmemory.cpp b/source/kernel/kmemory.cpp
 index 72ba096..dd76a4b 100644
 --- a/source/kernel/kmemory.cpp
@@ -548,3 +629,73 @@ index 6bbaa90..4b38c4d 100644
  
  	iterateMappedChildrenBackToFront([](const XWindowPtr& child) {
  		child->draw();
+diff --git a/source/io/zipreadcache.h b/source/io/zipreadcache.h
+new file mode 100644
+index 0000000..e1fc4a8
+--- /dev/null
++++ b/source/io/zipreadcache.h
+@@ -0,0 +1,64 @@
++/* Copyright (C) 2026. GPL-2.0-or-later, consistent with Boxedwine. */
++#ifndef BOXEDWINE_ZIP_READ_CACHE_H
++#define BOXEDWINE_ZIP_READ_CACHE_H
++
++#include <algorithm>
++#include <cstdint>
++#include <cstring>
++#include <list>
++#include <vector>
++
++// One bounded LRU per immutable archive. The owner serializes all operations.
++// Small/large files retain the streaming reader; no eager archive expansion.
++class ZipReadCache {
++public:
++    static constexpr uint64_t capacity = 8 * 1024 * 1024;
++    static constexpr uint64_t minimumEntry = 64 * 1024;
++    static constexpr uint64_t maximumEntry = 4 * 1024 * 1024;
++
++    template<typename Loader>
++    bool read(uint64_t key, uint64_t size, uint64_t pos, uint8_t* buffer,
++              uint32_t len, uint32_t& result, Loader&& loader) {
++        if (!len || size < minimumEntry || size > maximumEntry || pos > size) {
++            return false;
++        }
++        auto entry = std::find_if(entries.begin(), entries.end(),
++            [key](const Entry& value) { return value.key == key; });
++        if (entry == entries.end()) {
++            while (bytes + size > capacity) {
++                bytes -= entries.back().data.size();
++                entries.pop_back();
++            }
++            std::vector<uint8_t> data(static_cast<size_t>(size));
++            if (!loader(data.data(), static_cast<uint32_t>(size))) {
++                return false;
++            }
++            entries.push_front({key, std::move(data)});
++            bytes += size;
++            entry = entries.begin();
++        } else {
++            // The archive's directory offset uniquely identifies immutable data.
++            // Refuse a mismatched length rather than reusing inconsistent bytes.
++            if (entry->data.size() != size) {
++                return false;
++            }
++            entries.splice(entries.begin(), entries, entry);
++        }
++        result = static_cast<uint32_t>(std::min<uint64_t>(len, size - pos));
++        if (result) {
++            std::memcpy(buffer, entry->data.data() + pos, result);
++        }
++        return true;
++    }
++
++    uint64_t sizeBytes() const { return bytes; }
++
++private:
++    struct Entry {
++        uint64_t key;
++        std::vector<uint8_t> data;
++    };
++    std::list<Entry> entries;
++    uint64_t bytes = 0;
++};
++#endif

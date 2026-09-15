@@ -1,0 +1,15 @@
+{
+  "startupMs": {
+    "control": 16036,
+    "control-repeat": 18867,
+    "control-start-3": 17000,
+    "control-start-4": 16047,
+    "cache-clean": 14137,
+    "validation": 14057,
+    "cache-start-3": 14374,
+    "cache-start-4": 13529
+  },
+  "controlMedianMs": 16523.5,
+  "cacheMedianMs": 14097.0,
+  "reductionPercent": 14.685145398977214
+}

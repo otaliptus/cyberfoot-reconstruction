@@ -1,0 +1,22 @@
+{
+  "pixelIdenticalToPreviousRelease": {
+    "new-game-settings": true,
+    "create-career": true,
+    "open-lineup": true,
+    "automatic-lineup": true,
+    "match-first-half": true,
+    "match-second-half": true,
+    "resume-card-to-results": true,
+    "post-round-career": true,
+    "auction-transfer": true
+  },
+  "save": {
+    "saveBytes": 2656864,
+    "version": 1,
+    "matchTimerMs": 300,
+    "backgroundTimerMs": 50,
+    "flushMs": 2,
+    "flushError": null
+  },
+  "errors": []
+}

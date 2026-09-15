@@ -1,0 +1,157 @@
+[
+  {
+    "name": "startup",
+    "wallMs": 14433,
+    "cpuSampling": false,
+    "cpu": [
+      {
+        "type": "browser",
+        "seconds": 0.161227
+      },
+      {
+        "type": "renderer",
+        "seconds": 14.843894
+      },
+      {
+        "type": "GPU",
+        "seconds": 0.154582
+      },
+      {
+        "type": "network.mojom.NetworkService",
+        "seconds": 0.049608
+      }
+    ],
+    "profiles": {},
+    "fork": {
+      "dispatches": 0,
+      "queueUs": 0,
+      "executionUs": 0,
+      "resumeUs": 0,
+      "maxQueueUs": 0,
+      "maxExecutionUs": 0,
+      "frames": 8,
+      "compositionUs": 22000,
+      "uploads": 10,
+      "uploadPixels": 1287146,
+      "flushes": 1559,
+      "putImages": 12,
+      "putImageUs": 0,
+      "wakes": 0,
+      "coalescedWakes": 0,
+      "deferredFlushes": 1559,
+      "mainTicks": 3097
+    },
+    "menuReadyMs": 14374,
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive",
+      "forkMode": 3
+    },
+    "menuReadyCriterion": "English selector focus visible at fixed 1024x768 canvas coordinates",
+    "downloads": [
+      {
+        "name": "boxedwine.zip-858b287b376584c7.0",
+        "startMs": 49,
+        "endMs": 59,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.1",
+        "startMs": 49,
+        "endMs": 56,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.2",
+        "startMs": 49,
+        "endMs": 60,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.3",
+        "startMs": 49,
+        "endMs": 59,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.wasm?v=cf-181c92020f48",
+        "startMs": 62,
+        "endMs": 103,
+        "transferBytes": 2365554
+      },
+      {
+        "name": "cyberfoot.zip-757d0de26ae8bae4.0",
+        "startMs": 85,
+        "endMs": 106,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "cyberfoot.zip-757d0de26ae8bae4.1",
+        "startMs": 85,
+        "endMs": 105,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "cyberfoot.zip-757d0de26ae8bae4.2",
+        "startMs": 85,
+        "endMs": 105,
+        "transferBytes": 2566643
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.4",
+        "startMs": 90,
+        "endMs": 106,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.5",
+        "startMs": 134,
+        "endMs": 185,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.6",
+        "startMs": 134,
+        "endMs": 152,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.7",
+        "startMs": 135,
+        "endMs": 186,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.8",
+        "startMs": 146,
+        "endMs": 185,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.9",
+        "startMs": 191,
+        "endMs": 201,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.10",
+        "startMs": 199,
+        "endMs": 206,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.11",
+        "startMs": 200,
+        "endMs": 207,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.12",
+        "startMs": 200,
+        "endMs": 207,
+        "transferBytes": 2308405
+      }
+    ]
+  }
+]

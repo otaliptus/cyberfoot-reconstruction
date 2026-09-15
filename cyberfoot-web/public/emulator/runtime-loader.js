@@ -4,7 +4,7 @@
  const threaded=requested!=='single'&&globalThis.crossOriginIsolated&&typeof SharedArrayBuffer!=='undefined';
  window.cyberfootRuntime={engine:threaded?'threaded':'single',isolated:globalThis.crossOriginIsolated};
  // Keep the generated JS and WASM from the same build across browser caches.
- const build='cf-898c69654bbf';
+ const build='cf-181c92020f48';
  if(threaded)Module.locateFile=(path,prefix)=>prefix+path+(path.endsWith('.wasm')?'?v='+build:'');
  // Start the two large downloads while the emulator's WASM compiles and its
  // workers initialize. load() consumes these promises without downloading twice.

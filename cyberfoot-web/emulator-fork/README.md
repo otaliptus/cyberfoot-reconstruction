@@ -13,7 +13,7 @@ python3 cyberfoot-web/emulator-fork/build.py
 python3 cyberfoot-web/emulator-fork/serve.py
 ```
 
-The release compiles every translation unit with `-flto` and links with `-O3 -flto`. `Build/MemoryFast` separates these objects from earlier non-LTO builds, because make does not detect compiler-flag changes. No tail-call or additional browser feature is required.
+The release compiles every translation unit with `-flto` and links with `-O3 -flto`. `Build/ZipCache` separates these objects from earlier non-LTO builds, because make does not detect compiler-flag changes. No tail-call or additional browser feature is required.
 
 The first build downloads the source and SDK. Existing checkouts must match their pinned commits; the script checks whether the patch is already applied. Builds use six jobs at most and the existing 12-worker pool. No shell profile is modified and nothing is deployed automatically.
 
@@ -48,10 +48,33 @@ The original fixed-offset browser frame-copy probe (`PROFILE_PAINT=1`) is tied t
 
 ## Stage for publication
 
-After validation, `python3 cyberfoot-web/emulator-fork/stage.py` verifies the tested binary/patch hashes and stages JS/WASM plus a corresponding-source archive in the existing public directory. It does not deploy. The archive contains the patched source, headers, bundled libraries, platform code and original web build files, excluding build output. It can also be built directly after extraction: activate Emscripten 4.0.23 and run `make -C project/emscripten -j6 BUILD_DIR=Build/MemoryFast EXTRA_CPP_FLAGS='-DBOXEDWINE_MULTI_THREADED -pthread -flto' EXTRA_LD_FLAGS='-pthread -sPTHREAD_POOL_SIZE=12 -O3 -flto' SHELL_FILE=shell.html` from its root. Runtime switches are configured separately by the launcher.
+After validation, `python3 cyberfoot-web/emulator-fork/stage.py` verifies the tested binary/patch hashes and stages JS/WASM plus a corresponding-source archive in the existing public directory. It does not deploy. The archive contains the patched source, headers, bundled libraries, platform code and original web build files, excluding build output. It can also be built directly after extraction: activate Emscripten 4.0.23 and run `make -C project/emscripten -j6 BUILD_DIR=Build/ZipCache EXTRA_CPP_FLAGS='-DBOXEDWINE_MULTI_THREADED -pthread -flto' EXTRA_LD_FLAGS='-pthread -sPTHREAD_POOL_SIZE=12 -O3 -flto' SHELL_FILE=shell.html` from its root. Runtime switches are configured separately by the launcher.
 
 ## Memory-access optimization
 
 The web build inlines the existing permitted, single-page RAM branches for byte/word/dword reads and writes. It keeps the complete original operations out of line for all other accesses, including page boundaries, permissions, special pages and code invalidation. The native build retains the original functions. The patch is tested with the upstream CPU suite as well as the original game.
 
 CPU regression build: activate the pinned SDK, then run `make -C project/emscripten -j6 BUILD_DIR=Build/Test EXTRA_CPP_FLAGS="-D__TEST -DBOXEDWINE_MULTI_THREADED -pthread -flto" EXTRA_LD_FLAGS="-pthread -sPTHREAD_POOL_SIZE=12 -O3 -flto" SHELL_FILE=shelltest.html`. Serve `Build/Test` with cross-origin isolation headers and open `boxedwine.html`; the tested release reports 805 groups passing and 0 failures. These are test groups, not a count of individual assertions.
+
+## Bounded ZIP read cache
+
+The web build keeps an LRU of fully decoded, CRC-verified immutable ZIP members, capped at 8 MiB of file contents per mounted archive. Only entries from 64 KiB through 4 MiB qualify; other reads keep the original streaming implementation. The current launcher mounts three archives, giving a maximum 24 MiB content budget plus small container overhead. Entries load on demand and are discarded with their archive. This does not cache writable saves or alter the existing copy-to-filesystem behavior.
+
+Every lookup, load and eviction runs under the archive's existing read mutex. A failed or incomplete fill is never published and falls back to the original reader with the decoder position reset. Cache hits preserve the decoder's independent position. The standalone contract test covers ranges, backward reads, EOF, bypasses, failed fills, length mismatch, LRU eviction, archive separation and capacity:
+
+```sh
+clang++ -std=c++20 -fsanitize=undefined \
+  -I output/emulator-fork/Boxedwine/source/io \
+  cyberfoot-web/emulator-fork/test-zip-cache.cpp -o /tmp/cyberfoot-zip-cache-test
+/tmp/cyberfoot-zip-cache-test
+```
+
+Run this from the repository root after applying the source patch. Also validate original-game screens, matches, transfers and saves. Fresh ordinary startup checks retain a screenshot and runtime/log diagnostics on failure:
+
+```sh
+CYBERFOOT_EMULATOR_BASE=http://127.0.0.1:8778 \
+STARTUP_OUTPUT=output/emulator-startup STARTUP_RUNS=4 \
+node cyberfoot-web/scripts/check-emulator-startup.mjs
+```
+
+Use the build directory produced by the build script. Do not copy object/dependency files between build directories: generated dependency targets contain the original directory name and can silently leave header-dependent objects stale.

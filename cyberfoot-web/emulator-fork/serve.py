@@ -6,7 +6,7 @@ import argparse
 ROOT = Path(__file__).resolve().parents[2]
 parser = argparse.ArgumentParser()
 parser.add_argument('--port', type=int, default=8778)
-parser.add_argument('--build', type=Path, default=ROOT/'output/emulator-fork/Boxedwine/project/emscripten/Build/MemoryFast')
+parser.add_argument('--build', type=Path, default=ROOT/'output/emulator-fork/Boxedwine/project/emscripten/Build/ZipCache')
 args = parser.parse_args()
 PUBLIC = ROOT/'cyberfoot-web/public'
 
