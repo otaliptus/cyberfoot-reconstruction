@@ -1,0 +1,44 @@
+{
+  "control1": {
+    "startup": 13040,
+    "new-game-settings": 2073,
+    "create-career": 6966,
+    "open-lineup": 3567,
+    "automatic-lineup": 4591
+  },
+  "control2": {
+    "startup": 13582,
+    "new-game-settings": 1752,
+    "create-career": 6727,
+    "open-lineup": 3475,
+    "automatic-lineup": 4387
+  },
+  "candidate1": {
+    "startup": 13238,
+    "new-game-settings": 1853,
+    "create-career": 6554,
+    "open-lineup": 3460,
+    "automatic-lineup": 4711
+  },
+  "simd1": {
+    "startup": 13805,
+    "new-game-settings": 1849,
+    "create-career": 6527,
+    "open-lineup": 3475,
+    "automatic-lineup": 4597
+  },
+  "cache1": {
+    "startup": 13061,
+    "new-game-settings": 1852,
+    "create-career": 6669,
+    "open-lineup": 3363,
+    "automatic-lineup": 4507
+  },
+  "frame-pump1": {
+    "startup": 14014,
+    "new-game-settings": 1863,
+    "create-career": 6421,
+    "open-lineup": 3369,
+    "automatic-lineup": 4499
+  }
+}

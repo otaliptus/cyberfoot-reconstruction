@@ -1,0 +1,42 @@
+{
+  "DirectCpu": {
+    "boxedwine.js": {
+      "bytes": 231075,
+      "sha256": "76d3f909e7619e811346adba93d2baf16fdfc4edde788023dfbf979e46894340"
+    },
+    "boxedwine.wasm": {
+      "bytes": 2365259,
+      "sha256": "11916c1840d5b6a0840d348e6f1a7e2fe1e907ce0d0ab1f19c50a28649c4854e"
+    }
+  },
+  "Present33": {
+    "boxedwine.js": {
+      "bytes": 231075,
+      "sha256": "76d3f909e7619e811346adba93d2baf16fdfc4edde788023dfbf979e46894340"
+    },
+    "boxedwine.wasm": {
+      "bytes": 2365259,
+      "sha256": "8e0eec57324ee715fb0432e0fa230e225de1a83662e487cdfad425b6e0a37e85"
+    }
+  },
+  "Simd": {
+    "boxedwine.js": {
+      "bytes": 231075,
+      "sha256": "76d3f909e7619e811346adba93d2baf16fdfc4edde788023dfbf979e46894340"
+    },
+    "boxedwine.wasm": {
+      "bytes": 2393068,
+      "sha256": "55b5d63488c571367d25419d115ffe0ece80e58986907dbebc1ff4831e0014dd"
+    }
+  },
+  "Cache32": {
+    "boxedwine.js": {
+      "bytes": 231075,
+      "sha256": "76d3f909e7619e811346adba93d2baf16fdfc4edde788023dfbf979e46894340"
+    },
+    "boxedwine.wasm": {
+      "bytes": 2365259,
+      "sha256": "8ec430250d74d7742ea3f3ea1bc4caf44d06217f5c34894041b8c6a5d58881b6"
+    }
+  }
+}

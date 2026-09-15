@@ -1,0 +1,17 @@
+{
+  "boxedwine.zip": {
+    "eligibleFiles": 261,
+    "eligibleBytes": 94508610,
+    "maximumCacheBytes": 33554432
+  },
+  "cyberfoot.zip": {
+    "eligibleFiles": 2,
+    "eligibleBytes": 908984,
+    "maximumCacheBytes": 908984
+  },
+  "graphics.zip": {
+    "eligibleFiles": 9,
+    "eligibleBytes": 3676530,
+    "maximumCacheBytes": 3676530
+  }
+}

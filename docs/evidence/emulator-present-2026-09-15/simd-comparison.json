@@ -1,0 +1,76 @@
+{
+  "control1": {
+    "startup": {
+      "ms": 13040,
+      "frames": 8,
+      "compositionUs": 16000
+    },
+    "menu-idle": {
+      "ms": null,
+      "frames": 0,
+      "compositionUs": 0
+    },
+    "new-game-settings": {
+      "ms": 2073,
+      "frames": 19,
+      "compositionUs": 34000
+    },
+    "team-selection": {
+      "ms": 7648,
+      "frames": 59,
+      "compositionUs": 137000
+    },
+    "create-career": {
+      "ms": 6966,
+      "frames": 53,
+      "compositionUs": 122000
+    },
+    "open-lineup": {
+      "ms": 3567,
+      "frames": 38,
+      "compositionUs": 109000
+    },
+    "automatic-lineup": {
+      "ms": 4591,
+      "frames": 148,
+      "compositionUs": 409000
+    }
+  },
+  "simd1": {
+    "startup": {
+      "ms": 13805,
+      "frames": 9,
+      "compositionUs": 20000
+    },
+    "menu-idle": {
+      "ms": null,
+      "frames": 0,
+      "compositionUs": 0
+    },
+    "new-game-settings": {
+      "ms": 1849,
+      "frames": 17,
+      "compositionUs": 28000
+    },
+    "team-selection": {
+      "ms": 7527,
+      "frames": 58,
+      "compositionUs": 142000
+    },
+    "create-career": {
+      "ms": 6527,
+      "frames": 50,
+      "compositionUs": 110000
+    },
+    "open-lineup": {
+      "ms": 3475,
+      "frames": 39,
+      "compositionUs": 110000
+    },
+    "automatic-lineup": {
+      "ms": 4597,
+      "frames": 150,
+      "compositionUs": 417000
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "intentionalCommandFailure": {
+    "exitCode": 1,
+    "stoppedBeforeNextAction": true,
+    "expectedErrorRecorded": true
+  },
+  "invalidPumpOption": {
+    "exitCode": 1,
+    "rejectedBeforeBrowserLaunch": true
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "scope": "Offline replay of pre-cache startup read order; Wine ZIP members 64KiB-4MiB, current archive entry sizes. Not measured latency; inter-thread ordering may differ in current runtime.",
+  "capacityMiB": {
+    "8": {
+      "hits": 7332,
+      "misses": 157,
+      "filledBytes": 104351288,
+      "evictions": 149,
+      "mostReloaded": [
+        [
+          "/lib/libc.so.6",
+          5
+        ],
+        [
+          "/opt/wine/lib/wine/i386-unix/ntdll.so",
+          5
+        ],
+        [
+          "/opt/wine/lib/wine/i386-unix/gdi32.dll.so",
+          5
+        ],
+        [
+          "/opt/wine/bin/wineserver",
+          4
+        ],
+        [
+          "/opt/wine/lib/wine/i386-unix/ntdll.dll.so",
+          4
+        ]
+      ]
+    },
+    "12": {
+      "hits": 7341,
+      "misses": 148,
+      "filledBytes": 95910356,
+      "evictions": 132,
+      "mostReloaded": [
+        [
+          "/lib/libc.so.6",
+          5
+        ],
+        [
+          "/opt/wine/lib/wine/i386-unix/ntdll.so",
+          4
+        ],
+        [
+          "/opt/wine/bin/wineserver",
+          4
+        ],
+        [
+          "/opt/wine/lib/wine/i386-unix/ntdll.dll.so",
+          4
+        ],
+        [
+          "/opt/wine/lib/wine/i386-unix/advapi32.dll.so",
+          4
+        ]
+      ]
+    },
+    "16": {
+      "hits": 7352,
+      "misses": 137,
+      "filledBytes": 87672700,
+      "evictions": 111,
+      "mostReloaded": [
+        [
+          "/lib/libc.so.6",
+          4
+        ],
+        [
+          "/opt/wine/lib/wine/i386-unix/sechost.dll.so",
+          4
+        ],
+        [
+          "/opt/wine/lib/wine/i386-unix/ntdll.so",
+          3
+        ],
+        [
+          "/opt/wine/bin/wineserver",
+          3
+        ],
+        [
+          "/opt/wine/lib/wine/i386-unix/ntdll.dll.so",
+          3
+        ]
+      ]
+    },
+    "24": {
+      "hits": 7368,
+      "misses": 121,
+      "filledBytes": 74048464,
+      "evictions": 82,
+      "mostReloaded": [
+        [
+          "/opt/wine/lib/wine/i386-unix/user32.dll.so",
+          3
+        ],
+        [
+          "/opt/wine/lib/wine/i386-unix/gdi32.dll.so",
+          3
+        ],
+        [
+          "/opt/wine/lib/wine/i386-unix/oleaut32.dll.so",
+          3
+        ],
+        [
+          "/opt/wine/lib/wine/i386-unix/ole32.dll.so",
+          3
+        ],
+        [
+          "/opt/wine/lib/wine/i386-unix/combase.dll.so",
+          3
+        ]
+      ]
+    },
+    "32": {
+      "hits": 7413,
+      "misses": 76,
+      "filledBytes": 43793112,
+      "evictions": 20,
+      "mostReloaded": [
+        [
+          "/lib/ld-linux.so.2",
+          2
+        ],
+        [
+          "/home/username/.wine/drive_c/windows/system32/kernelbase.dll",
+          2
+        ],
+        [
+          "/home/username/.wine/drive_c/windows/system32/user32.dll",
+          2
+        ],
+        [
+          "/home/username/.wine/drive_c/windows/system32/ole32.dll",
+          2
+        ],
+        [
+          "/home/username/.wine/drive_c/windows/system32/tzres.dll",
+          2
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "candidate1": {
+    "new-game-settings": true,
+    "create-career": true,
+    "open-lineup": true,
+    "automatic-lineup": true,
+    "browserErrors": []
+  },
+  "simd1": {
+    "new-game-settings": true,
+    "create-career": true,
+    "open-lineup": true,
+    "automatic-lineup": true,
+    "browserErrors": []
+  },
+  "cache1": {
+    "new-game-settings": true,
+    "create-career": true,
+    "open-lineup": true,
+    "automatic-lineup": true,
+    "browserErrors": []
+  },
+  "frame-pump1": {
+    "new-game-settings": true,
+    "create-career": true,
+    "open-lineup": true,
+    "automatic-lineup": true,
+    "browserErrors": []
+  }
+}

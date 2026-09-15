@@ -9,8 +9,10 @@ const sampleCpu=process.env.PROFILE_SAMPLES!=='0';
 const samplingIntervalUs=Number(process.env.PROFILE_INTERVAL_US??1000);
 if(!Number.isInteger(samplingIntervalUs)||samplingIntervalUs<100||samplingIntervalUs>1000000)throw Error('PROFILE_INTERVAL_US must be an integer from 100 to 1000000.');
 const samplePaint=process.env.PROFILE_PAINT==='1';
+const eventPump=process.env.PROFILE_EVENT_PUMP??'responsive';
+if(!['original','responsive'].includes(eventPump))throw Error('PROFILE_EVENT_PUMP must be original or responsive.');
 const browser=await chromium.launch({headless:true}),context=await browser.newContext({viewport:{width:1280,height:960}}),page=await context.newPage();
-writeFileSync(out+'/environment.json',JSON.stringify({base,cpuSampling:sampleCpu,paintSampling:samplePaint,samplingIntervalUs:sampleCpu?samplingIntervalUs:null,seed:process.env.PROFILE_SEED??'random',browser:browser.version(),platform:process.platform,arch:process.arch,viewport:{width:1280,height:960}},null,2));
+writeFileSync(out+'/environment.json',JSON.stringify({base,eventPump,cpuSampling:sampleCpu,paintSampling:samplePaint,samplingIntervalUs:sampleCpu?samplingIntervalUs:null,seed:process.env.PROFILE_SEED??'random',browser:browser.version(),platform:process.platform,arch:process.arch,viewport:{width:1280,height:960}},null,2));
 writeFileSync(out+'/actions.jsonl','');
 if(process.env.PROFILE_SEED){
  // A reproducible seed only in this isolated benchmark page. Production keeps
@@ -91,7 +93,7 @@ async function action(a){
  if(a.type==='text')await page.keyboard.type(a.text,{delay:60});
 }
 try{
- await start('startup');await page.goto(base+'/emulator/game.html?app=cyberfoot&overlay=graphics&p=cf2015.exe&resolution=1024x768&sound=false&storage=indexeddb'+(process.env.PROFILE_FORK_MODE===undefined?'':'&forkmode='+encodeURIComponent(process.env.PROFILE_FORK_MODE)));
+ await start('startup');await page.goto(base+'/emulator/game.html?app=cyberfoot&overlay=graphics&p=cf2015.exe&resolution=1024x768&sound=false&storage=indexeddb'+(process.env.PROFILE_FORK_MODE===undefined?'':'&forkmode='+encodeURIComponent(process.env.PROFILE_FORK_MODE))+(eventPump==='original'?'&pump=original':''));
  await page.waitForFunction(()=>{
   if(window.CyberfootLoading?.state().failed)throw Error(document.getElementById('status').textContent);
   const c=document.getElementById('canvas');if(!c||c.width!==1024)return false;
@@ -139,6 +141,6 @@ try{
     await shot(c.name);await finish({actionEndMs,firstVisualChangeMs:changes[0]??null,lastVisualChangeMs:changes.at(-1)??null,changedSamples:changes.length,visualQuietMs:Math.round(performance.now()-t)-(changes.at(-1)??0),mask:c.mask??[],observationMs:Math.round(performance.now()-t)});
    }
    if(c.action==='close')break;
-  }catch(e){console.log('ERROR',String(e));}
+  }catch(e){console.log('ERROR',String(e));throw e;}
  }
-}finally{if(phase)await finish();await browser.close();}
+}finally{try{if(phase)await finish();}finally{await browser.close();}}

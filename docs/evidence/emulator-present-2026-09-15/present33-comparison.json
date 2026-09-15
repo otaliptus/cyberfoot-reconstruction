@@ -1,0 +1,96 @@
+{
+  "control1": {
+    "startup": {
+      "ms": 13040,
+      "frames": 8,
+      "compositionUs": 16000,
+      "rendererCpuSeconds": 13.699292
+    },
+    "menu-idle": {
+      "ms": null,
+      "frames": 0,
+      "compositionUs": 0,
+      "rendererCpuSeconds": 0.3367749999999994
+    },
+    "new-game-settings": {
+      "ms": 2073,
+      "frames": 19,
+      "compositionUs": 34000,
+      "rendererCpuSeconds": 2.2064660000000007
+    },
+    "team-selection": {
+      "ms": 7648,
+      "frames": 59,
+      "compositionUs": 137000,
+      "rendererCpuSeconds": 5.331996
+    },
+    "create-career": {
+      "ms": 6966,
+      "frames": 53,
+      "compositionUs": 122000,
+      "rendererCpuSeconds": 8.204031
+    },
+    "open-lineup": {
+      "ms": 3567,
+      "frames": 38,
+      "compositionUs": 109000,
+      "rendererCpuSeconds": 6.4398560000000025
+    },
+    "automatic-lineup": {
+      "ms": 4591,
+      "frames": 148,
+      "compositionUs": 409000,
+      "rendererCpuSeconds": 8.293115
+    }
+  },
+  "candidate1": {
+    "startup": {
+      "ms": 13238,
+      "frames": 7,
+      "compositionUs": 16000,
+      "rendererCpuSeconds": 13.921007
+    },
+    "menu-idle": {
+      "ms": null,
+      "frames": 0,
+      "compositionUs": 0,
+      "rendererCpuSeconds": 0.3621680000000005
+    },
+    "new-game-settings": {
+      "ms": 1853,
+      "frames": 16,
+      "compositionUs": 29000,
+      "rendererCpuSeconds": 2.1207569999999976
+    },
+    "team-selection": {
+      "ms": 7544,
+      "frames": 41,
+      "compositionUs": 108000,
+      "rendererCpuSeconds": 5.234196999999998
+    },
+    "create-career": {
+      "ms": 6554,
+      "frames": 43,
+      "compositionUs": 96000,
+      "rendererCpuSeconds": 8.861542
+    },
+    "open-lineup": {
+      "ms": 3460,
+      "frames": 30,
+      "compositionUs": 85000,
+      "rendererCpuSeconds": 7.238326000000001
+    },
+    "automatic-lineup": {
+      "ms": 4711,
+      "frames": 112,
+      "compositionUs": 325000,
+      "rendererCpuSeconds": 9.808292000000002
+    }
+  },
+  "pixelIdentical": {
+    "new-game-settings": true,
+    "create-career": true,
+    "open-lineup": true,
+    "automatic-lineup": true
+  }
+}

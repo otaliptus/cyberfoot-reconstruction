@@ -1,0 +1,9 @@
+{
+  "compiler": "Apple clang++ -std=c++17 -fsanitize=undefined",
+  "capacityMiBTested": [
+    32,
+    8
+  ],
+  "outcome": "PASS: byte ranges, backward reads, EOF, bypasses, failed loads, immutable lengths, LRU eviction, archive isolation and capacity",
+  "productionBudgetRestoredMiB": 8
+}
