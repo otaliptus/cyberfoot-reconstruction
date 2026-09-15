@@ -1,0 +1,77 @@
+{
+  "base": "https://cyberfoot-original-emulator.pages.dev",
+  "checked": [
+    {
+      "file": "game.html",
+      "bytes": 2546,
+      "sha256": "3ab46aeccb3b25dcf118baff8019315fa8b84e3ae495ac1fc859c3e11484a67c"
+    },
+    {
+      "file": "fork-runtime.js",
+      "bytes": 924,
+      "sha256": "c7250d22c424ab3c87003f32aeb2f566e19dd096c5bf0d4009561d615605b27a"
+    },
+    {
+      "file": "runtime-loader.js",
+      "bytes": 1171,
+      "sha256": "324089f275396f552846f26bab6e20abe6022ecedc4e47aacb964449d3b8438e"
+    },
+    {
+      "file": "threaded/boxedwine.js",
+      "bytes": 494897,
+      "sha256": "f8813774f9b7ead7ea1543e95ede1db8a952138c58a0f2240558d4013887fd50"
+    },
+    {
+      "file": "threaded/boxedwine.wasm",
+      "bytes": 2371652,
+      "sha256": "de88ffb91441390e96eea985cadc8b7e181ebdfed9cd8523d1dc5f097606063e"
+    },
+    {
+      "file": "source/runtime.patch",
+      "bytes": 13078,
+      "sha256": "74d8dddddcf23c884d866625e81955ab34a681fc38a5b7fe7aefc8a289a59115"
+    },
+    {
+      "file": "source/boxedwine-cyberfoot-source.tar.gz",
+      "bytes": 12386074,
+      "sha256": "8f7ce6c37ca73ce04a48d9634698574d5dd3c8ffc89de80e63f0059e8e4c60b0"
+    }
+  ],
+  "state": {
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive",
+      "forkMode": 3
+    },
+    "loading": {
+      "starting": false,
+      "failed": false,
+      "busy": false,
+      "visible": false
+    },
+    "timingMode": 0,
+    "metrics": {
+      "dispatches": 0,
+      "queueUs": 0,
+      "executionUs": 0,
+      "resumeUs": 0,
+      "maxQueueUs": 0,
+      "maxExecutionUs": 0,
+      "frames": 10,
+      "compositionUs": 22000,
+      "uploads": 11,
+      "uploadPixels": 1448039,
+      "flushes": 1559,
+      "putImages": 12,
+      "putImageUs": 0,
+      "wakes": 0,
+      "coalescedWakes": 0,
+      "deferredFlushes": 1559,
+      "mainTicks": 3956
+    }
+  },
+  "settingsSpinnerDismissed": true,
+  "optionalSourceNotLoadedDuringPlay": true,
+  "errors": []
+}

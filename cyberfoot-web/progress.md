@@ -1,6 +1,7 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
 ### 2026-09-15 — Instrumented Boxedwine fork and display batching
+- Published4e1164a as59b77b63 at https://cyberfoot-original-emulator.pages.dev/. Public bytes/hashes including full source archive, isolated mode3 startup, settings/spinner, versioned WASM, no source download during play and no browser errors pass; screenshot inspected.
 - Built pinned Boxedwine26R1.0 (d7d5a1421bd781a81cbdf8f222cced11a7ebd76e) using Emscripten4.0.23. Fork source patch/build/test/staging tools are in emulator-fork/; source and SDK live only in ignored output/emulator-fork/. Tested manifest pins binary and source hashes; build.py rerun passes.
 - Added demand-triggered SDL callback wakeups, XFlush presentation batching at a16ms floor using the existing main loop, atomic display/window dirty flags, and native diagnostic counters. Queue callbacks still preserve synchronous results; only final display submission is deferred. Game/Wine packages, RNG, logic, graphics and clocks unchanged.
 - Same-binary mode comparison: auto lineup6.448s control,6.161s wake,5.314s batch,5.314s both. Combined repeat5.323s; ~18% faster. Career7.751→7.454s and opening lineup4.087→3.869s are smaller gains; startup/settings essentially unchanged. IdleCPU stays low; active lineupCPU8.798→9.154 seconds in15s window, so no battery saving claim.
