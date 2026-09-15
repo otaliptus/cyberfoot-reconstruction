@@ -338,7 +338,8 @@
                 let parts = filename === "boxedwine.zip" ? Array.from({length:17}, (_,i)=>"wine.part"+i) : filename === "cyberfoot.zip" ? Array.from({length:3}, (_,i)=>"cyberfoot.part"+i) : [filename];
                 const data = []; let total = 0;
                 for (let i=0; i<parts.length; i++) {
-                    const response=await fetch(pathPrefix+parts[i]);
+                    const version = parts[i] === 'graphics.zip' ? '?v=ad5b2329dc208307' : '';
+                    const response=await fetch(pathPrefix+parts[i]+version);
                     if(!response.ok) throw new Error("Download failed: "+parts[i]+" ("+response.status+")");
                     const bytes = new Uint8Array(await response.arrayBuffer()); data.push(bytes); total+=bytes.length;
                     window.reportStatus?.(filename === "boxedwine.zip" ? "Loading Windows compatibility files · "+Math.round((i+1)/parts.length*100)+"%" : "Loading Cyberfoot 2015…");

@@ -8,7 +8,7 @@ import tarfile
 ROOT = Path(__file__).resolve().parents[2]
 FORK = Path(__file__).parent
 SOURCE = ROOT/'output/emulator-fork/Boxedwine'
-BUILD = SOURCE/'project/emscripten/Build/DirectCpu'
+BUILD = SOURCE/'project/emscripten/Build/AudioMain'
 PUBLIC = ROOT/'cyberfoot-web/public/emulator'
 manifest = json.loads((FORK/'build-manifest.json').read_text())
 

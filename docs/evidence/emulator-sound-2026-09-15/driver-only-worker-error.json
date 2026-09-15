@@ -1,0 +1,24 @@
+{
+  "state": {
+    "proof": {
+      "buffers": 0,
+      "nonzeroBuffers": 0,
+      "peak": 0
+    },
+    "sound": true,
+    "audio": "running",
+    "audioTime": 29.024943310657598,
+    "output": "Starting ...\nCommand line arguments: \"./this.program\" \"-root\" \"/root\" \"-zip\" \"boxedwine.zip\" \"-zip\" \"graphics.zip\" \"-mount\" \"cyberfoot.zip\" \"/home/username/.wine/dosdevices/c:/files\" \"-mount_drive\" \"/d_drive\" \"d\" \"-resolution\" \"1024x768\" \"-w\" \"/home/username/.wine/dosdevices/c:/files\" \"/bin/wine\" \"cf2015.exe\"\nUsing root directory: /root\nUsing zip file system: boxedwine.zip\nUsing zip file system: graphics.zip\nResolution set to: 1024x768\nLoaded boxedwine.zip in 18 ms\nLoaded graphics.zip in 1 ms\nMounted cyberfoot.zip in 13 ms\nLaunching \"/bin/wine\" \"cf2015.exe\" \nwine: failed to start L\"C:\\\\windows\\\\system32\\\\wineboot.exe\": c0000135\n0024:err:environ:run_wineboot failed to start wineboot c0000135\n0024:err:module:load_apiset_dll failed to load apiset: c000000f\n0034:err:module:load_apiset_dll failed to load apiset: c000000f\n0034:err:vulkan:vulkan_init_once Failed to load libvulkan.so.1\n0034:err:ole:start_rpcss Failed to open service manager\nShowing Window\n",
+    "loading": {
+      "starting": false,
+      "failed": true,
+      "busy": false,
+      "visible": true
+    }
+  },
+  "errors": [
+    "worker sent an error! http://127.0.0.1:8787/emulator/threaded/boxedwine.js?v=cf-11916c1840d5:1: Uncaught TypeError: Cannot read properties of undefined (reading 'audioContext')",
+    "ErrorEvent",
+    "TypeError: Cannot read properties of undefined (reading 'audioContext')"
+  ]
+}

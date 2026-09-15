@@ -1,0 +1,20 @@
+{
+  "state": {
+    "proof": {
+      "buffers": 1080,
+      "nonzeroBuffers": 36,
+      "peak": 0.743647038936615
+    },
+    "sound": true,
+    "audio": "running",
+    "audioTime": 8.817777777777778,
+    "output": "Starting ...\nCommand line arguments: \"./this.program\" \"-root\" \"/root\" \"-zip\" \"boxedwine.zip\" \"-zip\" \"graphics.zip\" \"-mount\" \"cyberfoot.zip\" \"/home/username/.wine/dosdevices/c:/files\" \"-mount_drive\" \"/d_drive\" \"d\" \"-resolution\" \"1024x768\" \"-w\" \"/home/username/.wine/dosdevices/c:/files\" \"/bin/wine\" \"cf2015.exe\"\nUsing root directory: /root\nUsing zip file system: boxedwine.zip\nUsing zip file system: graphics.zip\nResolution set to: 1024x768\nLoaded boxedwine.zip in 17 ms\nLoaded graphics.zip in 1 ms\nMounted cyberfoot.zip in 13 ms\nLaunching \"/bin/wine\" \"cf2015.exe\" \nwine: failed to start L\"C:\\\\windows\\\\system32\\\\wineboot.exe\": c0000135\n0024:err:environ:run_wineboot failed to start wineboot c0000135\n0024:err:module:load_apiset_dll failed to load apiset: c000000f\n0034:err:module:load_apiset_dll failed to load apiset: c000000f\n0034:err:vulkan:vulkan_init_once Failed to load libvulkan.so.1\n0034:err:ole:start_rpcss Failed to open service manager\nShowing Window\nwine client error:4c: wakeup read: Bad file descriptor\nopenAudio: freq=8000(got 44100) format=8010(got 8120) channels=1(got 1)\nopenAudio: freq=8000(got 44100) format=8010(got 8120) channels=1(got 1)\nopenAudio: freq=44100(got 44100) format=8010(got 8120) channels=2(got 2)\nopenAudio: freq=44100(got 44100) format=8(got 8120) channels=1(got 1)\nopenAudio: freq=44100(got 44100) format=8(got 8120) channels=1(got 1)\n",
+    "loading": {
+      "starting": false,
+      "failed": false,
+      "busy": false,
+      "visible": false
+    }
+  },
+  "errors": []
+}

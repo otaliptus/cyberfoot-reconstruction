@@ -88,7 +88,13 @@ async function signature(mask=[]){return page.evaluate(mask=>{
  },mask);}
 async function shot(name){await page.screenshot({path:out+'/'+name+'.png'});}
 async function action(a){
- if(a.type==='click')await page.mouse.click(a.x,a.y,{delay:80});
+ if(a.type==='click'){
+  // Recorded actions use the original 1280x960 viewport (canvas at 128,96).
+  // Follow the canvas when launcher text moves or scales it.
+  const c=await page.locator('#canvas').boundingBox();
+  if(!c)throw Error('Game canvas is not visible');
+  await page.mouse.click(c.x+(a.x-128)*c.width/1024,c.y+(a.y-96)*c.height/768,{delay:80});
+ }
  if(a.type==='key')await page.keyboard.press(a.key);
  if(a.type==='text')await page.keyboard.type(a.text,{delay:60});
 }

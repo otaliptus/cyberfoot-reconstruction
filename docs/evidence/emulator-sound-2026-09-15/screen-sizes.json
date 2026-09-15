@@ -1,0 +1,70 @@
+[
+  {
+    "viewport": [
+      1280,
+      960
+    ],
+    "dpr": 1,
+    "requestedResolution": "1024x768",
+    "backingCanvas": [
+      1024,
+      768
+    ],
+    "displayedCanvas": [
+      1024,
+      768
+    ],
+    "pixels": 786432
+  },
+  {
+    "viewport": [
+      1280,
+      720
+    ],
+    "dpr": 1,
+    "requestedResolution": "1024x768",
+    "backingCanvas": [
+      1280,
+      720
+    ],
+    "displayedCanvas": [
+      1208.859375,
+      679.984375
+    ],
+    "pixels": 921600
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "dpr": 1,
+    "requestedResolution": "1024x768",
+    "backingCanvas": [
+      390,
+      844
+    ],
+    "displayedCanvas": [
+      371.5,
+      803.984375
+    ],
+    "pixels": 329160
+  },
+  {
+    "viewport": [
+      1280,
+      960
+    ],
+    "dpr": 2,
+    "requestedResolution": "1024x768",
+    "backingCanvas": [
+      1024,
+      768
+    ],
+    "displayedCanvas": [
+      1024,
+      768
+    ],
+    "pixels": 786432
+  }
+]

@@ -50,9 +50,17 @@
     const ctx = sample.getContext('2d', {willReadFrequently: true});
     let focusedFrames = 0;
     watch = setInterval(() => {
-      if (canvas.width < 530 || canvas.height < 300 || failed) return;
+      if (!canvas.width || !canvas.height || failed) return;
       try {
-        ctx.drawImage(canvas, canvas.width / 2 - 128, canvas.height / 2 - 32, 128, 16, 0, 0, 128, 16);
+        // SDL scales each axis in whole percentages when the requested guest
+        // screen exceeds the browser window. Sample the same guest pixels even
+        // on a narrow canvas; CSS display dimensions are unrelated to this.
+        const resolution = typeof Config === 'object' && Config.resolution || '1024x768';
+        const [width, height] = resolution.split('x').map(Number);
+        const scaleX = Math.floor(canvas.width * 100 / width) / 100;
+        const scaleY = Math.floor(canvas.height * 100 / height) / 100;
+        ctx.drawImage(canvas, (width / 2 - 128) * scaleX, (height / 2 - 32) * scaleY,
+          128 * scaleX, 16 * scaleY, 0, 0, 128, 16);
         const pixels = ctx.getImageData(0, 0, 128, 16).data;
         let blue = 0;
         for (let i = 0; i < pixels.length; i += 4) {

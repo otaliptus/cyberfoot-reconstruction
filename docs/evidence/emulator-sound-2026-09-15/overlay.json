@@ -1,0 +1,25 @@
+{
+  "source": "https://boxedwine.org/v2/6/TinyCore15Wine11.0.zip",
+  "sourceSha256": "8cb669813037589597a2f08c30fb7b8dc965a53e1344757f69ce5cb0f1958820",
+  "overlaySha256": "ad5b2329dc2083070b5754abd8756bc52a7b727c0b893ad8317e66783ffd3ee7",
+  "overlayBytes": 1358832,
+  "addedDownloadBytes": 16272,
+  "existingEntriesByteIdentical": true,
+  "addedEntries": [
+    {
+      "path": "home/username/.wine/drive_c/windows/system32/mciwave.dll",
+      "bytes": 2048,
+      "sha256": "44ee8855a607a7d05303b89508736d2d3ad23cf4650ab6e13188f19f8267e09c"
+    },
+    {
+      "path": "opt/wine/lib/wine/i386-unix/mciwave.dll.so",
+      "bytes": 109796,
+      "sha256": "1c276419f16af61b07994bea6cdd1b0897cc5c2222902ae4cece64dccb746fdc"
+    },
+    {
+      "path": "opt/wine/lib/wine/i386-windows/mciwave.dll",
+      "bytes": 2048,
+      "sha256": "44ee8855a607a7d05303b89508736d2d3ad23cf4650ab6e13188f19f8267e09c"
+    }
+  ]
+}

@@ -16,7 +16,7 @@ Wine/Boxedwine filesystem construction and patches:
 https://github.com/danoon2/Boxedwine/tree/26R1.0/tools
 Components within that filesystem retain their respective licenses.
 
-Compatibility overlay: windowscodecs, mlang, and matching image libraries are taken from the official TinyCore15Wine11.0.zip at https://boxedwine.org/v2/6/TinyCore15Wine11.0.zip. No game code is changed by the overlay.
+Compatibility overlay: windowscodecs, mlang, mciwave (WaveAudio), and matching image libraries are taken from the official TinyCore15Wine11.0.zip at https://boxedwine.org/v2/6/TinyCore15Wine11.0.zip. No game code is changed by the overlay.
 
 Optimized packaging: duplicate immutable Wine .nls locale tables are downloaded once and restored as ordinary files in the in-memory ZIP before Wine starts. The build verifies the resolved bytes of every retained file against the source archive. Download parts are content-addressed and integrity checked. The browser downloads up to four parts concurrently. scripts/pack-emulator.py in the project repository reproduces the packages.
 
@@ -37,3 +37,7 @@ Memory-access optimization (15 September 2026): the threaded web build inlines t
 Bounded archive cache (15 September 2026): the threaded web build caches on-demand, complete CRC-verified immutable ZIP entries between 64 KiB and 4 MiB. Cached contents are capped at 8 MiB per archive (24 MiB maximum for the current three mounts), with LRU eviction under the existing archive mutex. Other reads and failed fills retain the original streaming path. Writable files, saves, packages, guest rules, clocks and RNG behavior are unchanged. The archive-cache release initially used Build/ZipCache; the current build directory is recorded in source/build-manifest.json.
 
 Direct interpreter entry (15 September 2026): in the non-JIT web build, the thread loop explicitly invokes the same NormalCPU::run implementation supplied by the pinned CPU factory, allowing whole-program inlining. Other builds retain virtual dispatch. Guest instructions, exception handling, termination/cleanup checks, game behavior, graphics and clocks are unchanged. Reproduction uses Build/DirectCpu.
+
+Audio restoration (15 September 2026): the matching official Wine 11 WaveAudio driver and its two PE stubs are included in graphics.zip. The minimal filesystem had the system stub without the driver implementation. scripts/extend-emulator-audio.py reproduces this addition from SHA-256 8cb669813037589597a2f08c30fb7b8dc965a53e1344757f69ce5cb0f1958820 of the official full image. Existing overlay entries are unchanged; the download increases by 16,272 bytes. The standalone entry point enables sound; explicit sound=false remains available.
+
+Threaded browser audio fix (15 September 2026): enabled OSS audio lifecycle operations and buffer writes use the existing synchronous main-thread SDL queue, sharing ownership with the browser AudioContext and callback. The open flag is atomic for worker queries. This avoids the pinned SDL backend reading a worker-local undefined AudioContext. Native targets and the muted execution path are unchanged. Build/source manifest now selects Build/AudioMain.

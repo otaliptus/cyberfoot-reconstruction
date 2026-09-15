@@ -1,0 +1,25 @@
+[
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "dpr": 1,
+    "requestedResolution": "1024x768",
+    "backingCanvas": [
+      390,
+      844
+    ],
+    "displayedCanvas": [
+      371.5,
+      803.984375
+    ],
+    "pixels": 329160,
+    "loading": {
+      "starting": false,
+      "failed": false,
+      "busy": false,
+      "visible": false
+    }
+  }
+]

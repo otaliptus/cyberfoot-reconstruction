@@ -13,7 +13,7 @@ python3 cyberfoot-web/emulator-fork/build.py
 python3 cyberfoot-web/emulator-fork/serve.py
 ```
 
-The release compiles every translation unit with `-flto` and links with `-O3 -flto`. `Build/DirectCpu` separates these objects from earlier non-LTO builds, because make does not detect compiler-flag changes. No tail-call or additional browser feature is required.
+The release compiles every translation unit with `-flto` and links with `-O3 -flto`. `Build/AudioMain` separates these objects from earlier non-LTO builds, because make does not detect compiler-flag changes. No tail-call or additional browser feature is required.
 
 The first build downloads the source and SDK. Existing checkouts must match their pinned commits; the script checks whether the patch is already applied. Builds use six jobs at most and the existing 12-worker pool. No shell profile is modified and nothing is deployed automatically.
 
@@ -48,7 +48,7 @@ The original fixed-offset browser frame-copy probe (`PROFILE_PAINT=1`) is tied t
 
 ## Stage for publication
 
-After validation, `python3 cyberfoot-web/emulator-fork/stage.py` verifies the tested binary/patch hashes and stages JS/WASM plus a corresponding-source archive in the existing public directory. It does not deploy. The archive contains the patched source, headers, bundled libraries, platform code and original web build files, excluding build output. It can also be built directly after extraction: activate Emscripten 4.0.23 and run `make -C project/emscripten -j6 BUILD_DIR=Build/DirectCpu EXTRA_CPP_FLAGS='-DBOXEDWINE_MULTI_THREADED -pthread -flto' EXTRA_LD_FLAGS='-pthread -sPTHREAD_POOL_SIZE=12 -O3 -flto' SHELL_FILE=shell.html` from its root. Runtime switches are configured separately by the launcher.
+After validation, `python3 cyberfoot-web/emulator-fork/stage.py` verifies the tested binary/patch hashes and stages JS/WASM plus a corresponding-source archive in the existing public directory. It does not deploy. The archive contains the patched source, headers, bundled libraries, platform code and original web build files, excluding build output. It can also be built directly after extraction: activate Emscripten 4.0.23 and run `make -C project/emscripten -j6 BUILD_DIR=Build/AudioMain EXTRA_CPP_FLAGS='-DBOXEDWINE_MULTI_THREADED -pthread -flto' EXTRA_LD_FLAGS='-pthread -sPTHREAD_POOL_SIZE=12 -O3 -flto' SHELL_FILE=shell.html` from its root. Runtime switches are configured separately by the launcher.
 
 ## Memory-access optimization
 
@@ -84,3 +84,9 @@ Use the build directory produced by the build script. Do not copy object/depende
 For the Emscripten build without `BOXEDWINE_JIT`, the native thread loop invokes the existing `NormalCPU::run()` implementation explicitly. The pinned `CPU::allocCPU` factory constructs that concrete type, so this removes a virtual dispatch and permits LTO inlining without changing executed instructions. Other targets retain the original virtual call. Exception handling, termination checks and thread/memory cleanup remain in the original loop. Recheck the factory/type invariant if rebasing this patch onto a different upstream revision.
 
 The pinned upstream makefile automatically selects its test sources only for `Build/Test`. When using a distinct test directory such as `Build/TestDirect`, pass the literal `SRCS=$(TEST_SOURCES)` make argument (quoted as shown). Otherwise the output can contain no CPU tests; require a positive test-group count as well as zero failures.
+
+## Browser audio ownership
+
+Enabled OSS audio operations (open, write, close, activation and shutdown) use the existing synchronous SDL dispatch queue in the threaded web build. SDL's browser audio callback and AudioContext live on the browser main thread; the pinned SDL backend reads the sample rate with a worker-local EM_ASM, so opening it from a worker throws before playback. Running these operations on the main thread also serializes voice/buffer mutations with its callback. Worker `isOpen()` reads use an atomic flag. The muted path and other native targets retain their existing execution paths; the queue preserves return values and caller buffer lifetimes.
+
+The original game also needs Wine's mciwave driver, absent from the minimal image except for its system stub. The small compatibility-overlay addition is reproduced by `scripts/extend-emulator-audio.py` from its pinned official full Wine 11 archive. The standalone root entry point is copied from `public/emulator/index.html`, which enables sound.
