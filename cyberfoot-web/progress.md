@@ -1,5 +1,12 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-15 — Sequential UI painting investigation
+- Confirmed automatic lineup emits 178 framebuffer copies over approximately 6.69 seconds; synchronous browser copying totals 104.83 ms. Settings copies total 13.45 ms during a 2.24-second transition. Most delay is upstream of canvas; guest calculations versus Wine drawing versus emulator synchronization remains unresolved.
+- Local-only base Delphi Repaint→virtual Invalidate experiment left final settings/hub/lineup screenshots pixel-identical, but settings/career unchanged and lineup still emitted 177 copies. Single lineup observation 6.23s is insufficient to ship this broad change; no new production game patch or deployment.
+- Resolved actual label setter dispatch: 545088 calls VMT slot+98→5450e4→Invalidate. Labels already defer repaint, so blanket claims about synchronous label repaint would be wrong.
+- Added optional PROFILE_PAINT=1 to the existing profiler, recording actual SDL frame-copy callback counts/time with a release-shape guard; startup probe intentionally absent. Normal profiling and production behavior unchanged. Report and compact evidence: docs/EMULATOR-UI-PAINT-2026-09-15.md and docs/evidence/emulator-ui-paint-2026-09-15/. Next target is measured guest GDI/text/image work and narrowly scoped update batching.
+- Validation: committed probe exercised in real Chromium; 24 settings copies recorded and no browser errors. Targeted lint and diff checks pass. Required web-game client reaches the original menu with no error artifact; screenshot inspected. Temporary redraw server stopped. Production remains deployment d35ea10b.
+
 ### 2026-09-15 — Measured emulator performance improvements
 - Published5dd4bb9 as https://d35ea10b.cyberfoot-original-emulator.pages.dev/ at the existing stable URL. Public source/manifest match, isolation, actual timer-scheduler mode, settings/spinner, and zero console/page-error checks pass; public screenshot inspected.
 - Selected browser-timer servicing of the threaded native UI queue in visible tabs; hidden tabs and single-thread fallback retain animation-frame scheduling. event-pump.js uses the existing Emscripten scheduler; pump=original opts out. Executable, WASM, game assets, rules, RNG and match timer values unchanged.

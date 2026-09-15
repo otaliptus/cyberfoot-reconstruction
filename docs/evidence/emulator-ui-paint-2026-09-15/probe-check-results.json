@@ -1,0 +1,174 @@
+[
+  {
+    "name": "startup",
+    "wallMs": 17014,
+    "cpuSampling": false,
+    "cpu": [
+      {
+        "type": "browser",
+        "seconds": 0.14136
+      },
+      {
+        "type": "renderer",
+        "seconds": 17.653052
+      },
+      {
+        "type": "GPU",
+        "seconds": 0.10610499999999999
+      },
+      {
+        "type": "network.mojom.NetworkService",
+        "seconds": 0.084898
+      }
+    ],
+    "profiles": {},
+    "paint": null,
+    "menuReadyMs": 16948,
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive"
+    },
+    "menuReadyCriterion": "English selector focus visible at fixed 1024x768 canvas coordinates",
+    "downloads": [
+      {
+        "name": "boxedwine.zip-858b287b376584c7.0",
+        "startMs": 94,
+        "endMs": 114,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.1",
+        "startMs": 94,
+        "endMs": 114,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.2",
+        "startMs": 94,
+        "endMs": 114,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.3",
+        "startMs": 94,
+        "endMs": 114,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.wasm",
+        "startMs": 126,
+        "endMs": 158,
+        "transferBytes": 2335408
+      },
+      {
+        "name": "cyberfoot.zip-757d0de26ae8bae4.0",
+        "startMs": 145,
+        "endMs": 185,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "cyberfoot.zip-757d0de26ae8bae4.1",
+        "startMs": 145,
+        "endMs": 185,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "cyberfoot.zip-757d0de26ae8bae4.2",
+        "startMs": 145,
+        "endMs": 182,
+        "transferBytes": 2566643
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.4",
+        "startMs": 152,
+        "endMs": 187,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.5",
+        "startMs": 189,
+        "endMs": 215,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.6",
+        "startMs": 197,
+        "endMs": 251,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.7",
+        "startMs": 198,
+        "endMs": 253,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.8",
+        "startMs": 198,
+        "endMs": 254,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.9",
+        "startMs": 255,
+        "endMs": 267,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.10",
+        "startMs": 265,
+        "endMs": 280,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.11",
+        "startMs": 265,
+        "endMs": 280,
+        "transferBytes": 3000300
+      },
+      {
+        "name": "boxedwine.zip-858b287b376584c7.12",
+        "startMs": 265,
+        "endMs": 277,
+        "transferBytes": 2308405
+      }
+    ]
+  },
+  {
+    "name": "settings-paint-probe",
+    "wallMs": 6132,
+    "cpuSampling": false,
+    "cpu": [
+      {
+        "type": "browser",
+        "seconds": 0.08046700000000001
+      },
+      {
+        "type": "renderer",
+        "seconds": 2.4594319999999996
+      },
+      {
+        "type": "GPU",
+        "seconds": 0.04608100000000001
+      },
+      {
+        "type": "network.mojom.NetworkService",
+        "seconds": 0
+      }
+    ],
+    "profiles": {},
+    "paint": {
+      "calls": 24,
+      "copyMs": 21.80000004172325,
+      "maxCopyMs": 8.495000004768372
+    },
+    "actionEndMs": 118,
+    "firstVisualChangeMs": 940,
+    "lastVisualChangeMs": 2296,
+    "changedSamples": 11,
+    "visualQuietMs": 3830,
+    "mask": [],
+    "observationMs": 6126
+  }
+]

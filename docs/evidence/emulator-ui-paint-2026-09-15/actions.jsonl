@@ -1,0 +1,8 @@
+{"action":"measure","name":"menu-idle","observeMs":6000}
+{"action":"measure","name":"new-game-settings","actions":[{"type":"click","x":777,"y":443}],"observeMs":6000}
+{"action":"measure","name":"team-selection","actions":[{"type":"click","x":925,"y":725}],"mask":[[32,654,226,25]],"observeMs":8000}
+{"action":"input","actions":[{"type":"click","x":655,"y":547},{"type":"click","x":254,"y":765},{"type":"text","text":"Profiler"}]}
+{"action":"measure","name":"create-career","actions":[{"type":"click","x":870,"y":765}],"observeMs":12000}
+{"action":"measure","name":"open-lineup","actions":[{"type":"click","x":310,"y":744}],"observeMs":12000}
+{"action":"measure","name":"automatic-lineup","actions":[{"type":"click","x":749,"y":668},{"type":"key","key":"Home"},{"type":"key","key":"ArrowDown"},{"type":"key","key":"ArrowDown"},{"type":"key","key":"ArrowDown"},{"type":"key","key":"Enter"}],"observeMs":15000}
+{"action":"close"}

@@ -6,8 +6,9 @@ const out=process.env.PROFILE_OUTPUT??new URL('../../output/emulator-profile/',i
 mkdirSync(out,{recursive:true});
 const base=process.env.CYBERFOOT_EMULATOR_BASE??'http://127.0.0.1:8771';
 const sampleCpu=process.env.PROFILE_SAMPLES!=='0';
+const samplePaint=process.env.PROFILE_PAINT==='1';
 const browser=await chromium.launch({headless:true}),context=await browser.newContext({viewport:{width:1280,height:960}}),page=await context.newPage();
-writeFileSync(out+'/environment.json',JSON.stringify({base,cpuSampling:sampleCpu,samplingIntervalUs:sampleCpu?1000:null,seed:process.env.PROFILE_SEED??'random',browser:browser.version(),platform:process.platform,arch:process.arch,viewport:{width:1280,height:960}},null,2));
+writeFileSync(out+'/environment.json',JSON.stringify({base,cpuSampling:sampleCpu,paintSampling:samplePaint,samplingIntervalUs:sampleCpu?1000:null,seed:process.env.PROFILE_SEED??'random',browser:browser.version(),platform:process.platform,arch:process.arch,viewport:{width:1280,height:960}},null,2));
 writeFileSync(out+'/actions.jsonl','');
 if(process.env.PROFILE_SEED){
  // A reproducible seed only in this isolated benchmark page. Production keeps
@@ -54,6 +55,7 @@ function summarize(profile){
 }
 async function start(name){
  if(phase)throw Error('A phase is already recording');
+ if(samplePaint)await page.evaluate(()=>window.cyberfootPaintProbe?.reset());
  phase={name,started:performance.now(),cpu:await processes()};if(sampleCpu)await main.send('Profiler.start');
  for(const item of sessions.values())if(item.send&&!item.error){await item.send('Profiler.start');item.recording=true;}
 }
@@ -67,7 +69,8 @@ async function finish(extra={}){
  }
  const before=new Map(current.cpu.map(p=>[p.id,p.cpuTime]));
  const cpu=endCpu.map(p=>({type:p.type,seconds:Math.max(0,p.cpuTime-(before.get(p.id)??0))}));
- const result={name:current.name,wallMs:Math.round(performance.now()-current.started),cpuSampling:sampleCpu,cpu,profiles,...extra};results.push(result);
+ const paint=samplePaint?await page.evaluate(()=>window.cyberfootPaintProbe?.read()??null):undefined;
+ const result={name:current.name,wallMs:Math.round(performance.now()-current.started),cpuSampling:sampleCpu,cpu,profiles,paint,...extra};results.push(result);
  writeFileSync(out+'/results.json',JSON.stringify(results,null,2));writeFileSync(out+'/console.json',JSON.stringify(logs,null,2));
  const compact={...result};delete compact.profiles;console.log(JSON.stringify(compact));return result;
 }
@@ -99,6 +102,21 @@ try{
  const downloads=await page.evaluate(()=>performance.getEntriesByType('resource').filter(r=>r.name.includes('/packages/')||r.name.endsWith('.wasm')).map(r=>({name:r.name.split('/').at(-1),startMs:Math.round(r.startTime),endMs:Math.round(r.responseEnd),transferBytes:r.transferSize})));
  await shot('startup');await finish({menuReadyMs,runtime,menuReadyCriterion:'English selector focus visible at fixed 1024x768 canvas coordinates',downloads});
  await page.waitForFunction(()=>!window.CyberfootLoading?.state().starting,null,{timeout:10000});
+ if(samplePaint)await page.evaluate(()=>{
+  // Official 26R1.0 SDL software-frame callback. Measure copying the guest
+  // framebuffer into canvas, not guest drawing, GPU completion or presentation.
+  const render=globalThis.ASM_CONSTS?.[335233];
+  if(typeof render!=='function'||!String(render).includes('SDL2.ctx.putImageData'))throw Error('Unknown runtime software-frame callback; paint probe not installed.');
+  let stats;
+  const reset=()=>{stats={calls:0,copyMs:0,maxCopyMs:0};};reset();
+  ASM_CONSTS[335233]=function(...args){
+   const start=performance.now();
+   try{return render(...args);}finally{
+    const elapsed=performance.now()-start;stats.calls++;stats.copyMs+=elapsed;stats.maxCopyMs=Math.max(stats.maxCopyMs,elapsed);
+   }
+  };
+  window.cyberfootPaintProbe={reset,read:()=>({...stats})};
+ });
  console.log('READY: Commands: finish, measure, start, shot, eval, close.');
  for await(const line of readline.createInterface({input:process.stdin})){
   try{

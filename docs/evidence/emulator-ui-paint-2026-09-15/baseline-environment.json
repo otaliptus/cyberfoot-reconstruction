@@ -1,0 +1,13 @@
+{
+  "base": "http://127.0.0.1:8772",
+  "cpuSampling": false,
+  "samplingIntervalUs": null,
+  "seed": "380188361",
+  "browser": "153.0.8010.12",
+  "platform": "darwin",
+  "arch": "arm64",
+  "viewport": {
+    "width": 1280,
+    "height": 960
+  }
+}
