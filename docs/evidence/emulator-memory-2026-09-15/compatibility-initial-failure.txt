@@ -1,0 +1,11 @@
+node:internal/modules/run_main:104
+    triggerUncaughtException(
+    ^
+
+page.waitForFunction: Timeout 120000ms exceeded.
+    at /private/tmp/cyberfoot-memory-compatibility.mjs:9:11 {
+  log: [],
+  name: 'TimeoutError'
+}
+
+Node.js v23.9.0

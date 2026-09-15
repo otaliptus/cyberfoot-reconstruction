@@ -1,0 +1,22 @@
+[
+  {
+    "stack": "_emscripten_get_now <- wasm-to-js <- __timedwait_cp <- __pthread_cond_timedwait <- std::__2::condition_variable::__do_timed_wait(std::__2::unique_lock<std::__2::mutex>&, std::__2::chrono::time_point<std::__2::chrono::system_clock, std::__2::chrono::duration<long long, std::__2::ratio<1ll, 1000000000ll>>>) <- BoxedWineCondition::waitWithTimeout(std::__2::unique_lock<std::__2::mutex>&, unsigned int) <- internal_poll(KThread*, KPollData*, unsigned int, unsigned int)",
+    "sampledWallMs": 301
+  },
+  {
+    "stack": "_emscripten_get_now <- wasm-to-js <- __timedwait_cp <- __pthread_cond_timedwait <- BoxedWineCondition::wait(std::__2::unique_lock<std::__2::mutex>&) <- KUnixSocketObject::read(KThread*, unsigned int, unsigned int, unsigned int) <- syscall_read(CPU*, unsigned int)",
+    "sampledWallMs": 112
+  },
+  {
+    "stack": "_emscripten_get_now <- _clock_time_get <- wasm-to-js <- __clock_gettime <- std::__2::chrono::steady_clock::now() <- BoxedWineCondition::waitWithTimeout(std::__2::unique_lock<std::__2::mutex>&, unsigned int) <- internal_poll(KThread*, KPollData*, unsigned int, unsigned int)",
+    "sampledWallMs": 32
+  },
+  {
+    "stack": "_emscripten_get_now <- __timedwait_cp <- __pthread_cond_timedwait <- BoxedWineCondition::wait(std::__2::unique_lock<std::__2::mutex>&) <- KUnixSocketObject::read(KThread*, unsigned int, unsigned int, unsigned int) <- syscall_read(CPU*, unsigned int) <- normal_int80(CPU*, DecodedOp*)",
+    "sampledWallMs": 28
+  },
+  {
+    "stack": "_emscripten_get_now <- _clock_time_get <- wasm-to-js <- __clock_gettime <- BoxedWineCondition::waitWithTimeout(std::__2::unique_lock<std::__2::mutex>&, unsigned int) <- internal_poll(KThread*, KPollData*, unsigned int, unsigned int) <- KEPoll::wait(KThread*, unsigned int, unsigned int, unsigned int)",
+    "sampledWallMs": 13
+  }
+]

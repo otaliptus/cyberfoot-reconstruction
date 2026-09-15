@@ -1,2 +1,4 @@
 # Preserve byte-exact compiler output, including its generated whitespace.
 cyberfoot-web/public/emulator/threaded/boxedwine.js -whitespace linguist-generated=true
+# Unified patch context preserves upstream CRLF and whitespace byte for byte.
+cyberfoot-web/emulator-fork/runtime.patch -whitespace

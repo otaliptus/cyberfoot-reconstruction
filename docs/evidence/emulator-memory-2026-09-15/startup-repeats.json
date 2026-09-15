@@ -1,0 +1,206 @@
+[
+  {
+    "run": "high-control",
+    "ready": true,
+    "elapsedMs": 17231,
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive",
+      "forkMode": 3
+    },
+    "loading": {
+      "starting": false,
+      "failed": false,
+      "busy": false,
+      "visible": false
+    },
+    "errors": []
+  },
+  {
+    "run": "high-fast",
+    "ready": true,
+    "elapsedMs": 16523,
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive",
+      "forkMode": 3
+    },
+    "loading": {
+      "starting": false,
+      "failed": false,
+      "busy": false,
+      "visible": false
+    },
+    "errors": []
+  },
+  {
+    "run": "plain-control-1",
+    "seed": 3011552586,
+    "ready": true,
+    "elapsedMs": 17782,
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive",
+      "forkMode": 3
+    },
+    "loading": {
+      "starting": false,
+      "failed": false,
+      "busy": false,
+      "visible": false
+    },
+    "errors": []
+  },
+  {
+    "run": "plain-control-2",
+    "seed": 3598604413,
+    "ready": true,
+    "elapsedMs": 17713,
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive",
+      "forkMode": 3
+    },
+    "loading": {
+      "starting": false,
+      "failed": false,
+      "busy": false,
+      "visible": false
+    },
+    "errors": []
+  },
+  {
+    "run": "plain-fast-1",
+    "seed": 1440819967,
+    "ready": true,
+    "elapsedMs": 15968,
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive",
+      "forkMode": 3
+    },
+    "loading": {
+      "starting": false,
+      "failed": false,
+      "busy": false,
+      "visible": false
+    },
+    "errors": []
+  },
+  {
+    "run": "plain-fast-2",
+    "seed": 3036964457,
+    "ready": true,
+    "elapsedMs": 16467,
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive",
+      "forkMode": 3
+    },
+    "loading": {
+      "starting": false,
+      "failed": false,
+      "busy": false,
+      "visible": false
+    },
+    "errors": []
+  },
+  {
+    "run": "plain-fast-3",
+    "seed": 4008903573,
+    "ready": true,
+    "elapsedMs": 16495,
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive",
+      "forkMode": 3
+    },
+    "loading": {
+      "starting": false,
+      "failed": false,
+      "busy": false,
+      "visible": false
+    },
+    "errors": []
+  },
+  {
+    "run": "plain-fast-4",
+    "seed": 4248700180,
+    "ready": true,
+    "elapsedMs": 16752,
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive",
+      "forkMode": 3
+    },
+    "loading": {
+      "starting": false,
+      "failed": false,
+      "busy": false,
+      "visible": false
+    },
+    "errors": []
+  },
+  {
+    "run": "random-control",
+    "ready": true,
+    "elapsedMs": 16678,
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive",
+      "forkMode": 3
+    },
+    "loading": {
+      "starting": false,
+      "failed": false,
+      "busy": false,
+      "visible": false
+    },
+    "errors": []
+  },
+  {
+    "run": "random-fast",
+    "ready": true,
+    "elapsedMs": 15764,
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive",
+      "forkMode": 3
+    },
+    "loading": {
+      "starting": false,
+      "failed": false,
+      "busy": false,
+      "visible": false
+    },
+    "errors": []
+  },
+  {
+    "run": "seeded-repeat",
+    "ready": true,
+    "elapsedMs": 16286,
+    "runtime": {
+      "engine": "threaded",
+      "isolated": true,
+      "eventPump": "responsive",
+      "forkMode": 3
+    },
+    "loading": {
+      "starting": false,
+      "failed": false,
+      "busy": false,
+      "visible": false
+    },
+    "errors": []
+  }
+]

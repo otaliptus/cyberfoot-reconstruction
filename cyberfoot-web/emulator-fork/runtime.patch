@@ -23,6 +23,28 @@ index 0000000..3bf4605
 +void cfRequestPresent();
 +void cfPresentTick();
 +#endif
+diff --git a/include/kmemory.h b/include/kmemory.h
+index 5b8eff1..6fe409a 100644
+--- a/include/kmemory.h
++++ b/include/kmemory.h
+@@ -106,6 +106,17 @@ public:
+     int strlen(U32 address);
+ 
+     U64 readq(U32 address);
++#ifdef __EMSCRIPTEN__
++private:
++    // Retain the complete original memory operations outside hot callers.
++    U8 readbSlow(U32 address);
++    U16 readwSlow(U32 address);
++    U32 readdSlow(U32 address);
++    void writebSlow(U32 address, U8 value);
++    void writewSlow(U32 address, U16 value);
++    void writedSlow(U32 address, U32 value);
++public:
++#endif
+     U32 readd(U32 address);
+     U16 readw(U32 address);
+     U8  readb(U32 address);
 diff --git a/platform/sdl/knativeinputSDL.cpp b/platform/sdl/knativeinputSDL.cpp
 index a508116..b70c875 100644
 --- a/platform/sdl/knativeinputSDL.cpp
@@ -159,6 +181,158 @@ index 8cdb81c..b72b05a 100644
      SdlCallback* next = nullptr;
  };
  
+diff --git a/source/kernel/kmemory.cpp b/source/kernel/kmemory.cpp
+index 72ba096..dd76a4b 100644
+--- a/source/kernel/kmemory.cpp
++++ b/source/kernel/kmemory.cpp
+@@ -803,7 +803,26 @@ U64 KMemory::readq(U32 address) {
+     return readd(address) | ((U64)readd(address + 4) << 32);
+ }
+ 
+-U32 KMemory::readd(U32 address) {
++// Inline only the existing permitted, single-page RAM path in web builds.
++// Keep page-boundary, permission and special-page handling in the original
++// out-of-line implementation; no address checks or side effects are removed.
++#ifdef __EMSCRIPTEN__
++__attribute__((always_inline)) U32 KMemory::readd(U32 address) {
++#if !defined(UNALIGNED_MEMORY)
++    if ((address & 0xFFF) < 0xFFD) {
++        MMU& mmu = data->mmu[address >> 12];
++        if (mmu.canReadRam) {
++            return *(U32*)(&(ramPageGet((RamPage)mmu.ramIndex)[address & 0xFFF]));
++        }
++    }
++#endif
++    return readdSlow(address);
++}
++__attribute__((noinline)) U32 KMemory::readdSlow(U32 address)
++#else
++U32 KMemory::readd(U32 address)
++#endif
++{
+     if ((address & 0xFFF) < 0xFFD) {
+         int index = address >> 12;
+ #if !defined(UNALIGNED_MEMORY)
+@@ -818,7 +837,23 @@ U32 KMemory::readd(U32 address) {
+     }
+ }
+ 
+-U16 KMemory::readw(U32 address) {
++#ifdef __EMSCRIPTEN__
++__attribute__((always_inline)) U16 KMemory::readw(U32 address) {
++#if !defined(UNALIGNED_MEMORY)
++    if ((address & 0xFFF) < 0xFFF) {
++        MMU& mmu = data->mmu[address >> 12];
++        if (mmu.canReadRam) {
++            return *(U16*)(&(ramPageGet((RamPage)mmu.ramIndex)[address & 0xFFF]));
++        }
++    }
++#endif
++    return readwSlow(address);
++}
++__attribute__((noinline)) U16 KMemory::readwSlow(U32 address)
++#else
++U16 KMemory::readw(U32 address)
++#endif
++{
+     if ((address & 0xFFF) < 0xFFF) {
+         int index = address >> 12;
+ #if !defined(UNALIGNED_MEMORY)
+@@ -832,7 +867,19 @@ U16 KMemory::readw(U32 address) {
+     return readb(address) | (readb(address + 1) << 8);
+ }
+ 
+-U8 KMemory::readb(U32 address) {
++#ifdef __EMSCRIPTEN__
++__attribute__((always_inline)) U8 KMemory::readb(U32 address) {
++    MMU& mmu = data->mmu[address >> 12];
++    if (mmu.canReadRam) {
++        return *(U8*)(&(ramPageGet((RamPage)mmu.ramIndex)[address & 0xFFF]));
++    }
++    return readbSlow(address);
++}
++__attribute__((noinline)) U8 KMemory::readbSlow(U32 address)
++#else
++U8 KMemory::readb(U32 address)
++#endif
++{
+     int index = address >> 12;
+     MMU& mmu = data->mmu[index];
+     if (mmu.canReadRam) {
+@@ -855,7 +902,24 @@ void KMemory::writeq(U32 address, U64 value) {
+     writed(address, (U32)value); writed(address + 4, (U32)(value >> 32));
+ }
+ 
+-void KMemory::writed(U32 address, U32 value) {
++#ifdef __EMSCRIPTEN__
++__attribute__((always_inline)) void KMemory::writed(U32 address, U32 value) {
++#if !defined(UNALIGNED_MEMORY)
++    if ((address & 0xFFF) < 0xFFD) {
++        MMU& mmu = data->mmu[address >> 12];
++        if (mmu.canWriteRam) {
++            *(U32*)(&(ramPageGet((RamPage)mmu.ramIndex)[address & 0xFFF])) = value;
++            return;
++        }
++    }
++#endif
++    return writedSlow(address, value);
++}
++__attribute__((noinline)) void KMemory::writedSlow(U32 address, U32 value)
++#else
++void KMemory::writed(U32 address, U32 value)
++#endif
++{
+     if ((address & 0xFFF) < 0xFFD) {
+         int index = address >> 12;
+ #if !defined(UNALIGNED_MEMORY)
+@@ -873,7 +937,24 @@ void KMemory::writed(U32 address, U32 value) {
+     }
+ }
+ 
+-void KMemory::writew(U32 address, U16 value) {
++#ifdef __EMSCRIPTEN__
++__attribute__((always_inline)) void KMemory::writew(U32 address, U16 value) {
++#if !defined(UNALIGNED_MEMORY)
++    if ((address & 0xFFF) < 0xFFF) {
++        MMU& mmu = data->mmu[address >> 12];
++        if (mmu.canWriteRam) {
++            *(U16*)(&(ramPageGet((RamPage)mmu.ramIndex)[address & 0xFFF])) = value;
++            return;
++        }
++    }
++#endif
++    return writewSlow(address, value);
++}
++__attribute__((noinline)) void KMemory::writewSlow(U32 address, U16 value)
++#else
++void KMemory::writew(U32 address, U16 value)
++#endif
++{
+     if ((address & 0xFFF) < 0xFFF) {
+         int index = address >> 12;
+ #if !defined(UNALIGNED_MEMORY)
+@@ -889,7 +970,20 @@ void KMemory::writew(U32 address, U16 value) {
+     }
+ }
+ 
+-void KMemory::writeb(U32 address, U8 value) {
++#ifdef __EMSCRIPTEN__
++__attribute__((always_inline)) void KMemory::writeb(U32 address, U8 value) {
++    MMU& mmu = data->mmu[address >> 12];
++    if (mmu.canWriteRam) {
++        *(U8*)(&(ramPageGet((RamPage)mmu.ramIndex)[address & 0xFFF])) = value;
++        return;
++    }
++    return writebSlow(address, value);
++}
++__attribute__((noinline)) void KMemory::writebSlow(U32 address, U8 value)
++#else
++void KMemory::writeb(U32 address, U8 value)
++#endif
++{
+     int index = address >> 12;
+     MMU& mmu = data->mmu[index];
+     if (mmu.canWriteRam) {
 diff --git a/source/sdl/emscripten/cyberfoot_perf.cpp b/source/sdl/emscripten/cyberfoot_perf.cpp
 new file mode 100644
 index 0000000..ec19a65

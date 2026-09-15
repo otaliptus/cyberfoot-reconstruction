@@ -6,9 +6,11 @@ const out=process.env.PROFILE_OUTPUT??new URL('../../output/emulator-profile/',i
 mkdirSync(out,{recursive:true});
 const base=process.env.CYBERFOOT_EMULATOR_BASE??'http://127.0.0.1:8771';
 const sampleCpu=process.env.PROFILE_SAMPLES!=='0';
+const samplingIntervalUs=Number(process.env.PROFILE_INTERVAL_US??1000);
+if(!Number.isInteger(samplingIntervalUs)||samplingIntervalUs<100||samplingIntervalUs>1000000)throw Error('PROFILE_INTERVAL_US must be an integer from 100 to 1000000.');
 const samplePaint=process.env.PROFILE_PAINT==='1';
 const browser=await chromium.launch({headless:true}),context=await browser.newContext({viewport:{width:1280,height:960}}),page=await context.newPage();
-writeFileSync(out+'/environment.json',JSON.stringify({base,cpuSampling:sampleCpu,paintSampling:samplePaint,samplingIntervalUs:sampleCpu?1000:null,seed:process.env.PROFILE_SEED??'random',browser:browser.version(),platform:process.platform,arch:process.arch,viewport:{width:1280,height:960}},null,2));
+writeFileSync(out+'/environment.json',JSON.stringify({base,cpuSampling:sampleCpu,paintSampling:samplePaint,samplingIntervalUs:sampleCpu?samplingIntervalUs:null,seed:process.env.PROFILE_SEED??'random',browser:browser.version(),platform:process.platform,arch:process.arch,viewport:{width:1280,height:960}},null,2));
 writeFileSync(out+'/actions.jsonl','');
 if(process.env.PROFILE_SEED){
  // A reproducible seed only in this isolated benchmark page. Production keeps
@@ -38,13 +40,13 @@ async function attach(target){
  const item={name:'worker-'+sessions.size,url:target.url};sessions.set(target.targetId,item);
  try{
   const {sessionId}=await root.send('Target.attachToTarget',{targetId:target.targetId,flatten:false});item.send=(method,params)=>workerSend(sessionId,method,params);
-  await item.send('Profiler.enable');await item.send('Profiler.setSamplingInterval',{interval:1000});
+  await item.send('Profiler.enable');await item.send('Profiler.setSamplingInterval',{interval:samplingIntervalUs});
   if(phase){await item.send('Profiler.start');item.recording=true;}
  }catch(e){item.error=String(e);}
 }
 root.on('Target.targetCreated',({targetInfo})=>{void attach(targetInfo);});
 await root.send('Target.setDiscoverTargets',{discover:true});
-if(sampleCpu){await main.send('Profiler.enable');await main.send('Profiler.setSamplingInterval',{interval:1000});}
+if(sampleCpu){await main.send('Profiler.enable');await main.send('Profiler.setSamplingInterval',{interval:samplingIntervalUs});}
 page.on('console',m=>logs.push({ms:Date.now(),type:m.type(),text:m.text()}));
 page.on('pageerror',e=>logs.push({ms:Date.now(),type:'pageerror',text:String(e)}));
 async function processes(){return(await root.send('SystemInfo.getProcessInfo')).processInfo;}

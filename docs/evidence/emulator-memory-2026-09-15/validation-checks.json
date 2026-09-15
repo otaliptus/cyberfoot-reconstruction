@@ -1,0 +1,18 @@
+{
+  "pixelIdenticalToPreviousRelease": {
+    "automatic-lineup": true,
+    "match-first-half": true,
+    "match-second-half": true,
+    "resume-card-to-results": true,
+    "post-round-career": true,
+    "auction-transfer": true
+  },
+  "errors": [],
+  "saveBytes": 2656864,
+  "version": 1,
+  "matchTimerMs": 300,
+  "backgroundTimerMs": 50,
+  "subsequentFlushMs": 1,
+  "flushError": null,
+  "freshSessionReloadTested": false
+}

@@ -1,0 +1,807 @@
+Please wait, these first 2 tests can take a while
+32-bit Memory Access ... OK
+16-bit Memory Access ... OK
+Add 000 ... OK
+Add 200 ... OK
+Add 001 ... OK
+Add 201 ... OK
+Add 002 ... OK
+Add 202 ... OK
+Add 003 ... OK
+Add 203 ... OK
+Add 004 ... OK
+Add 204 ... OK
+Add 005 ... OK
+Add 205 ... OK
+Push ES 006 ... OK
+Push ES 206 ... OK
+Pop ES 007 ... OK
+Pop ES 207 ... OK
+Or  008 ... OK
+Or  208 ... OK
+Or  009 ... OK
+Or  209 ... OK
+Or  00a ... OK
+Or  20a ... OK
+Or  00b ... OK
+Or  20b ... OK
+Or  00c ... OK
+Or  20c ... OK
+Or  00d ... OK
+Or  20d ... OK
+Push CS 00e ... OK
+Push CS 20e ... OK
+Adc 010 ... OK
+Adc 210 ... OK
+Adc 011 ... OK
+Adc 211 ... OK
+Adc 012 ... OK
+Adc 212 ... OK
+Adc 013 ... OK
+Adc 213 ... OK
+Adc 014 ... OK
+Adc 214 ... OK
+Adc 015 ... OK
+Adc 215 ... OK
+Push SS 016 ... OK
+Push SS 216 ... OK
+Pop SS 017 ... OK
+Pop SS 217 ... OK
+Sbb 018 ... OK
+Sbb 218 ... OK
+Sbb 019 ... OK
+Sbb 219 ... OK
+Sbb 01a ... OK
+Sbb 21a ... OK
+Sbb 01b ... OK
+Sbb 21b ... OK
+Sbb 01c ... OK
+Sbb 21c ... OK
+Sbb 01d ... OK
+Sbb 21d ... OK
+Push DS 01e ... OK
+Push DS 21e ... OK
+Pop DS 01f ... OK
+Pop DS 21f ... OK
+And 020 ... OK
+And 220 ... OK
+And 021 ... OK
+And 221 ... OK
+And 022 ... OK
+And 222 ... OK
+And 023 ... OK
+And 223 ... OK
+And 024 ... OK
+And 224 ... OK
+And 025 ... OK
+And 225 ... OK
+Seg ES 026 ... OK
+Seg ES 226 ... OK
+DAA 027 ... OK
+DAA 227 ... OK
+Sub 028 ... OK
+Sub 228 ... OK
+Sub 029 ... OK
+Sub 229 ... OK
+Sub 02a ... OK
+Sub 22a ... OK
+Sub 02b ... OK
+Sub 22b ... OK
+Sub 02c ... OK
+Sub 22c ... OK
+Sub 02d ... OK
+Sub 22d ... OK
+Seg CS 02e ... OK
+Seg CS 22e ... OK
+DAS 02f ... OK
+DAS 22f ... OK
+Xor 030 ... OK
+Xor 230 ... OK
+Xor 031 ... OK
+Xor 231 ... OK
+Xor 032 ... OK
+Xor 232 ... OK
+Xor 033 ... OK
+Xor 233 ... OK
+Xor 034 ... OK
+Xor 234 ... OK
+Xor 035 ... OK
+Xor 235 ... OK
+Seg SS 036 ... OK
+Seg SS 236 ... OK
+AAA 037 ... OK
+AAA 237 ... OK
+Cmp 038 ... OK
+Cmp 238 ... OK
+Cmp 039 ... OK
+Cmp 239 ... OK
+Cmp 03a ... OK
+Cmp 23a ... OK
+Cmp 03b ... OK
+Cmp 23b ... OK
+Cmp 03c ... OK
+Cmp 23c ... OK
+Cmp 03d ... OK
+Cmp 23d ... OK
+Seg DS 03e ... OK
+Seg DS 23e ... OK
+AAS 03f ... OK
+AAS 23f ... OK
+Inc AX  040 ... OK
+Inc EAX 240 ... OK
+Inc CX  041 ... OK
+Inc ECX 241 ... OK
+Inc DX  042 ... OK
+Inc EDX 242 ... OK
+Inc BX  043 ... OK
+Inc EBX 243 ... OK
+Inc SP  044 ... OK
+Inc ESP 244 ... OK
+Inc BP  045 ... OK
+Inc EBP 245 ... OK
+Inc SI  046 ... OK
+Inc ESI 246 ... OK
+Inc DI  047 ... OK
+Inc EDI 247 ... OK
+Dec AX  048 ... OK
+Dec EAX 248 ... OK
+Dec CX  049 ... OK
+Dec ECX 249 ... OK
+Dec DX  04a ... OK
+Dec EDX 24a ... OK
+Dec BX  04b ... OK
+Dec EBX 24b ... OK
+Dec SP  04c ... OK
+Dec ESP 24c ... OK
+Dec BP  04d ... OK
+Dec EBP 24d ... OK
+Dec SI  04e ... OK
+Dec ESI 24e ... OK
+Dec DI  04f ... OK
+Dec EDI 24f ... OK
+Push Ax  050 ... OK
+Push Eax 250 ... OK
+Push Cx  051 ... OK
+Push Ecx 251 ... OK
+Push Dx  052 ... OK
+Push Edx 252 ... OK
+Push Bx  053 ... OK
+Push Ebx 253 ... OK
+Push Sp  054 ... OK
+Push Esp 254 ... OK
+Push Bp  055 ... OK
+Push Ebp 255 ... OK
+Push Si  056 ... OK
+Push Esi 256 ... OK
+Push Di  057 ... OK
+Push Edi 257 ... OK
+Pop Ax  058 ... OK
+Pop Eax 258 ... OK
+Pop Cx  059 ... OK
+Pop Ecx 259 ... OK
+Pop Dx  05a ... OK
+Pop Edx 25a ... OK
+Pop Bx  05b ... OK
+Pop Ebx 25b ... OK
+Pop Sp  05c ... OK
+Pop Esp 25c ... OK
+Pop Bp  05d ... OK
+Pop Ebp 25d ... OK
+Pop Si  05e ... OK
+Pop Esi 25e ... OK
+Pop Di  05f ... OK
+Pop Edi 25f ... OK
+PushA 060 ... OK
+PushA 260 ... OK
+PopA 061 ... OK
+PopA 261 ... OK
+Bound 062 ... OK
+Bound 262 ... OK
+SegFS 064 ... OK
+SegFS 264 ... OK
+SegGS 065 ... OK
+SegGS 265 ... OK
+Operand size prefix 066 ... OK
+Operand size prefix 266 ... OK
+Address prefix 067 ... OK
+Address prefix 267 ... OK
+Push 068 ... OK
+Push 268 ... OK
+IMul 069 ... OK
+IMul 269 ... OK
+Push 06a ... OK
+Push 26a ... OK
+IMul 06b ... OK
+IMul 26b ... OK
+JO 070 ... OK
+JO 270 ... OK
+JNO 071 ... OK
+JNO 271 ... OK
+JB 072 ... OK
+JB 272 ... OK
+JNB 073 ... OK
+JNB 273 ... OK
+JZ 074 ... OK
+JZ 274 ... OK
+JNZ 075 ... OK
+JNZ 275 ... OK
+JBE 076 ... OK
+JBE 276 ... OK
+JNBE 077 ... OK
+JNBE 277 ... OK
+JS 078 ... OK
+JS 278 ... OK
+JNS 079 ... OK
+JNS 279 ... OK
+JP 07a ... OK
+JP 27a ... OK
+JNP 07b ... OK
+JNP 27b ... OK
+JL 07c ... OK
+JL 27c ... OK
+JNL 07d ... OK
+JNL 27d ... OK
+JLE 07e ... OK
+JLE 27e ... OK
+JNLE 07f ... OK
+JNLE 27f ... OK
+Grp1 080 ... OK
+Grp1 280 ... OK
+Grp1 081 ... OK
+Grp1 281 ... OK
+Grp1 082 ... OK
+Grp1 282 ... OK
+Grp1 083 ... OK
+Grp1 283 ... OK
+Test 084 ... OK
+Test 284 ... OK
+Test 085 ... OK
+Test 285 ... OK
+Xchg 086 ... OK
+Xchg 286 ... OK
+Xchg 087 ... OK
+Xchg 287 ... OK
+Mov 088 ... OK
+Mov 288 ... OK
+Mov 089 ... OK
+Mov 289 ... OK
+Mov 08a ... OK
+Mov 28a ... OK
+Mov 08b ... OK
+Mov 28b ... OK
+Mov 08c ... OK
+Mov 28c ... OK
+Lea 08d ... OK
+Lea 28d ... OK
+Mov 08e ... OK
+Mov 28e ... OK
+Pop 08f ... OK
+Pop 28f ... OK
+Xchg 091 ... OK
+Xchg 291 ... OK
+Xchg 092 ... OK
+Xchg 292 ... OK
+Xchg 093 ... OK
+Xchg 293 ... OK
+Xchg 094 ... OK
+Xchg 294 ... OK
+Xchg 095 ... OK
+Xchg 295 ... OK
+Xchg 096 ... OK
+Xchg 296 ... OK
+Xchg 097 ... OK
+Xchg 297 ... OK
+Cbw  098 ... OK
+Cwde 298 ... OK
+Cwd  099 ... OK
+Cdq  299 ... OK
+Call Far 09a ... OK
+Call Far 29a ... OK
+Pushf 09c ... OK
+Pushf 29c ... OK
+Sahf 09e ... OK
+Sahf 29e ... OK
+Lahf 09f ... OK
+Lahf 29f ... OK
+MovAlOb 0a0 ... OK
+MovAlOb 2a0 ... OK
+MovAxOw 0a1 ... OK
+MovEaxOd 2a1 ... OK
+MovObAl 0a2 ... OK
+MovObAl 2a2 ... OK
+MovOwAx 0a3 ... OK
+MovOdEax 2a3 ... OK
+Movsb 0a4 ... OK
+Movsb 2a4 ... OK
+Movsw 0a5 ... OK
+Movsd 2a5 ... OK
+Cmpsb 0a6 ... OK
+Cmpsb 2a6 ... OK
+Cmpsw 0a7 ... OK
+Cmpsd 2a7 ... OK
+TestAlIb 0a8 ... OK
+TestAlIb 2a8 ... OK
+TestAxIw 0a9 ... OK
+TestEaxId 2a9 ... OK
+Stosb 0aa ... OK
+Stosb 2aa ... OK
+Stosw 0ab ... OK
+Stosd 2ab ... OK
+Lodsb 0ac ... OK
+Lodsb 2ac ... OK
+Lodsw 0ad ... OK
+Lodsd 2ad ... OK
+Scasb 0ae ... OK
+Scasb 2ae ... OK
+Scasw 0af ... OK
+Scasd 2af ... OK
+Mov 0b0 ... OK
+Mov 2b0 ... OK
+Mov 0b1 ... OK
+Mov 2b1 ... OK
+Mov 0b2 ... OK
+Mov 2b2 ... OK
+Mov 0b3 ... OK
+Mov 2b3 ... OK
+Mov 0b4 ... OK
+Mov 2b4 ... OK
+Mov 0b5 ... OK
+Mov 2b5 ... OK
+Mov 0b6 ... OK
+Mov 2b6 ... OK
+Mov 0b7 ... OK
+Mov 2b7 ... OK
+Mov 0b8 ... OK
+Mov 2b8 ... OK
+Mov 0b9 ... OK
+Mov 2b9 ... OK
+Mov 0ba ... OK
+Mov 2ba ... OK
+Mov 0bb ... OK
+Mov 2bb ... OK
+Mov 0bc ... OK
+Mov 2bc ... OK
+Mov 0bd ... OK
+Mov 2bd ... OK
+Mov 0be ... OK
+Mov 2be ... OK
+Mov 0bf ... OK
+Mov 2bf ... OK
+Grp2 0c0 ... OK
+Grp2 2c0 ... OK
+Grp2 0c1 ... OK
+Grp2 2c1 ... OK
+Retn 0c2 ... OK
+Retn 2c2 ... OK
+Retn 0c3 ... OK
+Retn 2c3 ... OK
+Les 0c4 ... OK
+Les 2c4 ... OK
+Lds 0c5 ... OK
+Lds 2c5 ... OK
+Mov 0c6 ... OK
+Mov 2c6 ... OK
+Mov 0c7 ... OK
+Mov 2c7 ... OK
+Enter 0c8 ... OK
+Enter 2c8 ... OK
+Leave 0c9 ... OK
+Leave 2c9 ... OK
+IRet 2cf ... OK
+Grp2 0d0 ... OK
+Grp2 2d0 ... OK
+Grp2 0d1 ... OK
+Grp2 2d1 ... OK
+Grp2 0d2 ... OK
+Grp2 2d2 ... OK
+Grp2 0d3 ... OK
+Grp2 2d3 ... OK
+AAM 0d4 ... OK
+AAM 2d4 ... OK
+AAD 0d5 ... OK
+AAD 2d5 ... OK
+Salc 0d6 ... OK
+Salc 2d6 ... OK
+Xlat 0d7 ... OK
+Xlat 2d7 ... OK
+FPU 0d8 ... OK
+FPU 2d8 ... OK
+FPU 0d9 ... OK
+FPU 2d9 ... OK
+FPU 0da ... OK
+FPU 2da ... OK
+FPU 0dd ... OK
+FPU 2dd ... OK
+FPU 0df ... OK
+FPU 2df ... OK
+LoopNZ 0e0 ... OK
+LoopNZ 2e0 ... OK
+LoopZ 0e1 ... OK
+LoopZ 2e1 ... OK
+Loop 0e2 ... OK
+Loop 2e2 ... OK
+Jcxz 0e3 ... OK
+Jcxz 2e3 ... OK
+CallJw 0e8 ... OK
+CallJd 2e8 ... OK
+JmpJw 0e9 ... OK
+JmpJd 2e9 ... OK
+Cmc 0f5 ... OK
+Cmc 2f5 ... OK
+Grp3 0f6 ... OK
+Grp3 2f6 ... OK
+Grp3 0f7 ... OK
+Grp3 2f7 ... OK
+Clc 0f8 ... OK
+Clc 2f8 ... OK
+Stc 0f9 ... OK
+Stc 2f9 ... OK
+Grp4 0fe ... OK
+Grp4 2fe ... OK
+Grp5 0ff ... OK
+Grp5 2ff ... OK
+MOVUPD 110 (sse2) ... OK
+MOVUPS 310 (sse1) ... OK
+MOVSD F2 310 (sse2) ... OK
+MOVSS F3 310 (sse1) ... OK
+MOVUPD 111 (sse2) ... OK
+MOVUPS 311 (sse1) ... OK
+MOVSD F2 311 (sse2) ... OK
+MOVSS F3 311 (sse1) ... OK
+MOVLPD 112 (sse2) ... OK
+MOVHLPS 312 (sse1) ... OK
+MOVLPS 312 (sse1) ... OK
+MOVLPD 113 (sse2) ... OK
+MOVLPS 313 (sse1) ... OK
+UNPCKLPD 114 (sse2) ... OK
+UNPCKLPS 314 (sse1) ... OK
+UNPCKHPD 115 (sse2) ... OK
+UNPCKHPS 315 (sse1) ... OK
+MOVHPD 116 (sse2) ... OK
+MOVLHPS 316 (sse1) ... OK
+MOVHPS 316 (sse1) ... OK
+MOVHPD 117 (sse2) ... OK
+MOVHPS 317 (sse1) ... OK
+MOVAPD 128 (sse2) ... OK
+MOVAPS 328 (sse1) ... OK
+MOVAPD 129 (sse2) ... OK
+MOVAPS 329 (sse1) ... OK
+CVTPI2PD 12A (sse2) ... OK
+CVTPI2PS 32A (sse1) ... OK
+CVTSI2SD F2 32A (sse2) ... OK
+CVTSI2SS F3 32A (sse1) ... OK
+MOVNTPD 12B (sse2) ... OK
+MOVNTPS 32B (sse1) ... OK
+UCOMISD 12E (sse2) ... OK
+UCOMISS 32E (sse1) ... OK
+COMISD 12F (sse2) ... OK
+COMISS 32F (sse1) ... OK
+CMOVO 140 ... OK
+CMOVO 340 ... OK
+CMOVNO 141 ... OK
+CMOVNO 341 ... OK
+CMOVB 142 ... OK
+CMOVB 342 ... OK
+CMOVNB 143 ... OK
+CMOVNB 343 ... OK
+CMOVZ 144 ... OK
+CMOVZ 344 ... OK
+CMOVNZ 145 ... OK
+CMOVNZ 345 ... OK
+CMOVBE 146 ... OK
+CMOVBE 346 ... OK
+CMOVNBE 147 ... OK
+CMOVNBE 347 ... OK
+CMOVS 148 ... OK
+CMOVS 348 ... OK
+CMOVNS 149 ... OK
+CMOVNS 349 ... OK
+CMOVP 14a ... OK
+CMOVP 34a ... OK
+CMOVNP 14b ... OK
+CMOVNP 34b ... OK
+CMOVL 14c ... OK
+CMOVL 34c ... OK
+CMOVNL 14d ... OK
+CMOVNL 34d ... OK
+CMOVLE 14e ... OK
+CMOVLE 34e ... OK
+CMOVNLE 14f ... OK
+CMOVNLE 34f ... OK
+MOVMSKPD 150 (sse2) ... OK
+MOVMSKPS 350 (sse1) ... OK
+SQRTPD 151 (sse2) ... OK
+SQRTPS 351 (sse1) ... OK
+SQRTSD F2 351 (sse2) ... OK
+SQRTSS F3 351 (sse1) ... OK
+RSQRTPS 352 (sse1) ... OK
+RSQRTSS F3 352 (sse1) ... OK
+RCPPS 353 (sse1) ... OK
+RCPSS F3 353 (sse1) ... OK
+ANDPD 154 (sse2) ... OK
+ANDPS 354 (sse1) ... OK
+ANDNPD 155 (sse2) ... OK
+ANDNPS 355 (sse1) ... OK
+ORPD 156 (sse2) ... OK
+ORPS 356 (sse1) ... OK
+XORPD 157 (sse2) ... OK
+XORPS 357 (sse1) ... OK
+ADDPD 158 (sse2) ... OK
+ADDPS 358 (sse1) ... OK
+ADDSD F2 358 (sse2) ... OK
+ADDSS F3 358 (sse1) ... OK
+MULPD 159 (sse2) ... OK
+MULPS 359 (sse1) ... OK
+MULSD F2 359 (sse2) ... OK
+MULSS F3 359 (sse1) ... OK
+CVTPD2PS 15A (sse2) ... OK
+CVTPS2PD 35A (sse2) ... OK
+CVTSD2SS F2 35A (sse2) ... OK
+CVTSS2SD F3 35A (sse2) ... OK
+SUBPD 15C (sse2) ... OK
+SUBPS 35C (sse1) ... OK
+SUBSD F2 35C (sse2) ... OK
+SUBSS F3 35C (sse1) ... OK
+MINPD 15D (sse2) ... OK
+MINPS 35D (sse1) ... OK
+MINSD F2 35D (sse2) ... OK
+MINSS F3 35D (sse1) ... OK
+DIVPD 15E (sse2) ... OK
+DIVPS 35E (sse1) ... OK
+DIVSD F2 35E (sse2) ... OK
+DIVSS F3 35E (sse1) ... OK
+MAXPD 15F (sse2) ... OK
+MAXPS 35F (sse1) ... OK
+MAXSD F2 35F (sse2) ... OK
+MAXSS F3 35F (sse1) ... OK
+PUNPCKLBW 160 (sse2) ... OK
+PUNPCKLBW 360 (mmx) ... OK
+PUNPCKLWD 161 (sse2) ... OK
+PUNPCKLWD 361 (mmx) ... OK
+PUNPCKLDQ 162 (sse2) ... OK
+PUNPCKLDQ 362 (mmx) ... OK
+PACKSSWB 163 (sse2) ... OK
+PACKSSWB 363 (mmx) ... OK
+PCMPGTB 164 (sse2) ... OK
+PCMPGTB 364 (mmx) ... OK
+PCMPGTW 165 (sse2) ... OK
+PCMPGTW 365 (mmx) ... OK
+PCMPGTD 166 (sse2) ... OK
+PCMPGTD 366 (mmx) ... OK
+PACKUSWB 167 (sse2) ... OK
+PACKUSWB 367 (mmx) ... OK
+PUNPCKHBW 168 (sse2) ... OK
+PUNPCKHBW 368 (mmx) ... OK
+PUNPCKHWD 169 (sse2) ... OK
+PUNPCKHWD 369 (mmx) ... OK
+PUNPCKHDQ 16A (sse2) ... OK
+PUNPCKHDQ 36a (mmx) ... OK
+PACKSSDW 16B (sse2) ... OK
+PACKSSDW 36b (mmx) ... OK
+PUNPCKLQDQ 16C (sse2) ... OK
+MOVD 36e (mmx) ... OK
+PUNPCKHQDQ 16D (sse2) ... OK
+MOVD 16E (sse2) ... OK
+MOVDQA 16F (sse2) ... OK
+MOVQ 36f (mmx) ... OK
+MOVDQU F3 36F (sse2) ... OK
+PSHUFD 170 (sse2) ... OK
+PSHUFW 370 (sse1) ... OK
+PSHUFLW F2 370 (sse2) ... OK
+PSHUFHW F3 370 (sse2) ... OK
+PSRLW 171/2 (sse2) ... OK
+PSRLW 371/2 (mmx) ... OK
+PSRAW 171/4 (sse2) ... OK
+PSRAW 371/4 (mmx) ... OK
+PSLLW 171/6 (sse2) ... OK
+PSLLW 371/6 (mmx) ... OK
+PSRLD 172/2 (sse2) ... OK
+PSRLD 372/2 (mmx) ... OK
+PSRAD 172/4 (sse2) ... OK
+PSRAD 372/4 (mmx) ... OK
+PSLLD 172/6 (sse2) ... OK
+PSLLD 372/6 (mmx) ... OK
+PSRLQ 173/2 (sse2) ... OK
+PSRLQ 373/2 (mmx) ... OK
+PSRLDQ 173/3 (sse2) ... OK
+PSLLQ 173/6 (sse2) ... OK
+PSLLQ 373/6 (mmx) ... OK
+PSLLDQ 173/7 (sse2) ... OK
+PCMPEQB 174 (sse2) ... OK
+PCMPEQB 374 (mmx) ... OK
+PCMPEQW 175 (sse2) ... OK
+PCMPEQW 375 (mmx) ... OK
+PCMPEQD 176 (sse2) ... OK
+PCMPEQD 376 (mmx) ... OK
+MOVD 17E (sse2) ... OK
+MOVD 37e (mmx) ... OK
+MOVQ F3 37E (sse2) ... OK
+MOVDQA 17F (sse2) ... OK
+MOVQ 37f (mmx) ... OK
+MOVDQU F3 37F (sse2) ... OK
+SETO 190 ... OK
+SETO 390 ... OK
+SETNO 191 ... OK
+SETNO 391 ... OK
+SETB 192 ... OK
+SETB 392 ... OK
+SETNB 193 ... OK
+SETNB 393 ... OK
+SETZ 194 ... OK
+SETZ 394 ... OK
+SETNZ 195 ... OK
+SETNZ 395 ... OK
+SETBE 196 ... OK
+SETBE 396 ... OK
+SETNBE 197 ... OK
+SETNBE 397 ... OK
+SETS 198 ... OK
+SETS 398 ... OK
+SETNS 199 ... OK
+SETNS 399 ... OK
+SETP 19a ... OK
+SETP 39a ... OK
+SETNP 19b ... OK
+SETNP 39b ... OK
+SETL 19c ... OK
+SETL 39c ... OK
+SETNL 19d ... OK
+SETNL 39d ... OK
+SETLE 19e ... OK
+SETLE 39e ... OK
+SETNLE 19f ... OK
+SETNLE 39f ... OK
+BT 1a3 ... OK
+BT 3a3 ... OK
+SHLD 1a4 ... OK
+SHLD 3a4 ... OK
+SHLD 1a5 ... OK
+SHLD 3a5 ... OK
+BTS 1ab ... OK
+BTS 3ab ... OK
+SHRD 1ac ... OK
+SHRD 3ac ... OK
+SHRD 1ad ... OK
+SHRD 3ad ... OK
+IMUL 1af ... OK
+IMUL 3af ... OK
+CMPXCHG 1b0 ... OK
+CMPXCHG 3b0 ... OK
+CMPXCHG 1b1 ... OK
+CMPXCHG 3b1 ... OK
+BTR 1b3 ... OK
+BTR 3b3 ... OK
+MovGwXz8 1b6 ... OK
+MovGdXz8 3b6 ... OK
+MovGdXz16 3b7 ... OK
+GROUP 8 1ba ... OK
+GROUP 8 3ba ... OK
+BTC 1bb ... OK
+BTC 3bb ... OK
+BSF 1bc ... OK
+BSF 3bc ... OK
+BSR 1bd ... OK
+BSR 3bd ... OK
+MovGwSx8 1be ... OK
+MovGdSx8 3be ... OK
+MovGdSx16 3bf ... OK
+XADD 1c0 ... OK
+XADD 3c0 ... OK
+XADD 1c1 ... OK
+XADD 3c1 ... OK
+CMPPD 1C2 (sse2) ... OK
+CMPPS 3C2 (sse1) ... OK
+CMPSD F2 3C2 (sse2) ... OK
+CMPSS F3 3C2 (sse1) ... OK
+MOVNTI 3C3 (sse2) ... OK
+PINSRW 1C4 (sse2) ... OK
+PINSRW 3C4 (sse1) ... OK
+PEXTRW 3C5 (sse1) ... OK
+PEXTRW 1C5 (sse2) ... OK
+SHUFPD 1C6 (sse2) ... OK
+SHUFPS 3C6 (sse1) ... OK
+CMPXCHG8B 3C7 ... OK
+BSWAP EAX 3C8 ... OK
+BSWAP ECX 3C9 ... OK
+BSWAP EDX 3CA ... OK
+BSWAP EBX 3CB ... OK
+BSWAP EBP 3CD ... OK
+BSWAP ESI 3CE ... OK
+BSWAP EDI 3CF ... OK
+PSRLW 1D1 (sse2) ... OK
+PSRLW 3D1 (mmx) ... OK
+PSRLD 1D2 (sse2) ... OK
+PSRLD 3D2 (mmx) ... OK
+PSRLQ 1D3 (sse2) ... OK
+PSRLQ 3D3 (mmx) ... OK
+PADDQ 1D4 (sse2) ... OK
+PADDQ 3D4 (mmx) ... OK
+PMULLW 1D5 (sse2) ... OK
+PMULLW 3d5 (mmx) ... OK
+MOVQ 1D6 (sse2) ... OK
+MOVDQ2Q F2 3D6 (sse2) ... OK
+MOVQ2DQ F3 3D6 (sse2) ... OK
+PMOVMSKB 1D7 (sse2) ... OK
+PMOVMSKB 3D7 (sse1) ... OK
+PSUBUSB 1D8 (sse2) ... OK
+PSUBUSB 3d8 (mmx) ... OK
+PSUBUSW 1D9 (sse2) ... OK
+PSUBUSB 3d9 (mmx) ... OK
+PMINUB 1DA (sse2) ... OK
+PMINUB 3DA (sse1) ... OK
+PAND 1DB (sse2) ... OK
+PAND 3db (mmx) ... OK
+PADDUSB 1DC (sse2) ... OK
+PADDUSB 3dc (mmx) ... OK
+PADDUSW 1DD (sse2) ... OK
+PADDUSB 3dd (mmx) ... OK
+PMAXUB 1DE (sse2) ... OK
+PMAXUB 3DE (sse1) ... OK
+PANDN 1DF (sse2) ... OK
+PANDN 3df (mmx) ... OK
+PAVGB 1E0 (sse2) ... OK
+PAVGB 3E0 (sse1) ... OK
+PSRAW 1E1 (sse2) ... OK
+PSRAW 3E1 (mmx) ... OK
+PSRAD 1E2 (sse2) ... OK
+PSRAD 3E2 (mmx) ... OK
+PAVGW 1E3 (sse2) ... OK
+PAVGW 3E3 (sse1) ... OK
+PMULHUW 1E4 (sse2) ... OK
+PMULHUW 3E4 (sse1) ... OK
+PMULHW 1E5 (sse2) ... OK
+PMULHW 3e5 (mmx) ... OK
+MOVNTDQ 1E7 (sse2) ... OK
+MOVNTQ 3E7 (sse1) ... OK
+PSUBSB 1E8 (sse2) ... OK
+PSUBSB 3e8 (mmx) ... OK
+PSUBSW 1E9 (sse2) ... OK
+PSUBSW 3e9 (mmx) ... OK
+PMINSW 1EA (sse2) ... OK
+PMINSW 3EA (sse1) ... OK
+POR 1EB (sse2) ... OK
+POR 3eb (mmx) ... OK
+PADDSB 1EC (sse2) ... OK
+PADDSB 3ec (mmx) ... OK
+PADDSW 1ED (sse2) ... OK
+PADDSW 3ed (mmx) ... OK
+PMAXSW 1EE (sse2) ... OK
+PMAXSW 3EE (sse1) ... OK
+PXOR 1EF (sse2) ... OK
+PXOR 3ef (mmx) ... OK
+PSLLW 1F1 (sse2) ... OK
+PSLLW 3f1 (mmx) ... OK
+PSLLD 1F2 (sse2) ... OK
+PSLLD 3f2 (mmx) ... OK
+PSLLQ 1F3 (sse2) ... OK
+PSLLQ 3f3 (mmx) ... OK
+PMULUDQ 1F4 (sse2) ... OK
+PMULUDQ 3F4 (sse2) ... OK
+PMADDWD 1F5 (sse2) ... OK
+PMADDWD 3f5 (mmx) ... OK
+PSADBW 1F6 (sse2) ... OK
+PSADBW 3F6 (sse1) ... OK
+MASKMOVDQU 1F7 (sse2) ... OK
+MASKMOVQ 3F7 (sse1) ... OK
+PSUBB 1F8 (sse2) ... OK
+PSUBB 3f8 (mmx) ... OK
+PSUBW 1F9 (sse2) ... OK
+PSUBW 3f9 (mmx) ... OK
+PSUBD 1FA (sse2) ... OK
+PSUBD 3fa (mmx) ... OK
+PSUBQ 1FB (sse2) ... OK
+PSUBQ 3FB (sse2) ... OK
+PADDB 1FC (sse2) ... OK
+PADDB 3fc (mmx) ... OK
+PADDW 1FD (sse2) ... OK
+PADDW 3fd (mmx) ... OK
+PADDD 1FE (sse2) ... OK
+PADDD 3fe (mmx) ... OK
+Self Modifiying Code ... OK
+Self Modifiying Code using movsb ... OK
+Self Modifying Code Same Block(Previous) ... OK
+Self Modifying Code Same Block(Next) ... OK
+Multi-threaded locked inc ... OK
+Split Page Write ... OK
+Reverse bits with RCL ... OK
+0 tests FAILED
