@@ -1,6 +1,6 @@
 # Cyberfoot Boxedwine fork
 
-An instrumented, reproducible fork of Boxedwine 26R1.0, maintained as a patch in the existing Cyberfoot repository. The source checkout, SDK and build output live under ignored `output/emulator-fork/`. This does not modify the game executable, Wine package, rules or clocks.
+An instrumented, reproducible, whole-program optimized fork of Boxedwine 26R1.0, maintained as a patch in the existing Cyberfoot repository. The source checkout, SDK and build output live under ignored `output/emulator-fork/`. This does not modify the game executable, Wine package, rules or clocks.
 
 Upstream commit: `d7d5a1421bd781a81cbdf8f222cced11a7ebd76e` (annotated tag `26R1.0`). Emscripten SDK: `4.0.23`, SDK repository commit `c0bb220cb6e6f4e0fabb6f6db9efd53390ef5e56`. Patches and derived emulator binaries are GPL-2.0-or-later, consistent with upstream. Corresponding source is the pinned upstream plus `runtime.patch` and these build instructions.
 
@@ -12,6 +12,8 @@ From the repository root:
 python3 cyberfoot-web/emulator-fork/build.py
 python3 cyberfoot-web/emulator-fork/serve.py
 ```
+
+The release compiles every translation unit with `-flto` and links with `-O3 -flto`. `Build/LTO` separates these objects from earlier non-LTO builds, because make does not detect compiler-flag changes. No tail-call or additional browser feature is required.
 
 The first build downloads the source and SDK. Existing checkouts must match their pinned commits; the script checks whether the patch is already applied. Builds use six jobs at most and the existing 12-worker pool. No shell profile is modified and nothing is deployed automatically.
 
@@ -46,4 +48,4 @@ The original fixed-offset browser frame-copy probe (`PROFILE_PAINT=1`) is tied t
 
 ## Stage for publication
 
-After validation, `python3 cyberfoot-web/emulator-fork/stage.py` verifies the tested binary/patch hashes and stages JS/WASM plus a corresponding-source archive in the existing public directory. It does not deploy. The archive contains the patched source, headers, bundled libraries, platform code and original web build files, excluding build output. It can also be built directly after extraction: activate Emscripten 4.0.23 and run `make -C project/emscripten -j6 BUILD_DIR=Build/MultiThreaded EXTRA_CPP_FLAGS='-DBOXEDWINE_MULTI_THREADED -pthread' EXTRA_LD_FLAGS='-pthread -sPTHREAD_POOL_SIZE=12' SHELL_FILE=shell.html` from its root. Runtime switches are configured separately by the launcher.
+After validation, `python3 cyberfoot-web/emulator-fork/stage.py` verifies the tested binary/patch hashes and stages JS/WASM plus a corresponding-source archive in the existing public directory. It does not deploy. The archive contains the patched source, headers, bundled libraries, platform code and original web build files, excluding build output. It can also be built directly after extraction: activate Emscripten 4.0.23 and run `make -C project/emscripten -j6 BUILD_DIR=Build/LTO EXTRA_CPP_FLAGS='-DBOXEDWINE_MULTI_THREADED -pthread -flto' EXTRA_LD_FLAGS='-pthread -sPTHREAD_POOL_SIZE=12 -O3 -flto' SHELL_FILE=shell.html` from its root. Runtime switches are configured separately by the launcher.

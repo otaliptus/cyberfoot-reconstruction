@@ -1,5 +1,12 @@
 Original prompt: Publish Cyberfoot 2015 on the web as a playable game. User specifically selected the exact original through emulation, not a remake.
 
+### 2026-09-15 — Whole-program emulator optimization
+- Selected Emscripten4.0.23 whole-program LLVM optimization: compile all translation units with -flto and link -O3 -flto, using separate Build/LTO objects to avoid stale compiler flags. Maintained build/stage/server defaults, reproduction README and exact manifest updated. Pinned build rerun, launcher lint, Python syntax and whitespace checks pass.
+- Two fresh published-control automatic-lineup runs5.676/5.422s versus selected4.998/5.213s: median5.549→5.106s (~8%). Startup/settings differences are small. Runtime JS+WASM2,866,549→2,472,851bytes:393,698bytes (13.7%) smaller; Wine/game packages unchanged.
+- Tail-call-only and combined LTO/tail variants tested but not selected: combined5.312s auto provides no demonstrated advantage over LTO. No additional browser feature requirement. Game executable, original UI, assets, clocks and RNG configuration unchanged.
+- Selected initial settings/career/lineup screenshots pixel-identical to control. Full16-fixture cup round, same0–2 defeat/events, next-fixture hub and auction sale pass with pixel-identical screenshots against the previous release. Sale18players/cash3,491,649; save2,656,864bytes/version1 retains300/50ms timers and subsequent1ms flush succeeds. No browser errors. Fresh-session reload/full season not tested. Required game client and default/mode0/single startup/settings compatibility pass, including visibility-handler switching, with no browser errors; menu screenshot inspected. Public checks pending. Compact evidence docs/evidence/emulator-cpu-2026-09-15/ and report docs/EMULATOR-CPU-2026-09-15.md. Full ignored captures output/emulator-tail/profiles/.
+
+
 ### 2026-09-15 — Instrumented Boxedwine fork and display batching
 - Published4e1164a as59b77b63 at https://cyberfoot-original-emulator.pages.dev/. Public bytes/hashes including full source archive, isolated mode3 startup, settings/spinner, versioned WASM, no source download during play and no browser errors pass; screenshot inspected.
 - Built pinned Boxedwine26R1.0 (d7d5a1421bd781a81cbdf8f222cced11a7ebd76e) using Emscripten4.0.23. Fork source patch/build/test/staging tools are in emulator-fork/; source and SDK live only in ignored output/emulator-fork/. Tested manifest pins binary and source hashes; build.py rerun passes.

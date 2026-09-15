@@ -32,4 +32,6 @@ run([str(SDK/'emsdk'), 'install', '4.0.23'])
 run([str(SDK/'emsdk'), 'activate', '4.0.23'])
 jobs = str(min(6, os.cpu_count() or 2))
 # Shell program is fixed; filesystem paths are positional arguments, not code.
-run(['bash', '-c', 'source "$1/emsdk_env.sh" && make -C "$2/project/emscripten" -j "$3" BUILD_DIR=Build/MultiThreaded EXTRA_CPP_FLAGS="-DBOXEDWINE_MULTI_THREADED -pthread" EXTRA_LD_FLAGS="-pthread -sPTHREAD_POOL_SIZE=12" SHELL_FILE=shell.html', 'build', str(SDK), str(SOURCE), jobs])
+# A separate build directory prevents reuse of pre-LTO object files: make does
+# not otherwise notice compiler-flag changes. Every translation unit uses LTO.
+run(['bash', '-c', 'source "$1/emsdk_env.sh" && make -C "$2/project/emscripten" -j "$3" BUILD_DIR=Build/LTO EXTRA_CPP_FLAGS="-DBOXEDWINE_MULTI_THREADED -pthread -flto" EXTRA_LD_FLAGS="-pthread -sPTHREAD_POOL_SIZE=12 -O3 -flto" SHELL_FILE=shell.html', 'build', str(SDK), str(SOURCE), jobs])

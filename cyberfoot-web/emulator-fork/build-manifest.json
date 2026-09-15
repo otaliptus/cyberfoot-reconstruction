@@ -8,12 +8,15 @@
   "patchSha256": "74d8dddddcf23c884d866625e81955ab34a681fc38a5b7fe7aefc8a289a59115",
   "files": {
     "boxedwine.js": {
-      "bytes": 494897,
-      "sha256": "f8813774f9b7ead7ea1543e95ede1db8a952138c58a0f2240558d4013887fd50"
+      "bytes": 231075,
+      "sha256": "a5b57995c506cbbb78c721c820defd6e9587c1c68614995c65bbba70896b33b0"
     },
     "boxedwine.wasm": {
-      "bytes": 2371652,
-      "sha256": "de88ffb91441390e96eea985cadc8b7e181ebdfed9cd8523d1dc5f097606063e"
+      "bytes": 2241776,
+      "sha256": "3aa8778bca3485e88929e4214b3e5cda8c09285a03b97e7afb9045e07385aca4"
     }
-  }
+  },
+  "buildDirectory": "Build/LTO",
+  "extraCppFlags": "-DBOXEDWINE_MULTI_THREADED -pthread -flto",
+  "extraLdFlags": "-pthread -sPTHREAD_POOL_SIZE=12 -O3 -flto"
 }
